@@ -1,0 +1,10 @@
+Version 5.4.2.0
+
+Improvements (1)
+2020-04-29 - [Change] Implemented changes to the work of the addons Wholesale, Sale and Product variants when these addons are used at the same time. #XCN-10845 #Core #Sale #Wholesale #ProductVariants
+
+Fixes (3)
+2020-05-07 - [Bug] Some widgets on the home page looked different after deactivating ThemeTweaker. Fixed. #BUG-8580 #ProductAdvisor #Sale
+2020-04-15 - [Bug] The permissions "manage sale discounts" and "manage coupons" gave the user the ability to assign discounts to products. Fixed. #BUG-8537 #Coupons #Sale
+2020-03-24 - [Bug] Removed the incorrect message about a zero-sized discount on the product page on the storefront which could be displayed as a result of certain VAT settings. #BUG-8461 #Sale
+

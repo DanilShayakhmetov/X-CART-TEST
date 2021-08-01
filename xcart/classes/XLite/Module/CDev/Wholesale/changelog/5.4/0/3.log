@@ -1,0 +1,9 @@
+Version 5.4.0.3
+
+Improvements (1)
+2019-05-03 - [Change] Adjusted the font color of some elements for more contrast. #XCN-9856 (Fedya Lavrentyev) #Core #Egoods #FeaturedProducts #FileAttachments #SimpleCMS #VolumeDiscounts #Wholesale #CanadaPost #ColorSchemes #ProductVariants #RelatedProducts #MultiVendor #VendorMessages #CustomProductTabs #UpdateInventory
+
+Fixes (2)
+2019-04-30 - [Bug] Layout adjustments for the variants page in the Admin area. #BUG-7324 (Fedya Lavrentyev) #Wholesale #ProductVariants
+2019-04-25 - [Bug] Elements within the wholesale prices table were not aligned correctly. Fixed. #BUG-7303 (Fedya Lavrentyev) #Wholesale
+

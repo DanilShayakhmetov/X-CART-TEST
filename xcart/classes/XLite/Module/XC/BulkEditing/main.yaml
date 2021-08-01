@@ -1,0 +1,18 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.0.5
+type: common
+authorName: 'X-Cart team'
+moduleName: 'Bulk Editing'
+description: 'The module allows to edit products in bulk. Choose products for editing and select the parameter that needs to be updated for them.'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: false
+canDisable: true

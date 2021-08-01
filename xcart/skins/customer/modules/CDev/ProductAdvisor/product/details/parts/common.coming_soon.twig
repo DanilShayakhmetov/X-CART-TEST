@@ -1,0 +1,12 @@
+{##
+ # Quantity input box
+ #
+ # @ListChild (list="product.details.page.info", weight="19")
+ # @ListChild (list="product.details.quicklook.info", weight="19")
+ #}
+
+{% if this.isShowComingSoonLabel() %}
+  <span class="coming-soon-label">
+    {{ widget('XLite\\View\\Labels', labels=this.getComingSoonLabel()) }}
+  </span>
+{% endif %}

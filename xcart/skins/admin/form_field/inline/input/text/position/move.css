@@ -1,0 +1,44 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Sortable position
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.inline-move .move {
+  cursor: move;
+  position: relative;
+  color: #bec6d8;
+  line-height: 1;
+}
+
+.inline-move .field .table-value,
+.inline-move .field .clear
+{
+  display: none;
+}
+
+.sortable-placeholder {
+  background: #fffcad;
+}
+
+.ui-sortable-helper {
+  background: rgba(252, 235, 176, 0.3);
+}
+.ui-sortable-helper .inline-field.editable .view,
+.ui-sortable-helper .inline-field.editable .form-control {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.table-wrapper>table>tbody>tr.ui-sortable-placeholder>td,
+.table-wrapper>table>tbody>tr.ui-sortable-placeholder>th {
+  border-top: 0;
+}
+
+.items-list-table table.list tbody tr.ui-sortable-placeholder td {
+  height: 59px;
+}

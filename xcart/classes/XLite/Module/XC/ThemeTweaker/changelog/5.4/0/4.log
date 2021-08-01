@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-06-13 - [Bug] Fatal error on the email notification page when there were no orders in the store. Fixed. #BUG-7490 (Shevelov Alexander) #ThemeTweaker #CanadaPost #VendorMessages
+

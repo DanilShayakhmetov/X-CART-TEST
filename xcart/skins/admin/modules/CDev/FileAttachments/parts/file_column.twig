@@ -1,0 +1,12 @@
+{##
+ # Attachments file column
+ #}
+
+<div class="file-column">
+  <div class="reupload-file">
+    <div class="buttons">
+      {{ widget('XLite\\View\\Button\\Link', location=this.getFileLink(this.entity), label=t(''), style='download-file-button') }}
+      {{ widget('\\XLite\\Module\\CDev\\FileAttachments\\View\\Button\\Dropdown\\ReUploadFileSelector', showCaret=false, style='reupload', label='...', object='product', objectId=this.entity.getProduct().getId(), fileObject='attachments', fileObjectId=this.entity.getId()) }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Progress state
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/* {{{ BUTTON */
+.progress-state {
+  position: relative;
+}
+
+.progress-state > div {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s, transform .5s;
+}
+
+.progress-state.in_progress.disabled,
+.progress-state.success.disabled {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress-state .caption {
+}
+
+.progress-state.still .caption {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress-state .success {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-size: 1.5em;
+  color: rgba(71, 71, 71, 1.0);
+}
+
+.progress-state.success .success {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress-state .fail {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-size: 1.5em;
+  color: rgba(71, 71, 71, 1.0);
+}
+
+.progress-state.fail .fail {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* }}} */
+
+/* {{{ LOADER */
+
+.progress-state.in_progress .loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress-state .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3D(-50%, -50%, 0);
+}
+
+.progress-state .loader:after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.4em solid rgba(71, 71, 71, 0.2);
+  border-right: 0.4em solid rgba(71, 71, 71, 0.2);
+  border-bottom: 0.4em solid rgba(71, 71, 71, 0.2);
+  border-left: 0.4em solid rgba(71, 71, 71, 1.0);
+  animation: loader_animation 1.0s infinite linear;
+  border-width: 0.4em;
+}
+
+@keyframes loader_animation {
+  0% {
+    transform: rotate(0deg) translateZ(0);
+  }
+  100% {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+/* }}} */

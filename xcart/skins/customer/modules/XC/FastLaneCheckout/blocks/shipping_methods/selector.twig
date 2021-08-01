@@ -1,0 +1,35 @@
+{##
+ # Shipping methods list
+ #}
+
+{% set selector = this.isDisplaySelector() ? 'true' : 'false' %}
+
+<div class="shipping-methods-list" v-data='{ "selector": {{ selector }} }'>
+  {% if this.isDisplaySelector() %}
+    <div class="selector-view{% if not this.isMobileDevice() %} rich{% endif %}">
+      {{ widget('XLite\\View\\FormField\\Select\\ShippingMethod', disableSearch='true', fieldName=this.getFieldName(), options=this.getMethodsAsList(), value=this.selectedMethod.methodId, fieldOnly='true', label=t('Shipping rates'), attributes={'v-el:richselect':'', 'v-model': this.getFieldName()}) }}
+      <div class="clearfix"></div>
+    </div>
+  {% else %}
+    <div class="radiolist-view">
+      <ul class="shipping-rates">
+        {% for rate in this.getRates() %}
+          <li class="shipping-rate">
+            <div class="radio">
+              <label title="{{ this.getMethodName(rate) }}">
+                <input type="radio" id="method{{ this.getMethodId(rate) }}" name="{{ this.getFieldName() }}"
+                       value="{{ this.getMethodId(rate) }}" {% if this.isRateSelected(rate) %} checked="checked" {% endif %}
+                       v-model="{{ this.getFieldName() }}"/>
+                <span class="rate-title">{{ this.getMethodName(rate)|raw }}</span>
+                <span class="value">{{ widget('XLite\\View\\Surcharge', surcharge=this.getTotalRate(rate), currency=this.cart.getCurrency()) }}</span>
+                {% if this.getMethodDeliveryTime(rate) %}
+                  <span class="rate-description">({{ this.getMethodDeliveryTime(rate) }})</span>
+                {% endif %}
+              </label>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</div>

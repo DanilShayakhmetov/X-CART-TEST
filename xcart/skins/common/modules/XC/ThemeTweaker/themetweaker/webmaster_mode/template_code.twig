@@ -1,0 +1,22 @@
+{##
+ # Layout editor panel
+ #}
+
+<xlite-template-code inline-template :interface="interface" :template="template" :weight="weight" :list="list">
+  <div class="xlite-template-code" :class="classes" v-data='{{ this.getWidgetData()|raw }}'>
+    <div class="xlite-template-path" v-if="template"><span v-text="template"></span></div>
+    {% if this.getTemplatePath() %}
+      {{ widget(
+        'XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Textarea\\CodeMirror',
+        attributes={
+          'v-pre': 'v-pre',
+          'data-template-editor': 'data-template-editor',
+        },
+        fieldOnly=true,
+        formControl=false,
+        codeMode='twig'
+      ) }}
+      <script type="text/plain" data-template-content>{{ this.getTemplateContent() }}</script>
+    {% endif %}
+  </div>
+</xlite-template-code>

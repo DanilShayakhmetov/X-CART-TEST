@@ -1,0 +1,36 @@
+{##
+ # Domain name page template
+ #}
+
+<div class="domain-name-page">
+    <div class="alert alert-success">
+        {{ t('Activated! Your current domain is X', {'domain': this.getDomainName()})|raw }}
+    </div>
+
+    <p>{{ t('To connect the custom domain to your X-Cart store, please log in to the account you have with your domain provider and change your settings accordingly. The nameservers for your domain name should look as follows:') }}</p>
+
+    <p>
+        {% for server in this.getSampleNsServers() %}
+            <b>{{ server }}</b><br>
+        {% endfor %}
+    </p>
+    <p>{{ t('If you are planning to use an email hosting service for this domain, please send us your MX and TXT records to helpdesk@x-cart.com so that we could add the necessary DNS entries.')|raw }}</p>
+
+    <div class="send-form">
+        {% form 'XLite\\View\\Form' %}
+            <ul class="table">
+                <li class="send-field">
+                    <div class="table-label domain-name-label">
+                        <label for="domain-name" title="{{ t('Domain name') }}">{{ t('Domain name') }}</label>
+                    </div>
+                    <div class="table-value domain-name-value">
+                        {{ widget('XLite\\View\\FormField\\Input\\Text\\Domain', fieldOnly='true', fieldName='domain_name', style='domain') }}
+                        {{ widget('XLite\\View\\Button\\ProgressState', label=t('Change'), style="send-btn check-domain disabled") }}
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        {% endform %}
+    </div>
+</div>
+

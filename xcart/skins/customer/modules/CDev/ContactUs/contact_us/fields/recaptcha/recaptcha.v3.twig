@@ -1,0 +1,17 @@
+<script src="https://www.google.com/recaptcha/api.js?render={{ this.getPublicKey() }}"></script>
+<script>
+    grecaptcha.ready(function() {
+        jQuery('#g-recaptcha-response').closest('form').submit(function() {
+            if ('' === jQuery('#g-recaptcha-response').val()) {
+                grecaptcha.execute('{{ this.getPublicKey() }}', {action: 'contact_us'}).then(function(token) {
+                    jQuery('#g-recaptcha-response').val(token);
+                    jQuery('#g-recaptcha-response').closest('form').submit();
+                });
+
+                return false;
+            }
+        });
+    });
+</script>
+{{ t('recaptcha_terms_of_service')|raw }}
+<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />

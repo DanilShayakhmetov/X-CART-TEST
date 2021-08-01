@@ -1,0 +1,13 @@
+{##
+ # Name cell
+ #
+ # @ListChild (list="itemsList.orderitem.cell.name", weight="100")
+ #}
+
+{% if this.entity.getBackorderedAmount() and this.entity.countMissingPinCodes() %}
+  <div class="backordered-pin-codes">
+    {% for i in 1..this.entity.getBackorderedAmount() %}
+      {{ widget('XLite\\Module\\CDev\\PINCodes\\View\\FormField\\Input\\Text\\ItemPinCode', fieldName='order_items[' ~ this.entity.getId() ~ '][pin_codes][]', fieldOnly=true) }}
+    {% endfor %}
+  </div>
+{% endif %}

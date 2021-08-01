@@ -1,0 +1,16 @@
+{##
+ # Payment actions unit
+ #
+ #
+ # @ListChild (list="order.actions.paymentActionsRow", weight="19000")
+ #}
+
+{% if this.isXpaymentsChargeDifferenceAvailable() %}
+  <div class="rebill-button-container">
+
+    <button type="button" class="btn regular-button create-inline" onclick="javascript: {{ this.getXpaymentsChargeDifferenceJsCode() }};">
+      {{ t('Charge the difference') }}
+    </button>
+
+  </div>
+{% endif %}

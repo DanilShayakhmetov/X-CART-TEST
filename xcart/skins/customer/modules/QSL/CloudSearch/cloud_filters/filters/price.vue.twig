@@ -1,0 +1,21 @@
+<script type="x-template" id="cloud-filters-template-price">
+
+    <div class="cloud-filters-filter cloud-filters-filter-price">
+        <h4 class="cloud-filters-filter__title">{{ t('Price') }}</h4>
+
+        <form class="form-inline">
+            <input type="text"
+                   v-model="min[0] | priceFilterValue 'min'"
+                   debounce="500"
+                   :placeholder="getMinPrice('{{ t('From')|striptags }}')"
+                   class="form-control cloud-filters-filter-price__input">
+            &mdash;
+            <input type="text"
+                   v-model="max[0] | priceFilterValue 'max'"
+                   debounce="500"
+                   :placeholder="getMaxPrice('{{ t('To')|striptags }}')"
+                   class="form-control cloud-filters-filter-price__input">
+        </form>
+    </div>
+
+</script>

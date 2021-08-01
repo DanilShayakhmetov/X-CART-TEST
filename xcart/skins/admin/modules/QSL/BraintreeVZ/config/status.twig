@@ -1,0 +1,8 @@
+{##
+ # Braintree merchant ID in the payment status panel
+ # @ListChild (list="payment_status.after.PayPal_powered_by_Braintree", weight="20")
+ #}
+
+{% if (this.paymentMethod.getSetting('merchantId')) %}
+  <strong>{{ t('Merchant ID') }}:</strong> <span id="braintree-merchant-id">{{ this.paymentMethod.getSetting('merchantId') }}</span>
+{% endif %}

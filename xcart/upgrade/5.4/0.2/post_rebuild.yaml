@@ -1,0 +1,40 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: access_link
+    position: 2700
+    availableForAdmin: false
+    availableForCustomer: false
+    enabledForAdmin: false
+    enabledForCustomer: true
+    adminHeaderEnabled: false
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Access link re-sent'
+        description: 'This notification is sent to the guest buyer when they request a new link for access to information about their order after an access link issued to them previously has expired.'
+        customerSubject: 'New access link'
+        customerText: ''
+
+XLite\Model\LanguageLabel:
+  - name: 'Access link has been successfully sent'
+    translations:
+      - code: en
+        label: 'Access link has been sent'
+  - name: 'php_version.label_message'
+    translations:
+      - code: en
+        label: 'PHP versions <b>7.2.0+</b> are currently supported.'
+  - { name: 'notification.section.customer', translations: [{ code: en, label: 'Customer email notification' }] }
+  - { name: 'notification.section.administrator', translations: [{ code: en, label: 'Admin email notification' }] }
+

@@ -1,0 +1,9 @@
+Version 5.4.0.2
+
+Improvements (2)
+2019-03-22 - [Change] Layout adjustments for payment method settings pages. #XCN-9658 (Fedya Lavrentyev) #Core #AuthorizeNet #Paypal #TwoCheckout #VendorMessages #BitPay #Yandex Checkout
+2019-01-29 - [Change] Removed the option to select MD5 hash from the settings of the payment method Authorize.Net SIM because it is no longer supported. #BUG-7024 (Kirill Stadler) #AuthorizeNet
+
+Fixes (1)
+2019-01-30 - [Bug] Fatal error on some payment method pages: "Trying to call undefined method...". Fixed. #BUG-7009 (Vladimir Semyonov) #Core #AuthorizeNet #Stripe #SagePay #ProductReviews #DatatransUPP #YandexMoney #Beanstream #IdealPayments #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #CCBill #EPDQ #Worldpay #FirstDataPayeezyGatewayHP #Yandex Checkout #GlobalTransportSecure #PayFort #PoliPayment #DIBSFlexWin #SecureTrading
+

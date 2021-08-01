@@ -1,0 +1,144 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Slidebar styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+.themetweaker-modal-mask {
+	position: fixed;
+	z-index: 1000000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	display: table;
+	transition: opacity .3s ease;
+}
+
+body.live-css-reloading .themetweaker-modal-container * {
+	transition: none !important;
+}
+
+.themetweaker-modal-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.themetweaker-modal-footer {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.themetweaker-modal-container {
+	width: 500px;
+	margin: 0px auto;
+	padding: 24px 44px;
+	background-color: #fff;
+	border-radius: 6px;
+	transition: all .3s ease;
+	position: relative;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.16);
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.themetweaker-modal-container p,
+.themetweaker-modal-container span {
+	font-size: 14px;
+}
+
+.themetweaker-modal-button {
+	padding: 0 20px;
+	height: 100%;
+	vertical-align: middle;
+	font-size: 14px;
+	min-height: 35px;
+}
+
+.themetweaker-modal-close {
+	position: absolute;
+	right: 22px;
+	top: 22px;
+	cursor: pointer;
+}
+
+.themetweaker-modal-close svg {
+	width: 12px;
+	height: 12px;
+	vertical-align: top;
+}
+
+.themetweaker-modal-close svg path {
+	fill: #9b9b9b;
+}
+
+.themetweaker-modal-close:hover svg path,
+.themetweaker-modal-close:focus svg path {
+	fill: #0ba2e8;
+}
+
+.themetweaker-modal-button + .themetweaker-modal-button {
+	margin-left: 5px;
+}
+
+button.themetweaker-modal-button,
+a.themetweaker-modal-button {
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid #eea236;
+	min-width: 80px;
+	color: #fff;
+	background-color: #f0ad4e;
+}
+
+button.themetweaker-modal-button span,
+a.themetweaker-modal-button span {
+	color: #fff;
+}
+
+.themetweaker-modal-button:hover,
+.themetweaker-modal-button:focus {
+	background-color: #ed9c28;
+	border-color: #d58512;
+}
+
+.themetweaker-modal-button.secondary {
+	background: #fff;
+	border: solid 1px #cccccc;
+}
+
+.themetweaker-modal-button.secondary:hover,
+.themetweaker-modal-button.secondary:focus {
+	background-color: #eff8fe;
+	border-color: #c9dcea;
+}
+
+.themetweaker-modal-button.secondary:hover span,
+.themetweaker-modal-button.secondary:focus span {
+	color: #2c5fa6;
+}
+
+.themetweaker-modal-button.secondary span {
+	color: #2c5fa6;
+}
+
+/*
+ * the following styles are auto-applied to elements with
+ * v-transition="modal" when their visiblity is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter, .modal-leave {
+	opacity: 0;
+}
+
+.modal-enter .themetweaker-modal-container,
+.modal-leave .themetweaker-modal-container {
+	transform: scale(1.1);
+}

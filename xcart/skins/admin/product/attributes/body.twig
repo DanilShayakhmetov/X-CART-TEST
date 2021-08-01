@@ -1,0 +1,41 @@
+{##
+ # Attributes
+ #}
+<div class="{{ this.getBlockStyle() }}">
+  <div class="header">
+    <h2 class="title">
+      <span class="title">{{ this.getTitle() }}</span>
+      {% if this.getTooltip() %}
+        {{ widget('XLite\\View\\Tooltip', text=this.getTooltip(), isImageTag='true', className='help-icon') }}
+      {% endif %}
+    </h2>
+    {% if this.canAddAttributes() %}
+      {{ widget('XLite\\View\\Button\\Dropdown\\AddAttribute', useCaretButton=false, listId=this.getListId()) }}
+    {% endif %}
+  </div>
+  <ul class="data lines" id="list{{ this.getListId() }}">
+    {% for id, a in this.getAttributesList() %}
+      <li class="line clearfix attribute">
+        <div class="attribute-name">
+          {{ a.name.display() }}
+          {% if not this.getPersonalOnly() %}
+            <span class="changed-label">{{ t("The name will be changed globally") }}</span>
+          {% endif %}
+          {% if a.entity.getType() is same as(constant('XLite\\Model\\Attribute::TYPE_SELECT')) %}
+            {{ widget_list('product.attributes.display_modes', attribute=a) }}
+          {% endif %}
+        </div>
+        {{ a.value.display() }}
+        {{ widget_list('product.attributes.actions', item=a, itemId=id) }}
+      </li>
+    {% endfor %}
+    {% if not this.getAttributesList() %}
+      <li class="list-empty">
+        {{ t('No attributes assigned') }}
+      </li>
+    {% endif %}
+  </ul>
+</div>
+{% for group in this.getAttributeGroups() %}
+  {{ widget('XLite\\View\\Product\\Details\\Admin\\Attributes', group=group, hiddenOnly=this.getHiddenOnly()) }}
+{% endfor %}

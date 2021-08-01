@@ -1,0 +1,4 @@
+Version 5.3.14.10
+
+[Fix] HTTP -> HTTPS redirection bug when indexing stores with enabled HTTPS
+[Improvement] Realtime indexing stability improved

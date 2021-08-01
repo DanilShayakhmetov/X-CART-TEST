@@ -1,0 +1,19 @@
+{##
+ # Payment methods list
+ #}
+
+<div class="{{ this.getListCSSClasses() }}">
+
+  {% if this.getPageData() %}
+    <ul>
+      {% for method in this.getPageData() %}
+        <li class="{{ this.getLineClass(method) }}" data-module-name="{{ method.getModuleName() }}">
+          <div class="offline-method-line">
+            {{ widget_list('payment.offline-methods.list.line', method=method) }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+</div>

@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-10-22 - [Bug] Fixed various security issues. #BUG-8003 (Maxim Kuznetsov) #Core #GoSocial #ThemeTweaker #RESTAPI
+

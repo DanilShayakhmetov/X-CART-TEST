@@ -1,0 +1,295 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Slidebar styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.ui-widget.via-url-popup-dialog {
+	z-index: 1000002 !important;
+}
+
+.ui-widget-overlay.via-url-popup-overlay {
+	z-index: 1000001 !important;
+}
+
+#layout-editor-panel {
+	width: 100%;
+	background: #fff;
+	z-index: 99999;
+	min-height: 62px;
+	display: flex;
+    color: #333;
+	height: 100%;
+}
+
+#layout-editor-panel .icon {
+	display: inline-block;
+}
+
+#layout-editor-panel .icon svg {
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+	display: inline;
+}
+
+.layout-editor-sidebar {
+	padding: 20px 20px 0 20px;
+	background: #F6F6F6;
+	flex-shrink: 0;
+}
+
+.layout-editor-main {
+	padding: 20px 20px 0 20px;
+}
+
+.layout-editor--initial > * {
+	display: none;
+}
+
+.layout-editor-help-message {
+	width: 100%;
+	padding: 10px 0;
+	margin-left: 35px;
+	color: #777;
+}
+
+.layout-editor-help-message .fa {
+	position: absolute;
+	margin-left: -24px;
+	margin-top: 3px;
+}
+
+.layout-editor-toggle {
+	margin-right: 20px;
+}
+
+.layout-editor-toggle .table-label label {
+	font-size: 16px;
+}
+
+.layout-editor-toggle .table-value {
+    height: 20px;
+}
+
+.layout-editor-toggle.layout-editor--disabled {
+	margin-right: auto;
+}
+
+.layout-editor-hidden-blocks {
+	margin-right: 20px;
+	margin-left: 35px;
+  align-self: center;
+	vertical-align: middle;
+	line-height: 20px;
+}
+
+.layout-editor-hidden-blocks_icon, .layout-editor-hidden-blocks_label, .layout-editor-hidden-blocks-counter {
+	font-size: 14px;
+	color: #4a4a4a;
+	font-weight: 600;
+}
+
+.layout-editor-hidden-blocks_label {
+}
+
+.layout-editor-hidden-blocks_icon {
+	margin-left: -25px;
+	position: absolute;
+}
+
+.layout-editor-hidden-blocks_icon, .layout-editor-hidden-blocks_label  {
+	margin-right: 5px;
+}
+
+.layout-editor-hidden-list {
+	display: flex;
+  flex-wrap: wrap;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+
+.layout-editor-hidden-block {
+	border: none;
+	margin: 2px !important;
+	text-decoration: none;
+	width: 130px;
+	min-height: 30px;
+	border-radius: 4px;
+	background-color: #eeefef;
+	padding: 0 5px;
+	cursor: pointer;
+	color: #4a4a4a;
+	font-size: 12px;
+}
+
+.layout-editor-hidden-block:hover,
+.layout-editor-hidden-block:focus {
+	background: #0ba2e8;
+	color: #fff;
+}
+
+.layout-editor-hidden-block:hover .name,
+.layout-editor-hidden-block:focus .name {
+	display: none;
+}
+
+.layout-editor-hidden-block .action {
+	display: none;
+}
+
+.layout-editor-hidden-block .action .icon {
+	margin-right: 5px;
+}
+
+.layout-editor-hidden-block .action .icon svg {
+	margin-bottom: 1px;
+}
+
+.layout-editor-hidden-block:hover .action,
+.layout-editor-hidden-block:focus .action {
+	display: inline;
+}
+
+.layout-editor-hidden-block span {
+	word-break: break-all;
+}
+
+/**
+ * Layout option
+ */
+
+.layout-editor-layout-options {
+	display: flex;
+	flex-direction: column;
+}
+
+.layout-editor-layout-options .logo-options-header > span,
+.layout-editor-layout-options .options-layout-header > span {
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.layout-editor-layout-options .options-layout-content {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.layout-editor-layout-options .options-layout-header {
+	display: flex;
+}
+
+.layout-editor-layout-options .reset-button {
+	cursor: pointer;
+	margin-left: auto;
+	font-size: 10px;
+}
+
+.layout-editor-layout-options .reset-button.disabled {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: .2;
+	color: #000 !important;
+}
+
+.layout-editor-layout-options .reset-button.disabled .icon svg path {
+	stroke: #000;
+	fill: #000;
+}
+
+.layout-editor-layout-options .reset-button .icon {
+	margin-right: 2px;
+}
+
+#layout-editor-panel .layout-editor-layout-options .reset-button .icon svg {
+	height: 14px;
+	width: 14px;
+}
+
+.layout-editor-layout-options .reset-button .icon svg path {
+	stroke: #386eaf;
+	fill: #386eaf;
+}
+
+.layout-editor-layout-options .reset-button:hover .icon svg path,
+.layout-editor-layout-options .reset-button:focus .icon svg path {
+	stroke: #1cb5fc;
+	fill: #1cb5fc;
+}
+
+.layout-editor-layout-options .logo-options-wrapper {
+	margin-bottom: 10px;
+}
+
+.layout-editor-layout-options .logo-options-header {
+	margin-top: 10px;
+}
+
+.layout-editor-layout-options .logo-options-content {
+	display: flex;
+	margin-top: 10px;
+}
+
+.layout-editor-layout-options .logo-options-content .option-label {
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	color: #9b9b9b;
+}
+
+.layout-editor-layout-options .logo-options-content > * + * {
+	margin-left: 10px;
+}
+
+.layout-editor-layout-options .file-uploader {
+	width: 78px;
+	height: 78px;
+	background: white;
+}
+
+.layout-editor-layout-options .favicon-uploader .file-uploader div.alt,
+.layout-editor-layout-options .appleIcon-uploader .file-uploader div.alt
+{
+	display: none;
+}
+
+.layout-editor-layout-options .file-uploader i.icon {
+	font-size: 24px;
+}
+
+.layout-editor-layout-options .file-uploader .dropdown-menu {
+	bottom: 0;
+	top: auto;
+	left: calc(100% + 5px);
+}
+
+.layout-editor-layout-options .file-uploader .alt .dropdown-menu {
+	bottom: auto;
+	padding: 10px;
+}
+
+.layout-editor-layout-options .file-uploader .dropdown-menu:before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid white;
+	position: absolute;
+	left: -5px;
+	bottom: 10px;
+}
+
+.layout-editor-layout-options .file-uploader .alt .dropdown-menu:before {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid white;
+	border-top: none;
+	left: 5px;
+	bottom: auto;
+	top: -5px;
+}

@@ -1,0 +1,5 @@
+Version 5.4.0.12
+
+Fixes (1)
+2020-07-29 - [Bug] Removed an unused piece of code that could cause errors under certain conditions. #BUG-8879 #Concierge
+

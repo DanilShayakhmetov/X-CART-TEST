@@ -1,0 +1,20 @@
+{##
+ # Order address : billing
+ #
+ # @ListChild (list="address.order.main", weight="300")
+ #}
+
+<div {{ this.printTagAttributes(this.getBillingContainerAttributes())|raw }}>
+  <h3>{{ t('Billing address') }}</h3>
+  <div class="expander"><a href="#">{{ t('Show') }}</a></div>
+  <div class="collapser"><a href="#">{{ t('Hide') }}</a></div>
+  {% if this.isDisplayAddressButton() %}
+    {{ widget('XLite\\View\\Button\\SimpleLink',
+      label='Address book',
+      style='btn regular-button address-book',
+      location=url('order', '', {'order_number': this.order.orderNumber, 'atype': 'b', 'widget': 'XLite\\View\\SelectAddressOrder'})
+    ) }}
+  {% endif %}
+  {{ widget('XLite\\View\\Model\\Address\\Order', template=this.getModelTemplate(), addressType='billing') }}
+</div>
+

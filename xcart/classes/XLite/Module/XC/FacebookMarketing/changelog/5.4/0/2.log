@@ -1,0 +1,11 @@
+Version 5.4.0.2
+
+Improvements (3)
+2019-04-05 - [Change] Layout adjustment for various pages according to the style guide. #XCN-9763 (Maxim Kuznetsov) #Core #SimpleCMS #ThemeTweaker #ProductReviews #NewsletterSubscriptions #MultiVendor #ProductTags #SystemFields #MailChimp #News #Facebook Commerce
+2018-07-13 - [Change] Changed the default value of the useCaretButton parameter in the ADropdown widget. #BUG-6235 https://bt.x-cart.com/view.php?id=49325 (Sergey Elmanov) #Core #FileAttachments #Sale #RelatedProducts #ProductReviews #VendorMessages #BulkEditing #Facebook Commerce #GoogleFeed
+2018-03-06 - [Change] Code refactoring: Now a single function is responsible for random hash generation. #BUG-5757 (Sergey Elmanov) #Core #Facebook Commerce #Zapier #GoogleFeed
+
+Fixes (2)
+2019-04-05 - [Bug] Layout adjustment for the settings page of the Facebook & Instagram ads addon according to the style guide. #BUG-7219 (Fedya Lavrentyev) #Core #Facebook Commerce
+2019-03-14 - [Bug] Fixed the error "Error (code: 0): Call to a member function findOneBy() on null" on the settings page of the addon Facebook & Instagram ads. #BUG-7127 (Maxim Kuznetsov) #Facebook Commerce
+

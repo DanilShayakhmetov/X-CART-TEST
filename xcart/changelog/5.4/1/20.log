@@ -1,0 +1,15 @@
+Version 5.4.1.20
+
+Improvements (4)
+2020-11-10 - [Story] Updated the United Kingdom administrative division information. #XCC-712 #CDev-Core
+2020-11-05 - [Story] Added 'Clear fields' buttons for Product list and User list in the admin area. #XCC-594 #CDev-Core #XC-MultiVendor
+2020-11-02 - [Story] UI and UX improvements for the Onboarding Wizard. #XCC-584 #CDev-Core #XC-Onboarding
+2020-11-13 - [Story] UI and UX improvements for the Admin area and Service Tool headers. #XCC-397 #CDev-Core #XC-Service
+
+Fixes (5)
+2020-11-10 - [Bug] Fixed a few mistypes in some text variables and notifications. #XCB-121 #CDev-Core #QSL-AbandonedCartReminder #QSL-EBay
+2020-11-10 - [Bug] The customer's email address in the orders of that customer was updated after an invalid attempt to change the customer's email in the Admin area, which was not supposed to happen. Fixed. #XCB-118 #CDev-Core
+2020-11-12 - [Bug] A category created in a different language was missing from the selectboxes in the store Admin area. Fixed. #XCB-112 #CDev-Core
+2020-11-05 - [Bug] Added a text label  "Not an email address". #XCB-109 #CDev-Core
+2020-11-06 - [Bug] Changed the text label "Your store is" for the cases when the on/off switch for the storefront is hidden. #XCB-108 #CDev-Core
+

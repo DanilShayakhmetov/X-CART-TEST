@@ -1,0 +1,5 @@
+Version 5.4.2.10
+
+Fixes (1)
+2020-09-20 - [Bug] Added Paypal Credit Messaging support for the payment method PayPal Checkout. #XCC-469 #Paypal #CrispWhiteSkin
+

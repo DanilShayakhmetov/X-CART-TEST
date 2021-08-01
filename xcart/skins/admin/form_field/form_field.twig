@@ -1,0 +1,46 @@
+{##
+ # Form field
+ #}
+
+{% if not this.getParam('fieldOnly') %}
+  {% include this.getFieldLabelTemplate() %}
+{% endif %}
+
+<div class="{{ this.getValueContainerClass() }}">
+  <div class="input-internal-wrapper">
+    {% if this.getParam('editOnClick') %}
+      <div {{ this.printTagAttributes(this.getContainerAttributes())|raw }}>
+        <div {{ this.printTagAttributes(this.getViewContainerAttributes())|raw }}>{% include this.getViewTemplate() %}</div>
+        <div {{ this.printTagAttributes(this.getFieldContainerAttributes())|raw }}>
+          {% include this.getDir() ~ '/' ~ this.getFieldTemplate() %}
+        </div>
+      </div>
+    {% else %}
+      {% include this.getDir() ~ '/' ~ this.getFieldTemplate() %}
+    {% endif %}
+    {% if this.hasHelp() %}
+      <div class="help-wrapper">
+        {{ widget('XLite\\View\\Tooltip', text=t(this.getParam('help')), helpWidget=this.getParam('helpWidget'), isImageTag='true', className='help-icon') }}
+      </div>
+    {% endif %}
+  </div>
+  {% if this.getParam('linkHref') %}
+    {% if this.getParam('linkImg') %}
+      <img src="{{ this.getParam('linkImg') }}" class="form-field-link-img" alt="" height="20">
+    {% endif %}
+    <a class="form-field-link {{ this.getFieldId() }}-link" href="{{ this.getParam('linkHref') }}">
+      {{ t(this.getParam('linkText'))|raw }}
+    </a>
+  {% endif %}
+  {% if this.getParam('comment') %}
+    <div class="form-field-comment {{ this.getFieldId() }}-comment">{{ t(this.getParam('comment'))|raw }}</div>
+  {% endif %}
+  {% if this.getFormFieldJSData() %}{{ this.displayCommentedData(this.getFormFieldJSData()) }}{% endif %}
+  {% if this.getInlineJSCode() %}
+    <script type="text/javascript">{{ this.getInlineJSCode()|raw }}</script>
+  {% endif %}
+</div>
+
+{% if not this.getParam('fieldOnly') %}
+  <div class="clear"></div>
+{% endif %}

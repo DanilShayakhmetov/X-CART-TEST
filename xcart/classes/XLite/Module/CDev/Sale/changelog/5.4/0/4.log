@@ -1,0 +1,6 @@
+Version 5.4.0.4
+
+Fixes (2)
+2019-07-24 - [Bug] Incorrect styles applied to the text label "Sale" on a list of products within a category in the Admin area. Fixed. #BUG-7476 (Kirill Stadler) #Sale
+2019-07-18 - [Bug] JS error on the product details page in the Admin area. Fixed. #BUG-7722 (Fedya Lavrentyev) #Core #MarketPrice #Sale #Wholesale #FreeShipping #BulkEditing #Onboarding
+

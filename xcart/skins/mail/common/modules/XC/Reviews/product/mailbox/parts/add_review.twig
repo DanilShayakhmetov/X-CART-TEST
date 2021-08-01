@@ -1,0 +1,11 @@
+{##
+ # Product mailbox price
+ #
+ # @ListChild (list="product_mail_box", weight="300")
+ #}
+
+{% if this.isDisplayAddReviewButton() %}
+  <div class="add-reviwe-button">
+    {{ widget('XLite\\View\\Button\\SimpleLink', location=this.getAddReviewURL(), label=t('Add review'), style='regular-button') }}
+  </div>
+{% endif %}

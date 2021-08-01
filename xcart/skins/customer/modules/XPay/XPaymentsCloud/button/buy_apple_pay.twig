@@ -1,0 +1,59 @@
+{##
+ # Buy With Apple Pay button
+ #}
+
+<{{ this.getContainerTag() }} class="apple-pay-button-container apple-pay-buy-button-container{% if (this.fingerprint) %} {{ this.fingerprint }}{% endif %}">
+  <button type="button" class="{{ this.getButtonClass() }}">
+    <span class="text">{{ t(this.getButtonLabel()) }}</span>
+    <span class="logo"></span>
+  </button>
+
+  {{ widget_list('xpayments.button.applepay') }}
+
+  <script>
+    function loadBuyWithApplePayWidget() {
+        if ('undefined' == typeof BuyWithApplePayWrapper) { return; }
+
+        if ('undefined' == typeof window.xpaymentsBuyWithApplePay) {
+            window.xpaymentsBuyWithApplePay = new BuyWithApplePayWrapper();
+            xpaymentsBuyWithApplePay.initialize({
+                account: '{{ this.getPaymentMethod().getSetting('account') }}',
+                widgetKey: '{{ this.getPaymentMethod().getSetting('widget_key') }}',
+                form: '.buy-with-apple-pay-form',
+                language: '{{ this.getCurrentLanguage().getCode() }}',
+                company: {
+                    name: '{{ this.config.Company.company_name }}',
+                    countryCode: '{{ this.config.Company.location_country }}',
+                },
+                applePay: {
+                    shippingMethods: {{ this.getShippingMethodsList()|raw }},
+                    requiredShippingFields: {{ this.getRequiredAddressFields('shipping')|raw }},
+                    requiredBillingFields: {{ this.getRequiredAddressFields('billing')|raw }},
+                },
+                order: {
+                    total: '{{ this.product.getDisplayPrice() }}',
+                    currency: '{{ this.getCart().getCurrency().getCode() }}'
+                },
+            });
+            if (xpaymentsBuyWithApplePay.isSupported()) {
+                xpaymentsBuyWithApplePay.load();
+            }
+            assignBuyWithApplePayHandlers();
+        }
+        if (xpaymentsBuyWithApplePay.isSupported()) {
+            jQuery('.apple-pay-buy-button').off('click').click(startBuyWithApplePayWidget);
+            jQuery('.apple-pay-buy-button-container').show();
+        }
+    }
+
+    if ('undefined' === typeof jQuery || 'undefined' === typeof core) {
+        document.addEventListener('DOMContentLoaded', function() {
+            jQuery(loadBuyWithApplePayWidget);
+        });
+    } else {
+        jQuery(loadBuyWithApplePayWidget);
+        core.bind('resources.ready', loadBuyWithApplePayWidget);
+    }
+
+  </script>
+</{{ this.getContainerTag() }}>

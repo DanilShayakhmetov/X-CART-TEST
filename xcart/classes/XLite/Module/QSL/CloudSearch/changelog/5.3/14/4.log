@@ -1,0 +1,5 @@
+Version 5.3.14.4
+
+[Improvement] Added shop profile API endpoint
+[Improvement] Catalog feed output type changed from serialized PHP string to JSON to improve indexing performance.
+[Fix] Fixed a bug when missing quick data caused products to be indexed without price.

@@ -1,0 +1,49 @@
+{##
+ # Braintree credit card container
+ #
+ #}
+
+<div class="card-container">
+
+  <div class="info">
+    {{ t('Created at') }}: {{ bcc.created }}{% if bcc.updated %}, {{ t('updated at') }}: {{ bcc.updated }}{% endif %}
+  </div>
+
+  <div class="card">
+    <img src="{{ bcc.image }}" alt="{{ bcc.type }}" class="logo"/>
+    <div class="card-block">
+      <span class="number">{% if bcc.email %}{{ bcc.email }}{% else %}{{ bcc.number }}{% endif %}</span>
+      <br />
+      <span class="expire">{% if bcc.expire %}{{ t('Expires:') }} {{ bcc.expire }}{% endif %}</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    {% if this.isDisplayDefaultAction() %}
+      <span class="default">
+        {% if bcc.default %}
+  
+          {{ t('This is default credit card') }}
+  
+        {% else %}
+  
+          <a href="javascript: void(0);"
+             class="btn button regular-button" 
+             onclick="$('#default-card-token').val('{{ bcc.token }}'); $('#braintree-credit-cards-form').submit();"
+          >{{ t('Make default') }}</a>
+  
+        {% endif %}
+      </span>
+    {% endif %}
+
+    <a href="javascript: void(0);" 
+       class="btn button regular-button"
+       onclick="$('#remove-card-token').val('{{ bcc.token }}'); $('#braintree-credit-cards-form').submit();"
+    >{{ t('Remove') }}</a>
+
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+
+<div class="clearfix"></div>

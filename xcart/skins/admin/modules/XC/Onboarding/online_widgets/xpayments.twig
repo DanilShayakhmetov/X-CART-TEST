@@ -1,0 +1,32 @@
+{##
+ # Onboarding wizard online payment method block
+ #}
+
+<xlite-onboarding-xpayments-card inline-template>
+    <div class="online online-xpayments" :class="classes">
+
+        <div class="image">
+            <img src="{{ asset('modules/XPay/XPaymentsCloud/method_icon.png') }}" alt="{{ t('X-Payments Cloud connector') }}" title="{{ t('X-Payments Cloud connector') }}" />
+        </div>
+
+        <div class="note">
+            {{ t('Process and store credit cards right on your website, accept recurring payments and reorders.') }}
+        </div>
+
+        {% if this.isConfigured() %}
+            <div class="switcher{% if this.isMethodEnabled() %} enabled{% endif %}">
+                <span class="inactive">{{ t('checkbox.onoff.off') }}</span>
+                <a href="#" @click.prevent="switchPaypalMethod({{ this.getMethodId() }}, $event)">
+                    <div>
+                        <span class="fa fa-check"></span>
+                    </div>
+                </a>
+                <span class="active">{{ t('checkbox.onoff.on') }}</span>
+            </div>
+        {% else %}
+            <div class="button">
+                {{ widget('\\XLite\\View\\Button\\Link', label=t('Launch'), location=this.getMethodSettingsUrl(), blank=1) }}
+            </div>
+        {% endif %}
+    </div>
+</xlite-onboarding-xpayments-card>

@@ -1,0 +1,25 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Domain name page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.domain-is-on-sale {
+  min-width: 500px;
+
+  .registrars {
+    margin: @rhythmic-unit 0;
+  }
+
+  .buttons-row {
+    display: flex;
+    flex-direction: row;
+
+    .button-container + .button-container {
+      margin-left: @rhythmic-unit;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-shipping_done {
+  .subheader {
+    font-size: 16px;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .placeholder {
+    width: 442px;
+    height: 168px;
+    margin: 70px auto;
+    position: relative;
+
+    .bg {
+      position: absolute;
+      width: 440px;
+      height: 101px;
+      left: 1px;
+      top: 41px;
+      z-index: 1;
+    }
+
+    .lg-box {
+      position: absolute;
+      width: 150px;
+      height: 140px;
+      left: 135px;
+      top: 2px;
+      z-index: 2;
+
+      animation-name: shipping-done-box;
+      animation-fill-mode: both;
+      animation-duration: 1s;
+      animation-delay: .5s;
+    }
+    
+    .sm-box {
+      position: absolute;
+      width: 70px;
+      height: 80px;
+      left: 236px;
+      top: 67px;
+      z-index: 3;
+
+      animation-name: shipping-done-box;
+      animation-fill-mode: both;
+      animation-duration: 1s;
+      animation-delay: .7s;
+    }
+  }
+
+  .buttons {
+    margin: 17px auto 3px;
+  }
+}
+
+/* Animations */
+
+@keyframes shipping-done-box {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  50% {
+    opacity: .6;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

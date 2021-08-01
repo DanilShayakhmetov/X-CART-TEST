@@ -1,0 +1,8 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-11-19 - [Change] Updated the htmlpurifier and MobileDetect libraries. #BUG-6975 #Core #Add2CartPopup #AMP
+
+Fixes (1)
+2020-01-29 - [Bug] Layout issues in the Add to cart popup with PayPal Express Checkout and Amazon Pay enabled. Fixed. #BUG-8067 https://bt.x-cart.com/view.php?id=51177 #Add2CartPopup #CrispWhiteSkin
+

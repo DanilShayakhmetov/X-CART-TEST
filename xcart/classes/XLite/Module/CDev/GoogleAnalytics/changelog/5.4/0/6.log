@@ -1,0 +1,6 @@
+Version 5.4.0.6
+
+Fixes (2)
+2020-01-23 - [Bug] The pageview event was not sent to GA if ecommerce tracking was disabled or on pages without impressions. Fixed. #BUG-8253 (Pavel Veselovsky) #GoogleAnalytics
+2019-12-16 - [Bug] Shipping cost was not included into order totals on the checkout page after a shipping method had been selected. Fixed. #BUG-7411 https://bt.x-cart.com/view.php?id=50679 (Pavel Veselovsky) #Core #GoogleAnalytics
+

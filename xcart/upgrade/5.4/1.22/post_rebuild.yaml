@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - { name: show_out_of_stock_products, category: General, type: 'XLite\View\FormField\Select\ShowOutOfStockProducts', orderby: 20000, translations: [{ code: en, option_name: 'How to show out of stock products', option_comment: 'Products marked as "Coming Soon" will be displayed in all sections.' }] }
+
+XLite\Model\Notification:
+  - templatesDirectory: low_limit_warning
+    translations:
+      - code: en
+        name: 'Low limit warning'
+        description: 'This message is used to notify the administrator if the product stock level reaches the low stock limit as specified in the product details.'

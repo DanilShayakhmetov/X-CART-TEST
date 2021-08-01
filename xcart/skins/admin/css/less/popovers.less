@@ -1,0 +1,35 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Popovers styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+ 
+ .popover-content {
+  padding: (@rhythmic-unit / 2);
+  font-size: @font-size-small;
+  line-height: @line-height-small-text;
+  color: @popover-color;
+  min-width: @popover-min-width;
+
+  * {
+   font-size: @font-size-small;
+  }
+
+  p:first-child {
+   margin-top: 0;
+  }
+
+  p:last-child {
+   margin-bottom: 0;
+  }
+
+  ul.custom-disc li:before {
+   width: 4px;
+   height: 4px;
+   top: 10px;
+   left: 10px;
+  }
+}

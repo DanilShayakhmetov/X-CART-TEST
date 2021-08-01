@@ -1,0 +1,50 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: use_custom_colors
+    category: 'XC\FroalaEditor'
+    type: XLite\View\FormField\Input\Checkbox\OnOffWithoutOffLabel
+    orderby: 10
+    translations:
+      - code: en
+        option_name: 'Use custom colors'
+      - code: ru
+        option_name: 'Использовать пользовательские цвета'
+  - name: custom_colors
+    category: 'XC\FroalaEditor'
+    type: XLite\Module\XC\FroalaEditor\View\FormField\ColorPalettePicker
+    orderby: 20
+    translations:
+      - code: en
+        option_name: 'Custom colors'
+      - code: ru
+        option_name: 'Пользовательские цвета'
+  - name: use_as_email_editor
+    category: 'XC\FroalaEditor'
+    type: XLite\View\FormField\Input\Checkbox\OnOffWithoutOffLabel
+    value: 1
+    orderby: 30
+    translations:
+      - code: en
+        option_name: 'Use Froala as a text editor for e-mail notifications'
+      - code: ru
+        option_name: 'Использовать Froala для редактирования текста e-mail уведомлений'
+
+XLite\Model\LanguageLabel:
+  - name: 'Content has script tags (Froala)'
+    translations:
+      - code: en
+        label: 'Content has script or style tags. Click the Code View button to edit them.'
+      - code: ru
+        label: 'В текстовом поле присутствуют тэги скриптов или стилей. Нажмите на кнопку "Просмотр HTML-кода", чтобы отредактировать эти тэги.'
+  - name: 'Froala Editor settings'
+    translations:
+      - code: en
+        label: 'Froala Editor settings'
+      - code: ru
+        label: 'Настройки редактора Froala'

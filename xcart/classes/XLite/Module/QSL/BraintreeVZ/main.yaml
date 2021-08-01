@@ -1,0 +1,12 @@
+version: 5.4.1.1
+type: payment
+authorName: 'X-Cart team'
+moduleName: 'PayPal powered by Braintree'
+description: 'Braintree is a full-stack payments platform that makes it easy to accept payments in your app or website. The service replaces the traditional model of sourcing a payment gateway and merchant account from different providers.'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith:
+  - 'QSL-Braintree'
+skins: {  }
+showSettingsForm: false
+canDisable: true

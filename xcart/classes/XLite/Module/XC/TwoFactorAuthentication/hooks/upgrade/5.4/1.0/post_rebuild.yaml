@@ -1,0 +1,27 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config :
+  - name : customer_interface
+    category : XC\TwoFactorAuthentication
+    type : checkbox
+    orderby : 300
+    translations :
+      - code : en
+        option_name : Use two-factor authentication for the customer interface
+      - code : ru
+        option_name : Включить двухфакторную аутентификацию для покупателей
+  - name : admin_interface
+    category : XC\TwoFactorAuthentication
+    type : checkbox
+    orderby : 400
+    translations :
+      - code : en
+        option_name : Use two-factor authentication for the administrator interface
+      - code : ru
+        option_name : Включить двухфакторную аутентификацию для администраторов
+

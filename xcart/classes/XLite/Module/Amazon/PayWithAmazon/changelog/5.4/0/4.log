@@ -1,0 +1,4 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-05-02 - [Change] Implemented Amazon Pay Strong Customer Authentication (PSD2). #XCN-9660 (Shevelov Alexander) #AmazonPay

@@ -1,0 +1,12 @@
+{##
+ # Shopping cart subtotal
+ #
+ # @ListChild (list="order.base.totals", weight="500")
+ #}
+{% if this.order.isMultiCurrencyOrder() %}
+  <li class="multicurrency-warning">
+    <div class="total-change-help">
+      <span>{{ widget('XLite\\Module\\XC\\MultiCurrency\\View\\AomChargeWarning', order=this.order) }}</span>
+    </div>
+  </li>
+{% endif %}

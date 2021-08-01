@@ -1,0 +1,118 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: fb_title
+    category: CDev\SocialLogin
+    type: XLite\Module\CDev\SocialLogin\View\FormField\Instructions
+    widgetParameters: { kbLink: "https://kb.x-cart.com/en/modules/social_login/setting_up_facebook_login_for_your_store.html", kbLabel: "Read instructions" }
+    orderby: 5
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Facebook'
+        option_comment: 'The "Facebook login" feature requires HTTPS to be properly set up for your store.'
+
+  - name: fb_request_location
+    category: CDev\SocialLogin
+    type: XLite\View\FormField\Input\Checkbox\YesNo
+    orderby: 7
+    value: 0
+    translations:
+      - code: en
+        option_name: 'Request user location'
+
+  - name: fb_client_id
+    category: CDev\SocialLogin
+    type: text
+    orderby: 10
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Facebook App ID/API Key'
+  - name: fb_client_secret
+    category: CDev\SocialLogin
+    type: text
+    orderby: 20
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Facebook App Secret'
+
+  - name: gg_title
+    category: CDev\SocialLogin
+    type: XLite\Module\CDev\SocialLogin\View\FormField\Instructions
+    widgetParameters: { kbLink: "https://kb.x-cart.com/en/modules/social_login/setting_up_google_login_for_your_store.html", kbLabel: "Read instructions" }
+    orderby: 25
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Google'
+        option_comment: 'Use the following link to set up "Authorized Redirect URLs" in your Client ID settings in Google console:<br/><a href="{{WEB_LC_ROOT}}?target=social_login&action=login&auth_provider=google" target="_blank">{{WEB_LC_ROOT}}?target=social_login&action=login&auth_provider=google</a>'
+
+  - name: gg_client_id
+    category: CDev\SocialLogin
+    type: text
+    orderby: 30
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Google Client ID'
+  - name: gg_client_secret
+    category: CDev\SocialLogin
+    type: text
+    orderby: 40
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Google Client secret'
+
+  - name: apple_title
+    category: CDev\SocialLogin
+    type: XLite\Module\CDev\SocialLogin\View\FormField\Instructions
+    widgetParameters: { kbLink: "https://kb.x-cart.com/modules/social_login/setting_up_apple_login.html", kbLabel: "read setup instructions" }
+    orderby: 50
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Apple'
+        option_comment: 'Use the following link for "Return URLs" parameter to configure your service ID:<br/><a href="{{WEB_LC_ROOT}}?target=social_login&action=login&auth_provider=apple" target="_blank">{{WEB_LC_ROOT}}?target=social_login&action=login&auth_provider=apple</a>'
+
+  - name: apple_identifier
+    category: CDev\SocialLogin
+    type: text
+    orderby: 60
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Identifier'
+
+XLite\Model\LanguageLabel:
+  - { name: 'Use existing account from', translations: [{ code: en, label: 'Use existing account from' }] }
+  - { name: 'Or use your social account', translations: [{ code: en, label: 'Or use your social account' }] }
+  - { name: 'Or sign in the classic way', translations: [{ code: en, label: 'Or sign in the classic way' }] }
+  - { name: 'Profile is disabled', translations: [{ code: en, label: 'Profile is disabled' }] }
+  - { name: 'We were unable to process this request', translations: [{ code: en, label: 'We were unable to process this request' }] }
+  - { name: 'Or register with', translations: [{ code: en, label: 'Or register with' }] }
+  - { name: 'Register with', translations: [{ code: en, label: 'Register with' }] }
+  - { name: 'Profile does not have any email address. Please sign in the classic way.', translations: [{ code: en, label: 'Profile does not have any email address. Please sign in the classic way.' }] }
+  - { name: 'or go to checkout as a New customer', translations: [{ code: en, label: 'or go to checkout as a New customer' }] }
+  - { name: 'Sign in with', translations: [{ code: en, label: 'Sign in with' }]}
+  - { name: 'https://kb.x-cart.com/en/modules/social_login/setting_up_google_login_for_your_store.html', translations: [{ code: en, label: 'https://kb.x-cart.com/modules/social_login/setting_up_google_login_for_your_store.html' }]}
+  - { name: 'https://kb.x-cart.com/en/modules/social_login/setting_up_facebook_login_for_your_store.html', translations: [{ code: en, label: 'https://kb.x-cart.com/modules/social_login/setting_up_facebook_login_for_your_store.html' }]}
+  - { name: 'https://kb.x-cart.com/modules/social_login/setting_up_apple_login.html', translations: [{ code: en, label: 'https://kb.x-cart.com/modules/social_login/setting_up_apple_login.html' }]}
+  - { name: 'Profile image', translations: [{ code: en, label: 'Profile image' }]}
+  - { name: 'Sorry, the password reset option is not available for this user account', translations: [{ code: en, label: 'Sorry, the password reset option is not available for this user account.' }]}
+  - { name: 'Invalid login or password. Please sign in with X', translations: [{ code: en, label: "Invalid login or password. <br/><span class=\"common-text\">Please sign in with {{provider}}</span>" }] }
+  - { name: 'Not configured. First you need to create a Facebook application for your site.', translations: [{ code: en, label: 'Not configured. First you need to create a Facebook application for your site.<br/>' }] }
+  - { name: 'Not configured. To enable Google login, you first need to create OAuth2 client ID for your site.', translations: [{ code: en, label: 'Not configured. To enable Google login, you first need to create OAuth2 client ID for your site.<br/>' }] }
+  - { name: 'Not configured. To configure web authentication.', translations: [{ code: en, label: 'Not configured. To configure web authentication, ' }] }
+  - { name: 'Configured. First you need to create a Facebook application for your site.', translations: [{ code: en, label: 'Configured. First you need to create a Facebook application for your site.<br/>' }] }
+  - { name: 'Configured. To enable Google login, you first need to create OAuth2 client ID for your site.', translations: [{ code: en, label: 'Configured. To enable Google login, you first need to create OAuth2 client ID for your site.<br/>' }] }
+  - { name: 'Configured. To configure web authentication.', translations: [{ code: en, label: 'Configured. To configure web authentication, ' }] }
+  - { name: 'The email you tried to use is already registered in our store. Please try logging in using your X account.', translations: [{ code: en, label: "The email you tried to use is already registered in our store. Please try logging in using your {{provider}} account." }] }
+  - { name: 'The email you tried to use is already registered in our store. Please sign in the classic way.', translations: [{ code: en, label: "The email you tried to use is already registered in our store. Please sign in the classic way!" }] }

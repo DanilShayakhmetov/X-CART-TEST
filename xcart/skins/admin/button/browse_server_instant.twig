@@ -1,0 +1,14 @@
+{##
+ # Browse server link. Popup window
+ #}
+
+<button class="{{ this.getClass() }}">
+  {{ this.displayCommentedData(this.getURLParams()) }}
+  {% set iconStyle = this.getParam('icon-style') %}
+  {% if iconStyle %}<span><i class="button-icon {{ iconStyle }}"></i></span>{% endif %}
+  <span>{{ t(this.getButtonContent()) }}</span>
+  <div class="browse-server-instant-wrapper">
+    {{ this.displayCommentedData(this.getCommentedData()) }}
+    <input name="local_server_file" type="hidden" value="" class="not-significant browse-server-input">
+  </div>
+</button>

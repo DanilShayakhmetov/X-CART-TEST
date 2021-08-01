@@ -1,0 +1,22 @@
+{##
+ # Create box
+ #}
+
+<li class="create-tpl clearfix" style="display:none">
+  <div class="attribute-name">
+   {{ widget('XLite\\View\\FormField\\Input\\Text', fieldName='newValue[NEW_ID][name]', fieldOnly='true', required='true', attributes={'placeholder': t('Attribute name')}) }}
+    <input type="hidden" name="newValue[NEW_ID][listId]" value="NEW_LIST_ID" /> 
+    <input type="hidden" name="newValue[NEW_ID][type]" value="NEW_TYPE" />
+    {% if not this.getPersonalOnly() %}
+      <span class="adding-label global-all">{{ t("Will be added globally") }}</span>
+      <span class="adding-label global-class">{{ t("Will be added to the product class") }}</span>
+    {% endif %}
+    {{ widget_list('product.attributes.display_modes') }}
+  </div>
+  {% for w in this.getDefaultWidgets() %}
+    {{ w.display() }}
+  {% endfor %}
+  <div class="actions">
+    {{ widget('XLite\\View\\Button\\Remove', label=t('Remove'), style='delete') }}
+  </div>
+</li>

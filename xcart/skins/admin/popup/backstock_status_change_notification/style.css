@@ -1,0 +1,17 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Backstock notification popup
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.backstock-status-change-notification .message {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.backstock-status-change-notification .buttons {
+  text-align: center;
+}

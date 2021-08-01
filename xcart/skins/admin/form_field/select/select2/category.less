@@ -1,0 +1,40 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Select2 category styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.categoryId-condition .tooltip .tooltip-inner,
+.select-select2-category .tooltip .tooltip-inner {
+  text-align: left;
+}
+
+.categoryId-condition .tooltip .path .part .part,
+.select-select2-category .tooltip .path .part .part {
+  margin-left: 15px;
+}
+
+.any-category {
+  color: @color-tip;
+}
+
+@keyframes ellipsis {
+  from {
+    width: 2px;
+  }
+  to {
+    width: 10px;
+  }
+}
+
+.searching:after,
+.loading-more:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis 1s infinite;
+  content: "\2026";
+}

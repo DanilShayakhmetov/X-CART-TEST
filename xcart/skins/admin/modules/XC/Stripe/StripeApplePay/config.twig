@@ -1,0 +1,10 @@
+<p>{{ t('To complete the StripeApplePay configuration', {'admin_link': this.getParentUrl() })|raw }}</p>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+
+	<tr>
+	  <td class="setting-name"><label for="settings_prefix">{{ t('Invoice number prefix') }}</label></td>
+	  <td><input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('prefix') }}" name="settings[prefix]" /></td>
+	</tr>
+
+</table>

@@ -1,0 +1,5 @@
+Version 5.4.0.8
+
+Improvements (1)
+2020-07-08 - [Change] Added currency rate request logging for MultiCurrency. #BUG-8689 #MultiCurrency
+

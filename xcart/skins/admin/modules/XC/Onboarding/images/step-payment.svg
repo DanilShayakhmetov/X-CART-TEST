@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Last_changes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="payment" stroke="#708692" stroke-width="2">
+            <g transform="translate(6.000000, 6.000000)" id="Line">
+                <path d="M0.5,7 L0.5,33.5090393 C0.5,35.1609013 1.85244012,36.5 3.49765987,36.5 L35.5023401,36.5 C37.157902,36.5 38.5,35.1492607 38.5,33.5029745 L38.5,11.492026 C38.5,9.83681453 37.1599141,8.4950005 35.495602,8.4950005 L3,8.4950005 C8.8817842e-16,8.4950005 0.5,6 0.5,6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M38,19.5 L33.0016655,19.5 C31.3438914,19.5 30,20.8465171 30,22.5 L30,22.5 C30,24.1568542 31.3390201,25.5 33.0016655,25.5 L38,25.5" stroke-linecap="square"></path>
+                <path d="M33,22.5 L35,22.5 L33,22.5 Z" stroke-linecap="square"></path>
+                <polyline stroke-linecap="round" stroke-linejoin="round" points="30.5 8 28 0.5 7.5 8.30000305"></polyline>
+                <path d="M29.5,3.5 L32.5074768,3.5 C33.8840594,3.5 35,4.60966206 35,6 L35,8.5" stroke-linecap="square"></path>
+                <path d="M0.5,8.5 L0.5,5.5048815 C0.5,4.39761602 1.39411551,3.5 2.49413074,3.5 L19.2999992,3.5" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

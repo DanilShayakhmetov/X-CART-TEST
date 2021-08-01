@@ -1,0 +1,29 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * File title text inline
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.inline-field.inline-text-file {
+  position: relative;
+  display: flex;
+}
+
+.inline-field.inline-text-file:before {
+  content: '';
+  position: relative;
+  height: 40px;
+  width: 25px;
+  background-image: url(../../../../../../common/images/files/text.svg);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  flex: none;
+}
+
+.inline-field .input-field-wrapper.input-checkbox-freepaid {
+  vertical-align: middle;
+}

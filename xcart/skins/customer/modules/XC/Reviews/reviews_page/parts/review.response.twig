@@ -1,0 +1,10 @@
+{##
+ # Review block
+ #
+ # @ListChild (list="reviews.review", weight="500")
+ #}
+{% if this.review.getResponse() %}
+  <div class="response">
+    {{ widget_list('reviews.review.response', review=this.review) }}
+  </div>
+{% endif %}

@@ -1,0 +1,15 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Froala css styles
+ *
+ * Copyright (c) 2001-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+body p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #808080;
+  font-family: "Open Sans", Arial, sans-serif;
+}

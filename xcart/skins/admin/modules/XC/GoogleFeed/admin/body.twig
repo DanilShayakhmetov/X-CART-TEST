@@ -1,0 +1,20 @@
+{##
+ # Sitemap page
+ #}
+
+<div class="google-feed-page">
+{% if this.isFeedGenerationNotFinished() %}
+  {{ widget('XLite\\Module\\XC\\GoogleFeed\\View\\FeedGeneration\\Progress') }}
+{% else %}
+  <div class="google-feed settings general-settings">
+    {{ widget('XLite\\View\\Button\\Regular', label='Generate Google Feed', jsCode='self.location=\'' ~ url('google_feed', 'generate') ~ '\'', style='action always-enabled generate-button') }}
+    {% if this.isFeedGenerated() %}
+      <p class="url">{{ t('Google Feed URL: X', {'url': this.getFeedURL()})|raw }}</p>
+    {% else %}
+      <p class="url">{{ t('Google Feed has not been generated yet') }}</p>
+    {% endif %}
+
+    {{ widget('XLite\\View\\Model\\Settings') }}
+  </div>
+{% endif %}
+</div>

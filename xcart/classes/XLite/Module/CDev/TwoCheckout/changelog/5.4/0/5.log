@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Improvements (1)
+2020-01-21 - [Change] Updated the list of countries in which payment methods are available. #BUG-8228 #Skrill #Paypal #TwoCheckout #Stripe #SagePay #DatatransUPP #AmazonPay #G2APay #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #BitPay #CCBill #ESelectHPP #Worldpay #FirstDataPayeezyGatewayHP #DIBSFlexWin #SecureTrading #InternetSecure #SecurePay #EGateway
+

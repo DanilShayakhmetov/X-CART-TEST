@@ -1,0 +1,4 @@
+{##
+ # Subject tempalate
+ #}
+{% if not this.hideCompanyInSubject %}{{ this.config.Company.company_name|raw }}: {% endif %}{% include [this.dir ~ '/subject.twig', 'common/default_subject.twig'] %}

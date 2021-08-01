@@ -1,0 +1,18 @@
+{##
+ # Intro step
+ #}
+
+<div
+  class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+  v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+  :transition="stepTransition">
+  <div class="step-contents">
+    <div class="bottom-sticky" v-if="isCurrentStep('{{ this.getStepIndex() }}')" transition="fade-in-out">
+      {{ widget('XLite\\View\\Button\\Regular', label=t("onboarding.intro.next_button"), style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+      <div class="additional-buttons">
+        {{ widget('XLite\\View\\Button\\SimpleLink', label=t("onboarding.intro.later_button"), attributes={'@click': 'hideWizard'}, jsCode="null;") }}
+        {{ widget('XLite\\View\\Button\\SimpleLink', label=t("onboarding.intro.disable_button"), attributes={'@click': 'disableWizard'}, jsCode="null;") }}
+      </div>
+    </div>
+  </div>
+</div>

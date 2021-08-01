@@ -1,0 +1,8 @@
+<div class="onboarding-wizard-mini-informer" id="wizard-mini-status">
+  {{ widget('XLite\\View\\Button\\SimpleLink', label="", location=this.getWizardUrl(), attributes={'data-progress': this.getCurrentProgress()}) }}
+  <div class="progress-circle" data-value="{{ this.getCurrentProgress() / 100.0 }}"></div>
+  <div class="progress-status">
+    <div class="status-message">{{ this.getStatusMessage() }}</div>
+    <span>{{ this.getButtonLabel() }}</span>
+  </div>
+</div>

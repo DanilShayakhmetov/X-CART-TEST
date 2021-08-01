@@ -1,0 +1,119 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Select2 multiple emails widget style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) '../../css/initialize';
+
+.multiple-emails-container.form-control {
+  min-width: @form-value-input-width;
+  max-width: @form-value-input-width-large;
+  width: auto !important;
+  cursor: text;
+  padding: (@multiselect-margin / 2);
+  position: relative;
+  height: auto;
+
+  .options {
+    padding: 0;
+    .flex-display();
+    .align-items(center);
+    .flex-wrap(wrap);
+
+    & > span {
+      margin: @multiselect-margin / 2;
+      padding: @multiselect-option-padding;
+      padding-left: 0;
+      padding-right: 1px;
+    }
+  }
+
+  .option {
+    margin: (@multiselect-margin / 2);
+    position: relative;
+    background: @color-link-2;
+    color: @input-bg;
+    height: 100%;
+    display: inline-block;
+    line-height: @line-height-base;
+    padding: @multiselect-option-padding;
+    border-radius: @border-radius-base;
+    cursor: move;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: @multiselect-option-max-width;
+
+    .transition-multi(@input-transition-property);
+
+    .option-remove {
+      position: absolute;
+      cursor: pointer;
+      .flex-display();
+      .align-items(center);
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin-right: 2px;
+
+      span {
+        display: inline-block;
+        font-size: @rhythmic-lineheight;
+        font-weight: @font-thin;
+      }
+
+      &:hover {
+        color: darken(@multiselect-color, 10%);
+      }
+    }
+
+    &:first-of-type {
+      background-color: @multiselect-bg-primary;
+      color: @multiselect-color-primary;
+      box-shadow: none;
+
+      .option-remove {
+        color: @multiselect-color-primary;
+
+        &:hover {
+          color: darken(@multiselect-color-primary, 10%);
+        }
+      }
+    }
+
+    &.ui-sortable-placeholder {
+      height: @rhythmic-unit;
+      vertical-align: bottom;
+    }
+  }
+
+  & > [contenteditable=true] {
+    height: 100%;
+    display: inline-block;
+    padding: @multiselect-margin;
+    margin: (@multiselect-margin / 2);
+    font-size: @font-size-base;
+  }
+
+  &.disabled {
+    cursor: @cursor-disabled;
+    opacity: .5;
+    background-color: @input-bg-disabled;
+
+    &:focus {
+      box-shadow: none !important;
+      border-color: @color-border !important;
+    }
+
+    .option {
+      cursor: @cursor-disabled;
+
+      .option-remove {
+        cursor: @cursor-disabled;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{##
+ # Log out link
+ #
+ # @ListChild (list="layout.header.bar.links.logged", weight="-100")
+ #}
+
+{% if this.getProfileLogin() %}
+	<li class="account-email">
+		<span>{{ this.getProfileLogin() }}</span>
+	</li>
+	<li class="separator"><hr /></li>
+{% endif %}

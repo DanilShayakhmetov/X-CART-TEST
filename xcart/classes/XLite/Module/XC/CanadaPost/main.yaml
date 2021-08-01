@@ -1,0 +1,19 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.1.3
+type: shipping
+authorName: 'X-Cart team'
+moduleName: 'Canada Post'
+description: 'Gets shipping quotes for Canada Post delivery methods.'
+minorRequiredCoreVersion: 1
+dependsOn: {  }
+incompatibleWith: {  }
+skins:
+    admin: [admin/modules/XC/CanadaPost/admin_skin]
+showSettingsForm: true
+canDisable: true

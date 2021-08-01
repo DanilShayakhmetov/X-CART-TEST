@@ -1,0 +1,5 @@
+Version 5.4.0.6
+
+Fixes (1)
+2020-06-24 - [Bug] Error when adding a product to (or removing the product from) Product comparison with output_buffer = Off. Fixed. #BUG-8688 https://bt.x-cart.com/view.php?id=50067 #ProductComparison
+

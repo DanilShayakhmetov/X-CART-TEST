@@ -1,0 +1,12 @@
+Version 5.4.1.0
+
+Improvements (2)
+2020-02-26 - [Change] Changed the layout and arrangement of notifications (low stock / new messages / etc) on the dashboard in the Admin area. #XCN-10420 #Core #Paypal #ProductVariants #ProductReviews #CrispWhiteSkin #MultiVendor #FreeShipping #VendorMessages #TrustedVendors #ShopperApproved #Onboarding
+2019-12-25 - [Change] Added a new variable - first_name - for use in email notifications setup. The value for this variable is taken from the respective field of a customer profile. #BUG-7942 #Core #MultiVendor #VendorMessages
+
+Fixes (4)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-03-11 - [Bug] Fatal error when attempting to change the status of Order messages using the Mark all unread or Mark all read setting. Fixed. #BUG-8419 #VendorMessages
+2020-02-27 - [Bug] Errors when trying to access a missing order in AOM via a direct link. Fixed. #BUG-8179 #Core #VendorMessages
+2020-01-29 - [Bug] Minor refactoring for the "Messages" addon. #BUG-8075 #VendorMessages
+

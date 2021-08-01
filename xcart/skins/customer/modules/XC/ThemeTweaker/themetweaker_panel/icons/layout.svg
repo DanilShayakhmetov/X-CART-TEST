@@ -1,0 +1,18 @@
+<svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect height="10.182" id="a" rx="2" width="10.182" x="4.455"/>
+        <mask fill="#fff" height="10.182" id="c" width="10.182" x="0" y="0">
+            <use xlink:href="#a"/>
+        </mask>
+        <rect height="10.182" id="b" rx="2" width="10.182" y="3.818"/>
+        <mask fill="#fff" height="10.182" id="d" width="10.182" x="0" y="0">
+            <use xlink:href="#b"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#3B4859" stroke-width="2">
+            <use mask="url(#c)" stroke-dasharray="1,1" xlink:href="#a"/>
+            <use fill="#FFF" mask="url(#d)" xlink:href="#b"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+{##
+ # Resize progress section
+ #}
+
+<div class="event-task-progress-page resize-box resize-progress">
+
+  <div class="content">
+    {% form 'XLite\\View\\Form\\ImageResize' with {formAction: 'imageResizeCancel'} %}
+    <div class="subcontent clearfix">
+      {{ widget('XLite\\View\\EventTaskProgress', event=this.getEventName(), message=this.getProgressMessage(), showCancel=false ) }}
+    </div>
+    {{ widget('XLite\\View\\StickyPanel\\EventProgress') }}
+    {% endform %}
+  </div>
+
+</div>

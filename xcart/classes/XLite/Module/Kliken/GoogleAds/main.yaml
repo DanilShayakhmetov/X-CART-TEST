@@ -1,0 +1,8 @@
+version: 5.4.1.4
+authorName: 'Kliken'
+moduleName: 'Google Ads by Kliken'
+description: 'The automated Google Shopping solution to get your products found on Google, and grow your X-Cart Store!'
+minorRequiredCoreVersion: 0
+showSettingsForm: true
+dependsOn:
+    - 'XC-RESTAPI'

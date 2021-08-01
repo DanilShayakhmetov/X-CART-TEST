@@ -1,0 +1,101 @@
+<div class="stripe configured">
+
+  {% if this.paymentMethod.getReferralPageURL() %}
+    <div class="note">
+      {{ t('Don\'t have an account?') }}
+      <span class="external"><a href="{{ this.paymentMethod.getReferralPageURL() }}" target="_blank">{{ t('Sign Up Now') }}</a> <i class="icon fa fa-external-link"></i></span>
+    </div>
+  {% endif %}
+
+  <p class="note">{{ t('Copy Webhook URL and go to Account settings')|raw }}</p>
+
+  <div class="webhook">
+    <div class="url">
+      {{ widget('XLite\\View\\Button\\CopyLink', copy=this.paymentMethod.getWebhookURL()) }}
+      {{ this.paymentMethod.getWebhookURL() }}
+    </div>
+    {{ widget('XLite\\View\\Tooltip', text=t('Webhook URL is your store\'s URL through which Stripe informs your store about any changes in the order'), isImageTag='true', className='help-icon') }}
+  </div>
+
+  <div class="instruction non-visible">
+    <a href="#" class="switcher switcher-show">{{ t('Show "How to use" instruction') }}</a>
+    <a href="#" class="switcher switcher-hide">{{ t('Hide "How to use" instruction') }}</a>
+
+    <ul>
+      <li class="step-1">
+        <div class="number">1</div>
+        <p>{{ t('Open the page "Webhooks" in the "Developers" section of dashboard.stripe.com: https://dashboard.stripe.com/account/webhooks')|raw }}</p>
+      </li>
+      <li class="step-2">
+        <div class="number">2</div>
+        <p>{{ t('In the section "Endpoints receiving events from your account", click "+ Add endpoint".')|raw }}</p>
+      </li>
+      <li class="step-3">
+        <div class="number">3</div>
+        <p>{{ t('In the form that opens, paste the "Webhook URL" value into the field "URL to be called" and click "Add endpoint".')|raw }}</p>
+      </li>
+
+      <li class="more">
+        <p>{{ t('More information on the setup of webhooks is available here: https://stripe.com/docs/webhooks#configuring-your-webhook-settings')|raw }}</p>
+      </li>
+    </ul>
+
+  </div>
+
+  <table cellspacing="1" cellpadding="5" class="settings-table">
+
+    <tr>
+      <td class="setting-name"><label for="settings_accessToken">{{ t('Secret key') }}</label></td>
+      <td>
+        <input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('accessToken') }}" name="settings[accessToken]" />
+      </td>
+    </tr>
+
+    <tr>
+      <td class="setting-name"><label for="settings_publishKey">{{ t('Publishable key') }}</label></td>
+      <td>
+        <input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('publishKey') }}" name="settings[publishKey]" />
+      </td>
+    </tr>
+
+    <tr>
+      <td class="setting-name"><label for="settings_accessTokenTest">{{ t('Secret key (test mode)') }}</label></td>
+      <td>
+        <input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('accessTokenTest') }}" name="settings[accessTokenTest]" />
+      </td>
+    </tr>
+
+    <tr>
+      <td class="setting-name"><label for="settings_publishKeyTest">{{ t('Publishable key (test mode)') }}</label></td>
+      <td>
+        <input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('publishKeyTest') }}" name="settings[publishKeyTest]" />
+      </td>
+    </tr>
+
+    <tr>
+      <td class="setting-name"><label for="settings_type">{{ t('Transaction type') }}</label></td>
+      <td>
+        <select id="settings_type" name="settings[type]" class="form-control">
+          <option value="sale" {% if this.paymentMethod.getSetting('type') == 'sale' %} selected="selected" {% endif %}>{{ t('Authorization and Capture') }}</option>
+          <option value="auth" {% if this.paymentMethod.getSetting('type') == 'auth' %} selected="selected" {% endif %}>{{ t('Authorization only') }}</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="setting-name"><label for="settings_mode">{{ t('Test/Live mode') }}</label></td>
+      <td>
+        {{ widget('\\XLite\\View\\FormField\\Select\\TestLiveMode', fieldId='settings_mode', fieldName='settings[mode]', fieldOnly='true', value=this.paymentMethod.getSetting('mode')) }}
+      </td>
+    </tr>
+
+    <tr>
+      <td class="setting-name"><label for="settings_prefix">{{ t('Invoice number prefix') }}</label></td>
+      <td><input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('prefix') }}" name="settings[prefix]" /></td>
+    </tr>
+
+  </table>
+
+</div>
+
+{{ widget('\\XLite\\Module\\XC\\Stripe\\View\\StickyPanel\\Payment\\Configured') }}

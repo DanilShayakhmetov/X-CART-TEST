@@ -1,0 +1,9 @@
+{##
+ # Uses count
+ #}
+
+{% if this.entity.getSpecificProducts() %}
+  <a href="{{ url('sale_discount', '', {'id': this.entity.getId(), 'page': 'products'}) }}" class="count-link">
+    {{ t('Products (X)', {'count': this.entity.getSaleDiscountProducts().count()}) }}
+  </a>
+{% endif %}

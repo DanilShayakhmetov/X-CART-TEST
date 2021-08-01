@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: intlContainer
+    category: CDev\USPS
+    type: XLite\Module\CDev\USPS\View\FormField\Select\ContainerIntl
+    value: NONROLL
+    orderby: 420
+    translations:
+      - code: en
+        option_name: Container

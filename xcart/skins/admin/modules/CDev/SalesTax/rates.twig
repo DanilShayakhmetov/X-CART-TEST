@@ -1,0 +1,17 @@
+{##
+ # Tax edit page : Rates template
+ #}
+
+<div class="{{ this.getDialogCSSClasses() }}">
+
+  <div id="main-rates" class="legend">
+    <h2 class="title">{{ t('General tax rates') }}</h2>
+    {{ widget('XLite\\Module\\CDev\\SalesTax\\View\\ItemsList\\Model\\Rate') }}
+  </div>
+
+  <div id="shipping-rates">
+    <h2 class="title">{{ t('Tax rates on shipping cost') }}</h2>
+    {{ widget('XLite\\Module\\CDev\\SalesTax\\View\\ItemsList\\Model\\ShippingRate') }}
+  </div>
+
+</div>

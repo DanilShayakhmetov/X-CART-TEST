@@ -1,0 +1,9 @@
+Version 5.4.0.4
+
+Fixes (5)
+2019-11-06 - [Bug] JS error in the console when adding a currency. Fixed. #BUG-7741 (Jamil Ainulov) #MultiCurrency
+2019-11-01 - [Bug] In a store using the addon Multicurrency with more than one currency enabled, a selector allowing the user to select a country was available in the Customer area even when there was just one country. Fixed. #BUG-6956 https://bt.x-cart.com/view.php?id=50315 (Pavel Veselovsky) #CrispWhiteSkin #MultiCurrency
+2019-10-16 - [Bug] Fixed the fatal error related to entering long prefix or suffix values for a currency. #BUG-7239 (Pavel Veselovsky) #MultiCurrency
+2019-10-01 - [Bug] Incorrect currency symbol in product prices after the currency was switched from the primary currency to a different one. Fixed. #BUG-7523 https://bt.x-cart.com/view.php?id=50763 (Nikita Erkhov) #MultiCurrency
+2019-09-27 - [Bug] When exporting products with variants, the default variant selection was not saved. Fixed. #BUG-7761 https://bt.x-cart.com/view.php?id=51005 (Nikita Erkhov) #ProductVariants #MultiCurrency
+

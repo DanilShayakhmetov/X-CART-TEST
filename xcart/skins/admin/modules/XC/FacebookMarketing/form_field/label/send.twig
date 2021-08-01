@@ -1,0 +1,9 @@
+{##
+ # Copy widget field template
+ #}
+
+{{ widget('XLite\\View\\FormField\\Input\\Text', value=this.getValue(), attributes={'readonly': 'readonly'}) }}
+{{ widget('\\XLite\\View\\Button\\Regular', action='sendFeedToFB', label='Send feed to Facebook' ) }}
+<div class="help-wrapper">
+ {{ widget('XLite\\View\\Tooltip', text=this.getHelpText(), className='help-icon') }}
+</div>

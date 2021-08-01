@@ -1,0 +1,9 @@
+Version 5.4.2.0
+
+Improvements (2)
+2020-04-29 - [Change] Changes to email notification templates. #XCN-10817 #Core #ContactUs #Egoods #CanadaPost #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+2019-04-24 - [Change] Implemented Digital Ocean Storage support. Changed the section heading and some text labels for the fields on the addon settings page. Added the selector "Storage" to enable the selection of storage location. #XCN-10826 #Egoods
+
+Fixes (1)
+2020-04-28 - [Bug] E-goods. It was not possible to attach more than one AmazonS3-file to a product. Fixed. #BUG-8575 #Egoods #FileAttachments
+

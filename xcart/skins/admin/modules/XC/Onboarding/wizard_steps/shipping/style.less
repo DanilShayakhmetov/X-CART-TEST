@@ -1,0 +1,98 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-shipping {
+  padding-bottom: 0;
+
+  .step-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+
+
+    .go-to-shipping,
+    .skip-shipping,
+    .separator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .separator {
+      height: auto;
+      margin: 0;
+      border: none;
+    }
+
+    .go-to-shipping,
+    .skip-shipping {
+      width: 300px;
+      justify-content: space-between;
+
+      .image {
+        display: flex;
+        align-items: center;
+        height: 220px;
+        margin-bottom: 20px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .note {
+        font-size: 16px;
+        text-align: center;
+        color: @color-text-dark;
+        margin-bottom: 40px;
+      }
+
+      .button {
+        width: 100%;
+
+        button {
+          min-width: 250px;
+        }
+      }
+    }
+
+    .go-to-shipping .image img {
+      max-height: 220px;
+    }
+
+    .skip-shipping .image img {
+      max-height: 150px;
+    }
+
+    .separator {
+      width: 200px;
+      justify-content: flex-start;
+      font-size: 16px;
+      color: #000000;
+
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 80px;
+        border-left: 1px solid #ccd0d2;
+      }
+
+      &:before {
+        margin: 40px 0 10px;
+      }
+
+      &:after {
+        margin: 10px 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{##
+ # HTTPS settings page template 
+ #}
+
+<div class="https-settings-dialog">
+
+  {## top messages *#}
+
+  {% if not this.isEnabledHTTPS() %}
+    <p class="note">
+      {{ t('Before enabling HTTPS protocol read this article:', {'articleUrl': this.getArticleUrl()})|raw }}
+    </p>
+
+    {% if this.isAvailableHTTPS() %}
+      {% if this.isValidSSL() %}
+        <div class="alert alert-warning">
+          {{ t('The secure protocol for your website is disabled.') }}
+        </div>
+      {% endif %}
+      {% if not this.isValidSSL() %}
+        <div class="alert alert-danger">
+          {{ t('X-Cart could not find a valid SSL certificate on your server X.', {'domain': this.getDomain()})|raw }}
+          <br>
+          {{ t('Although you can switch the store to use the secure protocol for the website pages, most Internet browsers will likely display a warning message scaring your website visitors away.') }}
+          <br>
+          {{ t('You can get more information using this service: ', {'url': this.getReadMoreLink()})|raw }}
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="alert alert-danger">
+        {{ t('To enable secure protocol for your website pages you need a valid SSL certificate purchased for the website domain and installed on your server.', {'domain': this.getDomain()})|raw }}
+      </div>
+    {% endif %}
+  {% else %}
+
+    {% if this.isValidSSL() %}
+      <div class="alert alert-success">
+        {{ t('The secure protocol for your website is enabled.') }}
+      </div>
+    {% endif %}
+
+    {% if this.isAvailableHTTPS() and not this.isValidSSL() %}
+      <p>{{ t('The HTTPS protocol is enabled for your website') }}.</p>
+      <div class="alert alert-warning">
+        {{ t('X-Cart could not find a valid SSL certificate on your server X.', {'domain': this.getDomain()})|raw }}
+        <br>
+        {{ t('Although you can switch the store to use the secure protocol for the website pages, most Internet browsers will likely display a warning message scaring your website visitors away.') }}
+        <br>
+        {{ t('You can get more information using this service: ', {'url': this.getReadMoreLink()})|raw }}
+      </div>
+    {% endif %}
+
+  {% endif %}
+
+  {## bottom messages *#}
+
+  {% if this.isEnabledHTTPS() and this.isValidSSL() %}
+    <p class="note">
+      {{ t('Your store is configured to use the secure protocol for the store back-end and checkout, sign-in and profile pages.') }}
+    </p>
+  {% endif %}
+
+  {% if this.isAvailableHTTPS() and this.isValidSSL() and not this.isEnabledHTTPS() %}
+    <p class="note">
+      {{ t('We have found a valid SSL certificate installed on the server. Now you can switch the store to use the secure protocol for the store back-end and checkout, sign-in and profile pages.') }}
+    </p>
+  {% endif %}
+</div>
+
+{{ widget('XLite\\View\\StickyPanel\\HttpsSettings') }}

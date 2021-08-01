@@ -1,0 +1,6 @@
+Version 5.4.1.14
+
+Fixes (2)
+2020-09-17 - [Bug] Reduced the number of admin -> service requests for Cloud. #BUG-9028 #Core #Cloud
+2020-09-16 - [Bug] Issues related to video uploads via Froala WYSIWYG editor. Fixed. #BUG-9023 #Core #ThemeTweaker #Froala
+

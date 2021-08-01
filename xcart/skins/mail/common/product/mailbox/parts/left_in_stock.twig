@@ -1,0 +1,9 @@
+{##
+ # Product mailbox lest in stock
+ #
+ # @ListChild (list="product_mail_box", weight="400")
+ #}
+
+{% if this.isDisplayLeftInStock() %}
+  <div class="left-in-stock">{{ t('Left in stock: {{quantity}}', {'quantity':this.getLeftInStock()}) }}</div>
+{% endif %}

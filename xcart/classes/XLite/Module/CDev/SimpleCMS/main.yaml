@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.1.3
+type: common
+authorName: 'X-Cart team'
+moduleName: 'Simple CMS'
+description: 'Allows you to add a company logo and favicon, modify the primary website menu, edit the footer links and add custom website pages. When used with TinyMCE and Go Social modules, allows you to configure OpenGraph tags for your pages and edit their contents in the WYSIWYG mode. The module is incompatible with modules integrating your store with third-party CMS solutions.'
+minorRequiredCoreVersion: 1
+dependsOn: {  }
+incompatibleWith:
+    - CDev-DrupalConnector
+    - SpurIT-SEConnector
+    - QSL-ExtendedSimpleCMS
+skins: {  }
+showSettingsForm: true
+canDisable: true

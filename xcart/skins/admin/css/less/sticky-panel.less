@@ -1,0 +1,230 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Sticky panel common styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.sticky-panel {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  margin-top: (@rhythmic-unit * 2);
+  padding: 0;
+  overflow: visible;
+
+  .popover {
+    max-width: 250px;
+  }
+}
+
+.sticky-panel .box {
+  top: 0;
+  background-color: @body-bg;
+  position: absolute;
+  overflow: visible;
+  border-top: @border-base solid @color-border;
+  z-index: 100;
+  height: @rhythmic-unit * 3;
+
+  display: flex;
+  align-items: center;
+}
+
+.sticky-panel .box.sticky {
+  border-top: @border-base solid @color-border;
+}
+
+.sticky-panel .box .dropdown-menu button {
+  font-size: @font-size-base;
+  text-align: left;
+}
+
+.btn-group > .more-action.first-visible {
+  border-top-left-radius: @border-radius-base !important;
+  border-bottom-left-radius: @border-radius-base !important;
+}
+
+.btn-group > .more-action.last-visible {
+  border-top-right-radius: @border-radius-base !important;
+  border-bottom-right-radius: @border-radius-base !important;
+}
+
+
+/* Sticky panel */
+.sticky-panel {
+  .center-full-width();
+
+  .box {
+    width: 100%;
+    padding-left: @center-padding-left;
+
+    &.sticky {
+      width: ~"calc(100% - " @left-side-menu-width ~")";
+    }
+
+    .ui-dialog & {
+      border-top: none;
+      padding-left: 0;
+      height: (@rhythmic-unit * 2);
+    }
+  }
+
+  .ui-dialog & {
+    position: relative;
+    width: auto;
+    margin-left: 0;
+    margin-top: @rhythmic-unit;
+    height: (@rhythmic-unit * 2) !important;
+  }
+
+}
+
+.left-menu-compressed {
+  .sticky-panel .box.sticky {
+    width: ~"calc(100% - " @left-side-menu-width-compressed ~")";
+  }
+}
+
+.sticky-panel .panel-cell {
+  display: inline-block;
+  margin: 0 (@rhythmic-unit / 2);
+}
+
+.sticky-panel .panel-cell:first-child {
+  margin-left: 0;
+}
+
+.sticky-panel .panel-cell:last-child {
+  margin-right: 0;
+}
+
+.sticky-panel .panel-cell .icon-only {
+  min-width: 40px;
+}
+
+.sticky-panel div.cancel,
+.sticky-panel div.additional
+{
+  display: table;
+}
+
+.sticky-panel a.cancel {
+  text-indent: -5000px;
+  display: block;
+  background: transparent url(../../images/icon_cancel.png) no-repeat left top;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+.sticky-panel a.cancel.disabled {
+  opacity: .5;
+  cursor: text;
+}
+
+.sticky-panel.has-add-buttons .additional {
+  div.or {
+    font-size: @font-size-base;
+    margin-right: 12px;
+    color: @color-tip;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: @input-height-base;
+  }
+
+  &.additional-hidden {
+    margin: 0;
+
+    .additional-buttons {
+      & > div.or {
+        display: none;
+      }
+
+      & > .btn-group>:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons > .btn-group > :first-child {
+  margin-left: (@rhythmic-unit / 2);
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons > .btn-group > .table-label {
+  padding-top: (@rhythmic-unit / 3);
+  padding-bottom: (@rhythmic-unit / 3);
+}
+
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .modules-not-selected {
+  font-size: @font-size-base;
+  margin: 4px 0 4px 16px;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .module-box {
+  margin: 0 @rhythmic-unit;
+  line-height: @input-height-base;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  color: @text-color;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .module-box:hover {
+  color: @color-hover;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .module-box.clone {
+  display: none;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .modules-amount {
+  vertical-align: bottom;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .module-box .remove-action {
+  cursor: pointer;
+  margin: 0 0 0 30px;
+  position: relative;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .module-box .remove-action:after {
+  content: "+";
+  font-size: 30px;
+  font-weight: 100;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .module-box .module-name {
+  white-space: nowrap;
+  flex-grow: 1;
+  cursor: default;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .module-box .remove-action .info {
+  display: none;
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons .hide-selected {
+  display: none;
+}
+
+.sticky-panel .fa-angle-up {
+  margin-left: (@rhythmic-unit / 2);
+}
+
+.sticky-panel.has-add-buttons .additional .additional-buttons {
+  .fa-power-off:before {
+    font-size: 13px;
+  }
+  .fa-trash-o:before {
+    font-size: 14px;
+  }
+}

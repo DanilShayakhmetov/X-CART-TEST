@@ -1,0 +1,53 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Tooltips styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+ 
+.tooltip-main {
+  cursor: default;
+  text-align: right;
+  display: inline-block;
+
+  .tooltip-title {
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+  }
+
+  .tooltip-caption {
+    font-size: @font-size-base;
+    color: @color-link;
+
+    &.warning-icon {
+      color: @brand-warning;
+    }
+  }
+
+  i {
+    color: @color-link;
+  }
+
+  &:hover i {
+    color: @color-link-2;
+  }
+}
+
+.icon-tooltip {
+  display: inline-block;
+  cursor: default;
+}
+
+.tooltip-arrow {
+  display: none;
+}
+
+.tooltip-inner {
+  padding: @tooltip-padding;
+  border: 1px solid @color-border;
+  box-shadow: @dropdown-shadow;
+
+  .word-break();
+}

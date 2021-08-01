@@ -1,0 +1,19 @@
+{##
+ # First additional account menu
+ #
+ # @ListChild (list="slidebar.navbar.account.additional-menu", weight="1000")
+ #}
+{% if this.isSlidebar %}
+  <li class="additional-menu-wrapper">
+    <ul class="Inset additional-menu">
+      {% set account_additional_items %}
+        {{ widget_list('slidebar.navbar.account.first-additional-menu') }}
+      {% endset %}
+
+      {{ account_additional_items }}
+    </ul>
+  </li>
+  {% if not account_additional_items|trim is empty %}
+    <li class="mm-divider"></li>
+  {% endif %}
+{% endif %}

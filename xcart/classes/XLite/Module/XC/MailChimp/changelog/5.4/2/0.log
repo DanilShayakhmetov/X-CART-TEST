@@ -1,0 +1,10 @@
+Version 5.4.2.0
+
+Improvements (1)
+2020-02-04 - [Change] The active menu item was not highlighted on some pages. Fixed. #BUG-7472 #Core #AustraliaPost #Coupons #Paypal #Sale #USPS #XMLSitemap #CanadaPost #FedEx #UPS #MailChimp #DHL #GoogleFeed
+
+Fixes (3)
+2020-03-04 - [Bug] In MailChimp addon, the date display style was not according to the style guide. Fixed. #BUG-8391 #MailChimp
+2020-02-20 - [Bug] Fatal error when changing an order status Awaiting payment => Cancelled in a store with Mailchimp configured. Fixed. #BUG-8361 https://bt.x-cart.com/view.php?id=51498 #MailChimp
+2020-02-07 - [Bug] Layout issues related to the display of checkboxes during checkout with the addons GDPR and Mailchimp enabled and the display of a checkbox on a product page. Fixed. #BUG-8169 #Core #MailChimp #GDPR
+

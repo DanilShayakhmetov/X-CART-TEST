@@ -1,0 +1,77 @@
+{##
+ # Shipments page
+ #}
+
+<div class="capost-shipments">
+  
+  {% form 'XLite\\Module\\XC\\CanadaPost\\View\\Form\\Parcel' %}
+
+    {% for parcelIdx, parcel in this.getCapostOrderParcels() %}
+      <fieldset>
+        <legend>
+          <a name="package_{{ parcel.getNumber() }}"></a>
+          <h2>{{ t('Parcel') }} #{{ parcel.getNumber() }}</h2>
+        </legend>
+        <div class="ca-package">
+          {{ this.displayCommentedData(this.getParcelJSParams(parcel)) }}
+          <div class="parcel-products">
+            {% if parcel.hasRemovedItems() and parcel.shipment.getLinks() %}
+              <div class="alert alert-warning">
+                {{ this.getRemovedItemsWarning(parcel.shipment.getPDFLinks()|first)|raw }}
+              </div>
+            {% endif %}
+            {{ widget('XLite\\Module\\XC\\CanadaPost\\View\\ItemsList\\Model\\ParcelItem', name='parcel-items-' ~ parcel.getId(), parcelId=parcel.getId()) }}
+          </div>
+          <div class="parcel-settings clearfix">
+            <div class="box parcel-characteristics">
+              {% include 'modules/XC/CanadaPost/shipments/parcel.characteristics.twig' %}
+            </div>
+            <div class="box parcel-options">
+              {% include 'modules/XC/CanadaPost/shipments/parcel.options.twig' %}
+            </div>
+          </div>
+
+          {% if parcel.hasShipment() %}
+            {% include 'modules/XC/CanadaPost/shipments/shipment.info.twig' %}
+          {% endif %}
+
+          {% if parcel.areAPICallsAllowed() %}
+            <div class="parcel-buttons">
+              {% if this.displayPrintPackingSlipButton(parcel) %}
+                {{ widget('\\XLite\\Module\\XC\\CanadaPost\\View\\Button\\PrintParcelPackingSlip', parcelId=parcel.getId(), style = 'print-invoice regular-main-button') }}
+              {% endif %}
+
+              {% if this.displayCreateShipmentButton(parcel) %}
+                {{ widget('\\XLite\\Module\\XC\\CanadaPost\\View\\Button\\CreateShipment', parcelId=parcel.getId(), style = 'regular-main-button') }}
+              {% endif %}
+
+              {% if this.displayVoidShipmentButton(parcel) %}
+                {{ widget('\\XLite\\Module\\XC\\CanadaPost\\View\\Button\\VoidShipment', parcelId=parcel.getId()) }}
+              {% endif %}
+
+              {% if this.displayTransmitShipmentButton(parcel) %}
+                {{ widget('\\XLite\\Module\\XC\\CanadaPost\\View\\Button\\TransmitShipment', parcelId=parcel.getId()) }}
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if this.getParcelWarnings(parcel) %}
+            <div class="parcel-warnings">
+              <br />
+              <h4>{{ t('Warnings') }}:</h4>
+              <ul>
+                {% for warning in this.getParcelWarnings(parcel) %}
+                  <li>{{ warning.message }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      </fieldset>
+    {% endfor %}
+
+    {{ widget('XLite\\Module\\XC\\CanadaPost\\View\\StickyPanel\\Order\\Admin\\Shipments') }}
+
+  {% endform %}
+
+</div>

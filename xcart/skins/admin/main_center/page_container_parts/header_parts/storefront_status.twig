@@ -1,0 +1,26 @@
+{##
+ # Storefront status
+ #}
+
+{% spaceless %}
+  <div {{ this.printTagAttributes(this.getContainerTagAttributes())|raw }}>
+    <a href="{{ this.getOpenedShopURL() }}" class="link opened" target="_blank">{{ this.getStorefrontLinkLabel() }}</a>
+    <a href="{{ this.getClosedShopURL() }}" class="link closed" target="_blank" data-toggle="tooltip" data-placement="bottom" title="{{ t('Private link') }}">
+      {{ this.getStorefrontLinkLabel() }}
+    </a>
+    {% if this.isTogglerVisible() %}
+      <a href="{{ this.getLink() }}" {{ this.printTagAttributes(this.getTogglerTagAttributes())|raw }}>
+        <div class="onoffswitch">
+          <label for="">
+            <div class="onoffswitch-inner">
+              <div class="on-caption">{{ t('On') }}</div>
+              <div class="off-caption">{{ t('Off') }}</div>
+            </div>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </a>
+    {% endif %}
+    {#<span class="link closed">{{ this.getCloseTitle()|raw }}</span>#}
+  </div>
+{% endspaceless %}

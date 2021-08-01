@@ -1,0 +1,41 @@
+{##
+ # Onboarding wizard online payment method block
+ #}
+
+<xlite-onboarding-paypal-card inline-template>
+  <div class="online online-paypal" :class="classes">
+
+    <div class="image">
+      <img src="{{ asset('modules/CDev/Paypal/onboarding/paypal_commerce_platform/logo.png') }}" alt="{{ t('PayPal Checkout') }}" title="{{ t('PayPal Checkout') }}" />
+    </div>
+
+    <div class="note">
+      {{ t('Setup quickly and offer the convenience and trusted security of PayPal.') }}
+    </div>
+
+    {% if this.isPaypalConfigured() %}
+      {% set warningNote = this.getWarningNote() %}
+    <div id="paypal_switcher" class="switcher{% if this.isPaypalMethodEnabled() %} enabled{% endif %} {% if warningNote %}read-only{% endif %}"{% if warningNote %} data-toggle="tooltip" data-html="true" data-title="{{ warningNote }}" data-container="#paypal_switcher"{% endif %}>
+      <span class="inactive">{{ t('checkbox.onoff.off') }}</span>
+      <a href="#" @click.prevent="switchPaypalMethod({{ this.getMethodId() }}, $event)">
+        <div>
+          <span class="fa fa-check"></span>
+        </div>
+      </a>
+      <span class="active">{{ t('checkbox.onoff.on') }}</span>
+    </div>
+    {% else %}
+    <div class="button">
+      {% if this.isLocalHost() %}
+        {{ widget('XLite\\View\\Button\\Link',
+          location=this.buildUrl('paypal_commerce_platform_settings'),
+          label=t('Launch (Paypal Onboarding)'),
+          blank='true'
+        ) }}
+      {% else %}
+        {{ widget('\\XLite\\Module\\CDev\\Paypal\\View\\Button\\PaypalCommercePlatformOnboarding', label=t('Launch (Paypal Onboarding)')) }}
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</xlite-onboarding-paypal-card>

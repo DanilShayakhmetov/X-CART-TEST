@@ -1,0 +1,24 @@
+{##
+ # X-Payments subscription plan element
+ #
+ #}
+
+<div id="plan">
+  {{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\FormField\\Select\\PlanType', fieldName='plan[type]', value=this.value.type, fieldOnly='true') }}
+  {{ widget('\\XLite\\View\\FormField\\Input\\Text\\Integer', fieldName='plan[number]', value=this.value.number, fieldOnly='true') }}
+  <div id="plan-number-suffix">
+    {% if this.isPlanTypeEach() %}
+      <span>{{ this.value.number_suffix }}</span>
+    {% endif %}
+  </div>
+  {{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\FormField\\Select\\PlanPeriod', fieldName='plan[period]', value=this.value.period, planType=this.value.type, fieldOnly='true') }}
+  <div id="plan-reverse-field">
+    {% if this.isPlanTypeEach() %}
+      <label class="plan-reverse" for="plan-reverse">
+        {{ widget('\\XLite\\View\\FormField\\Input\\Checkbox\\Enabled', fieldName='plan[reverse]', value=this.value.reverse, fieldOnly='true') }}
+        {{ t('Count days from the end') }}
+      </label>
+    {% endif %}
+  </div>
+  <div id="plan-description">{{ this.value.description }}</div>
+</div>

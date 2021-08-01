@@ -1,0 +1,8 @@
+Version 5.4.0.4
+
+Improvements (1)
+2021-01-13 - [Task] Minor code refactoring. #XCB-73 #XC-CustomOrderStatuses #XC-MigrationWizard #XC-MultiVendor
+
+Fixes (1)
+2020-12-23 - [Bug] Added pagination on the Payment statuses tab of the Order statuses page in the Admin area. #XCB-81 #XC-CustomOrderStatuses
+

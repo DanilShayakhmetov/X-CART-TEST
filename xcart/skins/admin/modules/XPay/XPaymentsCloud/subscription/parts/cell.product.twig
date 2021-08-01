@@ -1,0 +1,18 @@
+{##
+ # Date cell
+ #
+ #}
+
+<div class="subscription-product">
+  <div class="product-name">
+    {% if this.entity.getProduct() %}
+      <span class="product-name"><a href="{{ url('product', '', {'product_id': this.entity.product.getProductId()}) }}">{{ this.entity.product.getName() }}</a></span>
+    {% else %}
+      <span class="product-name">{{ this.entity.getProductName() }}</span>
+    {% endif %}
+  </div>
+
+  <div class="subscription-info">
+    <span class="subscription-info">{{ this.entity.getPlanDescription() }}</span>
+  </div>
+</div>

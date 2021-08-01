@@ -1,0 +1,55 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Invoice styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.invoice-box .item .subitem .egoods-items {
+  display: block;
+  margin-top: 10px;
+}
+
+.invoice-box .item .subitem .egoods-list {
+  list-style: none;
+}
+
+.invoice-box .item .subitem .egoods-list .egood-item {
+  display: table;
+  background: transparent none;
+  margin-top: 5px;
+}
+
+.invoice-box .item .subitem .egoods-list .egood-item .icon:before {
+   content: '';
+   width: 16px;
+   height: 20px;
+   display: block;
+   background-size: 16px;
+   background-repeat: no-repeat;
+   background-position: center left;
+}
+
+.invoice-box .item .subitem .egoods-list .egood-item .column {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.invoice-box .item .subitem .egoods-list .egood-item .column + .column {
+  padding-left: 10px;
+}
+
+.invoice-box .item .subitem .egoods-list .egood-item .size {
+  color: #9b9b9b;
+  white-space: nowrap;
+}
+
+.invoice-box .item .subitem .egoods-list li a {
+  text-decoration: underline;
+  color: #5194c5;
+  cursor: pointer;
+  font-size: 14px;
+  word-break: break-all;
+}

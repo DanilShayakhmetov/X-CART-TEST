@@ -1,0 +1,9 @@
+{##
+ # Cloud zoom switcher
+ #
+ # @ListChild (list="images_settings", weight="40")
+ #}
+
+{% if this.isCloudZoomAllowed() %}
+  <li>{{ widget('XLite\\View\\FormField\\Input\\Checkbox\\OnOff', label='Cloud Zoom', fieldName='cloud_zoom', value=this.getCloudZoomEnabled()) }}</li>
+{% endif %}

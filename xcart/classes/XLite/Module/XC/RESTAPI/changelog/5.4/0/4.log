@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-06-06 - [Bug] Error 404 on reference to any module objects. Fixed. #BUG-7438 (Shevelov Alexander) #RESTAPI
+

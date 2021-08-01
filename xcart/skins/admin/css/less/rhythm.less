@@ -1,0 +1,118 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+// Rhythmless 0.1
+// Sept 25, 2012
+// Vertical Rhythm for LESS
+// http://paulgb.github.com/rhythmless/
+// (C) Paul Butler (MIT LICENSE)
+
+// global defaults, these can (and usually should) be overwritten by
+// the file that includes this
+@rhythmic-fontsize: @font-size-base;
+
+#rhythmless {
+  // the base mixin used by all block-level elements within the
+  // rhythm-container
+  .rhythm-base(
+    @font-size: @rhythmic-fontsize,
+    @margin-top:0,
+    @margin-bottom:0,
+    @leading: 0,
+    @unit: @rhythmic-unit) {
+    font-size: @font-size;
+    line-height: ceil((@font-size + @leading) / @rhythmic-lineheight) * @rhythmic-lineheight;
+    margin-bottom: ceil((@margin-bottom) / @unit) * @unit / 2;
+    margin-top: ceil((@margin-top) / @unit) * @unit / 2;
+
+    sup {
+      vertical-align: top;
+      position: relative;
+      top: (@font-size / 4);
+    }
+
+    sub {
+      vertical-align: bottom;
+      position: relative;
+      bottom: (@font-size / 4);
+    }
+
+    p, ul, pre, code, li {
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    @media(max-width: @screen-xs-max) {
+      @font-size-mobile: ceil((@font-size * 0.85));
+      font-size: @font-size-mobile;
+      line-height: ceil((@font-size-mobile + @leading) /  @rhythmic-lineheight) *  @rhythmic-lineheight;
+    }
+  }
+
+  // a nested container within a rhythm-container,
+  // allowed to have padding and a border
+  .nested-container(
+    @padding,
+    @border) {
+    margin-top: 0 - @padding - @border;
+    margin-bottom: 0 - @padding - @border;
+    padding-top: @padding;
+    padding-bottom: @padding;
+    border-width: @border;
+    :first-child {
+      margin-top: 0;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // a shortcut for .rhythm-base that assumes top and bottom margins
+  // are the same
+  .rhythm(
+    @font-size: @rhythmic-fontsize,
+    @margin: 0,
+    @leading: 0,
+    @unit: @rhythmic-unit) {
+    #rhythmless > .rhythm-base(@font-size, @margin, @margin, @leading, @unit);
+  }
+
+  // a mixin that displays a bunch of horizontal horizontal lines
+  // spaced according to the vertical rhythm unit (@rhythmic-unit)
+  .vertical-grid(@color: #ddd, @unit:@rhythmic-unit) {
+    @stop: 100% - 100% / @unit;
+    background: linear-gradient(to bottom, white, white @stop, @color @stop,  @color);
+    background-size: auto @unit;
+  }
+
+  // apply vertical rhythm to an element by adding .rhythm on common
+  // block-level elements occurring below it
+  .rhythm-container(@font-size) {
+    @margin: round(@font-size / 2);
+
+    p, ul, ol, pre, code {
+      #rhythmless > .rhythm(@font-size, @margin);
+
+      &.condensed {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+
+    ul, ol {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    li {
+      #rhythmless > .rhythm(@font-size);
+    }
+
+  }
+}

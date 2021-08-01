@@ -1,0 +1,5 @@
+Version 5.4.2.9
+
+Fixes (1)
+2020-09-17 - [Bug] Broken link on the PayPal For Marketplaces addon settings page. Fixed. #BUG-8924 https://bt.x-cart.com/view.php?id=52050 #Paypal
+

@@ -1,0 +1,11 @@
+{##
+ # Language label name head
+ #}
+
+<div>
+  <div class="table-header">{{ t('Label') }}</div>
+</div>
+<div class="translations-header">
+  <div class="table-header">{{ t('Translations') }}</div>
+  <div class="subheader">{{ t('Default: {{code}}', {'code': this.getDefaultLanguage()|upper}) }}</div>
+</div>

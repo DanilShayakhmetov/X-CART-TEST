@@ -1,0 +1,37 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/VendorMessages/notification
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order message (Order messages module)'
+        description: 'This message will be sent to user who involved to the conversation when a new message appears in the communication thread regarding an order'
+        customerSubject: 'Order #%order_number%: new message'
+        customerText: '<p dir="ltr">I see there&rsquo;s a new message in your account. It&rsquo;s about the order <a href="%order_link%">#%order_number%</a>, and it is waiting for your reply.&nbsp;</p><blockquote><p dir="ltr">%message%</p></blockquote>'
+
+  - templatesDirectory: modules/XC/VendorMessages/new_message_notification
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'New message (Order messages module)'
+        description: 'This message will be sent to customer when a new message appears in the conversation'
+        customerSubject: 'New message in conversation'
+        customerText: '<p>You&#39;ve got a new message in %conversation_link%</p><blockquote><p>%message%</p></blockquote>'

@@ -1,0 +1,150 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Specific styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.target-register-vendor {
+  .profile-form ul.default-table li {
+    float: none;
+    clear: none;
+  }
+
+  .content > form {
+    margin: auto;
+
+    button {
+      margin-top: 40px;
+    }
+  }
+
+  .profile-form {
+    .table.main-table {
+      .input.fileuploader {
+        input[type=file] {
+          border: none;
+        }
+
+        .table-value {
+          @media (min-width: @screen-md-min) {
+            .table-value-help {
+              display: block;
+              padding: 10px 10px 10px 20px;
+              position: unset;
+              transform: none;
+              border: none;
+              box-shadow: none;
+              color: @color-text-default;
+
+              &:before, &:after {
+                display: none;
+              }
+
+              &.focused {
+                display: block;
+              }
+            }
+
+            [data-toggle="popover"] {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .vendor-registration-separator {
+        line-height: 30px;
+        margin-top: @rhythmic-unit * 2;
+        margin-bottom: @rhythmic-unit;
+
+        & > div {
+          font-size: 18px;
+          color: @color-text-dark;
+        }
+
+        & > hr {
+          display: none;
+        }
+      }
+
+      li.input .table-value {
+        position: relative;
+
+        .table-value-help {
+          display: none;
+        }
+
+        @media (min-width: @screen-md-min) {
+          .table-value-help {
+            display: none;
+            position: absolute;
+            left: calc(~"100% + 20px");
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: @color-background;
+            padding: 16px;
+            max-width: 400px;
+            word-wrap: break-word;
+
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: @border-radius-base;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            
+            &.focused {
+              display: table;
+            }
+
+            @help-arrow-size: 12px;
+
+            &:before {
+              content: "";
+              width: 0;
+              height: 0;
+              border-top: @help-arrow-size solid transparent;
+              border-bottom: @help-arrow-size solid transparent;
+              border-right: @help-arrow-size solid rgba(0, 0, 0, 0.2);
+              top: calc(~"50%" - @help-arrow-size);
+              left: -@help-arrow-size;
+              position: absolute;
+            }
+
+            &:after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-top: @help-arrow-size solid transparent;
+              border-bottom: @help-arrow-size solid transparent;
+              border-right: @help-arrow-size solid #fff;
+              top: calc(~"50%" - @help-arrow-size);
+              left: calc(1px - @help-arrow-size);
+              position: absolute;
+            }
+          }
+
+          [data-toggle="popover"] {
+            display: none;
+          }
+        }
+
+        @media (max-width: @screen-sm-max) {
+          margin-right: 40px;
+
+          .tooltip-main[data-toggle="popover"] {
+            right: -35px;
+
+            .popover {
+              min-width: 250px;
+            }
+
+            .popover-content {
+              word-wrap: break-word;
+            }
+          }
+        }
+      }
+    }
+  }
+}

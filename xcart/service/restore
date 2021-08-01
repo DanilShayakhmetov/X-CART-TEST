@@ -1,0 +1,42 @@
+#!/usr/bin/env php
+<?php
+// vim: set ts=4 sw=4 sts=4 et:
+
+/**
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+
+if ('cli' !== PHP_SAPI) {
+    exit(1);
+}
+
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../modules_manager/autoload.php';
+
+$config = new XCart\ConfigParser\ConfigParser($_SERVER, __DIR__ . '/../etc/');
+
+$appFactory = require __DIR__ . '/src/App.php';
+
+/** @var \Silex\Application $app */
+$app = $appFactory($config->getData());
+
+$options = getopt('', ['action::', 'modules::', 'license::', 'version::', 'id::']);
+
+$request  = Request::create('/restore/' . ($options['action'] ?? 'rebuild'), 'GET', $options);
+
+try {
+    $response = $app->handle($request, HttpKernelInterface::MASTER_REQUEST, false);
+} catch (Exception $e) {
+    $response = new Response($e->getMessage(), 500);
+    $response->send();
+    $app->terminate($request, $response);
+    exit(1);
+}
+
+$response->send();
+$app->terminate($request, $response);

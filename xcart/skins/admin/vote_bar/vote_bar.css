@@ -1,0 +1,87 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Vote bar styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.vote-bar {
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+.rating-stars {
+  display: inline-block;
+  position: relative;
+}
+
+.stars-row {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: #d3d3d3;
+  height: 100%;
+}
+
+.stars-row.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffa52b;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.stars-row.hovered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  color: #d3d3d3;
+  overflow: hidden;
+}
+
+.star-single {
+  flex-shrink: 0;
+  display: inline-block;
+  float: left;
+  line-height: 1;
+  padding: 0 1px;
+  text-align: center;
+}
+
+.stars-row .star-single span {
+  color: #d3d3d3;
+  font-size: 14px;
+  width: auto;
+}
+
+.stars-row.full .star-single span {
+  color: #ffa52b;
+}
+
+.stars-row.hovered .star-single span {
+  color: #d3d3d3;
+}
+
+.vote-bar.editable .stars-row.hovered .star-single.over span {
+  color: #f26821;
+}
+
+div.vote-bar:hover {
+  cursor: default;
+}
+
+div.vote-bar.editable:hover {
+  cursor: pointer;
+}
+
+.ui-dialog .rating-value {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+{##
+ # Checkout : order review step : items : total
+ #
+ # @ListChild (list="checkout.review.selected.items", weight="10")
+ # @ListChild (list="checkout.review.inactive.items", weight="10")
+ #}
+
+<div class="ppcm-banner-amount hidden" data-amount="{{ this.cart.getTotal() }}"></div>

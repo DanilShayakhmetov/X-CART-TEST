@@ -1,0 +1,50 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+
+.sidebar .block.block-tags-list .content {
+  border: none;
+}
+
+.tags-list {
+  margin: 0;
+}
+
+.tags-list li {
+  display: inline-block;
+  line-height: 20px;
+  padding: 3px 10px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  position: relative;
+}
+
+.tags-list li + li {
+  margin-top: 10px;
+}
+
+.tags-list li a {
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 14px;
+  color: #0ba2e8;
+  white-space: normal;
+
+  /* proper word breaking */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+}
+
+.tags-list li a:hover {
+  color: #25c5df;
+}

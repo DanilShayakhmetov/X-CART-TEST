@@ -1,0 +1,5 @@
+Version 5.4.0.3
+
+Fixes (1)
+2019-11-01 - [Bug] The Manage roles link was present on the Add user page in the Admin area when the addon User Permissions was disabled. Fixed. #BUG-6947 (Pavel Veselovsky) #Core #UserPermissions
+

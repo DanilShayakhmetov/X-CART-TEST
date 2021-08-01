@@ -1,0 +1,8 @@
+{##
+ # Edit Review link
+ #}
+{% if this.getProductId() %}
+  {{ widget('XLite\\Module\\XC\\Reviews\\View\\Button\\Admin\\EditReview', {style: 'edit-review', id: this.entity.getId(), target_product_id: this.getProductId(), 'icon-style': 'fa fa-edit icon'}) }}
+{% else %}
+  {{ widget('XLite\\Module\\XC\\Reviews\\View\\Button\\Admin\\EditReview', {style: 'edit-review', id: this.entity.getId(), 'icon-style': 'fa fa-edit icon'}) }}
+{% endif %}

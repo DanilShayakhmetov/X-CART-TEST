@@ -1,0 +1,9 @@
+{##
+ # Import begin section : settings : update-mode
+ #
+ # @ListChild (list="import.begin.options", weight="100")
+ #}
+
+<li class="import-mode-option">
+  {{ widget('\\XLite\\View\\FormField\\Select\\Regular', fieldName='options[importMode]', fieldId='importMode', label=t('Import mode'), value=this.config.Import.importMode, options=this.getImportModeOptions(), help=this.getImportModeComment()) }}
+</li>

@@ -1,0 +1,5 @@
+Version 5.4.0.15
+
+Fixes (1)
+2020-08-31 - [Bug] Removed event tracking in the Admin area for an unauthorized user. #BUG-8984 https://bt.x-cart.com/view.php?id=52086 #Concierge
+

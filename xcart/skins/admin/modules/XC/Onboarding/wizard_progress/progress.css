@@ -1,0 +1,245 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Wizard progress widget styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-progress {
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    transform: scale(0.77);
+}
+
+.onboarding-wizard-progress .percentage {
+    font-size: 24px;
+    font-weight: 600;
+    color: #97c564;
+    width: 65px;
+}
+
+.onboarding-wizard-progress .bar {
+    display: inline-block;
+    position: relative;
+    width: 780px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.onboarding-wizard-progress .progress-line {
+    overflow: hidden;
+    height: 10px;
+    background-color: #f8f9fb;
+    border-radius: 10px;
+}
+
+.onboarding-wizard-progress .progress-line-filled.delay {
+    transition-delay: .5s;
+}
+
+.onboarding-wizard-progress .progress-line-filled {
+    overflow: hidden;
+    height: 10px;
+    background-color: #97c564;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: width .7s ease-out;
+}
+
+.onboarding-wizard-progress .finish-mark {
+    width: 65px;
+}
+
+.onboarding-wizard-progress .percentage.fade-in-out-leave,
+.onboarding-wizard-progress .finish-mark.fade-in-out-leave {
+    width: 0;
+}
+
+.onboarding-wizard-progress .finish-mark svg path {
+    fill: #f8f9fb;
+    transition: fill .3s ease-out;
+    transition-delay: .7s;
+}
+
+.onboarding-wizard-progress .finish-mark.active svg path {
+    fill: #97c564;
+}
+
+.onboarding-wizard-progress .landmarks {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.onboarding-wizard-progress .landmark {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fb;
+    border: 2px solid #f8f9fb;
+    border-radius: 50%;
+
+    transition: all .3s ease-out;
+}
+
+.onboarding-wizard-progress .landmark.switchable {
+    cursor: pointer;
+}
+
+.onboarding-wizard-progress .landmark.finished:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.onboarding-wizard-progress .landmark.finished.finished-delay:after {
+    transition-delay: .5s, .5s;
+}
+
+.onboarding-wizard-progress .landmark:after {
+    opacity: 0;
+    content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0yKSI+CiAgICA8cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik00LjU1OTI4NDY0LDEwLjA4NjI3NjkgQzQuOTU4NjgyNzYsMTAuMjM5ODc4NyA1LjQyNjA1NDY0LDEwLjE1NDIwMzkgNS43NDc0ODE3Nyw5LjgzMjc3NjcgTDExLjY3MzA3MzksMy45MDcxODQ2NCBDMTIuMTEwMDMzNSwzLjQ3MDIyNTA0IDEyLjEwODI1NDQsMi43NjQ3ODY0NCAxMS42NzIwNTU4LDIuMzI4NTg3ODMgQzExLjIzMjgxNjEsMS44ODkzNDgxMiAxMC41MjkwOTUzLDEuODkxOTMzNCAxMC4wOTM0NTksMi4zMjc1Njk3MyBMNC44NDg4NDAyMyw3LjU3MjE4ODUgTDEuOTA3OTk3MTksNC42MzEzNDU0MSBDMS40NzExOTY1OSw0LjE5NDU0NDgxIDAuNzY2NTMyLDQuMTkxMDE1NzEgMC4zMjcyOTIyOTEsNC42MzAyNTU0MiBDLTAuMTA4OTA2MzE4LDUuMDY2NDU0MDMgLTAuMTA5NjUxODM4LDUuNzcyOTI2MiAwLjMyODM4MjI4MSw2LjIxMDk2MDMgTDMuODgwMzM1ODUsOS43NjI5MTM5IEM0LjA3MDUzODgyLDkuOTUzMTE2OSA0LjMxMTUzMjMsMTAuMDYxMTY1OSA0LjU1OTI4NDY0LDEwLjA4NjI3NjkgWiIvPgogICAgPHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIi8+CiAgPC9nPgo8L3N2Zz4K');
+    position: absolute;
+    color: white;
+    border-radius: 100px;
+    line-height: 20px;
+    background-color: #4990e2;
+    border: solid 3px #ffffff;
+    padding: 0 4px;
+    bottom: -3px;
+    right: -3px;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.onboarding-wizard-progress .landmark .landmark-text {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    align-items: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    height: 60px;
+}
+
+.onboarding-wizard-progress .landmark span.landmark-text {
+    color: #9b9b9b;
+}
+
+.onboarding-wizard-progress .landmark a.landmark-text {
+    z-index: 1;
+}
+
+.onboarding-wizard-progress .landmark a.landmark-text:hover {
+    cursor: pointer;
+}
+
+/* default landmark style */
+
+.onboarding-wizard-progress .landmark svg {
+    stroke: #9b9b9b;
+}
+
+.onboarding-wizard-progress .landmark svg path,
+.onboarding-wizard-progress .landmark svg polyline,
+.onboarding-wizard-progress .landmark svg polygon {
+    stroke: #9b9b9b;
+}
+
+.onboarding-wizard-progress .landmark svg path[fill] {
+    stroke: none;
+    fill: #9b9b9b;
+}
+
+.onboarding-wizard-progress .landmark svg #LOGO {
+    fill: #9b9b9b;
+    stroke: transparent;
+}
+
+/* active landmark style */
+
+.onboarding-wizard-progress .landmark.active,
+.onboarding-wizard-progress .landmark.current {
+    background-color: #97c564;
+    border: 2px solid #97c564;
+}
+
+.onboarding-wizard-progress .landmark.active svg,
+.onboarding-wizard-progress .landmark.current svg {
+    stroke: white;
+}
+
+.onboarding-wizard-progress .landmark.active svg path,
+.onboarding-wizard-progress .landmark.active svg polyline,
+.onboarding-wizard-progress .landmark.active svg polygon,
+.onboarding-wizard-progress .landmark.current svg path,
+.onboarding-wizard-progress .landmark.current svg polyline,
+.onboarding-wizard-progress .landmark.current svg polygon {
+    stroke: white;
+}
+
+.onboarding-wizard-progress .landmark.active svg path[fill],
+.onboarding-wizard-progress .landmark.current svg path[fill] {
+    stroke: none;
+    fill: white;
+}
+
+.onboarding-wizard-progress .landmark.active svg #LOGO,
+.onboarding-wizard-progress .landmark.current svg #LOGO {
+    fill: white;
+    stroke: transparent;
+}
+
+
+/* current landmark style */
+
+.onboarding-wizard-progress .landmark.current.current-delay {
+    transition-delay: .4s;
+}
+
+.onboarding-wizard-progress .landmark.current.current-delay svg path,
+.onboarding-wizard-progress .landmark.current.current-delay svg polyline,
+.onboarding-wizard-progress .landmark.current.current-delay svg polygon,
+.onboarding-wizard-progress .landmark.current.current-delay svg {
+    transition: all 2s;
+    transition-delay: .4s;
+}
+
+.onboarding-wizard-progress .landmark.current.current-delay svg #LOGO {
+    transition-delay: .2s;
+}
+
+.onboarding-wizard-progress .landmark.current {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.onboarding-wizard-progress-cloud .finish-mark,
+.onboarding-wizard-progress-cloud .percentage {
+    display: none;
+}
+
+.onboarding-wizard-progress-cloud .progress-line {
+    margin: 0 90px;
+    position: relative;
+}

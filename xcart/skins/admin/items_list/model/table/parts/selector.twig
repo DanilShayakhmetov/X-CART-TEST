@@ -1,0 +1,15 @@
+{##
+ # Selector
+ #}
+
+<div class="selector">
+  {% if this.isAllowEntitySelect(this.entity) %}
+  <input type="checkbox"
+         name="{{ this.getSelectorDataPrefix() }}[{{ this.entity.getUniqueIdentifier() }}]"
+         value="1"
+         class="selector not-significant"
+         autocomplete="off"
+         {% if this.isRowSelected(this.entity) %}checked="checked"{% endif %}
+  />
+  {% endif %}
+</div>

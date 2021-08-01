@@ -1,0 +1,67 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Social Login widget styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/* ICON */
+
+.social-net-icon .fa.fa-facebook {
+  background-color: #385aa1;
+}
+
+.social-net-icon .fa.fa-google-plus {
+  background-color: #c02d1a;
+}
+
+/* BUTTON */
+
+.social-net-button.social-net-Facebook a {
+  border-color: #4267B2;
+  background: #4267B2;
+}
+
+.social-net-button.social-net-Apple a {
+  border-color: #000000;
+  background: #ffffff;
+}
+
+.social-net-button.social-net-Facebook .provider-name,
+.social-net-button.social-net-Google .provider-name {
+  padding-left: 0;
+  border-left: none;
+}
+
+.social-net-button.social-net-Google a {
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.24);
+  border-color: #ffffff;
+}
+
+.social-net-button.social-net-Google .provider-name {
+  color: #6a6a6a;
+}
+
+.social-net-button.social-net-Apple .provider-name {
+  color: #000000;
+  border-left: none;
+  padding-left: 0;
+}
+
+.social-net-button .fa.fa-google-custom:before {
+  content: ' ';
+  width: 19px;
+  height: 19px;
+  background: url("../images/g-icon.svg");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.social-net-button .fa.fa-apple {
+  color: #000;
+}

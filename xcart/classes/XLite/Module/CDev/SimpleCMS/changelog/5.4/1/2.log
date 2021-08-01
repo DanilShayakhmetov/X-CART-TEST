@@ -1,0 +1,6 @@
+Version 5.4.1.2
+
+Fixes (2)
+2020-08-05 - [Bug] Addon setting values (OnOff settings and the like) could not be changed. Fixed. #BUG-8914 #SimpleCMS
+2020-07-24 - [Bug] Changing the settings of the addon SimpleCMS caused the logo/favicon to be reset to defaults. Fixed. #BUG-8809 https://bt.x-cart.com/view.php?id=51952 #SimpleCMS
+

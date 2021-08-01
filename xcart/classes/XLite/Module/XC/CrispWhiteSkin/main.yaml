@@ -1,0 +1,19 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.2.12
+type: skin
+authorName: 'X-Cart team'
+moduleName: 'Crisp White skin'
+description: 'Light and clean skin developed in minimalist style and combining flat and material design will make your store look clean and modern.'
+minorRequiredCoreVersion: 1
+dependsOn: {  }
+incompatibleWith: {  }
+skins:
+    customer: [crisp_white/customer]
+showSettingsForm: false
+canDisable: true

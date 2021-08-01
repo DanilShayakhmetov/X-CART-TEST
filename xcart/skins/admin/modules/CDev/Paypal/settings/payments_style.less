@@ -1,0 +1,148 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Setting page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import "../../../../css/initialize.less";
+
+body.target-paypal-settings .payment-settings  .dialog-content {
+  display: inline-block;
+  width: 540px;
+}
+
+body.target-paypal-settings .payment-settings  div.table-label {
+  width: 210px;
+}
+
+body.target-paypal-settings .payment-settings .account-table .table-value {
+  white-space: normal;
+}
+
+body.target-paypal-settings .payment-settings .logo-ppa {
+  background: transparent url(../images/ppa.png) no-repeat left top;
+  width: 316px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+body.target-paypal-settings .payment-settings .logo-pfl {
+  background: transparent url(../images/pfl.png) no-repeat left top;
+  width: 280px;
+  height: 126px;
+  margin-bottom: 10px;
+}
+
+body.target-paypal-settings .payment-settings .logo-ppec {
+  background: transparent url(../images/ppec.png) no-repeat left top;
+  background-size: 100%;
+  width: 350px;
+  height: 44px;
+  margin-bottom: 10px;
+}
+
+body.target-paypal-settings .payment-settings .logo-pc {
+  background: transparent url(../images/pc.gif) no-repeat left top;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+body.target-paypal-settings .payment-settings .links {
+  background-color: #F7F7F7;
+  margin: 30px 0;
+  padding: 15px 0 15px 20px;
+}
+
+body.target-paypal-settings .payment-settings .links a {
+  font-size: 16px;
+}
+
+body.target-paypal-settings .payment-settings .links .help-link {
+  padding: 0;
+}
+
+body.target-paypal-settings .payment-settings .help-link i {
+    font-size: 14px;
+    color: #154e9c;
+}
+
+body.target-paypal-settings .payment-settings .help-text i {
+    font-size: 10px;
+    color: #154e9c;
+}
+
+body.target-paypal-settings .payment-settings .external i {
+    display: none;
+}
+
+body.target-paypal-settings .payment-settings .external:hover i {
+  display: inline;
+}
+
+body.target-paypal-settings .payment-settings .help-text .tooltip-main {
+  display: inline;
+  padding: 0;
+}
+
+body.target-paypal-settings .payment-settings .help-text .tooltip-caption {
+  font-size: 12px;
+}
+
+body.target-paypal-settings .payment-settings .help-text div.clear {
+  clear: none;
+  display: inline;
+}
+
+body.target-paypal-settings .payment-settings .form-field-comment.email-comment {
+  width: auto;
+}
+
+body.target-paypal-settings .buynowenabled-value .help-wrapper {
+  .flex-display(inline-flex);
+  width: 224px;
+  height: 39px;
+  text-align: right;
+  background: transparent url(../images/ppec-buy-now.png) no-repeat 13px 7px;
+  background-size: 185px;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+body.target-paypal-settings .payment-settings .help-wrapper {
+  line-height: 0;
+
+  & > span {
+    line-height: 0;
+
+    i {
+      line-height: 0;
+    }
+  }
+}
+
+body.target-paypal-settings .model-properties label .section_email_sep-value,
+body.target-paypal-settings .model-properties label .section_api_sep-value,
+body.target-paypal-settings .model-properties label .separator-selectable {
+  display: inline-block;
+}
+
+body.target-paypal-settings .model-properties label .separator-selectable {
+  padding-left: 12px;
+}
+
+body.target-paypal-settings .model-properties label .section_email_sep-value input,
+body.target-paypal-settings .model-properties label .section_api_sep-value input {
+  margin-right: 0;
+}
+
+body.target-paypal-settings .model-properties .additional-table .section_api + .select-testlivemode {
+  margin-top: 0;
+}
+
+body.target-paypal-settings .model-properties .additional-table .section_api.section-visible + .select-testlivemode {
+  margin-top: @rhythmic-unit;
+}

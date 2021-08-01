@@ -1,0 +1,35 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Simple textarea inline field controller
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.inline-textarea-dropdown {
+  position: relative;
+  vertical-align: top !important;
+  min-width: 50px;
+}
+
+.edit-open-mark .inline-field.inline-textarea-dropdown .view.editable,
+.inline-textarea-dropdown.editable.edit-open-mark .view {
+  display: block !important;
+  visibility: hidden;
+}
+
+.inline-textarea-dropdown.editable .view.editable  {
+  display: flex;
+}
+
+.inline-textarea-dropdown .field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.inline-textarea-dropdown .field textarea {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}

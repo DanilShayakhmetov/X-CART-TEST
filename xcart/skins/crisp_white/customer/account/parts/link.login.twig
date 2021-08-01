@@ -1,0 +1,11 @@
+{##
+ # Link : create account
+ #
+ # @ListChild (list="customer.account.details.after", weight="100")
+ #}
+
+{% if this.isRegisterMode() %}
+    <div class="additional-buttons text-center">
+    {{ widget('XLite\\View\\Button\\PopupLoginLink') }}
+    </div>
+{% endif %}

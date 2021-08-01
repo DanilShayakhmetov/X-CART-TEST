@@ -1,0 +1,6 @@
+Version 5.4.0.3
+
+Fixes (2)
+2020-01-06 - [Bug] Added a Max file size limitation on the settings page for the addon "Customer Files Uploads & Product Attachments"; now it is not possible to set a value greater than the smallest of the values of the Web server settings post_max_size and upload_max_filesize. Updated the help tips on the addon settings page. In the Customer area, changed the messages about the allowed file sizes and number of files. #BUG-7619 (Fedya Lavrentyev) #CustomerAttachments
+2020-01-05 - [Bug] When attempting to attach a file to a product in the Customer area and with the number of files being attached to the product exceeding the max_file_uploads value, the product was not added to the cart, and the customer was not alerted to it. Fixed. #BUG-7623 (Fedya Lavrentyev) #CustomerAttachments
+

@@ -1,0 +1,101 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Simplified product form
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.add-product-form .control-label {
+  display: none !important;
+}
+
+.add-product-form .help-wrapper {
+  display: none !important;
+}
+
+.add-product-form .form-group.form-row {
+  width: 350px;
+}
+
+.add-product-form .form-group.uploader-row {
+  display: block;
+  float: left;
+  width: auto;
+  margin-right: 24px;
+  padding-top: 4px;
+}
+
+.add-product-form .form-horizontal .form-default-name input {
+  width: 100% !important;
+}
+
+.add-product-form .form-group.form-default-name {
+  margin-bottom: 6px;
+}
+
+.add-product-form .form-group.form-default-other-options {
+  margin-bottom: 0;
+}
+
+
+.add-product-form .form-default-name .input-widget {
+  max-width: 250px !important;
+  min-width: 250px !important;
+}
+
+.add-product-form .form-default-price .input-widget {
+  max-width: 130px !important;
+  min-width: 130px !important;
+}
+
+.add-product-form .form-group > .input-widget {
+  float: none !important;
+  width: auto !important;
+}
+
+.add-product-form .form-group > .input-widget .help-block {
+  margin: 0 !important;
+  height: 20px;
+  line-height: 20px;
+  display: none;
+}
+
+.add-product-form .input-widget .input-wrapper .table-value {
+  display: inline-block;
+}
+
+.add-product-form .form-group .input-widget .input-wrapper {
+  flex: 0 1 100%;
+}
+
+.add-product-form .has-error input::placeholder {
+  color: #a94442;
+  opacity: .7;
+}
+
+.add-product-form div.file-uploader,
+.add-product-form div.file-uploader .preview {
+  width: 180px;
+  height: 180px;
+}
+
+.add-product-form div.file-uploader a.link .error {
+  max-width: 175px;
+  font-size: 14px;
+}
+
+.add-product-form div.file-uploader a.link,
+.add-product-form div.file-uploader .preview {
+  max-width: 178px;
+  max-height: 178px;
+}
+
+.add-product-form div.file-uploader i.icon {
+  padding: 34px 60px 8px;
+}
+
+.add-product-form div.file-uploader i.icon.warning {
+  font-size: 25px;
+}

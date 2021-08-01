@@ -1,0 +1,42 @@
+{##
+ # Shipping step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-shipping inline-template>
+    <div class="step-contents">
+      <h2 class="heading">{{ t("Do you need to ship your products?") }}</h2>
+
+      <div class="step-content" v-data='{ "shipping_enabled": {{ this.getShippingEnabled() }} }'>
+        <div class="go-to-shipping">
+          <div class="image">
+            <img src="{{ asset('modules/XC/Onboarding/images/shipping.png') }}"
+                 srcset="{{ asset('modules/XC/Onboarding/images/shipping@2x.png') }} 2x">
+          </div>
+          <div class="note">
+            {{ t("Yes, I sell tangible goods that needed to be shipped") }}
+          </div>
+          <div class="button">
+            {{ widget('\\XLite\\View\\Button\\Regular', label='Set up shipping', style='regular-main-button', attributes={'@click': 'goToShipping'}, jsCode="null;") }}
+          </div>
+        </div>
+        <div class="separator">
+          {{ t('or') }}
+        </div>
+        <div class="skip-shipping">
+          <div class="image">
+            <img src="{{ asset('modules/XC/Onboarding/images/digital-icons.png') }}">
+          </div>
+          <div class="note">
+            {{ t("I sell digital goods or services and do not need to set up shipping") }}
+          </div>
+          <div class="button">
+            {{ widget('\\XLite\\View\\Button\\Regular', label='Skip Shipping Step', style='regular-main-button', attributes={'@click': 'skipShipping'}, jsCode="null;") }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </xlite-wizard-step-shipping>
+</div>

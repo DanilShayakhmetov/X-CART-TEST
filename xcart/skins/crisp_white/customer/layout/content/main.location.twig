@@ -1,0 +1,8 @@
+{##
+ # Location (breadcrumbs)
+ #}
+{% if (this.isTitleVisible() and this.getTitle()) or this.isShowAdditionalMobileBreadcrumbs() %}
+  <div id="{{ this.isShowAdditionalMobileBreadcrumbs() ? 'mobile-breadcrumb' : 'breadcrumb' }}">
+      {{ widget_list('layout.main.breadcrumb') }}
+  </div>
+{% endif %}

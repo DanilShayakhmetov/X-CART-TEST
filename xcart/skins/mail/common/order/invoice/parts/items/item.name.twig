@@ -1,0 +1,27 @@
+{##
+ # Name item cell
+ #}
+{% spaceless %}
+  <td class="item">
+    <table>
+      <tr>
+        <td class="item-image">
+          {% if this.item.hasImage() %}
+            <img src="{{ this.item.getResizedImageURL(60, 60) }}" alt="{{ this.item.getName() }}">
+          {% endif %}
+        </td>
+        <td class="item-info">
+          <strong class="item-name">{{ this.item.getName() }}</strong>
+
+          {% if this.isViewListVisible('invoice.item.name', {'item': this.item}) %}
+            {% spaceless %}
+              <ul class="subitem additional simple-list">
+                {{ widget_list('invoice.item.name', item=this.item) }}
+              </ul>
+            {% endspaceless %}
+          {% endif %}
+        </td>
+      </tr>
+    </table>
+  </td>
+{% endspaceless %}

@@ -1,0 +1,44 @@
+{##
+ # Order : line 1
+ #
+ # @ListChild (list="order.operations", weight="100")
+ #}
+
+
+<div class="line-1 clearfix">
+    <div class="payment-and-shipping">
+        <div class="clearfix">
+            {% if this.order.isPaymentSectionVisible() %}
+                <div class="order-part payment">
+                    <h4>{{ t('Payment method') }}</h4>
+                    <div class="box">{{ widget_list('order.payment.method') }}</div>
+                </div>
+            {% endif %}
+
+            {% if this.order.isShippingSectionVisible() %}
+                <div class="order-part shipping">
+                    <h4>{{ t('Shipping method') }}</h4>
+                    <div class="box">{{ widget_list('order.shipping.method') }}</div>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="clearfix">
+            {% if this.order.isShippingSectionVisible() %}
+                <div class="order-part shipping">
+                    <div class="box">{{ widget_list('order.shipping.address') }}</div>
+                </div>
+            {% endif %}
+
+          {% if this.order.isPaymentSectionVisible() %}
+            <div class="order-part payment">
+              <div class="box">{{ widget_list('order.payment.address') }}</div>
+            </div>
+          {% endif %}
+        </div>
+    </div>
+
+    <div class="actions">
+        {{ widget_list('order.actions') }}
+    </div>
+</div>

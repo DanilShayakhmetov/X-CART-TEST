@@ -1,0 +1,16 @@
+{##
+ # Settings template
+ #}
+
+{{ widget('XLite\\View\\Payment\\MethodStatus', method=this.getPaymentMethod()) }}
+
+<div class="payment-settings {{ this.paymentMethod.getServiceName() }}">
+
+  <div class="middle">
+
+    {{ widget('XLite\\Module\\CDev\\Paypal\\View\\Model\\PaypalCommercePlatform', paymentMethod=this.getPaymentMethod()) }}
+
+  </div>
+
+</div>
+

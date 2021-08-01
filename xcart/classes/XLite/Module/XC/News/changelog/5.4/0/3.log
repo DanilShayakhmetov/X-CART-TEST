@@ -1,0 +1,9 @@
+Version 5.4.0.3
+
+Fixes (5)
+2019-11-21 - [Bug] The text 'Products: 1–3 of 3' instead of 'News: 1–3 of 3' was used on the list of news in the Customer area. Fixed. #BUG-7341 https://bt.x-cart.com/view.php?id=50771 (Nikita Erkhov) #Core #News
+2019-11-20 - [Bug] Incorrect clean URLs for news and static pages were included into sitemap.xml if clean URLs had been changed for those entities. Fixed. #BUG-8087 (Jamil Ainulov) #SimpleCMS #News
+2019-11-13 - [Bug] Month name in the date shown for the News addon was not translated to the selected language. Fixed. #BUG-7020 https://bt.x-cart.com/view.php?id=50407 (Nikita Erkhov) #News
+2019-11-11 - [Bug] News link in sitemap.xml was formed incorrectly if clean URLs were disabled. Fixed. #BUG-7495 (Jamil Ainulov) #News
+2019-11-07 - [Bug] In sitemap.xml, & special character was not escaped for all links  Fixed. #BUG-8043 (Jamil Ainulov) #SimpleCMS #XMLSitemap #News
+

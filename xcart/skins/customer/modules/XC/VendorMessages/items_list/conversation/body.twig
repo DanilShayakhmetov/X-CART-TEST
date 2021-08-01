@@ -1,0 +1,30 @@
+{##
+ # Messages list
+ #}
+
+{% if this.isDisplayAll() %}
+  <ul class="messages">
+    {% for message in this.getPageData() %}
+      {% if this.isNewSeparatorVisible(message) %}
+        {% include 'modules/XC/VendorMessages/items_list/conversation/parts/separator_new.twig' %}
+      {% endif %}
+      {% include 'modules/XC/VendorMessages/items_list/conversation/parts/line.twig' %}
+    {% endfor %}
+    {% include 'modules/XC/VendorMessages/items_list/conversation/parts/separator_opened.twig' %}
+  </ul>
+{% else %}
+  <ul class="messages">
+    {% for message in this.getFirstData() %}
+      {% include 'modules/XC/VendorMessages/items_list/conversation/parts/line.twig' %}
+    {% endfor %}
+    {% include 'modules/XC/VendorMessages/items_list/conversation/parts/separator_closed.twig' %}
+    {% for message in this.getLastData() %}
+      {% if this.isNewSeparatorVisible(message) %}
+        {% include 'modules/XC/VendorMessages/items_list/conversation/parts/separator_new.twig' %}
+      {% endif %}
+      {% include 'modules/XC/VendorMessages/items_list/conversation/parts/line.twig' %}
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% include 'modules/XC/VendorMessages/items_list/conversation/parts/create.twig' %}

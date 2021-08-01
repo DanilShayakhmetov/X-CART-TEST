@@ -1,0 +1,5 @@
+Version 5.4.1.9
+
+Fixes (1)
+2020-09-16 - [BUG] The file name was determined incorrectly if its filepath contained the substring 'custom'. Fixed. #XCB-24 #ThemeTweaker
+

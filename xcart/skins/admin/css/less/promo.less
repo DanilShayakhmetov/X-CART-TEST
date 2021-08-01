@@ -1,0 +1,118 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Promo styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.promo-block {
+  padding: 12px 12px;
+  border: 1px solid #b0d4e5;
+  border-radius: 3px;
+  display: table;
+}
+
+.promo-block div {
+  display: table-cell;
+  font-size: 13px;
+}
+
+.promo-content {
+  max-width: 270px;
+  padding-right: 20px;
+}
+
+.promo-block .close {
+  position: relative;
+  top: -7px;
+  right: 0px;
+}
+
+.promo-block .close svg {
+  width: 9px;
+  height: 9px;
+  fill: #31a3da;
+}
+
+.promo-block .promo-content a {
+  text-decoration: none;
+  color: #31a3da;
+}
+
+.promo-block.free-shipping-promo {
+  position: absolute;
+  right: 10px;
+}
+
+.promo-banner {
+  .flex-display();
+  .rounded(@border-radius-base);
+  background-color:@color-light-blue;
+  border: 1px solid @brand-info;
+  padding: (@rhythmic-unit / 2);
+  margin-bottom: @rhythmic-unit;
+
+  & + .promo-banner {
+    margin-top: (-@rhythmic-unit / 2);
+  }
+
+  .promo-banner-logo {
+    margin-right: (@rhythmic-unit / 2);
+    .flex-display();
+    .align-items(center);
+
+    img {
+      max-width: @rhythmic-unit * 7;
+    }
+  }
+
+  .promo-banner-content {
+    .flex-grow(1);
+
+    > div:not(:last-child) {
+      margin-bottom: (@rhythmic-unit / 2);
+    }
+
+    .actions {
+      .align-items(center);
+      .flex-display();
+
+      > *+* {
+        margin-left: @rhythmic-unit;
+      }
+    }
+  }
+
+  .promo-banner-close {
+    width: (@rhythmic-unit / 2);
+    height: (@rhythmic-unit / 2);
+    display: flex;
+    cursor: pointer;
+
+    svg {
+      height: 100%;
+    }
+  }
+}
+
+.tips-columns {
+  display: table-row;
+
+  .left-column,
+  .right-column {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .left-column {
+    padding-right: @rhythmic-unit * 2;
+    min-width: 500px;
+    width: 100%;
+  }
+
+  .right-column {
+    min-width: 360px;
+  }
+}

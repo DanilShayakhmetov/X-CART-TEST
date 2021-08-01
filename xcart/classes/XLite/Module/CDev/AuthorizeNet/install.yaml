@@ -1,0 +1,47 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  -
+    service_name: 'AuthorizeNet SIM'
+    class: Module\CDev\AuthorizeNet\Model\Payment\Processor\AuthorizeNetSIM
+    type: C
+    orderby: -101000
+    countries: [AT, AU, BE, CA, CH, CY, CZ, DE, DK, EE, ES, FI, FR, GB, GI, GR, HU, IE, IS, IT, LI, LT, LU, LV, MT, NL, 'NO', PL, PT, SE, SI, SK, US]
+    translations: [{ code: en, name: 'Authorize.Net SIM' }]
+    settings: [{ name: login }, { name: key }, { name: signature }, { name: type, value: sale }, { name: test, value: 1 }, { name: prefix, value: xcart }]
+XLite\Model\LanguageLabel:
+  -
+    name: 'API Login ID'
+    translations: [{ code: en, label: 'API Login ID' }]
+  -
+    name: 'Transaction key'
+    translations: [{ code: en, label: 'Transaction key' }]
+  -
+    name: 'Signature  key'
+    translations: [{ code: en, label: 'Signature  key' }]
+  -
+    name: authorize_key_help
+    translations: [{ code: en, label: '<p>To obtain the transaction key from the Merchant Interface, do the following:</p><ul class=''custom-disc''><li>Log into the Merchant Interface</li><li>Select Settings from the Main Menu</li><li>Click on Obtain Transaction Key in the Security section</li><li>Type in the answer to the secret question configured on setup</li><li>Click Submit</li></ul>' }]
+  -
+    name: 'It''s recommended to limit the length of invoice prefix to 9 characters'
+    translations: [{ code: en, label: 'It''s recommended to limit the length of invoice prefix to 9 characters. Larger prefixes will be cut prior to transaction initialization.' }]
+  -
+    name: 'Relay Response URL note'
+    translations: [{ code: en, label: 'Add this URL as the default Relay Response URL to the <b>Account</b> -> <b>Response/Receipt URLs</b> section in the <a href=''https://account.authorize.net''>Merchant Interface</a>.' }]
+  -
+    name: relay_response_help
+    translations: [{ code: en, label: 'Relay Response URL is used to return the customer to invoice page after successful payment. Authorize.Net may issue the <b>Error 14</b> (The Referrer or Relay Response URL is invalid) in case this URL is not present in the <b>Merchant Interface</b>. <br/> Read more at the <a href=''https://support.authorize.net/authkb/index?page=content&id=A601'' target=''_blank''>Authorize.Net Support Center</a>' }]
+  -
+    name: 'Dont have an account? Sign Up Now'
+    translations: [{ code: en, label: 'Don''t have an account? <a href=''{{link}}'' target=''_blank''>Sign Up Now</a>' }]
+  -
+    name: 'Required for SHA512 hash protection.'
+    translations: [{ code: en, label: 'Required for SHA512 hash protection.' }]
+  -
+    name: 'Signature key'
+    translations: [{ code: en, label: 'Signature key' }]

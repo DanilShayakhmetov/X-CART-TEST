@@ -1,0 +1,376 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Templates debugg styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+#main > .notification_editor {
+  margin-top: 60px;
+}
+
+#themeTweaker_wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100% !important;
+  width: 300px;
+  background-color: #FFF;
+  z-index: 999998;
+  padding-right: 6px;
+  padding-top: 60px;
+}
+
+.themeTweaker_tree {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+div.single-progress-mark {
+  z-index: 20000;
+  position: fixed;
+}
+
+#themeTweaker_wrapper .ui-resizable-e {
+  border-right: 1px solid #ddd;
+  right: 0;
+}
+
+#themeTweaker_wrapper .ui-resizable-handle.ui-resizable-e:after {
+  content: '';
+  display: block;
+  width: 3px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  height: 100px;
+  margin: auto;
+  top: 50%;
+  position: relative;
+  margin-top: -50px;
+  box-shadow: 2px 0 0 -1px #ddd, -2px 0 0 -1px #ddd;
+  background: #ddd;
+}
+
+#themeTweaker_wrapper .themeTweaker-control-panel {
+  padding: 10px;
+  padding-top: 5px;
+  min-width: 277px;
+}
+
+
+#themeTweaker_wrapper .themeTweaker-title {
+  font-size: 24px;
+}
+
+#themeTweaker_wrapper .themeTweaker-label {
+  display: inline-block;
+  max-width: 200px;
+}
+
+#themeTweaker_wrapper .themeTweaker-onoffswitch {
+  display: inline-block;
+  float: right;
+  min-width: 54px;
+  text-align: right;
+  margin-top: -5px;
+}
+
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .fa {
+  padding: 4px;
+  width: 54px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  transition: background 0.4s;
+  color: #9d9d9d;
+  font-size: 14px;
+  vertical-align: middle;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .fa:before,
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .fa:after {
+  position: absolute;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .fa:before {
+  padding: 4px;
+  transition: margin 0.4s, color 0.4s;
+  z-index: 1;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .fa:after {
+  top: 4px;
+  bottom: 4px;
+  width: 22px;
+  border-radius: 30px;
+  transition: margin 0.4s, background 0.4s;
+  background-color: #fff;
+  content: "";
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .themeTweaker-on-label,
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .themeTweaker-off-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 2px;
+  transition: color 0.4s;
+  display: inline-block;
+  vertical-align: middle;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .themeTweaker-on-label {
+  color: #ccc;
+  text-align: left;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label .themeTweaker-off-label {
+  color: #9d9d9d;
+  text-align: right;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox]:checked + label .fa {
+  background-color: #51b962;
+  color: #51b962;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox]:checked + label .fa:before,
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox]:checked + label .fa:after {
+  margin-left: 24px;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox]:checked + label .themeTweaker-on-label {
+  color: #51b962;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox]:checked + label .themeTweaker-off-label {
+  color: #ccc;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox]:disabled + label {
+  opacity: .1;
+}
+
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+#themeTweaker_wrapper .themeTweaker-onoffswitch input[type=checkbox] + label {
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: left;
+  position: relative;
+}
+
+#themeTweaker_wrapper .themeTweaker-back {
+  margin-bottom: 20px;
+}
+
+#themeTweaker_wrapper .themeTweaker-control-panel {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget {
+  padding-bottom: 20px;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .title {
+  margin: 5px 0 5px 0;
+  display: inline-block;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .title::placeholder {
+  color: #999;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .change {
+  display: inline-block;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .themeTweaker-data-widget-input input {
+  font-size: 14px;
+  color: #141414;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .themeTweaker-data-widget-input .input-text-autocomplete ul.ui-autocomplete {
+  border: 1px solid #c3c3c3;
+  padding: 0;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .themeTweaker-data-widget-input .input-text-autocomplete ul.ui-autocomplete > li {
+  margin: 0;
+  font-size: 14px;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .themeTweaker-data-widget-input .input-text-autocomplete ul.ui-autocomplete > li a {
+  border: none;
+  border-radius: 0;
+  text-decoration: none;
+  margin: 0;
+  color: #444;
+}
+
+#themeTweaker_wrapper .themeTweaker-data-widget > .themeTweaker-data-widget-input .input-text-autocomplete ul.ui-autocomplete > li a.ui-state-focus {
+  background: #c3f9ec;
+}
+
+#themeTweaker_header {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+#themeTweaker_header > .breadcrumbs > ul {
+  margin: 15px;
+}
+
+#themeTweaker_header > .breadcrumbs > ul > li {
+  display: inline-block;
+  font-size: 18px;
+}
+
+#themeTweaker_header > .breadcrumbs > ul > li + li:before {
+  content: "\203A";
+  color: #ccd0d2;
+  margin: 0 5px;
+}
+
+#themeTweaker_header > .buttons {
+  margin: 10px;
+}
+
+#themeTweaker_header > .buttons > button + button {
+  margin-left: 5px;
+}
+
+#themeTweaker_header > h3 {
+  margin: 10px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-anchor {
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  margin-left: 4px;
+  color: #333 !important;
+}
+
+.themeTweaker_tree.jstree-default .jstree-icon.jstree-themeicon {
+  background: none;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  color: #4f5b6a !important;
+}
+
+.themeTweaker_tree.jstree-default .jstree-open > .jstree-ocl {
+  background-position: -132px -6px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-closed > .jstree-ocl {
+  background-position: -100px -6px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-children {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.themeTweaker_tree.jstree-default .jstree-node {
+  min-height: 20px;
+  line-height: 20px;
+  position: relative;
+  margin-left: 28px;
+}
+
+.themeTweaker_tree.jstree-default > .jstree-container-ul > .jstree-node {
+  margin-left: 8px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-node.jstree-reverted > .jstree-revert {
+  opacity: .2;
+}
+
+.themeTweaker_tree.jstree-default .jstree-node > .jstree-revert {
+  position: absolute;
+  cursor: pointer;
+  left: -17px;
+  transform: scaleX(-1);
+}
+
+.themeTweaker_tree.jstree-default .jstree-node > .jstree-revert:hover .jstree-icon {
+  color: #1cb5fc;
+}
+
+.themeTweaker_tree.jstree-default .jstree-node > .jstree-revert > .jstree-icon:after {
+  content: '\f01e' !important;
+}
+
+.themeTweaker_tree.jstree-default .jstree-clicked {
+  background: #4f5b6a;
+  color: #ccd0d2 !important;
+  box-shadow: none;
+}
+
+.themeTweaker_tree.jstree-default .template-weight {
+  color: #932e8a;
+  margin-right: 6px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-node[data-user-generated="true"] > .jstree-anchor:not(.jstree-clicked):not(.jstree-hovered) {
+  background: #fefde5;
+}
+
+.themeTweaker_tree.jstree-default .jstree-node.jstree-reverted > .jstree-anchor {
+  opacity: .2;
+}
+
+.themeTweaker_tree.jstree-default .jstree-icon:empty {
+  height: 20px;
+  line-height: 20px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-disabled > .jstree-icon {
+  opacity: 1;
+  filter: none;
+}
+
+.themeTweaker_tree.jstree-default .jstree-icon.jstree-themeicon:after {
+  content: '\f15c';
+}
+
+.themeTweaker_tree.jstree-default .jstree-open > .jstree-anchor > .jstree-icon.jstree-themeicon:after {
+  content: '\f15c';
+}
+
+.themeTweaker_tree.jstree-default .jstree-anchor.jstree-clicked > .jstree-icon.jstree-themeicon:after,
+.themeTweaker_tree.jstree-default .jstree-anchor.jstree-clicked > .template-weight {
+  color: white;
+}
+
+.themeTweaker_tree.jstree-default .jstree-leaf > .jstree-anchor > .jstree-icon.jstree-themeicon:after {
+  content: '\f0f6';
+}
+
+.themeTweaker_tree.jstree-default .jstree-disabled > .jstree-icon.jstree-themeicon:after {
+  content: '\f07b';
+}
+
+.themeTweaker_tree.jstree-default .jstree-leaf > .jstree-anchor.jstree-disabled > .jstree-icon.jstree-themeicon:after {
+  content: '\f114';
+}
+
+.themeTweaker_tree.jstree-default .jstree-open > .jstree-anchor.jstree-disabled > .jstree-icon.jstree-themeicon:after {
+  content: '\f07c';
+}

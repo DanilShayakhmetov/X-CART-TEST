@@ -1,0 +1,5 @@
+Version 5.4.1.0
+
+Improvements (1)
+2020-09-04 - [Change] On the page admin.php?target=global_tabs, the global tabs that are added by addons are now hidden when the respective addons are disabled and are removed from the database when the respective addons are removed. Improvement of the default help tip informing the user by which addon this or that tab was added. #XCN-11202 https://bt.x-cart.com/view.php?id=51976 #CustomProductTabs
+

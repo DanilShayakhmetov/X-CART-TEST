@@ -1,0 +1,27 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Subscription info styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+div.subscription-info {
+  list-style: none;
+  padding: 8px 0px 5px 27px;
+}
+
+div.subscription-info > ul > li {
+  list-style: none;
+  padding: 0px 0px 13px 0px;
+}
+
+div.subscription-param {
+  display: table-cell;
+  width: 250px;
+}
+
+div.subscription-value {
+  display: table-cell;
+}

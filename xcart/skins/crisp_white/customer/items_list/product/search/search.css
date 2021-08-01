@@ -1,0 +1,158 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Products list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.search-form-main-part,
+.advanced-search-options,
+.search-form-main-part td,
+.advanced-search-options td
+{
+  border: none 0;
+}
+
+@media (max-width: 480px) {
+  table.advanced-search-options ul.search-by-options li {
+    width: 50%;
+    margin: 10px 0 10px 0;
+  }
+
+  .advanced-search-options ul.search-by-options li input[type="checkbox"] {
+    margin-right: 12px;
+  }
+
+  .search-form td.title-search-by-options {
+    line-height: normal;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.advanced-search-options ul.search-by-options li {
+  margin-bottom: 20px;
+}
+
+.search-form-main-part button.search-form-submit {
+  width: 147px;
+}
+
+.search-form-main-part button.search-form-submit span {
+  padding: 0;
+}
+
+.search-product-form td {
+  padding: 0;
+}
+
+.search-product-form td.substring-cell input {
+  margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  .search-product-form td ul.search-including-options li {
+    padding: 5px 0;
+  }
+
+  .search-product-form td ul.search-including-options {
+    padding-top: 5px;
+  }
+
+  .search-product-form td ul.search-including-options li:last-of-type {
+    padding-bottom: 15px;
+  }
+}
+
+.list-container h1.title {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .search-form .search-form-main-part td.submit-button {
+    display: none !important;
+  }
+
+  .search-product-form {
+    margin-top: 20px;
+  }
+
+  .advanced-search-options ul.search-by-options li label {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .search-form-main-part.visible-xs td.less-search-options-cell {
+    padding-left: 0;
+  }
+
+  .search-form-main-part .less-search-options-cell a {
+    color: #9ea3b7;
+    border-bottom: 1px dotted #9ea3b7;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-form .search-form-main-part td.submit-button {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .search-form .search-form-main-part td.less-search-options-cell {
+    display: block !important;
+  }
+
+  .search-form .search-form-main-part.second td.less-search-options-cell {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-search-result .list-header {
+    border-top: none;
+  }
+}
+
+.search-product-form .submit-button {
+  text-align: center;
+}
+
+ul.search-including-options li,
+ul.search-by-options li
+{
+  background: none;
+  float: left;
+  margin-right: 30px;
+}
+
+ul.search-including-options li > *,
+ul.search-by-options li > * {
+  vertical-align: middle;
+}
+
+ul.search-by-options li label input {
+  vertical-align: middle;
+}
+
+.search-form-main-part td.less-search-options-cell {
+  text-align: center;
+}
+
+.advanced-search-options td {
+  padding: 0;
+  vertical-align: middle;
+}
+
+.advanced-search-options td select {
+  margin-left: 0;
+  width: auto;
+  max-width: 366px;
+}
+
+@media (max-width: 460px) {
+  .advanced-search-options td select {
+    max-width: 250px;
+  }
+}

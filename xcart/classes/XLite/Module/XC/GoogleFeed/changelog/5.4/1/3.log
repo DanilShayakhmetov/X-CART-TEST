@@ -1,0 +1,4 @@
+Version
+
+Fixes(1)
+2020-10-20 - [BUG] Google Product Feed. Feed generation with a large number of products and attributes was slow. Fixed. #XCC-450 #GoogleFeed

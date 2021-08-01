@@ -1,0 +1,24 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: add_to_cart_value
+    category: XC\FacebookMarketing
+    type: hidden
+    value: 30
+  - name: view_content_value
+    category: XC\FacebookMarketing
+    type: hidden
+    value: 10
+  - name: init_checkout_value
+    category: XC\FacebookMarketing
+    type: hidden
+    value: 40
+  - name: advanced_matching
+    category: XC\FacebookMarketing
+    type: hidden
+    value: false

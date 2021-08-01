@@ -1,0 +1,50 @@
+{##
+ # ViewModel
+ #}
+{% extends "base/php-class.twig" %}
+
+{% block method_defineFields_body %}
+        return [
+            self::SECTION_DEFAULT => [
+{% for field in method.fields %}
+                '{{ field.code }}' => [
+                    'label'    => static::t('{{ field.humanName }}'),
+{% if field.type %}
+                    'type'     => '{{ field.type }}',
+{% endif %}
+                    'required' => true,
+                    'constraints' => [
+                        'Symfony\Component\Validator\Constraints\NotBlank' => [
+                            'message' => static::t('This field is required'),
+                        ],
+                    ],
+                    'position' => {{ field.position }},
+                ],
+{% endfor %}
+            ],
+      ];
+{% endblock %}
+
+
+{% block method_getAllowedTargets_body %}
+        $result   = parent::getAllowedTargets();
+        $result[] = '{{ method.target }}';
+
+        return $result;
+{% endblock %}
+
+
+{% block class_comment %}
+/**
+ * {{ class.name }}
+ *
+ * @ListChild (list="admin.center", zone="admin")
+ */
+{% endblock %}
+
+
+{% block method_getActionParams_body %}
+        $identity = \XLite\Core\Request::getInstance()->{{ idName }};
+
+        return $identity ? ['{{ idName }}' => $identity] : [];
+{% endblock %}

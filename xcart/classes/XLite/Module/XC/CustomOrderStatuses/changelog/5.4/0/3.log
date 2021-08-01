@@ -1,0 +1,5 @@
+Version 5.4.0.3
+
+Improvements (1)
+2019-12-18 - [Change] The spelling of the word "fulfilment" in the text labels was fixed. #BUG-7332 (Shevelov Alexander) #Core #Egoods #PINCodes #NotFinishedOrders #CustomOrderStatuses
+

@@ -1,0 +1,6 @@
+Version 5.4.1.3
+
+Improvements (2)
+2020-05-12 - [Change] Added info panels onto the admin dashboard. #XCN-10954 #Core #Onboarding
+2020-05-08 - [Change] Updated the Onboarding wizard steps and layout for Cloud license users. For all license types, added parameters to the URL of each step and changed the page layout for the step of adding a product. #XCN-10952 #Onboarding
+

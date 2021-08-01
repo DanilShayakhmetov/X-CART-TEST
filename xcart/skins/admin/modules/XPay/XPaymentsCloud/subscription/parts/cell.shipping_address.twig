@@ -1,0 +1,19 @@
+{##
+ # List of addresses of the profile from address book
+ #
+ #}
+<div class="subscription-shipping-method">
+  {% if this.entity.getCalculateShipping() %}
+    {% if this.entity.getProfileAddresses() %}
+      <select name="data[{{ this.entity.getId() }}][shipping_address]" class="form-control">
+        {% for shipping_address in this.entity.getProfileAddresses() %}
+          <option value="{{ shipping_address.address_id }}"{% if (this.entity.getShippingAddress() and this.entity.getShippingAddress().getAddressId() == shipping_address.address_id) %} selected="selected"{% endif %}>
+            {{ this.getAddressName(shipping_address) }}
+          </option>
+        {% endfor %}
+      </select>
+    {% endif %}
+  {% else %}
+    {{ t('Not available') }}
+  {% endif %}
+</div>

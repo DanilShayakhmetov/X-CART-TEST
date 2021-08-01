@@ -1,0 +1,138 @@
+{##
+ # Stuff to put in header
+ #}
+
+{% set transaction = this.getOrderDetails() %}
+{% if transaction %}
+    <script type="text/javascript">
+        var swPreRegister = function() {
+            var trans = sw.create_transaction(
+                "{{ transaction['order_id'] }}",
+                "{{ transaction['affiliate'] }}",
+                "{{ transaction['sub_total'] }}",
+                "{{ transaction['tax'] }}",
+                "{{ transaction['city'] }}",
+                "{{ transaction['state'] }}",
+                "{{ transaction['country'] }}",
+                "{{ transaction['total'] }}",
+                "{{ transaction['currency'] }}",
+            );
+
+            {% for item in transaction['items'] %}
+                trans.add_item(
+                    "{{ item['id'] }}",
+                    "{{ item['name'] }}",
+                    "{{ item['category'] }}",
+                    "{{ item['price'] }}",
+                    "{{ item['quantity'] }}",
+                );
+            {% endfor %}
+
+            //sw.hit.set_page("ORDER_CONFIRMATION");
+        };
+    </script>
+{% endif %}
+
+{% set product = this.getCurrentProductDetails() %}
+{% if product %}
+    <script type="text/javascript">
+        var swPreRegister = function() {
+            sw.track('ViewContent',
+                {
+                    content_type: 'product',
+                    content_ids: "{{ product['id'] }}",
+                    content_name: "{{ product['name'] }}",
+                    content_category: "{{ product['category'] }}"
+                }
+            );
+            sw.gEvent('view_item',
+                {
+                    items: [
+                        {
+                            "id": "{{ product['id'] }}",
+                            "name": "{{ product['name'] }}",
+                            "category": "{{ product['category'] }}",
+                            "google_business_vertical": "retail"
+                        }
+                    ]
+                }
+            );
+            sw.gEvent('page_view',
+                {
+                    "ecomm_prodid": "{{ product['id'] }}"
+                }
+            );
+
+            sw.register_product_view(
+                {
+                    "id": "{{ product['id'] }}",
+                    "category": "{{ product['category'] }}"
+                }
+            );
+        };
+    </script>
+{% endif %}
+
+{% set cart = this.getCurrentCartDetails() %}
+{% if cart %}
+    <script type="text/javascript">
+        var swPreRegister = function() {
+            let itemsForGTAG = [];
+            let swCart = [];
+            {% for item in cart['items'] %}
+                sw.track('AddToCart',
+                    {
+                        content_type: 'product',
+                        content_ids: ["{{ item.getProductId() }}"],
+                        content_name: "{{ item['name'] }}",
+                        value: {{ item['price'] }},
+                        currency: '{{ cart.getCurrency().getCode() }}'
+                    }
+                );
+                itemsForGTAG.push(
+                    {
+                        "id": "{{ item.getProductId() }}",
+                        "name": "{{ item['name'] }}",
+                        "price": "{{ item['price'] }}",
+                        "quantity": "{{ item['amount'] }}",
+                        "google_business_vertical": "retail"
+                    }
+                );
+                swCart.push(
+                    {
+                        "id": "{{ item.getProductId() }}",
+                        "name": "{{ item['name'] }}",
+                        "price": "{{ item['price'] }}",
+                        "quantity": "{{ item['amount'] }}",
+                        "currency": "{{ cart.getCurrency().getCode() }}"
+                    }
+                );
+            {% endfor %}
+            sw.gEvent('add_to_cart',
+                {
+                    "items": itemsForGTAG
+                }
+            );
+            sw.register_shopcart(
+                {
+                    "items": swCart
+                }
+            );
+        };
+    </script>
+{% endif %}
+
+<script type="text/javascript">
+    var _swaMa = ["{{ this.getAccountNumber() }}"];
+    "undefined" == typeof sw && !function (e, s, a) {
+        function t() {
+            for (; o[0] && "loaded" == o[0][d];)
+                i = o.shift(),
+                i[w] = !c.parentNode.insertBefore(i, c)
+        }
+        for (var r, n, i, o = [], c = e.scripts[0], w = "onreadystatechange", d = "readyState"; r = a.shift();)
+            n = e.createElement(s),
+            "async" in c ? (n.async = !1, e.head.appendChild(n)) : c[d] ? (o.push(n), n[w] = t): e.write("<" + s + ' src="' + r + '" defer></' + s + ">"),
+            n.src = r
+    }(document, "script", ["//analytics.sitewit.com/v3/" + _swaMa[0] + "/sw.js"]);
+</script>

@@ -1,0 +1,8 @@
+Version 5.4.1.2
+
+Improvements (1)
+2020-04-29 - [Change] Changes to email notification templates. #XCN-10817 #Core #ContactUs #Egoods #CanadaPost #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+
+Fixes (1)
+2020-06-03 - [Bug] Fixed the incorrect text in the help tip on the Email notifications > Order message page. #BUG-8669 https://bt.x-cart.com/view.php?id=51738 #VendorMessages
+

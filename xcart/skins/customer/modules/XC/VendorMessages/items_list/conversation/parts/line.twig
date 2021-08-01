@@ -1,0 +1,9 @@
+{##
+ # Messages list : line
+ #}
+
+<li {{ this.printTagAttributes(this.getLineTagAttributes(message))|raw }}>
+  <div class="author">{{ message.getAuthorName() }}</div>
+  <div class="body">{{ message.publicBody|raw }}</div>
+  <div class="date"><span>{{ this.formatTime(message.date) }}</span></div>
+</li>

@@ -1,0 +1,5 @@
+Version 5.4.0.9
+
+Fixes (1)
+2020-05-28 - [Bug] Stripe vs PHP 7.4 Return error. The order was not getting created. Fixed. #BUG-8719 #Stripe
+

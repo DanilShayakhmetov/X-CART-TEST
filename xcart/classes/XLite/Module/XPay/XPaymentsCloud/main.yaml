@@ -1,0 +1,11 @@
+version: 5.4.3.5
+type: payment
+authorName: 'X-Cart Payments team'
+moduleName: 'X-Payments Cloud connector'
+description: 'Process and store credit cards right on your website, accept recurring payments and reorders, implement subscriptions & sell in instalments. X-Payments will take the PSD2/SCA & PCI DSS burden off your shoulders.'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: true
+canDisable: true

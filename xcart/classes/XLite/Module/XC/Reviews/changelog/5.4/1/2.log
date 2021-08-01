@@ -1,0 +1,11 @@
+Version 5.4.1.2
+
+Improvements (2)
+2020-06-08 - [Change] The names of the menu items in the main admin menu in the sidebar and the titles of the pages to which they provide links now follow the same style guidelines. #XCN-10981 #Core #SocialLogin #ProductReviews #NewsletterSubscriptions #ProductTags #News #Facebook Commerce #GoogleFeed #Onboarding #ShopByBrand
+2020-04-29 - [Change] Changes to email notification templates. #XCN-10817 #Core #ContactUs #Egoods #CanadaPost #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+
+Fixes (3)
+2020-04-15 - [Bug] The "On moderation" and "Edit" links on product reviews on the storefront were positioned incorrectly. Fixed. #BUG-8531 #ProductReviews
+2020-04-15 - [Bug] Export of reviews from a product page exported the reviews of all products. Fixed. #BUG-8529 #ProductReviews
+2020-03-02 - [Bug] The text in a help tip for Reviews was using a wrong color. Fixed. #BUG-8322 #ProductReviews
+

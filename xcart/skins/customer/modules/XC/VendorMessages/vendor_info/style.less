@@ -1,0 +1,42 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Products details vendor section styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.vendor-info__contact-now > *:not(script) {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vendor-info__contact-now {
+  z-index: 1000;
+}
+
+.vendor-info--product .popover-content {
+  .vendor-info__contact-now {
+    float: right;
+
+    @media (max-width: @screen-sm-min) {
+      float: left;
+    }
+  }
+}
+
+.vendor-info--vendor-page {
+  & .vendor-info__contact-now {
+    position: absolute;
+    right: 0;
+    top: 18px;
+    margin: 0;
+
+    @media (max-width: @screen-md-min) {
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+  }
+}

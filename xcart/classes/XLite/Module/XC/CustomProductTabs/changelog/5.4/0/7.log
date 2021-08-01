@@ -1,0 +1,6 @@
+Version 5.4.0.7
+
+Fixes (2)
+2019-12-17 - [Bug] Incorrect message when importing custom product tabs if the product did not exist. Fixed. #BUG-7706 (Jamil Ainulov) #CustomProductTabs
+2019-12-13 - [Bug] Internal server error while importing custom product tabs if the format of the csv file was incorrect. Fixed. #BUG-7966 https://bt.x-cart.com/view.php?id=51046 (Damir Khamidullin) #Core #CustomProductTabs
+

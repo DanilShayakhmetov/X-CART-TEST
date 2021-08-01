@@ -1,0 +1,9 @@
+{##
+ # Clean URLs settings page template
+ #}
+
+<div id="clean-url-help-data">
+  {{ this.displayCommentedData(this.getCleanUrlCommentedData()) }}
+</div>
+
+{{ widget('\\XLite\\View\\Model\\Settings', useBodyTemplate='1') }}

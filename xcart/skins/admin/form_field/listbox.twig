@@ -1,0 +1,22 @@
+{##
+ # Listbox template
+ #}
+
+<div class="listbox">
+
+  <input type="hidden" id="{{ this.getFieldId() }}-store" class="affect-change" name="{{ this.getName() }}" value="{{ this.getOptionsStored() }}" data-separator="{{ this.getSeparator() }}" />
+
+  <div class="listbox-item from">
+    {{ widget(this.getSelectWidgetClass(), fieldId=this.getFieldId() ~ '-listbox-select-from', label=this.getLabelFrom(), options=this.getOptionsFrom()) }}
+  </div>
+
+  <div class="listbox-actions">
+    {{ widget('\\XLite\\View\\Button\\Regular', label='&gt;&gt;', style='add', jsCode='return false;') }}
+    {{ widget('\\XLite\\View\\Button\\Regular', label='&lt;&lt;', style='remove', jsCode='return false;') }}
+  </div>
+
+  <div class="listbox-item to">
+    {{ widget(this.getSelectWidgetClass(), fieldId=this.getFieldId() ~ '-listbox-select-to', label=this.getLabelTo(), options=this.getOptionsTo()) }}
+  </div>
+
+</div>

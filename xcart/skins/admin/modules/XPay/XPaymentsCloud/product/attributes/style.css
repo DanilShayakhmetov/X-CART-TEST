@@ -1,0 +1,14 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attributes (subscription fee modifier)
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+div.modifiers span.text span.xpaymentsSubscriptionFee-modifier {
+  background: transparent url(../../images/subscriptionFeeModifier.png) no-repeat left -1px;
+  padding-left: 22px;
+  margin-left: 3px;
+}

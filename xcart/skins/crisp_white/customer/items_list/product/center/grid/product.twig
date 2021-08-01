@@ -1,0 +1,14 @@
+{##
+ # Products list item (grid variant)
+ #}
+
+{{ widget_list('head', type='inherited', product=this.product) }}
+
+<div class="{{ this.getProductCellClass() }}">
+  {{ widget_list('mainBlock', type='inherited', product=this.product) }}
+  <div class="infoBlock">
+      {{ widget_list('info', type='inherited', product=this.product) }}
+  </div>
+</div>
+
+{{ widget_list('tail', type='inherited', product=this.product) }}

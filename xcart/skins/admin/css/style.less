@@ -1,0 +1,169 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import "less/layout";
+@import "less/header";
+@import "less/sidebar";
+@import "less/footer";
+@import "less/sticky-panel";
+@import "less/upgrade-box";
+@import "less/dropdowns";
+@import "less/promo";
+@import "less/message";
+@import "less/tabs";
+@import "less/table";
+@import "less/form-table";
+@import "less/form-symfony";
+@import "less/sections";
+@import "less/dialog-block";
+@import "less/payment-settings";
+@import "less/pagination";
+
+/* Data table */
+table.data-table {
+  width: 100%;
+
+  .table-wrapper & tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  th {
+    background-color: @items-list-head-bg;
+    height: @items-list-head-height;
+    color: @items-list-color;
+    white-space: nowrap;
+    font-weight: @font-regular;
+    vertical-align: middle;
+  }
+  td {
+    height: @items-list-body-height;
+    color: @items-list-color;
+    white-space: nowrap;
+  }
+}
+
+table.data-table th.center
+{
+  text-align: center;
+}
+
+table.data-table td a.module-name.no-link
+{
+  color: #333333;
+}
+
+table.data-table th a {
+  text-decoration: none;
+}
+
+table.data-table th a:hover {
+  text-decoration: underline;
+}
+
+table.data-table tr.highlight td
+{
+  background-color: #f2f2f2;
+}
+
+table.data-table td.separator
+{
+  border-top: solid 1px #E5EBEF;
+  padding: 0;
+}
+
+table.data-table .extender
+{
+  width: 100%;
+}
+
+table.data-table td.extender input
+{
+  width: 90%;
+}
+
+table.data-table td.center
+{
+  text-align: center;
+}
+
+/* Product modify form */
+
+td.action-buttons button {
+  margin-right: 20px;
+}
+
+td.name-attribute
+{
+  white-space: nowrap;
+  vertical-align: top;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+td.value-attribute
+{
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+td div.table-value {
+  width: auto;
+  padding: 0;
+}
+
+.model-properties input#meta-tags,
+.model-properties input#meta-desc,
+.target-notification #form_settings_subject,
+input#cleanurl,
+input#form_marketing_clean_url_clean_url {
+  width: 420px;
+}
+
+ul.summary-table,
+ul.main-table,
+ul.access-table
+{
+  padding: 8px 0 5px 27px;
+}
+
+ul.summary-table li,
+ul.main-table li,
+ul.access-table li
+{
+  padding: 0 0 13px 0;
+}
+
+.target-promotions .page-tabs {
+  display: none;
+}
+
+/**
+ * Form errors
+ */
+.blackPopup .formErrorContent {
+  background-color: #fff;
+}
+
+.items-list.products table.list tbody.lines td input.price {
+  width: 90px;
+}
+
+button i.button-icon.state-off {
+  color: #bac3da;
+}
+
+button i.button-icon.state-on {
+  color: @color-success;
+}
+
+button.force-notice {
+  display: none;
+}

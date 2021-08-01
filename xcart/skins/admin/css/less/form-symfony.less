@@ -1,0 +1,158 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Form symfony styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+ 
+.form-horizontal {
+  .form-group {
+    margin: 0 0 @form-row-vertical-margin 0;
+
+    & > .control-label {
+      width: @form-label-width;
+    }
+
+    & > .input-widget {
+      padding: @form-row-vertical-padding 0;
+    }
+
+    &.has-error {
+      box-shadow: none;
+      border-color: transparent;
+      border-radius: inherit;
+    }
+
+    .help-block {
+      margin-top: @help-block-margin-top;
+      margin-bottom: -(@line-height-base + @help-block-margin-top);
+
+      .text-wrapper {
+        display: inline-block;
+        max-width: @help-block-max-width;
+      }
+    }
+
+    &:last-child {
+      .help-block {
+        margin-bottom: -(@line-height-small-text);
+      }
+    }
+  }
+
+  .form-row {
+    .flex-display();
+    line-height: @rhythmic-lineheight;
+  }
+
+  .control-label {
+    .flex(0 0 auto);
+    text-align: @form-label-horizontal-align;
+    padding-top: @form-label-vertical-offset;
+    padding-right: (@grid-gutter-width / 2);
+  }
+
+  .input-widget {
+    .flex-display();
+    .flex-flow(row wrap);
+
+    .control-label {
+      padding-top: @form-label-vertical-offset - @form-row-vertical-padding;
+    }
+
+    .input-wrapper {
+      .flex-display();
+      .form-control-widths();
+
+      .table-value {
+        display: block;
+      }
+    }
+
+    .help-wrapper {
+      .flex(0 auto);
+      .flex-display();
+      .align-items(center);
+      height: @form-value-wrapper-min-height;
+    }
+
+    .help-block {
+      .flex(1 100%);
+    }
+  }
+
+  .base-composite-row {
+    & > .input-widget {
+      .flex(1 1 auto);
+
+      & > .input-wrapper {
+        .flex-grow(1);
+        .flex-flow(row wrap);
+        margin: -@form-row-vertical-padding 0;
+
+        & > .form-row {
+          padding: @form-row-vertical-padding 0;
+        }
+      }
+    }
+
+    .form-row {
+      margin-right: @form-column-horizontal-margin;
+    }
+  }
+
+  .old-row {
+    & > .input-widget {
+      .flex(1 1 auto);
+
+      & > .input-wrapper {
+        .flex-display();
+        .flex-grow(1);
+      }
+    }
+  }
+
+  .input-group {
+    max-width: @form-value-input-group-width;
+
+    input {
+      min-width: 80px;
+    }
+  }
+
+  .uploader-row .control-label {
+    align-self: center;
+    padding-top: 0;
+  }
+
+  .datepicker-row .input-group {
+    max-width: @form-value-datepicker-width;
+  }
+
+  .clean-url-row .input-group {
+    max-width: @form-value-input-width-large;
+  }
+
+  .form-row.mail-textarea-advanced-row > .input-widget,
+  .form-row.textarea-advanced-row > .input-widget {
+    float: none;
+  }
+
+  .caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .gap {
+    height: 59px;
+  }
+
+  .checkbox,
+  .radio {
+    min-height: @input-height-base;
+    .flex-display();
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,18 @@
+{##
+ # Layout editor panel
+ #}
+
+<xlite-webmaster-mode inline-template interface="{{ this.getInterface() }}" tree-key="{{ this.getJstreeCacheKey() }}">
+  <div class="webmaster-mode-section themetweaker-section">
+    <div class="webmaster-mode-tree" :class="treeClasses">
+      <div id="themeTweaker_wrapper" style="display: none;" data-editor-wrapper>
+        <div class="themeTweaker-control-panel" data-editor-control-panel>
+        </div>
+      </div>
+    </div>
+    <div class="webmaster-mode-code" data-editor-code>
+      {{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\ThemeTweaker\\TemplateCode') }}
+    </div>
+    {% include 'modules/XC/ThemeTweaker/themetweaker/webmaster_mode/confirm_switch_modal.twig' %}
+  </div>
+</xlite-webmaster-mode>

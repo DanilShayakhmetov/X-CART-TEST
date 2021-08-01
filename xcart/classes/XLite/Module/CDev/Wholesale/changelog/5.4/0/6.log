@@ -1,0 +1,8 @@
+Version 5.4.0.6
+
+Fixes (4)
+2019-11-26 - [Bug] The first price in the wholesale pricing table on the product page did not include VAT, whereas the rest of the configured prices did include VAT. Fixed. #BUG-8103 (Shevelov Alexander) #Wholesale
+2019-11-11 - [Bug] The price of a product with wholesale prices configured was shown incorrectly on the product page on the storefront if the qty field value had been reset by first removing the current value and then entering a new one. Fixed. #BUG-7137 https://bt.x-cart.com/view.php?id=50512 (Jamil Ainulov) #Wholesale
+2019-10-14 - [Bug] Issues with quick_data not getting recalculated after updating the Wholesale pricing of a product. Fixed. #BUG-7994 (Nikita Erkhov) #Wholesale
+2019-09-25 - [Bug] In a product's Quick view, the Save column in the Wholesale table was not displayed. Fixed; now Save values are displayed properly. #BUG-6751 https://bt.x-cart.com/view.php?id=50032 (Shevelov Alexander) #Wholesale
+

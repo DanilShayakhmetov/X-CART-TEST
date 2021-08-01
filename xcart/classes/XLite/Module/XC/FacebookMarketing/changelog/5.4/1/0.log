@@ -1,0 +1,8 @@
+Version 5.4.1.0
+
+Improvements (1)
+2019-10-11 - [Change] Added the parameter Value for the events ViewContent on the product page, AddToCart and InitiateCheckout. #XCN-9293 https://bt.x-cart.com/view.php?id=50114 (Shevelov Alexander) #Facebook Commerce
+
+Fixes (1)
+2019-10-08 - [Bug] Implemented uniform system behavior for user-invoked cancellation of processes (like generation of feeds, data removal, XML Sitemap generation, data uploading to MailChimp, etc.) #BUG-7458 (Shevelov Alexander) #Core #AmazonS3Images #XMLSitemap #MailChimp #BulkEditing #Facebook Commerce #GoogleFeed #YandexMarket
+

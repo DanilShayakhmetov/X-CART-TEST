@@ -1,0 +1,10 @@
+{##
+ # Cell
+ #}
+
+<span>
+{{ this.entity.getName()|raw }}
+{% if this.isNameTooltipVisible(this.entity) %}
+  {{ widget('XLite\\View\\Tooltip', text=this.getNameTooltip(this.entity)|raw, isImageTag='true', className='help-icon', placement="auto bottom") }}
+{% endif %}
+</span>

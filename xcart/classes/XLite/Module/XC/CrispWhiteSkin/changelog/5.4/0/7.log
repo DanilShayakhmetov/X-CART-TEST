@@ -1,0 +1,10 @@
+Version 5.4.0.7
+
+Fixes (6)
+2020-01-10 - [Bug] Layout issues on the Estimate shipping popup. Fixed. #BUG-7927 (Fedya Lavrentyev) #CrispWhiteSkin
+2020-01-10 - [Bug] Fixed the artefacts that appeared after adding a product to the shopping cart via the Add to cart popup. #BUG-7786 (Fedya Lavrentyev) #Add2CartPopup #CrispWhiteSkin
+2019-12-20 - [Bug] Longer attribute names were displayed incorrectly in the minicart in Crisp White. #BUG-7402 https://bt.x-cart.com/view.php?id=50674 (Maxim Kuznetsov) #CrispWhiteSkin
+2019-12-18 - [Bug] Layout issue related to the coupon code entry field on the checkout page on iPad. Fixed. #BUG-7423 https://bt.x-cart.com/view.php?id=50695 (Pavel Veselovsky) #CrispWhiteSkin
+2019-12-04 - [Bug] On an iPad device, product pages can now be accesses with a single click. #BUG-7177 https://bt.x-cart.com/view.php?id=50552 (Maxim Kuznetsov) #CrispWhiteSkin
+2019-11-27 - [Bug] The product sorting widged ("Sort by:") on a category page was not shaded when switching the type of product list layout. Fixed. #BUG-7231 (Nikita Erkhov) #CrispWhiteSkin
+

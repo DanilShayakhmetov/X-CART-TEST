@@ -1,0 +1,8 @@
+Version 5.4.2.0
+
+Improvements (1)
+2020-12-19 - [Story] Added a new setting: "Always show coupon code box". #XCC-1162 #CDev-Coupons #XC-CrispWhiteSkin
+
+Fixes (1)
+2021-01-05 - [Bug] Fatal errors if entering incorrect data in the fields "The maximum number of uses" and "The maximum number of uses per user". Fixed. #XCB-41 #CDev-Coupons
+

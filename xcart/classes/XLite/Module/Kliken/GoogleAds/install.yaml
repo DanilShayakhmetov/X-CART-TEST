@@ -1,0 +1,303 @@
+XLite\Model\Config:
+  - name: account_id
+    category: Kliken\GoogleAds
+    type: XLite\View\FormField\Input\Text\Integer
+    orderby: 100
+    value: ''
+    translations:
+      - code: en
+        option_name: Account Id
+      - code: de
+        option_name: Analyse-Account-ID
+      - code: es
+        option_name: ID de la cuenta
+      - code: fr
+        option_name: Identifiant du compte
+      - code: nl
+        option_name: Account ID
+  - name: app_token
+    category: Kliken\GoogleAds
+    type: text
+    orderby: 200
+    value: ''
+    translations:
+      - code: en
+        option_name: Application Token
+      - code: de
+        option_name: Anwendungstoken
+      - code: es
+        option_name: Identificador de la aplicación
+      - code: fr
+        option_name: Jeton d'application
+      - code: nl
+        option_name: Applicatietoken
+  - name: google_verification_token
+    category: Kliken\GoogleAds
+    type: text
+    orderby: 300
+    value: ''
+    translations:
+      - code: en
+        option_name: Google Verification Token
+      - code: de
+        option_name: Google-Verifizierungstoken
+      - code: es
+        option_name: Identificador de verificación de Google
+      - code: fr
+        option_name: Jeton de vérification de Google
+      - code: nl
+        option_name: Google verificatietoken
+
+XLite\Model\LanguageLabel:
+  - name: 'X-Cart Google Ads by Kliken'
+    translations:
+      - code: en
+        label: 'X-Cart Google Ads by Kliken'
+      - code: de
+        label: 'X-Cart-Google-Werbung von Kliken'
+      - code: es
+        label: 'X-Cart Google Ads por Kliken'
+      - code: fr
+        label: 'Annonces Google X-Cart par Kliken'
+      - code: nl
+        label: 'X-Cart Google Ads door Kliken'
+  - name: 'Module Kliken\GoogleAds was unable to access your store''s catalog . Please make sure the correct Account Id and Application Token are saved, or contact Kliken for support.'
+    translations:
+      - code: en
+        label: 'Module Kliken\GoogleAds was unable to access your store''s catalog . Please make sure the correct Account Id and Application Token are saved, or contact Kliken for support.'
+      - code: de
+        label: 'Das Modul Kliken\GoogleAds konnte nicht auf den Katalog Ihres Shops zugreifen. Bitte stellen Sie sicher, dass die korrekte Konto-ID und der richtige Anwendungstoken gespeichert sind oder wenden Sie sich für Unterstützung an Kliken.'
+      - code: es
+        label: 'El módulo Kliken\GoogleAds no ha podido acceder al catálogo de su tienda. Asegúrese de que se han guardado el identificador de la cuenta y el token de aplicación correctos, o póngase en contacto con Kliken para obtener ayuda.'
+      - code: fr
+        label: 'Module Kliken\GoogleAds n''a pas pu accéder au catalogue de votre boutique. Veuillez vous assurer que l''identifiant de compte et le jeton d''application appropriés sont enregistrés, ou contactez Kliken pour obtenir de l''aide.'
+      - code: nl
+        label: 'Module Kliken\GoogleAds kon geen toegang krijgen tot de catalogus van uw winkel. Zorg ervoor dat de juiste Account-ID en Applicatie-token zijn opgeslagen of neem voor ondersteuning contact op met Kliken.'
+  - name: 'Google Ads'
+    translations:
+      - code: en
+        label: 'Google Ads'
+      - code: de
+        label: 'Google-Werbung'
+      - code: es
+        label: 'Google Ads'
+      - code: fr
+        label: 'Publicités Google'
+      - code: nl
+        label: 'Google Ads'
+  - name: 'Get your products found on Google in a few steps. Click the "%s" button to get started!'
+    translations:
+      - code: en
+        label: 'Get your products found on Google in a few steps. Click the "%s" button to get started!'
+      - code: de
+        label: 'Sorgen Sie mit wenigen Schritten dafür, dass Ihre Produkte bei Google gefunden werden. Klicken Sie den "%s"-Button an, um zu beginnen!'
+      - code: es
+        label: 'Consiga que encuentren sus productos en Google en unos pocos pasos. ¡Haga clic en el botón "%s" para empezar!'
+      - code: fr
+        label: 'Rendez vos produits visibles sur Google en quelques étapes. Cliquez sur le bouton « %s » pour commencer !'
+      - code: nl
+        label: 'Zorg er in een paar stappen voor dat uw producten vindbaar zijn in Google. Klik op de "%s"-toets om aan de slag te gaan!'
+  - name: 'Increase sales and revenue with Google Shopping Ads.'
+    translations:
+      - code: en
+        label: 'Increase sales and revenue with Google Shopping Ads.'
+      - code: de
+        label: 'Steigern Sie Ihren Umsatz und Ihre Einnahmen mit Google Shopping Anzeigen.'
+      - code: es
+        label: 'Aumenta tus ventas e ingresos con Google Shopping Ads.'
+      - code: fr
+        label: 'Augmentez vos ventes et votre chiffre d''affaire grâce à Google Shopping Ads.'
+      - code: nl
+        label: 'Vergroot de verkoop en omzet met Google Shopping Ads.'
+  - name: 'Use this X-Cart and Google Ads integration to:'
+    translations:
+      - code: en
+        label: 'Use this X-Cart and Google Ads integration to:'
+      - code: de
+        label: 'Verwenden Sie diese X-Cart- und Google Ads-Integration und:'
+      - code: es
+        label: 'Utiliza esta integración de X-Cart y Google para:'
+      - code: fr
+        label: 'Utilisez cette intégration de X-Cart et Google Ads pour :'
+      - code: nl
+        label: 'Gebruik deze X-Cart- en Google Ads-integratie om:'
+  - name: 'Find more customers on Google'
+    translations:
+      - code: en
+        label: 'Find more customers on Google'
+      - code: de
+        label: 'Finden Sie mehr Kunden auf Google'
+      - code: es
+        label: 'Encontrar más clientes en Google'
+      - code: fr
+        label: 'Trouver plus de clients sur Google'
+      - code: nl
+        label: 'Meer klanten via Google te vinden'
+  - name: 'Automate bidding to maximize sales for your marketing budget'
+    translations:
+      - code: en
+        label: 'Automate bidding to maximize sales for your marketing budget'
+      - code: de
+        label: 'Automatisieren Sie die Gebotsabgabe, um den Umsatz mit Ihrem Marketingbudget zu maximieren'
+      - code: es
+        label: 'Automatizar pujas y maximizar las ventas con tu presupuesto para marketing.'
+      - code: fr
+        label: 'Automatiser les enchères afin de maximiser les ventes pour votre budget marketing'
+      - code: nl
+        label: 'Het bieden te automatiseren om de verkoop, afgestemd op uw marketingbudget, te maximaliseren '
+  - name: 'Keep your marketing and store in sync'
+    translations:
+      - code: en
+        label: 'Keep your marketing and store in sync'
+      - code: de
+        label: 'Stimmen Sie Ihr Marketing und Ihren Shop immer aufeinander ab'
+      - code: es
+        label: 'Mantener tu estrategia de marketing y tu tienda sincronizadas.'
+      - code: fr
+        label: 'Synchroniser votre marketing et votre boutique'
+      - code: nl
+        label: 'Uw marketing en winkel synchroon te houden'
+  - name: 'Create perfect shopping campaigns in minutes'
+    translations:
+      - code: en
+        label: 'Create perfect shopping campaigns in minutes'
+      - code: de
+        label: 'Erstellen Sie perfekte Shoppingkampagnen in wenigen Minuten'
+      - code: es
+        label: 'Crear campañas de Shopping perfectas en minutos.'
+      - code: fr
+        label: 'Créer des campagnes de shopping parfaites en quelques minutes'
+      - code: nl
+        label: 'Binnen enkele minuten perfecte winkelcampagnes op te zetten'
+  - name: 'Get Started'
+    translations:
+      - code: en
+        label: 'Get Started'
+      - code: de
+        label: 'Anfangen'
+      - code: es
+        label: 'Empezar'
+      - code: fr
+        label: 'Commencer'
+      - code: nl
+        label: 'Beginnen'
+  - name: 'Launch Google Shopping ads and get your products found online easily.'
+    translations:
+      - code: en
+        label: 'Launch Google Shopping ads and get your products found online easily.'
+      - code: de
+        label: 'Veröffentlichen Sie Google-Shopping-Anzeigen, damit Ihre Produkte online leicht zu finden sind.'
+      - code: es
+        label: 'Lance los anuncios de Google Shopping Ads para conseguir que sus productos se puedan encontrar en línea fácilmente.'
+      - code: fr
+        label: 'Lancez les Campagnes Shopping Google pour qu''on trouve facilement vos produits en ligne.'
+      - code: nl
+        label: 'Start Google Shopping Ads en vind uw producten eenvoudig online.'
+  - name: 'Your store is connected.'
+    translations:
+      - code: en
+        label: 'Your store is connected.'
+      - code: de
+        label: 'Ihr Shop ist verbunden.'
+      - code: es
+        label: 'Tu tienda está conectada.'
+      - code: fr
+        label: 'Votre boutique est connectée.'
+      - code: nl
+        label: 'Uw winkel is gekoppeld.'
+  - name: 'Your X-Cart store is connected to your Kliken account.'
+    translations:
+      - code: en
+        label: 'Your X-Cart store is connected to your Kliken account.'
+      - code: de
+        label: 'Ihr X-Cart-Shop ist mit Ihrem Kliken-Konto verbunden.'
+      - code: es
+        label: 'Tu tienda X-Cart está conectada a tu cuenta de Kliken.'
+      - code: fr
+        label: 'Votre boutique X-Cart est connectée à votre compte Kliken.'
+      - code: nl
+        label: 'Uw X-Cart-winkel is gekoppeld aan uw Kliken-account.'
+  - name: 'Campaign Dashboard'
+    translations:
+      - code: en
+        label: 'Campaign Dashboard'
+      - code: de
+        label: 'Kampagnen-Dashboard'
+      - code: es
+        label: 'Panel de control de la campaña'
+      - code: fr
+        label: 'Tableau de bord des campagnes'
+      - code: nl
+        label: 'Campagne Dashboard'
+  - name: 'Open your dashboard to review your campaign''s performance'
+    translations:
+      - code: en
+        label: 'Open your dashboard to review your campaign''s performance'
+      - code: de
+        label: 'Öffnen Sie Ihr Dashboard, um festzustellen, wie Ihre Kampagne abschneidet'
+      - code: es
+        label: 'Abra su cuadro de mando para revisar el comportamiento de su campaña'
+      - code: fr
+        label: 'Ouvrez votre tableau de bord pour vérifier les performances de votre campagne'
+      - code: nl
+        label: 'Open uw dashboard om de prestatie van uw actie te bekijken'
+  - name: 'Create a New Google Shopping Campaign'
+    translations:
+      - code: en
+        label: 'Create a New Google Shopping Campaign'
+      - code: de
+        label: 'Erstellen Sie eine neue Google-Shopping-Kampagne'
+      - code: es
+        label: 'Cree una nueva campaña de Google Shopping'
+      - code: fr
+        label: 'Créer une nouvelle campagne Shopping Google'
+      - code: nl
+        label: 'Creëer een nieuwe Google Shopping-actie'
+  - name: 'Build a campaign in a few minutes, and sell to customers as they search for your products on Google.'
+    translations:
+      - code: en
+        label: 'Build a campaign in a few minutes, and sell to customers as they search for your products on Google.'
+      - code: de
+        label: 'Stellen Sie in Minutenschnelle eine Kampagne zusammen und verkaufen Sie an Kunden, die von Ihnen angebotene Produkte auf Google suchen.'
+      - code: es
+        label: 'Cree una campaña en unos pocos minutos y empiece a vender a los clientes cuando busquen sus productos en Google.'
+      - code: fr
+        label: 'Élaborez une campagne en quelques minutes et vendez à des clients qui cherchent vos produits sur Google.'
+      - code: nl
+        label: 'Maak een actie in enkele minuten en verkoop aan klanten als ze op uw producten zoeken op Google.'
+  - name: 'Manage Campaigns'
+    translations:
+      - code: en
+        label: 'Manage Campaigns'
+      - code: de
+        label: 'Kampagnen verwalten'
+      - code: es
+        label: 'Gestionar campañas'
+      - code: fr
+        label: 'Gérer les campagnes'
+      - code: nl
+        label: 'Campagnes Beheren'
+  - name: 'Make changes to your active campaigns, purchase one you built, or reinstate your cancelled campaigns.'
+    translations:
+      - code: en
+        label: 'Make changes to your active campaigns, purchase one you built, or reinstate your cancelled campaigns.'
+      - code: de
+        label: 'Bearbeiten Sie aktive, buchen Sie erstellte oder starten Sie abgebrochene Kampagnen neu.'
+      - code: es
+        label: 'Haga cambios en sus campañas activas, compre una creada por usted o reactive las campañas canceladas.'
+      - code: fr
+        label: 'Apportez des modifications à vos campagnes actives, achetez-en une que vous allez élaborer ou relancez vos campagnes annulées.'
+      - code: nl
+        label: 'Wijzig uw actieve acties, koop er een die u gemaakt heeft of herstel uw geannuleerde acties.'
+  - name: 'Advanced Options'
+    translations:
+      - code: en
+        label: 'Advanced Options'
+      - code: de
+        label: 'Erweiterte Optionen'
+      - code: es
+        label: 'Opciones avanzadas'
+      - code: fr
+        label: 'Options avancées'
+      - code: nl
+        label: 'Geavanceerde opties'

@@ -1,0 +1,17 @@
+{##
+ # Current database
+ #}
+
+<span class="input-field-wrapper input-label">
+  <span{{ this.getAttributesCode()|raw }}>
+    {{ this.getLabelValue()|raw }}
+  </span>
+</span>
+
+{% if this.getCustomDatabasePath() %}
+  <div class="return_to_default_database help-wrapper">
+    <input type="checkbox" name="restore_default_database" id="restore_default_database">
+    <label for="restore_default_database">{{ t('Revert to default database') }}</label>
+  </div>
+{% endif %}
+

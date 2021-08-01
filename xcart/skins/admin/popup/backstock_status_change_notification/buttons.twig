@@ -1,0 +1,10 @@
+{##
+ # BackstockStatusChangeNotification buttons
+ #
+ # @ListChild(list="backstock_status_change_notification.after", weight=1000)
+ #}
+
+<div class="buttons">
+  {{ widget('XLite\\View\\Button\\Regular', label='Continue', jsCode='core.trigger("confirmBackorderChanges")', style='regular-main-button') }}
+  {{ widget('XLite\\View\\Button\\Regular', label='Discard', jsCode='core.trigger("discardBackorderChanges")') }}
+</div>

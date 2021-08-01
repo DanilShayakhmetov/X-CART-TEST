@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-10-08 - [Bug] Stripe. Fatal error when attempting to issue a refund. Fixed. #BUG-9063 https://bt.x-cart.com/view.php?id=52152 #Stripe
+

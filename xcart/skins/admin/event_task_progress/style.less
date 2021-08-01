@@ -1,0 +1,69 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Event task progress bar styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/**
+ * Event task progress widget
+ */
+
+@import "../css/initialize";
+
+.event-task-progress .progress-bar-container {
+  height: 24px;
+  margin-bottom: 3px;
+}
+
+.event-task-progress .progress-bar-container h3 {
+  margin-bottom: 8px;
+}
+
+.event-task-progress .progress-note {
+  text-align: left;
+  margin-bottom: 2 * @rhythmic-unit;
+  margin-top: 0;
+
+  .ui-dialog & {
+    margin-top: 0;
+  }
+}
+
+.event-task-progress .progress-message {
+  float: left;
+  font-size: @font-size-small;
+  text-align: left;
+  line-height: 18px;
+  color: @color-tip;
+}
+
+.event-task-progress .progress-message-error {
+  color: #d9534f;
+}
+
+.event-task-progress .progress-cancel {
+  float: right;
+}
+
+.event-task-progress .progress {
+  border: none;
+  box-shadow: none;
+}
+
+.event-task-progress .progress.active .progress-bar {
+  border: none;
+  box-shadow: none;
+  background-image: linear-gradient(45deg,
+    rgba(255,255,255,0.15) 35%, transparent 35%,
+    transparent 50%, rgba(255,255,255,0.15) 50%,
+    rgba(255,255,255,0.15) 85%, transparent 85%,
+    transparent);
+  background-size: 16px 16px;
+}
+
+.event-task-progress-page .subcontent {
+  width: 650px;
+}

@@ -1,0 +1,6 @@
+Version 5.4.0.5
+
+Fixes (2)
+2019-08-14 - [Bug] Fixed some layout issues for the Open dispute popup in the Admin area. #BUG-7791 (Fedya Lavrentyev) #VendorMessages
+2019-08-05 - [Bug] The filter "Communication threads with unread messages" for messages in the Admin area did not work. Fixed. #BUG-7346 https://bt.x-cart.com/view.php?id=50634 (Kirill Stadler) #VendorMessages
+

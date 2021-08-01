@@ -1,0 +1,9 @@
+Version 5.4.2.14
+
+Improvements (1)
+2021-01-15 - [Story] Updated the information about supported countries for payment methods. #XCC-1553 #Amazon-PayWithAmazon #CDev-AuthorizeNet #CDev-Moneybookers #CDev-Paypal #CDev-TwoCheckout #G2APay-G2APay #QSL-CCBill #QSL-FirstDataPayeezyGatewayHP #QSL-EGateway #XC-Beanstream #XC-BitPay #XC-BlueSnap #XC-ChronoPay #XC-EWAYStoredShared #XC-IdealPayments
+
+Fixes (2)
+2021-01-13 - [Bug] The level of logging for PayPal now depends on the level setting in config.php. #XCB-144 #CDev-Paypal
+2021-01-12 - [Bug] Changed the position of PayPal banners on the cart and checkout pages. #XCB-142 #CDev-Core #CDev-Paypal
+

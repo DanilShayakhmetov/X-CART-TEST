@@ -1,0 +1,8 @@
+Version 5.4.1.18
+
+Fixes (3)
+2020-11-02 - [Bug] Lazyload resources were included on a page without a parameter that ensured their uniqueness. Fixed. #XCB-104 #CDev-Core
+2020-10-20 - [Bug] Backorder. Maximum available QTY was determined incorrectly in AOM. Fixed. #BUG-9008 https://bt.x-cart.com/view.php?id=52098 #Core #BackorderPreorder
+2020-10-20 - [Bug] "Broken link" error in email notifications. Fixed. #BUG-8979 #Core
+2020-09-17 - [Bug] The iframe to show recommended addons now opens only on the pages for which there are such addons. #BUG-9029 #Core
+

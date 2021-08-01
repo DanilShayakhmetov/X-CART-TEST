@@ -1,0 +1,9 @@
+Version 5.4.2.5
+
+Improvements (1)
+2020-08-20 - [Change] Removed the word "beta" from the name of the addon "PayPal for Marketplaces". #BUG-8951 #Paypal
+
+Fixes (2)
+2020-08-05 - [Bug] Paypal Checkout vs OPC. After selecting a different shipping method, the Total amount on the button did not change. Fixed. #BUG-8902 https://bt.x-cart.com/view.php?id=52031 #Core #Paypal
+2020-07-23 - [Bug] For PayPal Credit banners to work, the merchant now themselves has to specify the Publisher ID in the payment method settings. #BUG-8776 https://bt.x-cart.com/view.php?id=51864 #Paypal
+

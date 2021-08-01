@@ -1,0 +1,9 @@
+{##
+ # Code
+ #
+ # @ListChild (list="itemsList.volumeDiscounts.cell.subtotalRangeBegin")
+ #}
+
+{% if this.entity.isExpired() %}
+  <span class="expired-mark">{{ t('expiredF') }}</span>
+{% endif %}

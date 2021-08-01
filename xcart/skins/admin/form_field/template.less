@@ -1,0 +1,101 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Template selector style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) "../css/initialize";
+
+.templates {
+  .hidden-field {
+    display: none;
+  }
+}
+
+.templates-list {
+  .flex-display();
+  .flex-wrap(wrap);
+  margin: -(@rhythmic-unit) -(@rhythmic-unit / 2);
+  margin-bottom: 0;
+
+  .template {
+    flex: 0 0 20%;
+    cursor: pointer;
+    padding: (@rhythmic-unit);
+    img {
+      display: block;
+      max-height: 100%;
+      max-width: 100%;
+      border: @border-base solid @color-border;
+    }
+
+    .name {
+      .heading(@font-size-h4, @rhythmic-unit / 2, @rhythmic-unit / 2);
+      text-align: center;
+    }
+
+    &.selected, &.selected:hover, &.selected.checked, &.selected.checked:hover {
+      img {
+        border-color: @color-success;
+        box-shadow: 0 0 0 2px @color-success;
+      }
+      .name {
+        color: @color-success;
+      }
+    }
+
+    &.selected.checked {
+      cursor: default;
+    }
+
+    &.checked {
+      img {
+        border-color: @color-hover;
+        box-shadow: 0 0 0 2px @color-hover;
+      }
+    }
+
+    &:hover {
+      img {
+        border-color: @color-hover;
+        box-shadow: 0 0 0 2px @color-hover;
+      }
+
+      .name {
+        color: @color-hover;
+      }
+    }
+
+    &.marked {
+      transition: background 20s linear 5s;
+      background-color: #fffecd;
+
+      &.active {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.quote {
+  .flex-display();
+  .align-items(center);
+  .justify-content(center);
+  padding-top: @rhythmic-unit;
+  border-top: 1px solid @color-border;
+
+  h3 {
+    margin: 0;
+  }
+
+  button {
+    margin-left: @rhythmic-unit;
+  }
+}
+
+.select-template div.table-value {
+  display: block;
+}

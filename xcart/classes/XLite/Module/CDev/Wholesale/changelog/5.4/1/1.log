@@ -1,0 +1,6 @@
+Version 5.4.1.1
+
+Fixes (2)
+2020-04-29 - [Bug] Fatal error on product page if a minimum purchase quantity had been set, and there was a wholesale price with the same qty. Fixed. #BUG-8649 https://bt.x-cart.com/view.php?id=51725 #Wholesale
+2020-04-28 - [Bug] Fatal errors on the wholesale pricing page of a product and its variants with the addon Sale enabled. Fixed. #BUG-8627 https://bt.x-cart.com/view.php?id=51703 #Wholesale
+

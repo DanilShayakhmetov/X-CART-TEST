@@ -1,0 +1,50 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Dimensions range field styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+form .input.input-text-dimensions .table-label.dimensions-label {
+  padding-top: (@rhythmic-unit * 1.5);
+}
+
+form .table:not(.vertical) .dimensions-value .help-wrapper {
+  margin-top: @rhythmic-unit;
+}
+
+.form-field-comment.dimensions-comment {
+  color: @color-error;
+}
+
+.dimensions-value {
+  height: 72px;
+}
+.dimension-field {
+  display: inline-block;
+
+  .table-label {
+    font-size: 12px;
+    width: 91px;
+    padding-top: 0 !important;
+  }
+
+  .table-value {
+    display: flex;
+    align-items: center;
+  }
+
+  &.dimension-length .table-value:after,
+  &.dimension-width .table-value:after {
+    content: "\00d7";
+    color: @color-tip;
+    font-size: 20px;
+    margin-right: (@rhythmic-unit / 2);
+    margin-left: (@rhythmic-unit / 2);
+  }
+}
+
+.model-properties ul.table li .dimension-field div.star {
+  display: none;
+}

@@ -1,0 +1,10 @@
+{##
+ # Header right box
+ #
+ # @ListChild (list="layout.header", weight="200")
+ #}
+{% if not this.isCheckoutLayout() %}
+  <div id="header" class="header-right-bar">
+    {{ widget_list('layout.header.right', displayMode='horizontal') }}
+  </div>
+{% endif %}

@@ -1,0 +1,5 @@
+Version 5.4.0.7
+
+Fixes (1)
+2020-03-31 - [Bug] "PHP Fatal error: Uncaught Error: Class 'XLite\Module\XC\Concierge\Core\Mediator' not found" during cache rebuilding. Fixed. #BUG-8466 https://bt.x-cart.com/view.php?id=51565 #Concierge
+

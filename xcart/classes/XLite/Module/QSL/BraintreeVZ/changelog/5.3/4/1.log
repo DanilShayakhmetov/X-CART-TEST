@@ -1,0 +1,12 @@
+Version 5.3.4.1
+
+Fixes
+- Now it is not possible to enable both old and new Braintree modules at once
+- Added warning to module configuration page if Merchant account ID matches Merchant ID (a common mistake that leads to errors during checkout)
+- Sometimes card entry form freezes during the page load. Fixed.
+- Fixed fatal error when an anonymous user enters the checkout page
+- Issues with Fastlane checkout have been fixed.
+- Scrolling the checkout page was slow on iPhone. Fixed.
+- Checkout freezes when buying a product with a zero price. Fixed.
+- Added warning to Braintree payment method if the secure connection is disabled in store
+- Other minor changes

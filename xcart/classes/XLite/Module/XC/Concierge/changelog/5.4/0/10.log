@@ -1,0 +1,4 @@
+Version 5.4.0.10
+
+Improvements (1)
+2020-07-10 - [Change] Excluded some emails as identifiers for Intercom chat. #BUG-8832 #Concierge

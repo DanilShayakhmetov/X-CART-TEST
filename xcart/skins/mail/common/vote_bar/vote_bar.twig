@@ -1,0 +1,30 @@
+{##
+ # Vote bar
+ #}
+
+<div class="vote-bar">
+
+  <div class="stars-row">
+    {% set filled = (this.getRating()|number_format) %}
+
+    {% if filled > 0 %}
+      {% for i in 1..filled %}
+        <div class="star-single"><span class="filled">★</span></div>
+      {% endfor %}
+    {% endif %}
+
+    {% set blank = (this.getMaxRating() - this.getRating()|number_format) %}
+
+    {% if blank > 0 %}
+
+      {% for i in 1..blank %}
+        <div class="star-single"><span class="not-filled">☆</span></div>
+      {% endfor %}
+
+    {% endif %}
+  </div>
+
+  {% if this.getRatingLabel() %}
+    <span class="rating-label">{{ this.getRatingLabel() }}</span>
+  {% endif %}
+</div>

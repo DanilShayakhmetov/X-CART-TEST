@@ -1,0 +1,5 @@
+Version 5.3.12.0
+
+[Improvement] CloudSearch now indexes Textarea attributes in addition to Plain fields and Yes/No attributes.
+[Improvement] "Manufacturer" is no longer a built-in filter and can be enabled/disabled and reordered along with the other filters.
+[Improvement] Extending modules can now define searchable (additional information that can be used when searching) and filterable (product features that can be filtered upon with CloudFilters) product attributes separately.

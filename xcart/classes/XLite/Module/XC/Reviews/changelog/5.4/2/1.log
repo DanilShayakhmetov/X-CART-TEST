@@ -1,0 +1,5 @@
+Version 5.4.2.1
+
+Fixes (1)
+2020-12-18 - [Bug] Product reviews. Failure to create a record in xc_order_review_keys. Fixed. #XCB-192 #XC-Reviews
+

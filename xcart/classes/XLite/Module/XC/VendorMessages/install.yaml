@@ -1,0 +1,337 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Role\Permission:
+  - code: 'manage conversations'
+    section: Conversations
+    translations:
+      - code: en
+        name: 'Manage conversations'
+      - code: ru
+        name: 'Управление разговорами'
+
+XLite\Model\Config:
+  - name: allow_vendor_communication
+    category: XC\VendorMessages
+    type: XLite\View\FormField\Input\Checkbox\OnOffWithoutOffLabel
+    orderby: 200
+    value: 0
+    translations:
+      - code: en
+        option_name: 'Allow direct communication between vendor and buyer in the "Warehouse" multivendor mode'
+      - code: ru
+        option_name: 'Разрешить обмен сообщениями между продавцом и покупателем в режиме "Общий склад"'
+
+XLite\Model\LanguageLabel:
+  - name: Read
+    translations:
+      - code: en
+        label: Read
+      - code: ru
+        label: Прочитано
+  - name: Unread
+    translations:
+      - code: en
+        label: Unread
+      - code: ru
+        label: 'Не прочитано'
+  - name: Messages
+    translations:
+      - code: en
+        label: Messages
+      - code: ru
+        label: Сообщения
+  - name: Message
+    translations:
+      - code: en
+        label: Message
+      - code: ru
+        label: Сообщение
+  - name: 'Message not found'
+    translations:
+      - code: en
+        label: 'Message not found'
+      - code: ru
+        label: 'Сообщение не найдено'
+  - name: 'All orders'
+    translations:
+      - code: en
+        label: 'All orders'
+      - code: ru
+        label: 'Все заказы'
+  - name: 'Orders with unread messages'
+    translations:
+      - code: en
+        label: 'Orders with unread messages'
+      - code: ru
+        label: 'Все заказы с непрочитанными сообщениями'
+  - name: 'Orders with any messages'
+    translations:
+      - code: en
+        label: 'Orders with any messages'
+      - code: ru
+        label: 'Все заказы с сообщениями'
+  - name: 'The field Body may not be blank'
+    translations:
+      - code: en
+        label: 'The field Body may not be blank'
+      - code: ru
+        label: 'Поле ''Сообщение'' не может быть пустым'
+  - name: 'Contact seller'
+    translations:
+      - code: en
+        label: 'Contact seller'
+      - code: ru
+        label: 'Связаться с продавцом'
+  - name: 'X unread messages'
+    translations:
+      - code: en
+        label: '{{count}} unread messages'
+      - code: ru
+        label: '{{count}} непрочитанных сообщений'
+  - name: 'Hidden X messages'
+    translations:
+      - code: en
+        label: 'Hidden messages ({{count}})'
+      - code: ru
+        label: 'Скрытые сообщения ({{count}})'
+  - name: 'Hide message history'
+    translations:
+      - code: en
+        label: 'Hide message history'
+      - code: ru
+        label: 'Скрыть историю общения'
+  - name: 'New message for order'
+    translations:
+      - code: en
+        label: 'New message for order'
+      - code: ru
+        label: 'Новое сообщение по заказу'
+  - name: 'X new message for order'
+    translations:
+      - code: en
+        label: '{{count}} new messages for order'
+      - code: ru
+        label: '{{count}} новых сообщений  по заказу'
+  - name: 'You Have No Messages'
+    translations:
+      - code: en
+        label: 'You Have No Messages'
+      - code: ru
+        label: 'Нет сообщений'
+  - name: 'Dispute opened by X'
+    translations:
+      - code: en
+        label: 'Dispute opened by {{name}}'
+      - code: ru
+        label: 'Диспут открыт {{name}}'
+  - name: 'Dispute closed by X'
+    translations:
+      - code: en
+        label: 'Dispute closed by {{name}}'
+      - code: ru
+        label: 'Диспут закрыт {{name}}'
+  - name: 'Open dispute'
+    translations:
+      - code: en
+        label: 'Open dispute'
+      - code: ru
+        label: 'Открыть диспут'
+  - name: 'Close dispute'
+    translations:
+      - code: en
+        label: 'Close dispute'
+      - code: ru
+        label: 'Закрыть диспут'
+  - name: 'A dispute has been opened successfully'
+    translations:
+      - code: en
+        label: 'A dispute has been opened successfully.'
+      - code: ru
+        label: 'Диспут открыт'
+  - name: 'The dispute has been closed'
+    translations:
+      - code: en
+        label: 'The dispute has been closed.'
+      - code: ru
+        label: 'Диспут закрыт'
+  - name: 'Monitoring of communication related to oder #X has been enabled'
+    translations:
+      - code: en
+        label: 'Monitoring of communication related to oder #{{order_number}} has been enabled.'
+      - code: ru
+        label: 'Подписка на получение сообщений по заказу №{{order_number}} включена'
+  - name: 'Monitoring of communication related to oder #X has been disabled'
+    translations:
+      - code: en
+        label: 'Monitoring of communication related to oder #{{order_number}} has been disabled.'
+      - code: ru
+        label: 'Подписка на получение сообщений по заказу №{{order_number}} выключена'
+  - name: 'All communication threads'
+    translations:
+      - code: en
+        label: 'All communication threads'
+      - code: ru
+        label: 'Все цепочки сообщений'
+  - name: 'Communication threads with unread messages'
+    translations:
+      - code: en
+        label: 'Communication threads with unread messages'
+      - code: ru
+        label: 'Цепочки с непрочитанными сообщениями'
+  - name: 'Communication threads with open disputes'
+    translations:
+      - code: en
+        label: 'Communication threads with open disputes'
+      - code: ru
+        label: 'Цепочки с открытыми диспутами'
+  - name: 'Dispute is open X by Y'
+    translations:
+      - code: en
+        label: 'Dispute opened on {{date}}, by {{name}}'
+      - code: ru
+        label: 'Диспут открыт {{date}}, {{name}}'
+  - name: 'Write your message'
+    translations:
+      - code: en
+        label: 'Write your message here'
+      - code: ru
+        label: 'Текст вашего сообщения'
+  - name: 'Open a dispute'
+    translations:
+      - code: en
+        label: 'Open a dispute'
+      - code: ru
+        label: 'Открыть диспут'
+  - name: Dispute
+    translations:
+      - code: en
+        label: Dispute
+      - code: ru
+        label: Диспут
+  - name: Reason
+    translations:
+      - code: en
+        label: Reason
+      - code: ru
+        label: Причина
+  - name: 'New messages'
+    translations:
+      - code: en
+        label: 'New messages'
+      - code: ru
+        label: 'Новые сообщения'
+  - name: 'Show vendor’s products in the order'
+    translations:
+      - code: en
+        label: 'Show vendor’s products in the order'
+      - code: ru
+        label: 'Показать товары продавца'
+  - name: 'Hide vendor’s products in the order'
+    translations:
+      - code: en
+        label: 'Hide vendor’s products in the order'
+      - code: ru
+        label: 'Скрыть товары продавца'
+  - name: Disputes
+    translations:
+      - code: en
+        label: Disputes
+  - name: Conversation
+    translations:
+      - code: en
+        label: Conversation
+      - code: ru
+        label: Разговор
+  - name: Conversations
+    translations:
+      - code: en
+        label: Conversations
+      - code: ru
+        label: Разговоры
+  - name: 'Conversation: X'
+    translations:
+      - code: en
+        label: 'Conversation: {{members}}'
+      - code: ru
+        label: 'Разговор: {{members}}'
+  - name: 'X new messages'
+    translations:
+      - code: en
+        label: '{{count}} new messages'
+      - code: ru
+        label: '{{count}} новых сообщений'
+  - name: 'New message'
+    translations:
+      - code: en
+        label: 'New message'
+      - code: ru
+        label: 'Новое сообщение'
+  - name: 'Mark all'
+    translations:
+      - code: en
+        label: 'Mark all'
+      - code: ru
+        label: 'Пометить все'
+  - name: 'Mark selected'
+    translations:
+      - code: en
+        label: 'Mark selected'
+      - code: ru
+        label: 'Пометить выбранные'
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/VendorMessages/notification
+    position: 1100
+    availableForAdmin: false
+    availableForCustomer: true
+    enabledForAdmin: false
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order message (Order messages module)'
+        description: 'This message will be sent to the customer when a new message appears in the communication thread regarding an order'
+        customerSubject: 'Order #%order_number%: new message from seller'
+        customerText: '<p dir="ltr">You have a new message about order <a href="%order_link%">#%order_number%</a>. Please review the message and take any necessary action.</p><blockquote><p dir="ltr">%message%</p></blockquote>'
+      - code: ru
+        name: 'Новое сообщение по заказу (модуль Order messages)'
+        description: 'Это уведомление будет отправлено покупателю, когда в контексте сделанного им заказа появится новое сообщение'
+        customerSubject: 'Новое сообщение по заказу №%order_number%'
+        customerText: "%company_link%\n<p>\nВы получили новое сообщение по заказу %order_messages_link%:\n</p>\n<p>\n%message%\n</p>\n"
+
+  - templatesDirectory: modules/XC/VendorMessages/new_message_notification
+    position: 1200
+    availableForAdmin: false
+    availableForCustomer: true
+    enabledForAdmin: false
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'New message (Order messages module)'
+        description: 'This message will be sent to customer when a new message appears in the conversation'
+        customerSubject: 'New message in conversation'
+        customerText: '<p>You&#39;ve got a new message in %conversation_link%</p><blockquote><p>%message%</p></blockquote>'
+      - code: ru
+        name: 'Новое сообщение (модуль Order messages)'
+        description: 'Это уведомление будет отправлено покупателю, когда в разговоре появится новое сообщение'
+        customerSubject: 'Новое сообщение в разговоре'
+        customerText: "%company_link%\n<p>\nВы получили новое сообщение в %conversation_link%\n</p>\n<p>\n%message%\n</p>\n"
+

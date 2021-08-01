@@ -1,0 +1,6 @@
+Version 5.4.0.6
+
+Fixes (2)
+2019-12-26 - [Bug] Product Advisor widgets now always show products in Grid mode regardless of the setting "Default display mode for products list". #BUG-8018 https://bt.x-cart.com/view.php?id=51062 (Jamil Ainulov) #ProductAdvisor
+2019-12-09 - [Bug] Removed the setting "Show arrival date on product details pages" for the addon "Product advisor". Now the display of Coming Soon labels is controlled only by the setting "Label upcoming products". #BUG-7335 (Shevelov Alexander) #ProductAdvisor
+

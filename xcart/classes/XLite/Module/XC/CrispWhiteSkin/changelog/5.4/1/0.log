@@ -1,0 +1,20 @@
+Version 5.4.1.0
+
+Improvements (5)
+2020-03-19 - [Change] Reduced the number of sizes to which product images are resized to enhance the image resizing performance. Minor UI improvements. #XCN-10682 #Core #ProductAdvisor #CrispWhiteSkin #MultiVendor #FlyoutCategoriesMenu #VendorPartners
+2020-02-26 - [Change] Changed the layout and arrangement of notifications (low stock / new messages / etc) on the dashboard in the Admin area. #XCN-10420 #Core #Paypal #ProductVariants #ProductReviews #CrispWhiteSkin #MultiVendor #FreeShipping #VendorMessages #TrustedVendors #ShopperApproved #Onboarding
+2020-02-18 - [Change] Layout improvements for the Sign in page with the social login buttons as can be seen before checkout for an anonymous users. #XCN-9308 #CrispWhiteSkin #AmazonPay
+2020-01-28 - [Change] When entering the qty field on mobile devices and in the Customer area on the page of a product and in the shopping cart, a digital keyboard is now provided. #BUG-8262 #Core #CrispWhiteSkin
+2019-11-11 - [Change] Improvement for the country/currency/language selection widget. Now the language is selected automatically when switching the country selection. #BUG-7999 #CrispWhiteSkin #MultiCurrency
+
+Fixes (9)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-03-11 - [Bug] In OPC, the place order button did not appear after removing from the shopping cart the products of a vendor who was not shipping to the customer's address. Fixed. #BUG-8394 #Core #CrispWhiteSkin #MultiVendor
+2020-03-03 - [Bug] Layout issues at checkout with Amazon Login / PayPal Login configured but with the addon SocialLogin disabled. Fixed. #BUG-8393 #Core #Paypal #SocialLogin #CrispWhiteSkin
+2020-02-25 - [Bug] The Login with PayPal and Login with Amazon buttons were displayed incorrectly in the Sign in popup. Fixed. #BUG-8196 #Core #CrispWhiteSkin #AmazonPay
+2020-02-19 - [Bug] W3C validation errors on the home page with Value Added Tax / Goods and Services Tax addon enabled and the option Display prices in catalog including VAT / GST = On. Fixed. #BUG-8109 #CrispWhiteSkin
+2020-02-10 - [Bug] CSS validation errors on the home page. Fixed. #BUG-8200 https://bt.x-cart.com/view.php?id=51341 #Core #CrispWhiteSkin
+2020-01-29 - [Bug] Layout issues in the Add to cart popup with PayPal Express Checkout and Amazon Pay enabled. Fixed. #BUG-8067 https://bt.x-cart.com/view.php?id=51177 #Add2CartPopup #CrispWhiteSkin
+2020-01-24 - [Bug] Fixed the alignment of category miniatures in the Customer area in Crisp White. #BUG-8089 https://bt.x-cart.com/view.php?id=50709 #CrispWhiteSkin
+2019-11-25 - [Bug] Layout improvement for the logo block in the Customer area. #BUG-4312 #Core #CrispWhiteSkin
+

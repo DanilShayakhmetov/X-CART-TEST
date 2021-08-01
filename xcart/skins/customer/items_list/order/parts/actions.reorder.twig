@@ -1,0 +1,11 @@
+{##
+ # Orders list item : actions : reorder
+ #
+ # @ListChild (list="orders.children.actions", weight="100")
+ #}
+
+{% if this.showReorder(this.order) %}
+  <li class="reorder">
+    {{ widget('\\XLite\\View\\Button\\Link', label='Re-order', location=url('cart', 'add_order', {'order_number': this.order.orderNumber})) }}
+  </li>
+{% endif %}

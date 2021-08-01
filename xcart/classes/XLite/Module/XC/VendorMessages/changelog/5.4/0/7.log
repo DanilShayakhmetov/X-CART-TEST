@@ -1,0 +1,6 @@
+Version 5.4.0.7
+
+Fixes (2)
+2020-01-14 - [Bug] Fatal error if a customer who was not signed in made an attempt to access a vendor message. Fixed. #BUG-8214 https://bt.x-cart.com/view.php?id=51351 (Pavel Veselovsky) #VendorMessages
+2020-01-08 - [Bug] Removed the tab "Messages" from the Not finished order AOM page. #BUG-7804 https://bt.x-cart.com/view.php?id=50948 (Shevelov Alexander) #VendorMessages
+

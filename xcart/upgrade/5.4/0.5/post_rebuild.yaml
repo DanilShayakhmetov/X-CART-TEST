@@ -1,0 +1,33 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Marketplace", translations: [{ code: en, label: "App Store" }] }
+  - { name: 'New modules', translations: [{ code: en, label: 'New addons' }] }
+  - { name: 'attributes_popover_text', translations: [{ code: en, label: 'Clearing this field hides the option for this product only. To remove the attribute for all the products, use the <a href="{{link}}" target="_blank">"Classes & Attributes" page</a>.' }] }
+  - { name: 'This order was placed at the same time as {{orders}}; as a result, some items were out of stock at the time of order placement.', translations: [{ code: en, label: 'This order was placed at the same time as {{orders}}; as a result, some items were out of stock at the time of order placement. <a href="{{kb_link}}" target="_blank">Learn more</a>' }]}
+
+XLite\Model\Notification:
+  - templatesDirectory: backorder_created
+    position: 700
+    availableForAdmin: true
+    availableForCustomer: false
+    enabledForAdmin: true
+    enabledForCustomer: false
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Backordered item in the order'
+        description: "This notification is sent to the administrator if one or more products in a customer's order are out of stock at the time of order placement."
+        adminSubject: 'A new backorder %backordered_item_names%'
+        adminText: '<p dir="ltr">A customer has just bought one or more items that are out of stock at the moment. It is time to replenish your supplies.&nbsp;</p><p dir="ltr"><a href="%order_link%">Check the order #%order_number%</a></p>'

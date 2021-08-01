@@ -1,0 +1,153 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Buttons
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.btn {
+  min-height: @btn-height-base;
+  text-decoration: none !important;
+  .transition-multi(@input-transition-property);
+
+  &.disabled, &[disabled] {
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+  }
+
+  .caret {
+    vertical-align: middle !important;
+    margin: 0 2px;
+  }
+
+  span .fa-angle-down {
+    margin-left: (@rhythmic-unit / 2);
+  }
+}
+
+.btn-group.btn-dropdown .btn {
+  & + .btn.dropdown-toggle {
+    padding-left: @padding-base-horizontal;
+    padding-right: @padding-base-horizontal;
+    span .fa-angle-down {
+      margin-left: 0;
+    }
+  }
+}
+
+.btn-default {
+  &:hover {
+    background-color: @btn-default-hover-bg;
+    border-color: @btn-default-hover-border;
+  }
+
+  &:focus {
+    border-color: @btn-default-focus !important;
+    background-color: @btn-default-bg;
+  }
+
+  &:active,
+  &.active {
+    background-color: @btn-default-hover-bg;
+    border-color: @btn-default-hover-border;
+    .box-shadow(none);
+
+    &:focus {
+      background-color: @btn-default-hover-bg;
+      border-color: @btn-default-hover-border;
+    }
+  }
+}
+
+.btn-primary {
+  border: none;
+
+  &:hover {
+    background-color: @btn-primary-hover-bg;
+  }
+
+  &:focus {
+    .element-focus(@btn-primary-bg);
+    background-color: @btn-primary-bg;
+  }
+
+  &:active,
+  &.active {
+    background-color: @btn-primary-hover-bg;
+    .box-shadow(none);
+
+    &:focus {
+      background-color: @btn-primary-hover-bg;
+    }
+  }
+}
+
+.regular-button, .regular-main-button {
+  .btn;
+
+  &.btn-lg {
+    .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-base; @border-radius-base);
+  }
+
+  &.btn-sm, &.btn-xs {
+    .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small-text; @border-radius-small);
+    min-height: (@line-height-base * 1.5);
+    min-width: 100px;
+  }
+}
+
+.regular-button {
+  .btn-default;
+}
+
+.regular-main-button {
+  .btn-primary;
+}
+
+button.btn-primary span,
+button.regular-main-button span,
+.model-form-buttons .button:first-child button span {
+  color: @btn-primary-color;
+}
+
+fieldset[disabled] .btn {
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  .regular-button;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+/* Multiselect */
+button.ui-multiselect {
+  .form-control;
+  cursor: pointer;
+  overflow: hidden;
+
+  &.ui-state-focus, &.ui-state-active {
+    .form-control-fake-focus(@input-border-focus);
+  }
+}
+
+.fixed-select {
+  width: 170px;
+}
+
+
+.open>.dropdown-toggle.btn-default:focus {
+  background: @color-background;
+}

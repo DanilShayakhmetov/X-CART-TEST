@@ -1,0 +1,25 @@
+{##
+ # Dashboard info block notification
+ #}
+
+<div {{ this.printTagAttributes(this.getTagAttributes())|raw }}>
+  <span class="notification-message">
+    {% if this.getHeaderURL() %}
+      <a href="{{ this.getHeaderURL() }}"{% if this.isExternal() %} target="_blank"{% endif %}>
+        {{ this.getHeader() }}
+        {% if this.getCounter() %}
+          ({{ this.getCounter() }})
+        {% endif %}
+      </a>
+    {% else %}
+      {{ this.getHeader() }}
+      {% if this.getCounter() %}
+        ({{ this.getCounter() }})
+      {% endif %}
+    {% endif %}
+  </span>
+
+  <div class="notification-close">
+    {{ this.getSVGImage('images/icons/cross.svg')|raw }}
+  </div>
+</div>

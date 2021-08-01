@@ -1,0 +1,29 @@
+Version 5.4.1.11
+
+Improvements (3)
+2020-08-13 - [Change] Removed the PayPal All-In-One Solutions tab from the Payment methods popup. #BUG-8869 #Core
+2020-07-28 - [Change] Renamed the setting "Default display mode for products list" to "Default products display mode for category listing". #BUG-8820 #Core
+2020-07-16 - [Change] If PayPal is enabled and configured, the number of products shown in the minicart is now reduced to two so as not to prevent PayPal buttons from being visible. #BUG-8774 #Core #Paypal
+
+Fixes (20)
+2020-08-14 - [Bug] Changed the header user agent in the loopback request check. #BUG-8934 https://bt.x-cart.com/view.php?id=51774 #Core
+2020-08-06 - [Bug] XSS vulnerability related to file upload from the import and update quantity pages. Fixed. #BUG-8912 https://bt.x-cart.com/view.php?id=52014 https://bt.x-cart.com/view.php?id=52013 #Core
+2020-08-05 - [Bug] Optimization for the addon "My Wishlist". Reduced the number of database requests. #BUG-8911 #Core #ProductReviews #MyWishlist
+2020-08-03 - [Bug] When importing products, a product attachment was not formed correctly because the link was incorrect. Fixed. #BUG-8773 #Core #FileAttachments
+2020-07-28 - [Bug] Installation email contained text about safe mode key which was no longer needed. Fixed. #BUG-8805 https://bt.x-cart.com/view.php?id=51947 #Core
+2020-07-24 - [Bug] After creating several custom shipping statuses, only one status appeared in the shipping status selector in the search form. Fixed. #BUG-8815 https://bt.x-cart.com/view.php?id=51961 #Core
+2020-07-24 - [Bug] Minor improvement for the "xc5 scaffolding:module" command. #BUG-8756 #Core
+2020-07-23 - [Bug] It was not possible to re-upload a file that had been uploaded as a product attachment. Fixed. #BUG-8849 https://bt.x-cart.com/view.php?id=51986 #Core #FileAttachments
+2020-07-17 - [Bug] REST API. Error when running a request to make changes to a product including adding a review. Fixed. #BUG-8777 https://bt.x-cart.com/view.php?id=51863 #Core #ProductReviews
+2020-07-16 - [Bug] Adjusted the way in which the availability of the "Add product" button on the Add product page is managed. #BUG-8772 https://bt.x-cart.com/view.php?id=51857 #Core
+2020-07-15 - [Bug] Layout issues related to the image upload menu. Fixed. #BUG-8768 #Core
+2020-07-14 - [Bug] Market price was not taking VAT into account. Fixed. #BUG-8764 https://bt.x-cart.com/view.php?id=51780 #Core
+2020-07-13 - [Bug] Incorrect link to a product image in the customer invoice with Amazon S3 enabled. Fixed. #BUG-8761 https://bt.x-cart.com/view.php?id=51845 #Core
+2020-07-13 - [Bug] The text on the button "Export all" was not changed to "Export selected" after selecting some orders from a filtered order list in AOM. Fixed. #BUG-8760 https://bt.x-cart.com/view.php?id=51846 #Core
+2020-07-13 - [Bug] After installing the addon "Russian Translation", the checkbox option "Calculate quick data" which had been removed earlier appeared again. Fixed. #BUG-8754 #Core
+2020-07-10 - [Bug] Notices on any page of the Email notifications template on first login. Fixed. #BUG-8747 #Core
+2020-07-09 - [Bug] During checkout in OPC mode as an anonymous user (guest), there was a continuous wait-block-overlay after changing the shipping address country. Fixed. #BUG-8750 #Core
+2020-07-09 - [Bug] Users counter on the admin.php?target=memberships page took into account orders that it was not supposed to. Fixed. #BUG-8742 https://bt.x-cart.com/view.php?id=51829 #Core
+2020-07-07 - [Bug] After deleting an attribute that was used to create variants, or changing the attribute so it no longer is a multivalue one, the variants are now removed. #BUG-8734 https://bt.x-cart.com/view.php?id=51823 #Core #ProductVariants
+2020-06-30 - [Bug] Layout issues in AOM when adding a product. Fixed. #BUG-8723 #Core
+

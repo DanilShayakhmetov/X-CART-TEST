@@ -1,0 +1,19 @@
+Version 5.4.1.10
+
+Improvements (3)
+2020-07-17 - [Change] Added support of preorders in the addon "Backorder/Preorder". #XCN-11076 #Core #ProductVariants #BackorderPreorder
+2020-07-17 - [Change] Added support of preorders in the addon "Backorder/Preorder". #XCN-10775 #Core #ProductVariants #BackorderPreorder
+2020-06-26 - [Change] Added USER_AGENT to loopback request. #BUG-8696 https://bt.x-cart.com/view.php?id=51774 #Core
+
+Fixes (10)
+2020-07-23 - [Bug] Removed the variable %order_number% from the list in the 'Variables for this notification' help message for the Payment declined notification template. #BUG-8736 https://bt.x-cart.com/view.php?id=51820 #Core
+2020-07-22 - [Bug] Images were missing from notifications if the store was installed not in the site root. Fixed. #BUG-8863 #Core
+2020-07-16 - [Bug] Layout issues related to the field Memberships. Fixed. #BUG-8836 #Core
+2020-07-08 - [Bug] Import. During a product import, memberships were assigned only to the first product. Fixed. #BUG-8811 https://bt.x-cart.com/view.php?id=51951 #Core
+2020-06-30 - [Bug] Added states for Australia to the default demo base. #BUG-8733 https://bt.x-cart.com/view.php?id=51822 #Core
+2020-06-30 - [Bug] Layout issues related to positioning the credit card type in the payment form at checkout. Fixed. #BUG-8726 #Core
+2020-06-29 - [Bug] Layout issues related to displaying advertising banners on some pages in the Admin area. Fixed. #BUG-8703 #Core #USPS
+2020-06-29 - [Bug] On mobile, product SKU was not shown on an invoice. Fixed. #BUG-8692 #Core
+2020-06-26 - [Bug] The length of the on/off widget was changing in FireFox when being switched. Fixed.. #BUG-8701 #Core
+2020-06-24 - [Bug] In the Admin area, the height property of some input fields and selectors could change in the process of entering data. Fixed. #BUG-8691 #Core
+

@@ -1,0 +1,7 @@
+{##
+ # Display mode
+ #}
+
+<div{% if this.productClass %} data-class-id="{{ this.productClass.getId() }}"{% endif %} data-id="{{ this.entity.getId() }}" />
+  {{ t(this.entity.getDisplayModeName()) }}
+</div>

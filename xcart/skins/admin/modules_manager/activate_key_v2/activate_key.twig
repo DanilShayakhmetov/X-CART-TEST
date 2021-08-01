@@ -1,0 +1,12 @@
+{##
+ # Activate license key
+ #}
+<div class="activate-key-form">
+  {% form 'XLite\\View\\Form\\Module\\ActivateKey' with {formAction: 'register_key'} %}
+  <div class="addon-key"><input type="text" name="key" value="" placeholder="{{ t('Enter your license key') }}" class="form-control" required/>
+  </div>
+  {{ widget('XLite\\View\\Button\\Submit', label='Register', style='register-license', attributes={'data-segment-click': 'Register'}) }}
+  <div class="text or">{{ t('or') }}</div>
+  {{ widget('XLite\\View\\Button\\Regular', label='Contact X-Cart', style='purchase-license regular-main-button', jsCode='window.open(\'' ~ this.getPurchaseURL() ~ '\', \'_blank\');', attributes={'data-segment-click': 'Contact X-Cart'}) }}
+  {% endform %}
+</div>

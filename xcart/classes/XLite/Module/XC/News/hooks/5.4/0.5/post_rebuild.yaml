@@ -1,0 +1,12 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'News messages', translations: [{ code: en, label: 'News messages' }, { code: ru, label: 'Новости' }] }
+  - { name: 'New news message', translations: [{ code: en, label: 'Add news message' }, { code: ru, label: 'Добавить новость' }] }
+  - { name: "itemslist.admin.news_message.blank", translations: [{ code: en, label: "<p>There are no news messages in your store. News messages are a great way to build a community around your products and notify clients about recent updates. Start by clicking <b>\"Add news message\"</b>.</p>" }, { code: ru, label: "<p>Пока нет ни одной новости. С помощью новостей можно привлекать новых клиентов и уведомлять о различных изменениях. Начните с нажатия на кнопку <b>\"Добавить новость\"</b>.</p>" }] }
+  - { name: 'Create news message', translations: [{ code: en, label: 'Add news message' }, {code: ru, label: 'Добавление новости'}] }

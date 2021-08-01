@@ -1,0 +1,7 @@
+Version 5.3.4.2
+
+Fixes
+- Small fixes of Braintree payment form design
+- Fixed PHP error when an anonymous user is using Paypal checkout
+- Paypal checkout button was disappearing on Fast Lane checkout page reload. Fixed.
+- Other minor changes

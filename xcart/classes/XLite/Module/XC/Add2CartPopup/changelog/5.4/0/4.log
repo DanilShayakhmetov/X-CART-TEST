@@ -1,0 +1,6 @@
+Version 5.4.0.4
+
+Fixes (2)
+2020-01-10 - [Bug] Fixed the artefacts that appeared after adding a product to the shopping cart via the Add to cart popup. #BUG-7786 (Fedya Lavrentyev) #Add2CartPopup #CrispWhiteSkin
+2019-12-17 - [Bug] Layout issue related to the setting "Redirect customer to the cart page after a product is added to cart" with the addon "Add to cart popup" enabled. Fixed. #BUG-7567 (Nikita Erkhov) #Core #Add2CartPopup
+

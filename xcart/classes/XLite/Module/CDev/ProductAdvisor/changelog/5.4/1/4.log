@@ -1,0 +1,5 @@
+Version 5.4.1.4
+
+Fixes (1)
+2020-12-22 - [Bug] Product advisor. The number of products shown in the New arrivals block did not match the add-on settings. Fixed. #XCB-193 #CDev-ProductAdvisor
+

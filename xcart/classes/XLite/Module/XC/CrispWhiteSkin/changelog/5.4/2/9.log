@@ -1,0 +1,8 @@
+Version 5.4.2.9
+
+Improvements (1)
+2020-11-13 - [Story] Implemented improved GDPR support. #XCC-557 #XC-GDPR #XC-CrispWhiteSkin
+
+Fixes (1)
+2020-10-30 - [Bug] Layout issues on the product details page in the mobile version. Fixed. #XCB-67 #XC-CrispWhiteSkin
+

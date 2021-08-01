@@ -1,0 +1,60 @@
+{##
+ # Transaction details
+ #}
+
+<div class="transaction-details">
+  <h3>{{ t('Transaction details') }}</h3>
+
+  {% if this.getItems() %}
+    <div class="items">
+      <ul>
+        {% for item in this.getItems() %}
+          <li>
+            <div class="headline">
+              <span class="name">{{ item.name }}</span>
+              <div class="price-amount">
+                <span class="price">{{ this.formatPrice(item.price) }}</span>
+                <span class="delimiter">x</span>
+                <span class="amount">{{ item.amount }}</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <div class="sku">
+                <span>{{ t('SKU') }}</span>
+                <span>{{ item.sku }}</span>
+              </div>
+
+              {% if item.attrs %}
+                <div class="attrs">
+                  {% for attr in item.attrs %}
+                    <div class="attr">
+                      <span class="name">{{ attr.name }}:</span>
+                      <span class="value">{{ attr.value }}</span>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if this.getDetails() or this.getTotal() %}
+    <ul class="details">
+      {% for datum in this.getDetails() %}
+        <li>
+          <span class="lbl">{{ datum.getLabel() }}</span>
+          <span class="value">{{ datum.getValue() }}</span>
+        </li>
+      {% endfor %}
+      {% if this.getTotal() %}
+        <li>
+          <span class="lbl">{{ t('Total') }}</span>
+          <span class="value">{{ this.formatPrice(this.getTotal()) }}</span>
+        </li>
+      {% endif %}
+    </ul>
+  {% endif %}
+</div>

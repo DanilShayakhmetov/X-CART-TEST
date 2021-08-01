@@ -1,0 +1,6 @@
+Version 5.4.0.6
+
+Fixes (2)
+2020-01-06 - [Bug] The message "This field is required" was missing if an attempt was made to create a product with an empty product name. Fixed. #BUG-7774 (Pavel Veselovsky) #Core #Froala
+2019-12-12 - [Bug] The button "Code view" in the WYSIWYG editor of email notification templates was not working correctly. Fixed.. #BUG-8066 https://bt.x-cart.com/view.php?id=5117676 (Jamil Ainulov) #Froala
+

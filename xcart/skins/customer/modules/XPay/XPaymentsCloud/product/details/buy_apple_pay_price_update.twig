@@ -1,0 +1,10 @@
+{##
+ # Buy with Apple Pay utility widget to monitor product price changes after option is selected
+ #}
+<div class="{{ this.fingerprint }}">
+<script>
+  if (window.xpaymentsBuyWithApplePay) {
+      xpaymentsBuyWithApplePay.getWidget().setOrder({{ this.product.getDisplayPrice() }});
+  }
+</script>
+</div>

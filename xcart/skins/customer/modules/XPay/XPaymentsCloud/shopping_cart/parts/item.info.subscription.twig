@@ -1,0 +1,11 @@
+{##
+ # Shopping cart item weight block
+ #
+ #
+ # @ListChild (list="cart.item.info", weight="20")
+ #}
+{% if this.item.isXpaymentsSubscription() %}
+  <p class="item-subscription">
+    {{ widget_list('cart.item.info.xpayments_subscription', xpaymentsSubscription=this.item.product.xpaymentsSubscriptionPlan, orderItem=this.item) }}
+  </p>
+{% endif %}

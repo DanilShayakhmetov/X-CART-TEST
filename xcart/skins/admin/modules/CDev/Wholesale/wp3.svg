@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="admin-area-icons" transform="translate(-960.000000, -468.000000)" stroke="#C3C3C3" stroke-width="1.2">
+            <g id="Group-5" transform="translate(0.000000, 72.000000)">
+                <g id="128---Space-Gray" transform="translate(224.000000, 364.000000)">
+                    <g id="wp2" transform="translate(737.000000, 33.000000)">
+                        <polygon id="Line-2" stroke-linecap="round" stroke-linejoin="round" points="0.434782609 3.91304348 0.434782609 19.5652174 19.5652174 19.5652174 19.5652174 3.91304348"></polygon>
+                        <polyline id="Line-8" stroke-linecap="round" stroke-linejoin="round" points="0.434782609 3.91304348 3.04347826 0.434782609 16.9565217 0.434782609 19.5652174 3.91304348"></polyline>
+                        <g id="Group-8" transform="translate(5.500000, 7.200012)">
+                            <path d="M2,0.5 L2,0.5 L2,0.5 C2.82842712,0.5 3.5,1.17157288 3.5,2 L3.5,2 L3.5,2 C3.5,2.82842712 2.82842712,3.5 2,3.5 L2,3.5 L2,3.5 C1.17157288,3.5 0.5,2.82842712 0.5,2 L0.5,2 L0.5,2 C0.5,1.17157288 1.17157288,0.5 2,0.5 Z" id="Line-9" stroke-linecap="square"></path>
+                            <path d="M7,5.5 L7,5.5 L7,5.5 C7.82842712,5.5 8.5,6.17157288 8.5,7 L8.5,7 L8.5,7 C8.5,7.82842712 7.82842712,8.5 7,8.5 L7,8.5 L7,8.5 C6.17157288,8.5 5.5,7.82842712 5.5,7 L5.5,7 L5.5,7 C5.5,6.17157288 6.17157288,5.5 7,5.5 Z" id="Line-9-Copy" stroke-linecap="square"></path>
+                            <path d="M1,8.29998779 L8.5,0.5" id="Line-10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

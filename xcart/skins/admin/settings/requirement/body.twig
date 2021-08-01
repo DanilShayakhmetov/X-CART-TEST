@@ -1,0 +1,49 @@
+{##
+ # Requirements
+ #}
+
+{% set requirement = this.getRequirement() %}
+{% set name = this.getName() %}
+
+{% if this.isAjax() %}
+  <ul class="block">
+{% endif %}
+<li class="requirement-line real-content {% if this.isOdd() %}dialog-box{% else %}highlight{% endif %}">
+  {{ this.displayCommentedData({
+    'reloadParams' : {
+      'name' : name,
+      'odd' : this.isOdd(),
+    }
+  }) }}
+
+  <div class="table-column name">
+    {{ requirement.title }}
+    {% if not requirement.status %}
+      <div class="description">
+        {{ requirement.description|raw }}
+      </div>
+      <div class="kb-description">
+        {{ requirement.kb_description|raw }}
+      </div>
+    {% endif %}
+  </div>
+  {% spaceless %}
+    <div class="table-column status">
+      {% if requirement.status %}
+        {% if requirement.skipped %}
+          <span class="skipped info-message">{{ t('Skipped') }}</span>
+        {% else %}
+          <span class="passed success-message">{{ t('Passed') }}</span>
+        {% endif %}
+      {% else %}
+        <span class="failed error-message">{{ t('Failed') }}</span>
+        {% if requirement.error_description %}
+          {{ widget('XLite\\View\\Tooltip', id='install_requirement_error_'~name, text=requirement.error_description|raw, caption='', isImageTag='true', className='help-icon') }}
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endspaceless %}
+</li>
+{% if this.isAjax() %}
+  </ul>
+{% endif %}

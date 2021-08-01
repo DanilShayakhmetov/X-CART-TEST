@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2020-03-20 - [Bug] After selecting one or more elements from a list of orders, products, reviews or users, the button text "Export all:" was not changed to "Export selected:". Fixed. #BUG-8451 #Core #BulkEditing
+

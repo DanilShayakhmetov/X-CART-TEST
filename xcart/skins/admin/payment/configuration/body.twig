@@ -1,0 +1,50 @@
+{##
+ # Payment configuration
+ #}
+
+<div class="payment-conf">
+
+  {% if this.hasPaymentModules() %}
+    {% if this.hasGateways() %}
+      <div class="box gateways">
+        <div class="list-header">
+          <span class="payment-type-title">{{ t('Online methods') }}</span>
+          {{ widget('XLite\\View\\Button\\Payment\\AddMethod', paymentType=constant('XLite\\Model\\Payment\\Method::TYPE_ALLINONE'), style='add-method top-button-add-method add-online-method-button') }}
+        </div>
+        <div class="content">
+          {% if this.hasAddedGateways() %}
+            {{ widget('XLite\\View\\ItemsList\\Payment\\Method\\Admin\\Gateways') }}
+          {% endif %}
+          {% if this.hasAddedAlternative() %}
+            {{ widget('XLite\\View\\ItemsList\\Payment\\Method\\Admin\\Alternative') }}
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% else %}
+    <div class="box no-payment-modules">
+      <div class="list-header">
+        <h2>{{ t('No payment modules installed') }}</h2>
+      </div>
+      <div class="content">
+        <p>{{ t('In order to accept credit cards payments you should install the necessary payment module from our Marketplace.') }}</p>
+        {{ widget('XLite\\View\\Button\\Link', label=t('Go to Marketplace'), location=url('addons_list_marketplace', '', {'tag': 'Payment processing'}), style='action') }}
+      </div>
+    </div>
+  {% endif %}
+  <div class="right-panel-payment-modules">
+    {% include 'payment/configuration/banner.twig' %}
+  </div>
+
+  <div class="box offline-methods">
+    <div class="list-header">
+      <span class="payment-type-title">{{ t('Offline methods') }}</span>
+      {{ widget('XLite\\View\\Button\\Payment\\AddMethod', paymentType=constant('XLite\\Model\\Payment\\Method::TYPE_OFFLINE'), style='add-method top-button-add-method') }}
+    </div>
+    <div class="content">
+      {{ widget('XLite\\View\\ItemsList\\Payment\\Method\\Admin\\OfflineModules') }}
+      {{ widget('XLite\\View\\ItemsList\\Payment\\Method\\Admin\\Offline') }}
+    </div>
+  </div>
+
+</div>

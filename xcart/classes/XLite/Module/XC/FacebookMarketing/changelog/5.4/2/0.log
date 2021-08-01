@@ -1,0 +1,10 @@
+Version 5.4.2.0
+
+Improvements (1)
+2019-12-23 - [Change] Improvement for the cookie consent popup. The permissions for All cookies and Default cookies are now separate. #XCN-10275 #GoogleAnalytics #Facebook Commerce #GDPR
+
+Fixes (3)
+2020-01-15 - [Bug] Facebook feed was generated incorrectly in manual mode for products with variants. Fixed. #BUG-7987 https://bt.x-cart.com/view.php?id=51063 #Facebook Commerce
+2020-01-15 - [Bug] Facebook feed was generated incorrectly in 'cron' mode. Fixed. #BUG-7986 https://bt.x-cart.com/view.php?id=51063 #Facebook Commerce
+2020-01-15 - [Bug] Facebook feed was generated incorrectly in 'cron' mode with the setting 'Include out of stock products into feed' disabled. #BUG-7985 https://bt.x-cart.com/view.php?id=51063 #Facebook Commerce
+

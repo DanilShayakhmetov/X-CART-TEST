@@ -1,0 +1,6 @@
+Version 5.4.1.1
+
+Fixes (2)
+2020-05-07 - [Bug] Some widgets on the home page looked different after deactivating ThemeTweaker. Fixed. #BUG-8580 #ProductAdvisor #Sale
+2020-03-27 - [Bug] The root category id was considered "0" at all times, which was incorrect. Fixed. #BUG-8205 https://bt.x-cart.com/view.php?id=51360 #ProductAdvisor
+

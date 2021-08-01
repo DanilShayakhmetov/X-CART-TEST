@@ -1,0 +1,23 @@
+{##
+ # Product details main block
+ #
+ # @ListChild (list="product.details.page.info", weight="105")
+ #}
+
+{% if this.hasTabsBriefInfo() %}
+  <div class="product-tabs-brief-info">
+    <ul>
+      {% for link, info in this.getTabsBriefInfo() %}
+        <li>
+          <span class="tab-title">{{ info.title }}</span>
+          <div class="tab-brief-info-body">
+            {{ info.brief_info|raw }}
+          </div>
+          <div class="brief-info-link">
+            <a data-id="{{ link }}" href="#{{ link }}" data-toggle="tab">{{ t('learn more') }}</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

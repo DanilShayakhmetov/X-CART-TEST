@@ -1,0 +1,19 @@
+{##
+ # Products list item
+ # @ListChild (list="itemsList.product.grid.customer.recently.info", weight="100")
+ #}
+<div class="product-photo">
+  <a href="{{ this.getProductURL() }}"
+     class="product-thumbnail">
+    {{ widget('\\XLite\\View\\Image', lazyLoad=true, image=this.product.getImage(), maxWidth=this.getIconWidth(), maxHeight=this.getIconHeight(), alt=this.getIconAlt(), className='photo') }}
+  </a>
+</div>
+
+<div class="recently-viewed-product-details hidden">
+  <div class="products recently-viewed-in-popover">
+    <h5><a href="{{ this.getProductURL() }}">{{ this.product.getName() }}</a></h5>
+    <div class="price">
+      {{ widget('\\XLite\\View\\Price', allowRange=true, product=this.product, displayOnlyPrice='1') }}
+    </div>
+  </div>
+</div>

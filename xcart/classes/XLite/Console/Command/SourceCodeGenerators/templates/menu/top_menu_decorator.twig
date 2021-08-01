@@ -1,0 +1,17 @@
+{##
+ # Items List View
+ #}
+{% extends "base/php-class.twig" %}
+
+{% block method_defineItems_body %}
+        $list = parent::defineItems();
+
+        if (isset($list['{{ method.menuPath }}'])) {
+            $list['{{ method.menuPath }}'][static::ITEM_CHILDREN]['{{ method.target }}'] = [
+                static::ITEM_TITLE  => '{{ method.title }}',
+                static::ITEM_TARGET => '{{ method.target }}',
+            ];
+        }
+
+        return $list;
+{% endblock %}

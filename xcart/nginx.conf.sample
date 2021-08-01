@@ -1,0 +1,240 @@
+## X-Cart 5 nginx sample configuration
+## Copy this file to your /etc/nginx directory
+## and include it in the server {} block.
+##
+## DO NOT include the sample file directly because
+## it is considered a security vulnerability and
+## may lead to a breach.
+##
+## Example configuration:
+##
+# upstream fastcgi_xcart {
+#    # use tcp connection
+#    server  127.0.0.1:9000;
+#    # or socket
+#    # server   unix:/var/run/php5-fpm.sock;
+#    # server   unix:/var/run/php/php7.0-fpm.sock;
+# }
+# server {
+#    listen 80 default_server;
+#    server_name xcart.local;
+#    root /var/www/xcart;
+#
+#    include /etc/nginx/conf/xcart.conf;
+# }
+
+index cart.php;
+charset UTF-8;
+
+location ^~ /src/classes {
+    location ~* \.(png|svg) {
+        try_files $uri =404;
+    }
+    return 403;
+}
+
+location ^~ /src/files {
+    location ^~ /src/files/attachments {
+        try_files $uri =404;
+    }
+    location ^~ /src/files/vendor {
+        try_files $uri =404;
+    }
+    location ^~ /src/files/video {
+        try_files $uri =404;
+    }
+    return 403;
+}
+
+location ^~ /src/images {
+    location ~* \.(jpg|jpeg|gif|png|bmp|ico|tiff|flv|swf|svg|pdf) {
+        try_files $uri =404;
+    }
+    return 403;
+}
+
+location ^~ /src/skins {
+    location ~* \.(tpl|twig|php|pl|conf) {
+      deny all;
+    }
+    try_files $uri =404;
+}
+
+location ^~ /src/var {
+    location ~* \.(gif|jpe?g|png|bmp|ico|css|js|webm|ogg|mp4|avi) {
+        try_files $uri =404;
+    }
+    return 403;
+}
+
+location ~ /src/(vendor|sql|lib|etc|Includes)/ {
+    deny all;
+}
+
+location ~ /src/var/(export|import)/ {
+    deny all;
+}
+
+location ^~ /src/service/ {
+    location ^~ /src/service/static/ {
+        try_files $uri =404;
+    }
+    return 403;
+}
+
+location /src/ {
+    try_files $uri $uri/ @handler;
+}
+
+location @handler {
+    rewrite ^/src/sitemap.xml(\?.+)?$ /src/cart.php?target=sitemap;
+    rewrite ^/src/service.php(.*)?$ /src/service.php last;
+    rewrite ^/src/(.*)$ /src/cart.php?url=$1 last;
+}
+
+location ~ \.php$ {
+    try_files      $uri = 404;
+    fastcgi_pass   fastcgi_xcart;
+    fastcgi_index  index.php;
+    fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include        fastcgi_params;
+    fastcgi_read_timeout 300s;
+    fastcgi_connect_timeout 300s;
+}
+
+gzip on;
+gzip_disable "msie6";
+
+gzip_comp_level 6;
+gzip_min_length 1100;
+gzip_buffers 16 8k;
+gzip_proxied any;
+gzip_types
+    text/plain
+    text/css
+    text/js
+    text/xml
+    text/javascript
+    application/javascript
+    application/x-javascript
+    application/json
+    application/xml
+    application/xml+rss
+    image/svg+xml;
+gzip_vary on;
+
+# Banned locations (only reached if the earlier PHP entry point regexes don't match)
+location ~* (\.php$|\.htaccess$|\.git) {
+    deny all;
+}
+
+
+##########
+# No web dir
+##########
+
+server {
+    index cart.php;
+    charset UTF-8;
+
+    location ^~ /classes {
+        location ~* \.(png|svg) {
+            try_files $uri =404;
+        }
+        return 403;
+    }
+
+    location ^~ /files {
+        location ^~ /files/attachments {
+            try_files $uri =404;
+        }
+        location ^~ /files/vendor {
+            try_files $uri =404;
+        }
+        location ^~ /files/video {
+            try_files $uri =404;
+        }
+        return 403;
+    }
+
+    location ^~ /images {
+        location ~* \.(jpg|jpeg|gif|png|bmp|ico|tiff|flv|swf|svg|pdf) {
+            try_files $uri =404;
+        }
+        return 403;
+    }
+
+    location ^~ /skins {
+        location ~* \.(tpl|twig|php|pl|conf) {
+          deny all;
+        }
+        try_files $uri =404;
+    }
+
+    location ^~ /var {
+        location ~* \.(gif|jpe?g|png|bmp|ico|css|js|webm|ogg|mp4|avi) {
+            try_files $uri =404;
+        }
+        return 403;
+    }
+
+    location ~ /(vendor|sql|lib|etc|Includes)/ {
+        deny all;
+    }
+
+    location ~ /var/(export|import)/ {
+        deny all;
+    }
+
+    location ^~ /service/ {
+        location ^~ /service/static/ {
+            try_files $uri =404;
+        }
+        return 403;
+    }
+
+    location / {
+        try_files $uri $uri/ @handler;
+    }
+
+    location @handler {
+        rewrite ^/sitemap.xml(\?.+)?$ /cart.php?target=sitemap;
+        rewrite ^/service.php(.*)?$ /service.php last;
+        rewrite ^/(.*)$ /cart.php?url=$1 last;
+    }
+
+    location ~ \.php$ {
+        try_files      $uri = 404;
+        fastcgi_pass   fastcgi_xcart;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+        fastcgi_connect_timeout 300s;
+    }
+
+    gzip on;
+    gzip_disable "msie6";
+
+    gzip_comp_level 6;
+    gzip_min_length 1100;
+    gzip_buffers 16 8k;
+    gzip_proxied any;
+    gzip_types
+        text/plain
+        text/css
+        text/js
+        text/xml
+        text/javascript
+        application/javascript
+        application/x-javascript
+        application/json
+        application/xml
+        application/xml+rss
+        image/svg+xml;
+    gzip_vary on;
+
+    # Banned locations (only reached if the earlier PHP entry point regexes don't match)
+    location ~* (\.php$|\.htaccess$|\.git) {
+        deny all;
+    }
+}

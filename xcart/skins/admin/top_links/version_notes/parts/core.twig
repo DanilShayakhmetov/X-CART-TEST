@@ -1,0 +1,10 @@
+{##
+ # "Core version" info
+ #}
+<div class="version">
+  {% if this.getEditionName()|length > 18 %}
+    <div class="large">{{ this.getEditionName() }}&nbsp;{{ this.getCurrentCoreVersion() }}</div>
+  {% else %}
+    <div>{{ this.getEditionName() }}</div><div>{{ this.getCurrentCoreVersion() }}</div>
+  {% endif %}
+</div>

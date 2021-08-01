@@ -1,0 +1,10 @@
+Version 5.4.0.2
+
+Improvements (2)
+2019-03-22 - [Change] Layout adjustments for payment method settings pages. #XCN-9658 (Fedya Lavrentyev) #Core #AuthorizeNet #Paypal #TwoCheckout #VendorMessages #BitPay #Yandex Checkout
+2019-01-14 - [Change] Improvement of the product page look & feel in the Customer area. Add to cart form minimization. #XCN-9321 (morven) #Core #Paypal #ProductAdvisor #Wholesale #ProductComparison #ProductVariants #ProductReviews #CrispWhiteSkin #ProductTags #FreeShipping
+
+Fixes (2)
+2019-03-15 - [Bug] Layout adjustments for the Admin area dashboard according to the style guide. #BUG-5766 (Maxim Kuznetsov) #Core #Paypal #WebmasterKit #MultiVendor #Onboarding
+2019-02-05 - [Bug] During an order payment using the payment method PayPal Partner Hosted, a logged in user was logged out. Fixed. #BUG-7047 (Vladimir Semyonov) #Paypal
+

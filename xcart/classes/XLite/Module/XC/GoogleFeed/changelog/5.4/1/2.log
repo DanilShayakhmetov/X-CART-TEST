@@ -1,0 +1,6 @@
+Version 5.4.1.2
+
+Fixes (2)
+2020-08-11 - [Bug] Google feed. The tag <g:price> was incorrect or missing when Free shipping was enabled for the product. Fixed. #BUG-8887 https://bt.x-cart.com/view.php?id=52010 #GoogleFeed
+2020-07-30 - [Bug] It was not possible to download Google/Facebook/Yandex feed if a non-default language was selected in the Admin area and and use_language_url was set to "Y". Fixed. #BUG-8847 https://bt.x-cart.com/view.php?id=51987 #Facebook Commerce #GoogleFeed #YandexMarket
+

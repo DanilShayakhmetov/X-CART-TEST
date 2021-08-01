@@ -1,0 +1,10 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--actions", weight="999")
+ #}
+
+{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\Button\\ThemeTweakerTab',
+  label="",
+  style="themetweaker-tab themetweaker-tab_hide themetweaker-close-icon",
+  attributes={"@click": "hidePanel"}) }}

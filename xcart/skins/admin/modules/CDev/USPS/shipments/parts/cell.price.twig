@@ -1,0 +1,11 @@
+{##
+ # Price column
+ #}
+{{ this.formatPrice(this.entity.getPrice()) }}
+<div class="price-details">
+  {% for fee in this.entity.getFees() %}
+    <div class="service-fee">
+      {{ fee.name }}: {{ this.formatPrice(fee.value) }}
+    </div>
+  {% endfor %}
+</div>

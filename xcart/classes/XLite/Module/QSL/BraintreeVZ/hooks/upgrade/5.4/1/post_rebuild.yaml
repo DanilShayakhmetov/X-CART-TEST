@@ -1,0 +1,22 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: PayPal powered by Braintree
+    settings:
+      - name: isApplePay
+        value: 0
+      - name: isGooglePay
+        value: 0
+      - name: googleMerchantId
+      - name: googlePaymentButtonColor
+        value: 'default'
+      - name: googlePaymentButtonType
+        value: 'long'
+XLite\Model\LanguageLabel:
+  - { name: "braintree_settings_google_payment_button_color_help", translations: [{ code: en, label: "<strong>Default</strong>: A Google-selected default value. Currently black but it may change over time (default).<br><strong>Black</strong>: A black button suitable for use on white or light backgrounds.<br><strong>White</strong>: A white button suitable for use on colorful backgrounds." }] }
+  - { name: "braintree_settings_google_payment_button_type_help", translations: [{ code: en, label: "<strong>Long</strong>: \"Buy with Google Pay\" button (default). A translated button label may appear if a language specified in the viewer's browser matches an available language.<br><strong>Short</strong>: Google Pay payment button without the \"Buy with\" text." }] }

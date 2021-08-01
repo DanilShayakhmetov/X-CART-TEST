@@ -1,0 +1,33 @@
+{##
+ # Tax edit page
+ #}
+
+{% form this.getFormClass() with this.getFormWidgetParams() %}
+
+  <fieldset>
+    <div class="taxes-top-block">
+      <div class="taxes-top-block-left">
+
+        {{ widget_list('taxes.top.section') }}
+
+        {% if this.getSettingsTemplate() %}
+          {% include this.getSettingsTemplate() %}
+        {% endif %}
+      </div>
+
+      <div class="taxes-top-block-right">
+        {{ widget_list('taxes.help.section') }}
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    {% if this.getItemsTemplate() %}
+      {% include this.getItemsTemplate() %}
+    {% endif %}
+  </fieldset>
+
+  {% if this.hasStickyPanel() %}
+    {{ widget(this.getStickyPanelClass(), alwaysVisible=true) }}
+  {% endif %}
+{% endform %}

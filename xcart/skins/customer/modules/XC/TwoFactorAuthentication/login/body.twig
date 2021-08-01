@@ -1,0 +1,32 @@
+{##
+ # Login widget
+ #}
+
+<form id="login_form" action="{{ url('authy_login') }}" method="post" name="login_form">
+  <input type="hidden" name="target" value="authy_login"/>
+  <input type="hidden" name="action" value="login"/>
+  <input type="hidden" name="preReturnURL" value="{{ this.preReturnURL }}"/>
+  {{ widget('XLite\\View\\FormField\\Input\\FormId') }}
+
+  <table class="login-form">
+
+    <tr>
+      <td class="password-field field">
+        {{ widget('XLite\\View\\FormField\\Input\\Text', required='true', fieldName='sms_token', label=t('SMS code'), fieldOnly='false', fieldId='sms_token') }}
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        {{ widget('XLite\\View\\Button\\Submit', label=t('Log in')) }}
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="#" class="resend_token">{{ t('Resend SMS with code') }}</a>
+      </td>
+    </tr>
+
+  </table>
+</form>

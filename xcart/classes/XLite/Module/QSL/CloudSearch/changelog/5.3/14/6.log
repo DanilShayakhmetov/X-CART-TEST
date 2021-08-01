@@ -1,0 +1,3 @@
+Version 5.3.14.6
+
+[Fix] Fixed a subtle bug which prevented multiple filter values to be correctly saved to URL.

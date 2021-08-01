@@ -1,0 +1,13 @@
+Version 5.4.1.0
+
+Improvements (1)
+2020-02-04 - [Change] The active menu item was not highlighted on some pages. Fixed. #BUG-7472 #Core #AustraliaPost #Coupons #Paypal #Sale #USPS #XMLSitemap #CanadaPost #FedEx #UPS #MailChimp #DHL #GoogleFeed
+
+Fixes (6)
+2020-03-10 - [Bug] The tag <g:additional_image_link> contained garbage elements (<0></0>). Fixed. #BUG-8343 https://bt.x-cart.com/view.php?id=51480 #GoogleFeed
+2020-03-10 - [Bug] For the <g:description> field, meta description was used instead of full description. Fixed. #BUG-8283 https://bt.x-cart.com/view.php?id=51425 #GoogleFeed
+2020-02-26 - [Bug] After generating a Google feed, the feed link had an incorrect format (which corrected on its own after a page refresh). Fixed. #BUG-8344 #GoogleFeed
+2020-02-14 - [Bug] Fatal error when adding a new product to the catalog. Fixed. #BUG-8350 #GoogleFeed
+2020-02-12 - [Bug] It was impossible to apply the "Put all for sale" feature on the list of search results after doing  a search by vendor. Fixed. #BUG-8235 https://bt.x-cart.com/view.php?id=51384 #Sale #GoogleFeed
+2020-01-23 - [Bug] Fixed the errors related to OpenGraph tags. Now the pages can be successfully checked using the Facebook debug tool. #BUG-7953 https://bt.x-cart.com/view.php?id=51026 #GoSocial #SystemFields #GoogleFeed
+

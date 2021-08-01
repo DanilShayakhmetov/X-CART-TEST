@@ -1,0 +1,13 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'Tier with same quantity range and membership already defined.', translations: [{ code: ru, label: 'Диапазон с таким же количеством и группой пользователей уже существует.' }] }
+  - { name: 'X variants and wholesale prices are defined', translations: [{ code: ru, label: 'Для этого товара заданы <a href="{{variantsUrl}}">{{variants}} вариант(ов)</a> и <a href="{{wholesaleUrl}}">оптовые цены</a>' }] }
+  - { name: 'Wholesale prices are defined', translations: [{ code: ru, label: 'Для этого товара заданы оптовые цены' }] }
+  - { name: '"Maximum order quantity (per product)" is set to {{max_order_quantity}} in the settings. It will be ignored for this product since you have defined the minimum purchase quantity as {{min_purchase_quantity}}.', translations: [{ code: ru, label: '"Ограничение по количеству товара при заказе (на одну позицию)" указано в настройках как <strong>{{max_order_quantity}}</strong>. Данное ограничение <strong>не будет применено</strong> к текущему товару, т.к. вы установили минимальное количество для покупки равным <strong>{{min_purchase_quantity}}</strong>.' }] }
+  - { name: '"Maximum allowed order subtotal" is set to {{max_order_subtotal}} in the settings. It will be ignored for this product since you have specified {{product_amount}} ({{product_quantity}} * {{product_price}}) as the minimum purchase subtotal.', translations: [{ code: ru, label: '"Максимально возможная сумма заказа" указана в настройках как <strong>{{max_order_subtotal}}</strong>. Данное ограничение <strong>не будет применено</strong> к текущему товару, т.к. вы установили минимально возможную сумму заказа равной <strong>{{product_amount}}</strong>&nbsp;(<strong>{{product_quantity}}&nbsp;*&nbsp;{{product_price}}</strong>).' }] }

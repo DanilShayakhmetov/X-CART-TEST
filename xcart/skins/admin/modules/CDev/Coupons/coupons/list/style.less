@@ -1,0 +1,33 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Coupons list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list-table.coupons table.list tbody {
+  tr.uses-infinity td.uses {
+    font-family: Verdana;
+    font-size: 16px;
+  }
+
+  td {
+    &.uses,
+    &.uses_count,
+    &.value {
+      text-align: right;
+    }
+  }
+
+  td.code {
+    .plain-value {
+      width: 250px;
+    }
+
+    .expired-mark {
+      color: @color-error;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{##
+ # Product market price
+ #
+ #
+ # @ListChild (list="cart.item.info.xpayments_subscription", weight="300")
+ #}
+
+<div class="text">
+  <span>{{ this.xpaymentsSubscription.getXpaymentsPlanDescription() }} ({{ this.formatDate(this.xpaymentsSubscription.getNextDate()) }})</span>
+</div>

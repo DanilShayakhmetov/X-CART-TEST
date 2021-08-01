@@ -1,0 +1,8 @@
+Version 5.4.1.1
+
+Fixes (4)
+2020-01-06 - [Bug] Changed the default value of the setting "Request user location" to "No" for the Social Login addon. #BUG-7745 (Shevelov Alexander) #SocialLogin
+2019-12-06 - [Bug] Removed the check box option "Require to change password on next log in" from the user profile details page in the Admin area for user accounts created using Social Login. #BUG-8058 (Maxim Kuznetsov) #SocialLogin
+2019-12-05 - [Bug] The password and password confirmation fields for a user profile created using Social Login are not available after disabling or removing the Social Login addon. Fixed. #BUG-8069 (Maxim Kuznetsov) #SocialLogin
+2019-12-05 - [Bug] It is no longer possible to create user accounts of the same name using regular user registration on the site with the classic method and registration with Social Login. The password for a user account created via Social Login may no longer be reset using the standard password reset option. Also, it is not possible to sign in to the store with the standard classic sign-in method using credentials created via Social Login. #BUG-8054 (Maxim Kuznetsov) #Core #SocialLogin
+

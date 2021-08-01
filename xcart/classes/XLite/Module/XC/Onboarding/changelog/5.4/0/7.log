@@ -1,0 +1,6 @@
+Version 5.4.0.7
+
+Fixes (2)
+2020-01-10 - [Bug] Layout issues related to the display of product image in the onboarding wizard. Fixed. #BUG-7838 (Pavel Veselovsky) #Core #Onboarding
+2019-12-19 - [Bug] Layout issues related to the onboarding wizard block showing the store's readiness to accept the first order. Fixed. #BUG-7556 (Pavel Veselovsky) #Onboarding
+

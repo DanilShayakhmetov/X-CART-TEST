@@ -1,0 +1,32 @@
+<xlite-wizard-progress inline-template :step="step" :steps="steps" :landmarks="{{ this.getLandmarks() | json_encode }}" :current-step="currentStep" :last-product="lastProduct">
+  <div class="{{ this.getDivStyle() }}" v-data='{"progress": {{ this.getPercentage() }} }'>
+    <div class="percentage" v-text="this.progress + '%'" v-if="!isCurrentStep('intro')" transition="fade-in-out">{{ this.getPercentage() ~ '%' }}</div>
+    <div class="bar">
+      <div class="landmarks">
+        {% for step in this.getLandmarks() %}
+          <div v-if="'{{ step.index }}' === '{{ this.getFirstIndex() }}' && isCurrentStep('intro')"
+               class="landmark landmark-{{ step.index }}"
+               :class="{{ 'landmarkClass.' ~ step.index }}"
+               tabindex="-1">
+            {{ svg(step.image)|raw }}
+            {{ widget('XLite\\View\\Button\\SimpleLink', label=t(step.name), attributes={'@click': 'goToNextStep', 'transition': 'fade-in-out'}, jsCode="null;", style="landmark-text") }}
+          </div>
+          <div v-else
+               class="landmark landmark-{{ step.index }}"
+               :class="{{ 'landmarkClass.' ~ step.index }}"
+               @click="goToStep('{{ step.index }}')"
+               tabindex="-1">
+            {{ svg(step.image)|raw }}
+            <span v-if="isCurrentStep('intro')" transition="fade-in-out" class="landmark-text">{{ t(step.name) }}</span>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="progress-line">
+        <div class="progress-line-filled" style="width: {{ this.getPercentage() ~ '%' }}" :style="barStyle"></div>
+      </div>
+    </div>
+    <div class="finish-mark" :class="finishClass" v-if="!isCurrentStep('intro')" transition="fade-in-out">
+      {{ svg('modules/XC/Onboarding/images/ok-mark.svg')|raw }}
+    </div>
+  </div>
+</xlite-wizard-progress>

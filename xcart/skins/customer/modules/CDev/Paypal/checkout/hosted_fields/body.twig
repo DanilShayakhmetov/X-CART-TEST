@@ -1,0 +1,67 @@
+{##
+ # Credit card form
+ #}
+
+<div class="cc-form-container">
+  <div class="header-line"></div>
+  <div class="content">
+    <div class="header">
+      <div class="lock"></div>
+      <div class="buttons-separator">
+        <span>{{ t('OR') }}</span>
+      </div>
+    </div>
+
+    <div class="cc-form">
+
+      <div class="cardType">
+        <div class="value">
+          <a class="icon">
+            <span id="pcp-hosted-fields-card-type" class="card unknown"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="cardNumber">
+        <div class="title">{{ t('Card number') }}</div>
+        <div class="value">
+          <div class="form-control" id="pcp-hosted-fields-card-number"></div>
+        </div>
+      </div>
+
+      <div class="cardExpire">
+        <div class="title">{{ t('Expiration date') }}</div>
+        <div class="value">
+          <div class="top-line">
+            <div class="top-text">{{ t('MONTH') }} / {{ t('YEAR') }}</div>
+          </div>
+          <div class="bottom-line">
+            <div class="left-text">{{ t('VALID THRU') }}</div>
+            <div class="left-text left-text_extended">
+              <span class="valid-thru">{{ t('VALID THRU') }}</span>
+              <br>
+              <span class="month-year">{{ t('MONTH') }} / {{ t('YEAR') }}</span>
+            </div>
+            <div class="month-year-container">
+              <div id="pcp-hosted-fields-expiration-date" class="form-control"></div>
+              <div class="bottom-text-month text-label">{{ t('MONTH') }} / {{ t('YEAR') }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardCVV2 required">
+        <div class="title">{{ t('CVV / CVC') }}</div>
+        <div class="value">
+          <div id="pcp-hosted-fields-cvv" class="form-control"></div>
+          <a id="cvv2-hint" class="cvv2-hint" role="button" data-toggle="popover" data-placement="top" data-content=" ">?</a>
+        </div>
+        <div class="icon-container">
+          <div class="icon mc"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

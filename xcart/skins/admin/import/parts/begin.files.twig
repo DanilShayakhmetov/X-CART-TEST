@@ -1,0 +1,14 @@
+{##
+ # Import begin section : sections
+ #
+ # @ListChild (list="import.begin.content", weight="100")
+ #}
+
+{{ widget_list('import.begin.content.files') }}
+<div class="parts">
+  <h3>{{ t('Upload files') }}</h3>
+  <input id="files" class="inputfile" type="file" name="files[]" multiple="multiple" data-max-size="{{ this.getUploadFileMaxSize() }}" data-readable-max-size="{{ this.getReadableUploadFileMaxSize() }}" />
+  <label for="files" class="input-button">Choose files</label>
+  <span class="input-filename"></span>
+  <div class="help-block">{{ this.getUploadFileMessage() }}</div>
+</div>

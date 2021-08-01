@@ -1,0 +1,10 @@
+{##
+ # Dashboard info block alerts
+ #
+ # @ListChild (list="dashboard.info_block", weight="200")
+ #}
+
+<div class="infoblock-notifications">
+  {{ widget_list('dashboard.info_block.notifications') }}
+  <h3>{{ t('Notifications') }}</h3>
+</div>

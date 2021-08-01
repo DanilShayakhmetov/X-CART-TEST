@@ -1,0 +1,135 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Coupons widget styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.coupons {
+  width: 100%;
+  text-align: center;
+}
+
+.checkout_fastlane_details_wrapper .coupons {
+  margin-top: 20px;
+}
+
+.checkout-block .coupons {
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+
+.checkout-block .coupons:not(.opened) {
+  height: 0;
+}
+
+.coupons .new a {
+  display: inline-block;
+  border-bottom: 1px dotted #2c5fa6;
+  text-decoration: none;
+  font-size: 12px;
+  color: #8aa1b3;
+}
+.coupons .new a:focus,.coupons .new a:hover{
+  color:#1cb5fc;
+  border-bottom: 1px dotted #1cb5fc;
+}
+.inactive .coupons {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/**
+ * New coupon form
+ */
+
+@media (max-width: 767px) {
+  .coupons {
+    bottom: -140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+
+  .coupons.opened{
+    bottom: -300px;
+    height: 200px;
+  }
+
+  .checkout_fastlane_details_wrapper .coupons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.coupons div.add-coupon {
+  white-space: nowrap;
+}
+
+.coupons form {
+  display: flex;
+  padding-top:0;
+}
+
+.coupons .new + .add-coupon form {
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .coupons form {
+    flex-wrap: wrap;
+  }
+}
+
+.coupons .add-coupon .table-value,
+.coupons .add-coupon .input-field-wrapper {
+  width: 100%;
+}
+
+.coupons .add-coupon input {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.coupons .add-coupon button {
+  vertical-align: middle;
+  margin: 0px;
+  margin-left: 20px;
+  height: 60px;
+  width: 150px;
+  margin-top: -1px;
+}
+
+@media (max-width: 767px) {
+  .coupons .add-coupon button {
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+.coupons .inline-error {
+  float: none;
+  margin: 0px;
+  line-height: 20px;
+  white-space: normal;
+  text-align: left;
+}
+
+.checkout-block .review-step:after,
+.checkout_fastlane_section-right:after {
+  content: '';
+  display: block;
+}
+
+.checkout_fastlane_section-right:after {
+  margin-bottom: 140px;
+}
+
+@media (max-width: 767px) {
+  .checkout_fastlane_section-right:after {
+    margin-bottom: 240px;
+  }
+}

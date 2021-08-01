@@ -1,0 +1,19 @@
+Version 5.4.0.2
+
+Improvements (11)
+2019-04-05 - [Change] Layout adjustment for various pages according to the style guide. #XCN-9763 (Maxim Kuznetsov) #Core #SimpleCMS #ThemeTweaker #ProductReviews #NewsletterSubscriptions #MultiVendor #ProductTags #SystemFields #MailChimp #News #Facebook Commerce
+2019-04-05 - [Change] Look & Feel page layout adjustment according to the style guide. #XCN-9747 (Maxim Kuznetsov) #Core #ThemeTweaker
+2019-03-21 - [Change] Layout adjustment for the zone editing page and the sticky panel on all the pages according to the style guide. #XCN-9659 (Fedya Lavrentyev) #Core #SalesTax #ThemeTweaker
+2019-03-15 - [Change] Layout adjustment for the list pages of various entities for when there are no existing entities yet. #XCN-9440 (Fedya Lavrentyev) #Core #Coupons #SimpleCMS #VolumeDiscounts #ThemeTweaker #ProductReviews #NewsletterSubscriptions #ProductTags #VendorMessages #News #CustomProductTabs
+2019-02-12 - [Change] JS libs updated. #XCN-9391 (Fedya Lavrentyev) #Core #ThemeTweaker #ProductFilter #ProductComparison #CrispWhiteSkin #Onboarding
+2019-01-28 - [Change] Added demo data for the editing of some email notifications. #XCN-9236 (Vladimir Semyonov) #ThemeTweaker #CanadaPost #ProductReviews #VendorMessages
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+2018-06-11 - [Change] A new file can now be added via the Template editor in the Customer area. #XCN-8728 (Eugene Dementjev) #ThemeTweaker
+2018-06-07 - [Change] Multiple changes to the layout and text of email notifications. #XCN-8914 (Sergey Elmanov) #ThemeTweaker #PINCodes #ProductReviews #MultiVendor #VendorMessages #NotFinishedOrders
+2018-06-04 - [Change] All notifications can now be edited in Webmaster mode. #XCN-8862 (Sergey Elmanov) #Core #ContactUs #Egoods #ThemeTweaker #CanadaPost #PINCodes #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+2018-02-16 - [Change] Template editor and Layout editor improvements. #XCN-8572 (Eugene Dementjev) #ThemeTweaker #CrispWhiteSkin
+
+Fixes (2)
+2019-03-27 - [Bug] Fatal error "Error (code: 0): Call to a member function getEnabledForCustomer() on null" after choosing to resend access link. Fixed. #BUG-7090 (Fedya Lavrentyev) #Core #ThemeTweaker
+2018-12-25 - [Bug] Minor improvements for the email notifications page in the Admin area. #BUG-6716 (Vladimir Semyonov) #Core #ThemeTweaker
+

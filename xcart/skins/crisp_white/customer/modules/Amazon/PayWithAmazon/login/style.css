@@ -1,0 +1,25 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Social Login widget styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/* BUTTON */
+
+.social-net-button.social-net-Amazon {
+  border: none;
+}
+
+.social-net-button.social-net-Amazon > div {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-net-button.social-net-Amazon > div > img {
+  height: 60px;
+  width: 293px;
+}

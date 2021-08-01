@@ -1,0 +1,5 @@
+Version 5.4.0.3
+
+Fixes (1)
+2019-06-18 - [Bug] Fatal error: "Error (code: 0): Class 'Includes\Utils\Module\Manager' not found" during the 5.3 ->5.4 upgrade. Fixed. #BUG-7439 (Maxim Kuznetsov) #GoSocial
+

@@ -1,0 +1,10 @@
+{##
+ # Product market price
+ #
+ #
+ # @ListChild (list="cart.item.info.xpayments_subscription", weight="200")
+ #}
+
+<div class="text">
+  <span>{{ t('Subscription fee') }}:</span> {{ this.formatPrice(this.orderItem.getXpaymentsDisplayFeePrice(), this.null, 1) }}
+</div>

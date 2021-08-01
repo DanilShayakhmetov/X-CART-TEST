@@ -1,0 +1,102 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Admin interface styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.parcel-products, .parcel-settings, .shipment-info {
+  margin-bottom: 20px;
+}
+
+.parcel-settings, .shipment-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parcel-buttons button + button {
+  margin-left: 10px;
+}
+
+.parcel-settings .box {
+  width: 50%;
+}
+
+.shipment-info table td,
+.capost-parcel-options td {
+  padding: 10px 0;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+.shipment-info table td ul,
+.capost-parcel-options td ul {
+  margin-bottom: 0;
+}
+
+.shipment-info table th,
+.capost-parcel-options th {
+  background-color: #e5ebef;
+  padding: 10px;
+  font-size: 16px;
+  color: #154e9c;
+  font-weight: 400;
+}
+
+.shipment-info table .table-value .input,
+.capost-parcel-options .table-value .input {
+  vertical-align: middle;
+}
+
+.shipment-info table .form-field-comment,
+.capost-parcel-options .form-field-comment {
+  position: absolute;
+}
+
+.capost-shipments .table-value {
+  line-height: normal;
+}
+
+.inline-options {
+  margin: -10px;
+}
+
+.inline-options label {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.inline-options .table-value {
+  display: inline;
+  cursor: pointer;
+}
+
+.parcel-dimensions .table-value {
+  display: inline-block;
+}
+
+.parcel-dimensions .table-value + .table-value {
+  padding-left: 10px;
+}
+
+.parcel-dimensions input[type=text] {
+  width: 70px !important;
+}
+
+.shipment-info .shipment-info-part {
+  float: left;
+  margin-right: 20px;
+}
+
+.parcel-warnings ul li {
+  font-style: italic;
+}
+
+.inline-options .table-value .input-internal-wrapper {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  min-height: inherit;
+}

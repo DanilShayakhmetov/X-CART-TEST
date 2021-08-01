@@ -1,0 +1,7 @@
+Version 5.4.3.5
+
+- An error might occur when deleting the module in some cases. Fixed.
+- Fatal error could occur in some cases when previewing mail notifications. Fixed.
+- Email notifications could be deleted in some cases when the module was turned off and then turned on. Fixed.
+- Improved Apple Pay Management
+- Corrected AVS and CVV results in transaction details

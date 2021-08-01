@@ -1,0 +1,25 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Sale discounts list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list-table.sale_discounts table.list tbody.lines tr.line {
+  td.name {
+    div.cell {
+      flex-direction: row;
+
+      .plain-value {
+        min-width: 250px;
+        margin-right: 10px;
+      }
+
+      .expired-mark {
+        color: @color-error;
+      }
+    }
+  }
+}

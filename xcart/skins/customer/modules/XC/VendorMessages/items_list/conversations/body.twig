@@ -1,0 +1,13 @@
+{##
+ # Messages list
+ #}
+
+{% if this.hasResults() %}
+  <table class="messages">
+      <tbody>
+          {% for conversation in this.getPageData() %}
+            {% include 'modules/XC/VendorMessages/items_list/conversations/line.twig' %}
+          {% endfor %}
+      </tbody>
+  </table>
+{% endif %}

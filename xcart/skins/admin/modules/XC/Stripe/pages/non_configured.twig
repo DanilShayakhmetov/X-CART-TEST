@@ -1,0 +1,12 @@
+<div class="stripe non-configured">
+  <img src="https://stripe.com/img/about/logos/logos/black.png" alt="Stripe" class="logo" />
+
+  {% if not this.isConnected() %}
+  <div>
+    <p>{{ t('Click Connect with Stripe to be redirected to Stripe.com') }}</p>
+    <p>{{ t('Fill out the form with your Company info to setup your account and start processing payments immedately')|raw }}</p>
+  </div>
+  {% endif %}
+</div>
+
+{{ widget('\\XLite\\Module\\XC\\Stripe\\View\\StickyPanel\\Payment\\NonConfigured') }}

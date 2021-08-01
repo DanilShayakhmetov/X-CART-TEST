@@ -1,0 +1,8 @@
+Version 5.4.0.6
+
+Fixes (4)
+2019-12-20 - [Bug] Error when setting up shipping with Canada post for an order with a removed product. #BUG-7306 (Pavel Veselovsky) #CanadaPost
+2019-12-16 - [Bug] Layout issues related to the order shipping settings on the capost_shipments page. #BUG-7301 (Pavel Veselovsky) #CanadaPost
+2019-12-16 - [Bug] Canada Post shipping settings were accessible to vendors. Fixed. #BUG-7300 (Pavel Veselovsky) #CanadaPost #MultiVendor
+2019-12-09 - [Bug] After editing the dimensions of a Canada Post shipment in AOM, they were converted from centimetres to inches, which was not supposed to happen. Fixed. #BUG-8137 (Jamil Ainulov) #CanadaPost
+

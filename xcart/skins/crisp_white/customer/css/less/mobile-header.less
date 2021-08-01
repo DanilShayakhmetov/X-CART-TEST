@@ -1,0 +1,145 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.mobile_header {
+  .nav {
+    min-width: 320px;
+    margin: 0;
+    display: flex;
+
+    .mobile_header-right_menu {
+      margin-left: auto;
+      .header-right-bar {
+        position: relative;
+        right: 0;
+        z-index: 71;
+
+        .block {
+          border: none;
+
+          .content {
+            border: none;
+          }
+        }
+
+        & > * {
+          display: none;
+          margin-left: 0;
+          text-align: center;
+          min-width: 48px;
+
+          & > a {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .header_search {
+          display: inline-block;
+        }
+
+        .header_settings {
+          display: inline-block;
+        }
+
+        .lc-minicart {
+          display: inline-block;
+        }
+      }
+    }
+
+    .mobile_header-slidebar {
+      a {
+        padding: 20px 10px;
+        min-width: 48px;
+        text-align: center;
+        color: @color-contrast;
+
+        &:hover {
+          color: @color-hover;
+        }
+      }
+    }
+
+    .mobile_header-logo {
+      #logo, .company-logo {
+        width: auto;
+        height: (@rhythmic-unit * 3);
+        img {
+          max-width: 100%;
+          max-height: (@rhythmic-unit * 2);
+        }
+      }
+    }
+
+    @media(max-width: @screen-md-max) {
+      .mobile_header-logo .company-logo img {
+        padding-left: 10px;
+      }
+    }
+
+    @media(max-width: @screen-xs-max) {
+      .buttons-row > * {
+        width: 160px;
+      }
+    }
+
+    @media(max-height: @screen-xs-min) {
+      .lc-minicart .items-list {
+        overflow: scroll;
+        max-height: 280px;
+      }
+    }
+
+    @media(max-height: 320px) {
+      .lc-minicart .items-list {
+        overflow: scroll;
+        max-height: 260px;
+      }
+    }
+
+    @media(max-width: @screen-xs-min) {
+      // .header_settings {
+      //   display: none !important;
+      // }
+
+      .dropdown-menu, .lc-minicart .items-list {
+        top: (@rhythmic-unit * 3 - 1);
+        position: fixed;
+        right: 0;
+      }
+
+      .lc-minicart .items-list {
+        width: 100%;
+
+        .item-image {
+          margin-right: 20px;
+        }
+
+        .item-name {
+          padding-left: 0px;
+        }
+
+        .buttons-row > * {
+          width: 100%;
+        }
+      }
+    }
+
+    @media(max-width: 374px) {
+      .lc-minicart .items-list {
+        .item-image {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+}

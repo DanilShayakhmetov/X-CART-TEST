@@ -1,0 +1,39 @@
+@cs-link-color: #3c476e;
+@cs-link-hover-color: #0ba2e8;
+
+body .instant-search-menu,
+body .instant-search-menu.left {
+  width: 450px;
+
+  .header, .suggestions .suggestion {
+    margin-bottom: 1em;
+    font-size: 13px;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  dl {
+    padding: 10px 20px;
+
+    dd {
+      display: none !important;
+    }
+
+    dt {
+      padding: 6px 0;
+      min-height: 62px;
+
+      &.active a {
+        color: @cs-link-color;
+      }
+
+      a {
+        &:hover {
+          color: @cs-link-hover-color;
+        }
+      }
+    }
+  }
+}

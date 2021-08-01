@@ -1,0 +1,10 @@
+Version 5.4.0.2
+
+Improvements (2)
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+2018-07-13 - [Change] Changed the default value of the useCaretButton parameter in the ADropdown widget. #BUG-6235 https://bt.x-cart.com/view.php?id=49325 (Sergey Elmanov) #Core #FileAttachments #Sale #RelatedProducts #ProductReviews #VendorMessages #BulkEditing #Facebook Commerce #GoogleFeed
+
+Fixes (2)
+2019-02-18 - [Bug] "Put for sale" feature: The appearance of radio elements for the discount types "Sale price" and "Percent off" was different. Fixed. #BUG-7094 (Fedya Lavrentyev) #Sale
+2019-02-15 - [Bug] The sorting widget was displayed in the Sale block (was not supposed to be there). Fixed. #BUG-7082 (Kirill Stadler) #Sale
+

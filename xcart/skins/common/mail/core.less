@@ -1,0 +1,189 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Mail core styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+p {
+  margin: 1em 0;
+}
+
+body {
+  background-color: #f8f9fb;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+
+  font-family: OpenSans, 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #494f51;
+  line-height: 1.43;
+
+  #body_wrapper {
+    padding: 40px 50px 0;
+
+    #mail-body {
+      margin: 0;
+      max-width: 100%;
+
+      #content {
+        background-color: #ffffff;
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 40px 60px;
+
+        .header {
+          display: block;
+          margin-bottom: 40px;
+        }
+
+        .main-content {
+        }
+
+        .signature {
+          margin-top: 40px;
+
+          > hr {
+            margin-bottom: 20px;
+          }
+        }
+
+        .tip {
+          margin-top: 30px;
+
+          &-title {
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 20px;
+          }
+
+          &-content {
+            text-align: center;
+            padding: 0 20%;
+          }
+        }
+      }
+
+      #company_address {
+        margin: 20px auto;
+        max-width: 1060px;
+
+        .first-line, .second-line {
+          text-align: center;
+          margin: 0 20px;
+
+          font-size: 12px;
+          line-height: 1.67;
+          color: #78787d;
+        }
+
+        .first-line {}
+        .second-line {}
+      }
+    }
+  }
+
+  img, a img {
+    border: 0;
+    height: auto;
+    outline: none;
+    text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  h2 {
+    margin: 10px 0 !important;
+  }
+
+  .signature hr {
+    width: 40px;
+    color: #e1e0e7;
+    background-color: #e1e0e7;
+    border: none;
+    height: 1px;
+  }
+
+  /* CLIENT-SPECIFIC STYLES */
+  img {
+    -ms-interpolation-mode: bicubic;
+  }
+
+  /* Force IE to smoothly render resized images. */
+  #outlook a {
+    padding: 0;
+  }
+
+  /* Force Outlook.com to display emails at full width. */
+  p, a, li, td, blockquote {
+    mso-line-height-rule: exactly;
+  }
+
+  /* Force Outlook to render line heights as they're originally set. */
+  a[href^="tel"], a[href^="sms"] {
+    color: inherit;
+    cursor: default;
+    text-decoration: none;
+  }
+
+  /* Force mobile devices to inherit declared link styles. */
+  p, a, li, td, body, table, blockquote {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  ul, ol {
+    li {
+      font-size: 14px;
+      color: #494f51;
+      line-height: 1.43;
+    }
+  }
+
+  ul {
+    list-style: disc inside;
+  }
+
+  ol {
+    list-style: decimal inside;
+  }
+
+  blockquote {
+    border-left: 2px solid #31a7f1 !important;
+    padding: 20px;
+    background-color: #f8f9fb;
+
+    > p {
+      &:first-of-type {
+        margin-top: 0 !important;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  a {
+    color: #289ce5;
+  }
+
+  a.btn.regular-button {
+    background-color: #31a7f1;
+    color: #ffffff;
+    padding: 10px 25px;
+    height: auto;
+    border: none;
+    border-radius: 4px;
+  }
+}

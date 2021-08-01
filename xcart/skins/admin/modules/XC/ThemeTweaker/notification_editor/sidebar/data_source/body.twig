@@ -1,0 +1,14 @@
+{##
+ # Theme tweaker template page template
+ #}
+
+<div class="themeTweaker-control-panel" data-editor-control-panel>
+  <div>{{ t('Edit template based on') }}</div>
+  <div class="themeTweaker-sidebar-data">
+    {% form 'XLite\\Module\\XC\\ThemeTweaker\\View\\Form\\NotificationEditorSidebarData' %}
+      {% for widget in this.getDataWidgets() %}
+        {{ this.displayDataWidget(widget) }}
+      {% endfor %}
+    {% endform %}
+  </div>
+</div>

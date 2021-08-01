@@ -1,0 +1,75 @@
+{##
+ # Common table-based model list
+ #}
+
+{% spaceless %}
+  <div class="table-wrapper {% if not this.hasResults() %}empty{% endif %}">
+    <table class="{{ this.getTableTagClassString() }}" cellspacing="0">
+
+      {% if this.isTableHeaderVisible() %}
+        <thead>
+        <tr>
+          {% for column in this.getColumns() %}
+            {% if not this.isNoColumnHead(column) %}
+              <th {% if this.getColumnHeadColspan(column) > 1 %}colspan="{{ this.getColumnHeadColspan(column) }}"{% endif %} class="{{ this.getHeadClass(column) }}">
+                {% include 'items_list/model/table/parts/head.cell.twig' %}
+              </th>
+            {% endif %}
+          {% endfor %}
+        </tr>
+        </thead>
+      {% endif %}
+
+      {% if this.isHeadSearchVisible() %}
+        <tbody class="head-search">
+        {% include 'items_list/model/table/parts/head_search.twig' %}
+        </tbody>
+      {% endif %}
+
+      {% if this.isTopInlineCreation() %}
+        <tbody class="create top-create">
+        {% include 'items_list/model/table/parts/create_box.twig' %}
+        </tbody>
+      {% endif %}
+
+      <tbody class="lines">
+      {% for idx, entity in this.getPageData() %}
+        <tr {{ this.printTagAttributes(this.getLineAttributes(idx, entity))|raw }}>
+          {% for column in this.getColumns() %}
+            <td class="{{ this.getColumnClass(column, entity) }}">
+              <div class="cell">
+                {% if this.isTemplateColumnVisible(column, entity) %}
+                  {{ widget(template=column.template, idx=idx, entity=entity, column=column, editOnly=column.editOnly, viewOnly=this.isStatic()) }}
+                {% endif %}
+                {% if this.isClassColumnVisible(column, entity) %}
+                  {{ widget(column.class, idx=idx, entity=entity, column=column, itemsList=this.getSelf(), fieldName=column.code, fieldParams=this.preprocessFieldParams(column, entity), editOnly=column.editOnly, viewOnly=this.isStatic()) }}
+                {% endif %}
+                {% if this.isEditLinkEnabled(column, entity) %}
+                  <div class="entity-edit-link" {{ this.getEditLinkAttributes(entity, column) }}>
+                    <a href="{{ this.buildEntityURL(entity, column) }}">
+                      {% if this.getEditLinkLabel(entity) %}
+                        {{ this.getEditLinkLabel(entity) }}
+                      {% else %}
+                        <i class="fa fa-edit icon"></i>
+                      {% endif %}
+                    </a>
+                  </div>
+                {% endif %}
+                {{ widget_list(this.getCellListNamePart('cell', column), type='inherited', column=column, entity=entity) }}
+              </div>
+            </td>
+          {% endfor %}
+        </tr>
+        {{ widget_list('row', type='inherited', idx=idx, entity=entity) }}
+      {% endfor %}
+      </tbody>
+
+      {% if this.isBottomInlineCreation() %}
+        <tbody class="create bottom-create">
+        {% include 'items_list/model/table/parts/create_box.twig' %}
+        </tbody>
+      {% endif %}
+
+    </table>
+  </div>
+{% endspaceless %}

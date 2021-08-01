@@ -1,0 +1,55 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.mailchimp-options-header {
+  padding: 10px 0;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.mailchimp-welcome.root {
+  border: 1px solid #cfdfea;
+  background-color: #f9fcff;
+  background: none;
+  overflow: hidden;
+  font-family: Arial,Helvetica,Garuda,sans-serif;
+  position: relative;
+  max-width: 1180px;
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.mailchimp-welcome .mailchimp-logo {
+  width: 270px;
+}
+
+.mailchimp-welcome img {
+  max-width: 100%;
+}
+
+.mailchimp-welcome .mailchimp-additional-header {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 11px 0;
+}
+
+.mailchimp-welcome .mailchimp-options-header {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 16px;
+}
+
+.mailchimp-welcome .mailchimp-options-header ~ .mailchimp-options-header {
+  padding-top: 8px;
+}

@@ -1,0 +1,18 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.1.1
+type: common
+authorName: 'X-Cart team'
+moduleName: 'Custom product tabs'
+description: 'Add additional tabs on the product page. Custom name, custom content - html text or product videos, whatever describes your product best.'
+minorRequiredCoreVersion: 1
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: false
+canDisable: true

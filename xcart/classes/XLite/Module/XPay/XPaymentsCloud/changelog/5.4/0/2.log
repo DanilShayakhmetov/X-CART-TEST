@@ -1,0 +1,7 @@
+Version 5.4.0.2
+
+Changes:
+- Added Card setup feature to customer profile page
+- Added special mark for "X-Payments Cloud"-based methods in list of available payment methods
+- Message in case of errors during payment will now contain actual error from gateway
+- Module code and file structure refactored

@@ -1,0 +1,19 @@
+{##
+ # ____file_title____
+ #}
+
+{% for section, data in this.getFormFieldsForDisplay() %}
+  <div class="section {{ section }}-section">
+    {% if this.isShowSectionHeader(section) %}
+      <div class="header {{ section }}-header">{{ data.sectionParamWidget.display() }}</div>
+    {% endif %}
+    <ul class="table {{ section }}-table">
+      {% for field in data.sectionParamFields %}
+        <li class="{{ field.getWrapperClass() }} {{ this.getItemClass(loop.index, loop.length, field) }}">
+          {{ this.displayCommentedData(this.getFieldCommentedData(field)) }}
+          {{ field.display() }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

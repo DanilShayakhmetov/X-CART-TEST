@@ -1,0 +1,9 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-08-15 - [Change] Improvements and bug fixes for the New/Backorder fulfilment status feature. #XCN-10104 (Shevelov Alexander) #Core #ThemeTweaker #PINCodes #ProductVariants
+
+Fixes (2)
+2019-09-04 - [Bug] The Drag-n-drop blocks switcher in the layout editor did not work correctly sometimes. Fixed. #BUG-7876 (Shevelov Alexander) #Core #ThemeTweaker
+2019-07-31 - [Bug] If body.twig was modified via theme tweaker, the minicart icon disappeared in Standard skin. Fixed. #BUG-6175 (Fedya Lavrentyev) #ThemeTweaker
+

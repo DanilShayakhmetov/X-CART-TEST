@@ -1,0 +1,499 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import 'onoffswitch';
+@import 'multiselect';
+
+.form-control {
+  /* to sync with inline fields */
+  padding-bottom: (@padding-base-vertical + 1);
+  .transition-multi(@input-transition-property);
+  box-shadow: none;
+
+  &.focused:not(.invalid):not(.has-error) {
+    .form-control-fake-focus();
+  }
+
+  &.focused.invalid {
+    .has-error;
+  }
+
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    opacity: .5;
+
+    & + .input-group-addon {
+      opacity: .5;
+    }
+  }
+
+  textarea& {
+    height: auto;
+  }
+
+  select&::-ms-expand {
+    display: none;
+  }
+
+  select&:not([multiple]) {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../images/arrow_down.svg), @input-bg;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 7px 7px;
+    padding-right: 24px;
+  }
+
+  select&[multiple="multiple"] {
+    height: 140px;
+  }
+
+  option {
+    cursor: pointer;
+    padding-left: 0;
+  }
+
+  input&[type="radio"], input&[type="checkbox"] {
+    height: @radio-checkbox-height;
+    width: @radio-checkbox-height;
+  }
+}
+
+.field-errors {
+  font-size: @font-size-small;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: @form-checkbox-margin;
+  height: @radio-checkbox-height;
+  width: @radio-checkbox-height;
+  line-height: @rhythmic-lineheight;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  border: 1px solid @color-border;
+  background: @input-bg;
+}
+
+// Fancy radios
+input[type="radio"],
+input[type="radio"]:focus {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background: url(../../images/point_white.svg) center no-repeat, @radio-color;
+  background-size: 30%;
+  border: none;
+}
+
+// Fancy checkboxes
+input[type="checkbox"] {
+  border-radius: @border-radius-base;
+}
+
+input[type="checkbox"]:checked {
+  background: url(../../images/ok_mark_white.svg) center no-repeat, @checkbox-color;
+  background-size: 58%;
+  border-color: @checkbox-color;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+select.form-control.multiple-selector {
+  height: auto;
+}
+
+input[type=checkbox].readonly,
+input[type=checkbox].readonly:hover {
+  opacity: 0.5;
+  background: transparent url(../../images/checkbox-readonly.gif) left top no-repeat;
+}
+
+hr {
+  color: #ddd;
+  height: 1px;
+}
+
+label {
+  font-weight: @font-regular;
+  margin-bottom: 0;
+  position: relative;
+
+  &.required {
+    .required-label();
+  }
+
+  .input-wrapper & {
+    font-weight: @font-regular;
+  }
+}
+
+.help-block {
+  margin-top: (@rhythmic-unit / 2);
+  margin-bottom: (@rhythmic-unit / 2);
+  font-size: @font-size-small;
+  color: @color-tip;
+
+  &.not-padded {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+.form-field-comment {
+  font-size: @font-size-small;
+  clear: both;
+  max-width: 500px;
+  color: @color-tip;
+  vertical-align: middle;
+}
+
+.redirect-to-cart-comment {
+  padding-top: (@rhythmic-unit / 2);
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: none;
+  margin: @form-checkbox-margin;
+}
+
+.checkbox,
+.radio {
+  margin: 12px 0;
+
+  label {
+    .flex-display(inline-flex);
+    .align-items(center);
+    padding-left: 0;
+    white-space: nowrap;
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      & + span {
+        display: inline-block;
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.multiple-selector,
+.single-selector {
+  label {
+    .flex-display();
+    .align-items(center);
+  }
+}
+
+.input-group {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group {
+  margin-right: -2px;
+}
+
+.input-group-btn > .btn {
+  background: @input-group-addon-bg;
+  color: @input-color;
+
+  & > .caret {
+    border: none;
+    background: url(../../images/arrow_down.svg);
+    background-repeat: no-repeat;
+    background-position: right 25%;
+    background-size: 7px 7px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Validation subsystem styles */
+input.validation-error,
+textarea.validation-error,
+select.validation-error,
+input.validation-error:focus,
+textarea.validation-error:focus,
+select.validation-error:focus {
+  border-color: @color-error;
+}
+
+.input-field-wrapper .inline-error {
+  padding-left: 10px;
+}
+
+.inline-error {
+  line-height: normal;
+  font-size: @font-size-very-small;
+  color: @color-error;
+  width: 100%;
+  padding-top: 1px;
+}
+
+.address-dialog .message.inline-message,
+.inline-message {
+  line-height: normal;
+  font-size: 12px;
+  color: #019026;
+  font-style: italic;
+  width: 100%;
+  padding-top: 1px;
+}
+
+div.buttons {
+  margin-top: (@rhythmic-unit / 2);
+}
+
+/* Plain table */
+
+table.plain-table {
+  background-color: #000;
+}
+
+table.plain-table th {
+  background-color: #e5ebef;
+}
+
+table.plain-table td {
+  background-color: #fff;
+}
+
+.right-panel {
+  text-align: right;
+  padding: 5px 0 10px 0;
+}
+
+input.orderby {
+  width: 4em;
+  text-align: right;
+}
+
+input.price,
+input.inventory {
+  width: 50px;
+  text-align: right;
+}
+
+/* List-based form */
+/* TODO: check if these styles are still needed */
+
+ul.form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 5px 0;
+    list-style: none;
+  }
+
+  label {
+    display: block;
+    font-style: normal;
+    margin-right: @rhythmic-unit;
+  }
+
+  li.required label:after {
+    content: "*";
+    position: absolute;
+    margin-left: 5px;
+    color: @color-error;
+  }
+
+  .note {
+    display: block;
+    font-size: @font-size-small;
+  }
+}
+
+/**
+ * Table-based form
+ */
+table.form {
+  td.star {
+    text-indent: -9999px;
+
+    &:after {
+      content: "*";
+      position: absolute;
+      margin-left: 5px;
+      color: @color-error;
+    }
+  }
+}
+
+/* Fade */
+.right-fade {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Profile form */
+form.profile-form {
+  margin-top: @rhythmic-unit;
+}
+
+.model-form-buttons .button {
+  display: inline-block;
+}
+
+button.model-button.link {
+  padding: 0;
+}
+
+button.model-button.link span {
+  font-size: @font-size-base;
+}
+
+a.action span {
+  font-size: @font-size-base;
+  color: @color-link;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: underline;
+}
+
+/* Inline formfields */
+
+.edit-open-mark {
+  .edit-on-click-field {
+    .view {
+      display: none;
+    }
+
+    &.has-view {
+      .field {
+        display: block;
+      }
+    }
+  }
+}
+
+.edit-mark {
+  .edit-on-click-field.editable {
+    .view {
+      cursor: pointer;
+      background-color: @brand-warning;
+      overflow: hidden;
+    }
+
+    .right-fade {
+      display: none;
+    }
+  }
+}
+
+.edit-on-click-field {
+  &.editable.has-view {
+    .field {
+      display: none;
+    }
+  }
+
+  &.editable.edit-open-mark {
+    .view {
+      display: none;
+    }
+
+    .field {
+      display: block;
+    }
+  }
+
+  &.editable:hover {
+    .view {
+      cursor: pointer;
+      background-color: @brand-warning;
+      overflow: hidden;
+    }
+
+    .right-fade {
+      display: none;
+    }
+  }
+
+  .view {
+    .flex-display(inline-flex);
+    .justify-content(flex-start);
+    .align-items(center);
+    height: @input-height-base;
+    padding: (@padding-base-vertical + @border-base) (@padding-base-horizontal + @border-base);
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    border-color: @input-bg;
+    border-radius: @border-radius-base;
+    box-shadow: none;
+    width: @form-value-input-width;
+
+    .transition-multi(@input-transition-property);
+  }
+
+  .field .wheel-mark {
+    margin-right: 0;
+    vertical-align: middle;
+  }
+}
+
+.remove-mark .edit-on-click-field.editable .view {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+
+  & + label.input-button {
+    .regular-button;
+
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    color: @color-link;
+    display: inline-block;
+    border-radius: 4px;
+
+    & + span.input-filename {
+      line-height: @line-height-base;
+      padding: (@rhythmic-unit / 3) (@rhythmic-unit / 2);
+      display: inline-block;
+
+      & + .help-wrapper span {
+        line-height: @line-height-base;
+        padding: (@rhythmic-unit / 3) 0;
+        width: auto;
+      }
+    }
+  }
+}

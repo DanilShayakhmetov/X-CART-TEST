@@ -1,0 +1,21 @@
+{##
+ # Left side menu node
+ #}
+
+<li {{ this.printTagAttributes(this.getContainerTagAttributes())|raw }}>
+  {% include this.getLinkTemplate() %}
+
+  {% if this.hasChildren() %}
+    <div class="box">
+      <ul>
+        <li class="menu-item title">
+          {% include this.getLinkTemplate() %}
+        </li>
+        {% for child in this.getChildren() %}
+          {{ child.display() }}
+        {% endfor %}
+        {{ widget_list(this.getListName()) }}
+      </ul>
+    </div>
+  {% endif %}
+</li>

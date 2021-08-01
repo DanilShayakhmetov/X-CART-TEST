@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: shippingRefundsSeparator
+    category: CDev\FedEx
+    type: separator
+    orderby: 450
+    translations:
+    - code: en
+      option_name: Shipping refunds settings
+  - name: lbs71Info
+    category: CDev\FedEx
+    type: XLite\View\FormField\Label
+    value: 'As a FedEx user, you are entitled to receive shipping refunds usually left unclaimed with default FedEx service ($2B/year globally)'
+    orderby: 460
+    widgetParameters: {fieldOnly: true}

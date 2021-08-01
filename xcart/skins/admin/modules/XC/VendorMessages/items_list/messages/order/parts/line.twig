@@ -1,0 +1,9 @@
+{##
+ # Messages list : line
+ #}
+
+<li {{ this.printTagAttributes(this.getLineTagAttributes(message))|raw }}>
+    <div class="author">{{ message.getAuthorName() }}{% if this.isEmailVisible(message) %} <a href="mailto:{{ this.getEmail(message) }}" class="email">{{ this.getEmail(message) }}</a>{% endif %}</div>
+    <div class="body">{{ message.publicBody|raw }}</div>
+    <div class="date">{{ this.formatTime(message.date) }}</div>
+</li>

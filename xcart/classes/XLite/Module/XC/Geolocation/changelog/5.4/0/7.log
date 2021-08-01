@@ -1,0 +1,5 @@
+Version 5.4.0.7
+
+Fixes (1)
+2020-08-12 - [Bug] Errors in logs when running restoredb on php 7.4. Fixed. #BUG-8927 #Geolocation
+

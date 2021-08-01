@@ -1,0 +1,26 @@
+{##
+ # X-Payments cards on the invoice
+ #
+ # @ListChild (list="invoice.bottom.address.billing", weight="30")
+ #}
+{% if this.order.getXpaymentsCards() %}
+    <div class="xpayments-card-box">
+
+      <strong>{{ t('Used credit or debit cards') }}</strong>
+      {% for card in this.order.getXpaymentsCards() %}
+        <div class="xpayments-card">
+          <span class="card-icon-container">
+            <span class="xpayments-card-type {{ card.cssType }}">
+              <img src="skins/customer/images/spacer.gif" alt="{{ card.cardType }}" />
+            </span>
+          </span>
+          {{ card.cardNumber }}
+          {% if card.expire %}
+            <span>({{ card.expire }})</span>
+          {% endif %}
+        </div>
+        <br />
+      {% endfor %}
+
+  </div>
+{% endif %}

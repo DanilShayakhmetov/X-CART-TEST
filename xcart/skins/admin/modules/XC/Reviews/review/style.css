@@ -1,0 +1,23 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Review model styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.review .model-input-selector:focus {
+    box-shadow: 0 0 0 .3rem rgba(204,229,255,0.5) !important;
+    border-color: #cce5ff !important;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.review .table {
+    margin-bottom: 0;
+}
+
+.review .model-properties fieldset > div {
+    margin-bottom: 0;
+}

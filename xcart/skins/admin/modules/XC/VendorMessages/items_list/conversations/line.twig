@@ -1,0 +1,39 @@
+{##
+ # Messages list : line
+ #}
+
+<tr {{ this.printTagAttributes(this.getLineTagAttributes(conversation))|raw }}>
+  <td class="select">
+    <div class="action">
+      <div class="selector">
+        <input type="checkbox" name="select[{{ conversation.getId() }}]" value="1" class="selector" autocomplete="off">
+      </div>
+    </div>
+  </td>
+  <td class="conversation-link">
+    <a href="{{ this.getOrderLink(conversation) }}" title="{{ this.getOrderNumber(conversation) }}">
+      {{ this.getOrderNumber(conversation) }}
+    </a>
+  </td>
+  <td class="text">
+    <div>
+      {% if this.getLabel(conversation) %}
+        <div class="conversation-label">{{ this.getLabel(conversation) }}</div>
+      {% endif %}
+      <a href="{{ this.getConversationLink(conversation) }}" class="text-link">
+        <span class="body">{{ this.prepareBody(conversation) }}</span>
+      </a>
+      {% if this.isMarksVisible(conversation) %}
+        <a class="marks" href="{{ this.getConversationLink(conversation) }}">
+          {% if this.isOpenedDispute(conversation) %}
+            <div class="dispute">{{ t('Dispute') }}</div>
+          {% endif %}
+        </a>
+      {% endif %}
+    </div>
+  </td>
+  <td class="date">
+    <span class="date">{{ this.formatDate(this.prepareTime(conversation)) }}</span>
+    <span class="time">{{ this.formatDayTime(this.prepareTime(conversation)) }}</span>
+  </td>
+</tr>

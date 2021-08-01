@@ -1,0 +1,57 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Cache management actions
+ *
+ * Copyright (c) 2001-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import "../css/initialize";
+
+.db-restore-page {
+
+  .db-restore-form form {
+    .table-wrapper();
+
+    table {
+      width: 100%;
+    }
+  }
+
+  .column-name {
+    .action-description {
+      .help-text();
+    }
+  }
+
+  .column-action {
+    text-align: right;
+
+    .standalone-switch {
+      text-align: center;
+
+      .table-label,
+      .star {
+        display: none;
+      }
+
+      .table-value {
+        display: block;
+      }
+    }
+  }
+}
+
+.db-backup-form .sticky-panel .sql-file-help {
+  margin: 0;
+  .flex-display();
+
+  .tooltip-main {
+    width: auto;
+
+    .icon-tooltip {
+      .flex-display();
+    }
+  }
+}

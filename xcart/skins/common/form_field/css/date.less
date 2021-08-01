@@ -1,0 +1,118 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Date field styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@dropdown-shadow: 0 2px 10px 0 rgba(74, 73, 74, 0.2);
+@rhythmic-unit: 24px;
+@font-regular: 400;
+@font-size-base: 14px;
+@line-height-base: 24px;
+@color-border: #ccc;
+@text-color: #4a4a4a;
+@color-link: #0f8dd0;
+
+.input.input-text-date .input-group,
+.input.date .input-group {
+  max-width: 160px;
+}
+
+.ui-datepicker {
+  z-index: 100 !important;
+  box-shadow: @dropdown-shadow;
+  padding: @rhythmic-unit;
+  width: auto;
+
+  .ui-datepicker-header {
+    font-weight: @font-regular;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    padding: 0 0 @rhythmic-unit 0;
+    border: none;
+    background: transparent;
+    cursor: default;
+
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      background: none;
+      border: none;
+      cursor: pointer;
+      top: 0;
+
+      .ui-icon {
+        width: 16px;
+        height: 21px;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        background: url("../../images/icons/arrow-back-disabled.svg") no-repeat;
+        background-size: 100%;
+      }
+
+      &:hover {
+        .ui-icon {
+          background: url("../../images/icons/arrow-back.svg") no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+
+    .ui-datepicker-prev {
+      left: 0;
+      .ui-icon {
+        transform: translate(-50%, -50%) rotate(-90deg);
+      }
+    }
+
+    .ui-datepicker-next {
+      right: 0;
+      .ui-icon {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+  }
+
+  .ui-datepicker-calendar {
+    th {
+      font-weight: @font-regular;
+      padding: 0;
+    }
+
+    td {
+      margin: 0;
+      padding: 0;
+      border: 1px solid @color-border;
+      width: 40px;
+      height: 40px;
+
+      &.ui-datepicker-other-month {
+        border: none;
+      }
+
+      a.ui-state-default {
+        background: transparent;
+        text-align: center;
+        border: none;
+        color: @text-color;
+        border-radius: 0;
+        line-height: 22px;
+        padding: 8.5px 11.5px;
+
+        &:not(.ui-state-active).ui-state-hover:hover {
+          text-decoration: none;
+          color: @color-link;
+          background: fade(@color-link, 10%);
+        }
+
+        &.ui-state-active {
+          background: @text-color;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

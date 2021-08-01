@@ -1,0 +1,4 @@
+Version 5.4.1.1
+
+- Capital letters were missing from the first and last name fields. Fixed.
+- Now the latest version of web SDK is used.

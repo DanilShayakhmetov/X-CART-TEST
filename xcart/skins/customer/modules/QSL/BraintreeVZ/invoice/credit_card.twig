@@ -1,0 +1,14 @@
+{##
+ # Credit cards on the invoice
+ #
+ #
+ # @ListChild (list="invoice.bottom.address.billing", weight="30")
+ #}
+
+{% if this.getBraintreeTransaction() %}
+  <div class="braintree-credit-card">
+    <strong class="method-title">{{ t('Credit card') }}</strong>
+    <img src="{{ this.getBraintreeCardLogo() }}" alt="{{ this.getBraintreeCardType() }}" />
+    <span>{{ this.getBraintreeCardNumber() }}</span>
+  </div>
+{% endif %}

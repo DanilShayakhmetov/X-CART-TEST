@@ -1,0 +1,13 @@
+{##
+ # Address book link
+ #
+ # @ListChild (list="slidebar.navbar.account", weight="20")
+ #}
+
+{% if this.isLogged() %}
+	<li>
+		<a class="icon-book" href="{{ url('address_book', '') }}">
+			<span>{{ t('Address book') }}</span>
+		</a>
+	</li>
+{% endif %}

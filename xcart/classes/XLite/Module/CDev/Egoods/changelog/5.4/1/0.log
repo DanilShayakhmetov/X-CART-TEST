@@ -1,0 +1,5 @@
+Version 5.4.1.0
+
+Improvements (1)
+2020-03-17 - [Change] Added a new setting - "S3 bucket region" - for Amazon S3 signed urls. #BUG-8199 https://bt.x-cart.com/view.php?id=51316 #Egoods
+

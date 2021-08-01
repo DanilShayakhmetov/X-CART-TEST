@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-06-11 - [Bug] Notifications were sent incorrectly for the "Request customers to review the purchased products after successful orders" setting. Fixed. #BUG-7512 https://bt.x-cart.com/view.php?id=50760 (Shevelov Alexander) #ProductReviews
+

@@ -1,0 +1,5 @@
+Version 5.4.1.3
+
+Fixes (1)
+2020-07-22 - [Bug] Removed line break at the end of some text labels. #BUG-8709 #AuthorizeNet #ThemeTweaker
+

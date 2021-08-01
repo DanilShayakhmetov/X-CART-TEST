@@ -1,0 +1,24 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * images styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+.custom-images {
+  width: 100%;
+}
+
+.custom-images .items-list {
+  margin-top: 24px;
+}
+
+.custom-images .items-list td.image {
+  text-align: center;
+}
+
+.custom-images .items-list td.image img {
+  max-height: 50px;
+  max-width: 50px;
+}

@@ -1,0 +1,12 @@
+{##
+ # Regular button
+ #}
+
+<button {{ this.printTagAttributes(this.getAttributes())|raw }}>
+  {{ this.displayCommentedData(this.getCommentedData()) }}
+  {% set iconStyle = this.getParam('icon-style') %}
+  {% if iconStyle %}<span><i class="button-icon {{ iconStyle }}"></i></span>{% endif %}
+
+  {% set buttonLabel = t(this.getButtonLabel()) %}
+  {% if buttonLabel %}<span>{{ buttonLabel|raw }}</span>{% endif %}
+</button>

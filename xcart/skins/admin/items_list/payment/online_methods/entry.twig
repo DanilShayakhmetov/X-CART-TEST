@@ -1,0 +1,45 @@
+{##
+ # Payment methods list widget for popup
+ #}
+
+<ul>
+  <li class="payment-logo">
+    {% if this.getAdminIconURL() %}
+      <img src="{{ this.getAdminIconURL() }}" alt="{{ this.getPayment().getTitle() }}"/>
+    {% elseif this.getPayment().getIconURL() %}
+      <img src="{{ this.getPayment().getIconURL() }}" alt="{{ this.getPayment().getTitle() }}"/>
+    {% endif %}
+  </li>
+
+  <li class="title">
+    <span class="payment-name">{{ this.getPayment().getName() }}</span>
+    {% if this.getPayment().getAdminDescription() %}
+      <span class="description">{{ this.getPayment().getAdminDescription() }}</span>
+    {% endif %}
+  </li>
+
+  <li class="actions">
+    <div class="separator"></div>
+    <div {% if this.getPayment().getAdded() %}class="switcher enabled"
+         title="{{ t('Payment method has been added') }}" {% else %}class="switcher disabled"
+         title="{{ t('Payment method was not added') }}"{% endif %}>
+      <i class="fa fa-check-circle"></i>
+    </div>
+    <div class="separator"></div>
+
+    <div class="button">
+      {% if this.getPayment().isModuleEnabled() and not this.getPayment().getAdded() %}
+        {{ widget('XLite\\View\\Button\\Link', label=t('Add'), location=url('payment_settings', 'add', {'id': this.getPayment().getMethodId()})) }}
+      {% endif %}
+      {% if this.getPayment().isModuleEnabled() and this.getPayment().getAdded() %}
+        {{ widget('XLite\\View\\Button\\Link', label=t('Settings'), location=url('payment_settings', 'add', {'id': this.getPayment().getMethodId()})) }}
+      {% endif %}
+      {% if this.isDisplayInstallModuleLink(this.getPayment()) %}
+        {{ widget('XLite\\View\\Button\\Link', label=t('Install'), location=this.getPaymentModuleURL(this.getPayment()), style='regular-main-button install-link') }}
+      {% endif %}
+      {% if this.isDisplayInstallModuleButton(this.getPayment()) %}
+        {{ widget('XLite\\View\\Button\\Addon\\Install', moduleId=this.getPayment().getModuleId(), paymentMethodId=this.getPayment().getMethodId(), style='regular-main-button install', jsConfirmText=t('System will download and install this module from marketplace. Continue?')) }}
+      {% endif %}
+    </div>
+  </li>
+</ul>

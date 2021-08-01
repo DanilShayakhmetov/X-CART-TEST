@@ -1,0 +1,5 @@
+Version 5.4.0.15
+
+Fixes (1)
+2020-12-03 - [Bug] FLC. Floating labels did not work in the Billing address input fields. Fixed. #XCB-30 #XC-FastLaneCheckout
+

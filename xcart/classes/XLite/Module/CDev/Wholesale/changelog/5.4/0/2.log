@@ -1,0 +1,11 @@
+Version 5.4.0.2
+
+Improvements (3)
+2019-03-11 - [Change] Adjustments for the pages Wholesale prices and File attachments according to the style guide. #XCN-9441 (Fedya Lavrentyev) #Core #Egoods #FileAttachments #Wholesale
+2019-01-14 - [Change] Improvement of the product page look & feel in the Customer area. Add to cart form minimization. #XCN-9321 (morven) #Core #Paypal #ProductAdvisor #Wholesale #ProductComparison #ProductVariants #ProductReviews #CrispWhiteSkin #ProductTags #FreeShipping
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+
+Fixes (2)
+2019-03-18 - [Bug] Wholesale prices could be specified for a product with Sale enabled for that product. Fixed. #BUG-7155 (Maxim Kuznetsov) #Wholesale
+2017-11-20 - [Bug] Attribute price modifier was not taken into account in the wholesale table. #BUG-5739 https://bt.x-cart.com/view.php?id=48719 (Sergey Elmanov) #Core #Wholesale
+

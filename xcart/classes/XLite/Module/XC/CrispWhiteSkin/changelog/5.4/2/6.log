@@ -1,0 +1,5 @@
+Version 5.4.2.6
+
+Fixes (1)
+2020-09-17 - [Bug] Crisp White vs MV. The popup block showing vendor rating stopped getting displayed on window widths of less than ~ 767px. Fixed. #BUG-8916 #CrispWhiteSkin
+

@@ -1,0 +1,29 @@
+{##
+ # Navbar menu
+ #
+ # @ListChild (list="header.menu", weight="2000")
+ #}
+{% if this.isSlidebar %}
+  <li>
+    <div class="Panel" id="account-navbar-panel">
+      <ul class="Inset">
+        {% set account_items %}
+          {{ widget_list('slidebar.navbar.account') }}
+        {% endset %}
+
+        {{ account_items }}
+        {% if not account_items|trim is empty %}
+          <li class="mm-divider"></li>
+        {% endif %}
+        {{ widget_list('slidebar.navbar.account.additional-menu') }}
+      </ul>
+    </div>
+    {% if this.getViewList('slidebar.navbar.settings') %}
+      <div class="Panel" id="settings-navbar-panel">
+        <ul class="Inset">
+          {{ widget_list('slidebar.navbar.settings') }}
+        </ul>
+      </div>
+    {% endif %}
+  </li>
+{% endif %}

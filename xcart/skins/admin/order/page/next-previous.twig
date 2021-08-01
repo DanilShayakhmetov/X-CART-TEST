@@ -1,0 +1,22 @@
+{##
+ # Next-previous order
+ #}
+{% set next = this.getNextOrder() %}
+{% set previous = this.getPreviousOrder() %}
+<div class="next-previous-order">
+  {% if next and previous %}
+    <div class="previous-order">
+      <a href="{{ this.buildURL('order', '', {order_number: previous.getOrderNumber()}) }}" class="order-link"><span class="arrow">&#8592;&nbsp;&nbsp;</span><span class="text">{{ t('Prev') }}</span></a>
+    </div>
+    <div class="separator"></div>
+  {% elseif previous %}
+    <div class="previous-order">
+      <a href="{{ this.buildURL('order', '', {order_number: previous.getOrderNumber()}) }}" class="order-link"><span class="arrow">&#8592;&nbsp;&nbsp;</span><span class="text">{{ t('Previous order') }}</span></a>
+    </div>
+  {% endif %}
+  {% if next %}
+    <div class="previous-order">
+      <a href="{{ this.buildURL('order', '', {order_number: next.getOrderNumber()}) }}" class="order-link"><span class="text">{{ t('Next order') }}</span><span class="arrow">&nbsp;&nbsp;&#8594;</span></a>
+    </div>
+  {% endif %}
+</div>

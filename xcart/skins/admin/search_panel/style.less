@@ -1,0 +1,229 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Search panel styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.search-conditions-box {
+  background: @search-panel-bg;
+  position: relative;
+  margin-bottom: @rhythmic-unit;
+  border-radius: @border-radius-base;
+
+  .actions-bottom {
+    position: relative;
+    margin: (@rhythmic-unit / 2) 0;
+    float: right;
+    text-align: right;
+
+    & > div {
+      font-size: @font-size-base;
+      line-height: @line-height-base;
+      display: inline-block;
+    }
+  }
+
+  form & .table-label {
+    width: 30%;
+  }
+
+  form & .table:not(.vertical)>li:not(.separator)>.table-value:first-child,
+  form & .table:not(.vertical)>div:not(.separator)>.table-value:first-child {
+    margin-left: 30%;
+  }
+
+  .table {
+    margin-bottom: 0;
+
+    > li {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    & > li + li {
+      margin: @rhythmic-unit 0;
+    }
+
+    & > li:last-child {
+      margin-bottom: auto;
+    }
+  }
+
+  &.full {
+    .arrow {
+      border-radius: @border-radius-base @border-radius-base 0 0;
+      transform: translateX(-50%) rotateZ(180deg);
+    }
+
+    .search-conditions-hr {
+      display: block;
+    }
+
+    .search-conditions-hidden {
+      .flex-display();
+
+      & > div {
+        width: 50%;
+      }
+    }
+  }
+
+  .ajax-container-loadable & {
+    width: auto;
+  }
+
+  .search-conditions .inline-table {
+    padding: @search-panel-padding;
+
+    & > * + * {
+      margin-left: @search-panel-items-margin;
+    }
+
+    & > *:first-child {
+      flex-grow: 1;
+    }
+  }
+
+  .search-conditions-hr {
+    height: 1px;
+    width: 100%;
+    background: @body-bg;
+    display: none;
+  }
+
+  .search-conditions-hidden {
+    display: none;
+    padding: (@rhythmic-unit / 2) (@rhythmic-unit / 2);
+  }
+
+  .arrow {
+    background: @search-panel-bg;
+    border-radius: 0 0 @border-radius-base @border-radius-base;
+    bottom: -(@rhythmic-unit);
+    height: @rhythmic-unit;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: (@rhythmic-unit * 2);
+    cursor: pointer;
+    text-align: center;
+
+    span.fa.fa-angle-down {
+      font-size: 22px;
+      color: @color-link;
+    }
+  }
+
+  .star, .checkbox-list-values {
+    display: none;
+  }
+
+  .clear-search {
+    margin-left: @rhythmic-unit;
+    float: right;
+    color: @color-link;
+    border-bottom: 1px dashed;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  #including,
+  #by-conditions {
+    .flex-display();
+    .flex-wrap(wrap);
+    margin: (@padding-base-vertical + @border-base) 0;
+
+    & > * {
+      margin-right: @rhythmic-unit;
+    }
+  }
+}
+
+.target-order-list h1.title {
+  display: inline-block;
+  margin-right: (@rhythmic-unit *2);
+
+  ul.breadcrumb {
+    margin-bottom: 0;
+  }
+}
+
+.saved-filter-options {
+  display: inline-block;
+  margin-bottom: (@rhythmic-unit);
+  line-height: (@rhythmic-unit * 1.5);
+
+  .filter-option {
+    display: inline;
+    margin-right: (@rhythmic-unit * 2);
+
+    .filter-title {
+      text-decoration: none;
+      border-bottom: 1px dashed;
+
+      &.active {
+        color: @color-text-dark;
+      }
+    }
+
+    .delete-filter {
+      cursor: pointer;
+      color: @color-tip;
+      text-decoration: none;
+      margin-left: (@rhythmic-unit / 4);
+      margin-right: (-@rhythmic-unit / 2) - 10;
+
+      &:hover {
+        color: @color-filled;
+      }
+
+      &:before {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.search-conditions button.ui-multiselect {
+  .ui-icon-triangle-2-n-s {
+    background: none;
+    font: normal normal normal 14px/1 FontAwesome;
+    width: auto;
+    height: auto;
+    text-indent: unset;
+    top: 0;
+    right: 0;
+    margin: 0;
+    line-height: @line-height-base;
+
+    &:before {
+      content: "\f107";
+    }
+
+    & + span {
+      width: ~"calc(100% - 9px)";
+      display: inline-block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.ui-multiselect-menu .ui-multiselect-checkboxes li {
+  padding-right: 0;
+}
+
+.save-search-filter {
+  .button-action {
+    margin: (@rhythmic-unit / 2) 0;
+  }
+  .button-label {
+    color: @color-link;
+  }
+}

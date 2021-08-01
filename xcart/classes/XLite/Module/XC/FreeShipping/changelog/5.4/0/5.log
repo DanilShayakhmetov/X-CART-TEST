@@ -1,0 +1,6 @@
+Version 5.4.0.5
+
+Fixes (2)
+2019-11-05 - [Bug] Bulk Editing. Fixed the error resulting from entering too large a number in the "Quantity in stock" field. #BUG-7099 (Pavel Veselovsky) #Core #MarketPrice #Sale #FreeShipping
+2019-10-25 - [Bug] Fixed errors related to the launch of hooks when activating, deactivating and removing addons. #BUG-7849 (Maxim Kuznetsov) #VAT #FreeShipping #ShopperApproved #Service
+

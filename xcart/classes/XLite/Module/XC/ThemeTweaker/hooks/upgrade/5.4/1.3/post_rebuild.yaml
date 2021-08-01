@@ -1,0 +1,14 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: 'There is no special code for this notification'
+    translations:
+      - code: en
+        label: "There is no special code for this notification.\nIf you need to use specific TWIG code put it here.\nFor the plain text, we recommend using WYSIWYG editor on the edit notification page."
+      - code: ru
+        label: "Для этой нотификации нет специального кода.\nЕсли нужно использовать специфичный TWIG-код, поместите его сюда.\nЕсли нужен только текст, рекомендуем использовать WYSIWYG редактор на странице\nредактирования нотификации."

@@ -1,0 +1,10 @@
+{##
+ # Add to bag buttons
+ #
+ # @ListChild (list="product.details.page.info.form.buttons-added.cart-buttons", weight="30")
+ # @ListChild (list="product.details.quicklook.info.form.buttons-added.cart-buttons", weight="30")
+ # @ListChild (list="product.details.page.info.form.buttons.cart-buttons", weight="20")
+ # @ListChild (list="product.details.quicklook.info.form.buttons.cart-buttons", weight="20")
+ #}
+
+{{ widget('\\XLite\\View\\Product\\Details\\Customer\\AddButton', product=this.product) }}

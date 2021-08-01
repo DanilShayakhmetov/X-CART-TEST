@@ -1,0 +1,5 @@
+Version 5.4.0.13
+
+Fixes (1)
+2020-11-25 - [Bug] FLC. The "Place order" button became disabled after an uncached reload of the page (Shift + Reload). Fixed. #XCB-137 #XC-FastLaneCheckout
+

@@ -1,0 +1,14 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-06-07 - [Change] Layout adjustments to the 404 page for non-available products and categories. #XCN-9923 (Fedya Lavrentyev) #Core #FeaturedProducts #RelatedProducts #CrispWhiteSkin
+
+Fixes (7)
+2019-06-20 - [Bug] The path to the fonts file of the extending skin was identified incorrectly. Fixed. #BUG-7526 (Fedya Lavrentyev) #CrispWhiteSkin
+2019-06-18 - [Bug] Pagination layout issues. Fixed. #BUG-7518 https://bt.x-cart.com/view.php?id=50765 (Shevelov Alexander) #CrispWhiteSkin
+2019-06-14 - [Bug] Pagination style issues after adding products to cart. Fixed. #BUG-7501 https://bt.x-cart.com/view.php?id=50759 (Shevelov Alexander) #CrispWhiteSkin
+2019-06-10 - [Bug] Product search results display issue in mobile version. Fixed. #BUG-7416 (Fedya Lavrentyev) #Core #CrispWhiteSkin
+2019-06-06 - [Bug] Search page display issues in the iOS mobile browsers. Fixed. #BUG-7345 https://bt.x-cart.com/view.php?id=50633 (Fedya Lavrentyev) #CrispWhiteSkin
+2019-06-06 - [Bug] The checkout UI improvements for partially paid orders. #BUG-7205 https://bt.x-cart.com/view.php?id=50578 (Fedya Lavrentyev) #Core #FastLaneCheckout #CrispWhiteSkin
+2019-06-04 - [Bug] Layout and localization fixes. #BUG-7354 (Shevelov Alexander) #Core #CrispWhiteSkin
+

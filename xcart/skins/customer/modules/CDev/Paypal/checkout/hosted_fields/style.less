@@ -1,0 +1,46 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Paypal hosted fields style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.pcp-hosted-fields-container {
+  .cc-form {
+    text-align: left;
+
+    .cardType span.card {
+      margin-left: -45px;
+      margin-top: -22px;
+    }
+
+    .cardExpire {
+      width: 120px;
+    }
+
+    .cardCVV2 .popover {
+      z-index: 1040;
+    }
+    .cardCVV2 .popover.top {
+      margin: -20px -38px;
+      border: #fff 2px solid;
+    }
+    .cardCVV2 .popover .arrow {
+      margin-left: 27px;
+      border-top-color: #fff;
+    }
+    .cardCVV2 .popover-content {
+      width: 125px;
+      height: 84px;
+      background: url(../../../../../checkout/css/cvv2_hints.png) 0 0 no-repeat;
+      background-size: 100% auto;
+    }
+    .cardCVV2.amex .popover-content,
+    .cardCVV2.AmericanExpress .popover-content {
+      background-position: 0 100%;
+    }
+  }
+}
+

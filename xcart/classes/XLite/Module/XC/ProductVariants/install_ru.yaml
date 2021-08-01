@@ -1,0 +1,43 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Product variants", translations: [{ code: ru, label: "Варианты товара" }] }
+  - { name: "{{count}} variants are based on {{variants}}", translations: [{ code: ru, label: "{{count}} вариантов товара созданы на основании {{variants}}" }] }
+  - { name: "Create variants one by one", translations: [{ code: ru, label: "Создавать варианты по одному" }] }
+  - { name: "Variant id X is already assigned to another product variant", translations: [{ code: ru, label: "Идентификатор \"{{value}}\" уже назначен варианту другого товара" }] }
+  - { name: 'Default variant price', translations: [{ code: ru, label: 'Цена варианта по умолчанию' }]}
+  - { name: 'Price range (min - max)', translations: [{ code: ru, label: 'Диапазон цен (мин. - макс.)' }]}
+  - { name: 'X variants are defined', translations: [{ code: ru, label: 'У товара есть {{X}} вариант(ов)' }] }
+  - { name: 'Clear and disable inventory tracking for variants as well', translations: [{ code: ru, label: 'Также очистить количество и отключить контроль остатков для вариантов' }] }
+  - { name: 'Product variants inventory clear help', translations: [{ code: ru, label: 'Контроль остатков может быть включен или отключен для каждого варианта в отдельности. Чтобы отключить контроль остатков для какого-либо варианта, убедитесь, что опция контроля остатков для вашего магазина отключена, после чего очистите поле "Количество" для соответствующего варианта (при наличии в нем ненулевого значения). Отслеживание остатков варианта не будет осуществляться, пока поле "Количество" для данного варианта будет оставаться пустым. При необходимости осуществлять контроль остатков какого-либо варианта в ситуауции, когда  контроль остатков для магазина в целом отключен, достаточно указать имеющееся в наличии количество единиц варианта в поле "Количество" для данного варианта. <br><br> Чтобы отключить контроль остатков для всех вариантов, достаточно включить данную опцию; обратите внимание, что это приведет к очистке имеющихся значений в поле "Количество" для всех вариантов.' }] }
+  - { name: 'Variant sku must be unique', translations: [{ code: ru, label: 'Артикул варианта должен быть уникальным' }] }
+  - { name: "Couldn't identify a variant based on ID X being imported", translations: [{ code: ru, label: "Система не смогла идентифицировать вариант по импортируемому ID {{variantId}}; однако, вариант был успешно идентифицирован по комбинации атрибутов." }] }
+  - { name: 'variant ID X was replaced by ID Y generated automatically', translations: [{ code: ru, label: 'Для обеспечения целостности данных ID варианта {{oldVariantId}} был заменен в процессе импорта на ID {{newVariantId}}, сгенерированный автоматически. Рекомендуется исправить файл импорта, заменив указанный в нем ID варианта на новый ({{newVariantId}}), если данный файл планируется к использованию в дальнейшем.' }] }
+  - { name: 'Field type for the attribute "{{value}}" is TEXT AREA; this type cannot be used to configure multiple attribute values.', translations: [{ code: ru, label: 'Тип поля атрибута "{{value}}" -ТЕКСТОВОЕ ПОЛЕ; данный тип не может быть использован для задания множественных значений атрибута.' }] }
+  - { name: "Product variant #{{value}} not found", translations: [{ code: ru, label: "Вариант товара {{value}} не найден" }] }
+  - { name: "No product variants available. Please create at least one.", translations: [{ code: ru, label: "Нет ни одного варианта товара. Создайте хотя бы один вариант." }] }
+  - { name: "Product variant id", translations: [{ code: ru, label: "ID варианта товара" }] }
+  - { name: "Enter product variant id", translations: [{ code: ru, label: "Введите ID варианта товара" }] }
+  - { name: "Items with selected options in your cart: X", translations: [{ code: ru, label: "{{count}}шт с выбранными опциями в <a href=\"cart.php?target=cart\">корзине</a>" }] }
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/ProductVariants/low_variant_limit_warning
+    translations:
+      - code: ru
+        name: Предупреждение об уменьшении количества <b>варианта</b> товара на складе до минимального уровня
+        description: "Данное уведомление используется для оповещения администратора об уменьшении количества какого-либо варианта товара до минимального уровня (в соответствии со значением, установленным на странице соответствующего товара)"
+        adminSubject: 'Предупреждение об уменьшении количества варианта товара на складе до минимального уровня'
+        adminText: 'Количество варианта товара на складе достигло минимального уровня.'
+
+XLite\Model\Config:
+  - name: price_in_list
+    category: XC\ProductVariants
+    translations:
+      - code: ru
+        option_name: 'Как отображать цены вариантов в списках товаров'
+        option_comment: 'При первом переключении в режим диапазона необходимо запустить перестройку <a href="admin.php?target=cache_management">quick data</a>. Это нужно сделать либо до, либо после переключения. Без перестройки quick data некоторые функции могут работать некорректно.'

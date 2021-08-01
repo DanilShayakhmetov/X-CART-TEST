@@ -1,0 +1,7 @@
+{##
+ # Payment template
+ #}
+
+{% if not this.isReturnedAfterExpressCheckout() %}
+  <div class="paypal-checkout-credit-box"></div>
+{% endif %}

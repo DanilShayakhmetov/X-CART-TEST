@@ -1,0 +1,45 @@
+{##
+ # Selector type
+ #
+ # @ListChild (list="product.attributes.display_modes", zone="admin", weight="100")
+ #}
+
+{% set isNew = not (this.attribute.entity is defined) %}
+{% set selectBoxMode = constant('XLite\\Model\\Attribute::SELECT_BOX_MODE') %}
+{% set blocksMode = constant('XLite\\Model\\Attribute::BlOCKS_MODE') %}
+{% set fieldValue = isNew ? selectBoxMode : this.attribute.entity.getDisplayMode() %}
+{% set name = isNew ? 'newValue[NEW_ID][displayMode]' : 'displayMode['~this.attribute.entity.getId()~']' %}
+
+<div class="display-mode type-s">
+  <div class="title">
+    {{ t('Display the option values in ') }}
+    <div>
+      <a href="#" class="display-mode-link">{{ fieldValue is same as(blocksMode) ? t('Blocks') : t('Selectbox') }}</a>
+      <div class="value">
+        <div class="display-mode-variant">
+          {{ widget(
+            'XLite\\View\\FormField\\Input\\Radio',
+            value = selectBoxMode,
+            fieldName = name,
+            label = t('Selectbox'),
+            fieldId = name~'-selectbox',
+            isChecked = fieldValue is same as(selectBoxMode),
+            attributes = {class: 'display-mode-input'}
+          ) }}
+        </div>
+        <div class="display-mode-variant">
+          {{ widget(
+            'XLite\\View\\FormField\\Input\\Radio',
+            value = blocksMode,
+            fieldName = name,
+            label = t('Blocks'),
+            fieldId = name~'-blocks',
+            isChecked = fieldValue is same as(blocksMode),
+            attributes = {class: 'display-mode-input'}
+          ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

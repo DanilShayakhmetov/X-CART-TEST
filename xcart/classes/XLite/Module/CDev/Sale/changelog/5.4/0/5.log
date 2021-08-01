@@ -1,0 +1,11 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-09-26 - [Change] The percentage format for Market price, Sale and vendor rating can now be set via the Localization settings.. #BUG-6656 https://bt.x-cart.com/view.php?id=49167 (Sergey Kshnyakin) #MarketPrice #Sale #MultiVendor
+
+Fixes (4)
+2019-11-26 - [Bug] Now it is no longer possible to add a negative absolute dscount, an absolute discount exceeding the product price, or a relative discount exceeding 100%. #BUG-7145 (Nikita Erkhov) #Sale
+2019-11-15 - [Bug] The number of characters in the fractional part of the Sale price mask on the Edit product page did not match the number of characters in the fractional part of the main store currency setting. Fixed. #BUG-8024 https://bt.x-cart.com/view.php?id=51117 (Jamil Ainulov) #Sale
+2019-11-05 - [Bug] Bulk Editing. Fixed the error resulting from entering too large a number in the "Quantity in stock" field. #BUG-7099 (Pavel Veselovsky) #Core #MarketPrice #Sale #FreeShipping
+2019-09-10 - [Bug] Fixed the layout issues on the "Put for sale" popup, #BUG-6643 (Nikita Erkhov) #Sale
+

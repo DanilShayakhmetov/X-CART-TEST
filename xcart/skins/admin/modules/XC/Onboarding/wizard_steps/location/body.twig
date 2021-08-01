@@ -1,0 +1,60 @@
+{##
+ # Location step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-location inline-template>
+    <div class="step-contents">
+      <h2 class="heading">{{ t("Configure your geographic settings to connect with local customers") }}</h2>
+      <p class="text">{{ t("We've tried to guess your country, currency and weight. Verify, please.") }}</p>
+
+      <div id="location_map">
+        <div id="location_map_zones"></div>
+        <div id="location_map_markers"></div>
+        <div class="point">
+          {{ this.displaySVGImage('modules/XC/Onboarding/images/map-pointer.svg') }}
+        </div>
+        <div class="pulse"></div>
+      </div>
+
+      <div class="fields">
+        <div class="country">
+          {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormField\\Select\\Country', attributes={'v-model': 'country'}, label='Country', value=this.getCountry(), fieldId='location-country', stateSelectorId='address-state-select', stateInputId='address-custom-state') }}
+          <div class="example"></div>
+        </div>
+        <div class="currency">
+          {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormField\\Select\\Currency', attributes={'v-model': 'currency'}, label='Currency', value=this.getCurrency(), fieldId='location-currency') }}
+          <div class="example">
+            {% spaceless %}
+              {{ t('Ex.') }}
+              <span class="prefix"></span>
+              <span class="value">29.99</span>
+              <span class="suffix"></span>
+            {% endspaceless %}
+          </div>
+        </div>
+        <div class="weight-unit">
+          {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormField\\Select\\WeightUnit', attributes={'v-model': 'weight_unit'}, label='Weight', value=this.getWeightUnit(), fieldId='location-weight_unit') }}
+          <div class="example">
+            {% spaceless %}
+              {{ t('Ex.') }}
+              <span class="value">2.8</span>
+              <span class="unit"></span>
+            {% endspaceless %}
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="more-button">
+          {{ widget('XLite\\View\\Button\\Link', label='More localisation settings', location=this.getMoreSettingsLocation(), blank=1) }}
+        </div>
+        <div class="next-step">
+          {{ widget('XLite\\View\\Button\\Regular', label='Save and go to the next step', style='regular-main-button', attributes={'@click': 'updateAddress'}, jsCode="null;") }}
+        </div>
+      </div>
+    </div>
+  </xlite-wizard-step-location>
+</div>

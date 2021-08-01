@@ -1,0 +1,6 @@
+Version 5.4.1.0
+
+Improvements (2)
+2020-03-12 - [Change] Remove advertising banners from some pages. #XCN-10663 #Core #SalesTax #NewsletterSubscriptions
+2019-12-06 - [Change] Switched the default tax calculation address from billing to shipping. #BUG-8138 #SalesTax #VAT #CanadianTaxes
+

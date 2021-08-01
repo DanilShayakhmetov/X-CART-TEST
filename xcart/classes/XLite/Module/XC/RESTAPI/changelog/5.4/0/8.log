@@ -1,0 +1,5 @@
+Version 5.4.0.8
+
+Fixes (1)
+2020-09-18 - [Bug] Rest API: "400 Bad Request" response if the request had contained the header "Content-Type:application/json;charset=utf-8". Fixed. #BUG-9026 #RESTAPI
+

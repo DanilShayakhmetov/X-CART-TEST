@@ -1,0 +1,7 @@
+Version 5.4.0.5
+
+Fixes (3)
+2020-01-15 - [Bug] Geolocation based currency detection did not work in the Customer area if the country was changed manually. Fixed. #BUG-8226 https://bt.x-cart.com/view.php?id=51376 (Shevelov Alexander) #MultiCurrency
+2019-11-22 - [Bug] It is no longer possible to disable a currency if it is the store's primary one. #BUG-7204 (Jamil Ainulov) #MultiCurrency
+2019-11-21 - [Bug] After changing the language selection in the Customer area, the selected state and zip code were reset in the customer address if the addon "Multicurrency" was enabled and the "Standard" design template was used. Fixed. #BUG-7284 https://bt.x-cart.com/view.php?id=50587 (Jamil Ainulov) #MultiCurrency
+

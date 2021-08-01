@@ -1,0 +1,14 @@
+{##
+ # File uploader menu
+ #
+ # @ListChild (list="file-uploader.menu", weight="20")
+ #}
+
+{% if this.hasView() %}
+  <li role="presentation">
+    <a role="menuitem" tabindex="-1" href="{{ this.getLink() }}" target="_blank">
+      <i class="button-icon svg">{{ svg('images/icons/pic.svg', 'common')|raw }}</i>
+      <span>{{ t('View image') }}</span>
+    </a>
+  </li>
+{% endif %}

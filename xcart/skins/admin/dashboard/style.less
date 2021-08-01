@@ -1,0 +1,266 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Dashboard page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/**
+ * Markup styles
+ */
+.dashboard {
+  .flex-display();
+}
+
+.dashboard .center-block {
+  .flex-grow(1);
+}
+
+.dashboard .sidebar {
+  padding-left: 20px;
+}
+
+.sidebar {
+  &,
+  & .lazy-load,
+  & .lazy-load-widget {
+    > .dialog-content {
+      width: 245px;
+    }
+  }
+}
+
+.dashboard .center-block .title {
+  text-align: left;
+}
+
+.dashboard.welcome-visible .sidebar {
+  padding-top: 0;
+}
+
+div.tabs {
+  margin: 31px 0 28px;
+}
+
+.js-tabs div.tabs
+{
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-left: 0;
+
+  & > ul {
+    margin-left: 0;
+  }
+}
+
+.js-tabs.dashboard-tabs {
+  margin-top: @rhythmic-unit * 2;
+
+  div.tab-content {
+    margin-top: 20px;
+  }
+}
+
+div.tabs .primary {
+  height: 33px;
+  line-height: 32px;
+  padding: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-collapse: collapse;
+}
+
+ul.tabs,
+  div.tabs ul.primary span
+{
+  border-color: #CADCE8;
+}
+
+ul.tabs li {
+  display: inline;
+  white-space: nowrap;
+}
+
+div.tabs .primary a,
+div.tabs .primary span {
+  padding: 11px 18px 8px;
+  vertical-align: baseline;
+  border-style: solid solid none solid;
+  border-width: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+div.tabs .primary .active a,
+div.tabs .primary a:hover,
+div.tabs .primary .active a:hover,
+div.tabs .primary .active span,
+div.tabs .primary span:hover,
+div.tabs .primary .active span:hover {
+  border-bottom-color: white;
+  background: white;
+}
+
+div.tabs .primary .active a,
+div.tabs .primary .active span {
+  padding-bottom: 9px;
+}
+
+ul.primary li a, ul.primary li span {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+div.tabs .primary a, div.tabs .primary span {
+  background: #EFF8FE repeat-x top left;
+}
+
+.target-main .center-block .items-list-table table.list,
+.target-main .center-block .items-list-table
+{
+  width: 100%;
+}
+
+.target-main .items-list-table table.list tbody.lines td,
+.target-main .items-list-table table.list tbody.lines td span,
+.target-main .items-list-table table.list tbody td.main div,
+.target-main .items-list-table table.list tbody td div {
+  font-size: 14px;
+}
+
+.target-main .items-list.orders table.list thead th.paymentStatus,
+.target-main .items-list.orders table.list thead th.shippingStatus,
+.target-main .items-list.orders table.list tbody tr.line td.paymentStatus,
+.target-main .items-list.orders table.list tbody tr.line td.shippingStatus {
+  padding-left: 6px;
+}
+
+.target-main .items-list-table table.list .cell.orderNumber .cell .plain-value {
+  display: block;
+}
+
+.target-main .items-list-table table.list .cell.orderNumber .cell .date,
+.target-main .items-list-table table.list .cell.orderNumber .cell .time {
+  font-size: 11px;
+  display: inline-block;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus,
+.target-main .items-list-table table.list .cell.paymentStatus {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus span,
+  .target-main .items-list-table table.list .cell.paymentStatus span
+{
+  width: 100%;
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: 3px;
+  line-height: 34px;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus span a,
+.target-main .items-list-table table.list .cell.paymentStatus span a {
+  color: #333;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus .status-S,
+.target-main .items-list-table table.list .cell.shippingStatus .status-P,
+.target-main .items-list-table table.list .cell.paymentStatus .status-A,
+.target-main .items-list-table table.list .cell.paymentStatus .status-PP {
+  background-color: #b6d7a8;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus .status-D,
+.target-main .items-list-table table.list .cell.paymentStatus .status-P {
+  background-color: #93c47d;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus .status-NBA,
+.target-main .items-list-table table.list .cell.shippingStatus .status-WND,
+.target-main .items-list-table table.list .cell.paymentStatus .status-D,
+.target-main .items-list-table table.list .cell.paymentStatus .status-C {
+  background-color: #ea9999;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus .status-N,
+.target-main .items-list-table table.list .cell.shippingStatus .status-WFA,
+.target-main .items-list-table table.list .cell.paymentStatus .status-Q {
+  background-color: #d9ead3;
+}
+
+.target-main .items-list-table table.list .cell.shippingStatus .status-R,
+.target-main .items-list-table table.list .cell.paymentStatus .status-R {
+  background-color: #6fa8dc;
+}
+
+.target-main .items-list.orders th.profile {
+  padding-left: 30px;
+}
+
+.items-list-table table.list tbody.lines tr.line td.cell.profile {
+  max-width: 100px;
+  padding-left: 5px;
+}
+
+.target-main .table-pager .left .pages-nav,
+.target-main .table-pager .left .last
+{
+  display: none;
+}
+
+.target-main .items-list.orders table.list tbody.lines tr.line td.profile div.cell {
+  width: 180px;
+}
+
+.target-main .items-list.products table.list tbody td.qty,
+.target-main .items-list.products table.list tbody td.sold {
+  text-align: center;
+}
+
+.target-main .items-list.products table.list tbody td.qty .view,
+.target-main .items-list.products table.list tbody td.sold .view {
+   font-size: 16px;
+}
+
+@media (min-width: 1100px) {
+  .target-main .items-list.products table.list tbody.lines tr.line td.name div.cell {
+    width: 100%;
+  }
+}
+
+.target-main .items-list.products table.list tbody td.qty .inline-field.editable:hover .view {
+  cursor: auto;
+  background: none;
+  border-color: #ffffff;
+}
+
+.target-main .empty-list {
+  font-size: 14px;
+  color: #8F8F8F;
+}
+
+.target-main .js-tabs ul.tabs li.empty span {
+  color: #93B4CA;
+}
+
+.target-main .items-list-table table.list td.main {
+  min-width: 0;
+}
+
+.dialog-content .items-list.products table.list td.name .plain-value {
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.dialog-content .table-pager button {
+  margin: 10px (@rhythmic-unit / 2);
+}

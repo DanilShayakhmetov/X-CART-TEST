@@ -1,0 +1,17 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * CSS classes for adding XP logo to payment methods list
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.module-name-XPay_XPaymentsCloud .actions:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  background-image: url(../xp_logo.png);
+  background-size: 100%;
+}

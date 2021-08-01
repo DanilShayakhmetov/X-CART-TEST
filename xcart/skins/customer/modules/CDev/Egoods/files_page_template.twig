@@ -1,0 +1,46 @@
+{##
+ # User files
+ #}
+<div class="orders-files">
+  <ul class="orders">
+    {% for order in this.getOrdersWithFiles() %}
+      <li class="order">
+        <div class="info">
+          <a href="{{ url('order', '', {'order_number': order.getOrderNumber()}) }}" class="order-link">{{ t('Order X', {'id': order.getOrderNumber()}) }}</a>
+          <span class="date">{{ this.formatTime(order.getDate()) }}</span>
+          {% if this.isShowOrderUnavailableMark(order) %}
+            <span class="order-unavailable-mark {{ this.getOrderMarkClasses(order) }}">
+              {{ this.getOrderUnavailableMark(order) }}
+            </span>
+          {% endif %}
+        </div>
+        <ul class="files">
+          {% for attachment in order.getDownloadAttachments(false) %}
+            <li class="file{% if this.isShowOrderUnavailableMark(order) or this.isShowAttachmentUnavailableMark(attachment) %} unavailable{% endif %}">
+              <div class="row">
+                <div class="column">
+                  <div class="icon icon-type-{{ this.getIconType(attachment) }}"></div>
+                </div>
+                <div class="column">
+                {% if attachment.isAvailable() %}
+                  <a class="name" href="{{ attachment.getURL() }}">{{ this.getPublicTitle(attachment) }}</a>
+                {% else %}
+                  <span class="name">{{ this.getPublicTitle(attachment) }}</span>
+                {% endif %}
+                {% if this.isShowAttachmentUnavailableMark(attachment) %}
+                  <span class="unavailable-mark">{{ this.getAttachmentUnavailableMark(attachment) }}</span>
+                {% elseif attachment.attachment.storage.getSize() %}
+                  <span class="size">{{ this.formatSize(attachment.attachment.storage.getSize()) }}</span>
+                {% endif %}
+                {% if attachment.attachment and attachment.attachment.getDescription() %}
+                  <div class="description">{{ attachment.attachment.getDescription() }}</div>
+                {% endif %}
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,6 @@
+Version 5.4.0.6
+
+Fixes (2)
+2019-11-20 - [Bug] Incorrect clean URLs for news and static pages were included into sitemap.xml if clean URLs had been changed for those entities. Fixed. #BUG-8087 (Jamil Ainulov) #SimpleCMS #News
+2019-11-07 - [Bug] In sitemap.xml, & special character was not escaped for all links  Fixed. #BUG-8043 (Jamil Ainulov) #SimpleCMS #XMLSitemap #News
+

@@ -1,0 +1,23 @@
+{##
+ # Errors file template
+ #}
+{% set manualLinks = this.getManualLinks() %}
+{% if manualLinks is not empty %}
+{{ t('CSV format tables') }}:
+{% for file in manualLinks %}
+{{ file.file }}: https:{{ file.manualURL }}{{ constant('PHP_EOL') }}
+{% endfor %}
+{% endif %}
+{% for file in this.getFiles() %}
+{{ file.file }} - {{ this.getMessageType('E') }}: {{ file.countE }} - {{ this.getMessageType('W') }}: {{ file.countW }}{{ constant('PHP_EOL') }}
+{% for type, messageGroup in this.getMessagesGroups(file.file) %}
+{% if messageGroup %}
+{{ constant('PHP_EOL') }}
+{{ this.getMessageType(type) }}{{ constant('PHP_EOL') }}
+{% for type, errorGroup in messageGroup %}
+{{ this.getGroupErrorMessage(errorGroup)|raw }} ({{ this.getErrorText(errorGroup) }}) - {{ this.getGroupErrorRows(errorGroup) }}{{ constant('PHP_EOL') }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+

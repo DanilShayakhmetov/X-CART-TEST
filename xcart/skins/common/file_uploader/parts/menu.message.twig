@@ -1,0 +1,9 @@
+{##
+ # File uploader menu
+ #
+ # @ListChild (list="file-uploader.menu", weight="10")
+ #}
+
+<li role="presentation" class="dropdown-header message" v-if="errorMessage">
+  <i class="fa fa-exclamation-triangle"></i> <span v-html="realErrorMessage">{{ this.getMessage() }}</span>
+</li>

@@ -1,0 +1,19 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel-extensions", weight="200")
+ #}
+
+<xlite-themetweaker-modal :show="isExitConfirmVisible" namespace="exitConfirm">
+  <p slot="body" class="text-center">{{ t('You have unsaved changes. Are you really sure to exit?') }}</p>
+  <div slot="footer">
+    <button class="themetweaker-modal-button secondary"
+            @click="onExitConfirmDiscard">
+      <span>{{ t('Discard changes') }}</span>
+    </button>
+    <button class="themetweaker-modal-button"
+            @click="onExitConfirmSave">
+      <span>{{ t('Save') }}</span>
+    </button>
+  </div>
+</xlite-themetweaker-modal>

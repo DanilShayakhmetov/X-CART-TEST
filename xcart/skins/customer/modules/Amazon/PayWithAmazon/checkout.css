@@ -1,0 +1,124 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * CSS classes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+body.target-amazon-checkout #breadcrumb,
+body.target-amazon-checkout #header-area #header,
+body.target-amazon-checkout #header-area #search {
+  display: none;
+}
+
+body.target-amazon-checkout #header-area {
+  padding-bottom: 10px;
+}
+
+table.amazon-checkout-tbl,
+table.amazon-checkout-tbl td,
+table.amazon-checkout-tbl tr {
+  border: none;
+}
+
+table.amazon-checkout-tbl {
+  width: 85%;
+}
+
+.amazon-checkout-wrapper.amazon-retry .discount-coupons-panel li a {
+  display: none;
+}
+
+body.target-amazon-checkout .checkout-block .steps .step {
+  width: 100%;
+  float: none;
+}
+
+body.target-amazon-checkout .checkout-block .steps h3 {
+  float: none;
+}
+
+body.target-amazon-checkout .checkout-block ul.shipping-rates li {
+  padding-left: 20px;
+}
+
+body.target-amazon-checkout .checkout-block .review-step .cart-items {
+  text-align: left;
+}
+
+body > .wait-block-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 !important;
+  position: fixed;
+  z-index: 20001;
+}
+
+.amazon-checkout-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+#addressBookWidgetDiv {
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 228px;
+  max-height: 400px;
+}
+
+#walletWidgetDiv {
+  min-width: 300px;
+  max-width:600px;
+  min-height: 228px;
+  max-height: 400px;
+}
+
+
+/* Mobile optimized and small window */
+
+#addressBookWidgetDiv {
+  width: 100%;
+  height: 228px;
+  margin-bottom: 28px;
+}
+
+#walletWidgetDiv {
+  width: 100%;
+  height: 228px;
+}
+
+/* Desktop and tablet */
+
+@media only screen and (min-width: 768px) {
+
+  #addressBookWidgetDiv {
+    width: 400px;
+    height: 228px;
+  }
+
+  #walletWidgetDiv {
+    width: 400px;
+    height: 228px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .amazon-checkout-wrapper {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;  }
+
+  .amazon-widgets {
+    flex-basis: 40%;
+    margin-top: 28px;
+  }
+
+  .xcart-widgets {
+    flex-basis: 40%;
+  }
+}

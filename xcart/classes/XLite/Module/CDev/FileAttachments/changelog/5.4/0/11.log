@@ -1,0 +1,5 @@
+Version 5.4.0.11
+
+Fixes (1)
+2020-08-03 - [Bug] When importing products, a product attachment was not formed correctly because the link was incorrect. Fixed. #BUG-8773 #Core #FileAttachments
+

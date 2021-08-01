@@ -1,0 +1,14 @@
+{##
+ # Price widget
+ #}
+
+<div class="product-price {{ this.getFingerprint() }}">
+{{ widget_list('product.plain_price.head') }}
+  <ul class="product-price">
+  	<li class="product-labels">
+	  {{ widget_list('product.plain_price.before') }}
+	</li>
+  	{{ widget_list('product.plain_price') }}
+  </ul>
+{{ widget_list('product.plain_price.tail') }}
+</div>

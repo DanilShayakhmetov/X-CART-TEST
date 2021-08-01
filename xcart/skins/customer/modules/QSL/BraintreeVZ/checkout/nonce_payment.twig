@@ -1,0 +1,10 @@
+{##
+ # PayPal powered by Braintree module (checkout)
+ #
+ #}
+
+<p class="paypal-account-payment">
+  {{ t('Pay with your PayPal account') }}
+</p>
+
+<input type="hidden" name="payment_method_nonce" id="payment-method-nonce" value="{{ this.getSessionNonce() }}" />

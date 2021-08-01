@@ -1,0 +1,28 @@
+{##
+ # Product element
+ #
+ # @ListChild (list="itemsList.products.search.cell.name", weight="10")
+ # @ListChild (list="itemsList.product_selector.cell.name", weight="10")
+ #}
+
+<div class="sale-discount-labels">
+  {% if this.participateSaleAdmin(this.entity) %}
+    <span
+      id="product-sale-label-{{ this.entity.getProductId() }}"
+      class="product-name-sale-label">
+      {{ t('Sale') }}
+    </span>
+  {% else %}
+    {% for saleDiscount in this.entity.getApplicableSaleDiscounts() %}
+      {% if this.getSaleDiscountEditLink(saleDiscount) %}
+        <a class="sale-label-link" href="{{ this.getSaleDiscountEditLink(saleDiscount) }}">
+          <span class="product-name-sale-label">{{ saleDiscount.getName() }}</span>
+        </a>
+      {% else %}
+        <span class="product-name-sale-label">
+          {{ saleDiscount.getName() }}
+        </span>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>

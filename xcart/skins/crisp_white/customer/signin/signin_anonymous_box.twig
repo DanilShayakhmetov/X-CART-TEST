@@ -1,0 +1,12 @@
+{##
+ # Sign-in
+ #
+ # @ListChild (list="signin-anonymous-title", weight="200")
+ #}
+{% form 'XLite\\View\\Form\\Checkout\\ContinueAsGuest' %}
+
+<table class="continue-as-guest-form">
+  {{ widget_list('signin-anonymous-title.continue') }}
+</table>
+
+{% endform %}

@@ -1,0 +1,16 @@
+{##
+ # Wholesale prices info box
+ #
+ #}
+
+{% if this.getWarningMessage() %}
+  <div class="alert alert-warning" role="alert">
+    {{ this.getWarningMessage() | raw }}
+  </div>
+{% endif %}
+
+{% if this.getInfoMessage() %}
+  <div class="alert alert-info" role="alert">
+    {{ this.getInfoMessage() | raw }}
+  </div>
+{% endif %}

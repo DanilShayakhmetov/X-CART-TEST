@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: 'Opayo form protocol'
+    class: Module\XC\SagePay\Model\Payment\Processor\SagePayForm
+    type: C
+    orderby: -101500
+    countries: [DE, ES, GB, IE, US]
+    translations: [{ code: en, name: 'Opayo form protocol' }]
+    settings: [{ name: vendorName }, { name: password }, { name: type, value: sale }, { name: test, value: 1 }, { name: prefix, value: xcart }]
+
+XLite\Model\LanguageLabel:
+  - name: 'Don''t have account yet? Sign up for SagePay now!'
+    translations: [{ code: en, label: 'Don''t have an account yet? <a href="https://applications.sagepay.com/apply/653E8C42-AD93-4654-BB91-C645678FA97B">Sign up</a> for Opayo now!' }]
+  - name: 'SagePay Form admin description'
+    translations: [{ code: en, label: 'Opayo is UK''s leading independent payment service provider (PSP) and is one of the most trusted payment brands. Every year Opayo processes billions of pounds worth of secure payments for its 50,000+ customers and makes the process of accepting payments online, over the phone, or in person simpler, faster, safer and more profitable for businesses.<br /><br />Opayo is a subsidiary of FTSE 100 business management software and services company The Sage Group plc.' }]

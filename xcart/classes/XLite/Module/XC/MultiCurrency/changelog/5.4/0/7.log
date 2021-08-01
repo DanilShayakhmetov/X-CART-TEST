@@ -1,0 +1,5 @@
+Version 5.4.0.7
+
+Fixes (1)
+2020-03-24 - [Bug] Corrected the text of the message about a failed currency rate request and the necessity to check the API key. #BUG-8462 https://bt.x-cart.com/view.php?id=51589 #MultiCurrency
+

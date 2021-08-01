@@ -1,0 +1,13 @@
+{##
+ # Payment order status selector
+ #
+ # @ListChild (list="order.actions.paymentActionsRow", weight="150")
+ #}
+
+{% if this.getOrder().isFraudStatus() %}
+  <div class="xpayments-antifraud">
+    <div>
+      <strong>{{ t('Warning') }}!</strong> {{ this.getFraudStatusText() }} <a href="#{{ this.getOrder().getXpaymentsFraudInfoAnchor() }}">{{ t('See details') }}</a>
+    </div>
+  </div>
+{% endif %}

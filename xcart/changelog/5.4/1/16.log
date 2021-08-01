@@ -1,0 +1,8 @@
+Version 5.4.1.16
+
+Fixes (4)
+2020-09-28 - [Bug] Updated guzzle in both the core and the service tool to the latest stable version 6.5.5. #BUG-9041 #Core #Service
+2020-09-22 - [Bug] The sticky panel was overlapping with the sidebar menu in the Admin area. Fixed. #BUG-9037 #Core
+2020-09-09 - [Bug] When using queues, notification *.job files are now grouped into different folders with names based on using the format yyyy/mm/dd. #BUG-8636 Нотификации (job-файлы) в очередях теперь формируются в разные папки вида yyyy/mm/dd #Core
+2020-09-08 - [Bug] Spelling error in the variable $isControllerFirbidden #BUG-9004 https://bt.x-cart.com/view.php?id=52095 #Core #ProductVariants
+

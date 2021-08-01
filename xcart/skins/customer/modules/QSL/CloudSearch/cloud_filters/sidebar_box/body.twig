@@ -1,0 +1,25 @@
+{# Render all filters #}
+
+<template v-for="facet in facets">
+    <component :is="getFilterType(facet)"
+               v-if="facet.id !== 'price'"
+               :id="facet.id"
+               :title="facet.name"
+               :facet="facet"
+               :toggled-values="filters[facet.id]"
+               :on-toggle="toggleFilterAction">
+    </component>
+    <price-filter
+               v-else
+               v-if="isPriceFilterVisible"
+               :min="filters.min_price"
+               :max="filters.max_price"
+               :stats-min="stats.price.min"
+               :stats-max="stats.price.max">
+    </price-filter>
+</template>
+
+<a href="#" v-show="isAnyFilterSet" v-on:click.prevent="resetFiltersAction"
+   class="cloud-filters__reset">
+    <small>{{ t('Reset all filters') }}</small>
+</a>

@@ -1,0 +1,70 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * CSS classes for X-Payments transactions info popup 
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+table.xpayments-info {
+  min-width: 640px;
+}
+
+table.xpayments-info tr.separator td {
+  padding: 0px;
+  background-color: #ffffff;
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+
+table.xpayments-info tr.header th,
+table.xpayments-info tr.top-line td { 
+  padding: 7px 10px;
+}
+
+table.xpayments-info tr.header {
+  background-color: #c0c0c0;
+  color: #000000;
+  text-align: left;
+  white-space: nowrap;
+  border-right: 2px solid #c0c0c0;
+}
+
+table.xpayments-info tr.top-line {
+  background-color: #f2f2f2;
+  border: 1px solid #c0c0c0;
+  white-space: nowrap;
+}
+
+table.xpayments-info tr.top-line td.status-Success {
+  color: #468847;
+}
+
+table.xpayments-info tr.top-line td {
+  color: #333;
+}
+
+table.xpayments-info tr.top-line td.status-Failed {
+    color: #b94a48;
+}
+
+table.xpayments-info tr.bottom-line {
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  white-space: nowrap;
+}
+
+table.xpayments-info table.fields {
+  line-height: 21px;
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+table.xpayments-info table.fields tr td.value {
+  padding-left: 10px;
+  max-width: 800px;
+  white-space: normal;
+}

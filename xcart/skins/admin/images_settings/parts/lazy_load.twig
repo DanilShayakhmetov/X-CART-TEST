@@ -1,0 +1,9 @@
+{##
+ # Use dynamic image resizing setting
+ #
+ # @ListChild (list="images_settings", weight="55")
+ #}
+
+{% if this.isDisplayLazyLoad() %}
+  <li>{{ widget('\\XLite\\View\\FormField\\Input\\Checkbox\\OnOff', fieldName='use_lazy_load', value=this.getLazyLoadValue(), label=this.getLazyLoadOptionName()) }}</li>
+{% endif %}

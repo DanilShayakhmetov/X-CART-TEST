@@ -1,0 +1,97 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+body.reloading:before,
+body.reloading:after
+{
+  position: fixed;
+}
+
+.checkout_fastlane_title, .checkout_fastlane_navigation {
+  h1{
+    margin-bottom: @rhythmic-unit;
+  }
+  h2 {
+    display: none;
+  }
+}
+
+.checkout_fastlane_container {
+  @media (max-width: @screen-md-min) {
+    padding-left: (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
+  }
+
+  @media (max-width: @screen-xs-max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.checkout_fastlane_block_heading {
+  margin-bottom: @rhythmic-unit;
+}
+
+.checkout_fastlane_section-buttons {
+  margin-top: (@rhythmic-unit * 3);
+
+  .btn {
+    white-space: normal;
+    line-height: normal;
+    padding-bottom: @rhythmic-unit - 2px;
+    padding-top: @rhythmic-unit - 2px;
+  }
+  @media(max-width: @screen-xs-max) {
+    display: none;
+  }
+  @media(min-width: (@screen-sm-min)) {
+    button {
+      .btn-lg;
+    }
+  }
+}
+
+.checkout_fastlane_header {
+  @media(max-width: @screen-xs-max) {
+    text-align: center;
+    .checkout_fastlane_header-left, .checkout_fastlane_header-right {
+      display: inline-block;
+      float: none;
+    }
+  }
+}
+
+.checkout_fastlane_header-left {
+  float: left;
+}
+
+@media(min-width: @screen-sm-min) {
+  .checkout_fastlane_header-right {
+    position: absolute;
+    right: (@grid-gutter-width / 2);
+    top: 10px;
+  }
+  .all-in-one-solutions-wrapper ~ .checkout_fastlane_header-right {
+    margin-top: @rhythmic-unit * 5;
+  }
+}
+
+.checkout_fastlane_header-right {
+  float: right;
+}
+
+.checkout_fastlane_back_button {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+
+  i + span {
+    margin-left: 10px;
+  }
+}

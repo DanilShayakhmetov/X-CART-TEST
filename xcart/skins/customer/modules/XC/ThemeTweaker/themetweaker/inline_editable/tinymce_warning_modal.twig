@@ -1,0 +1,11 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="inline_editor", weight="200")
+ #}
+
+{% if this.isTinymceWarningVisible() %}
+<xlite-themetweaker-modal :show="isTinymceWarningVisible" namespace="tinymceWarning">
+  <p slot="body" class="text-center">{{ t('Changes may be incompatible with TinyMCE. Are you sure to proceed?') }}</p>
+</xlite-themetweaker-modal>
+{% endif %}

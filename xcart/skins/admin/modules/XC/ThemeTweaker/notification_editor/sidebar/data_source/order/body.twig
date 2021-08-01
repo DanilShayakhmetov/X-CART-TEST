@@ -1,0 +1,15 @@
+{##
+ # Theme tweaker notitication editor order data widget
+ #}
+
+<div class="themeTweaker-order themeTweaker-data-widget">
+  <div class="title">{{ t('Order number') }}</div>
+  <div class="themeTweaker-data-widget-input themeTweaker-order-change-input">
+    {{ widget('\\XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Input\\Text\\AutoComplete',
+      fieldOnly=true,
+      fieldName='data[order]',
+      value=this.getValue(),
+      placeholder=t('Enter Order number'),
+      dictionary='theme_tweaker_order') }}
+  </div>
+</div>

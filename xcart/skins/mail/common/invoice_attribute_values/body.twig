@@ -1,0 +1,12 @@
+{##
+ # Display product attribute values in invoice
+ #}
+<li class="attributes">
+  {% for av in this.item.getAttributeValues() %}
+    <span>, </span>
+    <span class="option">
+      <span class="name">{{ av.getName() }}: </span>
+      <span class="value">{{ av.getValue() }}</span>
+    </span>
+  {% endfor %}
+</li>

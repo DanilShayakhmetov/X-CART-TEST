@@ -1,0 +1,5 @@
+Version 5.4.1.4
+
+Fixes (1)
+2020-10-15 - [Bug] USPS via PitneyBowes vs. Multivendor. The shipping method could not be configured by a vendor unless it had been configured by the root admin. Fixed. #BUG-8996 #USPS #MultiVendor
+

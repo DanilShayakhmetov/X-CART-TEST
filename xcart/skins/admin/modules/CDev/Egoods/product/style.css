@@ -1,0 +1,21 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attachment list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.product-attachments.items-list .list .cell.private,
+.product-attachments.items-list .list .cell.private .cell {
+  position: relative;
+}
+
+.product-attachments .lines .line.storage-url td:last-of-type {
+  position: relative;
+}
+
+.icon-type-s3:before {
+  background-image: url(files/s3.svg) !important;
+}

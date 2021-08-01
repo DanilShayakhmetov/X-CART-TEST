@@ -1,0 +1,681 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: wizard_state
+    category: 'XC\Onboarding'
+    type: hidden
+    value: 'visible' # possible states: 'visible', 'minimized', 'disabled'
+
+XLite\Model\LanguageLabel:
+  - name: "Add first product"
+    translations:
+      - code: en
+        label: "Add first product"
+      - code: ru
+        label: "Добавьте товар"
+  - name: "Upload company logo"
+    translations:
+      - code: en
+        label: "Upload company logo"
+      - code: ru
+        label: "Загрузите логотип"
+  - name: "Verify geo settings"
+    translations:
+      - code: en
+        label: "Verify geo settings"
+      - code: ru
+        label: "Проверьте геонастройки"
+  - name: "Set up shipping methods"
+    translations:
+      - code: en
+        label: "Set up shipping methods"
+      - code: ru
+        label: "Настройте доставку"
+  - name: "Set up payment gateways"
+    translations:
+      - code: en
+        label: "Set up payment gateways"
+      - code: ru
+        label: "Настройте прием платежей"
+
+  - name: "Save and go to the next step"
+    translations:
+      - code: en
+        label: "Save and go to the next step"
+      - code: ru
+        label: "Сохранить и перейти к следующему шагу"
+
+  - name: "Proceed to the next step"
+    translations:
+      - code: en
+        label: "Proceed to the next step"
+      - code: ru
+        label: "Перейти к следующему шагу"
+
+  - name: "Close wizard"
+    translations:
+      - code: en
+        label: "Close wizard"
+      - code: ru
+        label: "Закрыть помощник"
+
+  - name: "Skip this step"
+    translations:
+      - code: en
+        label: "Skip this step"
+      - code: ru
+        label: "Пропустить шаг"
+
+  - name: "The uploaded image is too large."
+    translations:
+      - code: en
+        label: "The uploaded image is too large. Please resize this image and try again."
+      - code: ru
+        label: "Слишком большое изображение. Пожалуйсте, уменьшите его и повторите попытку."
+
+  - name: "X% Wizard completion"
+    translations:
+      - code: en
+        label: "Your store is {{X}}% ready to accept the first order."
+      - code: ru
+        label: "Основные настройки магазина выполнены на {{X}}%"
+
+  - name: "Let’s set up your store"
+    translations:
+      - code: en
+        label: "Let’s set up your store."
+      - code: ru
+        label: "Приступим к настройке магазина"
+
+  - name: onboarding.intro.heading
+    translations:
+      - code: en
+        label: Welcome to X-Cart!
+      - code: ru
+        label: "Поздравляем! Ваш магазин установлен."
+
+  - name: onboarding.intro.text
+    translations:
+      - code: en
+        label: Let’s set up your online store in a few easy steps. Track your progress at the top.<br/>As soon as you hit 100%, you’re all set to accept the first order.
+      - code: ru
+        label: "Этот мастер настройки поможет пошагово выполнить основные настройки магазина.<br/>Пройдя его до конца, вы сможете принять свой первый заказ."
+
+  - name: onboarding.cloud.intro.text
+    translations:
+      - code: en
+        label: Let’s set up your online store in a few easy steps. Track your progress at the top.<br/>When all the icons turn green, you will be all set to accept the first order.
+
+  - name: onboarding.intro.next_button
+    translations:
+      - code: en
+        label: Let's set up your store
+      - code: ru
+        label: "Приступить к настройке магазина"
+
+  - name: onboarding.intro.later_button
+    translations:
+      - code: en
+        label: Skip and remind me later
+      - code: ru
+        label: "Закрыть и напомнить позднее"
+
+  - name: onboarding.intro.disable_button
+    translations:
+      - code: en
+        label: Close and don’t show again
+      - code: ru
+        label: "Закрыть и больше не показывать"
+
+  - name: onboarding.add_product.heading
+    translations:
+      - code: en
+        label: Add your first product
+      - code: ru
+        label: "Добавим первый товар?"
+
+  - name: onboarding.add_product.text
+    translations:
+      - code: en
+        label: Here it is, the best place to show your items to the world. Get started by adding a product name, picture and price.
+      - code: ru
+        label: "Укажите название товара, загрузите его изображение и задайте цену"
+
+  - name: onboarding.add_product.import
+    translations:
+      - code: en
+        label: Learn how to import products from .CSV file
+      - code: ru
+        label: "Как импортировать товары с помощью .CSV файла"
+
+  - name: "Add other options"
+    translations:
+      - code: en
+        label: "Add other options"
+      - code: ru
+        label: "Задать дополнительные настройки"
+
+  - name: "Enter product name"
+    translations:
+      - code: en
+        label: "Enter product name"
+      - code: ru
+        label: "Введите название товара"
+
+  - name: "Click here to upload product image"
+    translations:
+      - code: en
+        label: "Click here to upload product image"
+      - code: ru
+        label: "Загрузить картинку товара"
+
+  - name: "(like categories, weight, description, color)"
+    translations:
+      - code: en
+        label: "(weight, description, sale price)"
+      - code: ru
+        label: "(вес товара, описание, цена со скидкой)"
+
+# Product added step
+  - name: "You have added 1 product"
+    translations:
+      - code: en
+        label: "Good going! You've added 1 product"
+      - code: ru
+        label: "Прекрасно! Ваш товар добавлен."
+
+  - name: "The newly created product is already in your [storefront]. Have a look! Ready to delete demo products?"
+    translations:
+      - code: en
+        label: "The newly created product is already in your storefront. <a href='{{storefront}}' target='_blank' :href='productUrl'>Have a look!</a><br>Ready to delete demo products?"
+      - code: ru
+        label: "Посмотрите, как он будет выглядеть <a href='{{storefront}}' target='_blank' :href='productUrl'>на витрине магазина</a><br>. А теперь давайте удалим демо-товары."
+
+  - name: "The newly created product is already in your [storefront]. Have a look!"
+    translations:
+      - code: en
+        label: "The newly created product is already in your storefront. <a href='{{storefront}}' target='_blank' :href='productUrl'>Have a look!</a>"
+      - code: ru
+        label: "Посмотрите, как он будет выглядеть <a href='{{storefront}}' target='_blank' :href='productUrl'>на витрине магазина</a>"
+
+  - name: "I'll do it later"
+    translations:
+      - code: en
+        label: "I'll do it later"
+      - code: ru
+        label: "Я удалю их позднее"
+
+  - name: "Delete Demo products"
+    translations:
+      - code: en
+        label: "Delete demo products"
+      - code: ru
+        label: "Удалить демо-товары"
+
+  - name: "Ready to delete demo products?"
+    translations:
+      - code: en
+        label: "Ready to delete demo products?"
+      - code: ru
+        label: "Удалим демо-товары?"
+
+  - name: "Done! We ve just deleted all your demo products"
+    translations:
+      - code: en
+        label: "Done! We've just deleted all your demo products"
+      - code: ru
+        label: "Готово! Демо-товары удалены."
+
+  - name: "Add a few [more products] to your catalog or proceed to the next step - whatever makes you happy."
+    translations:
+      - code: en
+        label: "Add a few <a href='{{more}}' target='_blank'>more products</a> to your catalog or proceed to the next step — whatever makes you happy."
+      - code: ru
+        label: "Теперь можно <a href='{{more}}' target='_blank'>добавить еще один товар</a> в каталог.  А можно перейти к следующим настройкам."
+
+  - name: "You can view the newly created product in your [storefront] or add a few [more products] to your catalog."
+    translations:
+      - code: en
+        label: "You can view the newly created product in your <a href='{{storefront}}' target='_blank' :href='productUrl'>storefront</a> or add a few <a href='{{more}}' target='_blank'>more products</a> to your catalog."
+      - code: ru
+        label: "Посмотрите, как выглядит новый товар <a href='{{storefront}}' target='_blank' :href='productUrl'>на витрине</a> или <a href='{{more}}' target='_blank'>добавьте еще один товар</a> в каталог."
+
+# /Product added step
+
+# Company logo step
+  - name: "Upload your company logo"
+    translations:
+      - code: en
+        label: "Upload your company logo"
+      - code: ru
+        label: "Давайте добавим логотип компании"
+
+  - name: "Design your online store to fit your brand"
+    translations:
+      - code: en
+        label: "Design your online store to fit your brand"
+      - code: ru
+        label: "и тут сразу станет уютнее ;)"
+
+  - name: "Click here to upload your logo. Recommended 221x40px (PNG, JPG or SVG)"
+    translations:
+      - code: en
+        label: "<p>Click here to upload your logo. Recommended 221x40px (PNG, JPG, GIF)</p><button class='btn regular-button'>Upload & save new logo</button>"
+
+# /Company logo step
+
+# Company logo added step
+  - name: "Go to the next step"
+    translations:
+      - code: en
+        label: "Go to the next step"
+
+  - name: "Here is the way it looks like on desktop & mobile devices. Do you like it?"
+    translations:
+      - code: en
+        label: "Here is the way it looks like on desktop & mobile devices. Do you like it?"
+      - code: ru
+        label: "Вот как он будет выглядеть на экранах. Нравится?"
+
+  - name: "Open the storefront and check how it looks like on desktop."
+    translations:
+      - code: en
+        label: "<a href='{{shopUrl}}' target='_blank' >Open the storefront</a> and check how it looks like on desktop."
+
+  - name: "100% mobile-friendly eCommerce website templates, fully customizable, affordable, and open source."
+    translations:
+      - code: en
+        label: "100% mobile-friendly eCommerce website templates, fully customizable, affordable, and open source."
+
+  - name: "Visit the template store"
+    translations:
+      - code: en
+        label: "Visit the template store"
+
+  - name: "Upload a new logo"
+    translations:
+      - code: en
+        label: "Upload a new logo"
+      - code: ru
+        label: "Загрузить другой логотип"
+
+  - name: "Customize your store with Layout Editor option"
+    translations:
+      - code: en
+        label: "Learn how to customize your store with Layout Editor option"
+      - code: ru
+        label: "Как еще я могу изменить внешний вид своего магазина?"
+
+  - name: "(without writing a single line of code) - 2 min"
+    translations:
+      - code: en
+        label: "(without writing a single line of code) - 2 min"
+      - code: ru
+        label: "(за 2 минуты, и ни одной строчки кода!)"
+
+# /Company logo added step
+
+# Location step
+  - name: "Configure your geographic settings to connect with local customers"
+    translations:
+      - code: en
+        label: "Configure your geographic settings to connect with local customers"
+      - code: ru
+        label: "Давайте проверим географические и локализационные настройки"
+
+  - name: "We've tried to guess your country, currency and weight. Verify, please."
+    translations:
+      - code: en
+        label: "We've tried to guess your country, currency and weight. Verify, please."
+      - code: ru
+        label: "Мы попытались угадать страну, валюту и единицу измерения веса. Все верно?"
+
+  - name: "Ex."
+    translations:
+      - code: en
+        label: "Ex."
+      - code: ru
+        label: "Например,"
+
+  - name: "More localisation settings"
+    translations:
+      - code: en
+        label: "More localisation settings"
+      - code: ru
+        label: "Более детальные настройки"
+
+# /Location step
+
+# Company info step
+  - name: "Set your company info"
+    translations:
+      - code: en
+        label: "Set your company info"
+      - code: ru
+        label: "Добавьте информацию о компании"
+
+  - name: "We will use this info to create invoices, send emails and calculate shipping rates for your customers."
+    translations:
+      - code: en
+        label: "We will use this info to create invoices, send emails and calculate shipping rates for your customers."
+      - code: ru
+        label: "Эти данные будут отображаться в email-нотификациях, печататься на счете и использоваться для расчета стоимости доставки"
+
+# /Company info step
+
+# Tax rates step
+  - name: "Geo settings & company info are all set. Congrats!"
+    translations:
+      - code: en
+        label: "Geo settings & company info are all set. Congrats!"
+      - code: ru
+        label: "Прекрасно, локализацинные настройки и данные о компании обновлены"
+# /Tax rates step
+
+# Shipping step
+  - name: "Do you need to ship your products?"
+    translations:
+      - code: en
+        label: "Do you need to ship your products?"
+      - code: ru
+        label: "Ваши товары требуют доставки?"
+
+
+  - name: "Yes, I sell tangible goods that needed to be shipped"
+    translations:
+      - code: en
+        label: "Yes, I sell tangible goods that need to be shipped"
+      - code: ru
+        label: "Да, я продаю физические товары"
+
+  - name: "Set up shipping"
+    translations:
+      - code: en
+        label: "Set up shipping"
+      - code: ru
+        label: "Настроить доставку"
+
+  - name: "I sell digital goods or services and do not need to set up shipping"
+    translations:
+      - code: en
+        label: "I sell digital goods or services and do not need to set up shipping"
+      - code: ru
+        label: "Я продаю цифровые товары или сервисы, поэтому доставка не требуется"
+
+  - name: "Skip Shipping Step"
+    translations:
+      - code: en
+        label: "Mark all products as non-shippable"
+      - code: ru
+        label: "Отключить доставку товаров"
+
+# /Shipping step
+
+# Shipping rates step
+  - name: "Set flat shipping rates for your store"
+    translations:
+      - code: en
+        label: "Configure shipping rates for your store"
+      - code: ru
+        label: "Давайте настроим стоимость доставки"
+
+  - name: "Here you can manually define your shipping rates and etc."
+    translations:
+      - code: en
+        label: "Besides, you can manually define your shipping rates."
+      - code: ru
+        label: "Также, вы можете задать стоимость доставки вручную."
+
+  - name: "How to define shipping rates"
+    translations:
+      - code: en
+        label: "Learn how to define shipping rates"
+      - code: ru
+        label: "Прочитайте, как это сделать"
+
+  - name: "My shipping"
+    translations:
+      - code: en
+        label: "My shipping"
+      - code: ru
+        label: "Моя доставка"
+
+  - name: "Module settings (shipping_rates)"
+    translations:
+      - code: en
+        label: "Module settings"
+      - code: ru
+        label: "Настройки модуля"
+
+  - name: "Here you can add a flat-rate shipping method"
+    translations:
+      - code: en
+        label: "Here you can add a flat-rate shipping method"
+
+  - name: "More shipping methods"
+    translations:
+      - code: en
+        label: "More shipping methods"
+
+  - name: "Create shipping rate"
+    translations:
+      - code: en
+        label: "Create shipping rate"
+      - code: ru
+        label: "Сохранить новый тариф"
+
+  - name: "Bingo! You've added carrier as a shipping carrier"
+    translations:
+      - code: en
+        label: "Bingo! You've added {{carrier}} as a shipping carrier"
+      - code: ru
+        label: "Готово! {{carrier}} будет использоваться в магазине для расчета стоимости доставки"
+
+# /Shipping rates step
+
+# Shipping done step
+  - name: "You've successfully set up shipping areas and rates for your store"
+    translations:
+      - code: en
+        label: "You've successfully set up shipping areas and rates for your store"
+      - code: ru
+        label: "Зоны доставки и тарифы настроены"
+
+  - name: "Now you can define how shipping rates should be calculated based on  delivery time, weight and other parameters."
+    translations:
+      - code: en
+        label: "Now you can define how shipping rates should be calculated based on delivery time, weight and other parameters."
+      - code: ru
+        label: "Теперь вы можете настроить, как стоимость доставки будет изменяться в зависимости от времени доставки, веса и других параметров."
+
+  - name: "Advanced shipping settings"
+    translations:
+      - code: en
+        label: "Advanced shipping settings"
+      - code: ru
+        label: "Расширенные настройки стоимости доставки"
+
+# /Shipping done step
+
+# Payment step
+  - name: "Manage your payment options"
+    translations:
+      - code: en
+        label: "Manage your payment options"
+      - code: ru
+        label: "Настроим способы оплаты"
+
+  - name: "120+ supported payment gateways, such as PayPal, Authorize.net and etc."
+    translations:
+      - code: en
+        label: "120+ supported payment gateways, such as PayPal, Authorize.net and Opayo, will let you accept payments from all over the world in multiple currencies and languages, offline & online."
+      - code: ru
+        label: "Выберите из более чем 120 интеграций с платежными системами, включая Yandex.Кассу, Web-money и PayPal. Мы моддерживаем множество валют и языков, поэтому ваш магазин может работать для клиентов со всего мира."
+
+  - name: "Offline method"
+    translations:
+      - code: en
+        label: "Offline method"
+      - code: ru
+        label: "Оффлайн метод"
+
+  - name: "Online method"
+    translations:
+      - code: en
+        label: "Online method"
+      - code: ru
+        label: "Онлайн метод"
+
+  - name: "Some people simply prefer to place their orders by phone — let them do that."
+    translations:
+      - code: en
+        label: "Some people simply prefer to place their orders by phone — let them do that."
+      - code: ru
+        label: "Некоторые покупатели предпочитают оформить заказ по телефону - почему бы и нет?"
+
+  - name: "View all payment methods"
+    translations:
+      - code: en
+        label: "View all payment methods"
+
+  - name: "Launch (Paypal Onboarding)"
+    translations:
+      - code: en
+        label: "Launch"
+      - code: ru
+        label: "Подключить"
+
+# /Payment step
+
+# Payment done step
+  - name: "Excellent! Storefront is ready to get orders!"
+    translations:
+      - code: en
+        label: "Excellent! Storefront is ready to get orders!"
+
+  - name: "Go on, make your first sale."
+    translations:
+      - code: en
+        label: "Time to check how it works for your customers. Open the storefront to place a test order."
+      - code: ru
+        label: "Пора проверить, как все работает для покупателя. Перейдите к витрине, чтобы оформить тестовый заказ."
+
+# /Payment done step
+
+
+# Done step
+  - name: "Contact our expert"
+    translations:
+      - code: en
+        label: "Contact our expert"
+      - code: ru
+        label: "Свяжитесь с нами"
+
+  - name: "X-Cart professionals will easily materialize just about any idea you’ve got."
+    translations:
+      - code: en
+        label: "X-Cart professionals will easily materialize just about any idea you’ve got."
+      - code: ru
+        label: "Наши профессионалы помогут претворить в жизнь любые ваши идеи, даже самые смелые."
+
+  - name: "User manuals, release notes, modules, videos and more."
+    translations:
+      - code: en
+        label: "User manuals, release notes, modules, videos and more."
+      - code: ru
+        label: "Руководство по эксплуатации X-Cart и модулей, обучающие видео, описания новых версий и др."
+
+  - name: "Knowledge base"
+    translations:
+      - code: en
+        label: "Knowledge base"
+      - code: ru
+        label: "Инструкции пользователя"
+
+  - name: "Developer docs"
+    translations:
+      - code: en
+        label: "Developer docs"
+      - code: ru
+        label: "Документация для разработчиков"
+
+  - name: "See the tutorials and documentation about X-Cart store customization."
+    translations:
+      - code: en
+        label: "See the tutorials and documentation about X-Cart store customization."
+      - code: ru
+        label: "Все о модификациях дизайна и функционала магазинов на X-Cart"
+
+  - name: "Sales & Customer Service:"
+    translations:
+      - code: en
+        label: "Sales & Customer Service:"
+      - code: ru
+        label: "Позвоните нам"
+
+  - name: "International: phone"
+    translations:
+      - code: en
+        label: "International: {{phone}}"
+      - code: ru
+        label: "Международная линия: {{phone}}"
+
+  - name: "Sales & Customer Service: [phone]"
+    translations:
+      - code: en
+        label: "Sales & Customer Service: {{phone}}"
+      - code: ru
+        label: "Позвоните нам: {{phone}}"
+
+  - name: 'Find your payment method'
+    translations:
+      - code: en
+        label: 'Find your payment method'
+
+  - name: 'We support 120+ payment gateways'
+    translations:
+      - code: en
+        label: 'We support 120+ payment gateways'
+
+  - name: 'What about adding some marketing magic to your sales process?'
+    translations:
+      - code: en
+        label: 'What about adding some marketing magic to your sales process?'
+
+  - name: 'Browse Top Trending Tools'
+    translations:
+      - code: en
+        label: 'Browse Top Trending Tools'
+
+# /Done step
+
+  - { name: 'Could not save logo image', translations: [{ code: en, label: 'Could not save logo image' }]}
+  - { name: 'My Shipping', translations: [{ code: en, label: 'My Shipping' }]}
+  - { name: 'Onboarding Wizard', translations: [{ code: en, label: 'Onboarding Wizard' }]}
+  - { name: 'Name length must be less then {{length}}', translations: [{ code: en, label: 'Name length must be less then {{length}}' }]}
+  - { name: "OK, now let’s get your store ready for sales", translations: [{ code: en, label: "OK, now let’s get your store ready for sales" }]}
+  - { name: 'Your current domain is X', translations: [{ code: en, label: 'Your current domain is <strong>{{domain}}</strong>.' }]}
+  - { name: 'Payment Processing', translations: [{ code: en, label: 'Payment Processing' }]}
+  - { name: 'Choose the best way for customers to pay you.', translations: [{ code: en, label: 'Choose the best way for customers to pay you.' }]}
+  - { name: 'Activated! Your current domain is X', translations: [{ code: en, label: 'Activated! Your current domain is <strong>{{domain}}</strong>' }]}
+  - { name: 'Change domain name', translations: [{ code: en, label: 'Change domain name' }]}
+  - { name: 'Set it up', translations: [{ code: en, label: 'Set it up' }]}
+  - { name: 'Onboarding: Get shipping rates from major shipping carrier companies.', translations: [{ code: en, label: 'Get shipping rates from major shipping carrier companies.' }]}
+  - { name: 'Add your first product', translations: [{ code: en, label: 'Add your first product' }]}
+  - { name: 'Get started by adding a product name, picture and price.', translations: [{ code: en, label: 'Get started by adding a product name, picture and price.' }]}
+  - { name: 'Design your online store to fit your brand.', translations: [{ code: en, label: 'Design your online store to fit your brand.' }]}
+  - { name: 'Change logo', translations: [{ code: en, label: 'Change logo' }]}
+  - { name: 'Delete demo Catalog', translations: [{ code: en, label: 'Delete demo Catalog' }]}
+  - { name: 'Demo Catalog', translations: [{ code: en, label: 'Demo Catalog' }]}
+  - { name: "We have used a sample catalog to demonstrate X-Cart features. If you don't need it anymore you can delete all sample data.", translations: [{ code: en, label: "We have used a sample catalog to demonstrate X-Cart features. If you don't need it anymore you can delete all sample data." }]}
+  - { name: 'You’ve added your first product. Learn more about import products', translations: [{ code: en, label: 'You’ve added your first product. <a href="https://kb.x-cart.com/import-export/csv_format_by_x-cart_data_type/csv_import_products.html" target="_blank">Learn more about import products</a>' }]}
+  - { name: 'Your store has a logo! View the storefront', translations: [{ code: en, label: 'Your store has a logo! <a href="{{link}}" target="_blank">View the storefront</a>' }]}
+  - { name: 'You can now receive payments from your customers. Add more payment methods', translations: [{ code: en, label: 'You can now receive payments from your customers. <a href="{{link}}">Add more payment methods</a>' }]}
+  - { name: 'Delivery methods are configured. Add another shipping method', translations: [{ code: en, label: 'Delivery methods are configured. <a href="{{link}}">Add another shipping method</a>' }]}
+  - { name: 'The demo catalog has been deleted.', translations: [{ code: en, label: 'The demo catalog has been deleted.' }]}
+  - { name: 'Your store has its own domain address.', translations: [{ code: en, label: 'Your store has its own domain address.' }]}

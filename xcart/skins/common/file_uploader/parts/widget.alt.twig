@@ -1,0 +1,18 @@
+{##
+ # Change alt button
+ #}
+
+<div class="alt">
+  <div class="dropdown-toggle" data-toggle="dropdown">
+    <span>{{ t('alt') }}</span>
+  </div>
+  <div class="dropdown-menu" role="menu">
+    <input name="{{ this.getName() }}[alt]"
+           v-model="alt"
+           value="{{ this.getAlt() }}"
+           class="form-control input-alt"
+           @change="doChangeAlt"
+           @keydown="doChangeAlt"
+           @blur="doChangeAlt"/>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{##
+ # HTTPS Warning 
+ #
+ #}
+
+{% if this.isShowRegisterInfo() %}
+  <div class="alert alert-info" id="cloud-register-info">
+    {{ t('To comply PCI DSS requirements you are to setup a separate password to access X-Payments Cloud settings.') }}
+  </div>
+{% endif %}

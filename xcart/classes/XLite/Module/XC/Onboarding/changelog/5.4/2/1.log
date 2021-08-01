@@ -1,0 +1,5 @@
+Version 5.4.2.1
+
+Fixes (1)
+2020-12-03 - [Bug] Capitalize property was applied incorrectly to h-titles. Fixed. #XCB-20 #CDev-Core #XC-Onboarding
+

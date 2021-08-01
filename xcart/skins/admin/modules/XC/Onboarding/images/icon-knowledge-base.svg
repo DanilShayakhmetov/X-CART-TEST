@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Last_changes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon-knowledge-base" stroke="#708692" stroke-width="2">
+            <g id="Knowledge-base-icon" transform="translate(1.000000, 5.000000)">
+                <path d="M0.5,4.38462028 L0.5,38.4844425 C0.5,38.4844425 5.51744858,34.5873199 12.4897959,34.5873199 C19.4621433,34.5873199 24,38.4844425 24,38.4844425 C24,38.4844425 30.4121547,34.5873199 35.9897959,34.5873199 C41.5674371,34.5873199 47.5,38.4844425 47.5,38.4844425 L47.5,4.38462028 C47.5,4.38462028 42.2341444,0.358056301 35.9897959,0.487497744 C29.7454474,0.616939187 24,4.38462028 24,4.38462028 C24,4.38462028 18.1598922,0.487497744 12.4897959,0.487497744 C6.81969966,0.487497744 0.5,4.38462028 0.5,4.38462028 Z" id="Line"></path>
+                <polyline id="Line" points="33 1 33 15.8765096 36.5 13.3970913 40 16 40 1"></polyline>
+                <path d="M24.5,4.875 L24.5,38.025" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

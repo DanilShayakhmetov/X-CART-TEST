@@ -1,0 +1,61 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Setting page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.merchant-status-warning {
+  .bull {
+    margin-left: @rhythmic-unit;
+    margin-right: @rhythmic-unit / 4;
+  }
+}
+
+body.target-paypal-commerce-platform-settings > .wait-block-overlay {
+  position: fixed;
+  z-index: 10000;
+  height: 100% !important;
+  margin: 0 !important;
+
+  > .wait-block {
+    min-width: 0;
+    min-height: 0;
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border: 0;
+    border-radius: 100%;
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    box-shadow: 10px 10px @color-tip, -10px 10px @color-highlight, -10px -10px @color-tip, 10px -10px @color-highlight;
+    animation: spin-2 ease infinite 2s;
+
+    div {
+      background: none;
+    }
+  }
+}
+
+@keyframes spin-2 {
+  0%,
+  100% {
+    box-shadow: 10px 10px @color-tip, -10px 10px @color-highlight, -10px -10px @color-tip, 10px -10px @color-highlight;
+  }
+  25% {
+    box-shadow: -10px 10px @color-highlight, -10px -10px @color-tip, 10px -10px @color-highlight, 10px 10px @color-tip;
+  }
+  50% {
+    box-shadow: -10px -10px @color-tip, 10px -10px @color-highlight, 10px 10px @color-tip, -10px 10px @color-highlight;
+  }
+  75% {
+    box-shadow: 10px -10px @color-highlight, 10px 10px @color-tip, -10px 10px @color-highlight, -10px -10px @color-tip;
+  }
+}

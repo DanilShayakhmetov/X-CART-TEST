@@ -1,0 +1,5 @@
+Version 5.4.0.10
+
+Fixes (1)
+2021-01-14 - [Bug] REST API. "Allowed memory size of... exhausted" error when requesting orders by OrderNumber. Fixed. #XCB-268 #XC-RESTAPI
+

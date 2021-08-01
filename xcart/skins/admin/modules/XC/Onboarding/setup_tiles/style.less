@@ -1,0 +1,81 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Setup tiles widget styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-setup-tiles {
+  .onboarding-setup-tile {
+    &.onboarding-tile-hidden {
+      display: none;
+    }
+
+    &.completed-tile {
+      border-color: #6ab670;
+      background-color: rgba(102, 179, 107, 0.1);
+      padding: (@rhythmic-unit / 2) @rhythmic-unit;
+      min-height: auto;
+    }
+
+    .flex-display();
+    margin-top: 14px;
+    background-color: @color-light-blue;
+    border-radius: @border-radius-base;
+    border: 1px solid @brand-info;
+    min-height: @rhythmic-unit * 4;
+    padding: @rhythmic-unit;
+
+    > div {
+      .align-self(center);
+    }
+
+    .setup-tile-image {
+      margin-right: @rhythmic-unit;
+      min-width: 62px;
+      text-align: center;
+    }
+
+    .setup-tile-content {
+      flex-grow: 1;
+
+      h4 {
+        margin-bottom: @rhythmic-unit / 2;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .setup-tile-button {
+      margin-left: 32px;
+
+      > button {
+        min-width: 108px;
+      }
+    }
+
+    .setup-tile-close {
+      margin-left: 32px;
+      cursor: pointer;
+
+      svg {
+        max-width: 12px;
+        max-height: 12px;
+
+        polygon {
+          fill: @color-text-default;
+        }
+      }
+
+      &:hover {
+        svg polygon {
+          fill: @color-link;
+        }
+      }
+    }
+  }
+}

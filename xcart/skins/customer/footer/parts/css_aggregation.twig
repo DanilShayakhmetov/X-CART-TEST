@@ -1,0 +1,17 @@
+{##
+ # Footer part part
+ #
+ # @ListChild (list="footer", weight="100")
+ #}
+
+{% if this.doCSSAggregation() and this.doCSSOptimization() %}
+  {% for file in this.getAggregateCSSResources() %}
+    {% if this.isResourceSuitableForOptimization(file) %}
+    <script>
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '{{ this.getResourceURL(file.url, file) }}');
+      xhr.send('');
+    </script>
+    {% endif %}
+  {% endfor %}
+{% endif %}

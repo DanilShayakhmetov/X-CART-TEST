@@ -1,0 +1,6 @@
+Version 5.4.0.9
+
+Fixes (2)
+2020-06-22 - [Bug] Fatal error when creating a product tab with long brief_info. #BUG-8769 https://bt.x-cart.com/view.php?id=51858 #CustomProductTabs
+2020-04-27 - [Bug] On mobile devices, after clicking on the "learn more" link, the respective tab was not opened. Fixed. #BUG-8566 #Core #CrispWhiteSkin #CustomProductTabs
+

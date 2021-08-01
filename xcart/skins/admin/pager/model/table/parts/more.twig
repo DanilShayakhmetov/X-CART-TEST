@@ -1,0 +1,9 @@
+{##
+ # Last page
+ #
+ # @ListChild (list="pager.admin.model.table.left", weight="300")
+ #}
+
+{% if this.getMoreLink() %}
+  {{ widget('XLite\\View\\Button\\Link', location=this.getMoreLink(), label=this.getMoreLinkTitle(), style ="more-link-button") }}
+{% endif %}

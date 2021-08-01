@@ -1,0 +1,17 @@
+{##
+ # Wholesale prices table
+ #
+ # @ListChild (list="wholesale-quicklook.price.widgetlist", weight="10")
+ #}
+
+{% if this.wholesalePrice.quantityRangeEnd > 0 %}
+  <td>
+    {% if this.wholesalePrice.quantityRangeBegin != this.wholesalePrice.quantityRangeEnd %}
+      <span class="items-range">{{ this.wholesalePrice.quantityRangeBegin }}-{{ this.wholesalePrice.quantityRangeEnd }}</span>
+    {% endif %}
+    {% if this.wholesalePrice.quantityRangeBegin == this.wholesalePrice.quantityRangeEnd %}
+      <span class="items-range">{{ this.wholesalePrice.quantityRangeBegin }}</span>
+    {% endif %}
+    <span class="items-label">{{ t('items') }}</span>
+  </td>
+{% endif %}

@@ -1,0 +1,5 @@
+Version 5.4.0.6
+
+Fixes (1)
+2019-10-25 - [Bug] Horizontal scroll when opening the Onboarding wizard. Fixed. #BUG-8035 (Fedya Lavrentyev) #Onboarding
+

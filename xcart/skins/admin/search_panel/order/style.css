@@ -1,0 +1,22 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Orders list search panel styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.searchpanel-order-admin-main .search-conditions-box .paymentStatus-condition,
+.searchpanel-order-admin-main .search-conditions-box .shippingStatus-condition
+{
+  width: 190px;
+}
+
+.searchpanel-order-admin-main .search-conditions-box .dateRange-condition {
+  width: 280px;
+}
+
+.searchpanel-order-admin-main .search-conditions-box .search-conditions .dateRange-condition div.table-value input {
+  width: 240px;
+}

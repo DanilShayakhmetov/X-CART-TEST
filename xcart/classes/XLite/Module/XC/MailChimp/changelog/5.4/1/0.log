@@ -1,0 +1,9 @@
+Version 5.4.1.0
+
+Improvements (1)
+2019-11-29 - [Change] Implemented support for queues for events being transmitted to Mailchimp. #XCN-8747 https://bt.x-cart.com/view.php?id=49231 (Maxim Kuznetsov) #MailChimp
+
+Fixes (2)
+2019-10-08 - [Bug] Implemented uniform system behavior for user-invoked cancellation of processes (like generation of feeds, data removal, XML Sitemap generation, data uploading to MailChimp, etc.) #BUG-7458 (Shevelov Alexander) #Core #AmazonS3Images #XMLSitemap #MailChimp #BulkEditing #Facebook Commerce #GoogleFeed #YandexMarket
+2019-09-17 - [Bug] MailChimp. Existing subscribers were removed from the list of subscribers if they subscribed to news for a second time with the same email. Fixed. #BUG-7673 https://bt.x-cart.com/view.php?id=50842 (Nikita Erkhov) #MailChimp
+

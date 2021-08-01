@@ -1,0 +1,5 @@
+Version 5.4.1.2
+
+Fixes (1)
+2020-11-03 - [Bug] During the generation of an XML Sitemap the setting canonical_product_clean_urls_format was not taken into account. Fixed. #XCB-107 #CDev-XMLSitemap
+

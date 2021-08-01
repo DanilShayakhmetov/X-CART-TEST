@@ -1,0 +1,18 @@
+{##
+ # Export completed section
+ #}
+
+<div class="export-box export-completed-popup">
+
+  {% if (this.getCompleteMessage()) %}
+    <p class="export-completed-message">
+        {{ this.getCompleteMessage()|raw }}
+    </p>
+  {% endif %}
+
+  <div class="content">
+    {{ widget('XLite\\View\\Export\\Download', popupContext='true') }}
+  </div>
+
+</div>
+

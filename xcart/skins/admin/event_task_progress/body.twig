@@ -1,0 +1,28 @@
+{##
+ # Event task progress bar
+ #}
+<div class="{{ this.getCSSClasses() | join(' ') }}">
+  {% if this.isBlockingDriver() %}
+    {% if this.getBlockingNote() %}
+      <p class="progress-note">{{ this.getBlockingNote() }}</p>
+    {% endif %}
+  {% else %}
+    {% if this.getNonBlockingNote() %}
+      <p class="progress-note">{{ this.getNonBlockingNote() }}</p>
+    {% endif %}
+  {% endif %}
+
+  {% if this.getEventTitle() %}
+    <h3>{{ this.getEventTitle() }}</h3>
+  {% endif %}
+
+  <div class="{{ this.getProgressBarContainerClasses() | join(' ') }}" data-event="{{ this.getEvent() }}">
+    <div class="bar {{ this.getProgressBarClasses() | join(' ') }}" data-percent="{{ this.getPercent() }}" title="{{ this.getPercent() }}%"></div>
+  </div>
+
+  <div class="{{ this.getMessageClasses() | join(' ') }}">{{ this.getMessage() }}</div>
+
+  {% if this.showCancelButton() %}
+    {{ widget('XLite\\View\\Button\\Submit', label=t('Cancel'), style="progress-cancel") }}
+  {% endif %}
+</div>

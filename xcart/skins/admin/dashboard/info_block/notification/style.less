@@ -1,0 +1,49 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Dashboard info block notifications styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.infoblock-notifications {
+  h3 {
+    margin-top: @rhythmic-unit;
+    margin-bottom: 0;
+  }
+
+  .infoblock-notification {
+    .flex-display();
+    margin-top: @rhythmic-unit / 2;
+    background-color: @color-light-blue;
+    border-radius: @border-radius-base;
+    border: 1px solid @brand-info;
+    min-height: @rhythmic-unit * 2;
+    padding: @rhythmic-unit / 2;
+    width: 245px;
+
+    .notification-message {
+      .flex-grow(1);
+    }
+
+    svg {
+      max-width: 12px;
+      max-height: 12px;
+    }
+
+    svg polygon {
+      fill: @color-text-default;
+    }
+
+    .notification-close {
+      cursor: pointer;
+
+      &:hover {
+        svg polygon {
+          fill: @color-link;
+        }
+      }
+    }
+  }
+}

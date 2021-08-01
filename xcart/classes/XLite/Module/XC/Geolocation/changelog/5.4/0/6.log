@@ -1,0 +1,10 @@
+Version 5.4.0.6
+
+Improvements (2)
+2020-02-16 - [Change] Implemented support for PHP 7.4. #BUG-8207 #Core #Geolocation
+2020-01-09 - [Change] Now it is possible to link a language with a country so that when a customer's country is defined automatically by the customer's IP address, the language of that country can be enabled. #BUG-7012 #Core #Geolocation
+
+Fixes (2)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-01-28 - [Bug] For an anonymous user checking out, after changing the currency, in the customer address, the default state was replaced with the first state from the country's states list. Fixed. Now in such cases the state is not set. #BUG-8096 https://bt.x-cart.com/view.php?id=51215 #Geolocation
+

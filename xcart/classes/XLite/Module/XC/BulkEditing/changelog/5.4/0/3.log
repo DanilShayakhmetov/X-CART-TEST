@@ -1,0 +1,8 @@
+Version 5.4.0.3
+
+Fixes (4)
+2019-08-20 - [Bug] JS error when editing products with bulk edit. Fixed. #BUG-7811 (Shevelov Alexander) #BulkEditing
+2019-07-23 - [Bug] Ideas.x-cart.com URL updated for https://www.x-cart.com/contact-us.html #BUG-7712 (Maxim Kuznetsov) #Core #FileAttachments #PINCodes #RelatedProducts #BulkEditing #CustomProductTabs
+2019-07-18 - [Bug] JS error on the product details page in the Admin area. Fixed. #BUG-7722 (Fedya Lavrentyev) #Core #MarketPrice #Sale #Wholesale #FreeShipping #BulkEditing #Onboarding
+2019-07-03 - [Bug] Fatal error when attempting to open the bulk edit page for cloned products. Fixed. #BUG-7591 (Fedya Lavrentyev) #BulkEditing
+

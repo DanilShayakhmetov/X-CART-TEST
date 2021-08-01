@@ -1,0 +1,26 @@
+{##
+ # Tax rates step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <div class="step-contents">
+    <h2 class="heading">{{ t("Geo settings & company info are all set. Congrats!") }}</h2>
+
+    <div class="placeholder">
+      <img class="bg" src="{{ asset('modules/XC/Onboarding/images/map-bg.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/map-bg@2x.png') }} 2x">
+      <img class="grid" src="{{ asset('modules/XC/Onboarding/images/map-grid.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/map-grid@2x.png') }} 2x">
+      <img class="pin" src="{{ asset('modules/XC/Onboarding/images/map-pin.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/map-pin@2x.png') }} 2x">
+    </div>
+
+    <div class="buttons">
+      <div class="next-step">
+        {{ widget('XLite\\View\\Button\\Regular', label='Save and go to the next step', style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+      </div>
+    </div>
+  </div>
+</div>

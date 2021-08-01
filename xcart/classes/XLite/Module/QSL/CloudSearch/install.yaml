@@ -1,0 +1,59 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: api_key
+    category: QSL\CloudSearch
+    type: hidden
+  - name: secret_key
+    category: QSL\CloudSearch
+    type: hidden
+  - name: dashboard
+    category: QSL\CloudSearch
+    type: \XLite\Module\QSL\CloudSearch\View\FormField\Dashboard
+  - name: isCloudFiltersEnabled
+    category: QSL\CloudSearch
+    type: hidden
+    orderby: 20
+    value: Y
+    translations:
+      - code: en
+        option_name: Enable CloudFilters
+      - code: ru
+        option_name: Включить CloudFilters
+  - name: isAdminSearchEnabled
+    category: QSL\CloudSearch
+    type: hidden
+    orderby: 30
+    value: false
+    translations:
+      - code: en
+        option_name: Enable products search in X-Cart Admin using CloudSearch
+      - code: ru
+        option_name: Включить поиск продуктов в админке X-Cart используя CloudSearch
+  - name: planFeatures
+    category: QSL\CloudSearch
+    type: hidden
+
+XLite\Model\LanguageLabel:
+  - { name: "cs_showing_results_for", translations: [{ code: en, label: "Showing results for" }, { code: ru, label: "Показаны результаты для" }] }
+  - { name: "cs_see_details", translations: [{ code: en, label: "See details" }, { code: ru, label: "Подробнее" }] }
+  - { name: "cs_see_more_results_for", translations: [{ code: en, label: "See more results for" }, { code: ru, label: "Показать больше результатов для" }] }
+  - { name: "cs_suggestions", translations: [{ code: en, label: "Suggestions" }, { code: ru, label: "Предложения" }] }
+  - { name: "cs_products", translations: [{ code: en, label: "Products" }, { code: ru, label: "Товары" }] }
+  - { name: "cs_categories", translations: [{ code: en, label: "Categories" }, { code: ru, label: "Категории" }] }
+  - { name: "cs_pages", translations: [{ code: en, label: "Pages" }, { code: ru, label: "Страницы" }] }
+  - { name: "cs_manufacturers", translations: [{ code: en, label: "Manufacturers" }, { code: ru, label: "Производители" }] }
+  - { name: "cs_did_you_mean", translations: [{ code: en, label: "Did you mean" }, { code: ru, label: "Возможно, вы имели в виду" }] }
+  # CloudFilters
+  - { name: 'Filters', translations: [{ code: en, label: 'Filters' }, { code: ru, label: 'Фильтры' }] }
+  - { name: 'Reset all filters', translations: [{ code: en, label: 'Reset all filters' }, { code: ru, label: 'Сбросить все фильтры' }] }
+  - { name: 'Try clearing filters or different search terms.', translations: [{ code: en, label: 'Try clearing filters or different search terms.' }, { code: ru, label: 'Попробуйте сбросить фильтры или ввести другое условие поиска.' }] }
+  - { name: 'No products matching the current filtering criteria were found. Try clearing filters.', translations: [{ code: en, label: 'No products matching the current filtering criteria were found. Try clearing filters.' }, { code: ru, label: 'Товары, удовлетворяющие условиям фильтрации, не найдены. Попробуйте сбросить фильтры.' }] }
+  - { name: "CloudSearch sets default sort order to relevance", translations: [{ code: en, label: '<i class="fa fa-exclamation-triangle"></i> <a href="{{url}}">CloudSearch</a> sets default sort order to relevance.' }, { code: ru, label: '<i class="fa fa-exclamation-triangle"></i> Модуль <a href="{{url}}">CloudSearch</a> по умолчанию сортирует товары по релевантности.' }] }
+  - { name: 'Search & Filter', translations: [{ code: en, label: 'Search & Filter' }, { code: ru, label: 'Поиск и фильтры' }] }
+  - { name: 'Search & Filter Dashboard', translations: [{ code: en, label: 'Search & Filter Dashboard' }, { code: ru, label: 'Поиск и фильтры' }] }

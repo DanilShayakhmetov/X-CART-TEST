@@ -1,0 +1,68 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * File icons
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.icon-type-zip:before {
+  background-image: url(../images/files/zip.svg) !important;
+}
+
+.icon-type-image:before {
+  background-image: url(../images/files/image.svg) !important;
+}
+
+.icon-type-url:before {
+  background-image: url(../images/files/link.svg) !important;
+}
+
+.icon-type-pdf:before {
+  background-image: url(../images/files/pdf.svg) !important;
+}
+
+.icon-type-csv:before {
+  background-image: url(../images/files/csv.svg) !important;
+}
+
+.icon-type-exe:before {
+  background-image: url(../images/files/exe.svg) !important;
+}
+
+.icon-type-ps:before {
+  background-image: url(../images/files/ps.svg) !important;
+}
+
+.icon-type-ai:before {
+  background-image: url(../images/files/ai.svg) !important;
+}
+
+.icon-type-powerpoint:before {
+  background-image: url(../images/files/powerpoint.svg) !important;
+}
+
+.icon-type-music:before {
+  background-image: url(../images/files/music.svg) !important;
+}
+
+.icon-type-video:before {
+  background-image: url(../images/files/video.svg) !important;
+}
+
+.icon-type-doc:before {
+  background-image: url(../images/files/doc.svg) !important;
+}
+
+.icon-type-word:before {
+  background-image: url(../images/files/word.svg) !important;
+}
+
+.icon-type-default:before {
+  background-image: url(../images/files/text.svg) !important;
+}
+
+.icon-type-no:before {
+  background-image: url(../images/files/no-type.svg) !important;
+}

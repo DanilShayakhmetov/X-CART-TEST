@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: 'authorize_key_help'
+    translations:
+      - code: en
+        label: "<p>To obtain the transaction key from the Merchant Interface, do the following:</p><ul class='custom-disc'><li>Log into the Merchant Interface</li><li>Select Settings from the Main Menu</li><li>Click on Obtain Transaction Key in the Security section</li><li>Type in the answer to the secret question configured on setup</li><li>Click Submit</li></ul>"
+  - name: 'Relay Response URL note'
+    translations:
+      - code: en
+        label: "Add this URL as the default Relay Response URL to the <b>Account</b> -> <b>Response/Receipt URLs</b> section in the <a href='https://account.authorize.net'>Merchant Interface</a>."

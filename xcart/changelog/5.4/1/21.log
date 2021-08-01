@@ -1,0 +1,15 @@
+Version 5.4.1.21
+
+Improvements (2)
+2020-12-02 - [Story] Single-value product options can now be displayed in the "Add to cart" block on the product page. #XCC-901 #CDev-Core #XC-CrispWhiteSkin
+2020-12-04 - [Task] Added a link to Tax classes on the page for editing the details of a product. #XCB-159 #CDev-Core
+
+Fixes (7)
+2020-12-09 - [Bug] Layout issues in the Service Tool and X-Cart Admin area if using Safari. Fixed. #XCB-180 #CDev-Core
+2020-12-08 - [Bug] Import error if the default language was other than English. Fixed. #XCB-172 #CDev-Core
+2020-12-01 - [Bug] An error in the process of import if the default language was other than English. Fixed. #XCB-136 #CDev-Core
+2020-12-07 - [Bug] Product import. The number of lines that had been checked during an import process was counted incorrectly. Fixed. #XCB-78 #CDev-Core
+2020-11-17 - [Bug] After cloning a product with a non-default sort order of attributes, the sort order of attributes was not retained on the clone product. Fixed. #XCB-48 #CDev-Core
+2020-12-07 - [Bug] Shop by brand. A brand name got duplicated on the /?target=brands page on the storefront after creating another product of that brand in a language other than English. Fixed. #XCB-29 #CDev-Core
+2020-12-03 - [Bug] Capitalize property was applied incorrectly to h-titles. Fixed. #XCB-20 #CDev-Core #XC-Onboarding
+

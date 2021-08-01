@@ -1,0 +1,194 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Task:
+  - owner: XLite\Module\XC\MailChimp\Core\Task\UpdateLists
+
+XLite\Model\Config:
+  - name: 'settings_page_heading'
+    category: XC\MailChimp
+    type: hidden
+    orderby: 50
+    translations:
+      - code: en
+        option_name: 'Mailchimp Lists'
+  - name: 'mailChimpSeparator'
+    category: XC\MailChimp
+    type: separator
+    orderby: 100
+    translations:
+      - code: en
+        option_name: 'Mailchimp settings'
+  - name: 'mailChimpAPIKey'
+    category: XC\MailChimp
+    type: text
+    orderby: 200
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Mailchimp API key'
+  - name: 'analytics360enabled'
+    category: XC\MailChimp
+    type: \XLite\View\FormField\Input\Checkbox\OnOff
+    orderby: 300
+    value: true
+    translations:
+      - code: en
+        option_name: 'Enable E-commerce analytics'
+  - name: 'abandonedCartEnabled'
+    category: XC\MailChimp
+    type: \XLite\View\FormField\Input\Checkbox\OnOff
+    orderby: 350
+    value: false
+    translations:
+      - code: en
+        option_name: 'Enable Abandoned Carts'
+  - name: 'defaultAutomationListId'
+    category: XC\MailChimp
+    type: \XLite\Module\XC\MailChimp\View\FormField\Select\Lists
+    orderby: 375
+    value: false
+    translations:
+      - code: en
+        option_name: 'Default list for automatic campaigns'
+  - name: 'doubleOptinDisabled'
+    category: XC\MailChimp
+    type: \XLite\View\FormField\Input\Checkbox\OnOff
+    orderby: 400
+    value: false
+    translations:
+      - code: en
+        option_name: 'Enable single opt-in for customers'
+        option_comment: 'When this option is enabled customers are not prompted to confirm the subscription by email (contrary to double opt-in). Abusing this option might get your account banned by Mailchimp.'
+  - name: 'subscriptionElementType'
+    category: XC\MailChimp
+    type: XLite\Module\XC\MailChimp\View\FormField\Select\ElementType
+    orderby: 500
+    value: 'checkbox'
+    translations:
+      - code: en
+        option_name: 'Subscription select element type'
+        option_comment: 'This option controls the way your customers select a subscription. Select box allows subscription to only one mail list while check box allows subscription to multiple lists. For Checkout page always stays checkbox.'
+  - name: 'updateInterval'
+    category: XC\MailChimp
+    type: XLite\Module\XC\MailChimp\View\FormField\Select\UpdateInterval
+    orderby: 600
+    value: 'never'
+    translations:
+      - code: en
+        option_name: 'Update Mailchimp lists every'
+        option_comment: 'Select the time interval for the periodical list updates.'
+  - name: 'send_coupons'
+    category: XC\MailChimp
+    type: XLite\Module\XC\MailChimp\View\FormField\Select\SendCoupons
+    orderby: 700
+    value: 'all'
+    translations:
+      - code: en
+        option_name: 'Type of discount coupons that should be uploaded to Mailchimp'
+        option_comment: 'The Mailchimp promo rules are:<br> - Code<br> - Discount amount<br> - Active from<br> - Active till <br>Discount coupons configured using any rules outside this rule set will be treated as not matching the Mailchimp rules.'
+      - code: ru
+        option_name: 'Тип купонов на скидку, который следует загружать в Mailchimp'
+        option_comment: 'Промо-правила Mailchimp: <br> - Код<br> - Сумма скидки<br> - Активен с<br> - Активен по <br>Купоны, настроенные с использованием каких-либо правил сверх этого набора, будут считаться не соответствующим промо-правилам Mailchimp.'
+  - name: 'mcjs'
+    category: XC\MailChimp
+    type: textarea
+    orderby: 800
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Site connection code'
+        option_comment: 'The connection code will appear here automatically once you upload store data to MailChimp. Alternatively, you can connect MailChimp subscription popup via Custom Website integration code. Add your site to the MailChimp account and paste here the connection code.'
+      - code: ru
+        option_name: 'Код подключения сайта'
+        option_comment: 'Код появится автоматически после загрузки данных магазина в MailChimp. Также вы можете самостоятельно присоединить магазин, скопировав код подключения в это поле.'
+
+
+XLite\Model\LanguageLabel:
+  - { name: 'MailChimp', translations: [{ code: en, label: 'Mailchimp' }] }
+  - { name: 'Mailсhimp Integration with eCommerce Support', translations: [{ code: en, label: 'Mailсhimp Integration with eCommerce Support' }] }
+  - { name: 'Type: select box', translations: [{ code: en, label: 'Type: select box' }] }
+  - { name: 'Type: checkbox', translations: [{ code: en, label: 'Type: checkbox' }] }
+  - { name: 'MailChimp is an email marketing service with powerful tools to manage your email campaigns and subscribers while gathering advanced analytics information on your campaign performance.', translations: [{ code: en, label: 'Mailchimp is an email marketing service with powerful tools to manage your email campaigns and subscribers while gathering advanced analytics information on your campaign performance.' }] }
+  - { name: 'Update MailChimp Lists', translations: [{ code: en, label: 'Update Mailchimp Lists' }] }
+  - { name: 'MailChimp Lists', translations: [{ code: en, label: 'Mailchimp Lists' }] }
+  - { name: 'MailChimp list segments', translations: [{ code: en, label: 'Mailchimp "{{list_name}}" list segments' }] }
+  - { name: 'MailChimp segment settings', translations: [{ code: en, label: 'Mailchimp segment settings' }] }
+  - { name: 'Subscription', translations: [{ code: en, label: 'Subscription' }] }
+  - { name: 'Subscribe to our news list and be in touch with our latest offers.', translations: [{ code: en, label: 'Subscribe to our news list and be in touch with our latest offers.' }] }
+  - { name: 'News list subscriptions', translations: [{ code: en, label: 'News list subscriptions' }] }
+  - { name: 'Select box', translations: [{ code: en, label: 'Select box' }] }
+  - { name: 'Filter by order frequency', translations: [{ code: en, label: 'Filter by order frequency' }] }
+  - { name: 'Orders last month', translations: [{ code: en, label: 'Orders last month' }] }
+  - { name: 'Filter by order amount', translations: [{ code: en, label: 'Filter by order amount' }] }
+  - { name: 'Total amount of orders', translations: [{ code: en, label: 'Total amount of orders' }] }
+  - { name: 'Filter by profile membership', translations: [{ code: en, label: 'Filter by profile membership' }] }
+  - { name: 'Memberships', translations: [{ code: en, label: 'Memberships' }] }
+  - { name: 'Filter by specific products', translations: [{ code: en, label: 'Filter by specific products' }] }
+  - { name: 'Products', translations: [{ code: en, label: 'Products' }] }
+  - { name: 'Segment condition', translations: [{ code: en, label: 'Segment condition' }] }
+  - { name: 'here', translations: [{ code: en, label: 'here' }] }
+  - { name: 'Month', translations: [{ code: en, label: 'Month' }] }
+  - { name: 'Static', translations: [{ code: en, label: 'Static' }] }
+  - { name: 'Auto-Updated', translations: [{ code: en, label: 'Auto-Updated' }] }
+  - { name: 'No subscription', translations: [{ code: en, label: 'No subscription' }] }
+  - { name: 'Web ID', translations: [{ code: en, label: 'Web ID' }] }
+  - { name: 'List rating', translations: [{ code: en, label: 'List rating' }] }
+  - { name: 'Members count', translations: [{ code: en, label: 'Members count' }] }
+  - { name: 'Open rate', translations: [{ code: en, label: 'Open rate' }] }
+  - { name: 'Click rate', translations: [{ code: en, label: 'Click rate' }] }
+  - { name: 'Selected by default', translations: [{ code: en, label: 'Selected by default' }] }
+  - { name: 'Allow this product to be used as a MailChimp segment condition', translations: [{ code: en, label: 'Allow this product to be used as a Mailchimp segment condition' }] }
+  - { name: 'Never', translations: [{ code: en, label: 'Never' }] }
+  - { name: '1 minute', translations: [{ code: en, label: '1 minute' }] }
+  - { name: '10 minutes', translations: [{ code: en, label: '10 minutes' }] }
+  - { name: '15 minutes', translations: [{ code: en, label: '15 minutes' }] }
+  - { name: '30 minutes', translations: [{ code: en, label: '30 minutes' }] }
+  - { name: '1 hour', translations: [{ code: en, label: '1 hour' }] }
+  - { name: '2 hours', translations: [{ code: en, label: '2 hours' }] }
+  - { name: '4 hours', translations: [{ code: en, label: '4 hours' }] }
+  - { name: '6 hours', translations: [{ code: en, label: '6 hours' }] }
+  - { name: '12 hours', translations: [{ code: en, label: '12 hours' }] }
+  - { name: '1 day', translations: [{ code: en, label: '1 day' }] }
+  - { name: '2 days', translations: [{ code: en, label: '2 days' }] }
+  - { name: '5 days', translations: [{ code: en, label: '5 days' }] }
+  - { name: '1 week', translations: [{ code: en, label: '1 week' }] }
+  - { name: 'MailChimp lists update', translations: [{ code: en, label: 'Mailchimp lists update' }] }
+  - { name: 'First name or last name are empty. Please add a new address to your address book or modify existing and fill in those fields in order to subscribe to this list.', translations: [{ code: en, label: 'First name or last name are empty. Please add a new address to your address book or modify existing and fill in those fields in order to subscribe to this list.' }] }
+  - { name: 'Back to segments list', translations: [{ code: en, label: 'Back to segments list' }] }
+  - { name: 'Subscribe by default', translations: [{ code: en, label: 'Subscribe by default' }] }
+
+  - { name: 'MailChimp list groups', translations: [{ code: en, label: 'Groups of Mailchimp news list "{{list_name}}"' }] }
+  - { name: 'MailChimp list group names', translations: [{ code: en, label: 'Group names of Mailchimp group "{{group_name}}"' }] }
+  - { name: 'Sign up for news and updates from your favorite store. Be the first to know about exclusive sales, offers and deals.', translations: [{ code: en, label: 'Sign up for news and updates from your favorite store. Be the first to know about exclusive sales, offers and deals.' }] }
+  - { name: 'Sign up for <Company name> news, sales and deals', translations: [{ code: en, label: 'Sign up for {{company_name}} news, sales and deals' }] }
+  - { name: 'Here you can view and manage the MailChimp news lists and groups of the user.', translations: [{ code: en, label: 'Here you can view and manage the Mailchimp news lists and groups of the user.' }] }
+  - { name: 'Groups', translations: [{ code: en, label: 'Groups' }] }
+  - { name: 'E-Commerce features setup', translations: [{ code: en, label: 'E-Commerce features setup' }] }
+  - { name: 'Upload store data to MailChimp', translations: [{ code: en, label: 'Upload store data to Mailchimp' }] }
+  - { name: '_MailChimp ecommerce info text_', translations: [{ code: en, label: 'Upload store data to Mailchimp to promote more efficient Mailchimp Product Recommendations and Abandoned Carts. Before clicking the button, select the lists for which you want Mailchimp "stores" to be created. A "store" is a collection of products, orders, carts and customers. Mailchimp will create the "stores" and will connect them with the lists you have specified. Store data from X-Cart will be uploaded for these specific stores.<br><a href="{{url}}" target="_blank">Learn more about Mailchimp e-Commerce features</a>' }] }
+
+  - { name: 'mailchimp_settings_promo_text', translations: [{ code: en, label: 'Whether you need to draw attention to certain products, share some big news, or tell a story, our campaign builder makes it easy to create email campaigns that best suit your message.' }] }
+  - { name: 'Connect with your MailChimp account', translations: [{ code: en, label: 'Connect with your Mailchimp account' }] }
+  - { name: 'Reconnect with your MailChimp account', translations: [{ code: en, label: 'Reset Mailchimp connection' }] }
+  - { name: 'Install Mailchimp addon', translations: [{ code: en, label: 'Install Mailchimp addon' }] }
+  - { name: 'Enter your MailChimp API key manually', translations: [{ code: en, label: 'Enter your Mailchimp API key manually' }] }
+  - { name: 'e-Commerce Analytics disable warning', translations: [{ code: en, label: "The e-Commerce Analytics feature is the core component of the integration functionality." }] }
+  - { name: 'send all discount coupons', translations: [{ code: en, label: "All discount coupons" }] }
+  - { name: 'send only discount coupons with matched rules', translations: [{ code: en, label: "Only the discount coupons that match the Mailchimp promo rules" }] }
+
+  - { name: 'Cannot authenticate', translations: [{ code: en, label: 'Cannot authenticate' }]}
+  - { name: 'ID', translations: [{ code: en, label: 'ID' }]}
+  - { name: 'MailChimp lists', translations: [{ code: en, label: 'Mailchimp lists' }]}
+  - { name: 'MailChimp settings', translations: [{ code: en, label: 'Mailchimp settings' }]}
+  - { name: 'Manage segments', translations: [{ code: en, label: 'Manage segments' }]}
+  - { name: 'No groups defined', translations: [{ code: en, label: 'No groups defined' }]}
+  - { name: 'No segments', translations: [{ code: en, label: 'No segments' }]}
+  - { name: 'Successfully authenticated', translations: [{ code: en, label: 'Successfully authenticated' }]}
+  - { name: 'Update store data', translations: [{ code: en, label: 'Update store data' }]}
+  - { name: 'Uploading data has been completed successfully.', translations: [{ code: en, label: 'Uploading data has been completed successfully.' }]}
+  - { name: 'Uploading data has been stopped.', translations: [{ code: en, label: 'Uploading data has been stopped.' }]}

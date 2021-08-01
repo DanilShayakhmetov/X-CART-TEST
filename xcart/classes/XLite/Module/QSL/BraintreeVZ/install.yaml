@@ -1,0 +1,61 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: PayPal powered by Braintree
+    class: Module\QSL\BraintreeVZ\Model\Payment\Processor\BraintreeVZ
+    type: A
+    orderby: -101950
+    adminOrderby: -101950
+    countries: [US, UK, FR, IT, ES]
+    translations:
+      - code: en
+        name: PayPal powered by Braintree
+        adminDescription: "Supported countries: US, UK, France, Italy & Spain."
+    settings:
+      - name: prefix
+      - name: merchantId
+      - name: accessToken
+      - name: refreshToken
+      - name: merchantAccountId
+      - name: kountMerchantId
+      - name: isAutoSettle
+        value: 0
+      - name: testMode
+        value: 1
+      - name: isPayPal
+        value: 0
+      - name: paypalButtonColor
+        value: 'gold'
+      - name: paypalButtonShape
+        value: 'pill'
+      - name: paypalShippingAddressOverride
+        value: 1
+      - name: is3dSecure
+        value: 0
+      - name: isAcceptNo3dSecure
+        value: 0
+      - name: is3dSecureForVault
+        value: 0
+      - name: isUseVault
+        value: 1
+      - name: isShowSaveCardBox
+        value: 1
+      - name: isApplePay
+        value: 0
+      - name: isGooglePay
+        value: 0
+      - name: googleMerchantId
+      - name: googlePaymentButtonColor
+        value: 'default'
+      - name: googlePaymentButtonType
+        value: 'long'
+XLite\Model\LanguageLabel:
+  - { name: "braintree_merchant_account_id_help", translations: [{ code: en, label: "While merchant account ID and merchant ID sound similar, they are different values with distinct purposes.<br/><br/>Your <strong>merchant ID</strong> is a unique identifier for your entire gateway account.<br/><br/>Your <strong>merchant account ID</strong> is a unique identifier for a specific merchant account. Within your Braintree gateway, you can have multiple merchant accounts to process transactions for different businesses or currencies. If you have a single merchant account, it is not necessary to specify a merchant account ID in your API requests. If you have multiple merchant accounts and choose not to specify the merchant account ID, all requests will process through your default merchant account" }] }
+  - { name: "braintree_paypal_shipping_override_help", translations: [{ code: en, label: "Select <strong>Yes</strong> if you want to pass a shipping address from X-Cart checkout into the PayPal payment flow" }] }
+  - { name: "braintree_settings_google_payment_button_color_help", translations: [{ code: en, label: "<strong>Default</strong>: A Google-selected default value. Currently black but it may change over time (default).<br><strong>Black</strong>: A black button suitable for use on white or light backgrounds.<br><strong>White</strong>: A white button suitable for use on colorful backgrounds." }] }
+  - { name: "braintree_settings_google_payment_button_type_help", translations: [{ code: en, label: "<strong>Long</strong>: \"Buy with Google Pay\" button (default). A translated button label may appear if a language specified in the viewer's browser matches an available language.<br><strong>Short</strong>: Google Pay payment button without the \"Buy with\" text." }] }

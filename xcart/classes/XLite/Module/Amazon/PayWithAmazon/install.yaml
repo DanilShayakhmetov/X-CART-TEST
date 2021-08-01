@@ -1,0 +1,171 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  -
+    service_name: PayWithAmazon
+    class: Module\Amazon\PayWithAmazon\Model\Payment\Processor\PayWithAmazon
+    type: C
+    orderby: -101600
+    adminOrderby: -101600
+    countries: [AT, BE, CH, CY, DE, DK, ES, FR, GB, HU, IE, IT, JP, LU, NL, PT, SE, US]
+    translations: [{ code: en, name: 'Amazon Pay' }]
+    settings: [{ name: merchant_id }, { name: mode }, { name: access_key }, { name: secret_key }, { name: client_id }, { name: region, value: USD }, { name: capture_mode, value: C }, { name: sync_mode, value: S }, { name: order_id_prefix }]
+XLite\Model\LanguageLabel:
+  -
+    name: 'The "Pay With Amazon" feature is not configured and cannot be used.'
+    translations: [{ code: en, label: 'The "Amazon Pay" feature is not configured and cannot be used.' }]
+  -
+    name: 'The "Pay with Amazon" feature requires https to be properly set up for your store.'
+    translations: [{ code: en, label: 'The "Amazon Pay" feature requires https to be <a href="{{url}}">properly set up</a> for your store.' }]
+  -
+    name: 'Amazon Seller ID'
+    translations: [{ code: en, label: 'Amazon Seller ID' }]
+  -
+    name: 'If you do not have seller account, you can register here: USA UK Germany'
+    translations: [{ code: en, label: 'If you do not have seller account, you can register here:<br /><a href="https://payments.amazon.com/signup?LD=SPEXUSAPA_XCart_core" target="_blank">USA</a>,&nbsp;<a href="https://payments.amazon.co.uk/preregistration/lpa?LD=SPEXUKAPA_XCart_core" target="_blank">UK</a>,&nbsp;<a href="https://payments.amazon.de/preregistration/lpa?LD=SPEXDEAPA_XCart_core" target="_blank">Germany</a>' }]
+  -
+    name: 'Operation mode'
+    translations: [{ code: en, label: 'Operation mode' }]
+  -
+    name: 'Access Key ID'
+    translations: [{ code: en, label: 'Access Key ID' }]
+  -
+    name: 'Secret Access Key'
+    translations: [{ code: en, label: 'Secret Access Key' }]
+  -
+    name: 'Client ID'
+    translations: [{ code: en, label: 'Client ID' }]
+  -
+    name: 'Register your website as an application on the Login with Amazon App Console.'
+    translations: [{ code: en, label: 'Register your website as an application on the <a href="http://login.amazon.com/manageApps" trget="_blank">Login with Amazon App Console</a>. For more information, see the <a href="https://images-na.ssl-images-amazon.com/images/G/01/lwa/dev/docs/website-gsg._TTH_.pdf" target="_blank">Login with Amazon Getting Started Guide</a>. A client identifier (Client ID) is set when you register your website. You will need this identifier for your integration.' }]
+  -
+    name: 'Country of Merchant account'
+    translations: [{ code: en, label: 'Country of Merchant account' }]
+  -
+    name: 'Capture mode'
+    translations: [{ code: en, label: 'Capture mode' }]
+  -
+    name: 'Type of authorization request'
+    translations: [{ code: en, label: 'Type of authorization request' }]
+  -
+    name: 'OrderId prefix'
+    translations: [{ code: en, label: 'OrderId prefix' }]
+  -
+    name: 'Pay with Amazon'
+    translations: [{ code: en, label: 'Amazon Pay' }]
+  -
+    name: AmazonRefresh
+    translations: [{ code: en, label: Refresh }]
+  -
+    name: AmazonRefundRefresh
+    translations: [{ code: en, label: 'Refund refresh' }]
+  -
+    name: 'Authorization status: {{status}}'
+    translations: [{ code: en, label: 'Authorization status: {{status}}' }]
+  -
+    name: 'Refund status: {{status}}'
+    translations: [{ code: en, label: 'Refund status: {{status}}' }]
+  -
+    name: 'Payment has been captured successfully.'
+    translations: [{ code: en, label: 'Payment has been captured successfully.' }]
+  -
+    name: 'Payment capture error: {{error}}'
+    translations: [{ code: en, label: 'Payment capture error: {{error}}' }]
+  -
+    name: 'Payment have been voided successfully.'
+    translations: [{ code: en, label: 'Payment have been voided successfully.' }]
+  -
+    name: 'Payment void error: {{error}}'
+    translations: [{ code: en, label: 'Payment void error: {{error}}' }]
+  -
+    name: 'Payment has been refunded successfully.'
+    translations: [{ code: en, label: 'Payment has been refunded successfully.' }]
+  -
+    name: 'Refund is in progress...'
+    translations: [{ code: en, label: 'Refund is in progress...' }]
+  -
+    name: 'Payment refund error: {{error}}'
+    translations: [{ code: en, label: 'Payment refund error: {{error}}' }]
+  -
+    name: 'Payment has been authorized successfully.'
+    translations: [{ code: en, label: 'Payment has been authorized successfully.' }]
+  -
+    name: 'Payment has been declined.'
+    translations: [{ code: en, label: 'Payment has been declined.' }]
+  -
+    name: 'Payment transaction is in progress...'
+    translations: [{ code: en, label: 'Payment transaction is in progress...' }]
+  -
+    name: 'That payment method was not accepted for this transaction. Please choose another.'
+    translations: [{ code: en, label: 'That payment method was not accepted for this transaction. Please choose another.' }]
+  -
+    name: 'Amazon has rejected the authorisation.'
+    translations: [{ code: en, label: 'Amazon has rejected the authorisation.' }]
+  -
+    name: 'Amazon could not process the transaction due to an internal processing error.'
+    translations: [{ code: en, label: 'Amazon could not process the transaction due to an internal processing error.' }]
+  -
+    name: 'Amazon callback URL help'
+    translations: [{ code: en, label: 'To ensure that the status of payments in your store is updated automatically after Amazon processes the respective payment requests, you need to set up the endpoints.<br/><br/>Log in to Seller Central and select ''Integration Settings'' from the Settings drop-down box.<br/>Click Edit under the ''Instant Notifications Settings'' section and enter the Callback URL provided here into the ''Merchant URL'' field.' }]
+  -
+    name: 'Amazon Order Ref ID'
+    translations: [{ code: en, label: 'Amazon Order Ref ID' }]
+  -
+    name: 'Callback URL'
+    translations: [{ code: en, label: 'Callback URL' }]
+  -
+    name: 'Immediate Charge'
+    translations: [{ code: en, label: 'Immediate Charge' }]
+  -
+    name: 'PayWithAmazon available actions'
+    translations: [{ code: en, label: 'PayWithAmazon available actions' }]
+  -
+    name: 'Payment refresh error: {{error}}'
+    translations: [{ code: en, label: 'Payment refresh error: {{error}}' }]
+  -
+    name: 'Refresh status'
+    translations: [{ code: en, label: 'Refresh status' }]
+  -
+    name: 'Refund status'
+    translations: [{ code: en, label: 'Refund status' }]
+  -
+    name: 'This operation will cancel order. Payment authorization will be voided. Please confirm to proceed.'
+    translations: [{ code: en, label: 'This operation will cancel order. Payment authorization will be voided. Please confirm to proceed.' }]
+  -
+    name: 'This operation will capture funds from customer. Please confirm to proceed.'
+    translations: [{ code: en, label: 'This operation will capture funds from customer. Please confirm to proceed.' }]
+  -
+    name: 'This operation will refund funds to customer. Please confirm to proceed.'
+    translations: [{ code: en, label: 'This operation will refund funds to customer. Please confirm to proceed.' }]
+  -
+    name: 'Use existing Amazon account'
+    translations: [{ code: en, label: 'Use existing Amazon account' }]
+  -
+    name: 'Your payment could not be processed. Please try to place the order again using another payment method.'
+    translations: [{ code: en, label: 'Your payment could not be processed. Please try to place the order again using another payment method.' }]
+  -
+    name: 'Your payment could not be processed, please follow the instructions in the payment method box.'
+    translations: [{ code: en, label: 'Your payment could not be processed, please follow the instructions in the payment method box.' }]
+  -
+    name: 'Amazon Pay was not able to process your payment.'
+    translations: [{ code: en, label: 'Amazon Pay was not able to process your payment.<br/> Please go to <a href="{{amazon_link}}" target="_blank">this page</a> and update the payment information for your order. Afterwards we will automatically request payment again from Amazon Pay and you will receive a confirmation email.' }]
+  -
+    name: 'Please update your payment information'
+    translations: [{ code: en, label: 'Please update your payment information' }]
+  -
+    name: 'Unfortunately, we cannot ship to the specified country'
+    translations: [{ code: en, label: 'Unfortunately, we cannot ship to the specified country' }]
+  -
+    name: 'Make Amazon’s customers your customers with Amazon Pay.'
+    translations: [{ code: en, label: 'Make Amazon’s customers your customers with Amazon Pay.' }]
+  -
+    name: Launch
+    translations: [{ code: en, label: Launch }]
+  -
+    name: 'The email you tried to use is already registered in our store. Please sign in the classic way.'
+    translations: [{ code: en, label: 'The email you tried to use is already registered in our store. Please sign in the classic way!' }]

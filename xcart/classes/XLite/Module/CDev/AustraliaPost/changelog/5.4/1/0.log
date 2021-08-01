@@ -1,0 +1,5 @@
+Version 5.4.1.0
+
+Improvements (1)
+2020-02-04 - [Change] The active menu item was not highlighted on some pages. Fixed. #BUG-7472 #Core #AustraliaPost #Coupons #Paypal #Sale #USPS #XMLSitemap #CanadaPost #FedEx #UPS #MailChimp #DHL #GoogleFeed
+

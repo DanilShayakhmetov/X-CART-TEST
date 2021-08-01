@@ -1,0 +1,17 @@
+{##
+ # Progress state button
+ #}
+
+<button {{ this.printTagAttributes(this.getAttributes())|raw }}>
+  {{ this.displayCommentedData(this.getCommentedData()) }}
+  <div class="caption">
+    <span>{{ t(this.getButtonLabel()) }}</span>
+  </div>
+  <div class="loader"></div>
+  <div class="success">
+    <i class="fa fa-check-circle"></i>
+  </div>
+  <div class="fail">
+    <i class="fa fa-exclamation-circle"></i>
+  </div>
+</button>

@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-08-05 - [Change] Added lazy loading; removed the "smart image loading" feature. #XCN-10148 (Kirill Stadler) #Core #ProductAdvisor #FastLaneCheckout #CrispWhiteSkin
+

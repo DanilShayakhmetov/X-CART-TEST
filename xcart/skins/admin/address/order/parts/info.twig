@@ -1,0 +1,20 @@
+{##
+ # Order address : info
+ #
+ # @ListChild (list="address.order.main", weight="100")
+ #}
+
+<div class="info">
+  {% if this.order.origProfile and this.isShowProfileLink() %}
+    <a href="{{ url('profile', '', {'profile_id': this.order.origProfile.profileId}) }}">{{ this.getName() }}</a>
+  {% else %}
+    {{ this.getName() }}
+  {% endif %}
+  {% if this.isShowEmail() %}
+    <span class="separator">-</span>
+    {#<span class="email"><a href="mailto:{{ this.getEmail() }}">{{ this.getEmail() }}</a></span>#}
+    <span class="email">
+    {{ widget('\\XLite\\View\\FormField\\Inline\\Input\\Text\\Email', entity=this.order.getProfile(), name='address_login', fieldName='login', fieldNamespace='address_login') }}
+    </span>
+  {% endif %}
+</div>

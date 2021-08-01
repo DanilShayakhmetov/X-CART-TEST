@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Last_changes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon-developer-docs" stroke="#708692" stroke-width="2">
+            <g id="Developer-docs" transform="translate(10.000000, 5.000000)">
+                <path d="M3.49181777,0.4875 C1.83257888,0.4875 0.4875,1.82966081 0.4875,3.48713201 L0.4875,35.512868 C0.4875,37.169519 1.82522998,38.5125 3.49608915,38.5125 L27.7039109,38.5125 C29.3655088,38.5125 30.7125,37.1677597 30.7125,35.5133485 L30.7125,11.2438222 C30.7125,10.6880458 30.4175435,9.89049234 30.0621938,9.47243385 L23.0753062,1.25256615 C22.716152,0.830031781 21.9867901,0.4875 21.4253862,0.4875 L3.49181777,0.4875 Z" id="Line"></path>
+                <polyline id="Line" points="11.7 19.5 5.85 24.375 11.7 29.25"></polyline>
+                <path d="M18.0375,19.0125 L14.1375,30.7125" id="Line"></path>
+                <polyline id="Line-Copy" transform="translate(23.400000, 24.375000) scale(-1, 1) translate(-23.400000, -24.375000) " points="26.325 19.5 20.475 24.375 26.325 29.25"></polyline>
+                <path d="M20.9875,0.4875 L20.9875,7.23262161 C20.9875,8.89217012 22.3393631,10.2375 23.9828144,10.2375 L29.7625,10.2375" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

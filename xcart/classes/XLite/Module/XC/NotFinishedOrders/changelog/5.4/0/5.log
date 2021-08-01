@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2020-12-01 - [Bug] Not Finished Order. The Shipping_id value for an order could be "0" under certain conditions. Fixed. #XCB-55 #XC-NotFinishedOrders
+

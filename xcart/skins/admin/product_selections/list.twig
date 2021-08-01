@@ -1,0 +1,9 @@
+{##
+ # Product selections list table template
+ #}
+
+{% if this.isSearchVisible() %}
+    {{ widget(this.getItemsListClass(), {'searchPanelClass': this.getSearchPanelView()}) }}
+{% else %}
+    {{ widget(this.getItemsListClass()) }}
+{% endif %}

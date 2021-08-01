@@ -1,0 +1,131 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order's egoods page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+.egoods-items {
+  display: table;
+}
+
+.egoods-items,
+.egoods-items ul,
+.egoods-items li
+{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.egoods-items .item {
+  margin-bottom: @rhythmic-unit * 3 / 2;
+}
+
+.egoods-items .title {
+
+  &, * {
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.egoods-items .product-removed {
+  margin-top: @rhythmic-unit / 3;
+  color: @color-error;
+}
+
+.egoods-items ul.attachments {
+  margin-top: @rhythmic-unit;
+}
+
+.egoods-items ul.attachments li {
+  padding: (@table-cell-padding-vertical - 1) (@table-cell-padding-horizontal - 1);
+  border: 1px solid @table-border-color;
+  .flex-display();
+  .align-items(center);
+  width: 100%;
+  .justify-content(space-between);
+  min-height: 60px;
+
+  &.deleted-attachment {
+    background-color: rgba(255, 197, 198, 0.2);
+  }
+
+  .main {
+    .flex-display();
+    .align-items(center);
+  }
+
+  .info {
+    margin: 0 @rhythmic-unit 0 30px;
+    min-width: 400px;
+    width: 400px;
+
+    .attachment-title {
+      position: relative;
+
+      a {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &:before {
+        content: '';
+        width: 18px;
+        height: 22px;
+        .flex-display();
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: -30px;
+      }
+    }
+  }
+  .status {
+    min-width: 200px;
+    width: 200px;
+    margin-right: @rhythmic-unit;
+
+    &.expired,
+    &.blocked {
+      color: @color-error;
+    }
+
+    &.avail {
+      color: @color-success;
+    }
+  }
+
+  .buttons {
+    margin: 0;
+    .flex-display();
+    .justify-content(flex-end);
+
+    button {
+      margin-left: (@rhythmic-unit / 2);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.egoods-items + .sticky-panel {
+
+  .panel-cell {
+    margin: 0;
+
+    &.block_all button {
+      margin-right: @rhythmic-unit;
+    }
+  }
+}

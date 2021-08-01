@@ -1,0 +1,5 @@
+Version 5.4.1.8
+
+Fixes (1)
+2020-07-17 - [Bug] After closing the onboarding wizard, the shade was not for the entire width of the wizard. Fixed. #BUG-8775 #Onboarding
+

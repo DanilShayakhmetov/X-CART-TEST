@@ -1,0 +1,9 @@
+{##
+ # Trial notice
+ #}
+<div class="activate-key-form">
+  <div class="form">
+    {{ widget('XLite\\View\\Button\\Regular', label='Register license key', style='register-license-button', jsCode='window.open(\'' ~ this.getRegisterLicenseURL() ~ '\', \'_blank\');') }}
+    {{ widget('XLite\\View\\Button\\Regular', label='Contact X-Cart', style='regular-main-button purchase-button', jsCode='window.open(\'' ~ this.getPurchaseURL() ~ '\', \'_blank\');') }}
+  </div>
+</div>

@@ -1,0 +1,190 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data dump
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: 'Quantity in stock'
+    translations:
+      - code: en
+        label: 'Quantity in stock'
+  - name: Sold
+    translations:
+      - code: en
+        label: Sold
+  - name: 'X PIN code duplicates ignored.'
+    translations:
+      - code: en
+        label: '{{count}} PIN code duplicates ignored.'
+  - name: 'X PIN codes created successfully.'
+    translations:
+      - code: en
+        label: '{{count}} PIN codes created successfully.'
+  - name: 'X PIN codes longer than Y characters ignored.'
+    translations:
+      - code: en
+        label: '{{count}} PIN codes longer than {{max}} characters ignored.'
+  - name: 'Could not assign X PIN codes to order #Y.'
+    translations:
+      - code: en
+        label: 'Could not assign {{count}} PIN codes to order #{{orderId}}. <a href="{{link}}">Create new ones right now</a>'
+      - code: ru
+        label: 'Не удалось применить ПИН-коды в количестве {{count}} к заказу #{{orderId}}. <a href="{{link}}">Создайте новые</a>'
+  - name: 'No valid code found.'
+    translations:
+      - code: en
+        label: 'No valid code found.'
+  - name: PIN
+    translations:
+      - code: en
+        label: PIN
+  - name: 'Can not be disabled for products with manually defined PIN codes'
+    translations:
+      - code: en
+        label: 'Cannot be disabled for products with manually defined PIN codes'
+  - name: 'PIN codes enabled'
+    translations:
+      - code: en
+        label: 'PIN codes enabled'
+  - name: 'Cannot remove a sold PIN code'
+    translations:
+      - code: en
+        label: 'Cannot remove a sold PIN code'
+  - name: 'Sold PINs'
+    translations:
+      - code: en
+        label: 'Sold PINs'
+  - name: 'Remaining PINs'
+    translations:
+      - code: en
+        label: 'Remaining PINs'
+  - name: 'Order deleted'
+    translations:
+      - code: en
+        label: 'Order deleted'
+  - name: 'Please, type in the new PIN codes one per line.'
+    translations:
+      - code: en
+        label: 'Please type in the new PIN codes one per line. PIN codes max length is 64 characters.'
+  - name: 'Quantity in stock is determined by the amount of the remaining PIN codes.'
+    translations:
+      - code: en
+        label: 'Quantity in stock is determined by the amount of the remaining PIN codes defined on the PIN codes management page.'
+  - name: 'You will be able to add pin codes after saving changes.'
+    translations:
+      - code: en
+        label: 'You will be able to add pin codes after saving changes.'
+  - name: 'No PIN codes found.'
+    translations:
+      - code: en
+        label: 'No PIN codes found.'
+  - name: 'Quantity in stock is determined by the amount of the remaining PIN codes'
+    translations:
+      - code: en
+        label: 'Quantity in stock is determined by the amount of the remaining PIN codes'
+  - name: 'X PIN Codes were not assigned.'
+    translations:
+      - code: en
+        label: '{{count}} PIN Codes were not assigned.'
+  - name: 'No pin codes are bought yet'
+    translations:
+      - code: en
+        label: 'No pin codes have been bought yet'
+  - name: 'PIN codes data have been successfully updated'
+    translations:
+      - code: en
+        label: 'PIN codes data has been successfully updated'
+  - name: 'PIN code'
+    translations:
+      - code: en
+        label: 'PIN code'
+  - name: 'PIN codes'
+    translations:
+      - code: en
+        label: 'PIN codes'
+  - name: 'Add PIN codes'
+    translations:
+      - code: en
+        label: 'Add PIN codes'
+  - name: 'Inventory tracking for product X will not be imported'
+    translations:
+      - code: en
+        label: 'Inventory tracking for product {{value}} will not be imported'
+  - name: 'PIN codes generation method'
+    translations:
+      - code: en
+        label: 'PIN codes generation method'
+      - code: ru
+        label: 'Способ создания ПИН-кодов'
+  - name: Automatically
+    translations:
+      - code: en
+        label: Automatically
+      - code: ru
+        label: Автоматически
+  - name: Manually
+    translations:
+      - code: en
+        label: Manually
+      - code: ru
+        label: Вручную
+  - name: 'Product not found'
+    translations:
+      - code: ru
+        label: 'Product not found'
+      - code: ru
+        label: 'Товар не найден'
+  - name: 'Order #{{value}} doesn''t have any associated pin codes'
+    translations:
+      - code: en
+        label: 'Order #{{value}} doesn’t have any pin codes associated with it. Choose an order that contains pin codes.'
+      - code: ru
+        label: 'С заказом {{value}} не связано никаких пин-кодов. Выберите заказ, содержащий пин-коды.'
+  - name: 'Add pin codes'
+    translations:
+      - code: en
+        label: 'Add pin codes'
+  - name: 'Import from CSV file'
+    translations:
+      - code: en
+        label: 'Import from CSV file'
+  - name: 'Unknown error occurred'
+    translations:
+      - code: en
+        label: 'Unknown error occurred'
+  - name: 'The order also contains items with missing PIN codes; you will be prompted to enter the PIN codes under item names.'
+    translations:
+      - code: en
+        label: 'The order also contains items with missing PIN codes; you will be prompted to enter the PIN codes under item names.'
+      - code: ru
+        label: 'Заказ также содержит товары с отсутствующими ПИН кодами; вам будет предоставлена возможность ввести ПИН коды под названиями соответствующих товаров.'
+  - name: 'The following PIN codes have already been sold: {{codes}}'
+    translations:
+      - code: en
+        label: 'The following PIN codes have already been sold: {{codes}}'
+      - code: ru
+        label: 'Следующие ПИН коды уже были проданы ранее: {{codes}}'
+
+XLite\Model\Config:
+  - name: esd_fullfilment
+    category: CDev\PINCodes
+    type: XLite\View\FormField\Input\Checkbox\YesNo
+    orderby: 400
+    translations:
+      - code: en
+        option_name: 'Show only ESD related fulfillment statuses'
+        option_comment: 'This option leave only 3 method: New, Delivered and Will Not Deliver. You can rename it with "Custom Order Statuses" module'
+      - code: ru
+        option_name: 'Отображать только статусы для цифровой дистрибуции'
+        option_comment: 'Данная настройка оставит только 3 статуса доставки: Новый, Доставлен и Доставка отменена. Переименовать их можно при помощи модуля Custom Order Statuses'
+  - name: approve_before_download
+    category: CDev\PINCodes
+    type: XLite\View\FormField\Input\Checkbox\YesNo
+    orderby: 500
+    translations:
+      - code: en
+        option_name: 'Approve before providing access'
+      - code: ru
+        option_name: 'Одобрение перед предоставлением доступа'

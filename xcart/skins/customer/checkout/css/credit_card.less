@@ -1,0 +1,283 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/* Credit card styles */
+
+@font-face {
+    font-family: 'cc-glyphs';
+    src: url('cc-glyphs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cc-form-extended {
+    padding: @cc-form-padding-unit;
+    border: @cc-form-border-width solid @cc-form-border;
+    border-radius: @cc-form-border-radius;
+    background: @cc-form-background;
+    max-width: 390px;
+
+    .cardType {
+        top: @cc-form-extended-card-type-offset-top;
+        right: @cc-form-extended-card-type-offset-right;
+    }
+
+    .cardCVV2 {
+        .right-text {
+            position: absolute;
+            right: 20px;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+
+    .cardCVV2 .title,
+    .cardNumber .title,
+    .cardName .title,
+    .cardExpire .title,
+    .cardCVV2 .text-label,
+    .cardNumber .text-label,
+    .cardName .text-label,
+    .cardExpire .text-label {
+        display: block;
+    }
+
+    .cardCVV2, .cardName, .cardExpire {
+        margin-top: (@cc-form-padding-unit / 2);
+    }
+}
+
+.cc-form {
+    clear: both;
+    min-width: 220px;
+    max-width: 320px;
+
+    position: relative;
+
+    .title, .text-label {
+        display: none;
+        line-height: 20px;
+        font-size: 0.75em;
+        opacity: 0.8;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .cardName {
+        margin-top: @cc-form-padding-unit;
+        input {
+            text-transform: uppercase;
+        }
+    }
+
+    .cardNumber, .cardName, .cardExpire, .cardCVV2 {
+        .inline-error {
+            display: none;
+        }
+    }
+
+    .cardExpire {
+        margin-top: @cc-form-padding-unit;
+        display: inline-block;
+        .top-line {
+            display: none;
+        }
+
+        .bottom-line {
+            .flex-display();
+            .align-items(center);
+        }
+
+        .bottom-text-month {
+            text-align: center;
+        }
+
+        .left-text {
+            display: none;
+        }
+
+        .month-container input {
+            text-align: right;
+        }
+
+        .month-container, .year-container {
+            width: 50px;
+            position: relative;
+
+            .inline-error {
+                display: none;
+            }
+        }
+
+        .month-container + .year-container {
+            margin-left: 20px;
+        }
+
+        .year-container:before {
+            content: '/';
+            font-size: 1.5em;
+            position: absolute;
+            left: -13px;
+            line-height: @cc-form-expire-separator-lineheight;
+        }
+    }
+
+    .cardCVV2 {
+        margin-top: @cc-form-padding-unit;
+        display: inline-block;
+        width: 80px;
+        float: right;
+        
+        .value {
+            position: relative;
+        }
+
+        input {
+            text-align: left;
+        }
+
+        .right-text {
+            display: none;
+        }
+    }
+
+    .cvv2-hint {
+        font-family: 'cc-glyphs' !important;
+        color: #555;
+        text-decoration: none !important;
+        position: absolute;
+        top: 0;
+        right: 0.7em;
+        bottom: 0;
+        margin: auto;
+        height: 1em;
+        line-height: 1em;
+    }
+
+
+    .cardCVV2 .popover {
+        z-index: 1040;
+    }
+    .cardCVV2 .popover.top {
+        margin: -20px -38px;
+        border: #fff 2px solid;
+    }
+    .cardCVV2 .popover .arrow {
+        margin-left: 27px;
+        border-top-color: #fff;
+    }
+    .cardCVV2 .popover-content {
+        width: 125px;
+        height: 84px;
+        background: url(cvv2_hints.png) 0 0 no-repeat;
+        background-size: 100% auto;
+    }
+    .cardCVV2.amex .popover-content,
+    .cardCVV2.AmericanExpress .popover-content {
+        background-position: 0 100%;
+    }
+
+    .cardType {
+        position: absolute;
+        top: @cc-form-card-type-offset-top;
+        right: @cc-form-card-type-offset-right;
+
+        .flex-display();
+        .align-items(center);
+
+        .value {
+            display: inline-block;
+        }
+
+        @icon-width: 140px;
+        @icon-height: 70px;
+        @icon-scale: 0.4;
+        @icon-translate: -100% * (1 - @icon-scale) / (2 * @icon-scale);
+
+        a.icon {
+            font-size: 0px;
+            padding: 3px;
+            display: block;
+            box-shadow: none;
+
+            width: @icon-width * @icon-scale;
+            height: @icon-height * @icon-scale;
+            margin-right: @cc-form-padding-unit * 0.5;
+            margin-bottom: 5px;
+        }
+
+        span.card {
+            display: block;
+            width: @icon-width;
+            height: @icon-height;
+            transform: scale(@icon-scale) translate(@icon-translate, @icon-translate);
+        }
+
+        #card_type {
+            display: none;
+        }
+    }
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.mc {
+    background: url(../../images/cc_types_sprite_embed.png) 0px 0px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.visa {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -70px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.jcb {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -139px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.amex {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -210px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.dc {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -286px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.dicl {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -351px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.sw {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -421px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.cup {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -491px no-repeat;
+}
+
+.cc-form-container div.content div.cardType a.icon span.card.bc {
+    background: url(../../images/cc_types_sprite_embed.png) 0px -565px  no-repeat;
+}
+
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.mc {
+    background: url(../../images/sc_types_sprite_embed.png) 0px 0px  no-repeat;
+}
+
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.visa {
+    background: url(../../images/sc_types_sprite_embed.png) 0px -129px  no-repeat;
+}
+
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.amex {
+    background: url(../../images/sc_types_sprite_embed.png) 0px -257px  no-repeat;
+}
+
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.jcb,
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.dc,
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.bc,
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.sw,
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.cup,
+.cc-form-container div.content div.cardCVV2 div.icon-container div.icon.dicl {
+    background: url(../../images/sc_types_sprite_embed.png) 0px -385px  no-repeat;
+}

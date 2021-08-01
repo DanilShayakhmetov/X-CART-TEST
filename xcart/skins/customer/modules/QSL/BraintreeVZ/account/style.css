@@ -1,0 +1,53 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Braintree credit cards 
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+div.braintree-credit-cards div.card-container {
+  padding: 15px;
+  border: 1px solid #ddd !important;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+div.braintree-credit-cards div.card {
+  float: left;
+}
+
+div.braintree-credit-cards div.card img.logo {
+  float: left;
+}
+
+div.braintree-credit-cards div.card div.card-block {
+  display: inline-block;
+}
+
+div.braintree-credit-cards div.card span.number {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+div.braintree-credit-cards div.card span.expire {
+  padding-top: 3px;
+  float: right;
+  font-size: 14px;
+}
+
+div.braintree-credit-cards div.info {
+  font-size: 12px;
+  padding-bottom: 17px;
+}
+
+div.braintree-credit-cards div.actions {
+  font-size: 14px;
+  line-height: 40px;
+  text-align: right;
+}
+
+div.braintree-credit-cards div.actions span.default {
+  margin-right: 25px;
+}

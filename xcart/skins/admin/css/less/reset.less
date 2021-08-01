@@ -1,0 +1,129 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Some very common styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/* Layout */
+html, body {
+  min-width: 990px;
+  height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: @font-size-base;
+}
+
+body {
+  #rhythmless > .rhythm-container(@font-size-base);
+}
+
+h1, .h1, .head-h1 {
+  .heading(@font-size-h1, @rhythmic-unit, @rhythmic-unit);
+}
+
+h2, .h2, .head-h2 {
+  .heading(@font-size-h2, @rhythmic-unit, @rhythmic-unit);
+}
+
+h3, .h3, .head-h3 {
+  .heading(@font-size-h3, @rhythmic-unit, (@rhythmic-unit / 2));
+}
+
+h4, .h4, .head-h4 {
+  .heading(@font-size-h4);
+}
+
+h5, .h5, .head-h5 {
+  .heading(@font-size-h5);
+}
+
+h6, .h6, .head-h6 {
+  .heading(@font-size-h6);
+}
+
+svg:not(:root) {
+  vertical-align: middle;
+}
+
+.alert {
+  border: none;
+}
+
+ul.styled, ul.marked-list {
+  list-style: disc;
+  padding-left: (@rhythmic-unit);
+
+  li {
+    margin-top: (@rhythmic-unit / 2);
+  }
+}
+
+ol.styled, ol.ordered-list {
+  list-style: decimal outside;
+  padding-left: (@rhythmic-unit);
+
+  li {
+    margin-top: (@rhythmic-unit / 2);
+  }
+}
+
+script {
+  display: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.fa {
+  &.fa-external-link {
+    margin-left: 3px;
+  }
+}
+
+a.external:after {
+  content: "\f08e";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-left: 5px;
+  font-size: 11px;
+  display: none;
+
+  &:hover {
+    display: inline-block;
+  }
+}
+
+.noscript {
+  width: 500px;
+  color: @color-error;
+  font-weight: @font-bold;
+}
+
+.center {
+  .text-center;
+}
+
+.middle {
+  vertical-align: middle;
+  height: 100%;
+}
+
+.clear:after, .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* IE6 */
+* html .clearfix {
+  height: 1%;
+}
+
+/* IE7 */
+*:first-child + html .clearfix {
+  min-height: 1%;
+}

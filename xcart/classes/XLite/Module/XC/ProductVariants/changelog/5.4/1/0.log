@@ -1,0 +1,12 @@
+Version 5.4.1.0
+
+Improvements (4)
+2020-02-26 - [Change] Changed the layout and arrangement of notifications (low stock / new messages / etc) on the dashboard in the Admin area. #XCN-10420 #Core #Paypal #ProductVariants #ProductReviews #CrispWhiteSkin #MultiVendor #FreeShipping #VendorMessages #TrustedVendors #ShopperApproved #Onboarding
+2020-02-06 - [Change] Added a new setting option "Apply product-specific discount to wholesale prices" on the product page; it allows to apply the Sale price of the product set in % to wholesale prices. #XCN-10177 #Sale #Wholesale #ProductVariants #MultiVendor
+2020-01-20 - [Change] "Sale" addon improvements: It is now possible to add Group Sales. #XCN-10175 #Core #Sale #VAT #Wholesale #ProductFilter #ProductVariants #MultiVendor #FlyoutCategoriesMenu
+2019-11-19 - [Change] It is now possible to add and manage discounts for product variants. Added the ability to show prices as a price range, the ability to sort products by the price range and other minor changes and improvements. #XCN-10176 #Sale #ProductVariants
+
+Fixes (2)
+2020-02-14 - [Bug] Notices in the cart with the addons Product Variants and Wholesale enabled. Fixed. #BUG-8342 #ProductVariants
+2020-02-12 - [Bug] The link "Create all possible variants" was using incorrect styles. Fixed. #BUG-8273 #ProductVariants
+

@@ -1,0 +1,5 @@
+Version 5.4.0.6
+
+Fixes (1)
+2019-12-18 - [Bug] Timeout error during the generation of a Product feed via console.php on large data volumes. Fixed. #BUG-7537 (Shevelov Alexander) #XMLSitemap
+

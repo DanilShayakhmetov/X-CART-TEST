@@ -1,0 +1,105 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-product_added,
+.onboarding-wizard-step.step-product_added_cloud {
+  .buttons {
+    margin: 17px auto 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+
+  .demo-products-showcase {
+    margin-top: 20px;
+  }
+
+  div.file-uploader .alt {
+    display: none;
+  }
+
+  .catalog-deleted-image,
+  .product-added-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .catalog-deleted .regular-main-button,
+  .no-demo-catalog .regular-main-button {
+    margin-top: 40px;
+  }
+}
+
+.onboarding-wizard-step.step-product_added_cloud {
+
+  .step-contents {
+    padding-bottom: 80px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .buttons-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+
+      & > * {
+        margin: 0 @rhythmic-unit / 2;
+      }
+    }
+
+    .additional-buttons {
+      flex-basis: 100%;
+    }
+  }
+
+
+}
+
+.onboarding-wizard-step.step-product_added_cloud {
+
+  .product-added-photo {
+
+    .no-image {
+      width: 240px;
+      height: 240px;
+      margin: 0 auto;
+      background: #f7f7f7;
+
+      .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: opacity .1s ease-in;
+
+        .icon {
+          font-size: 105px;
+          color: @color-light;
+        }
+      }
+    }
+
+    .image img {
+      width: auto;
+      height: auto;
+      max-width: 240px;
+      max-height: 240px;
+    }
+  }
+
+  .product-added-photo + .product-name {
+    margin-top: @rhythmic-unit/2;
+  }
+}

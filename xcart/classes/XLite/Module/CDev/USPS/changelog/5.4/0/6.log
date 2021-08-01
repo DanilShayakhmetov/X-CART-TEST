@@ -1,0 +1,5 @@
+Version 5.4.0.6
+
+Fixes (1)
+2019-12-03 - [Bug] The order edit page tab "USPS Shipments" is no longer displayed for international shipments when editing an order. #BUG-6910 (Pavel Veselovsky) #USPS
+

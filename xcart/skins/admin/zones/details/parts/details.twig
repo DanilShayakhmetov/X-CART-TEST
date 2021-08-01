@@ -1,0 +1,11 @@
+{##
+ # Zone details template
+ #
+ # @ListChild (list="zones.zone", weight="200")
+ #}
+
+<ul class="table default-table zone-details">
+  {% for item in this.getViewList('zones.zone.details') %}
+    <li>{{ item.display() }}</li>
+  {% endfor %}
+</ul>

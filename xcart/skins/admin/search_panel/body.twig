@@ -1,0 +1,88 @@
+{##
+ # Base template
+ #}
+
+{% if this.isUseFilter() %}
+  {% include 'search_panel/filters.twig' %}
+{% endif %}
+
+<div class="title-margin"></div>
+{% form this.formOptions.class with { formTarget: this.formOptions.target, formAction: this.formOptions.action, formParams: this.formOptions.params, className: this.getContainerClass(), itemsList: this.getItemsList() } %}
+
+  {{ widget_list('before', type='nested') }}
+
+  <div class="search-conditions-box">
+
+    {{ this.displayCommentedData(this.getSearchPanelParams()) }}
+
+    <div class="search-conditions">
+      {% block search_conditions_line %}
+        <ul class="inline-table">
+          {% for name, conditionWidget in this.getConditions() %}
+            <li class="{{ name }}-condition">{{ conditionWidget.display() }}</li>
+          {% endfor %}
+          <li class="actions">
+            {% for name, action in this.getActions() %}
+              {{ action.display() }}
+            {% endfor %}
+          </li>
+          {{ widget_list('conditions', type='nested') }}
+        </ul>
+      {% endblock search_conditions_line %}
+    </div>
+
+    {% if this.getHiddenConditions() %}
+      <div class="search-conditions-hr">
+      </div>
+    {% endif %}
+
+    {% if this.getHiddenConditions() %}
+      <div class="search-conditions-hidden">
+        {% set count = this.getHiddenConditions()|length %}
+
+        {%  if this.widgetParams.changeHiddenConditionsCount %}
+          {% set count = count + 1 %}
+        {% endif %}
+
+        {% if count % 2 > 0 %}
+          {% set firstColumnLength = count / 2 + 1 %}
+        {% else %}
+          {% set firstColumnLength = count / 2 %}
+        {% endif %}
+
+        <div class="left-column">
+          <ul class="table">
+            {% for name, conditionWidget in this.getHiddenConditions()|slice(0, firstColumnLength) %}
+              <li class="{{ name }}-condition {{ this.getRowClass(loop.index, 'odd', 'even') }}">{{ conditionWidget.display() }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="right-column">
+          <ul class="table">
+            {% for name, conditionWidget in this.getHiddenConditions()|slice(firstColumnLength, count) %}
+              <li class="{{ name }}-condition {{ this.getRowClass(loop.index, 'odd', 'even') }}">{{ conditionWidget.display() }}</li>
+            {% endfor %}
+
+            {{ widget_list('hiddenConditions', type='nested') }}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if this.getHiddenConditions() %}
+      <div class="arrow"><span class="fa fa-angle-down"></span></div>
+    {% endif %}
+
+    <div class="actions-bottom">
+      {% if this.isUseFilter() and this.canSaveFilter() %}
+        {{ widget('\\XLite\\View\\Button\\SaveSearchFilter') }}
+      {% endif %}
+      {{ widget_list('actions', type='nested') }}
+    </div>
+
+  </div>
+
+  {{ widget_list('after', type='nested') }}
+
+{% endform %}

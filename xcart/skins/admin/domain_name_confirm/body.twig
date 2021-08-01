@@ -1,0 +1,14 @@
+{##
+ # Domain name page template
+ #}
+
+<div class="domain-name-confirm" data-auth-code="{{ this.getAuthCode() }}" data-cloud-action="{{ this.getCLoudAction() }}">
+    <div class="note">
+        {{ t('Please note that during the domain name transferring your store will be temporarily blocked. This process may take several minutes.') }}
+    </div>
+
+    {{ widget('XLite\\View\\Button\\Simple', label='Proceed', style='regular-main-button proceed-button') }}
+
+    {{ widget('XLite\\View\\Button\\Simple', label='Cancel', style='regular-button cancel-button') }}
+</div>
+

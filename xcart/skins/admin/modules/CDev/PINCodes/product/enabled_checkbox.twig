@@ -1,0 +1,9 @@
+{##
+ # Pin codes enabled checkbox
+ #
+ # @ListChild (list="product.pinCodes", weight="100")
+ #}
+
+<li class="pin-codes-enabled">
+   {{ widget('\\XLite\\View\\FormField\\Input\\Checkbox\\YesNo', label='PIN codes enabled', value=this.product.getPinCodesEnabled(), fieldName='pins_enabled', fieldId='enabled-checkbox') }}
+</li>

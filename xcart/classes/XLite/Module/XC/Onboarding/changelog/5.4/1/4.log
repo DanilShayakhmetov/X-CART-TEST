@@ -1,0 +1,5 @@
+Version 5.4.1.4
+
+Fixes (1)
+2020-05-15 - [Bug] The Change domain name panel could not be hidden. Fixed. #BUG-8704 #Onboarding
+

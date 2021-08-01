@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-06-27 - [Change] Updated the MaxMind GeoLite2 Country database for the addon Geolocation. #BUG-7636 (Shevelov Alexander) #Geolocation
+

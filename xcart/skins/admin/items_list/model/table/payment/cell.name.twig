@@ -1,0 +1,8 @@
+{##
+ # Payment methods appearance list: Payment method name cell template
+ #}
+
+<div class="plain-value">
+  <span class="status fa fa-selected" title="{{ this.getMethodStatusTitle(this.entity) }}"></span>
+  <span class="value">{{ this.entity.name|raw }}</span>
+</div>

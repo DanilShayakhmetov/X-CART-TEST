@@ -1,0 +1,20 @@
+{##
+ # Product info on product reviews page
+ #}
+
+{% if this.product %}
+  <div class="product-details product-reviews-details clearfix">
+    <div class="image{% if not this.product.hasImage() %} empty{% endif %}" style="width: {{ this.getMaxImageWidth() }}px;">
+      {{ widget('\\XLite\\View\\Product\\Details\\Customer\\Image', product=this.product) }}
+    </div>
+    <div class="product-details-info">
+      <a href="{{ url('product', '', {'product_id': this.getProductId(), 'category_id': this.getCategoryId()}) }}" class="back-to-product">{{ t('Back to product details') }}</a>
+      <h1 class="fn title">{{ this.getTitle() }}</h1>
+
+      <div>
+        {{ widget('XLite\\Module\\XC\\Reviews\\View\\Customer\\ReviewsPage\\AverageRating', product=this.product) }}
+      </div>
+    </div>
+
+  </div>
+{% endif %}

@@ -1,0 +1,16 @@
+{##
+ # Shopping cart subtotal
+ #
+ # @ListChild (list="invoice.base.totals.after", weight="5")
+ #}
+{% if this.isMultiCurrencyOrder() %}
+  <div class="total-change-value">
+    <span class="title">{{ t('Total charge') }}:</span>
+    <span class="value">{{ this.formatPrice(this.order.getTotal(), this.order.getCurrency(), 'false', 'true') }}</span>
+  </div>
+{% endif %}
+{% if this.isMultiCurrencyOrder() %}
+  <div class="total-change-help">
+    <span>{{ widget('XLite\\Module\\XC\\MultiCurrency\\View\\InvoiceChargeWarning', order=this.order) }}</span>
+  </div>
+{% endif %}

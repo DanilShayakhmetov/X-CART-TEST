@@ -1,0 +1,11 @@
+{##
+ # Notifications list table template
+ #
+ # @ListChild (list="itemsList.notification.header", weight="100")
+ #}
+
+{% if this.isDOMWarningVisible() %}
+<div class="alert alert-warning attachment-warning">
+    {{ t('dom.extension.alert')|raw }}
+</div>
+{% endif %}

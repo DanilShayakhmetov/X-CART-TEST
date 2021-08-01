@@ -1,0 +1,24 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'This app ties your X-Cart store with your Facebook account to help you unlock all the marketing opportunities Facebook offers.', translations: [{ code: en, label: 'This app ties your X-Cart store with your Facebook account to help you unlock all the marketing opportunities Facebook offers. Upload products to Facebook catalogue, run and track and campaigns, optimize audience, and even add partners to manage your accounts'}] }
+  - { name: 'Continue with Facebook', translations: [{ code: en, label: 'Continue with Facebook'}] }
+  - { name: '1. Use the addon Google Product Feed for advanced flexibility generating a data feed for Facebook based on the product attributes and variants from your store catalog 2. Generate Product Feed', translations: [{ code: en, label: '1. Use the addon <a href="{{href}}">Google Product</a> Feed for advanced flexibility generating a data feed for Facebook based on the product attributes and variants from your store catalog<br/>2. Generate Product Feed'}] }
+  - { name: 'Facebook account is not connected. Connect with Facebook', translations: [{ code: en, label: 'Facebook account is not connected. <a href="{{href}}">Connect with Facebook</a>'}] }
+  - { name: '"Name Surname" Facebook account is connected. Change or Unlink account', translations: [{ code: en, label: '`<a href="https://business.facebook.com/home/accounts">{{name}}</a>` Facebook account is connected.<br/><a href="{{change_href}}">Change</a> or <a href="{{unlink_href}}">Unlink account</a>'}] }
+  - { name: 'Your product feed will be automatically sent to Facebook every 24 hours at the same time your Facebook account was connected to your X-Cart store.', translations: [{ code: en, label: 'Your product feed will be automatically sent to Facebook every 24 hours at the same time your Facebook account was connected to your X-Cart store.'}]}
+
+XLite\Model\Config:
+  - name: connected
+    category: XC\FacebookMarketing
+    type: hidden
+    value: false
+  - name: token
+    category: XC\FacebookMarketing
+    type: hidden
+    value: ''

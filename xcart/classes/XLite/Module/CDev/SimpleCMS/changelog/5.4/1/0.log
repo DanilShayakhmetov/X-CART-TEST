@@ -1,0 +1,11 @@
+Version 5.4.1.0
+
+Improvements (1)
+2020-02-25 - [Change] Added the ability to control the Alt attribute in the logo upload widget in the Admin area and in Layout editor. #XCN-9839 #Core #SimpleCMS #ThemeTweaker #Onboarding #AMP
+
+Fixes (4)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-02-21 - [Bug] The logo image was not getting resized. Fixed. #BUG-8377 #Core #SimpleCMS
+2020-02-18 - [Bug] Error when uploading a logo. Fixed. #BUG-8355 #SimpleCMS
+2020-02-11 - [Bug] Removed the "via URL" mode from the Company logo upload popup. #BUG-8232 #SimpleCMS
+

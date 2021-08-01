@@ -1,0 +1,36 @@
+{##
+ # File uploader menu
+ #
+ # @ListChild (list="file-uploader.menu", weight="30")
+ #}
+
+<li role="presentation" class="dropdown-header">{{ t('Upload') }}</li>
+<li role="presentation">
+  <a role="menuitem" tabindex="-1" href="#" class="from-computer" @click.prevent="uploadFromComputer">
+    <i class="button-icon svg">{{ svg('images/icons/upload.svg', 'common')|raw }}</i>
+    <span>{{ t('From computer') }}</span>
+  </a>
+  <input type="file" name="uploaded-file"{% if this.hasMultipleSelector() %} multiple="multiple"{% endif %} @change="doUploadFromFile" />
+</li>
+{% if this.isViaUrlAllowed() %}
+  <li role="presentation">
+    <a role="menuitem" tabindex="-1" href="#" class="via-url" @click.prevent="uploadViaUrl">
+      <i class="button-icon svg">{{ svg('images/icons/url.svg', 'common')|raw }}</i>
+      <span>{{ t('Via URL') }}</span>
+    </a>
+  </li>
+{% endif %}
+<div class="via-url-popup" data-title="{{ t('Upload via URL') }}" data-multiple="{% if this.hasMultipleSelector() %}1{% endif %}">
+{% if this.hasMultipleSelector() %}  
+  <textarea name="url" class="form-control urls" placeholder="http://example.com/file1.jpg                                                                     http://example.com/file2.jpg" /></textarea>
+{% else %}
+  <input type="text" name="url" class="form-control url" value="" placeholder="http://example.com/file.jpg" />
+{% endif %}
+  <div class="checkbox">
+    <label><input type="checkbox" name="copy-to-file" value="1" class="copy-to-file" checked="checked"/>{{ t('Copy to file system') }}</label>
+    <div class="not-copy-to-file-warning alert alert-warning hidden">{{ t('Warning! The image cannot be resized to reduce capacity for better site performance.') }}</div>
+  </div>
+  <div class="model form buttons">
+    <button type="button" class="btn regular-button" @click.prevent="doUploadViaUrl">{{ t('Upload') }}</button>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+{##
+ # List of X-Payments cards and transactions.
+ #
+ # @ListChild (list="order.operations", weight="290")
+ #}
+
+{% if this.order.getXpaymentsCards() %}
+  <div class="xpayments-transactions line-3">
+
+  <table class="xpayments-cards">
+    {% for card in this.order.getXpaymentsCards() %}
+      <tr>
+
+        <td class="card-column">
+          <div class="xpayments-card">
+            <div class="card-icon-container">
+              <span class="xpayments-card-type {{ card.cssType }}"><img src="{{ asset('images/spacer.gif') }}" alt="{{ card.cardType }}"/></span>
+            </div>
+            <div class="card-number">
+              {{ card.cardNumber }}
+            </div>
+            <div class="card-expire">
+              {{ card.expire }}
+            </div>
+          </div>
+        </td>
+
+        <td class="links-column">
+          <a class="dotted" href="javascript: void(0);" onclick="javascript: popupXpaymentsInfo('{{ card.xpid }}');">{{ t('View payment information') }}</a>
+          <a href="{{ card.url }}" target="blank">{{ t('Go to payment details page') }}</a>
+        </td>
+
+      </tr>
+    {% endfor %}
+  </table>
+  </div>
+{% endif %}
+
+<br/>

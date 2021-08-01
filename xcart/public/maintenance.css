@@ -1,0 +1,253 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Maintenance and install pages style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/**
+  * Clear styles
+  */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, label, legend, caption, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+label {
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: underline;
+}
+
+/**
+  * Other styles
+  */
+
+body,
+p,
+div,
+th,
+td,
+p,
+input,
+span,
+textarea,
+button {
+  color: #141414;
+  font-size: 14px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+html,
+body {
+  min-width: 800px;
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#content,
+#sub-section,
+#footer {
+  overflow: hidden;
+}
+
+#page-container {
+  min-height: 100%;
+  position: relative;
+}
+
+#page-container {
+  vertical-align: top;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#header .logo {
+  background: url(../skins/admin/images/logo.svg) no-repeat left center;
+  background-size: 60px 60px;
+  height: 96px;
+  width: 72px;
+  padding: 18px 0;
+  box-sizing: border-box;
+  float: left
+}
+
+.sw-version {
+  position: absolute;
+  left: 72px;
+  top: 24px;
+  line-height: 24px;
+  width: 888px;
+}
+
+.current {
+  color: #141414;
+  font-size: 14px;
+  margin: 0;
+  display: inline-block;
+}
+
+.upgrade-note {
+  margin-right: 0;
+  text-align: right;
+  float: right;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.upgrade-note a {
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+div.content {
+  position: absolute;
+  top: 144px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin: 36px 0 0 72px;
+  line-height: 48px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+a.yes-button {
+  text-decoration: none !important;
+  padding: 0 12px;
+  min-height: 40px;
+  border-radius: 4px;
+  line-height: 24px;
+  border-color: transparent;
+  color: #fff !important;
+  background-color: #f0ad4e;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  margin: 28px 0 4px;
+}
+
+div {
+  font-size: 16px;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+div.header {
+  height: 80px;
+  width: 100%;
+  background-color: #f3f3f4;
+}
+
+div.container {
+  position: relative;
+  top: -50px;
+}
+
+div.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.08);
+  margin: 0 auto;
+}
+
+div.img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: 0 auto;
+  background: white url(maintenance.png) no-repeat center;
+}
+
+.not-installed div.img {
+  background-image: url(not-installed.png);
+}
+
+.closed div.img {
+  background-image: url(store-closed.png);
+}
+
+div.title {
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+div.text {
+  margin: 0 auto;
+  width: 600px;
+  white-space: normal;
+  text-align: center;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: #1b80c6;
+}
+
+/* CSS3 rotation */
+@keyframes spin { /* CSS3 */
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}  
+
+#img {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+

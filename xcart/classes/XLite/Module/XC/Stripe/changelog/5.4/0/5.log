@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-07-12 - [Bug] Some text labels could not be translated. Fixed. #BUG-7659 https://bt.x-cart.com/view.php?id=50832 (Fedya Lavrentyev) #Core #Stripe #FastLaneCheckout
+

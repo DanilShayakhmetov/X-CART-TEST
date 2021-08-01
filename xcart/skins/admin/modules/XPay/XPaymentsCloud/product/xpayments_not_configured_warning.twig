@@ -1,0 +1,6 @@
+{% if not this.isXpaymentsSubscriptionsConfiguredAndActive() %}
+  <div class="alert alert-warning">
+    <strong>{{ t('X-Payments is not configured! ') }}</strong> {{ t('Enable & configure ') }}
+     <a href="{{ this.buildUrl('payment_method', '', {method_id: this.getXpaymentsPaymentMethodId()}) }}" title="{{ t('X-Payments connection') }}">{{ t('X-Payments connection') }}</a>.
+  </div>
+{% endif %}

@@ -1,0 +1,3 @@
+Version 5.4.1.1
+
+[Improvement] Pass current selected language in the admin to the CS&CF dashboard for the multi-lingual filters renaming

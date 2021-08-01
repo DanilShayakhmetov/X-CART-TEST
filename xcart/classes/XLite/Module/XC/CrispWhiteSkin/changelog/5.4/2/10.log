@@ -1,0 +1,10 @@
+Version 5.4.2.10
+
+Improvements (2)
+2020-12-02 - [Story] Single-value product options can now be displayed in the "Add to cart" block on the product page. #XCC-901 #CDev-Core #XC-CrispWhiteSkin
+2020-11-18 - [Story] Multiple improvements for the add-on "Hide Prices & Request For Price". #XCC-596 #QSL-CallForPrice #XC-CrispWhiteSkin
+
+Fixes (2)
+2020-12-09 - [Bug] Hover effect on product and category blocks on mobile is now disabled for new skins. #XCB-25 #XC-DelicatePinkSkin #XC-CrispWhiteSkin #XC-SpaceVioletSkin
+2020-11-18 - [Bug] Space Violet. Delicate Pink. Layout issues related to switching to a different page. Fixed. #XCB-19 #XC-DelicatePinkSkin #XC-CrispWhiteSkin #XC-SpaceVioletSkin
+

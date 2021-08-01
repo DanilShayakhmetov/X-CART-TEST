@@ -1,0 +1,7 @@
+Version 5.4.1.1
+
+Fixes (3)
+2020-03-19 - [Bug] Onboarding wizard. Removed the duplicated State field on the "Set your company info" page. #BUG-8414 #Onboarding
+2020-03-19 - [Bug] Onboarding wizard. After uploading a new logo image, the logo image was not saved at once. It was not possible to view it on the storefront. Fixed. #BUG-8413 #Onboarding
+2020-03-18 - [Bug] Onboarding wizard. Layout issues related to the state selector on the "Set your company info" page. Fixed. #BUG-8415 #Onboarding
+

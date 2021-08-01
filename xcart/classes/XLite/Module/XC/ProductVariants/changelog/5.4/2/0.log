@@ -1,0 +1,12 @@
+Version 5.4.2.0
+
+Improvements (3)
+2020-06-09 - [Change] Implemented proper conflict processing for the case when the quantity of a product or product variant is updated by more than one administrator at the same time. #XCN-10912 #Core #ProductVariants
+2020-04-29 - [Change] Implemented changes to the work of the addons Wholesale, Sale and Product variants when these addons are used at the same time. #XCN-10845 #Core #Sale #Wholesale #ProductVariants
+2020-04-29 - [Change] Changes to email notification templates. #XCN-10817 #Core #ContactUs #Egoods #CanadaPost #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+
+Fixes (3)
+2020-06-26 - [Bug] Product Variants. Product stock quantity was shown incorrectly for an unavailable variant on the product page on the storefront and in the popup for selecting attributes. Fixed. #BUG-8690 #Core #ProductVariants
+2020-06-26 - [Bug] Product Vsriants. Zero product stock quantity displayed on the page of a product and in the popup for selecting product attributes if the product stock quantity was zero and the stock quantity of its variants was non zero. Fixed. #BUG-8684 https://bt.x-cart.com/view.php?id=51760 #Core #ProductVariants
+2020-03-24 - [Bug] Incorrect product link in the low stock email notification. Fixed. #BUG-8463 #Core #ProductVariants
+

@@ -1,0 +1,9 @@
+Version 5.4.1.0
+
+Improvements (1)
+2020-01-27 - [Change] Various improvements for Group Sales. #XCN-10409 #Core #GoSocial #Sale #MultiVendor
+
+Fixes (2)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-01-23 - [Bug] Fixed the errors related to OpenGraph tags. Now the pages can be successfully checked using the Facebook debug tool. #BUG-7953 https://bt.x-cart.com/view.php?id=51026 #GoSocial #SystemFields #GoogleFeed
+

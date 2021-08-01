@@ -1,0 +1,35 @@
+{##
+ # Wholesale prices
+ #}
+
+{% if this.isWholesaleNotAllowed() %}
+
+  {{ widget('\\XLite\\View\\Tooltip', isImageTag=false, caption=this.getSVGImage('modules/CDev/Wholesale/wp.svg'), className='wp-tooltip', helpId='wp-%d'|format(this.entity.getId())) }}
+
+{% else %}
+
+  <a href="{{ this.getLink() }}" class="tooltip-caption">
+    {{ widget('\\XLite\\View\\Tooltip', isImageTag=false, caption=this.getSVGImage('modules/CDev/Wholesale/wp.svg'), className='wp-link-tooltip', helpId='wp-%d'|format(this.entity.getId()), placement="right", delay=800) }}
+  </a>
+{% endif %}
+
+<div id="wp-{{ this.entity.getId() }}" style="display: none;">
+    {% if this.isWholesaleNotAllowed() %}
+      {{ this.getWholesaleNotAllowedMessage()|raw }}
+    {% elseif this.getWholesalePrices() %}
+      {{ t('Wholesale pricing') }}<br />
+      <ul>
+        {% for wp in this.getWholesalePrices() %}
+          <li>
+            {{ t('from') }} {{ wp.quantityRangeBegin }}:
+            {{ this.formatValue(wp) }}
+            {% if wp.membership %}
+              ({{ wp.membership.name }})
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ t('Wholesale prices are not defined') }}
+    {% endif %}
+</div>

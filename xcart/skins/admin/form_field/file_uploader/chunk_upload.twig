@@ -1,0 +1,17 @@
+{##
+ # File upload by chunks template
+ #}
+
+<span class="input-field-wrapper chunk-file-upload {{ this.getWrapperClass() }} hidden">
+  {{ this.displayCommentedData(this.getCommentedData()) }}
+  <input id="files" class="inputfile" type="file" {{ this.getAttributesCode()|raw }} {% if this.getExtensions() %} accept="{{ this.getExtensions() }}" {% endif %} />
+  <label for="files" class="input-button">Choose files</label>
+  <div class="hidden popup-content">
+    <div class="upload-by-chunks-popup">
+    <div class="title">{{ t('File uploading') }}</div>
+    <div class="progress-bar-container progress active progress-striped">
+        <div class="bar progress-bar file-upload-progress" title="0%" style="width: 0%;"></div>
+    </div>
+    </div>
+  </div>
+</span>

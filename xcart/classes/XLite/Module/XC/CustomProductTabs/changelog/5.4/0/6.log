@@ -1,0 +1,7 @@
+Version 5.4.0.6
+
+Fixes (3)
+2019-11-28 - [Bug] A no longer existing model of XLite\Model\Module was used. Fixed. #BUG-8078 (Maxim Kuznetsov) #Core #CustomProductTabs #Service
+2019-10-25 - [Bug] When importing new custom tabs, the field "link" is now generated automatically. The field "link" now serves as the primary identifier of a tab. #BUG-6748 https://bt.x-cart.com/view.php?id=50023 (Fedya Lavrentyev) #CustomProductTabs
+2019-10-11 - [Bug] Fixed the incorrect display of a product tab which had a colon character at the end of the name. #BUG-7959 https://bt.x-cart.com/view.php?id=51038 (Pavel Veselovsky) #CustomProductTabs
+

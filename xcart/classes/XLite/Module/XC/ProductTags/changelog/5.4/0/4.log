@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-05-30 - [Bug] Product search in the Customer area was working incorrectly. Fixed. #BUG-7394 (Shevelov Alexander) #Core #ProductTags
+

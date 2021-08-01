@@ -1,0 +1,72 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Subscriptions list styles
+ *
+ * @author    Creative Development LLC <info@cdev.ru>
+ * @copyright Copyright (c) 2011-2016 Creative Development LLC <info@cdev.ru>. All rights reserved
+ * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link      http://www.litecommerce.com/
+ */
+
+.items-list-table table.list tbody.lines tr.line td.cell.id,
+.items-list-table table.list tbody.lines tr.line td.cell.startDate,
+.items-list-table table.list tbody.lines tr.line td.cell.product,
+.items-list-table table.list tbody.lines tr.line td.cell.profile,
+.items-list-table table.list tbody.lines tr.line td.cell.statistics
+{
+  line-height: 20px;
+}
+
+.items-list.subscription table.list tbody td.id span.order-number,
+.items-list.subscription table.list tbody td.startDate .next-date,
+.items-list.subscription table.list tbody td.startDate .next-date .date,
+.items-list.subscription table.list tbody td.startDate .actual-date,
+.items-list.subscription table.list tbody td.startDate .actual-date .date,
+.items-list.subscription table.list tbody td.profile .profile-email a,
+.items-list.subscription table.list tbody td.product .subscription-info
+{
+  color: #8f8f8f;
+  font-size: 12px;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+.items-list.subscription table.list tbody td.id span.order-number a
+{
+  font-size: 12px;
+  vertical-align: baseline;
+}
+
+.items-list.subscription table.list tbody td.cell.product,
+.items-list.subscription table.list tbody td.cell.profile
+{
+  min-width: 80px;
+}
+
+.items-list.subscription table.list tbody tr.last-payment-failed .next-date,
+.items-list.subscription table.list tbody tr.last-payment-failed .next-date .date,
+.items-list.subscription table.list tbody tr.last-payment-failed .failed-attempts,
+.items-list.subscription table.list tbody tr.last-payment-expired .next-date,
+.items-list.subscription table.list tbody tr.last-payment-expired .next-date .date,
+.items-list.subscription table.list tbody tr.last-payment-expired .actual-date,
+.items-list.subscription table.list tbody tr.last-payment-expired .actual-date .date
+{
+  color: #e65e57;
+}
+
+.xpay-xpaymentscloud-searchpanel-subscription .search-conditions-box .search-conditions-hidden > li {
+  float: none;
+}
+
+#daterange,
+#nextdaterange
+{
+  width: 300px;
+}
+
+.items-list-table.order-items table.list tbody td.cell.name ul.subitem li.subscription-setup-fee,
+.items-list-table.order-items table.list tbody td.cell.name ul.subitem li.subscription-fee,
+.items-list-table.order-items table.list tbody td.cell.name ul.subitem li.subscription-planned-date {
+  display: block;
+}

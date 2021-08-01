@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-10-29 - [Bug] Google Analytics. Fixed the error generated when sending a pageview with a large number of products. #BUG-8040 https://bt.x-cart.com/view.php?id=51139 (Nikita Erkhov) #GoogleAnalytics
+

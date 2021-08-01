@@ -1,0 +1,8 @@
+Version 5.4.1.1
+
+Improvements (1)
+2019-12-23 - [Change] The Subscribe checkbox option at checkout is now not selected by default if the addons GDPR and Mailchimp are enabled. #BUG-7391 https://bt.x-cart.com/view.php?id=50653 (Maxim Kuznetsov) #MailChimp #GDPR
+
+Fixes (1)
+2019-12-11 - [Bug] Layout issue on the Mailchimp E-Commerce features setup page. Fixed. #BUG-7251 (Fedya Lavrentyev) #MailChimp
+

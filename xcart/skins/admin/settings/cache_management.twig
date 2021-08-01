@@ -1,0 +1,14 @@
+{##
+ # Cache management page
+ #}
+
+{% if not this.isQuickDataNotFinished() %}
+  <div class="rebuilded-time">
+      <span>{{ t('Last time re-deployed at') }} </span>
+      <span class="time" data-time="{{ this.getLastRebuildTimeRaw() }}">{{ this.getLastRebuildTime() }}</span>
+  </div>
+  {{ widget('\\XLite\\View\\ItemsList\\Model\\CacheManagementActions') }}
+{% endif %}
+{% if this.isQuickDataNotFinished() %}
+  {{ widget('\\XLite\\View\\QuickData\\Progress') }}
+{% endif %}

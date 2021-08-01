@@ -1,0 +1,192 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-payment {
+  .subheader {
+    margin: 0 auto 40px;
+    max-width: 750px;
+    font-size: 16px;
+  }
+
+  .methods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+    text-align: left;
+
+    .offline,
+    .online {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 5px 13px 5px 25px;
+      min-height: 70px;
+      width: 480px;
+      margin-bottom: 10px;
+      border: solid 1px #ccd0d2;
+      border-radius: 5px;
+      background-color: #ffffff;
+      transition: box-shadow 0.5s ease-out;
+
+      &:hover {
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.17);
+        transition: box-shadow 0.5s ease-out;
+      }
+
+      .image {
+        margin-right: 15px;
+      }
+
+      .method-name {
+        line-height: 100%;
+        font-size: 12px;
+        color: #000000;
+      }
+
+      .method-type {
+        color: #9b9b9b;
+        margin-top: 7px;
+      }
+
+      .note {
+        font-size: 12px;
+        line-height: 160%;
+        max-width: 230px;
+      }
+
+      .switcher {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-grow: 1;
+        text-align: center;
+
+        &.read-only {
+          cursor: default;
+
+          > span,
+          > a {
+            opacity: .3;
+            cursor: default;
+          }
+        }
+
+        &.loading {
+          pointer-events: none;
+          opacity: .5;
+        }
+
+        a div {
+          width: 60px;
+          height: 30px;
+          background-color: #cccccc;
+          border-radius: 30px;
+
+          span {
+            transition: margin 0.4s, background 0.4s;
+            background-color: #fff;
+            margin-left: 0;
+            margin-right: 30px;
+            border-radius: 30px;
+            width: 22px;
+            height: 22px;
+            padding-top: 4px;
+            margin-top: 4px;
+
+            &:before {
+              color: #cccccc;
+            }
+          }
+        }
+
+        span.inactive,
+        span.active {
+          text-transform: uppercase;
+          margin: 0 7px;
+          font-size: 14px;
+          line-height: 28px;
+        }
+
+        span.inactive {
+          color: #9d9d9d;
+        }
+
+        span.active {
+          color: #cccccc;
+        }
+
+        &.enabled {
+
+          a div {
+            background-color: #51b962;
+
+            span {
+              margin-left: 30px;
+              margin-right: 0;
+
+              &:before {
+                color: #51b962;
+              }
+            }
+          }
+
+          span.inactive {
+            color: #cccccc;
+          }
+
+          span.active {
+            color: #51b962;
+          }
+        }
+      }
+    }
+
+    .offline {
+      .image {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .online {
+      .image {
+        width: 100px;
+        margin-right: 25px;
+
+        img {
+          max-width: 100px;
+          max-height: 50px;
+        }
+      }
+
+      .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-grow: 2;
+      }
+    }
+
+    .regular-button, .regular-main-button {
+      padding: 7px 0;
+      font-size: 12px;
+      width: 75px;
+      height: 40px;
+
+      span {
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{##
+ # Attachments list
+ #}
+<div class="product-attachments">
+  <ul class="files">
+    {% for attachment in this.getAttachments() %}
+      <li class="file">
+        <div class="row">
+          <div class="column">
+            <div class="icon icon-type-{{ attachment.getIconType() }}"></div>
+          </div>
+          <div class="column">
+            <a class="name" href="{{ attachment.getURL() }}">{{ attachment.getPublicTitle() }}</a>
+            {% if attachment.storage.getSize() %}
+              <span class="size">{{ this.formatSize(attachment.storage.getSize()) }}</span>
+            {% endif %}
+            {% if attachment.getDescription() %}
+              <div class="description">{{ attachment.getDescription() }}</div>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

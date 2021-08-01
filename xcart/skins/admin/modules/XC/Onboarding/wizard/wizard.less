@@ -1,0 +1,204 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Settings styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+#main.reloading:before {
+    height:auto;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* centering */
+.onboarding-wizard,
+.onboarding-wizard--inner {
+    height: 100%;
+}
+
+.onboarding-wizard-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 41px;
+
+    .buttons > .additional-buttons.muted-buttons {
+        padding-top: @rhythmic-unit / 2;
+    }
+
+    a.muted-button,
+    .buttons > .additional-buttons.muted-buttons a {
+          font-size: 12px;
+          cursor: pointer;
+          color: #9b9b9b;
+
+          &:hover,
+          &:focus {
+              color: #3a7ccd;
+              text-decoration: none;
+          }
+      }
+}
+
+.panel-wrapper, .step-contents > .buttons, .step-contents .bottom-sticky {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+}
+
+/* styles */
+
+#page-title {
+    display: none;
+}
+
+.onboarding-wizard-wrapper {
+    overflow: hidden;
+    transition: opacity 1s;
+    min-height: 550px;
+}
+
+.onboarding-wizard-wrapper .reloading.reloading-circles .reloading-element::after {
+    background: white;
+}
+
+.onboarding-wizard--inner .reloading-element {
+    display: none;
+}
+
+#main.reloading .reloading-element {
+    display: block;
+}
+
+#onboarding-wizard-loader-point {
+    height: 100%;
+}
+
+.onboarding-wizard-wrapper.onboarding-wizard--initial {
+    display: none;
+}
+
+.onboarding-wizard--inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.onboarding-wizard--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0;
+}
+
+.onboarding-wizard--body {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    max-height: 800px;
+}
+
+.onboarding-wizard-header {
+    text-align: center;
+    position: relative;
+}
+
+.onboarding-wizard-step {
+    text-align: center;
+}
+
+.onboarding-wizard a.external {
+    text-decoration: none;
+}
+
+.onboarding-wizard a.external:hover span,
+.onboarding-wizard a.external:focus span {
+    text-decoration: underline;
+}
+
+.onboarding-wizard .external:after,
+.onboarding-wizard .external:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f08e";
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 3px;
+    visibility: hidden;
+}
+
+.onboarding-wizard .external:hover:after,
+.onboarding-wizard .external:focus:after {
+    visibility: visible;
+}
+
+.onboarding-wizard-step .heading {
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.onboarding-wizard-step .text {
+    font-size: 14px;
+    line-height: 24px;
+    color: @color-text-dark;
+}
+
+.onboarding-wizard-step .heading,
+.onboarding-wizard-step .text {
+    margin: 0 0 24px 0;
+    max-width: 800px;
+}
+
+.onboarding-wizard-step .regular-button,
+.onboarding-wizard-step .regular-main-button {
+    padding: 10px 60px;
+    height: auto;
+}
+
+.onboarding-wizard .close-button {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    z-index: 10;
+    background: none;
+    cursor: pointer;
+}
+
+.onboarding-wizard .close-button:hover:after,
+.onboarding-wizard .close-button:hover:before,
+.onboarding-wizard .close-button:focus:after,
+.onboarding-wizard .close-button:focus:before {
+    background-color: #4a90e2;
+}
+
+.onboarding-wizard .close-button:before,
+.onboarding-wizard .close-button:after {
+    position: absolute;
+    left: 10px;
+    top: -4px;
+    content: '';
+    height: 20px;
+    width: 1px;
+    background-color: #d8d8d8;
+}
+
+.onboarding-wizard .close-button:before {
+    transform: rotate(45deg);
+}
+
+.onboarding-wizard .close-button:after {
+    transform: rotate(-45deg);
+}

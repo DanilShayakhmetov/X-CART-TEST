@@ -1,0 +1,5 @@
+Version 5.4.0.3
+
+Fixes (1)
+2019-04-24 - [Bug] Layout issues related to the Tags table. Fixed. #BUG-7308 (Fedya Lavrentyev) #ProductTags
+

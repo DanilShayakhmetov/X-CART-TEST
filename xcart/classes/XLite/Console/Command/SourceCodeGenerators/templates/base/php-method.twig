@@ -1,0 +1,29 @@
+{##
+ # PHP Class Core template
+ #}
+
+{% autoescape false %}
+{% if method.description or method.params or method.returnType %}
+    /**
+{% if method.description %}
+     * {{ method.description }}
+{% endif %}
+{% for param in method.params %}
+     *
+     * @param {{ param.type }} ${{ param.name }} {{ param.description }}{% if not param.required %} OPTIONAL{% endif %}
+{% endfor %}
+{% if method.returnType %}
+     *
+     * @return {{ method.returnType }}
+{% endif %}
+     */
+{% endif %}
+    public{% if method.static %} static{% endif %} function {{ method.name }}({% for param in method.params %}{% if param.type %}{{ param.type }} {% endif %}${{ param.name }}{% if not param.required %} = {{ param.default|default('null') }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %})
+    {
+{% if bodyBlockContent -%}
+{{ bodyBlockContent -}}
+{% else %}
+        {{ method.body }}
+{% endif %}
+    }
+{% endautoescape %}

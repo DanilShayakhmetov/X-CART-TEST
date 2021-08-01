@@ -1,0 +1,150 @@
+{##
+ # Connect widget
+ #
+ #}
+<div id="xpayments-iframe-container"></div>
+<script>
+function createXPaymentsWidget()
+{
+  window.xpaymentsWidgetInstance = new XPaymentsWidget();
+
+  window.xpaymentsWidgetInstance.init({
+    account: '{{ this.getXpaymentsMethod().getSetting('account') }}',
+    widgetKey: '{{ this.getXpaymentsMethod().getSetting('widget_key') }}',
+    container: '#xpayments-iframe-container',
+    form: 'form.place',
+    showSaveCard: {% if this.isHideSaveCardCheckbox() %}false{% else %}true{% endif %},
+    customerId: '{{ this.getXpaymentsCustomerId() }}',
+    order: {
+      total: '{{ this.getCart().getTotal() }}',
+      currency: '{{ this.getCart().getCurrency().getCode() }}'
+    },
+    company: {
+      name: '{{ this.config.Company.company_name }}',
+      countryCode: '{{ this.config.Company.location_country }}',
+    },
+    language: '{{ this.getCurrentLanguage().getCode() }}',
+    applePay: {
+      requiredShippingFields: [],
+      requiredBillingFields: [],
+      shippingMethods: []
+    },
+  }).on('fail', function() {
+     {% if 'fast-lane' == this.config.General.checkout_type %}
+       Checkout.instance.finishLoadAnimation();
+     {% else %}
+       jQuery('.steps').get(0).loadable.unshade();
+       jQuery('.cart-items').get(0).loadable.unshade();
+       jQuery('.place-order').removeClass('submitted');
+     {% endif %}
+     core.trigger('checkout.common.anyChange');
+     core.trigger('checkout.common.unblock');
+  }).on('alert', function(params) {
+     setTimeout(function () {
+       if ('popup' === params.type) {
+         core.trigger('message', {type: 'info', message: params.message});
+       } else {
+         core.showError(params.message);
+       }
+     }, 500)
+  }).on('loaded', function(params) {
+    if (this.config.applePay.checkoutMode) {
+      toggleApplePayButton(true);
+    }
+  }).on('paymentmethod.change', function(params) {
+    toggleApplePayButton('apple_pay' === params.newId);
+  });
+
+  core.bind('xpaymentsAnonymousRegister', updateXPaymentsSaveCard);
+  core.bind('xpaymentsTotalUpdate', updateXPaymentsTotal);
+  {% if 'fast-lane' == this.config.General.checkout_type %}
+    core.bind('checkout.common.ready', flcXPaymentsSubmit);
+    core.bind('fastlane_section_switched', resizeXPaymentsWidget);
+  {% endif %}
+
+  return getXPaymentsWidget(false);
+}
+
+{% if 'fast-lane' == this.config.General.checkout_type %}
+function flcXPaymentsSubmit(event, state)
+{
+  {## FLC - redefine default form action #}
+  var widget = getXPaymentsWidget();
+  if (widget) {
+    state.state = false;
+    setTimeout(Checkout.instance.startLoadAnimation, 0);
+    core.trigger('checkout.common.block');
+    widget.submit();
+  }
+}
+
+function resizeXPaymentsWidget(event, data)
+{
+  if ('undefined' !== typeof data.newSection && 'payment' === data.newSection.name) {
+    var widget = getXPaymentsWidget();
+    widget && widget.refresh();
+  }
+}
+{% endif %}
+
+function toggleApplePayButton(state)
+{
+    jQuery('.place-order').toggleClass('apple-pay-button-place-order', state);
+}
+
+function updateXPaymentsTotal(event, data)
+{
+  var widget = getXPaymentsWidget();
+  widget && widget.setOrder(data.total, data.currency);
+}
+
+function updateXPaymentsSaveCard(event, data)
+{
+  var widget = getXPaymentsWidget();
+  widget && widget.showSaveCard(data.value);
+}
+
+function getXPaymentsWidget(onlyValid = true)
+{
+  if (
+      'undefined' !== typeof window.xpaymentsWidgetInstance
+      && (!onlyValid || xpaymentsWidgetInstance.isValid())
+  ) {
+    xpaymentsWidgetInstance.config.applePay.enabled = {% if this.isXpaymentsApplePaySelected() %}true{% else %}false{% endif %};
+    xpaymentsWidgetInstance.config.applePay.checkoutMode = {% if this.isXpaymentsApplePaySelected() %}true{% else %}false{% endif %};
+    return window.xpaymentsWidgetInstance;
+  } else {
+    return false;
+  }
+}
+
+function loadXPaymentsWidget()
+{
+  jQuery(function() {
+    toggleApplePayButton(false);
+    var widget = getXPaymentsWidget(false);
+    if (!widget) {
+        widget = createXPaymentsWidget();
+        core.bind('checkout.placeOrderButton.loaded', function() {
+          var widget = getXPaymentsWidget(true);
+          widget && toggleApplePayButton('apple_pay' === widget.getPaymentMethod());
+        });
+    }
+    widget.load();
+  });
+}
+if ('undefined' == typeof window.xpaymentsLoadHandlerBinded) {
+  if ('undefined' === typeof jQuery || 'undefined' === typeof core) {
+    document.addEventListener('DOMContentLoaded', function() {
+      loadXPaymentsWidget();
+      jQuery(function() {
+        core.bind('checkout.paymentTpl.loaded', loadXPaymentsWidget);
+      });
+    });
+  } else {
+    core.bind('checkout.paymentTpl.loaded', loadXPaymentsWidget);
+  }
+  window.xpaymentsLoadHandlerBinded = true;
+}
+</script>
+

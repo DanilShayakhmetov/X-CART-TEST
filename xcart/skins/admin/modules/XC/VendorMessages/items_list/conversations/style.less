@@ -1,0 +1,163 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Messages list style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+@import "../../../../../css/initialize";
+
+.conversations {
+  .messages {
+    thead {
+      background-color: #f8f8f8;
+
+      th {
+        font-weight: normal;
+        font-size: 14px;
+        white-space: nowrap;
+        height: 60px;
+
+        &.select-all {
+          div {
+            input {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    td {
+      border: 0 none;
+      border-top: 1px solid #ececec;
+      border-bottom: 1px solid #ececec;
+      white-space: nowrap;
+
+      &.select {
+        .selector {
+          margin: 0;
+        }
+      }
+
+      &.date .time {
+        font-size: 12px;
+        display: block;
+        line-height: (@line-height-base * 3 / 4);
+        color: @color-tip;
+      }
+    }
+
+    .message:last-child td {
+      border-bottom: 0 none;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    a:hover,
+    a:hover * {
+      opacity: .88;
+    }
+
+    .conversation-link {
+      min-width: 60px;
+    }
+
+    .body {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: inline-block;
+      margin-top: -2px;
+      vertical-align: middle;
+    }
+
+    .text {
+      position: relative;
+      width: 100%;
+
+      & > div {
+        vertical-align: middle;
+      }
+    }
+
+    .conversation-label {
+      font-size: 12px;
+      line-height: 18px;
+      color: @color-error;
+    }
+
+    .has-marks a.text-link {
+      width: 75%;
+    }
+
+    .marks {
+      width: 25%;
+    }
+
+    .dispute {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+      color: @color-error;
+
+      svg {
+        margin-top: 3px;
+      }
+    }
+  }
+
+  .empty {
+    text-align: center;
+    padding-top: 72px;
+
+    svg {
+      display: inline-block;
+      width: 140px;
+      height: auto;
+
+      path {
+        fill: #d1d1d1;
+      }
+    }
+
+    strong {
+      color: #d1d1d1;
+      font-size: 32px;
+      font-weight: normal;
+      line-height: normal;
+      margin-top: -2px;
+      display: block;
+    }
+  }
+
+  .pager-top {
+    display: none;
+  }
+
+  .sticky-panel {
+    .additional-buttons {
+      & > .or:first-child {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.xc-vendormessages-searchpanel-message-admin-main .messageSubstring-condition,
+.xc-vendormessages-searchpanel-message-admin-main .messageSubstring-condition span.input,
+.xc-vendormessages-searchpanel-message-admin-main .messageSubstring-condition div.table-value input[type="text"] {
+  width: 100%;
+}
+
+.xc-vendormessages-searchpanel-message-admin-main .messages-condition div.table-value select {
+  width: auto;
+}

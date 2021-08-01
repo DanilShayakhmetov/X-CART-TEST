@@ -1,0 +1,16 @@
+{##
+ # Slidebar
+ #}
+<nav id="slidebar" data-mobile-navbar>
+    {% if this.shouldRender() %}
+    <ul>
+        {% if this.isDisplayCategories() %}
+            <li class="slidebar-categories">
+                <span data-toggle="dropdown">{{ t('Categories') }}</span>
+              {{ widget_list('layout.header.categories') }}
+            </li>
+        {% endif %}
+        {{ widget_list('header.menu', isSlidebar=true) }}
+    </ul>
+    {% endif %}
+</nav>

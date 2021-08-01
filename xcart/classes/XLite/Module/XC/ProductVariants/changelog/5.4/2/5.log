@@ -1,0 +1,5 @@
+Version 5.4.2.5
+
+Fixes (1)
+2020-09-30 - [Bug] Under certain conditions, a change of QTY of the main product was not reflected in the order history. Fixed. #BUG-9000 https://bt.x-cart.com/view.php?id=51823 #Core #ProductVariants #BackorderPreorder
+

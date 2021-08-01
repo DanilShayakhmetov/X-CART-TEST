@@ -1,0 +1,8 @@
+Version 5.4.0.2
+
+Improvements (1)
+2019-04-05 - [Change] Layout adjustment for various pages according to the style guide. #XCN-9763 (Maxim Kuznetsov) #Core #SimpleCMS #ThemeTweaker #ProductReviews #NewsletterSubscriptions #MultiVendor #ProductTags #SystemFields #MailChimp #News #Facebook Commerce
+
+Fixes (1)
+2019-02-01 - [Bug] Added a cookie related setting SameSite = lax | strict to the section [other] in etc/config.php; the value by default is lax. #BUG-7019 https://bt.x-cart.com/view.php?id=50406 (Vladimir Semyonov) #Core #MailChimp #NextPreviousProduct
+

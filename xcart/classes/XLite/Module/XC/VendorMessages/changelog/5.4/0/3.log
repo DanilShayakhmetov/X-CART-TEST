@@ -1,0 +1,7 @@
+Version 5.4.0.3
+
+Improvements (3)
+2019-05-03 - [Change] Adjusted the font color of some elements for more contrast. #XCN-9856 (Fedya Lavrentyev) #Core #Egoods #FeaturedProducts #FileAttachments #SimpleCMS #VolumeDiscounts #Wholesale #CanadaPost #ColorSchemes #ProductVariants #RelatedProducts #MultiVendor #VendorMessages #CustomProductTabs #UpdateInventory
+2019-04-18 - [Change] Layout adjustment for the Logo & Favicon page in the Admin area according to the style guide. #XCN-9826 (Fedya Lavrentyev) #Core #SimpleCMS #VendorMessages
+2019-04-18 - [Change] Layout adjustment for the order messages page according to the style guide. #XCN-9737 (Fedya Lavrentyev) #MultiVendor #VendorMessages
+

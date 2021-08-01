@@ -1,0 +1,5 @@
+Version 5.4.1.2
+
+Fixes (1)
+2020-05-12 - [Bug] The labels "Sale" or "Market price" could be shown on a product page when just a market price had been set. Fixed. #BUG-8657 https://bt.x-cart.com/view.php?id=51726 #Sale #ProductVariants
+

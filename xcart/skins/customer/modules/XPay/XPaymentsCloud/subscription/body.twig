@@ -1,0 +1,15 @@
+{##
+ # Subscriptions list
+ #
+ #}
+
+{% if this.hasResults() %}
+  <div class="account-subscriptions">
+    {% for xpaymentsSubscription in this.getPageData() %}
+      {{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\CustomerSubscription', xpaymentsSubscription=xpaymentsSubscription) }}
+    {% endfor %}
+  </div>
+{% endif %}
+{% if not this.hasResults() %}
+  <div>{{ t('No subscriptions are purchased yet') }}</div>
+{% endif %}

@@ -1,0 +1,52 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Custom tabs styles style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.product-tabs-brief-info {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.product-tabs-brief-info ul {
+  list-style: none;
+}
+
+
+.product-tabs-brief-info ul li + li {
+  padding-top: 20px;
+}
+
+.product-tabs-brief-info ul li .tab-title {
+  display: block;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.product-tabs-brief-info ul li .tab-brief-info-body {
+  display: block;
+  color: #4a4a4a;
+  font-size: 12px;
+}
+
+.product-tabs-brief-info ul li .brief-info-link {
+  margin: 5px 0;
+  display: block;
+  clear: both;
+}
+
+.product-tabs-brief-info ul li .brief-info-link a {
+  color: #5194c5;
+  font-size: 12px;
+}
+
+.product-tabs-brief-info ul li .brief-info-link a:hover {
+  color: #0f9dcc;
+}

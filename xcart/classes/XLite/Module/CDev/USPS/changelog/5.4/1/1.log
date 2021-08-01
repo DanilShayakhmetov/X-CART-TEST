@@ -1,0 +1,8 @@
+Version 5.4.1.1
+
+Improvements (1)
+2020-05-15 - [Change] Updated the U.S.P.S. API server URL. #BUG-8699 #USPS
+
+Fixes (1)
+2020-04-17 - [Bug] Corrected the spelling of the shipping method "USPS". #BUG-8551 #USPS
+

@@ -1,0 +1,27 @@
+{##
+ # Database backup tab template
+ #}
+
+<p class="spaced">
+  {{ t('Use this section to back up the database of your online store. Please note that the database backup procedure can take up to several minutes.') }}
+  <br/>
+  {{ t('You can choose if to download your database data')|raw }}
+</p>
+
+<div class="db-backup-form">
+  {% form '\\XLite\\View\\Form\\DbBackup' %}
+    {% if not this.isFileWritable() %}
+      <div class="backup-warning-content alert alert-warning">
+        {{ t('You cannot save database data to a file on the web server (\'var/backup/sqldump.sql.php\').') }}
+        {% if not this.isDirExists() %}
+          <span class="no-backup-dir">{{ t('The directory \'var/backup/\' does not exist or is not writable.') }}</span>
+        {% endif %}
+        {% if this.isDirExists() %}
+          <span class="backup-file-non-writable">{{ t('The directory \'var/backup/\' does not exist or is not writable.') }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {{ widget('\\XLite\\View\\StickyPanel\\Backup', isFileWritable=this.isFileWritable(), isFileExists=this.isFileExists()) }}
+  {% endform %}
+</div>

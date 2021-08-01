@@ -1,0 +1,16 @@
+{##
+# XPaymentsCloud
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2016 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+#
+# @ListChild (list="product.modify.list", weight="510")
+#}
+
+<tr style="display: none;">
+  <td class="name-attribute">&nbsp;</td>
+  <td class="star">&nbsp;</td>
+  <td class="value-attribute">{% if this.product.isXpaymentsSubscriptionPlan() %}<div id="product-is-xpayments-subscription-plan"></div>{% endif %}</td>
+</tr>

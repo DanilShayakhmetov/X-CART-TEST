@@ -1,0 +1,19 @@
+{##
+ # If Apple Pay is not available then hide OR labels prior Checkout/Buy with Apple Pay buttons
+ #
+ # @listChild (list="xpayments.button.applepay", weight="100")
+ #}
+<script>
+    function hideTheOrLabelsIfApplePayDisabled() {
+        if (!window.ApplePaySession || !ApplePaySession.canMakePayments()) {
+            // Hide "OR" immediately
+            var btns = document.querySelectorAll('.apple-pay-button-container');
+            for (i = 0; i < btns.length; ++i) {
+                if (btns[i].previousElementSibling) {
+                    btns[i].previousElementSibling.style.display = 'none';
+                }
+            }
+        }
+    }
+    hideTheOrLabelsIfApplePayDisabled();
+</script>

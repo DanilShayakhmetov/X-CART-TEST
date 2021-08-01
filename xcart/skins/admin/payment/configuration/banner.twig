@@ -1,0 +1,11 @@
+{##
+ # Payment page banner
+ #}
+{% set banner = this.getBanner() %}
+{% if banner %}
+<div class="payment-page-banner">
+  <a href="{{ this.getBannerURL(banner) }}" target="_blank">
+    <img src="{{ this.getBannerImg(banner) }}" alt="{{ t('Payment') }}" class="payments-banner"/>
+  </a>
+</div>
+{% endif %}

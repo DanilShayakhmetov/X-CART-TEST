@@ -1,0 +1,5 @@
+Version 5.4.0.7
+
+Improvements (1)
+2019-12-19 - [Change] Changed the template of the email message with a request to review the purchased products. Instead of the product price, the message now provides an "Add review" button. The message text format was slightly adjusted. #BUG-7256 (Maxim Kuznetsov) #Core #ProductReviews
+

@@ -1,0 +1,10 @@
+{##
+ # Buy with Apple Pay widget container
+ #
+ # @ListChild (list="product.details.page.info.form.buttons-added.cart-buttons", zone="customer", weight="135")
+ # @ListChild (list="product.details.quicklook.info.form.buttons-added.cart-buttons", zone="customer", weight="135")
+ # @ListChild (list="product.details.page.info.form.buttons.cart-buttons", zone="customer", weight="135")
+ # @ListChild (list="product.details.quicklook.info.form.buttons.cart-buttons", zone="customer", weight="135")
+ #}
+{{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Product\\BuyWithApplePay', product=this.product) }}
+{{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Product\\BuyWithApplePayPriceUpdate', product=this.product) }}

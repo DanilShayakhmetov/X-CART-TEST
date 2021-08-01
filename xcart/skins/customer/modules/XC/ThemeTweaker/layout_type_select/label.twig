@@ -1,0 +1,6 @@
+<div class="{{ this.getLabelContainerClass() }}">
+  <label for="{{ this.getFieldId() }}">
+    {{ this.getFormattedLabel() }}
+  </label>
+  <p class="selected-option" v-text="options[selected]">{{ this.getSelectedOptionLabel() }}</p>
+</div>

@@ -1,0 +1,5 @@
+Version 5.4.1.0
+
+Fixes (1)
+2021-01-14 - [Bug] Two-Factor Authentication was breaking the checkout process if the buyer signed in using the login form on the checkout page and that user had a phone number stored in their profile. Fixed. #XCB-242 #XC-TwoFactorAuthentication
+

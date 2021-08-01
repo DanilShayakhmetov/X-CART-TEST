@@ -1,0 +1,5 @@
+Version 5.4.1.3
+
+Fixes (1)
+2020-07-03 - [Bug] Fixed some XSS vulnerabilities in the Admin area. #BUG-8803 #Core #Coupons #Sale #ProductReviews
+

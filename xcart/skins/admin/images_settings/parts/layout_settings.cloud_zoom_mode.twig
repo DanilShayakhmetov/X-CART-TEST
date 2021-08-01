@@ -1,0 +1,14 @@
+{##
+ # Cloud zoom switcher
+ #
+ # @ListChild (list="images_settings", weight="50")
+ #}
+
+{% if this.isCloudZoomAllowed() %}
+  <li class="has-dependency">
+    {{ widget('XLite\\View\\FormField\\Select\\CloudZoomMode', label='Cloud Zoom mode', fieldName='cloud_zoom_mode', value=this.getCloudZoomMode()) }}
+    <script type="text/x-cart-data">
+      {"dependency":{"show":{"cloud_zoom":[true]}}}
+    </script>
+  </li>
+{% endif %}

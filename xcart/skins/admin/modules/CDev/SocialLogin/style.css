@@ -1,0 +1,34 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * SocialLogin settings styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.site-link:hover::after {
+  content: '';
+  background: url(../../../modules/CDev/SocialLogin/images/link.svg) no-repeat;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  vertical-align: super;
+  margin-left: 3px;
+}
+
+.settings ul.table p {
+  margin: 15px 0;
+}
+
+.settings ul.table li.instructions.even {
+  background: none;
+}
+
+.settings form .table:not(.vertical)>li.instructions {
+  display: block;
+}
+
+.settings .instructions:first-child h2{
+  margin-top:0 ;
+}

@@ -1,0 +1,25 @@
+{##
+ # File uploader menu
+ #
+ # TODO remove
+ #
+ # @ListChild (list="file-uploader.menu", weight="50")
+ #}
+
+{% if this.hasAlt() %}
+  <li role="presentation" class="alt-text">
+    <div class="value" @click.prevent.stop="showAlt">
+      {{ t('Alt') }}:
+      <span>{{ this.getAlt() }}</span>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">{{ t('Alt') }}:</span>
+      <input name="{{ this.getName() }}[alt]" v-model="alt"
+             placeholder="{{ t('Enter alt text') }}"
+             value="{{ this.getAlt() }}" class="form-control input-alt"
+             @change="doChangeAlt"
+             @keydown="doChangeAlt"
+             @blur="doChangeAlt"/>
+    </div>
+  </li>
+{% endif %}

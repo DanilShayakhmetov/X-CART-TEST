@@ -1,0 +1,13 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Shipping status", translations: [{ code: en, label: "Fulfillment status" }] }
+  - { name: "All shipping statuses", translations: [{ code: en, label: "All fulfillment statuses" }] }
+  - { name: "Order shipping status changed from {{oldStatus}} to {{newStatus}}", translations: [{ code: en, label: "Order fulfillment status changed from {{oldStatus}} to {{newStatus}}" }] }
+  - { name: 'Shipping status not found, "New" will be used for order', translations: [{ code: en, label: 'Fulfillment status not found, "New" will be used for order' }]}
+  - { name: "X module settings", translations: [{ code: en, label: "\"{{name}}\" addon settings" }] }

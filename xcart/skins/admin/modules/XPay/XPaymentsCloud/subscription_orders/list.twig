@@ -1,0 +1,10 @@
+{##
+ # Recent block
+ #
+ #}
+
+{{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\SubscriptionInfo') }}
+
+{% form 'XLite\\Module\\XPay\\XPaymentsCloud\\View\\Form\\ItemsList\\Order\\Main' %}
+  {{ widget('XLite\\Module\\XPay\\XPaymentsCloud\\View\\ItemsList\\Model\\SubscriptionOrders') }}
+{% endform %}

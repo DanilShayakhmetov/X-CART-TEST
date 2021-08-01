@@ -1,0 +1,10 @@
+{##
+ # Sale discount modify
+ #}
+
+<div class="alert alert-warning">
+    {{ t('To ensure that products sorting and the addon Product Filter works correctly, after changing or adding sale offers, launch the re-calculation of quick data.', {'link': this.buildURL('cache_management')})|raw }}
+</div>
+
+{{ widget('XLite\\Module\\CDev\\Sale\\View\\Model\\SaleDiscount', useBodyTemplate='1') }}
+

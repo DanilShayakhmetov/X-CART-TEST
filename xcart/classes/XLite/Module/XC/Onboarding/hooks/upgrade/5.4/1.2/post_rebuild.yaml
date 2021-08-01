@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: onboarding.intro.heading
+    translations:
+      - code: en
+        label: Welcome to X-Cart!
+      - code: ru
+        label: "Поздравляем! Ваш магазин установлен."
+
+  - name: onboarding.intro.text
+    translations:
+      - code: en
+        label: Let’s set up your online store in a few easy steps. Track your progress at the top.<br/>As soon as you hit 100%, you’re all set to accept the first order.
+      - code: ru
+        label: "Этот мастер настройки поможет пошагово выполнить основные настройки магазина.<br/>Пройдя его до конца, вы сможете принять свой первый заказ."

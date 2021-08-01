@@ -1,0 +1,13 @@
+{##
+ # Regular button
+ #}
+
+<div {{ this.printTagAttributes(this.getWrapperAttributes())|raw }}>
+<button {{ this.printTagAttributes(this.getAttributes())|raw }}>
+  {{ this.displayCommentedData(this.getCommentedData()) }}
+  {% if this.getSvgIcon() %}
+    {{ this.displaySVGImage(this.getSvgIcon()) }}
+  {% endif %}
+  <span>{{ t(this.getButtonLabel()) }}</span>
+</button>
+</div>

@@ -1,0 +1,18 @@
+{# #
+# Widget with switch of subscriptions processor
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2016 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+#}
+<div class="switch-subscriptions-processor-container">
+  <div class="alert alert-success">
+    {{ widget(
+      'XLite\\View\\FormField\\Input\\Checkbox\\OnOff',
+      label=t('X-Payments Cloud connection found. You can switch your subscription management to X-Payments Cloud by clicking the button below. After the switch, new subscriptions will be processed and managed by your X-Payments Cloud instance. Existing subscriptions will continue working via old X-Payments Subscriptions and won\'t be interrupted by this switch.'),
+      fieldName='switch_subscriptions_processor',
+      value=this.isUseXpaymentsCloudForSubscriptions()
+    ) }}
+  </div>
+</div>

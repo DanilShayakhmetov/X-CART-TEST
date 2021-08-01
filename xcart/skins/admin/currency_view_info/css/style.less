@@ -1,0 +1,53 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Currency page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) "../../css/initialize";
+
+form .table.currencies:not(.vertical) {
+  position: relative;
+
+  & > li.last-update-date {
+    margin-top: 0;
+    padding: 0;
+
+    .form-field-comment {
+      .flex-display();
+    }
+  }
+
+  .table-label {
+    width: 255px;
+  }
+}
+
+.target-currency .tab-content > .dialog-content {
+  position: relative;
+}
+
+form .table.currencies:not(.vertical) > li.currency-view-info-container,
+.dialog-content > .currency-view-info-dialog {
+  position: absolute;
+  top: 0;
+  left: 600px;
+  padding: @table-cell-padding;
+  margin-top: 0;
+  background-color: @items-list-head-bg;
+  border-radius: @border-radius-base;
+  height: @items-list-head-height;
+  .flex-display();
+  .align-items(center);
+
+  .currency-block {
+    white-space: nowrap;
+  }
+
+  .currency-view-info span.title {
+    color: @color-tip;
+  }
+}

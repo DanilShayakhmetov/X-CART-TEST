@@ -1,0 +1,20 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Menus list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list-table.menus table.list .cell.link > .cell {
+	width: 245px;
+}
+
+.items-list-table.menus table.list .cell.visibleFor > .cell {
+	width: 165px;
+}
+
+.items-list-table.menus table.list tbody.lines .line .cell .entity-edit-link {
+	display: block;
+}

@@ -1,0 +1,18 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.0.15
+type: common
+authorName: 'X-Cart team'
+moduleName: 'Fast Lane Checkout'
+description: 'Modern multi-step checkout asks for a separate piece of information at a separate step. As a result, it looks looks clean for customers and seems secure and easy to fill in.'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: false
+canDisable: true

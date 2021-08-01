@@ -1,0 +1,42 @@
+{##
+ # Add new card to profile
+ #}
+{% if this.getAddressList() %}
+
+  <div class="alert alert-warning card-setup-warning" role="alert">
+    <strong class="important-label">{{ t('Important!') }}</strong>
+      {{ t('We will authorize') }}
+      {% if this.getAmount() %}
+        <strong>{{ widget('XLite\\View\\Surcharge', surcharge=this.getAmount()) }}</strong>
+      {% else %}
+          {{ t('a small amount') }}
+      {% endif %}
+      {{ t('on your credit or debit card in order to attach it to your account.') }}
+      {{ t('The amount will be released back to your card, usually within a few seconds.') }}
+  </div>
+
+  {% form '\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Form\\CardSetup' %}
+
+    <div class="card-setup-address">
+      <h4>{{ t('Billing address') }}</h4>
+      {{ widget('\\XLite\\View\\FormField\\Select\\Regular', fieldName='addressId', fieldId='addressId', value=this.getAddressId(), options=this.getAddressList()) }}
+    </div>
+
+    {% include 'modules/XPay/XPaymentsCloud/account/card_setup.widget.twig' %}
+
+    {{ widget('XLite\\View\\Button\\Submit', label=t('Save card'), id='save_card') }}
+
+  {% endform %}
+
+{% else %}
+
+  {{ t('To add a new card you need to have at least one billing address defined for your profile.') }}<br>
+  {{ t('You can enter it on the') }}
+  <a href="{{ this.getShopURL(this.buildUrl('address_book')) }}">{{ t('Address book') }}</a>
+  {{ t('page.') }}
+
+  <div class="address-book-button">
+    {{ widget('\\XLite\\View\\Button\\Link', label='Open Address book', location=this.buildURL('address_book')) }}
+  </div>
+
+{% endif %}

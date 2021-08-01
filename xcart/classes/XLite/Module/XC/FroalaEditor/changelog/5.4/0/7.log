@@ -1,0 +1,6 @@
+Version 5.4.0.7
+
+Fixes (2)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2019-12-12 - [Bug] The button "Code view" in the WYSIWYG editor of email notification templates was not working correctly. Fixed.. #BUG-8066 https://bt.x-cart.com/view.php?id=51176 #Froala
+

@@ -1,0 +1,164 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attributes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+@import "../../../../../../css/initialize";
+
+.variants,
+.variants-are-based,
+.attributes {
+  max-width: 1070px;
+  position: relative;
+}
+
+.variants {
+  max-width: none;
+}
+
+.variants-are-based {
+  margin-bottom: 30px;
+}
+
+.variants-are-based .title {
+  font-size: 22px;
+  color: #333333;
+}
+
+.variants-are-based .create-variants-block {
+  float: right;
+  margin-top: 8px;
+}
+
+.variants-are-based .change-attributes {
+  margin-left: 13px;
+}
+
+.variants-are-based .title > span {
+  font-size: 14px;
+  color: @color-text-dark;
+  border-radius: 4px;
+  background-color: #eff8fe;
+  padding: 5px 13px;
+  vertical-align: middle;
+  max-width: 150px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.variants-are-based .title > span:after {
+  content: '';
+  background: linear-gradient(to right, rgba(230, 248, 255,0) 0%,rgba(230, 248, 255,1) 75%);
+  display: block;
+  position: absolute;
+  left: 130px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+}
+
+.variants-are-based .title > span:first-of-type {
+  margin-left: 5px;
+}
+
+.attributes .items-list .selectAll {
+  display: none;
+}
+
+.attributes .items-list .line .cell.name {
+  min-width: 300px;
+}
+
+.attributes .items-list .line .cell.options .plain-value {
+  padding: 3px 0;
+}
+
+.attributes .items-list .line .cell.options .attribute-value {
+  border-radius: 4px;
+  background-color: #eff8fe;
+  padding: 5px 13px;
+  color: @color-text-dark;
+  display: inline-block;
+}
+
+.attributes .header {
+  margin-bottom: 40px;
+}
+
+.attributes .buttons {
+  margin-top: @rhythmic-unit;
+}
+
+.attributes input[type="checkbox"] {
+  margin: 0;
+}
+
+.attributes .buttons .additional {
+  font-size: 14px;
+  display: none;
+  vertical-align: middle;
+}
+
+.create-variants .variants-count {
+  color: #0f8dd0;
+}
+
+button.create-variants .variants-count {
+  margin-left: 5px;
+}
+
+.additional .or {
+  color: @color-tip;
+  margin: 0 @rhythmic-unit;
+}
+
+.attributes.checked .buttons .additional,
+.attributes.checked .create-variants-block {
+  display: inline-block;
+}
+
+.attributes.hidden {
+  display: none;
+}
+
+.attributes button.cancel {
+  float: right;
+}
+
+.variants-limit-warning,
+.variants-limit-error {
+  margin-left: @rhythmic-unit / 2;
+}
+
+.variants-limit-warning .fa {
+  color: orange;
+}
+
+.variants-limit-error .fa {
+  color: red;
+}
+
+.alert.variants-limit {
+  width: 1000px;
+  position: relative;
+  top: -10px;
+  font-size: 16px;
+}
+
+.create-variants.static span {
+  color: grey;
+  cursor: default;
+}
+
+.form-variants div.dialog-block .header .title {
+  max-width: 645px;
+}
+
+.attributes .header .tooltip-main {
+  margin-left: @rhythmic-unit / 2;
+}

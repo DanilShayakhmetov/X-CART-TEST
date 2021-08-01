@@ -1,0 +1,69 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data dump
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Google Feed URL: X", translations: [{ code: en, label: "Google Feed URL: <a href=\"{{url}}\">{{url}}</a>" }, { code: ru, label: "Ссылка на список товаров: <a href=\"{{url}}\">{{url}}</a>" }] }
+  - { name: "Generate feed", translations: [{ code: en, label: "Generate feed" }, { code: ru, label: "Создать выгрузку" }] }
+  - { name: "Search attribute name", translations: [{ code: en, label: "Search attribute name" }, { code: ru, label: "Искать по имени атрибута" }] }
+  - { name: "Product count", translations: [{ code: en, label: "Product count" }, { code: ru, label: "Количество товаров" }] }
+  - { name: "Attribute type", translations: [{ code: en, label: "Attribute type" }, { code: ru, label: "Тип атрибута" }] }
+  - { name: "Any google group", translations: [{ code: en, label: "Any google group" }, { code: ru, label: "Любая группа Google" }] }
+  - { name: "Google shopping group", translations: [{ code: en, label: "Google shopping group" }, { code: ru, label: "Группа в Google" }] }
+  - { name: "Google Feed has not been generated yet", translations: [{ code: en, label: "Click on the \"Generate feed\" button to get the feed link." }, { code: ru, label: "Нажмите на кнопку «Выгрузить список товаров», чтобы получить ссылку со выгрузкой товаров." }] }
+  - { name: 'Generate Google Feed', translations: [{ code: en, label: 'Generate feed' }, { code: ru, label: "Выгрузить список товаров" }] }
+  - { name: "Feed generation...", translations: [{ code: en, label: "Feed generation..." }, { code: ru, label: "Идет создание выгрузки..." }] }
+  - { name: "Feed generation & settings", translations: [{ code: en, label: "Feed generation & settings" }, { code: ru, label: "Настройки выгрузки товаров" }] }
+  - { name: "Google Shopping Group", translations: [{ code: en, label: "Google Shopping Group" }, { code: ru, label: "Группы Google" }] }
+  - { name: "Assign your attributes to Google groups to import your variants.", translations: [{ code: en, label: "Assign your attributes to Google groups to import your variants." }, { code: ru, label: "На этой странице можно сопоставить атрибуты товаров с соответствующими категориями Google для более точного определения вариантов товара." }] }
+  - { name: 'Feed generation has been completed successfully.', translations: [{ code: en, label: 'Feed generation has been completed successfully.' }, { code: ru, label: "Создание выгрузки было успешно завершено." }] }
+  - { name: 'Feed generation has been stopped.', translations: [{ code: en, label: 'Feed generation has been stopped.' }, { code: ru, label: "Создание выгрузки было остановлено." }] }
+  - { name: 'Export duplicates as separate products', translations: [{ code: en, label: 'Export duplicates as separate products' }, { code: ru, label: "Выгружать дубликаты как отдельные товары" }] }
+  - { name: 'Export only the original product', translations: [{ code: en, label: 'Export only the original product' }, { code: ru, label: "Выгружать только основной товар" }] }
+  - { name: "The process of feed generation may take a while to complete. Please do not close this page until the process is fully completed.", translations: [{ code: en, label: "The process of feed generation may take a while to complete. Please do not close this page until the process is fully completed." }, { code: ru, label: "Процесс займет некоторое время. Пожалуйста, не закрывайте эту страницу до его окончания." }] }
+  - { name: "Google product feed", translations: [{ code: en, label: "Google product feed" }, { code: ru, label: "Выгрузка товаров в Google" }] }
+  - { name: "Remove from google product feed", translations: [{ code: en, label: "Remove from product feed" }, { code: ru, label: "Исключить из выгрузки" }] }
+  - { name: "Add to google product feed", translations: [{ code: en, label: "Add to product feed" }, { code: ru, label: "Включить в выгрузку" }] }
+  - { name: 'Assign shopping group', translations: [{ code: en, label: 'Assign shopping group' }, { code: ru, label: "Назначить группу" }]}
+  - { name: 'Attribute information has been successfully updated', translations: [{ code: en, label: 'Attribute information has been successfully updated' }, { code: ru, label: "Информация по атрибутам успешно обновлена" }]}
+  - { name: 'Generate Google Product feed', translations: [{ code: en, label: 'Generate Google Product feed' }, { code: ru, label: "Создание списка товаров для Google" }]}
+  - { name: 'Google feed', translations: [{ code: en, label: 'Google feed' }, { code: ru, label: "Выгрузка товаров в Google" }]}
+  - { name: 'Please select the attributes first', translations: [{ code: en, label: 'Please select the attributes first' }, { code: ru, label: "Пожалуйста выберите атрибут" }]}
+  - { name: 'Product-specific', translations: [{ code: en, label: 'Product-specific' }, { code: ru, label: "Специальный для товара" }]}
+  - { name: 'Class X', translations: [{ code: en, label: 'Class "{{class}}"' }, { code: ru, label: 'Класс "{{class}}"' }]}
+  - { name: 'Global Plain field', translations: [{ code: en, label: 'Global Plain field' }, { code: ru, label: "Глобальное строчное поле" }]}
+  - { name: 'Global Hidden field', translations: [{ code: en, label: 'Global Hidden field' }, { code: ru, label: "Глобальное скрытое поле" }]}
+  - { name: 'Global Textarea', translations: [{ code: en, label: 'Global Textarea' }, { code: ru, label: "Глобальное многострочное поле" }]}
+  - { name: 'Global Yes/No', translations: [{ code: en, label: 'Global Yes/No' }, { code: ru, label: "Глобальное Да/Нет поле" }]}
+
+
+
+XLite\Model\Config:
+  - name: renewal_frequency
+    category: XC\GoogleFeed
+    type: XLite\Module\XC\GoogleFeed\View\FormField\Select\RenewalFrequency
+    value: 86400
+    translations:
+      - code: en
+        option_name: 'Frequency of Product Feed renewal'
+        option_comment: 'You should configure X-Cart to run <a href="https://kb.x-cart.com/general_setup/configuring_your_server_to_run_scheduled_x-cart_tasks.html" target="_blank">scheduled cron tasks</a> to enable periodic feed updates.'
+      - code: ru
+        option_name: 'Частота обновления выгрузки товаров'
+        option_comment: 'Чтобы автоматизировать обновление списка товаров, необходимо настроить <a href="https://kb.x-cart.ru/general_setup/configuring_your_server_to_run_scheduled_x-cart_tasks.html" target="_blank">выполнение запланированных задач</a> на сервере.'
+  - name: duplicate_policy
+    category: XC\GoogleFeed
+    type: XLite\Module\XC\GoogleFeed\View\FormField\Select\DuplicatePolicy
+    value: export_as_separate
+    translations:
+      - code: en
+        option_name: 'In case of duplicate product variants'
+        option_comment: 'The variants with duplicate attributes will get a title with a suffix, containing the attribute option values as string. Google will do it''s best to handle such products properly.'
+      - code: ru
+        option_name: 'При наличии дублирующихся вариантов товара'
+        option_comment: 'Вариантам с дублирующимися атрибутами будет присвоен суффикс в наименовании, содержащий прочие значения атрибутов в строковом виде. При загрузке списка товаров Google попытается определить связь вариантов через наименование.'
+
+XLite\Model\Task:
+  - owner: XLite\Module\XC\GoogleFeed\Core\Task\FeedUpdater

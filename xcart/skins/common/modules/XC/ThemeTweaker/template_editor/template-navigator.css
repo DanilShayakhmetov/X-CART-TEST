@@ -1,0 +1,32 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Templates debugg styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+.tpl-debug-canvas {
+    position: absolute;
+    display: block;
+    z-index: 999999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body.area-c .tpl-debug-canvas {
+    pointer-events: none;
+}
+
+.tpl-debug-tpl-canvas,
+.tpl-debug-list-canvas
+{
+    border: 1px dashed #d6ab89;
+}
+
+.tpl-debug-current {
+    opacity: 0.2;
+    background-color: #ee6800;
+}

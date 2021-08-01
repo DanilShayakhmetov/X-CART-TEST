@@ -1,0 +1,10 @@
+Version 5.4.0.6
+
+Improvements (1)
+2019-11-08 - [Change] Email notifications text improved according to client feedback. #BUG-8022 (Fedya Lavrentyev) #Core #ContactUs #ProductVariants #MultiVendor #BlueSnap
+
+Fixes (3)
+2019-10-07 - [Bug] Now it is not possible to create a variant using a combination of attribute values that is already used by another already existing variant. #BUG-7699 (Nikita Erkhov) #Core #ProductVariants
+2019-09-27 - [Bug] When exporting products with variants, the default variant selection was not saved. Fixed. #BUG-7761 https://bt.x-cart.com/view.php?id=51005 (Nikita Erkhov) #ProductVariants #MultiCurrency
+2019-09-25 - [Bug] A product could not be added to cart after some of its attribute values had been removed by import. Fixed. #BUG-6710 https://bt.x-cart.com/view.php?id=49789 (Fedya Lavrentyev) #ProductVariants
+

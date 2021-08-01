@@ -1,0 +1,48 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: AuthorizenetAcceptjs
+    class: Module\QSL\AuthorizenetAcceptjs\Model\Payment\Processor\AuthorizenetAcceptjs
+    added: true
+    type: C
+    orderby: -101800
+    adminOrderby: -101800
+    countries: [US]
+    translations:
+      - code: en
+        name: Authorize.Net Accept.js
+    settings:
+      - name: api_login_id
+      - name: transaction_key
+      - name: public_key
+      - name: type
+        value: sale
+      - name: mode
+        value: test
+      - name: prefix
+        value: xcart
+XLite\Model\LanguageLabel:
+  - { name: "API Login ID", translations: [{ code: en, label: "API Login ID" }] }
+  - { name: "Transaction key", translations: [{ code: en, label: "Transaction key" }] }
+  - { name: "Public key", translations: [{ code: en, label: "Public key" }] }
+  - { name: "Payment processed with errors. Please, try again or ask administrator", translations: [{ code: en, label: "Payment processed with errors. Please, try again or ask administrator" }] }
+  - name: "AuthorizeNet accept.js instruction text"
+    translations:
+      - code: en
+        label: |
+          <ol>
+          <li>Sign in to your <a href="https://account.authorize.net/">authorize.net</a> account.</li>
+          <li>Go to "Account"; in the "Security Settings" section, select "API Credentials & Keys" link.</li>
+          <li>Copy the  API Login ID value.</li>
+          <li>Go to X-Cart and paste the API Login ID value you have copied into the "API Login ID" field on the payment method settings page.</li>
+          <li>If you haven't yet created a Transaction key, do so. Copy the value of your Transaction key and paste it into the "Transaction key" field on the payment method settings page in X-Cart.</li>
+          <li>Again, go to "Account"; in the "Security Settings" section, select "Manage Public Client Key".</li>
+          <li>If the Client key has not yet been created, choose to create a Client key. Copy the Client key value and paste it into the "Public key" field on the payment method settings page in X-Cart.</li>
+          </ol>
+  - { name: 'Setup instruction', translations: [{ code: en, label: 'Setup instruction' }]}
+  - { name: 'Sign up for Authorize.net', translations: [{ code: en, label: 'Sign up for Authorize.net' }]}

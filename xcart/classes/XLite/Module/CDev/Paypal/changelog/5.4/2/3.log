@@ -1,0 +1,8 @@
+Version 5.4.2.3
+
+Fixes (4)
+2020-07-20 - [Bug] Fatal error when upgrading from 5.3.6.x to 5.4.1.x if the addons PayPal and GDPR were active. Fixed. #BUG-8844 #Paypal
+2020-06-11 - [Bug] Incorrect processing of the refund IPN from PayPal. Fixed. #BUG-8715 https://bt.x-cart.com/view.php?id=51803 #Paypal #MultiVendor
+2020-05-27 - [Bug] PayPal. Anonymous order could not be placed if the address structure contained a custom required field. Fixed. #BUG-8658 https://bt.x-cart.com/view.php?id=51730 #Paypal
+2020-05-06 - [Bug] Social login. Changed the wording and the type of the message (from error to warning) for the message shown when a customer is attempting to log in using the same email but a different method (Facebook instead of Google). #BUG-8579 https://bt.x-cart.com/view.php?id=51659 #Core #Paypal #SocialLogin #AmazonPay
+

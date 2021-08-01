@@ -1,0 +1,12 @@
+Version 5.4.0.6
+
+Improvements (1)
+2019-12-20 - [Change] Changed the text on the PayPal settings page. #BUG-7392 (Shevelov Alexander) #Paypal
+
+Fixes (5)
+2020-01-05 - [Bug] Layout issue related to the PayPal button on the page for creating a new user account in the Customer area. Fixed. #BUG-7742 (Pavel Veselovsky) #Paypal
+2019-12-20 - [Bug] Layout issues on the PayPal Express Checkout settings page after setting the PayPal API solution to "Payflow API". Fixed. #BUG-7961 (Jamil Ainulov) #Paypal
+2019-12-09 - [Bug] SKU of the parent product instead of the product variant SKU was sent to the payment provider. Fixed. #BUG-7267 https://bt.x-cart.com/view.php?id=50595 (Pavel Veselovsky) #Paypal
+2019-12-03 - [Bug] PayPal Credit payment option was available to customers although the merchant country was other than the United States. Fixed. #BUG-7166 https://bt.x-cart.com/view.php?id=50532 (Maxim Kuznetsov) #Paypal
+2019-11-29 - [Bug] PayPal addon settings update: Removed unused Login scopes: 'Use seamless checkout' and 'Phone'. #BUG-7049 (Pavel Veselovsky) #Paypal
+

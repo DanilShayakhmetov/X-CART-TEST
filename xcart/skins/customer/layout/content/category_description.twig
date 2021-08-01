@@ -1,0 +1,7 @@
+{##
+ # Category page
+ #}
+
+{% if this.getDescription() or this.isInInlineEditorMode() %}
+<div class="category-description" {{ this.printTagAttributes(this.getCategory().getFieldMetadata('description'))|raw }}>{{ this.getDescription()|raw }}</div>
+{% endif %}

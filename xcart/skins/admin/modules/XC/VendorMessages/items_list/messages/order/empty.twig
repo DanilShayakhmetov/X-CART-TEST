@@ -1,0 +1,13 @@
+{##
+ # Messages list : empty
+ #}
+
+<div class="widget items-list widgetclass-{{ this.getWidgetClass() }} widgettarget-{{ this.getWidgetTarget() }} sessioncell-{{ this.getSessionCell() }}">
+
+  {{ this.displayCommentedData(this.getItemsListParams()) }}
+
+  {% include 'modules/XC/VendorMessages/items_list/messages/order/parts/recipients.twig' %}
+
+  {% include 'modules/XC/VendorMessages/items_list/messages/order/parts/create.twig' %}
+
+</div>

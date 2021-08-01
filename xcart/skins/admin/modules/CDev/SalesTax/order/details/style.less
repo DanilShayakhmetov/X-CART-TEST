@@ -1,0 +1,27 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order info styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.order-modifier.cdev\.stax\.1-modifier {
+  height: @rhythmic-unit * 5 / 2;
+
+  & > div {
+    line-height: @line-height-base;
+    padding-top: @rhythmic-unit;
+    padding-bottom: @rhythmic-unit / 2;
+
+    &.value {
+      padding-top: @rhythmic-unit / 2;
+      padding-bottom: 0;
+    }
+
+    &.recalc {
+      height: @rhythmic-unit * 5 / 2;
+    }
+  }
+}

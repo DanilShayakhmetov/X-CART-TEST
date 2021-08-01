@@ -1,0 +1,6 @@
+Version 5.4.2.0
+
+Fixes (2)
+2020-08-05 - [Bug] Optimization for the addon "My Wishlist". Reduced the number of database requests. #BUG-8911 #Core #ProductReviews #MyWishlist
+2020-07-17 - [Bug] REST API. Error when running a request to make changes to a product including adding a review. Fixed. #BUG-8777 https://bt.x-cart.com/view.php?id=51863 #Core #ProductReviews
+

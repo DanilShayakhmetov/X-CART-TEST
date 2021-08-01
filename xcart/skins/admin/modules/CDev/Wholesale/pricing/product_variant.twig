@@ -1,0 +1,11 @@
+{##
+ # Wholesales list
+ #}
+
+{{ widget_list('variant_wholesale_prices.info_message') }}
+
+{% form 'XLite\\Module\\CDev\\Wholesale\\View\\Form\\ProductVariantWholesalePrices' %}
+
+  {{ widget('XLite\\Module\\CDev\\Wholesale\\View\\ItemsList\\ProductVariantWholesalePrices') }}
+
+{% endform %}

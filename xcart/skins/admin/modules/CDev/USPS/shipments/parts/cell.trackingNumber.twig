@@ -1,0 +1,21 @@
+{##
+ # Tracking number column
+ #}
+{{ this.entity.getTrackingNumber() }}
+<div class="tracking-status">
+  {% if this.entity.getTrackingShipDate() %}
+    <div class="tracking-status-info">{{ t('Ship date') }}: {{ this.entity.getTrackingShipDate() }}</div>
+  {% endif %}
+  {% if this.entity.getTrackingStatus() == 'Delivered' %}
+    {% if this.entity.getTrackingDeliveryDate() %}
+      <div class="tracking-status-info">{{ t('Delivery date') }}: {{ this.entity.getTrackingDeliveryDate() }}</div>
+    {% endif %}
+  {% else %}
+    {% if this.entity.getTrackingEstimatedDeliveryDate() %}
+      <div class="tracking-status-info">{{ t('Estimate delivery date') }}: {{ this.entity.getTrackingEstimatedDeliveryDate() }}</div>
+    {% endif %}
+    {% if this.entity.getTrackingUpdateDate() %}
+      <div class="tracking-status-info">{{ t('Update date') }}: {{ this.entity.getTrackingUpdateDate() }}</div>
+    {% endif %}
+  {% endif %}
+</div>

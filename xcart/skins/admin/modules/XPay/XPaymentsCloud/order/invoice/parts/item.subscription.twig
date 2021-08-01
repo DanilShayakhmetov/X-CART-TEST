@@ -1,0 +1,18 @@
+{##
+ # Subscription item cell
+ #
+ #
+ # @ListChild (list="invoice.item.name", weight="100")
+ #}
+{% if this.item.isXpaymentsSubscription() %}
+  {% if this.item.isInitialXpaymentsSubscription() %}
+    <li class="subscription-setup-fee">{{ t('Setup fee') }}: {{ this.formatPrice(this.item.getDisplayPrice() - this.item.getXpaymentsDisplayFeePrice()) }}</li>
+  {% endif %}
+  <li class="subscription-fee">{{ t('Subscription fee') }}: {{ this.formatPrice(this.item.getXpaymentsDisplayFeePrice()) }}</li>
+  {% if this.isXpaymentsNextPaymentDateAvailable(this.item) %}
+    <li class="subscription-planned-date">{{ t('Planned date of the next payment') }}: {{ this.formatDate(this.getNextPaymentDate(this.item.xpaymentsSubscription)) }}</li>
+    {% if this.isXpaymentsLastPaymentFailed(this.item) %}
+      <li class="subscription-actual-date">{{ t('Next attempt date') }}: {{ this.formatDate(this.getNextAttemptDate(this.item.xpaymentsSubscription)) }}</li>
+    {% endif %}
+  {% endif %}
+{% endif %}

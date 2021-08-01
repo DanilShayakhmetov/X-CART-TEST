@@ -1,0 +1,9 @@
+Version 5.4.0.1
+
+Fixes
+- Checkout may be not possible for anonymous customer in some cases. Fixed.
+- Successful payment wasn't considered completed on some server configurations. Fixed.
+- There was an incompatibility with 1.x-3.x module that prevented it from working properly. Fixed.
+
+Improvements
+- Added "Settings" button on Add-ons page that links to the X-Payments Cloud payment method settings

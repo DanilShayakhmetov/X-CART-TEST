@@ -1,0 +1,12 @@
+{##
+ # Head list children
+ #
+ # @ListChild (list="head", weight="1000")
+ #}
+
+{% if this.displayFavicon() %}
+  <link rel="shortcut icon" href="{{ this.getFavicon()|raw }}" type="image/x-icon" />
+{% endif %}
+
+<link rel="icon"              sizes="192x192"   href="{{ this.getAppleIcon()|raw }}"/>
+<link rel="apple-touch-icon"  sizes="192x192"   href="{{ this.getAppleIcon()|raw }}">

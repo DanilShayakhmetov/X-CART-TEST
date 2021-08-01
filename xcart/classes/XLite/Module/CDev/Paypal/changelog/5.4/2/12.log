@@ -1,0 +1,5 @@
+Version 5.4.2.12
+
+Fixes (1)
+2020-12-01 - [Bug] Removed the oauth_third_party check in PayPal onboarding. #XCB-151 #CDev-Paypal
+

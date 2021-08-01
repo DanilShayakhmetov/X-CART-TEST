@@ -1,0 +1,5 @@
+Version 5.4.2.1
+
+Improvements (1)
+2020-05-25 - [Change] Added a new setting settings_page_heading to allow for changing the standard heading of an addon settings page. Set the value of this setting for Mailchimp. #XCN-10983 #Core #MailChimp
+

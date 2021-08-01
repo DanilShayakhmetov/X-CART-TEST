@@ -1,0 +1,11 @@
+{##
+ # Description if table is empty
+ #}
+
+<div class="empty-table-description no-items">
+  {% if this.isDisplayBlankItemsListDescription() %}
+    {% include this.getBlankListTemplate() %}
+  {% elseif this.isEmptyListTemplateVisible() %}
+    {% include this.getEmptyListTemplate() %}
+  {% endif %}
+</div>

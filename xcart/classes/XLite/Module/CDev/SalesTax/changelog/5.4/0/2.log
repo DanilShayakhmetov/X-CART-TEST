@@ -1,0 +1,9 @@
+Version 5.4.0.2
+
+Improvements (2)
+2019-03-21 - [Change] Layout adjustment for the zone editing page and the sticky panel on all the pages according to the style guide. #XCN-9659 (Fedya Lavrentyev) #Core #SalesTax #ThemeTweaker
+2019-03-04 - [Change] Adjustments for the Tax classes, Sales Tax and E-Mail transfer settings pages according to the style guide. #XCN-9445 (Kirill Stadler) #Core #SalesTax
+
+Fixes (1)
+2019-01-22 - [Bug] Removed the ability to sort tax rates manually; now they are sorted automatically according to the zone/tax class/membership. #BUG-6634 (Shevelov Alexander) #SalesTax #VAT
+

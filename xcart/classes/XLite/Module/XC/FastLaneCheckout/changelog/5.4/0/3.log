@@ -1,0 +1,6 @@
+Version 5.4.0.3
+
+Fixes (2)
+2019-06-06 - [Bug] The checkout UI improvements for partially paid orders. #BUG-7205 https://bt.x-cart.com/view.php?id=50578 (Fedya Lavrentyev) #Core #FastLaneCheckout #CrispWhiteSkin
+2019-05-27 - [Bug] Fast Lane Checkout didn't allow to place orders with 0 total. Fixed. #BUG-7461 (Shevelov Alexander) #Core #FastLaneCheckout
+

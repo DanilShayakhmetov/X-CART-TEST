@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-09-28 - [Bug] XSS vulnerability in Global Tabs. Fixed. #BUG-9039 #CustomProductTabs
+

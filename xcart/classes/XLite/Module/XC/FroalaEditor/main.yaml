@@ -1,0 +1,19 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.0.9
+type: common
+authorName: 'X-Cart team'
+moduleName: 'Froala WYSIWYG editor integration'
+description: 'Enables Froala WYSIWYG editor for editing product and category descriptions.'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith:
+    - CDev-TinyMCE
+skins: {  }
+showSettingsForm: true
+canDisable: true

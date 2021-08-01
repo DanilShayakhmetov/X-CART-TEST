@@ -1,0 +1,24 @@
+{##
+ # Payment methods list : right action
+ #
+ # @ListChild (list="payment.offline-methods.list.line", weight=200)
+ #}
+{% if this.hasRightActions(this.method) %}
+  <div class="right-actions">
+    <div class="switcher action">
+      {{ widget('XLite\\View\\FormField\\Input\\Checkbox\\PaymentMethod', fieldOnly=true, value=this.method.isEnabled(), fieldName='payment_id_' ~ this.method.getMethodId(), methodId=this.method.getMethodId()) }}
+    </div>
+
+    <div class="separator"></div>
+    <div class="configure action">
+      {{ widget('XLite\\View\\Button\\Link', label=t('Configure'), location=this.method.getConfigurationURL(), style='configure') }}
+    </div>
+
+    <div class="separator"></div>
+    <div class="remove action">
+      {% if this.canRemoveMethod(this.method) %}
+        <a href="{{ url('payment_settings', 'remove', {'id': this.method.getMethodId()}) }}" class="fa fa-trash-o" title="{{ t('Remove') }}"></a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

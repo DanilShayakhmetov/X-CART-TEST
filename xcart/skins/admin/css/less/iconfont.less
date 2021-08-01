@@ -1,0 +1,166 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@font-face {
+  font-family: 'xcart-admin-skin';
+  src:    url('../../iconfont/xcart-admin-skin.eot?oaqn6v');
+  src:    url('../../iconfont/xcart-admin-skin.eot?oaqn6v#iefix') format('embedded-opentype'),
+  url('../../iconfont/xcart-admin-skin.ttf?oaqn6v') format('truetype'),
+  url('../../iconfont/xcart-admin-skin.woff?oaqn6v') format('woff'),
+  url('../../iconfont/xcart-admin-skin.svg?oaqn6v#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.admin-iconfont()
+{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'xcart-admin-skin', serif !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  font-size: @iconfont-size;
+
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-color-link() {
+  color: @color-link;
+  &:hover {
+    color: @color-link-2;
+  }
+}
+
+.fa.icon {
+  .icon-color-link();
+}
+
+.fa-power-off:before {
+  .admin-iconfont();
+  content: "\f900";
+}
+
+.fa-trash-o,
+.fa-trash {
+  .icon-color-link();
+}
+
+.fa-trash-o:before,
+.fa-trash:before {
+  .admin-iconfont();
+  content: "\e900";
+}
+
+.fa-arrows {
+  .icon-color-link();
+}
+
+.fa-arrows:before {
+  .admin-iconfont();
+  content: "\e901";
+}
+
+.fa-edit:before {
+  .admin-iconfont();
+  content: "\e902";
+}
+
+.fa-times:before {
+  .admin-iconfont();
+  content: "\e903";
+}
+
+.fa-reupload:before {
+  .admin-iconfont();
+  content: "\e904";
+  font-size: 4px;
+}
+
+.fa-download:before {
+  .admin-iconfont();
+  content: "\e905";
+}
+
+.fa-selected:before {
+  .admin-iconfont();
+  content: "\e906";
+}
+
+.fa-question-circle:before {
+  .admin-iconfont();
+  content: "\e907";
+}
+
+.fa-check-circle:before,
+.fa-check-circle-o:before {
+  .admin-iconfont();
+  content: "\e908";
+}
+
+.fa-orders:before {
+  .admin-iconfont();
+  content: "\e909";
+}
+
+.fa-tags:before {
+  .admin-iconfont();
+  content: "\e90a";
+}
+
+.fa-sales:before {
+  .admin-iconfont();
+  content: "\e90b";
+}
+
+.fa-gift:before {
+  .admin-iconfont();
+  content: "\e90c";
+}
+
+.fa-users:before {
+  .admin-iconfont();
+  content: "\e90d";
+}
+
+.fa-contacts:before {
+  .admin-iconfont();
+  content: "\e90e";
+}
+
+.fa-puzzle-piece:before {
+  .admin-iconfont();
+  content: "\e90f";
+}
+
+.fa-picture-o:before {
+  .admin-iconfont();
+  content: "\e910";
+}
+
+.fa-info-circle:before {
+  .admin-iconfont();
+  content: "\e911";
+}
+
+.fa-cog:before {
+  .admin-iconfont();
+  content: "\e912";
+}
+
+.fa-plus-circle-o:before {
+  .admin-iconfont();
+  content: "\e913";
+}

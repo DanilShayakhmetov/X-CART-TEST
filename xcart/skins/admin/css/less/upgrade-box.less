@@ -1,0 +1,249 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Upgrade box styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+ 
+.upgrade-no-updates {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.upgrade-box {
+  background-color: #f37c29;
+  color: #ffd9bf;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 25px;
+  vertical-align: middle;
+  width: 100%;
+  overflow: visible;
+
+  &.hotfix {
+    background-color: #599455;
+    color: #f1ffe3;
+
+    a {
+      color: #f1ffe3;
+    }
+
+    .close svg path {
+      fill: #f1ffe3;
+    }
+
+    .warning svg g {
+      fill: #f1ffe3;
+    }
+
+    .corner {
+      background-color: #599455;
+    }
+  }
+
+  strong {
+    color: #fff;
+  }
+
+  a {
+    color: #ffd9bf;
+    text-decoration: none;
+  }
+
+  .close {
+    margin-right: 7px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 3px;
+    opacity: 1;
+    display: block;
+    width: 9px;
+    height: 9px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        fill: #ffd9bf;
+      }
+    }
+
+    &:hover svg path {
+      fill: #fff;
+    }
+  }
+
+  .warning {
+    font-size: 8px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 3px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      g {
+        fill: #ffdac0;
+      }
+    }
+  }
+
+  .corner-box {
+    position: absolute;
+    width: 100px;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+  }
+
+  .corner-box {
+    height: 36px;
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  .corner {
+    .rotate(45deg);
+    background-color: #f37c29;
+    position: absolute;
+    width: 70px;
+    right: -28px;
+    z-index: 100;
+
+    .warning {
+      cursor: pointer;
+      .rotate(-45deg);
+      vertical-align: bottom;
+      margin-bottom: 3px;
+
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+
+  }
+
+  &.closed {
+    & > .box {
+      animation-name: upgrade-box-hide-row;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+    }
+
+    .corner-box {
+      display: none;
+    }
+
+    .corner {
+      animation-name: upgrade-box-show-corner;
+      animation-duration: 1s;
+    }
+  }
+
+  &.closed, &.post-closed {
+    & > .box {
+      opacity: 0;
+      height: 0px;
+      pointer-events: none;
+    }
+
+    .corner-box {
+      display: block;
+    }
+
+    .corner {
+      opacity: 1;
+      top: -4px;
+    }
+  }
+
+  &.opened {
+    & > .box {
+      animation-direction: reverse;
+      animation-name: upgrade-box-hide-row;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+    }
+
+    .corner {
+      animation-direction: reverse;
+      animation-name: upgrade-box-show-corner;
+      animation-duration: 1s;
+    }
+  }
+
+  &.opened, &.post-opened {
+    & > .box {
+      opacity: 1;
+      height: 25px;
+    }
+
+    .corner-box {
+      display: none;
+    }
+
+    .corner {
+      opacity: 0;
+      top: -38px;
+    }
+  }
+
+  &.invisible {
+    display: none;
+  }
+
+  &.corner-invisible {
+    .corner-box {
+      display: none;
+    }
+  }
+}
+
+@keyframes upgrade-box-hide-row {
+  0% {
+    opacity: 1;
+    height: 25px;
+  }
+  25% {
+    opacity: 0;
+    height: 25px;
+  }
+  50% {
+    opacity: 0;
+    height: 0px;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+@keyframes upgrade-box-show-corner {
+  0% {
+    opacity: 0;
+    top: -38px;
+  }
+  50% {
+    opacity: 0;
+    top: -38px;
+  }
+  55% {
+    opacity: .1;
+    top: -4px;
+  }
+  100% {
+    opacity: 1;
+    top: -4px;
+  }
+}

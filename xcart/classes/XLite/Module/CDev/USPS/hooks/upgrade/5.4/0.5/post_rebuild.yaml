@@ -1,0 +1,20 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: dimensions
+    category: CDev\USPS
+    translations:
+      - code: en
+        option_name: Package dimensions (inches)
+        option_comment: If dimensions are not provided, Web Tools will assume package is regular in size and all dimensions are less than or equal to 12 inches.
+  - name: girth
+    category: CDev\USPS
+    translations:
+      - code: en
+        option_name: Girth
+        option_comment: If Girth is provided with a non-zero value, the package will be considered "NONRECTANGULAR"

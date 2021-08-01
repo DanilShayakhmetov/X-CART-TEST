@@ -1,0 +1,17 @@
+Version 5.4.1.0
+
+Improvements (5)
+2020-02-06 - [Change] Added a new setting option "Apply product-specific discount to wholesale prices" on the product page; it allows to apply the Sale price of the product set in % to wholesale prices. #XCN-10177 #Sale #Wholesale #ProductVariants #MultiVendor
+2020-02-04 - [Change] The active menu item was not highlighted on some pages. Fixed. #BUG-7472 #Core #AustraliaPost #Coupons #Paypal #Sale #USPS #XMLSitemap #CanadaPost #FedEx #UPS #MailChimp #DHL #GoogleFeed
+2020-01-27 - [Change] Various improvements for Group Sales. #XCN-10409 #Core #GoSocial #Sale #MultiVendor
+2020-01-20 - [Change] "Sale" addon improvements: It is now possible to add Group Sales. #XCN-10175 #Core #Sale #VAT #Wholesale #ProductFilter #ProductVariants #MultiVendor #FlyoutCategoriesMenu
+2019-11-19 - [Change] It is now possible to add and manage discounts for product variants. Added the ability to show prices as a price range, the ability to sort products by the price range and other minor changes and improvements. #XCN-10176 #Sale #ProductVariants
+
+Fixes (6)
+2020-03-18 - [Bug] Changed the way Sale labels are added to a list of products when executing Put all for sale. #BUG-8438 #Sale
+2020-03-06 - [Bug] The style of Sale labels on the Bestsellers page in the Admin area was incorrect. Fixed. #BUG-8373 #Core #Sale
+2020-03-02 - [Bug] It was possible to create a discount of 100.01% to 100.99% in Coupons, Volume discounts and Sale. Fixed. #BUG-8364 #Coupons #Sale #VolumeDiscounts
+2020-02-26 - [Bug] A Sale discount which was supposed to be available for certain product classes only was working incorrectly. Fixed. #BUG-8388 #Sale
+2020-02-12 - [Bug] It was impossible to apply the "Put all for sale" feature on the list of search results after doing  a search by vendor. Fixed. #BUG-8235 https://bt.x-cart.com/view.php?id=51384 #Sale #GoogleFeed
+2020-01-29 - [Bug] An incorrect message was shown if configuring a volume discount and trying to save it with a value of more than 100%. Fixed. #BUG-8105 #Coupons #Sale #VolumeDiscounts
+

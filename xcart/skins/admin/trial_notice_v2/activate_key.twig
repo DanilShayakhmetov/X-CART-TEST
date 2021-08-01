@@ -1,0 +1,14 @@
+{##
+ # Trial notice
+ #}
+<div class="activate-key-form">
+  {% form 'XLite\\View\\Form\\Module\\ActivateKey' with {formAction: 'register_key'} %}
+    <div class="addon-key"><input type="text" name="key" value="" placeholder="{{ t('Enter your license key') }}" class="form-control"/></div>
+    {{ widget('XLite\\View\\Button\\Submit', {'button-size': 'btn-default', label: t('Register'), attributes: {'data-segment-click': 'Register'}}) }}
+
+    {% if this.isTrialPeriodExpired() %}
+    <div class="text or">{{ t('or') }}</div>
+    {{ widget('XLite\\View\\Button\\Regular', label='Contact X-Cart', style='purchase-license regular-main-button', jsCode='window.open(\'' ~ this.getPurchaseURL() ~ '\', \'_blank\');', attributes={'data-segment-click': 'Contact X-Cart'}) }}
+    {% endif %}
+  {% endform %}
+</div>

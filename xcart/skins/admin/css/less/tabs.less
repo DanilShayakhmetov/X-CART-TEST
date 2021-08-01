@@ -1,0 +1,89 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Page tabs
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+div.page-tabs,
+.ui-widget-content div.page-tabs {
+  .tabs();
+  .center-full-width();
+}
+
+.ie11 div.tab-content {
+  max-width: 1200px;
+}
+
+.tabbed-content-wrapper {
+  margin-top: @tab-content-vertical-margin;
+
+  .itemslist-model-shipping-methods {
+    position:relative;
+  }
+}
+
+.tab-content {
+  margin-top: @tab-content-vertical-margin;
+
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
+/* Tabs: Second level KILL IT WITH FIRE */
+
+.tabs2-page-tabs {
+  .center-full-width();
+  height: 50px;
+  border-bottom: 1px solid #cadce8;
+}
+
+.tabs2-tabbed-content-wrapper > .tabs2-tabs-container > .tabs2-page-tabs {
+  margin-top: -30px;
+}
+
+div.tabs2-page-tabs ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 10px;
+}
+
+div.tabs2-page-tabs ul li {
+  float: left;
+}
+
+div.tabs2-page-tabs ul li {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding: 18px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+div.tabs2-page-tabs ul li .footer {
+  background: url(../../images/tabs2_arrow_up.png) no-repeat scroll 50% 7px;
+  height: 17px;
+  width: 100%;
+}
+
+div.tabs2-page-tabs ul li div {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+div.tabs2-page-tabs ul li a {
+  text-decoration: underline;
+}
+
+div.list-after-tabs {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  display: inline-block;
+}

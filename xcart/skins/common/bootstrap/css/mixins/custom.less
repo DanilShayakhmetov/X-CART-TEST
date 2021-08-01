@@ -1,0 +1,26 @@
+// Custom
+
+.calc(@prop; @val) {
+    @{prop}: calc(~'@{val}');
+    @{prop}: -moz-calc(~'@{val}');
+    @{prop}: -webkit-calc(~'@{val}');
+    @{prop}: -o-calc(~'@{val}');
+}
+
+// For floating-label textarea placeholder fix
+.hide-placeholder() {
+  &::-moz-placeholder {
+    color: transparent;
+    opacity: 0;
+  }
+
+  &:-ms-input-placeholder {
+    color: transparent;
+    opacity: 0;
+  }
+
+  &::-webkit-input-placeholder {
+    color: transparent;
+    opacity: 0;
+  }
+}

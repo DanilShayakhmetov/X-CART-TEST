@@ -1,0 +1,20 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * mcjs-popup styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.mc-modal-bg {
+    z-index: 99950 !important;
+}
+
+.mc-modal {
+    z-index: 99990 !important;
+}
+
+.mc-banner {
+    z-index: 99999 !important;
+}

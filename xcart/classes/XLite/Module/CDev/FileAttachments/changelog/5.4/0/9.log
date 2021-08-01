@@ -1,0 +1,5 @@
+Version 5.4.0.9
+
+Fixes (1)
+2020-04-28 - [Bug] E-goods. It was not possible to attach more than one AmazonS3-file to a product. Fixed. #BUG-8575 #Egoods #FileAttachments
+

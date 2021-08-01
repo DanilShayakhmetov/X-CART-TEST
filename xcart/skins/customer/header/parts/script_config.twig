@@ -1,0 +1,25 @@
+{##
+ # Head list children
+ #
+ # @ListChild (list="head", weight="1300")
+ #}
+
+<script>
+  var xliteConfig = {
+    script: '{{ this.getScript()|raw }}',
+
+    {% if this.isDisplayAdminScript() %}
+    admin_script: '{{ this.getAdminScript()|raw }}',
+    {% endif %}
+
+    zone: 'customer',
+    target: '{{ this.getTarget()|raw }}',
+    language: '{{ this.currentLanguage.getCode() }}',
+    ajax_prefix: '{{ this.getAjaxPrefix() }}',
+    form_id: '{{ this.xlite.formId }}',
+    form_id_name: '{{ constant('XLite::FORM_ID') }}',
+    developer_mode: {{ this.isDeveloperMode() ? 'true' : 'false' }},
+    clean_url: {{ this.isCleanUrlsEnabled() ? 'true' : 'false' }},
+    clean_urls_base: '{{ this.cleansUrlsBase() }}',
+  };
+</script>

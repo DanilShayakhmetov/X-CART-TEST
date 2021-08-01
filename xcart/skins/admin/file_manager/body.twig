@@ -1,0 +1,14 @@
+{##
+ # File manager body
+ #}
+
+<xlite-file-manager inline-template>
+  <div class="file-manager" v-data='{
+    "openFirst":"{{ this.isOpenFirst() }}",
+    "openLast":"{{ this.isOpenLast() }}"
+    }'>
+    {% for entry in this.getData() %}
+      {{ widget('\\XLite\\View\\FileManager\\Line', data=entry, link_closure=this.getLinkClosure()) }}
+    {% endfor %}
+  </div>
+</xlite-file-manager>

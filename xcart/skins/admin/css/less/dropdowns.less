@@ -1,0 +1,63 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Dropdown menu style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.dropdown-menu {
+  padding: @dropdown-padding;
+
+  .open > & {
+    margin-top: 0;
+  }
+
+  .dropdown-header {
+    min-height: auto;
+    line-height: @line-height-small-text;
+    padding: @dropdown-button-padding;
+
+    &:first-child {
+      padding-top: (@rhythmic-unit / 2);
+    }
+  }
+
+  > li:first-child {
+    > a, button,
+    > .button-container > button {
+      border-radius: @border-radius-base @border-radius-base 0 0;
+    }
+  }
+
+  > li:last-child {
+    > a, button,
+    > .button-container > button {
+      border-radius: 0 0 @border-radius-base @border-radius-base;
+    }
+  }
+
+  > li > a,
+  > li > button,
+  > li > .button-container > button {
+    padding: @dropdown-button-padding;
+    min-height: auto;
+    border: none;
+    border-radius: 0;
+
+    & > span {
+      line-height: @rhythmic-unit;
+
+      &:last-child {
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+    }
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+}

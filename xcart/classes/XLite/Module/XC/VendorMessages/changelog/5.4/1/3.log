@@ -1,0 +1,5 @@
+Version 5.4.1.3
+
+Fixes (1)
+2020-07-02 - [Bug] With Multivendor enabled, #00000 was shown instead of the correct order number on the Admin area -> Messages page. Fixed. #BUG-8735 #VendorMessages
+

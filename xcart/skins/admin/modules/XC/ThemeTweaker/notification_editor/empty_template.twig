@@ -1,0 +1,15 @@
+{##
+ # Theme tweaker empty template page template
+ #}
+
+<div class="notification_editor empty-template">
+  <div>
+  {{ t('The dynamic message is empty for this notification.') }}
+  </div>
+
+  <div class="buttons">
+    {{ widget('XLite\\View\\Button\\Regular', label=t('Add TWIG code'), jsCode='window.open("' ~ this.getAddTwigCodeButtonURL() ~ '", "TTEditor", "width=1050px,height=550px,menubar=no,toolbar=no,location=no,directories=no,status=no")', style='action add-twig-code') }}
+
+    {{ widget('XLite\\View\\Button\\Link', label=t('Preview full email'), location=this.getPreviewURL(), style='action', blank=true) }}
+  </div>
+</div>

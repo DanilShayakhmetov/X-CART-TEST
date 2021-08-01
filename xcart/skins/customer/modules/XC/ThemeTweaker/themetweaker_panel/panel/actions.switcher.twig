@@ -1,0 +1,18 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--actions", weight="100")
+ #}
+
+<div class="themetweaker-action themetweaker-action_switcher"
+     v-show="mode" data-toggle="tooltip" data-placement="top"
+     data-html="true" title="{{ t('themetweaker.shortcut.switcher') }}"
+     :class="switcherClasses">
+  {{ widget('XLite\\View\\FormField\\Input\\Checkbox\\OnOff',
+      label="{{{ switcherLabel }}}",
+      style="",
+      attributes={
+        ":checked": "switcher",
+        '@change': 'onSwitchChange',
+        'data-panel-switcher': 'data-panel-switcher'}) }}
+</div>

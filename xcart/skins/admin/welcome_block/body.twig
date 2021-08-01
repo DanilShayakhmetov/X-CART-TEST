@@ -1,0 +1,10 @@
+{##
+ # Welcome page for logged admin
+ #}
+
+<div class="{{ this.getBoxClass() }}" data-close-target="{{ this.getCloseTarget() }}" data-close-action="{{ this.getCloseAction() }}" data-block-name="{{ this.getBlockName() }}">
+  <div class="inner-box">
+    {{ widget_list(this.getInnerViewList()) }}
+  </div>
+</div>
+

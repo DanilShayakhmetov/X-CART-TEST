@@ -1,0 +1,7 @@
+Version 5.4.1.1
+
+Fixes (3)
+2020-03-30 - [Bug] ThemeTweaker was working incorrectly for templates added manually to the folder skins/theme_tweaker. Fixed. #BUG-8493 #ThemeTweaker
+2020-03-19 - [Bug] Errors when customizing email notifications on the notification_editor and theme_tweaker_template pages. Fixed. #BUG-8535 https://bt.x-cart.com/view.php?id=51415 #ThemeTweaker
+2020-03-19 - [Bug] Errors when customizing email notifications on the notification_editor and theme_tweaker_template pages. Fixed. #BUG-8280 https://bt.x-cart.com/view.php?id=51415 #ThemeTweaker
+

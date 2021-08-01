@@ -1,0 +1,82 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Product FormModel styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) '../../css/initialize';
+
+.form-horizontal {
+  .uploader-row .input-widget {
+    width: auto !important;
+    float: none !important;
+    padding: 0 !important;
+  }
+
+  .form-default-name {
+    .form-control {
+      width: @form-value-input-width-large !important;
+    }
+  }
+
+  .product-category-row {
+    .ui-sortable-placeholder {
+      height: @rhythmic-unit;
+      vertical-align: bottom;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+      &:first-of-type:not([data-disabled="true"]) {
+        background-color: @multiselect-bg-primary;
+        color: @multiselect-color-primary;
+      }
+    }
+  }
+}
+
+#form_shipping {
+  .form-shipping-requires-shipping {
+    .form-shipping-requires-shipping-fixed-shipping-freight .control-label {
+      width: auto;
+      min-width: 0;
+    }
+
+    .form-shipping-requires-shipping-shipping-box {
+      > .input-widget {
+        width: 100%;
+      }
+
+      .form-shipping-requires-shipping-shipping-box-dimensions {
+        .control-label {
+          width: auto;
+        }
+
+        .input-widget {
+          width: auto;
+        }
+
+        input {
+          width: @form-value-input-width-very-small;
+          display: inline-block;
+        }
+
+        .separator {
+          padding: 8px 10px;
+        }
+      }
+
+      .form-shipping-requires-shipping-shipping-box-items-in-box {
+        input {
+          width: @form-value-input-width-small;
+        }
+
+        .control-label {
+          width: auto;
+        }
+      }
+    }
+  }
+}

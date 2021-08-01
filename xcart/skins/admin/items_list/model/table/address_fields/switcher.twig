@@ -1,0 +1,12 @@
+{##
+ # Entity switcher
+ #}
+
+{% if this.isShowSwitchWarning(this.entity) %}
+  {{ widget('XLite\\View\\Tooltip',
+    text=this.getSwitchWarningMessage(this.entity),
+    isImageTag='true',
+    className='help-small-icon') }}
+{% else %}
+  {% include 'items_list/model/table/parts/switcher.twig' %}
+{% endif %}

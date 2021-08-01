@@ -1,0 +1,13 @@
+{##
+ # Action column
+ #}
+{% if this.entity.getTrackingStatus() != 'Delivered' %}
+<div class="tracking-action">
+  {{ widget('XLite\\View\\Button\\Regular', formParams={action:'usps_update_tracking',id:this.entity.getId()}, label=t('Update tracking info')) }}
+</div>
+{% endif %}
+{% if this.entity.isVoidAvailable() %}
+<div class="shipment-action">
+  {{ widget('XLite\\View\\Button\\Regular', formParams={action:'usps_void_shipment',id:this.entity.getId()}, label=t('Void shipment')) }}
+</div>
+{% endif %}

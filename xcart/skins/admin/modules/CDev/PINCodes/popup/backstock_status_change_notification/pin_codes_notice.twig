@@ -1,0 +1,11 @@
+{##
+ # BackstockStatusChangeNotification pin codes notice
+ #
+ # @ListChild(list="backstock_status_change_notification.after", weight=500)
+ #}
+
+{% if this.hasMissingPinCodeItems() %}
+  <div class="pin-codes-notice">
+    {{ t('The order also contains items with missing PIN codes; you will be prompted to enter the PIN codes under item names.') }}
+  </div>
+{% endif %}

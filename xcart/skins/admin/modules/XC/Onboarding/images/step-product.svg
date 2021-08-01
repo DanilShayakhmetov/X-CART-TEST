@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Last_changes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="add-product" stroke="#708692" stroke-width="2">
+            <g transform="translate(3.000000, 8.000000)">
+                <polyline id="Line" points="21 33 11 33 11 10.5 5.5 14 0 7 9 0 35 0 44 7 39 14 33 10.5 33 20"></polyline>
+                <path d="M33,27 L33,39" id="Line"></path>
+                <path d="M27,33 L39,33" id="Line-Copy-7"></path>
+                <path d="M15.0032206,0 C15.0032206,0 15.9208316,6 22.0032206,6 C28.0856096,6 29.0032206,0 29.0032206,0" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

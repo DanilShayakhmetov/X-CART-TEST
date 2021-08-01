@@ -1,0 +1,19 @@
+{##
+ # Header notice
+ #}
+<div class="activate-notice">
+
+  <span class="trial-notice">
+    {% if this.getTrialPeriodLeft() > 0 %}
+      {{ t('Your X-Cart trial expires in X days', {count: this.getTrialPeriodLeft(), url: this.getBusinessViewUrl()})|raw }}
+    {% else %}
+      {{ t('Trial has expired!') }}
+    {% endif %}
+  </span>
+
+  {{ widget('XLite\\View\\Button\\ActivateKey', label=t('Activate license key')) }}
+
+  {% if this.isTrialNoticeAutoDisplay() %}
+    {{ widget('XLite\\View\\Button\\TrialNotice') }}
+  {% endif %}
+</div>

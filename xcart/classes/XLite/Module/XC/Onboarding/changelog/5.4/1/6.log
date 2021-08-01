@@ -1,0 +1,12 @@
+Version 5.4.1.6
+
+Improvements (1)
+2020-06-08 - [Change] The names of the menu items in the main admin menu in the sidebar and the titles of the pages to which they provide links now follow the same style guidelines. #XCN-10981 #Core #SocialLogin #ProductReviews #NewsletterSubscriptions #ProductTags #News #Facebook Commerce #GoogleFeed #Onboarding #ShopByBrand
+
+Fixes (5)
+2020-06-19 - [Bug] Layout issues related to page elements with text-transform: capitalize in the Admin area. Fixed. #BUG-8757 #Core #Onboarding
+2020-06-09 - [Bug] Onboarding wizard. The "Upload a new logo" feature was working incorrectly. Fixed. #BUG-8673 #Onboarding
+2020-06-05 - [Bug] Onboarding wizard. In the step of adding a product, data entered was getting lost after following a link and going back again. Fixed. #BUG-8671 #Onboarding
+2020-05-15 - [Bug] Removed the advertising banner from the Onboarding Wizard page. #BUG-8592 #Onboarding
+2020-04-22 - [Bug] The button to skip a step in the Onboarding wizard was working incorrectly. Fixed #BUG-8547 #Onboarding
+

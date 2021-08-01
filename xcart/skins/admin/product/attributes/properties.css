@@ -1,0 +1,21 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attributes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.itemslist-attributeproperty.items-list-table table.list tbody.lines tr.line td.name {
+  white-space: normal;
+  min-width: 300px;
+}
+
+.itemslist-attributeproperty.items-list-table table.list .select2-selection__choice {
+  max-width: 350px;
+}
+
+.itemslist-attributeproperty.items-list-table table.list .select2-selection-text {
+  white-space: normal;
+}

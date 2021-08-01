@@ -1,0 +1,13 @@
+{##
+ # Log out link
+ #
+ # @ListChild (list="layout.header.right.settings", weight="-100")
+ #}
+
+{% if this.isLogged() and this.getProfileLogin() %}
+	<ul class='quick-links'>
+		<li class="account-email">
+			<span>{{ this.getProfileLogin() }}</span>
+		</li>
+	</ul>
+{% endif %}

@@ -1,0 +1,99 @@
+{##
+ # PayWithAmazon configuration page
+ #}
+
+<ul class="table model-properties settings-table pay-with-amazon">
+    <li>
+        {{ widget('XLite\\View\\FormField\\Input\\Text',
+            fieldName='settings[merchant_id]',
+            fieldId='settings_merchant_id',
+            value=this.paymentMethod.getSetting('merchant_id'),
+            help=t('If you do not have seller account, you can register here: USA UK Germany'),
+            label=t('Amazon Seller ID')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\View\\FormField\\Select\\TestLiveMode',
+            fieldId='settings_mode',
+            fieldName='settings[mode]',
+            value=this.paymentMethod.getSetting('mode'),
+            label=t('Operation mode')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\View\\FormField\\Input\\Text',
+            fieldName='settings[access_key]',
+            fieldId='settings_access_key',
+            value=this.paymentMethod.getSetting('access_key'),
+            label=t('Access Key ID')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\View\\FormField\\Input\\Text',
+            fieldName='settings[secret_key]',
+            fieldId='settings_secret_key',
+            value=this.paymentMethod.getSetting('secret_key'),
+            label=t('Secret Access Key')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\View\\FormField\\Input\\Text',
+            fieldName='settings[client_id]',
+            fieldId='settings_client_id',
+            value=this.paymentMethod.getSetting('client_id'),
+            help=t('Register your website as an application on the Login with Amazon App Console.'),
+            label=t('Client ID')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\Module\\Amazon\\PayWithAmazon\\View\\FormField\\Select\\Region',
+            fieldName='settings[region]',
+            fieldId='settings_region',
+            value=this.paymentMethod.getSetting('region'),
+            label=t('Country of Merchant account')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\Module\\Amazon\\PayWithAmazon\\View\\FormField\\Select\\CaptureMode',
+            fieldName='settings[capture_mode]',
+            fieldId='settings_capture_mode',
+            value=this.paymentMethod.getSetting('capture_mode'),
+            label=t('Capture mode')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\Module\\Amazon\\PayWithAmazon\\View\\FormField\\Select\\SyncMode',
+            fieldName='settings[sync_mode]',
+            fieldId='settings_sync_mode',
+            value=this.paymentMethod.getSetting('sync_mode'),
+            label=t('Type of authorization request')
+        ) }}
+    </li>
+    <li>
+        {{ widget('XLite\\View\\FormField\\Input\\Text',
+            fieldName='settings[order_id_prefix]',
+            fieldId='settings_order_id_prefix',
+            value=this.paymentMethod.getSetting('order_id_prefix'),
+            label=t('OrderId prefix')
+        ) }}
+    </li>
+    <li>
+        <div class="table-label">
+            <label for="settings_order_id_prefix">{{ t('Callback URL') }}</label>
+        </div>
+        <div class="table-value">
+            <div class="input-internal-wrapper">
+                <div class="input-field-wrapper input-label">
+                    <span>{{ this.paymentMethod.getAmazonIPNURL() }}</span>
+                </div>
+                <div class="help-wrapper">
+                    {{ widget('XLite\\View\\Tooltip',
+                        text=t("Amazon callback URL help"),
+                        isImageTag='true',
+                        className='help-icon'
+                    ) }}
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

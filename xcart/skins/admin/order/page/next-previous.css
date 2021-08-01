@@ -1,0 +1,41 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Next-previous order style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.ads-banners + .tabbed-content-wrapper {
+  margin-top: 96px;
+}
+
+.next-previous-order {
+  position: absolute;
+  top: -38px;
+  right: 18px
+}
+
+.next-previous-order a:hover,
+.next-previous-order a:active,
+.next-previous-order a:focus {
+  text-decoration: none;
+}
+
+.next-previous-order a:hover .text,
+.next-previous-order a:active .text,
+.next-previous-order a:focus .text {
+  text-decoration: underline;
+}
+
+.next-previous-order > div {
+  display: inline-block;
+}
+
+.next-previous-order .separator {
+  width: 0;
+  height: 11px;
+  border-left: 1px solid #d6d6d6;
+  margin: 0 9px;
+}

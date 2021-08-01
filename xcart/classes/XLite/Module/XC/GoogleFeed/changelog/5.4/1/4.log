@@ -1,0 +1,5 @@
+Version 5.4.1.4
+
+Fixes (1)
+2021-01-04 - [Bug] Google product feed vs Product Variants. In the feed, g:shipping_weight was "0" for a variant if the variant weight was set at default (not set.) Fixed. #XCB-75 #XC-GoogleFeed
+

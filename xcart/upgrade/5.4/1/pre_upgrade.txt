@@ -1,0 +1,1 @@
+Please note, we have changed the styles for the images in the Crisp White skin. You may need to configure and re-generate them additionally.

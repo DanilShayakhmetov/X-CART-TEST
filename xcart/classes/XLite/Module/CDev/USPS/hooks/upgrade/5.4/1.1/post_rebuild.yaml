@@ -1,0 +1,23 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: server_url
+    category: CDev\USPS
+    translations:
+      - code: en
+        option_name: U.S.P.S. API server URL
+        option_comment: "Enter the URL provided to you by U.S.P.S. in the notification about your successful registration for the U. S. Postal Service's Web Tools Application Program Interfaces. For example: <ul><li>https://stg-secure.shippingapis.com/ShippingApi.dll</li><li>https://secure.shippingapis.com/ShippingAPI.dll</li></ul>"
+
+XLite\Model\Shipping\Method:
+  - processor: usps
+    carrier: ''
+    code: ''
+    position: 0
+    translations:
+      - code: en
+        name: USPS

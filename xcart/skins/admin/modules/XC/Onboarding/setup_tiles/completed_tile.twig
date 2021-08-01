@@ -1,0 +1,17 @@
+{##
+ # setup tile template
+ #}
+
+<div {{ this.printTagAttributes(this.getTagAttributes())|raw }}>
+    <div class="setup-tile-image">
+        {{ this.getCompletedTileImage()|raw }}
+    </div>
+
+    <div class="setup-tile-content">
+        <p>{{ this.getCompletedTileText()|raw }}</p>
+    </div>
+
+    <div class="setup-tile-close" data-segment-click="{{ this.getCloseConciergeLinkTitle() }}">
+        {{ this.getSVGImage('images/icons/cross.svg')|raw }}
+    </div>
+</div>

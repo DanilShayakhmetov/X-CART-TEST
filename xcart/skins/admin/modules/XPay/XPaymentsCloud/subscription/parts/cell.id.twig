@@ -1,0 +1,14 @@
+{##
+ # Date cell
+ #
+ #}
+
+<div class="subscription-id">
+  <span class="subscription-id"><a href="{{ url('xpayments_subscriptions', '', {'subscription_id': this.entity.getId()}) }}">#{{ this.entity.getId() }}</a></span>
+</div>
+
+{% if this.entity.getInitialOrder() %}
+  <div class="order-number">
+    <span class="order-number">{{ t('Order id') }}: <a href="{{ url('order', '', {'order_number': this.entity.initialOrder.getOrderNumber()}) }}">#{{ this.entity.initialOrder.getOrderNumber() }}</a></span>
+  </div>
+{% endif %}

@@ -1,0 +1,9 @@
+Version 5.4.0.3
+
+Improvements (1)
+2019-09-02 - [Change] Removed the setting "use_canonical_urls_only"; added a new setting "canonical_product_clean_urls_format" in etc/config.php which sets the format for the product canonical url. #XCN-9896 (Shevelov Alexander) #Core #XMLSitemap #NextPreviousProduct #GoogleFeed #YandexMarket
+
+Fixes (2)
+2019-07-12 - [Bug] Products got duplicated in Facebook feed and Google feed, Fixed. #BUG-7685 https://bt.x-cart.com/view.php?id=50816 (Shevelov Alexander) #Facebook Commerce #GoogleFeed
+2019-06-27 - [Bug] Incorrect image links in Google feed with Amazon S3 Images addon enabled. Fixed. #BUG-7612 (Shevelov Alexander) #GoogleFeed #YandexMarket
+

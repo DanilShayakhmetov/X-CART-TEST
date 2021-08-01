@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2020-08-13 - [Bug] Update inventory. During the process of import, new products were created for SKUs from the import file which had not existed before. Исправлено #BUG-8895 https://bt.x-cart.com/view.php?id=52007 #UpdateInventory
+

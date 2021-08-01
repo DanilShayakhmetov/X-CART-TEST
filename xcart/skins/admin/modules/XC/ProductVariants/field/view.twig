@@ -1,0 +1,40 @@
+{##
+ # Atrributes input template
+ #}
+{##
+ # Tooltip widget
+ #}
+
+{% spaceless %}
+  <span
+          data-toggle="popover"
+          data-trigger="manual"
+          data-placement="bottom"
+          data-html="true"
+          data-help-id="variant-options-help-{{ this.entity.getId() }}"
+          data-delay="800"
+          data-keep-on-hover="1"
+          v-xlite-tooltip
+          class="tooltip-main attribute-value-tooltip">
+
+    <div class="variant-attribute-values">
+      {% for av in this.getVariantAttributeValues(this.entity) %}
+        <span class='variant-attribute-value'>{{ av }}</span>
+      {% endfor %}
+    </div>
+
+</span>
+{% endspaceless %}
+
+<div id="variant-options-help-{{ this.entity.getId() }}" style="display: none;">
+  {% for name, value in this.getVariantAttributeValues(this.entity) %}
+    <span class='variant-attribute-help-line'>
+      <span class='variant-attribute-name'>{{ name }}:</span>
+      <span class='variant-attribute-value'>{{ value }}</span>
+    </span>
+  {% endfor %}
+</div>
+
+<span class="variant-id">
+  {{ t('id') }}: {{ this.entity.getVariantId() }}
+</span>

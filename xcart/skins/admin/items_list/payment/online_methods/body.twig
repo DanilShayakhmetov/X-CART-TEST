@@ -1,0 +1,18 @@
+{##
+ # Payment methods list widget for popup
+ #}
+
+<ul class="payments-list {{ this.getListCSSClasses() }}">
+  {% for id, payment in this.getPageData() %}
+    {% if (payment.isAvailable()) %}
+      <li class="item-row line">
+        <ul class="payment-method-entry">
+          <li class="title-row module-name-{{ payment.getModuleName() }}">
+            {{ widget('\\XLite\\View\\ItemsList\\Model\\Payment\\Item\\PaymentMethod', method=payment) }}
+            <div class="clearfix"></div>
+          </li>
+        </ul>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

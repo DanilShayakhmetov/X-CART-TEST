@@ -1,0 +1,48 @@
+{##
+ # File manager line body
+ #}
+
+
+<xlite-file-manager-line inline-template>
+  {% if this.isDir() %}
+    <div class="line dir" v-data='{
+    "type":"dir",
+    "loadLink":"{{ this.getLink() }}",
+    "path":"{{ this.getPath() }}",
+    "loadable":"{{ this.getLoadable() }}"
+    }'>
+      <div class="info" @click="toggleDir()">
+        <span class="name" title="{{ this.getName() }}">
+        {{ this.getName() }}
+        </span>
+      </div>
+      <div class="children">
+        {% for child in this.getChildren() %}
+          {{ widget('\\XLite\\View\\FileManager\\Line', data=child, link_closure=this.getLinkClosure(), dir_closure=this.getDirClosure()) }}
+        {% endfor %}
+      </div>
+    </div>
+  {% else %}
+    <div class="line file" v-data='{
+    "type":"file",
+    "path":"{{ this.getPath() }}"
+    }'>
+      <div class="info">
+        <span class="name" title="{{ this.getName() }}">
+        {% if this.getLink() %}
+          <a href="{{ this.getViewLink() }}" target="_blank">{{ this.getName() }}</a>
+        {% else %}
+          {{ this.getName() }}
+        {% endif %}
+        </span>
+        <div class="properties">
+          <span class="size">{{ this.getSize() }}</span>
+          <span class="mtime">{{ this.getMtime() }}</span>
+        </div>
+        <div class="actions">
+          {{ widget('XLite\\View\\Button\\SimpleLink', {location: this.getLink(), style: 'download-file', label: '', 'icon-style': 'fa fa-download'}) }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</xlite-file-manager-line>

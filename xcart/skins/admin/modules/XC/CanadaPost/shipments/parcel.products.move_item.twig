@@ -1,0 +1,8 @@
+{##
+ # Parcel items list part: move item
+ #}
+
+<div class="move-parcel-item">
+  {{ widget('XLite\\View\\FormField\\Inline\\Input\\Text\\Integer', entity=this.entity, fieldName='amount', fieldNamespace='amount', itemsList=this, editOnly=true) }}
+  {{ widget('XLite\\Module\\XC\\CanadaPost\\View\\FormField\\Inline\\Select\\MoveItem', parcelId=this.entity.parcel.getId(), entity=this.entity, fieldName='parcel', fieldNamespace='parcelId', itemsList=this) }}
+</div>

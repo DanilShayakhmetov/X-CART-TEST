@@ -1,0 +1,9 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-08-15 - [Change] Improvements and bug fixes for the New/Backorder fulfilment status feature. #XCN-10104 (Shevelov Alexander) #Core #ThemeTweaker #PINCodes #ProductVariants
+
+Fixes (2)
+2019-08-14 - [Bug] Minor adjustments of the Add PIN codes popup layout according to the style guide. #BUG-7796 (Fedya Lavrentyev) #PINCodes
+2019-07-23 - [Bug] Ideas.x-cart.com URL updated for https://www.x-cart.com/contact-us.html #BUG-7712 (Maxim Kuznetsov) #Core #FileAttachments #PINCodes #RelatedProducts #BulkEditing #CustomProductTabs
+

@@ -1,0 +1,69 @@
+{##
+ # Authorize.net accept.js configuration page
+ #
+ # @author    Qualiteam software Ltd <info@x-cart.com>
+ # @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ # @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ # @link      http://www.x-cart.com/
+ #}
+
+<a class="btn btn-default ppc-instruction" role="button" data-toggle="collapse" href="#collapseInstruction" aria-expanded="false" aria-controls="collapseInstruction">{{ t('Setup instruction') }}</a>
+<div class="collapse authnet-instruction" id="collapseInstruction" style="margin-top: 10px;">
+    <div class="well">{{ t('AuthorizeNet accept.js instruction text')|raw }}</div>
+</div>
+
+<p>
+    <br />
+    <a href="https://go.evopayments.us/x-cart">{{ t('Sign up for Authorize.net') }}</a>
+</p>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+
+    <tr>
+        <td class="setting-name">
+            <label for="settings_api_login_id">{{ t('API Login ID') }}</label>
+        </td>
+        <td><input type="text" id="settings_api_login_id" name="settings[api_login_id]" value="{{ this.paymentMethod.getSetting('api_login_id') }}" /></td>
+    </tr>
+
+    <tr>
+        <td class="setting-name">
+            <label for="settings_transaction_key">{{ t('Transaction key') }}</label>
+        </td>
+        <td><input type="text" id="settings_transaction_key" name="settings[transaction_key]" value="{{ this.paymentMethod.getSetting('transaction_key') }}" /></td>
+    </tr>
+
+    <tr>
+        <td class="setting-name">
+            <label for="settings_public_key">{{ t('Public key') }}</label>
+        </td>
+        <td><input type="text" id="settings_public_key" name="settings[public_key]" value="{{ this.paymentMethod.getSetting('public_key') }}" /></td>
+    </tr>
+
+    <tr>
+        <td class="setting-name"><label for="settings_type">{{ t('Transaction type') }}</label></td>
+        <td>
+            <select id="settings_type" name="settings[type]" class="form-control">
+                <option value="sale" {% if this.paymentMethod.getSetting('type') == 'sale' %} selected="selected" {% endif %}>{{ t('Authorization and Capture') }}</option>
+                <option value="auth" {% if this.paymentMethod.getSetting('type') == 'auth' %} selected="selected" {% endif %}>{{ t('Authorization only') }}</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="setting-name">
+            <label for="settings_mode">{{ t('Test/Live mode') }}</label>
+        </td>
+        <td>
+            {{ widget('\\XLite\\View\\FormField\\Select\\TestLiveMode', fieldId='settings_mode', fieldName='settings[mode]', fieldOnly='true', value=this.paymentMethod.getSetting('mode')) }}
+        </td>
+    </tr>
+
+    <tr>
+        <td class="setting-name">
+            <label for="settings_prefix">{{ t('Invoice number prefix') }}</label>
+        </td>
+        <td><input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('prefix') }}" name="settings[prefix]"/></td>
+    </tr>
+
+</table>

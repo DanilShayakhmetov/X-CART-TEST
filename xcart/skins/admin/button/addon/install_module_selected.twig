@@ -1,0 +1,14 @@
+{##
+ # Selected module link
+ #}
+{% if this.moduleId %}
+<div class="{{ this.getParam('style') }}" id="module-box-{{ this.moduleId }}">
+  <span class="module-name">{{ this.getModuleName(this.moduleId) }}</span>
+  <div class="remove-action"><span class="info">{{ this.moduleId }}</span></div>
+</div>
+{% else %}
+  <div class="{{ this.getParam('style') }}">
+    <span class="module-name"></span>
+    <div class="remove-action"><span class="info"></span></div>
+  </div>
+{% endif %}

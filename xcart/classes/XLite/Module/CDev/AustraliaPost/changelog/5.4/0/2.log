@@ -1,0 +1,8 @@
+Version 5.4.0.2
+
+Improvements (1)
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+
+Fixes (1)
+2018-07-13 - [Bug] The name of a shipping service for admin is now defined in the yaml file only. #BUG-6055 https://bt.x-cart.com/view.php?id=49148 (Sergey Elmanov) #Core #AustraliaPost #USPS #CanadaPost #FedEx #UPS #EMS #PitneyBowes #ShippingCalc #DHL
+

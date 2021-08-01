@@ -1,0 +1,136 @@
+Version 5.4.1.0
+
+Improvements (31)
+2020-03-19 - [Change] Reduced the number of sizes to which product images are resized to enhance the image resizing performance. Minor UI improvements. #XCN-10682 #Core #ProductAdvisor #CrispWhiteSkin #MultiVendor #FlyoutCategoriesMenu #VendorPartners
+2020-03-17 - [Change] Minor improvements for the Onboarding Wizard. #XCN-10656 #Core #AmazonPay #Onboarding
+2020-03-12 - [Change] Remove advertising banners from some pages. #XCN-10663 #Core #SalesTax #NewsletterSubscriptions
+2020-03-11 - [Change] By default, for the packing/unpacking of addons to/from an archive, system tar is now used, if possible. #XCN-10706 #Core #Service
+2020-02-26 - [Change] Changed the layout and arrangement of notifications (low stock / new messages / etc) on the dashboard in the Admin area. #XCN-10420 #Core #Paypal #ProductVariants #ProductReviews #CrispWhiteSkin #MultiVendor #FreeShipping #VendorMessages #TrustedVendors #ShopperApproved #Onboarding
+2020-02-25 - [Change] Multivendor. Improvement related to the display of the list of backorders in the email message to the administrator. #XCN-10449 #Core #MultiVendor
+2020-02-25 - [Change] Implemented batch resizing of images with ImageMagick. Image resizing performance improvement. Code refactoring. #XCN-10445 https://bt.x-cart.com/view.php?id=51359 #Core #AmazonS3Images
+2020-02-25 - [Change] Added the ability to control the Alt attribute in the logo upload widget in the Admin area and in Layout editor. #XCN-9839 #Core #SimpleCMS #ThemeTweaker #Onboarding #AMP
+2020-02-20 - [Change] Minor UI improvements for the wholesale pricing table. #XCN-8795 #Core #Wholesale
+2020-02-16 - [Change] Implemented support for PHP 7.4. #BUG-8207 #Core #Geolocation
+2020-02-12 - [Change] Changed the text of some text labels; replaced the name "Markeplace" with "App store". #BUG-7676 #Core #MigrationWizard #Onboarding
+2020-02-11 - [Change] Optimization for the process of removing the file data cache when redeploying a store. #XCN-10537 https://bt.x-cart.com/view.php?id=51422 #Core #Service
+2020-02-11 - [Change] The xc5 console tool now supports upgrades (in beta). #XCN-10536 #Core
+2020-02-11 - [Change] Updated GuzzleHttp to the latest version (6.5). #BUG-8093 https://bt.x-cart.com/view.php?id=51214 #Core #Service
+2020-02-07 - [Change] Optimized the calculation of the available shipping methods list for vendors with a large number of configured zones and methods. #XCN-10354 https://bt.x-cart.com/view.php?id=50585 #Core #MultiVendor
+2020-02-04 - [Change] The active menu item was not highlighted on some pages. Fixed. #BUG-7472 #Core #AustraliaPost #Coupons #Paypal #Sale #USPS #XMLSitemap #CanadaPost #FedEx #UPS #MailChimp #DHL #GoogleFeed
+2020-01-30 - [Change] Improvements for the Onboarding Wizard steps. #XCN-10415 #Core #Onboarding
+2020-01-29 - [Change] Improvement for the xc5 console tool. Added tasks for cache rebuilding, license key activation and addon status management. #XCN-10430 #Core #Service
+2020-01-28 - [Change] Now a click on the name of an addon in the "Add sales channel" or "Add addons" popup results in redirecting the user to the In-App market and openings the popup of the respective addon. #BUG-8237 #Core
+2020-01-28 - [Change] When entering the qty field on mobile devices and in the Customer area on the page of a product and in the shopping cart, a digital keyboard is now provided. #BUG-8262 #Core #CrispWhiteSkin
+2020-01-27 - [Change] Various improvements for Group Sales. #XCN-10409 #Core #GoSocial #Sale #MultiVendor
+2020-01-27 - [Change] Added some text to the message on the addon search results page. #BUG-8042 #Core
+2020-01-24 - [Change] Improvements for the step of configuring payment methods in the Onboarding Wizard. #XCN-10453 #Core #Paypal #Onboarding #Yandex Checkout
+2020-01-24 - [Change] Added the function __toString for Model/AEntity.php. #BUG-7992 #Core
+2020-01-22 - [Change] Suboptimal code for the display of shipping method in the invoice template. Code improvement. #BUG-8011 https://bt.x-cart.com/view.php?id=51093 #Core
+2020-01-22 - [Change] Added a new setting in the MultiVendor addon that will determine whether a backorder notification message needs to be sent to the vendor email address, Added the functionality for the creation and sending of such a message. Added a hint about a competitor order for use on the AOM backorder page. #BUG-7812 #Core #MultiVendor
+2020-01-20 - [Change] "Sale" addon improvements: It is now possible to add Group Sales. #XCN-10175 #Core #Sale #VAT #Wholesale #ProductFilter #ProductVariants #MultiVendor #FlyoutCategoriesMenu
+2020-01-09 - [Change] Now it is possible to link a language with a country so that when a customer's country is defined automatically by the customer's IP address, the language of that country can be enabled. #BUG-7012 #Core #Geolocation
+2019-12-25 - [Change] Added a new variable - first_name - for use in email notifications setup. The value for this variable is taken from the respective field of a customer profile. #BUG-7942 #Core #MultiVendor #VendorMessages
+2019-12-23 - [Change] Now the address in the "To:" field of all email messages is surrounded by angle brackets. #BUG-7936 https://bt.x-cart.com/view.php?id=51015 #Core
+2019-11-19 - [Change] Updated the htmlpurifier and MobileDetect libraries. #BUG-6975 #Core #Add2CartPopup #AMP
+
+Fixes (99)
+2020-03-27 - [Bug] Layout issues related to the display of elements on the sticky panel in the Admin area. Fixed. #BUG-8484 #Core
+2020-03-26 - [Bug] Changed the dimensions of some images for demo data. #BUG-8460 #Core
+2020-03-24 - [Bug] Problem displaying the store logo on the invoice if X-Cart is installed in a subdirectory. Fixed. #BUG-8464 #Core
+2020-03-17 - [Bug] In AOM, when selecting Options on a product, the selector now shows the current option value instead of the default one. #BUG-8274 #Core
+2020-03-16 - [Bug] Layout issues and issues with texts and help tips on the page target=settings&page=Environment. Fixed. #BUG-8372 https://bt.x-cart.com/view.php?id=51499 #Core
+2020-03-13 - [Bug] In the Customer area on a category page, the URL structure (the parameters being used) was changing if clicking on a page in the pagination widget. Fixed. #BUG-8420 #Core
+2020-03-12 - [Bug] The order of items in the minicart did not match the heading "Last added items". Fixed. #BUG-8409 https://bt.x-cart.com/view.php?id=51544 #Core
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-03-11 - [Bug] Layout issues related to the footer (sticky panel) on the Admin area pages. Fixed. #BUG-8421 #Core
+2020-03-11 - [Bug] When placing an order with payment via PayPal Standard, the customer session was lost. Fixed. #BUG-8418 #Core #Paypal
+2020-03-11 - [Bug] After an update of the core or addons, on the service.php#/version?scode=supportxc5check page in the Installation date field the date of update installation was shown instead of the date when the core/addons were installed originally. Fixed. #BUG-8411 https://bt.x-cart.com/view.php?id=51546 #Core
+2020-03-11 - [Bug] RESTAPI. When making a request to select profiles with any conditions, only profiles with order_id = NULL were selected. Fixed. #BUG-8407 https://bt.x-cart.com/view.php?id=51538 #Core
+2020-03-11 - [Bug] In OPC, the place order button did not appear after removing from the shopping cart the products of a vendor who was not shipping to the customer's address. Fixed. #BUG-8394 #Core #CrispWhiteSkin #MultiVendor
+2020-03-11 - [Bug] Warning in logs if switching the languages in the Customer area with Clean URLs enabled. Fixed. #BUG-8286 #Core
+2020-03-11 - [Bug] Errors related to inventory tracking / stock reduction (involving QTY not getting updated properly) when switching the order statuses, including custom statuses. Fixed. #BUG-8082 #Core
+2020-03-06 - [Bug] In the Customer area, in some cases the profile menu was overlapping with the minicart widget. Fixed. #BUG-8412 https://bt.x-cart.com/view.php?id=51549 #Core
+2020-03-06 - [Bug] Made some changes to demo data to enable use of online-calculated vendor shipping methods. #BUG-8405 #Core
+2020-03-06 - [Bug] Zapier vs. NFO. An error was generated when making a payment for an order. Fixed. #BUG-8400 https://bt.x-cart.com/view.php?id=51530 #Core #Zapier
+2020-03-06 - [Bug] The style of Sale labels on the Bestsellers page in the Admin area was incorrect. Fixed. #BUG-8373 #Core #Sale
+2020-03-04 - [Bug] Fixed the message about insufficient permissions in the "Check permissions" step of the upgrade process. #BUG-8341 https://bt.x-cart.com/view.php?id=51468 #Core
+2020-03-03 - [Bug] Temporarily disabled the logging of js code minification errors. #BUG-8397 #Core
+2020-03-03 - [Bug] Layout issues at checkout with Amazon Login / PayPal Login configured but with the addon SocialLogin disabled. Fixed. #BUG-8393 #Core #Paypal #SocialLogin #CrispWhiteSkin
+2020-03-03 - [Bug] When activating a free license key from the Admin area, no redirect to redeploying was made. Fixed. #BUG-8330 https://bt.x-cart.com/view.php?id=51461 #Core
+2020-03-03 - [Bug] On the transactions page, the right side of the period end date was not fully visible. #BUG-8198 #Core
+2020-03-02 - [Bug] In new backorders notification messages, product links now point to the pages of the respective products in the Admin area. #BUG-8376 #Core #MultiVendor
+2020-03-02 - [Bug] The help tooltip icons on the Authorize.Net SIM settings page were displayed incorrectly. Fixed. #BUG-8211 #Core #AuthorizeNet
+2020-02-27 - [Bug] The links "Orders", "Look & Feel", "Store setup" and "System tools" were displayed incorrectly in the collapsed Admin menu. Fixed. #BUG-8386 https://bt.x-cart.com/view.php?id=51516 #Core
+2020-02-27 - [Bug] JS error when uploading an image on the logo_favicon page. Fixed. #BUG-8365 #Core
+2020-02-27 - [Bug] In the Customer area, on the page of a category with subcategories, there were layout issues in the "Subcategory listings format = List" mode. Fixed. #BUG-8363 https://bt.x-cart.com/view.php?id=51493 #Core
+2020-02-27 - [Bug] When using the Back browser button to get from a product page on the storefront back to the search results page with a link to the product on view, the return was made always to the first page of search results instead of that page, which was incorrect. Fixed. #BUG-8338 https://bt.x-cart.com/view.php?id=51474 #Core
+2020-02-27 - [Bug] After the readjustment of image dimension settings and the resizing of images, there remained garbage data in var/images. Fixed. #BUG-8333 #Core
+2020-02-27 - [Bug] When editing more than one categories at the same time, it was possible to set two categories as parents of one another. Fixed. #BUG-8329 https://bt.x-cart.com/view.php?id=51460 #Core
+2020-02-27 - [Bug] Errors related to the upload of product files via URL for files on drive.google and dropbox. Fixed. #BUG-8326 #Core
+2020-02-27 - [Bug] The trash icon was displayed incorrectly for the Delete menu item in the logo upload widget. Fixed. #BUG-8289 #Core #ThemeTweaker
+2020-02-27 - [Bug] Errors when trying to access a missing order in AOM via a direct link. Fixed. #BUG-8179 #Core #VendorMessages
+2020-02-27 - [Bug] Enabling the option "Request customers to review..." in the addon settings did not enable the "Request to review purchased products" email notification. Fixed. #BUG-8157 #Core
+2020-02-26 - [Bug] Ajax requests on the System settings -> Environment page are now executed consecutively to reduce server load. #BUG-8316 #Core
+2020-02-26 - [Bug] ShopByBrand: 404 error page if using the pagination widget on a brand page in the Admin area to switch pages. Fixed. #BUG-8308 https://bt.x-cart.com/view.php?id=51238 #Core #ShopByBrand
+2020-02-25 - [Bug] Retina-sized images were not removed when removing a product image. Fixed. #BUG-8319 #Core
+2020-02-25 - [Bug] The "Storefront is closed" link was formed incorrectly in the Admin area. Fixed. #BUG-8291 #Core
+2020-02-25 - [Bug] With a large number of vendors and zones, during checkout (in OPC mode) after changing the country in the shipping address, the request was performed without any outward signs of data being processed. Fixed. #BUG-8265 #Core
+2020-02-25 - [Bug] The Login with PayPal and Login with Amazon buttons were displayed incorrectly in the Sign in popup. Fixed. #BUG-8196 #Core #CrispWhiteSkin #AmazonPay
+2020-02-25 - [Bug] defineWidgetParams(). In initialization, the values for highYear and lowYear were confused. Fixed. #BUG-8073 https://bt.x-cart.com/view.php?id=51193 #Core
+2020-02-24 - [Bug] Layout issues related to the display of the panels of individual addons on the upgrade page. Fixed. #BUG-7970 #Core
+2020-02-21 - [Bug] The logo image was not getting resized. Fixed. #BUG-8377 #Core #SimpleCMS
+2020-02-21 - [Bug] The product price was not getting updated when switching the values in the qty box. Fixed. #BUG-8352 #Core #Wholesale
+2020-02-21 - [Bug] "Notice: Undefined index: HTTP_USER_AGENT" in logs. Fixed. #BUG-8282 #Core
+2020-02-20 - [Bug] Removed some unused code. #BUG-8021 #Core
+2020-02-19 - [Bug] A store administrator was getting two notification messages instead of one if Multivendor was enabled. Fixed. #BUG-8370 #Core
+2020-02-19 - [Bug] When editing an order with the status "Authorized" in AOM, clicking "Void" reset the status to "Awaiting payment" instead of "Cancelled". Fixed. #BUG-8325 #Core #Stripe #MultiVendor #Heartland
+2020-02-19 - [Bug] The Order created email notification was sent once again on callback if the Order processed notification was enabled. Fixed. #BUG-8212 https://bt.x-cart.com/view.php?id=51329 #Core
+2020-02-18 - [Bug] Admin styles were loaded when uploading a logo via layout editor. Fixed. #BUG-8366 #Core
+2020-02-14 - [Bug] Russian language was added onto the Edit labels page after choosing to add a new label. Fixed. #BUG-8277 #Core
+2020-02-12 - [Bug] Vendor categories were not accessible via the side menu. Fixed. #BUG-8335 #Core #MultiVendor
+2020-02-12 - [Bug] With a large number of vendors, zones and shipping methods, the recalculation of shipping cost in the Estimate shipping cost popup was performed without any outward signs of data being processed. Fixed. #BUG-8263 #Core
+2020-02-12 - [Bug] Switching the language multiple times via clean URLs did not work correctly. Fixed. #BUG-8252 #Core
+2020-02-12 - [Bug] In the mobile version, in landscape mode, the sticky panel was moving over the list of orders in the Admin area. Fixed. #BUG-8240 https://bt.x-cart.com/view.php?id=51387 #Core
+2020-02-12 - [Bug] The import of a csv file with language labels from the Language labels -> Edit labels page was not working. Fixed. #BUG-8238 https://bt.x-cart.com/view.php?id=51390 #Core
+2020-02-11 - [Bug] It was not possible to use Sign Out on the page target=force_change_password. Fixed. #BUG-8241 https://bt.x-cart.com/view.php?id=51392 #Core
+2020-02-11 - [Bug] The call for js assignShadeOverlay in some cases did not match the function signature. Fixed. #BUG-8222 https://bt.x-cart.com/view.php?id=51375 #Core #Stripe
+2020-02-11 - [Bug] On the Admin area Sign in form, auto-focus on the Email field was not working. Fixed. #BUG-8216 #Core
+2020-02-10 - [Bug] Using Amazon Pay it was possible to place an order requesting delivery to a disabled country. Fixed. #BUG-8313 #Core #AmazonPay
+2020-02-10 - [Bug] Layout issues related to the country selector in the Add payment method popup. Fixed. #BUG-8209 #Core
+2020-02-10 - [Bug] CSS validation errors on the home page. Fixed. #BUG-8200 https://bt.x-cart.com/view.php?id=51341 #Core #CrispWhiteSkin
+2020-02-10 - [Bug] An irrelevant message was shown when attempting to switch the skin on which an enabled addon was dependent to a different one. Fixed. #BUG-8037 #Core
+2020-02-07 - [Bug] Incorrect calculation of the number of lines when importing multiple files. Fixed. #BUG-8233 #Core
+2020-02-07 - [Bug] The price of a product was getting wrapped onto the following line in the invoice print preview if using the format "1 234.56" . Fixed. #BUG-8187 https://bt.x-cart.com/view.php?id=51328 #Core
+2020-02-07 - [Bug] With the addon Product filter disabled, the header panel with sorting controls, view mode control and other elements is no longer shown in an empty category. #BUG-8178 #Core
+2020-02-07 - [Bug] Layout issues related to the display of checkboxes during checkout with the addons GDPR and Mailchimp enabled and the display of a checkbox on a product page. Fixed. #BUG-8169 #Core #MailChimp #GDPR
+2020-02-06 - [Bug] After expanding the Admin menu, the menu items were not working. Fixed. #BUG-8301 #Core
+2020-02-06 - [Bug] Fatal error when trying to access the target=logs page if the year logs folder contained another folder with limited access permissions. Fixed. #BUG-8158 https://bt.x-cart.com/view.php?id=51287 #Core
+2020-02-06 - [Bug] In the Customer area, after clicking the browser "Back" button on any product page that had been accessed from search results, the user was always redirected to the first page of search results. Fixed. #BUG-8156 https://bt.x-cart.com/view.php?id=51285 #Core
+2020-02-06 - [Bug] In some cases, the last page of some lists in the Admin area was twitching. Fixed. #BUG-8146 https://bt.x-cart.com/view.php?id=51275 #Core
+2020-02-05 - [Bug] A vendor category page that did not contain any products could still be opened for viewing. Fixed. #BUG-8133 https://bt.x-cart.com/view.php?id=51263 #Core #MultiVendor
+2020-02-04 - [Bug] JS error on the Zones page in the Admin area. Fixed. #BUG-8309 #Core
+2020-02-04 - [Bug] Layout issues on the pages "Storefront is closed" and "The site is temporarily closed for maintenance". Fixed. #BUG-8290 #Core
+2020-02-04 - [Bug] Error when trying to view the feedback rating or detailed vendor information on a product page in the Customer area. #BUG-8284 #Core
+2020-02-03 - [Bug] After enabling and configuring USPS, UPS or FEDEX shipping methods, the payment methods COD_USPS, COD_UPS and COD_FEDEX, respectively, were not added to the offline payment methods list. Fixed. #BUG-8300 #Core #UPS
+2020-01-31 - [Bug] Now a check for LC_DIR_TMP is performed. If missing, it is created. #BUG-8296 #Core
+2020-01-27 - [Bug] On mobile, on the ?target=register_vendor page in the Customer area, the tooltips were not working correctly. Fixed. #BUG-8184 https://bt.x-cart.com/view.php?id=51332 #Core
+2020-01-27 - [Bug] In some cases, in a store with VAT addon enabled, "Marker price:" and "you save" labels on product pages were not displayed correctly. Fixed. #BUG-8150 https://bt.x-cart.com/view.php?id=51276 #Core
+2020-01-27 - [Bug] If the backend was running on Windows, some log files were written to the 2020m directory instead of 2020. Fixed. #BUG-8052 #Core #Paypal
+2020-01-24 - [Bug] Order has been paid notification text corrected. #BUG-7993 #Core
+2020-01-24 - [Bug] Layout issues on the page with PayPal Advanced frame. Fixed. #BUG-7969 #Core
+2020-01-23 - [Bug] Made changes to some variables in Crisp White. #BUG-7940 https://bt.x-cart.com/view.php?id=50979 #Core #UpdateInventory #SimplifyCommerce
+2020-01-23 - [Bug] The same file cannot be assigned to one product more than once now. #BUG-7386 #Core #FileAttachments
+2020-01-22 - [Bug] Restored the correct redirect in the cases when a user got the "you don't have permissions to access this page" message and logged in successfully. #BUG-8242 https://bt.x-cart.com/view.php?id=51351 #Core
+2020-01-15 - [Bug] Images could not be imported for a product via URL if the URL contained cyrillic symbols or space characters. Fixed. #BUG-7917 https://bt.x-cart.com/view.php?id=51010 #Core
+2019-12-24 - [Bug] A file could not be opened in the Admin area if it had been uploaded via URL without saving a copy on the server. Fixed. #BUG-7520 #Core
+2019-12-12 - [Bug] Code optimization for the Onboarding Wizard so it can be opened faster for the store administrator. #BUG-7362 #Core #Onboarding
+2019-12-09 - [Bug] Fixed the way the logo is displayed in email messages in Outlook. Now the logo image dimensions are as specified in the settings. #BUG-5984 https://bt.x-cart.com/view.php?id=49016 #Core
+2019-12-06 - [Bug] To use Redis for cache storage, the php extension redis now needs to be available on the server. #BUG-7030 https://bt.x-cart.com/view.php?id=50391 #Core
+2019-12-05 - [Bug] Changes of the widget for country and state selection on the page for editing zones. Fixed the widget display error on iPad/Safari. #BUG-6949 #Core
+2019-12-02 - [Bug] In import/export, price/weight modifiers for product attributes are now set using "=="  instead of "=". #BUG-7104 #Core
+2019-11-25 - [Bug] Layout improvement for the logo block in the Customer area. #BUG-4312 #Core #CrispWhiteSkin
+2019-11-21 - [Bug] Fixed the links to attached files for clone products. Now the links are formed correctly for both the files stored locally and remotely. #BUG-7381 #Core #FileAttachments
+2019-11-19 - [Bug] If clicking "Void" while editing an order with the status "Authorized" in AOM, the order status was changed to "Awaiting payment" instead of "Cancelled". Fixed. #BUG-7895 #Core #Stripe #MultiVendor
+1970-01-01 - [Bug] 6 Mar 2020 #BUG-8375 #Core #MultiVendor
+1970-01-01 - [Bug] 7 Feb 2020 #BUG-8172 #Core
+

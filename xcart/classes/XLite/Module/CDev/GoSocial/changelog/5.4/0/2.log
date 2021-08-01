@@ -1,0 +1,5 @@
+Version 5.4.0.2
+
+Improvements (1)
+2018-09-05 - [Change] Open graph tags now support multiple languages. #BUG-6461 (Sergey Elmanov) #GoSocial
+

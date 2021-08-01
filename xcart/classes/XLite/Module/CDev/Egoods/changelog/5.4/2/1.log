@@ -1,0 +1,5 @@
+Version 5.4.2.1
+
+Fixes (1)
+2020-09-28 - [Bug] E-goods with Cloud Storage Signed URLs. A file in Cloud Storage was inaccessible if it was not publicly accessible on Amazon. Fixed. #BUG-8992 https://bt.x-cart.com/view.php?id=51315 #Egoods
+

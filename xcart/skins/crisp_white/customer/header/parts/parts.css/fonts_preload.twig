@@ -1,0 +1,12 @@
+{##
+ # Header fonts preload (must be loaded font-face before)
+ # skins/common/css/font-awesome/font-awesome.min.css
+ # skins/crisp_white/customer/css/less/iconfont-init.less
+ #
+ # @ListChild (list="head.css", weight="199")
+ #}
+
+{% if this.doCSSAggregation() %}
+  <link rel="preload" as="font" type="font/woff2" href="{{ this.layout.getResourceWebPath('css/fonts/fontawesome-webfont.woff2', 'url', 'common') }}?v=4.6.3" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="{{ asset('iconfont/xcartskin.ttf') }}?oaqn6v" crossorigin />
+{% endif %}

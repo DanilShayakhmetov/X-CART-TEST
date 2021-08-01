@@ -1,0 +1,5 @@
+Version 5.4.0.7
+
+Fixes (1)
+2019-12-30 - [Bug] Layout issue on the Wholesale pricing tab of a product page related to the alignment of elements within the table columns. Fixed. #BUG-7716 (Pavel Veselovsky) #Wholesale
+

@@ -1,0 +1,19 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.1.11
+type: common
+authorName: 'X-Cart team'
+moduleName: 'Theme tweaker'
+description: 'This extension allows you to tweak your store design by adding and editing custom CSS styles and JavaScript code directly in the store back end. Also you can upload images to link them from your CSS styles.'
+minorRequiredCoreVersion: 1
+dependsOn: {  }
+incompatibleWith:
+    - CDev-DrupalConnector
+skins: {  }
+showSettingsForm: false
+canDisable: true

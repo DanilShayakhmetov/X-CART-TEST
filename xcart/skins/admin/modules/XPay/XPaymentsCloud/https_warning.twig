@@ -1,0 +1,12 @@
+{##
+ # HTTPS Warning 
+ #
+ #}
+
+{% if not this.isEnabledHTTPS() %}
+  <div class="alert alert-danger connection-status">
+    <strong>{{ t('Secure protocol is disabled! ') }}</strong> {{ t('X-Payments Cloud requires it for operation. ') }}
+    {{ t('In order to enable it, go to the ') }} <a href="{{ this.buildUrl('https_settings') }}" title="{{ t('HTTPS settings') }}">{{ t('HTTPS settings') }}</a>
+    {{ t('page and click the ') }} <strong>{{ t('Enable HTTPS') }}</strong> {{ t('button') }}.
+  </div>
+{% endif %}

@@ -1,0 +1,6 @@
+Version 5.4.0.7
+
+Fixes (2)
+2019-12-06 - [Bug] Changed the vendor permissions working with tags. Now vendors cannot delete or edit tags. They can create tags, view the list of tags and assign tags to their own products. #BUG-7282 (Pavel Veselovsky) #MultiVendor #ProductTags
+1970-01-01 - [Bug] Layout issue related to the display of a long tag on a product page in the Customer area. Fixed. #BUG-7762 https://bt.x-cart.com/view.php?id=50919 (Pavel Veselovsky) #ProductTags
+

@@ -1,0 +1,973 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order info styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import "../../css/initialize";
+
+.order-info .inline-field.editable {
+  padding: @form-row-vertical-padding 0;
+  .view {
+    background-color: rgba(252, 235, 176, 0.3);
+    border-radius: @border-radius-base;
+    overflow: hidden;
+  }
+
+  .input-internal-wrapper>.input-field-wrapper {
+    width: 100%;
+
+    input.form-control,
+    select.form-control {
+      width: 100%;
+    }
+  }
+}
+
+.order-info .title-row,
+.order-info p.title,
+.line-1,
+.order-history,
+.line-2,
+.line-3
+{
+  width: 844px;
+}
+
+.line-1 {
+  margin-top: @rhythmic-unit / 2;
+}
+
+.title-row {
+  .flex-display();
+  .align-items(center);
+  margin-bottom: 6px;
+}
+
+/* Top text blocks */
+.order-info {
+  position: relative;
+}
+
+.order-info h1 {
+  .flex-display(inline-flex);
+}
+
+.order-info div.title {
+  width: 420px;
+  display: table-cell;
+
+  .placed-date {
+    background: transparent url(../../images/orderplacer.svg) no-repeat;
+    background-size: 20px;
+    padding-left: 32px;
+    background-position: left center;
+    margin-bottom: 10px;
+    text-transform: none;
+  }
+
+  .placed-customer {
+    width: 420px;
+  }
+}
+
+.order-info .title .placed-customer .profile-login .not-editable {
+  margin-left: 10px;
+}
+
+.order-info div.title .email {
+  color: #8f8f8f;
+}
+
+.order-info div.title a.name {
+  text-decoration: underline;
+}
+
+.order-info .totals div.title {
+  width: auto;
+}
+
+.order-info p.total {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #8f8f8f;
+}
+
+.order-info p.total span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Title box */
+.order-info .title-box {
+  .flex-display(inline-flex);
+}
+
+.order-info .title-box > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Title box : note */
+
+.order-info .order-note.staff-note {
+  display: table-cell;
+  padding-left: @rhythmic-unit;
+}
+
+.order-info .order-note h4 {
+  display: inline-block;
+  margin-right: @rhythmic-unit / 2;
+}
+.order-info .order-note.customer-note .view {
+  width: 400px;
+  max-height: 110px;
+}
+
+/* Title box : history */
+
+.order-info .title-box .history a {
+  text-decoration: none;
+  border-bottom: dashed 1px;
+}
+
+/* Line 1 */
+
+.order-info .order-part {
+  width: 199px;
+  float: left;
+}
+
+.order-info .order-part h4 {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.order-info .order-part .box .method {
+  min-height: 90px;
+}
+
+.order-info .order-part .box .method .method-name {
+  padding-left: 10px;
+}
+
+.order-info.not-editable .order-part .box .method .transaction {
+  padding: 0;
+}
+
+.order-info:not(.not-editable) .order-part .box .method .view.not-editable {
+  padding: (@rhythmic-unit / 2) 0 0 0;
+}
+
+.order-info .order-part .box .method .payment-method-data .inline-field {
+  margin-bottom: 10px;
+}
+
+.order-info .order-part .box .method .payment-method-data * {
+  font-weight: normal;
+  line-height: normal;
+  word-wrap: break-word;
+}
+
+.order-info .order-part .box .method .payment-method-data .field {
+  padding: 6px 10px 6px 9px;
+}
+
+.order-info .order-part .box .method .payment-method-data .param-title {
+  color: #8f8f8f;
+}
+
+.order-info .order-part .box .method .payment-method-data .param-value {
+}
+
+.order-info .order-part .box .method .payment-method-data .inline-field.PurchaseOrder .view .param-title,
+.order-info .order-part .box .method .payment-method-data .inline-field.PurchaseOrder .field .value .param-title {
+  display: none;
+}
+
+.order-info .order-part .box .method .payment-method-data .inline-field.PurchaseOrder .view .param-title.force-display,
+.order-info .order-part .box .method .payment-method-data .inline-field.PurchaseOrder .field .value .param-title.force-display,
+.order-info .order-part .box .method .payment-method-data .inline-field.PurchaseOrder .view .po_number .param-title,
+.order-info .order-part .box .method .payment-method-data .inline-field.PurchaseOrder .field .value .po_number .param-title {
+  display: inline;
+}
+
+.order-info .order-part .box .method select {
+  width: 160px;
+}
+
+.order-info .order-part .box .address {
+  padding-top: @rhythmic-unit / 2;
+}
+
+.order-info.not-editable .order-part .box .address strong {
+  padding-left: 0;
+}
+
+.order-info .order-part .box .address .view {
+  position: relative;
+}
+
+.order-info .order-part .box .address .field {
+  padding: (@rhythmic-unit / 3) (@rhythmic-unit / 2);
+  position: relative;
+}
+
+.order-info .order-part .box .address .view .address-section {
+  padding-top: 2px;
+}
+
+.order-info .order-part .box .address .address-section span.value {
+  width: 100%;
+}
+
+/* Payment */
+.order-info .payment h4 {
+  background-image: url(../../images/payment.svg);
+  background-size: 20px;
+  padding-left: 32px;
+  background-position: left center;
+}
+
+.order-info.not-editable .payment .box {
+  padding-left: 33px;
+}
+
+/* Shipping */
+.order-info .shipping h4 {
+  background-image: url(../../images/shipping.svg);
+  background-size: 20px;
+  padding-left: 32px;
+  background-position: left center;
+}
+
+.order-info.not-editable .shipping .box {
+  padding-left: 37px;
+}
+
+/* Actions box */
+div.actions {
+  float: right;
+}
+
+div.actions .statuses {
+  background-color: @items-list-head-bg;
+  padding: (@rhythmic-unit / 2);
+  border: 1px solid @table-border-color;
+  border-radius: @border-radius-base;
+  width: 400px;
+}
+
+div.actions .status {
+  .flex-display();
+  .align-items(center);
+  position: relative;
+
+  select.form-control {
+    margin: @form-row-vertical-padding 0;
+    width: 233px;
+  }
+
+  .clear {
+    display: none;
+  }
+
+  .info-status-warning {
+    position: absolute;
+    right: -1 * (@rhythmic-unit + 15);
+  }
+}
+
+div.actions .status.shipping-status > div:not(.clear),
+div.actions .status.shipping-status > span {
+  display: block;
+}
+
+div.actions .status.shipping-status > .tooltip-main {
+  line-height: 38px;
+  margin-left: 3px;
+  margin-right: -3px;
+}
+
+div.actions .status div.table-label {
+  padding-right: 0;
+  width: 150px;
+  display: inline-block;
+  line-height: @input-height-base;
+  text-align: right;
+  margin-right: @rhythmic-unit;
+}
+
+div.actions .status div.table-value {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  float: right;
+}
+
+div.actions .status label,
+div.actions .status select
+{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+div.actions .status select {
+  width: 210px;
+}
+
+div.actions .payment-actions-row {
+  text-align: right;
+}
+
+div.actions ul.payment-sums {
+  display: inline-block;
+  text-align: right;
+  padding-top: 14px;
+}
+
+div.actions ul.payment-sums li {
+  font-size: 14px;
+  line-height: normal;
+}
+
+div.actions ul.payment-sums li .transaction-label {
+  display: block;
+}
+
+div.actions ul.payment-sums li .cost {
+  font-weight: bold;
+}
+
+/* Line 2 */
+
+div.line-2 {
+  margin-top: 54px;
+}
+
+div.line-2 h2 {
+  margin-bottom: 9px;
+}
+
+div.line-2 .box {
+  border: 1px solid #d7e1e8;
+  background-color: #eff8fe;
+  padding: 6px;
+  padding-bottom: 12px;
+  width: 396px;
+}
+
+div.line-2 .box .address {
+  margin-top: 4px;
+  padding: 13px;
+}
+
+div.line-2 .box .address strong {
+  color: #456583;
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+}
+
+.box .address ul.address-section li.address-field {
+  word-break: break-all;
+  white-space: normal;
+}
+
+div.line-2 .box .address ul.address-section {
+  padding-top: 12px;
+}
+
+div.line-2 .box .address ul.address-section li.address-field {
+  padding-right: 4px;
+}
+
+div.line-2 .box .address ul.address-section li.address-field.address-custom_state {
+  display: none;
+}
+
+div.line-2 .box .address ul.address-section li.address-field span {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 8px;
+}
+
+ul.address-section li.address-field .address-title,
+  ul.address-section li.address-field .address-comma,
+  ul.address-section li.address-field .address-space
+{
+  display: none;
+}
+
+ul.address-section li.address-field.address-firstname .address-space,
+  ul.address-section li.address-field.address-phone .address-title,
+  ul.address-section li.address-field.address-type .address-title,
+  ul.address-section li.address-field.field-additional .address-title,
+  ul.address-section li.address-field.address-city .address-space,
+  ul.address-section li.address-field.address-street .address-space,
+  ul.address-section li.address-field.address-state .address-space
+{
+  display: inline;
+}
+
+ul.address-section li.address-field.address-title,
+  ul.address-section li.address-field.address-firstname
+{
+  float: left;
+}
+
+ul.address-section.payment-address-section li.address-field.address-type
+{
+  display: none;
+}
+
+
+
+/* Payment */
+div.payment {
+  float: left;
+  margin-right: 20px;
+}
+
+/* Shipping */
+.order-info div.shipping {
+  float: left;
+  margin-right: 20px;
+}
+
+/* Line 3 */
+
+div.line-3 {
+  margin-top: 54px;
+}
+
+div.line-3 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+div.line-3 table
+{
+  border-collapse: collapse;
+  border: 0 none;
+  width: 100%;
+}
+
+div.line-3 .totals td,
+div.line-3 .totals th,
+div.line-3 .items td,
+div.line-3 .items th
+{
+  border-width: 1px;
+  border-style: solid;
+}
+
+div.line-3 .totals td,
+div.line-3 .totals th {
+  border: none;
+}
+
+div.line-3 .totals .total div,
+div.line-3 .totals .total .value > span
+{
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.line-3 .totals .total {
+  height: @rhythmic-unit * 5 / 2;
+
+  div {
+    padding-top: @rhythmic-unit;
+    padding-bottom: @rhythmic-unit / 2;
+
+    &.value {
+      .flex-display();
+      .justify-content(flex-end);
+    }
+  }
+}
+
+div.line-3 .totals .total.negative div,
+div.line-3 .totals .total.negative .value > span
+{
+  color: #f00;
+}
+
+
+div.line-3 .items
+{
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border: 0 none;
+}
+
+div.line-3 .items,
+div.line-3 .items td,
+div.line-3 .items th,
+div.line-3 .totals,
+div.line-3 .totals td
+{
+  border-color: #C4C4C4;
+}
+
+div.line-3 table.totals
+{
+  width: 100%;
+}
+
+div.line-3 .items th {
+  background: #f9f9f9 none;
+  font-weight: normal;
+  padding: 12px 22px;
+  white-space: nowrap;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+}
+
+div.line-3 .items th.item
+{
+  text-align: left;
+}
+
+div.line-3 .items th.total {
+  text-align: right;
+}
+
+div.line-3 .items .item-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div.line-3 .items td,
+  div.line-3 .totals li.total,
+  div.line-3 .items td *,
+  div.line-3 .totals li.total *
+{
+  color: #000000;
+}
+
+div.line-3 .items td .subitem *,
+  div.line-3 .totals li,
+  div.line-3 .totals li *
+{
+  vertical-align: middle;
+}
+
+div.line-3 .totals li {
+  height: 48px;
+  position: relative;
+}
+
+div.line-3 .items tr:nth-child(odd) td {
+  background: #f9f9f9;
+}
+
+div.line-3 .items td {
+  padding: 10px 20px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+div.line-3 .items .subitem {
+  padding-top: 3px;
+  margin: 0;
+}
+
+div.line-3 .items td.price,
+  div.line-3 .items td.qty
+{
+  text-align: center;
+}
+
+div.line-3 .items td.total {
+  text-align: right;
+}
+
+div.line-3 .items a {
+  text-decoration: none;
+}
+
+/* Totals */
+.order-info .totals {
+  float: right;
+  margin-top: -2 * @rhythmic-unit;
+  text-align: right;
+  display: table;
+  max-width: 420px;
+}
+
+.order-info.not-editable .totals {
+  margin-top: 10px;
+}
+
+.order-info .totals > li {
+  display: table-row;
+}
+
+.order-info .totals div {
+  display: inline-block;
+}
+
+.order-info .totals div.input-group {
+  display: table;
+}
+
+.order-info .totals li > div {
+  display: table-cell;
+}
+
+.order-info .totals li.order-modifier.shipping-row > div {
+  padding-top: 0;
+}
+
+.order-info .totals .recalc {
+  padding-left: 14px;
+  position: absolute;
+  height: 48px;
+}
+
+.order-info.not-editable .totals .shipping-code-modifier {
+  padding-bottom: 0;
+}
+
+.order-info .totals .shipping-code-modifier {
+  .title {
+    position: absolute;
+    right: 0;
+    padding: (@rhythmic-unit / 2) 0;
+  }
+}
+
+.order-info.not-editable .totals .shipping-code-modifier .title {
+  padding-right: 0;
+}
+
+.order-info .totals .order-modifier .value .method {
+  line-height: normal;
+}
+
+.order-info .totals .shipping-code-modifier > .value .method {
+  line-height: 22px;
+}
+
+.totals div.table-value,
+.order-info .order-part .box .method div.table-value
+{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.totals div.table-value .input-text-price input.price {
+  width: 100px;
+}
+
+.totals div.table-value .input-text-price .input-group .input-group-addon {
+  padding-bottom: 5px;
+}
+
+.totals div.table-value .input-text-price .input-group input.price {
+  width: 60px;
+}
+
+.totals .input-text-symbol .symbol.text {
+  font-size: 14px;
+  line-height: 30px;
+  top: 0;
+}
+
+.totals .order-subtotal .input input {
+  width: 100px;
+}
+
+.totals .inline-field .view * {
+  font-size: 14px;
+}
+
+.totals li.subtotal {
+  height: 48px;
+}
+
+.order-info.not-editable .totals li:not(.total) > .value {
+  padding: (@rhythmic-unit / 3) (@rhythmic-unit / 2);
+}
+
+.totals li.subtotal .value {
+  padding: (@rhythmic-unit / 3) (@rhythmic-unit / 2);
+}
+
+.totals li .title {
+  font-weight: 600;
+  padding-right: (@rhythmic-unit / 2);
+}
+
+.totals li.order-modifier.SHIPPING-modifier div.value {
+  display: block;
+}
+
+.totals li.order-modifier.SHIPPING-modifier div.separator {
+  padding-left: 4px;
+}
+
+.order-info .totals li.order-modifier.shipping-modifier div.method .view{
+  padding-right: 0;
+}
+
+.order-info .totals li.order-modifier.shipping-modifier div.separator {
+  margin-right: 9px;
+}
+
+.order-info.not-editable .totals li.order-modifier.shipping-modifier div.separator {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+}
+
+/* Line 3 */
+
+div.line-3 {
+  margin-top: @rhythmic-unit;
+}
+
+div.line-3 h2 {
+  margin-bottom: @rhythmic-unit;
+}
+
+.items-bottom {
+  position: relative;
+  overflow: visible;
+}
+
+/* Customer notes */
+
+.customer-notes h4 {
+  font-weight: 600;
+}
+
+.customer-notes .notes {
+  font-size: 11px;
+  padding: 10px 0;
+  line-height: 12px;
+}
+
+.collapsing {
+  transition: none;
+}
+
+/* Sticky panel */
+.order-info .sticky-panel .panel-cell.save.disabled,
+.order-info .sticky-panel label.disabled
+{
+  cursor: not-allowed;
+}
+
+.order-info .sticky-panel .doNotSendNotification {
+}
+
+.order-info .sticky-panel .doNotSendNotification input,
+.order-info .sticky-panel .doNotSendNotification label,
+.order-info .sticky-panel .doNotSendNotification span
+{
+  vertical-align: middle;
+}
+
+.order-info .sticky-panel .doNotSendNotification label.disabled {
+  opacity: .25;
+}
+
+.order-info .sticky-panel .doNotSendNotification input {
+  margin-top: 1px;
+  margin-right: 4px;
+}
+
+.order-info .sticky-panel .doNotSendNotification span {
+  font-size: 14px;
+}
+
+.order-info .sticky-panel .recalculate.last {
+  position: absolute;
+  left: 722px;
+  top: 15px;
+}
+
+.order-info .value .tooltip .tooltip-inner {
+  font-size: 12px;
+  max-width: initial;
+  white-space: normal;
+}
+
+.order-items .tooltip,
+.order-items .tooltip-inner
+{
+  white-space: nowrap;
+}
+
+.order-info .totals .value .inline-field.has-view .editable.view {
+  width: 92px;
+  .flex-display();
+  .justify-content(flex-end);
+}
+
+.order-info .totals .value .inline-field.has-view .field {
+  width: 92px;
+}
+
+.order-info .totals .value .inline-field.has-view.edit-open-mark .editable.view {
+  display: none;
+}
+
+.order-info.not-editable .totals .inline-price .view {
+  padding-right: 0;
+}
+
+.order-info .totals .restore-orig-price {
+  .flex-display();
+  .align-items(center);
+  .justify-content(center);
+  width: @iconfont-width;
+  height: 100%;
+}
+
+.order-info .totals .restore-orig-price a {
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: block;
+  text-decoration: none;
+  outline-style: none;
+}
+
+.order-info .totals .ctrl-auto .restore-orig-price .manual,
+.order-info .totals .ctrl-manual .restore-orig-price .auto
+{
+  display: none;
+}
+
+.order-info .totals .restore-orig-price .manual {
+  background-image: url(../../images/calculator1.svg);
+  background-size: contain;
+  background-position: center center;
+}
+
+.order-info .totals .restore-orig-price .auto {
+  background-image: url(../../images/calculator.svg);
+  background-size: contain;
+  background-position: center center;
+}
+
+.order-info.not-editable .restore-orig-price {
+  display: none;
+}
+
+.order-history .event .details ul li {
+  margin-bottom: 5px;
+}
+
+.order-history .event .details ul li .name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.order-history .event .details ul li div {
+  display: inline;
+}
+
+.order-history .event .details ul li ul {
+  margin-left: 20px;
+}
+
+.order-history .event .details ul li ul li {
+  margin-bottom: 0;
+}
+
+.order-history .event .details .value .fa {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.order-info .antifraud-ad {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.order-note.customer-notes {
+  min-height: 166px;
+}
+
+.order-note.staff-note .order-note-box {
+  min-height: 147px;
+}
+
+/**
+ * Payment method data popup
+ */
+.ui-dialog .order-payment-data-dialog {
+  text-align: center;
+}
+
+.ui-dialog .order-payment-data-dialog ul {
+  margin-bottom: 20px;
+}
+
+.profile-login .inline-field.has-view .view {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: @input-height-base;
+}
+
+.profile-login .inline-field.has-view.edit-open-mark .field {
+  vertical-align: middle;
+  height: 38px;
+  margin-top: 2px;
+}
+
+.profile-login .inline-field.has-view.edit-open-mark .field .subfield {
+  margin-top: -1px;
+}
+
+.profile-login .table-value {
+  padding: 0;
+}
+
+.order-address-dialog .profile-login.inline-field.has-view.edit-open-mark .field {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.order-address-dialog .profile-login.inline-field.editable .view {
+  margin-left: -1px;
+  margin-bottom: 2px;
+}
+
+.items-list-table .list-footer {
+  margin-top: @rhythmic-unit;
+
+  .button-container {
+    padding: 4px 0;
+  }
+}
+
+.payment-and-shipping {
+  float: left;
+}
+
+.totals .shipping-method-selector {
+  width: 245px;
+  margin-right: @rhythmic-unit / 2;
+}
+
+.customer-notes-title {
+  margin-top: @rhythmic-unit;
+  display: block;
+}

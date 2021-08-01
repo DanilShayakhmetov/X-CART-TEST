@@ -1,0 +1,8 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-07-05 - [Change] Fixed the clean URLs in demo data. #BUG-7641 (Shevelov Alexander) #Core #SimpleCMS
+
+Fixes (1)
+2019-07-23 - [Bug] Some pages did not fit into a window width of 1280px without horizontal scrolling. Fixed. #BUG-7694 (Fedya Lavrentyev) #Core #SimpleCMS #ProductReviews
+

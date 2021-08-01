@@ -1,0 +1,27 @@
+{##
+ # Cached JS part
+ #
+ # @ListChild (list="jscontainer.js", weight="50")
+ #}
+<script>
+  (function () {
+    var resources = {{ this.getResourceRegistry()|raw }};
+    var cacheTimestamp = {{ this.getLatestCacheTimestamp() }}
+
+    if (window.CoreAMD !== undefined) {
+      require('js/core', function (core) {
+        core.resourcesCacheTimestamp = cacheTimestamp;
+        core.registerResources(resources);
+        core.htmlResourcesLoadDeferred.resolve();
+      });
+    } else {
+      document.addEventListener('amd-ready', function (event) {
+        require('js/core', function (core) {
+          core.resourcesCacheTimestamp = cacheTimestamp;
+          core.registerResources(resources);
+          core.htmlResourcesLoadDeferred.resolve();
+        });
+      });
+    }
+  })();
+</script>

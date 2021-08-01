@@ -1,0 +1,44 @@
+Version 5.4.0.4
+
+Improvements (6)
+2019-06-14 - [Change] Layout adjustments of the Order details page in the Admin area according to the styleguide. #XCN-9918 (Fedya Lavrentyev) #Core #Coupons #Egoods #SalesTax #CanadaPost #MultiVendor #MultiCurrency
+2019-06-10 - [Change] Payment methods were not sorted by country in the "Add payment" pop-up. Fixed. #XCN-9011 (Maxim Kuznetsov) #Core
+2019-06-07 - [Change] Layout adjustments to the 404 page for non-available products and categories. #XCN-9923 (Fedya Lavrentyev) #Core #FeaturedProducts #RelatedProducts #CrispWhiteSkin
+2019-06-03 - [Change] VAT not counted when using "filter by price" on the Category page. Fixed. #XCN-9844 https://bt.x-cart.com/view.php?id=48225 (Shevelov Alexander) #Core #VAT
+2019-05-24 - [Change] UI improvement related to the interruption of import/export. #XCN-9855 (Fedya Lavrentyev) #Core
+2019-05-20 - [Change] Layout fixes for the advanced search form in the Admin area according to the style guide. #XCN-9916 (Fedya Lavrentyev) #Core
+
+Fixes (32)
+2019-06-21 - [Bug] Minor layout adjustments on the Localization -> Currency page. #BUG-7566 (Fedya Lavrentyev) #Core
+2019-06-20 - [Bug] The "Recalculate totals" button stayed inactive after the product options had been changed on the Order details page. Fixed. #BUG-7583 (Shevelov Alexander) #Core
+2019-06-20 - [Bug] Minor adjustments of the admin area pages according to the styleguide. #BUG-7473 (Fedya Lavrentyev) #Core #Paypal #NewsletterSubscriptions #MultiVendor
+2019-06-20 - [Bug] Minor layout adjustments of the admin dashboard tabs according to the styleguide. #BUG-7246 (Fedya Lavrentyev) #Core
+2019-06-19 - [Bug] Minor layout adjustments in the product select pop-ups in the Admin area. #BUG-7587 (Fedya Lavrentyev) #Core
+2019-06-19 - [Bug] Minor layout adjustments on the Shipping methods page. #BUG-7576 (Shevelov Alexander) #Core
+2019-06-19 - [Bug] Minor layout adjustments on the Product details page. #BUG-7481 (Fedya Lavrentyev) #Core
+2019-06-18 - [Bug] Minor layout adjustments on the Payment methods page. #BUG-7484 (Fedya Lavrentyev) #Core
+2019-06-18 - [Bug] Layout fixes of the email related fields on the Store setup -> Contact information page. #BUG-7480 (Fedya Lavrentyev) #Core
+2019-06-18 - [Bug] Language variables upload in the upgrade process issue. Fixed. #BUG-7468 (Maxim Kuznetsov) #Core
+2019-06-17 - [Bug] Minor layout adjustments on the Catalog -> Reviews page. #BUG-7475 (Fedya Lavrentyev) #Core
+2019-06-17 - [Bug] Layout fixes of the "Clean URL" field on the details pages. #BUG-7471 (Fedya Lavrentyev) #Core
+2019-06-17 - [Bug] Incorrect Install URL in the "Add payment method" pop-up. Fixed. #BUG-7444 https://bt.x-cart.com/view.php?id=50737 (Shevelov Alexander) #Core
+2019-06-14 - [Bug] Minor layout fixes on the "Menus" page. #BUG-7541 (Shevelov Alexander) #Core
+2019-06-14 - [Bug] Layout fixes for select and input fields . #BUG-7470 (Fedya Lavrentyev) #Core
+2019-06-14 - [Bug] Layout fixes for the Help icon on several pages. #BUG-7469 (Fedya Lavrentyev) #Core
+2019-06-14 - [Bug] X-Cart logo was updated in the store Admin area. #BUG-7441 (Shevelov Alexander) #Core
+2019-06-13 - [Bug] Fatal error when opening the "Add product" page. Fixed. #BUG-7535 (Fedya Lavrentyev) #Core
+2019-06-10 - [Bug] Product search results display issue in mobile version. Fixed. #BUG-7416 (Fedya Lavrentyev) #Core #CrispWhiteSkin
+2019-06-07 - [Bug] The "Save changes" button display issues on the Zones page. Fixed. #BUG-7467 (Shevelov Alexander) #Core
+2019-06-07 - [Bug] JS errors on the add product to cart step for the enabled "Force customer to choose product options = On category and product details page" setting. Fixed. #BUG-7456 (Shevelov Alexander) #Core
+2019-06-07 - [Bug] Products were added to cart ignoring the options in checkboxes selected by a customer. Fixed. #BUG-7455 (Shevelov Alexander) #Core
+2019-06-07 - [Bug] Image was not updated on the product page when uploaded via URL. Fixed. #BUG-7445 (Shevelov Alexander) #Core
+2019-06-06 - [Bug] The checkout UI improvements for partially paid orders. #BUG-7205 https://bt.x-cart.com/view.php?id=50578 (Fedya Lavrentyev) #Core #FastLaneCheckout #CrispWhiteSkin
+2019-06-05 - [Bug] The width of the "Sort by" menu for product lists was changing depending on the menu item selected. Fixed. #BUG-7435 https://bt.x-cart.com/view.php?id=50724 (Shevelov Alexander) #Core
+2019-06-05 - [Bug] A new tax class could not be added. Fixed. #BUG-7432 (Shevelov Alexander) #Core
+2019-06-05 - [Bug] The Search input field width was changing. Fixed. #BUG-7395 (Shevelov Alexander) #Core
+2019-06-04 - [Bug] Export/import of products with attached files. The file URLs were not exported. Fixed. #BUG-7384 (Shevelov Alexander) #Core #Egoods #FileAttachments
+2019-06-04 - [Bug] Layout and localization fixes. #BUG-7354 (Shevelov Alexander) #Core #CrispWhiteSkin
+2019-05-30 - [Bug] Product search in the Customer area was working incorrectly. Fixed. #BUG-7394 (Shevelov Alexander) #Core #ProductTags
+2019-05-27 - [Bug] Fast Lane Checkout didn't allow to place orders with 0 total. Fixed. #BUG-7461 (Shevelov Alexander) #Core #FastLaneCheckout
+2019-05-27 - [Bug] Fatal error when placing an order without a shipping method defined for products with free shipping. Fixed. #BUG-7366 (Shevelov Alexander) #Core
+

@@ -1,0 +1,96 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Braintree config page 
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.braintree-logo {
+  width: 300px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.braintree-methods-logo {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.braintree-merchant-id {
+  margin-bottom: 20px;
+}
+
+.braintree-account-form {
+  margin-bottom: 40px;
+}
+
+.payment-status-braintree .alert {
+  display: inline-block;
+}
+
+.payment-status-braintree .alert, 
+.payment-status-braintree .alert span {
+  font-size: 14px;
+}
+
+.payment-status-braintree .alert h4 {
+  font-weight: bold;
+}
+
+.payment-status-braintree .alert.alert-warning span {
+  color: #8a6d3b;
+}
+
+.payment-status-braintree .alert.alert-success span {
+  color: #3c763d;
+}
+
+.payment-status-braintree .alert.alert-danger span {
+  color: #a94442;
+}
+
+#braintree-settings-config {
+  width: 600px;
+  float: left;
+  margin-right: 40px;
+}
+
+#braintree-settings-config .payment-status {
+  margin-bottom: 40px;
+}
+
+.paypal-info {
+  margin-top: 20px;
+  display: block;
+}
+
+.settings-table .setting-name {
+    width: 250px;
+}
+
+legend:before {
+    content: "";
+    display: block;
+    height: 20px;
+    background: #f3f3f4;
+    margin-right: -25px;
+    margin-left: -25px;
+    margin-top: 40px;
+    -webkit-box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.75)
+}
+
+.all-in-one-list li.item-row.module-name-QSL_BraintreeVZ {
+  height: 74px;
+}
+
+.all-in-one-list .module-name-QSL_BraintreeVZ .payment-logo {
+  line-height: 50px;
+}
+
+.all-in-one-list .module-name-QSL_BraintreeVZ .actions {
+  padding-top: 10px;
+}

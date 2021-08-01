@@ -1,0 +1,24 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: settings_page_heading
+    category: CDev\Coupons
+    type: hidden
+    orderby: 0
+    translations:
+      - code: en
+        option_name: 'Coupons Settings'
+  - name: show_box
+    category: CDev\Coupons
+    type: 'XLite\View\FormField\Input\Checkbox\YesNo'
+    orderby: 10
+    value: 0
+    translations:
+      - code: en
+        option_name: 'Always show coupon code box'
+        option_comment: 'Defines whether the coupon code entry box is shown by default at checkout and cart, otherwise customers will need to click the ‘Have a coupon code?’ button manually to make it appear.'

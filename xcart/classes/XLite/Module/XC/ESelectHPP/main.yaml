@@ -1,0 +1,18 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.0.3
+type: payment
+authorName: 'X-Cart team'
+moduleName: 'Moneris (eSELECTplus- Hosted Pay Page)'
+description: 'Accept credit and debit cards via an online transaction processing engine. USA and Canada'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: false
+canDisable: true

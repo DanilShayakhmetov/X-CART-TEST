@@ -1,0 +1,41 @@
+{##
+ # Tax edit page : Settings template
+ #}
+
+{% if this.getTax() or this.getOptionFieldsTemplate() %}
+<div class="settings {{ this.getDialogCSSClasses() }}">
+
+  <div class="legend common-settings-head">
+
+    <h2 class="title">
+      <span>{{ t('Common tax settings') }}</span>
+      <span id="common-settings-link">
+        <span
+            class="expanded-common-settings {% if not this.isCommonOptionsExpanded() %}hidden{% endif %}">{{ t('Hide common settings') }}</span>
+        <span
+            class="collapsed-common-settings {% if this.isCommonOptionsExpanded() %}hidden{% endif %}">{{ t('Display common settings') }}</span>
+      </span>
+    </h2>
+  </div>
+
+  <div id="common-settings" {% if not this.isCommonOptionsExpanded() %}class="hidden"{% endif %}>
+    {% if this.getTax() %}
+      <ul class="table">
+        {% if this.showTitleField() %}
+        <li class="field field-name">
+          {{ widget('XLite\\View\\FormField\\Input\\Text', fieldName="name", value=this.getTax().getName(), required=true, label=t('Tax title')) }}
+        </li>
+        {% endif %}
+        <li class="field field-enabled">
+          {{ widget('XLite\\View\\FormField\\Input\\Checkbox\\YesNo', fieldName="enabled", value=this.getTax().getEnabled(), label=t('Tax enabled')) }}
+        </li>
+      </ul>
+    {% endif %}
+
+    {% if this.getOptionFieldsTemplate() %}
+      {% include this.getOptionFieldsTemplate() %}
+    {% endif %}
+
+  </div>
+</div>
+{% endif %}

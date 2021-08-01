@@ -1,0 +1,21 @@
+{##
+ # Date cell
+ #
+ #}
+<div class="subscription-date">
+  <div class="start-date">
+    <span class="date">{{ this.formatDate(this.entity.getStartDate()) }}</span>
+  </div>
+
+  {% if this.isXpaymentsNextDateVisible(this.entity) %}
+    <div class="next-date">
+      {{ t('Planned date') }}: <span class="date">{{ this.formatDate(this.entity.getPlannedDate()) }}</span>
+    </div>
+  {% endif %}
+
+  {% if this.isXpaymentsLastPaymentFailed(this.entity) %}
+    <div class="actual-date">
+      {{ t('Next attempt date') }}: <span class="date">{{ this.formatDate(this.entity.getActualDate()) }}</span>
+    </div>
+  {% endif %}
+</div>

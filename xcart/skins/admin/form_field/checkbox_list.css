@@ -1,0 +1,39 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Select classes widget style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.ui-multiselect-menu .ui-multiselect-checkboxes li.ui-multiselect-optgroup-label {
+  text-align: left;
+  border-bottom: none;
+  padding-left: 8px;
+  padding-top: 5px;
+  margin-bottom: -3px;
+}
+
+.ui-multiselect-menu li.ui-multiselect-optgroup-label a {
+  color: #777;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* TODO: Check if it is still needed */
+div.table-value .checkbox-list {
+  max-height: 100px;
+  overflow: auto;
+  padding-right: 25px;
+}
+
+div.table-value .checkbox-list li {
+  padding: 0px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+
+div.table-value .checkbox-list label {
+  margin-left: 5px;
+}

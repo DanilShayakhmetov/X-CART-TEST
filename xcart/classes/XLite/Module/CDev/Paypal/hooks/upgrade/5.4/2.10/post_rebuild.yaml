@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: PaypalCredit
+    settings:
+      - { name: ppcm_enabled, value: 0 }
+      - { name: ppcm_product_page, value: 1 }
+      - { name: ppcm_cart_page, value: 1 }
+      - { name: ppcm_checkout_page, value: 1 }
+      - { name: ppcm_banner_type, value: 'flex' }
+      - { name: ppcm_text_logo_type, value: 'primary' }
+      - { name: ppcm_text_logo_position, value: 'left' }
+      - { name: ppcm_text_size, value: '12' }
+      - { name: ppcm_text_color, value: 'black' }
+      - { name: ppcm_flex_color_scheme, value: 'blue' }
+      - { name: ppcm_flex_layout, value: '8x1' }

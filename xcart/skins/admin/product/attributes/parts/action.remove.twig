@@ -1,0 +1,15 @@
+{##
+ # Add offline method
+ #
+ # @ListChild (list="product.attributes.actions", weight="10")
+ #}
+
+{% if this.isRemovable() %}
+  <div class="actions">
+    {% if this.getPersonalOnly() %}
+      {{ widget('XLite\\View\\Button\\Remove', buttonName='delete[' ~ this.itemId ~ ']', label=this.getPemoveText(), style='delete') }}
+    {% else %}
+      {{ widget('XLite\\View\\Button\\MakeAttributeBlank', buttonName='makeblank[' ~ this.itemId ~ ']', popoverText=this.getPopoverText(), style='make-blank') }}
+    {% endif %}
+  </div>
+{% endif %}

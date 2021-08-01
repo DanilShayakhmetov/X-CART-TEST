@@ -1,0 +1,14 @@
+{##
+ # Header part
+ #
+ # @ListChild (list="head.css", weight="100")
+ #}
+{% if not this.doCSSAggregation() %}
+  {% for file in this.getCSSResources() %}
+    {{ widget(template='header/parts/parts.css/css_resource.twig',
+      async=file.async,
+      media=file.media,
+      url=this.getResourceURL(file.url, file)
+    ) }}
+  {% endfor %}
+{% endif %}

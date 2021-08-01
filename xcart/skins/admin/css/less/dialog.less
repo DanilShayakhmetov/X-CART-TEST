@@ -1,0 +1,135 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * UI dialog popup styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.ui-widget {
+  font-family: @font-family-base !important;
+}
+
+.ui-widget-overlay {
+  background: @popup-overlay-bg;
+  opacity: @popup-overlay-opacity;
+  filter: none;
+}
+
+.ui-dialog {
+  border: none;
+  border-radius: 6px;
+  overflow: visible;
+  padding: @rhythmic-unit @rhythmic-unit @rhythmic-unit @rhythmic-unit;
+  background: @body-bg none;
+  max-width: 80%;
+
+  &.no-title {
+    .ui-dialog-title {
+      display: none;
+    }
+  }
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background: @body-bg none;
+}
+
+.ui-dialog .ui-dialog-title {
+  .heading(@font-size-h2, @rhythmic-unit);
+  font-weight: normal;
+  width: auto;
+  white-space: normal;
+  max-width: 680px;
+  color: @color-text-dark;
+  margin-right: 20 + 4 + @rhythmic-unit / 2; // 20 - close button width; 4 - additional close button margin
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  outline: none;
+  border: none;
+  z-index: 10;
+  background: none;
+  margin: (@rhythmic-unit / 6);
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: (@rhythmic-unit / 2) - 2;
+    top: -2px;
+    content: '';
+    height: @rhythmic-unit;
+    width: 1px;
+    background-color: #000;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  & .ui-icon-closethick {
+    display: none;
+  }
+}
+
+.ui-dialog .ui-dialog-content {
+  background-color: @body-bg;
+  overflow: visible;
+  position: relative;
+  padding: 0;
+
+  a {
+    color: @color-link;
+  }
+
+  .regular-button.register-license {
+    min-width: auto;
+  }
+}
+
+.ui-dialog .ui-dialog-content div.page-tabs {
+  margin-left: -(@grid-gutter-width / 2);
+  width: calc(~"100% + " @grid-gutter-width);
+}
+
+.ui-front {
+  z-index: 10000;
+}
+
+/**
+ * jQueryUI-based wait box
+ */
+.ui-dialog.block-wait-box {
+  border-radius: 10px;
+}
+
+.block-wait-box .ui-dialog-content {
+  min-width: 202px;
+}
+
+.block-wait-box .ui-dialog-titlebar {
+  display: none;
+}
+
+.ui-dialog .table,
+.ui-dialog  fieldset > div {
+  margin-bottom: 0;
+}
+
+.ui-widget.ui-dialog input {
+  font-family: @font-family-sans-serif;
+  font-size: @font-size-base;
+}

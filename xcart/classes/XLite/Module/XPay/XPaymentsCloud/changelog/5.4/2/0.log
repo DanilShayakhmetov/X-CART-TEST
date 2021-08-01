@@ -1,0 +1,5 @@
+Version 5.4.2.0
+
+Changes:
+- Now Apple Pay is present as a standalone payment method
+- Added Checkout with Apple Pay feature to Cart and Mini-Cart

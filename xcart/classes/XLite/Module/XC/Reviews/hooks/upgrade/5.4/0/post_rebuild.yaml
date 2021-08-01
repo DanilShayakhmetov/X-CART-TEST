@@ -1,0 +1,37 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/Reviews/new_review
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: false
+    customerGreetingEnabled: false
+    customerSignatureEnabled: false
+    editable: true
+    translations:
+      - code: en
+        name: 'New product review submitted - (Product Reviews module)'
+        description: 'This message is used to notify the administrator when a customer submits a new product review.'
+        adminSubject: 'New review for ‘%product_name%’'
+        adminText: '<p dir="ltr">%author_name% has just rated your &quot;%product_name%&quot; and left a review for you.</p><p dir="ltr">%dynamic_message%</p><blockquote><p dir="ltr">%review%</p></blockquote><p dir="ltr">Follow <a href="%product_link%">this link</a> to approve or remove this review. And don&rsquo;t forget to reply to your customer &mdash; we all love to be heard ;)</p>'
+
+  - templatesDirectory: modules/XC/Reviews/review_key
+    adminHeaderEnabled: false
+    adminGreetingEnabled: false
+    adminSignatureEnabled: false
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Request to review purchased products - (Product Reviews module)'
+        description: 'This message is used to invite customers to leave feedback on the products they have purchased.'
+        customerSubject: 'Order #%order_number%: Please, review'
+        customerText: '<p>Thank you for purchasing our products!</p><p>%dynamic_message%</p><p>We hope you love them. And if you really do, please take a minute to review your order to let others know that we care about delivering the best quality.</p>'

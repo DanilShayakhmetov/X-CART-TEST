@@ -1,0 +1,18 @@
+Version 5.4.0.2
+
+Improvements (9)
+2019-02-17 - [Change] The style "image-rendering: -webkit-optimize-contrast;" is no longer used for images. #BUG-7096 (Kirill Stadler) #Core #CrispWhiteSkin
+2019-02-12 - [Change] JS libs updated. #XCN-9391 (Fedya Lavrentyev) #Core #ThemeTweaker #ProductFilter #ProductComparison #CrispWhiteSkin #Onboarding
+2019-02-11 - [Change] Improvement of the mobile menu look & feel. #XCN-9468 (Fedya Lavrentyev) #Core #CrispWhiteSkin
+2019-01-14 - [Change] Improvement of the product page look & feel in the Customer area. Add to cart form minimization. #XCN-9321 (morven) #Core #Paypal #ProductAdvisor #Wholesale #ProductComparison #ProductVariants #ProductReviews #CrispWhiteSkin #ProductTags #FreeShipping
+2018-12-20 - [Change] Added a widget to the customer/vendor registration form showing how strong a password is. #BUG-4859 https://bt.x-cart.com/view.php?id=47944 (Fedya Lavrentyev) #Core #CrispWhiteSkin
+2018-12-03 - [Change] UI improvement for pages with product lists: Home page/Category/Search. #XCN-9183 (morven) #Core #ProductAdvisor #ProductComparison #ProductReviews #CrispWhiteSkin
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+2018-07-20 - [Change] Code refactoring: There was not a good way to override the template skins/customer/signin/signin.twig. Fixed. #BUG-6361 https://bt.x-cart.com/view.php?id=49485 (Sergey Elmanov) #Core #CrispWhiteSkin
+2018-02-16 - [Change] Template editor and Layout editor improvements. #XCN-8572 (Eugene Dementjev) #ThemeTweaker #CrispWhiteSkin
+
+Fixes (3)
+2019-04-03 - [Bug] Layout adjustment for Customer area popups according to the style guide. #BUG-7194 (Maxim Kuznetsov) #Core #CrispWhiteSkin
+2018-12-19 - [Bug] Adding to cart from the quick view popup did not work. Fixed. #BUG-6920 (Vladimir Semyonov) #Core #CrispWhiteSkin
+2017-12-05 - [Bug] The skin now defines the maximum logo image size. #BUG-5329 (Michael Lipinski) #Core #SimpleCMS #CrispWhiteSkin
+

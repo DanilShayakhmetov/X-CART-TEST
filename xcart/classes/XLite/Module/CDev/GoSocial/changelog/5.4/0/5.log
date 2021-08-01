@@ -1,0 +1,7 @@
+Version 5.4.0.5
+
+Fixes (3)
+2019-10-25 - [Bug] Fixed the fatal error that was generated when creating a category or a page with the addon GoSocial installed and disabled. #BUG-7988 https://bt.x-cart.com/view.php?id=51121 (Pavel Veselovsky) #GoSocial
+2019-10-15 - [Bug] Email notifications of customer accounts created via Google/Facebook were not sent to the administrator. Fixed. #BUG-7990 https://bt.x-cart.com/view.php?id=51072 (Pavel Veselovsky) #GoSocial
+2019-10-09 - [Bug] Removed Google+ settings from GoSocial addon settings. #BUG-7580 (Nikita Erkhov) #GoSocial
+

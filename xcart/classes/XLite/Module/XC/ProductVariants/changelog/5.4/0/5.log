@@ -1,0 +1,8 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-08-15 - [Change] Improvements and bug fixes for the New/Backorder fulfilment status feature. #XCN-10104 (Shevelov Alexander) #Core #ThemeTweaker #PINCodes #ProductVariants
+
+Fixes (1)
+2019-07-24 - [Bug] Fatal error if two or more customers attempted to purchase the last unit of a product variant at the same time. Fixed. #BUG-7732 https://bt.x-cart.com/view.php?id=50882 (Kirill Stadler) #ProductVariants
+

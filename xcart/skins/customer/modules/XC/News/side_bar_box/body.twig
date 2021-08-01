@@ -1,0 +1,10 @@
+{##
+ # Disqus comments template
+ #}
+
+{{ widget('XLite\\Module\\XC\\News\\View\\ItemsList\\NewsMessages\\TopNewsMessages') }}
+{% if this.isShowMoreLink() %}
+  <span class="more_link">
+      <a class="link" href="{{ this.getMoreLinkURL() }}">{{ this.getMoreLinkText() }}</a>
+  </span>
+{% endif %}

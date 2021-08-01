@@ -1,0 +1,132 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: logo
+    category: 'CDev\SimpleCMS'
+    type: 'XLite\Module\CDev\SimpleCMS\View\FormField\Input\Logo'
+    orderby: 100
+    translations:
+      - code: en
+        option_name: 'Company logo'
+  - name: favicon
+    category: 'CDev\SimpleCMS'
+    type: 'XLite\Module\CDev\SimpleCMS\View\FormField\Input\Favicon'
+    orderby: 200
+    translations:
+      - code: en
+        option_name: 'Favicon'
+        option_comment: 'For the icon to be displayed properly in all web browsers, we recommend using the icon size of 32x32 px'
+  - name: appleIcon
+    category: 'CDev\SimpleCMS'
+    type: 'XLite\Module\CDev\SimpleCMS\View\FormField\Input\AppleIcon'
+    orderby: 250
+    translations:
+      - code: en
+        option_name: 'Apple icon'
+        option_comment: 'Image must be a .png file with the resolution of 192x192px'
+  - name: page_changefreq
+    category: CDev\XMLSitemap
+    type: 'XLite\Module\CDev\SimpleCMS\View\FormField\Select\ChangeFrequency'
+    orderby: 400
+    value: daily
+    translations:
+      - code: en
+        option_name: Frequency of content renewal for Static page
+  - name: page_priority
+    category: CDev\XMLSitemap
+    type: XLite\View\FormField\Input\Text\FloatInput
+    widgetParameters: { min: 0, max: 1, e: 1}
+    orderby: 800
+    value: 0.5
+    translations:
+      - code: en
+        option_name: Priority for Static page
+        option_comment: The value should range from 0 to 1.
+  - name: show_default_menu
+    category: CDev\SimpleCMS
+    type: checkbox
+    value: Y
+    orderby: 300
+    translations:
+      - code: en
+        option_name: Show the default menu along with the custom one
+  - name: logo_alt
+    category: 'CDev\SimpleCMS'
+    type: hidden
+    value: ''
+
+XLite\Model\Role\Permission:
+  - { code: manage custom pages, section: Content, translations: [{ code: en, name: Manage custom pages }] }
+  - { code: manage menus, section: Content, translations: [{ code: en, name: Manage menus }] }
+
+XLite\Model\Role:
+  - { translations: [{ code: en, name: Content management }, { code: ru, name: Управлением контентом }], permissions: [ {code: manage menus}, {code: manage custom pages} ] }
+
+XLite\Module\CDev\SimpleCMS\Model\Page:
+  - id: 1
+    cleanURLs: [{ cleanURL: terms-and-conditions }]
+    translations:
+      - code: en
+        name: 'Terms and conditions'
+        teaser: 'Terms and conditions'
+        body: '<p>Terms and conditions text</p><p>To replace this text with the actual Terms and conditions, go to the "Content -> Pages" section, open the "Terms &amp; Conditions" page and edit the "Content" field.</p>'
+      - code: ru
+        name: 'Условия использования'
+        teaser: 'Условия использования'
+        body: '<p>Чтобы разместить на этой странице Ваш собственный текст "Условия использования", перейдите в раздел "Содержание -> Страницы", откройте для редактирования страницу "Условия использования" и добавьте требуемый текст в поле "Содержание".</p>'
+      - code: zh
+        name: '条款约定'
+        teaser: '条款约定'
+        body: '<p>内容描述</p><p>要替代该条款内的内容，请到&ldquo;内容-网页&ldquo;中进行设置，打开页面编辑并在这里编辑内容栏目。</p>'
+  - cleanURLs: [{ cleanURL: shipping }]
+    translations:
+      - code: en
+        name: 'Shipping'
+        teaser: 'Shipping teaser'
+        body: "<p>This page is intended for your store's shipping policy.</p><p>Here you can provide general information about the available shipping options and rates, shipping turn-around times, size and weight limits for shipping, shipping restrictions, order tracking, and so on.</p><p></p><p>To replace this text with the actual delivery information, go to the \"Content -> Pages\" section, open the \"Shipping\" page and edit the \"Content\" field.</p>"
+      - code: ru
+        name: 'Доставка'
+        teaser: 'Доставка'
+        body: '<p>Чтобы разместить на этой странице Ваш собственный текст "Доставка", перейдите в раздел "Содержание -> Страницы", откройте для редактирования страницу "Доставка" и добавьте требуемый текст в поле "Содержание".</p>'
+      - code: zh
+        name: '关于运输'
+        teaser: '关于运输'
+        body: '<p>关于运输的内容</p><p>要设置该页面的运输项目内容，请到&rdquo;内容-页面&rdquo;中打开关于运输页面进行修改。</p>'
+
+XLite\Module\CDev\SimpleCMS\Model\Menu:
+  - { link: '{home}', type: P, position: 100, translations: [{ code: en, name: Home }, { code: ru, name: Главная }, { code: zh, name: '主页' }]}
+  - { link: '{my account}', visibleFor: L, type: P, position: 600, translations: [{ code: en, name: "My Account" }, { code: ru, name: "Мой профиль" }, { code: zh, name: "我的账户" }], children: [{ enabled: 1, link: '?target=order_list', visibleFor: L, type: P, position: 100, translations: [{ code: en, name: My orders }, { code: ru, name: "Мои заказы" }, { code: zh, name: "订单（复数）" }]},{ enabled: 1, link: '?target=address_book', visibleFor: L, type: P, position: 200, translations: [{ code: en, name: My address book }, { code: ru, name: "Мои адреса" }, { code: zh, name: "地址簿" }]}]}
+
+XLite\Model\LanguageLabel:
+  - { name: "Contact us", translations: [{ code: en, label: "Contact us" }] }
+  - { name: "Logo", translations: [{ code: en, label: "Logo" }] }
+  - { name: "Favicon", translations: [{ code: en, label: "Favicon" },{ code: ru, label: "Фавикон" }] }
+  - { name: "Shipping", translations: [{ code: en, label: "Shipping" }] }
+  - { name: "Menu links help text", translations: [{ code: en, label: "If you want to add an external link, you should specify it with the <strong>http://</strong> prefix, e.g. <strong>http://www.example.com/</strong>.<br /><br />If you want to add a link to a page within your store (e.g. the checkout page), you can specify it as <strong>cart.php?target=checkout</strong> (relative path) or as <strong>{{URL}}cart.php?target=checkout</strong> (absolute path).<br /><br />Also the '{home}' shortcut value will lead to Home page" }] }
+  - { name: "Failed to update page image", translations: [{ code: en, label: "Failed to update the page image" }] }
+  - { name: "Visible for", translations: [{ code: en, label: "Visible for" }] }
+  - { name: "The menu has been updated", translations: [{ code: en, label: "The menu has been updated" }] }
+  - { name: "The menu has been added", translations: [{ code: en, label: "The menu has been added" }] }
+  - { name: "The page has been updated", translations: [{ code: en, label: "The page has been updated" }] }
+  - { name: "Any visitors", translations: [{ code: en, label: "Any visitors" }] }
+  - { name: "Anonymous users only", translations: [{ code: en, label: "Anonymous users only" }] }
+  - { name: "Logged in users only", translations: [{ code: en, label: "Logged in users only" }] }
+  - { name: "Save & Close", translations: [{ code: en, label: "Save & Close" }] }
+  - { name: "Logo & Favicon", translations: [{ code: en, label: "Logo & Favicon" }] }
+  - { name: "Terms and conditions", translations: [{ code: en, label: "Terms and conditions" }] }
+  - { name: 'Open graph image', translations: [{ code: 'en', label: 'Open graph image' }] }
+  - { name: 'The "{{file}}" file is not allowed image and was not uploaded. Allowed images are: {{extensions}}', translations: [{ code: 'en', label: 'The "{{file}}" file is not allowed image and was not uploaded. Allowed images are: {{extensions}}' }] }
+  - { name: "Submenu", translations: [{ code: en, label: "Submenu" },{ code: ru, label: "Подменю" }] }
+  - { name: "Content page title", translations: [{ code: en, label: "Content page title" },{ code: ru, label: "Заголовок страницы" }] }
+  - { name: "Leave blank to use page name as Page Title.", translations: [{ code: en, label: "Leave blank to use page name as Page Title." },{ code: ru, label: "Оставьте поле незаполненным чтобы использовать имя страницы в качестве заголовка." }] }
+  - { name: 'The AppleIcon image could not be uploaded (Unallowed image type. Must be a .png image with the resolution of 192x192 px)', translations: [{ code: 'en', label: 'The AppleIcon image could not be uploaded (Unallowed image type. Must be a .png image with the resolution of 192x192 px)' }] }
+  - { name: "itemslist.admin.page.blank", translations: [{ code: en, label: " <p>The store doesn't have any static pages yet. Static pages can be created to tell customers about your products or policies, guide them through the order process etc. Once the page is created, it will become accessible via certain URL. Start writing by clicking the <b>\"New page\"</b> button.</p>" }, { code: ru, label: " <p>Список страниц пуст. С помощью страниц вы сможете рассказать клиентам о ваших товарах и условиях заказа, предоставить им помощь и полезную информацию. Такие страницы будут доступны по определенным адресам после того, как будут опубликованы.</p>" }] }
+  - { name: "itemslist.admin.menu.blank", translations: [{ code: en, label: "<p>There are no menus in the store. Header and footer menus provide customers with useful navigation. They can contain any link or label, and can be nested. Generally, the primary menu is shown on the top of the page, and the footer menu is on the bottom of the page.</p>" }, { code: ru, label: "<p>Меню не заполнены. Меню - удобный инструмент навигации для ваших клиентов. Элементы меню могут содержать любой текст или ссылку, а также могут иметь подменю. Обычно, есть главное меню (оно расположено в вернхней части страницы) и нижнее меню (отображаемое в подвале страницы).</p>" }] }
+
+  - { name: 'Show default menu along with the custom one', translations: [{ code: en, label: 'Show default menu along with the custom one' }]}
+  - { name: 'Current logo sizes: XхY px', translations: [{ code: 'en', label: 'Current logo sizes: {{X}}х{{Y}} px' }] }

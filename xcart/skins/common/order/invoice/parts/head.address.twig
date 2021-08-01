@@ -1,0 +1,11 @@
+{##
+ # Invoice : header : address box
+ #
+ # @ListChild (list="invoice.subhead", weight="20")
+ #}
+
+{% set company = this.order.getCompanyConfiguration() %}
+
+<td class="right-adresses-part address">
+  {{ widget_list('invoice.subhead.companyAddress', company=this.order.getCompanyConfiguration()) }}
+</td>

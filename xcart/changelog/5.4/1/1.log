@@ -1,0 +1,18 @@
+Version 5.4.1.1
+
+Improvements (3)
+2020-03-23 - [Change] Added the ability to show banner ads on the pages of the Admin area. #XCN-10653 #Core #Service
+2020-03-23 - [Change] Implemented the Recommended addons mechanism on Admin area pages. #XCN-10421 #Core #Service
+2020-03-10 - [Change] It is no longer possible to use Clean URLs matching the paths to folders in the store installation root. #BUG-8417 #Core
+
+Fixes (9)
+2020-03-31 - [Bug] Layout issues related to displaying subcategories in the Customer area in the "List" view mode. Fixed. #BUG-8453 #Core
+2020-03-30 - [Bug] After a rebuild on a freshly installed distribution pack the database scheme was changed. Fixed. #BUG-8492 #Core
+2020-03-30 - [Bug] Error if exporting products as a vendor once again after having exported them before. Fixed. #BUG-8483 #Core #MultiVendor
+2020-03-23 - [Bug] Multivendor. In the Categories side menu, the subcategories of the 2nd nesting level were not displayed. Fixed. #BUG-8345 #Core #MultiVendor
+2020-03-20 - [Bug] After selecting one or more elements from a list of orders, products, reviews or users, the button text "Export all:" was not changed to "Export selected:". Fixed. #BUG-8451 #Core #BulkEditing
+2020-03-20 - [Bug] Error related to the updating of CartItemsView widget when changing the shipping method. Fixed. #BUG-8436 https://bt.x-cart.com/view.php?id=51568 #Core
+2020-03-20 - [Bug] Incorrect behavior after clicking the Check for updates button on the Environment page. Fixed. #BUG-8318 #Core
+2020-03-18 - [Bug] The Customer area home page was getting zoomed on iPhone when the user entered the search field. Fixed. #BUG-8439 https://bt.x-cart.com/view.php?id=51573 #Core
+2020-03-17 - [Bug] Implemented support of the Korean / Chinese/Japanese languages for pdf files. #BUG-8435 https://bt.x-cart.com/view.php?id=51559 #Core
+

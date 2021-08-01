@@ -1,0 +1,66 @@
+{##
+ # Subscriptions list body
+ #
+ #}
+
+<div class="subscription">
+  <div class="subscription-info">
+    <ul class="{{ this.getXpaymentsLineClass(this.xpaymentsSubscription) }}">
+      <li class="subscription-switcher"><i data-interval="0" data-toggle="collapse" id="subscription-{{ this.xpaymentsSubscription.id }}-action" data-target="#subscription-{{ this.xpaymentsSubscription.id }}" class="fa fa-plus-square-o"></i></li>
+      <li class="id">
+        #{{ this.xpaymentsSubscription.id }}
+        {% if this.xpaymentsSubscription.isRestartable() %}
+          ({{ t('Stopped') }})
+        {% elseif this.xpaymentsSubscription.isRestarted() %}
+          ({{ t('Restarted') }})
+        {% elseif not this.xpaymentsSubscription.isActive() %}
+          ({{ t('Finished') }})
+        {% endif %}
+      </li>
+      <li class="date">{{ t('Started on') }} {{ this.formatDate(this.xpaymentsSubscription.startDate) }}</li>
+      <li class="status">
+        {% include 'modules/XPay/XPaymentsCloud/subscription/subscription.status.twig' %}
+      </li>
+      <li class="fee"><span class="fee-label">{{ t('Subscription fee') }}:</span> {{ this.formatPrice(this.xpaymentsSubscription.fee) }}</li>
+      {% if this.isXpaymentsNextDateVisible(this.xpaymentsSubscription) %}
+        <li class="next-date">
+          <span class="next-date-label">
+            {% if not this.isXpaymentsLastPaymentExpired(this.xpaymentsSubscription) and not this.isXpaymentsLastPaymentFailed(this.xpaymentsSubscription) %}
+              {{ t('Next payment') }}:
+            {% else %}
+              {{ t('Missed payment') }}:
+            {% endif %}
+          </span>
+          {{ this.formatDate(this.xpaymentsSubscription.plannedDate) }}
+          {% if this.isXpaymentsLastPaymentFailed(this.xpaymentsSubscription) %}
+            <span class="actual-date-label">({{ t('next attempt on') }}</span>
+            {{ this.formatDate(this.xpaymentsSubscription.actualDate) }}<span class="actual-date-label">)</span>
+          {% endif %}
+        </li>
+      {% endif %}
+      <li class="card">
+        {% include 'modules/XPay/XPaymentsCloud/subscription/subscription.card.twig' %}
+      </li>
+    </ul>
+  </div>
+  <div id="subscription-{{ this.xpaymentsSubscription.id }}" class="subscription-orders collapse">
+    {% for order in this.xpaymentsSubscription.getOrders() %}
+      <div class="order">
+        <ul>
+          <li class="order-number"><a href="{{ this.buildUrl('order', '', {'order_number': order.getOrderNumber()}) }}">#{{ order.getOrderNumber() }}</a></li>
+          <li class="order-date">{{ this.formatTime(order.date) }}</li>
+          <li class="order-status">
+            <ul class="statuses">
+              <li class="order-payment-status">
+                {{ widget('\\XLite\\View\\OrderStatus\\Payment', order=order, useWrapper='true') }}
+              </li>
+              <li class="order-shipping-status">
+                {{ widget('\\XLite\\View\\OrderStatus\\Shipping', order=order, useWrapper='true') }}
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>

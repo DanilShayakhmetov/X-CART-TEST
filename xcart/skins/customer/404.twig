@@ -1,0 +1,12 @@
+{##
+ # 404 Page not found widget
+ #}
+<h2 class="page-not-found">{{ t('Page not found') }}</h2>
+
+{% if this.getPageType() == 'product' %}
+  {{ widget_list('404.product') }}
+{% elseif this.getPageType() == 'category' %}
+  {{ widget_list('404.category') }}
+{% else %}
+  {{ widget_list('404.default') }}
+{% endif %}

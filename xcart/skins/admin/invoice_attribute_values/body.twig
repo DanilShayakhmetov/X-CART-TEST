@@ -1,0 +1,48 @@
+{##
+ # Display product attribute values in invoice
+ #}
+{% spaceless %}
+  {% if '1' != this.displayVariative %}
+    {% for av in this.item.getAttributeValues() %}
+      <li class="item-attribute-values-list-item">
+        <span>, </span>
+        <span class="name">{{ av.getActualName() }}: </span>
+        <span {{ this.printTagAttributes(this.getValueContainerAttributes(av))|raw }}><span>{{ av.getActualValue() }}</span></span>
+      </li>
+    {% endfor %}
+
+  {% else %}
+
+    {% if 1 < this.item.getAttributeValuesCount() %}
+
+      <li class="item-attribute-values-list-item">
+        {% for av in this.getPlainValues() %}
+          <span>, </span>
+          <span class="attribute-box">
+            <span class="name">{{ av.getActualName() }}: </span>
+            <span {{ this.printTagAttributes(this.getValueContainerAttributes(av))|raw }} title="{{ av.getActualName() }}">{{ av.getActualValue() }}</span>
+          </span>
+        {% endfor %}
+      </li>
+
+      {% if this.getTextValues() %}
+        <li class="item-attribute-values-list-item-text">
+          {% for av in this.getTextValues() %}
+            <div>
+              <span class="name">{{ av.getActualName() }}: </span>
+              <span {{ this.printTagAttributes(this.getValueContainerAttributes(av))|raw }}><span>{{ av.getActualValue() }}</span></span>
+            </div>
+          {% endfor %}
+        </li>
+      {% endif %}
+
+    {% else %}
+
+      {% for av in this.item.getAttributeValues() %}
+        <li class="item-attribute-values-list-item"><span>, </span>{{ av.getActualName() }}: <span {{ this.printTagAttributes(this.getValueContainerAttributes(av))|raw }}><span>{{ av.getActualValue() }}</span></span></li>
+      {% endfor %}
+
+    {% endif %}
+
+  {% endif %}
+{% endspaceless %}

@@ -1,0 +1,32 @@
+{##
+ # Attribute value (Select) in blocks mode
+ #}
+
+<div class="blocks-selector">
+  <div class="blocks">
+    {% set selectedOption = null %}
+
+    {% for v in this.getAttributeValue() %}
+      {% set isSelected = this.isSelectedValue(v) %}
+      {% if isSelected %}
+        {% set selectedOption = v %}
+      {% endif %}
+
+      {% include this.getOptionTemplate() with {'option': v, 'isSelected': isSelected} %}
+    {% endfor %}
+  </div>
+
+  <input class="blocks-input form-control"
+         value="{{ selectedOption ? selectedOption.id : '' }}"
+         name="{{ this.getName() }}"
+         data-attribute-id="{{ this.attribute.id }}"
+         autocomplete="off"
+      {{ this.printTagAttributes(this.getSelectAttributes())|raw }}
+  />
+
+  <div class="blocks-title{{ selectedOption ? '' : ' not-selected' }}">
+    <span class="attr-name">{{ this.attribute.name }}: </span>
+    <span class="attr-value-name">{{ selectedOption ? this.getOptionTitle(selectedOption) : t('Not selected')|lower }} </span>
+    <span class="attr-value-modifiers">{{ selectedOption ? this.getModifierTitle(selectedOption)|raw : '' }}</span>
+  </div>
+</div>

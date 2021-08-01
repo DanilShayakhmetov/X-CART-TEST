@@ -1,0 +1,8 @@
+{##
+ # Link 
+ #}
+{% if this.isConfigured() %}
+  <div class="alert alert-info">{{ t('Advanced statistics with') }} <a href="https://www.google.com/analytics/web/" target="_blank">{{ t('Google Analytics') }}</a></div>
+{% else %}
+  <div class="alert alert-info"><a href="{{ this.getModuleLink() }}" target="_blank">{{ t('Configure the Google Analytics module') }}</a> {{ t('to view the advanced statistics') }}</div>
+{% endif %}

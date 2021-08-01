@@ -1,0 +1,5 @@
+Version 5.4.0.2
+
+Fixes (1)
+2019-03-19 - [Bug] PHP warnings in the Add to cart popup. Fixed. #BUG-7159 (Maxim Kuznetsov) #Add2CartPopup
+

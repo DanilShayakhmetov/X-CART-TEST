@@ -1,0 +1,87 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Product items lsit styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list.orders table.list tbody tr.completed td,
+.items-list.orders table.list tbody tr.completed td span,
+.items-list.orders table.list tbody tr.completed td div
+{
+  color: #8f8f8f;
+}
+
+.items-list.orders table.list tbody td div.order-status {
+  display: inline-block;
+}
+
+.items-list.orders table.list tbody td div.payment-actions {
+  display: inline-block;
+}
+
+.items-list.orders table.list tbody td.profile .profile-email a {
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  vertical-align: baseline;
+  color: @color-tip;
+}
+
+.items-list.orders table.list td.main {
+  min-width: 0;
+}
+
+.items-list.orders .profile .cell {
+  width: 270px;
+  max-width: 270px;
+}
+
+.items-list.orders .profile .cell .profile-box {
+  position: relative;
+  width: 95%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+
+  & > a,
+  & > span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.items-list.orders .profile .cell .profile-icon,
+.items-list.orders .profile .cell .profile-anonymous-icon {
+  flex: 1 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
+.items-list.orders .profile .cell .profile-anonymous-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.items-list.orders img.anonym {
+  width: 15px;
+  height: 17px;
+  background: transparent url(../../../../images/anonym_icon.png) no-repeat left top;
+  margin-right: 5px;
+}
+
+.items-list.orders img.anonymous {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.items-list.orders img.hidden {
+  background-image: none;
+}
+
+.items-list.orders .empty-table-description {
+  padding-top: 24px;
+}

@@ -1,0 +1,5 @@
+Version 5.4.0.1
+
+[Fix] Mobile "Reset all filters" link not properly working when both price and some other filter selected
+[Fix] Filters not working with product variants
+[Fix] Mobile filters initialization race condition issue

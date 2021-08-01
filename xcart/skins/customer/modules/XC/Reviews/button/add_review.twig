@@ -1,0 +1,18 @@
+{##
+ # Button 'Add review'
+ #
+ # @ListChild (list="reviews.general", weight="20")
+ #}
+<div id="product-reviews-button">
+    {% if this.isAllowedAddReview() %}
+      {% if this.isReplaceAddReviewWithLogin() %}
+        {{ widget('\\XLite\\Module\\XC\\Reviews\\View\\Button\\PopupLogin', label=t('Add review'), product=this.product) }}
+      {% else %}
+        {{ widget('\\XLite\\Module\\XC\\Reviews\\View\\Button\\Customer\\AddReview', label=t('Add review'), product=this.product) }}
+      {% endif %}
+    {% else %}
+      <div class="add-review-button-disabled">
+          {{ this.getAddReviewMessage() }}
+      </div>
+    {% endif %}
+</div>

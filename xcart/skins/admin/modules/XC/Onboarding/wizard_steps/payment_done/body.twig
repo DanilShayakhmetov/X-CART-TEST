@@ -1,0 +1,25 @@
+{##
+ # Payment done step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <div class="step-contents">
+    <h2 class="heading">{{ t("Excellent! Now you can get paid") }}</h2>
+    <p class="text">{{ t("Go on, make your first sale.", {'url': this.getStorefrontUrl() })|raw }}</p>
+
+    <div class="placeholder">
+      <img class="left-card" src="{{ asset('modules/XC/Onboarding/images/payment-left-card.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/payment-left-card@2x.png') }} 2x">
+      <img class="right-card" src="{{ asset('modules/XC/Onboarding/images/payment-right-card.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/payment-right-card@2x.png') }} 2x">
+    </div>
+
+    <div class="buttons">
+      <div class="next-step">
+        {{ widget('XLite\\View\\Button\\Regular', label='Proceed to the next step', style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+      </div>
+    </div>
+  </div>
+</div>

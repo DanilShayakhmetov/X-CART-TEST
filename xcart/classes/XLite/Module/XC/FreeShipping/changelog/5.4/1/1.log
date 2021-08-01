@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-09-02 - [Bug] Sales tax and Canadian taxes were calculated incorrectly for items with shipping freight > 0 if the cart contained more than one such item. Fixed. #BUG-8913 https://bt.x-cart.com/view.php?id=52033 #FreeShipping
+

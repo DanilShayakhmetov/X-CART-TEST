@@ -1,0 +1,44 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Module fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\ImageSettings:
+  - model: XLite\Model\Image\Category\Image
+    code: Default
+    width: 120
+    height: 120
+  - model: XLite\Model\Image\Product\Image
+    code: LGThumbnailGrid
+    width: 240
+    height: 240
+  - model: XLite\Model\Image\Product\Image
+    code: LGThumbnailList
+    width: 240
+    height: 240
+  - model: XLite\Model\Image\Product\Image
+    code: Default
+    width: 366
+    height: 366
+  - model: XLite\Model\Image\Common\Logo
+    code: Default
+    width: 221
+    height: 40
+
+XLite\Model\LanguageLabel:
+  - { name: 'You just added', translations: [{ code: en, label: 'You have just added' }, { code: ru, label: 'Вы добавили в корзину' }] }
+  - { name: 'Go to comparison table', translations: [{ code: en, label: 'Open comparison table' }, { code: ru, label: 'Открыть таблицу сравнения' }] }
+  - { name: 'Please add another product to comparison', translations: [{ code: en, label: 'Please add another product to comparison' }, { code: ru, label: 'Выберите еще один товар для сравнения' }] }
+  - { name: 'High - Low', translations: [{ code: en, label: 'High - Low' }, { code: ru, label: 'по убыванию' }] }
+  - { name: 'Low - High', translations: [{ code: en, label: 'Low - High' }, { code: ru, label: 'по возрастанию' }] }
+  - { name: 'A - Z', translations: [{ code: en, label: 'A - Z' }, { code: ru, label: 'А - Я' }] }
+  - { name: 'Z - A', translations: [{ code: en, label: 'Z - A' }, { code: ru, label: 'Я - А' }] }
+  - { name: 'Added to comparison table', translations: [{ code: en, label: 'Added to comparison table' }, { code: ru, label: 'Добавлено в таблицу сравнения' }] }
+  - { name: '+15550000000', translations: [{ code: en, label: '' }]}
+  - { name: '1000 Main Street', translations: [{ code: en, label: 'Street number and street, unit number, etc' }, { code: ru, label: 'Улица, номер дома, номер квартиры, и т.д.' }]}
+  - { name: 'Anyland', translations: [{ code: en, label: '' }]}
+  - { name: 'Anytown', translations: [{ code: en, label: '' }]}
+  - { name: 'Joe', translations: [{ code: en, label: '' }]}
+  - { name: 'Public', translations: [{ code: en, label: '' }]}

@@ -1,0 +1,13 @@
+{##
+ # Messages link
+ #
+ # @ListChild (list="slidebar.navbar.account", weight="50")
+ #}
+
+{% if this.isLogged() %}
+<li>
+	<a class="icon-altmail" href="{{ url('messages', '') }}">
+		<span>{{ t('Messages') }}</span>
+	</a>
+</li>
+{% endif %}

@@ -1,0 +1,33 @@
+{##
+ # Ads banners template
+ #}
+
+<div class="ads-banners">
+  {% for banner in this.getAdsBanners() %}
+    <div class="promo-banner" data-id="{{ this.getBannerHash(banner) }}">
+      {% if banner.image %}
+        <div class="promo-banner-logo">
+          {% if this.getBannerLink(banner) %}
+            <a href="{{ this.getBannerLink(banner) }}" target="_blank">
+              <img src="{{ banner.image }}"/>
+            </a>
+          {% else  %}
+            <img src="{{ banner.image }}"/>
+          {% endif %}
+        </div>
+      {% endif %}
+      <div class="promo-banner-content">
+        {% if this.getBannerLink(banner) %}
+          <a href="{{ this.getBannerLink(banner) }}" target="_blank">
+            {{ this.getBannerDescription(banner)|raw }}
+          </a>
+        {% else  %}
+          {{ this.getBannerDescription(banner)|raw }}
+        {% endif %}
+      </div>
+      <div class="promo-banner-close">
+        {{ this.getSVGImage('images/icons/cross.svg')|raw }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

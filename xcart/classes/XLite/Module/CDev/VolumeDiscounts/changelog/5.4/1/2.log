@@ -1,0 +1,5 @@
+Version 5.4.1.2
+
+Fixes (1)
+2019-04-09 - [Bug] Discount amount was calculated incorrectly if a volume discount and a coupon were applied at the same time. Fixed. #BUG-8249 #VolumeDiscounts
+

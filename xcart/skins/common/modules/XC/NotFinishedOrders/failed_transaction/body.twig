@@ -1,0 +1,11 @@
+{##
+ # transaction url
+ #}
+
+<p>
+  {% if this.isNfo() %}
+    {{ t('You can find the failed order here', {'url': this.getNfoUrl()})|raw }}
+  {% else %}
+    {{ t('You can find the failed transaction here', {'url': this.transactionSearchURL})|raw }}
+  {% endif %}
+</p>

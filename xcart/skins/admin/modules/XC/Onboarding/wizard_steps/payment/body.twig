@@ -1,0 +1,43 @@
+{##
+ # Payment step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-payment inline-template>
+    <div class="step-contents">
+      <h2 class="heading">{{ t("Manage your payment options") }}</h2>
+      <p class="text">{{ t("120+ supported payment gateways, such as PayPal, Authorize.net and etc.") }}</p>
+
+      <div class="methods">
+
+        {% for widgetClass in this.getOnlineWidgetsSorted() %}
+          {{ widget(widgetClass) }}
+        {% endfor %}
+
+        <div class="offline">
+          <div class="method-name">
+            {{ t('Find your payment method') }}
+
+            <div class="method-type">
+              {{ t('We support 120+ payment gatewayes') }}
+            </div>
+          </div>
+
+          <div class="button">
+            <a class="btn regular-button" href="{{ this.getMoreSettingsLocation() }}" target="_blank">
+              <span>{{ t('Search') }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="next-step">
+          {{ widget('\\XLite\\View\\Button\\Regular', label='Proceed to the next step', style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+        </div>
+      </div>
+    </div>
+  </xlite-wizard-step-payment>
+</div>

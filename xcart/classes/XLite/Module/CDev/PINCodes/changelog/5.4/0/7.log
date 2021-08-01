@@ -1,0 +1,5 @@
+Version 5.4.0.7
+
+Fixes (1)
+2020-02-05 - [Bug] The qty box values of products with a non-editable qty on the Bulk editing -> Inventory page were using incorrect styles. Fixed. #BUG-8123 #PINCodes
+

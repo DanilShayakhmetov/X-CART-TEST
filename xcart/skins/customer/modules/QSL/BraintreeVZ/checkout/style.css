@@ -1,0 +1,211 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Braintree checkout 
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+#braintree-container {
+  margin-bottom: 20px;
+}
+
+#braintree-container .nav-tabs {
+  border-bottom: 1px solid #cacaca;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+#braintree-container .nav-tabs li a {
+  border: 1px solid #cacaca;
+  border-radius: 2px;
+  margin-bottom: 0;
+}
+
+#braintree-container .nav-tabs li.active a {
+  border-bottom-color: #cacaca;
+}
+
+#braintree-container .tab-content {
+  margin: auto;
+}
+
+.braintree-textfield-float-label {
+  width: 100%;
+  float: left;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 1px solid #cacaca;
+  border-right: 1px solid #cacaca;
+}
+
+.braintree-textfield-float-label.first {
+  padding-top: 15px;
+}
+
+.braintree-textfield-float-label.first.no-tabs {
+  border-top: 1px solid #cacaca;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.braintree-textfield-float-label.last {
+  border-bottom: 1px solid #cacaca;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding-bottom: 10px;
+  margin-bottom: 21px;
+}
+
+.braintree-textfield-float-label .checkbox,
+.braintree-textfield-float-label .radio {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.braintree-hosted-field-label {
+  transform: translateY(0.4em);
+  font-size: 1.125em;
+  line-height: 32px;
+  transition: all .15s ease-out;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+
+span.icon {
+  position: relative;
+  top: 0.2em;
+  margin-right: 0.2em;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+span.icon#cc-number {
+  background-image: url(./icons/cc_number.svg);
+}
+
+span.icon#cc-exp-date {
+  background-image: url(./icons/cc_exp_date.svg);
+}
+
+span.icon#cc-cvv {
+  background-image: url(./icons/cc_cvv.svg);
+}
+
+.hosted-field {
+  height: 32px;
+  margin-bottom: 1em;
+  display: block;
+  background-color: transparent;
+  color: rgba(0, 0, 0, .87);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .26);
+  outline: 0;
+  width: 100%;
+  font-size: 16px;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  position: relative;
+}
+
+/*--------------------
+BT HOSTED FIELDS SPECIFIC 
+--------------------*/
+
+.braintree-hosted-fields-focused {
+  border-bottom: 2px solid black;
+  transition: all 200ms ease;
+}
+
+.braintree-hosted-fields-invalid {
+  border-bottom: 2px solid #E91E63;
+  transition: all 200ms ease;
+}
+
+/*---------------------
+Media Queries
+----------------------*/
+
+@media (max-width: 600px) {
+  .panel {
+    width: 100%;
+  }
+  .braintree-textfield-float-label {
+    width: 100%;
+    float: none;
+    display: inline-block;
+  }
+}
+
+.paypal-account-payment {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  cursor: pointer;
+}
+
+.card-container .logo {
+  width: 35px;
+  display: inline;
+}
+
+#cart-right .braintree-paypal-button {
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 20px;
+}
+
+#cart-right .braintree-paypal-button::before {
+  content: "or";
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.payment-tpl #braintree-paypal-button {
+  margin-bottom: 10px;
+}
+
+/**
+ * Apple Pay and Google Pay buttons' styles
+ */
+
+.apple-pay-button-container, .google-pay-button-container {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  max-height: auto;
+  border-radius: 3px;
+  -webkit-transition: background 0.3s;
+}
+
+.apple-pay-button-container {
+  display: none;
+}
+
+.apple-pay-button {
+  -webkit-appearance: -apple-pay-button;
+  -apple-pay-button-type: check-out;
+  -apple-pay-button-style: black;
+  height: 30px;
+  width: 160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+.apple-pay-button:hover {
+  cursor: pointer;
+}

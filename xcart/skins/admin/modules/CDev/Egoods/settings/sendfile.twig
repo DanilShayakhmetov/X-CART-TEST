@@ -1,0 +1,18 @@
+{##
+ # Sendfile info
+ #}
+
+<div>
+  <p>{{ t('Use X-Sendfile to facilitate the download of large file attachments (100 Mb and larger) by customers:') }}</p>
+
+  <ul>
+    <li>
+      {{ t('Contact your hosting provider to make sure X-Sendfile is installed on the server.') }}
+    </li>
+    <li>
+      <a href="{{ this.getArticleUrl() }}" target="_blank">
+        {{ t('Configure your X-Cart installation to support large file downloads.') }}
+      </a>
+    </li>
+  </ul>
+</div>

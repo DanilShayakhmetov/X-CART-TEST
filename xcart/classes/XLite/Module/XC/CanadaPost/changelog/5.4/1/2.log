@@ -1,0 +1,8 @@
+Version 5.4.1.2
+
+Improvements (1)
+2020-04-29 - [Change] Changes to email notification templates. #XCN-10817 #Core #ContactUs #Egoods #CanadaPost #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+
+Fixes (1)
+2020-06-22 - [Bug] Canada Post. Incorrect state in the shipping address when creating a shipment if the address country was listed in autocomplete_states_for_countries. Fixed. #BUG-8693 https://bt.x-cart.com/view.php?id=51772 #CanadaPost
+

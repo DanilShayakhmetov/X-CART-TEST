@@ -1,0 +1,9 @@
+{##
+ # Rating value in product info
+ #
+ # @ListChild (list="product.details.page.info", weight="18")
+ #}
+
+{% if this.product.briefDescription or this.isPreview() %}
+  <div class="brief-descr product-description" {{ this.printTagAttributes(this.product.getFieldMetadata('briefDescription'))|raw }} >{{ this.product.getProcessedBriefDescription()|raw }}</div>
+{% endif %}

@@ -1,0 +1,71 @@
+{##
+ # Layout editor show hidden blocks button
+ #
+ # @ListChild (list="layout_editor.sidebar", weight="10")
+ #}
+
+<xlite-layout-options inline-template :preset="preset" :initial-reset-available="{{ this.isResetAvailable() ? 'true' : 'false' }}">
+	<div class='layout-editor-layout-options'>
+		<div class="options-layout-header">
+			<span>{{ t('Storefront layout') }}</span>
+			<a class="reset-button" :class="resetBtnClasses" @click="resetLayout">
+				<i class="icon">{{ svg('modules/XC/ThemeTweaker/themetweaker/layout_editor/icons/return.svg')|raw }}</i>
+				<span>{{ t('Reset layout') }}</span>
+			</a>
+		</div>
+
+		<div class="options-layout-content">
+			{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Select\\LayoutType',
+					label=t('Home page'),
+					group=constant('XLite\\Core\\Layout::LAYOUT_GROUP_HOME')) }}
+			{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Select\\LayoutType',
+					label=t('Other pages'),
+					group=constant('XLite\\Core\\Layout::LAYOUT_GROUP_DEFAULT')) }}
+		</div>
+		{% if this.isLogoConfigurable() %}
+		<div class="logo-options-wrapper">
+			<div class="logo-options-header">
+				<span>{{ t('Logo & Favicon') }}</span>
+			</div>
+			<div class="logo-options-content">
+				<div class="company-logo-uploader">
+					{{ widget('XLite\\View\\FileUploader',
+						object=this.getImageObject('logo'),
+						maxWidth=this.getImageMaxWidth(),
+						maxHeight=this.getImageMaxHeight(),
+						isImage=true,
+						fieldName='logo',
+						hasAlt=true,
+						isViaUrlAllowed=false
+					) }}
+					<span class="option-label">{{ t('logo uploader') }}</span>
+				</div>
+				<div class="favicon-uploader" data-extended="1">
+					{{ widget('XLite\\View\\FileUploader',
+						object=this.getImageObject('favicon'),
+						maxWidth=this.getImageMaxWidth(),
+						maxHeight=this.getImageMaxHeight(),
+						isImage=true,
+						fieldName='favicon',
+						hasAlt=false,
+						isViaUrlAllowed=false
+					) }}
+					<span class="option-label">{{ t('favicon uploader') }}</span>
+				</div>
+				<div class="appleIcon-uploader">
+					{{ widget('XLite\\View\\FileUploader',
+						object=this.getImageObject('appleIcon'),
+						maxWidth=this.getImageMaxWidth(),
+						maxHeight=this.getImageMaxHeight(),
+						isImage=true,
+						fieldName='appleIcon',
+						hasAlt=false,
+						isViaUrlAllowed=false
+					) }}
+					<span class="option-label">{{ t('app icon uploader') }}</span>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</xlite-layout-options>

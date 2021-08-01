@@ -1,0 +1,9 @@
+{##
+ # mc.js
+ #}
+
+<script defer id="mcjs">
+  core.bind('navbar.mobile.loaded', function () {
+      {{ this.getMcjsContent(true)|raw }}
+  });
+</script>

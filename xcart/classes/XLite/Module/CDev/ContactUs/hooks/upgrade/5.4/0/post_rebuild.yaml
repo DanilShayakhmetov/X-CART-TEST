@@ -1,0 +1,22 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/CDev/ContactUs/message
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Contact us form submitted (Contact us module)'
+        description: 'This notification is sent to the administrator when someone submits a request via the "Contact us" form.'
+        adminSubject: 'New message: %message_subject%'
+        adminText: '<h3 dir="ltr">Hey, </h3><p dir="ltr">%message_author% has sent you a message through the &ldquo;Contact us&rdquo; form and is waiting for your answer. Come on, reply to this email and drop him a line or two.</p><blockquote><p dir="ltr">%message%</p></blockquote>'

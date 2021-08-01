@@ -1,0 +1,8 @@
+{##
+ # Left side menu control
+ #
+ # @ListChild (list="admin.main.page.header", weight="100")
+ #}
+{% if this.auth.isAdmin() %}
+  <div class="left-menu-ctrl">{{ this.getSVGImage('images/menu.svg')|raw }}</div>
+{% endif %}

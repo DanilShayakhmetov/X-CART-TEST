@@ -1,0 +1,7 @@
+{##
+ # Attributes input template
+ #}
+
+{% for widgetContent in this.getAttributesWidgetsContent() %}
+  {{ widgetContent|raw }}
+{% endfor %}

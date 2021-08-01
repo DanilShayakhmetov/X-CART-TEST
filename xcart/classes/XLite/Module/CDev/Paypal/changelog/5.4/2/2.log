@@ -1,0 +1,5 @@
+Version 5.4.2.2
+
+Improvements (1)
+2020-07-10 - [Change] BN code is now passed in capture / refund / void requests. #BUG-8826 #Paypal
+

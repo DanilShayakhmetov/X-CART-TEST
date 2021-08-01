@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-11-22 - [Bug] The content of fields that are sent to the payment processor SagePay is now truncated so as not to exceed the maximum allowed length. #BUG-7776 https://bt.x-cart.com/view.php?id=50925 (Jamil Ainulov) #SagePay
+

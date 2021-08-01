@@ -1,0 +1,12 @@
+{##
+ # Desktop navbar (moved from top_menu.twig)
+ #}
+
+<div class="navbar navbar-inverse mobile-hidden" role="navigation" data-desktop-navbar>
+    {% if this.shouldRender() %}
+    <div class="collapse navbar-collapse">
+      {{ widget_list('header.menu') }}
+      {{ widget_list('header.menu.after') }}
+    </div>
+    {% endif %}
+</div>

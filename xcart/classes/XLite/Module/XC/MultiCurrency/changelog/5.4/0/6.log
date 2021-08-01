@@ -1,0 +1,9 @@
+Version 5.4.0.6
+
+Improvements (1)
+2019-11-11 - [Change] Improvement for the country/currency/language selection widget. Now the language is selected automatically when switching the country selection. #BUG-7999 #CrispWhiteSkin #MultiCurrency
+
+Fixes (2)
+2020-02-26 - [Bug] For the CAD currency, the country Canada (CA) was not preset. Fixed. #BUG-8323 https://bt.x-cart.com/view.php?id=51448 #MultiCurrency
+2020-02-06 - [Bug] Multicurrency. In the Customer area, the prices on an invoice were shown using the currency by default instead of the currency that had been selected by the user. Fixed. #BUG-8155 https://bt.x-cart.com/view.php?id=51282 #MultiCurrency
+

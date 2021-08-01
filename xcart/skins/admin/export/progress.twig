@@ -1,0 +1,17 @@
+{##
+ # Export progress section
+ #}
+
+<div class="export-box export-progress event-task-progress-page">
+
+  <div class="content">
+    {% form 'XLite\\View\\Form\\Export' with {formAction: 'cancel'} %}
+      <div class="subcontent clearfix">
+        {{ widget('XLite\\View\\EventTaskProgress', event=this.getEventName(), message=this.getProgressMessage(), showCancel=false ) }}
+      </div>
+      {{ widget('XLite\\View\\StickyPanel\\EventProgress') }}
+    {% endform %}
+  </div>
+
+</div>
+

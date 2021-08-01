@@ -1,0 +1,15 @@
+{##
+ # Discount coupon subpanel
+ #
+ # @ListChild (list="invoice.base.totals.modifier.name")
+ #}
+
+{% if this.isDiscountCouponSubpanelVisible(this.surcharge) %}
+  <ul class="discount-coupons-panel" style="list-style: none outside none">
+    {% for usedCoupon in this.getDiscountCoupons() %}
+      <li>
+        <span>{{ usedCoupon.getPublicName() }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

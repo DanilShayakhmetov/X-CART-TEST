@@ -1,0 +1,30 @@
+{##
+ # Shipping done step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <div class="step-contents">
+    <h2 class="heading">{{ t("You've successfully set up shipping areas and rates for your store") }}</h2>
+    <p class="text">
+      {{ t("Now you can define how shipping rates should be calculated based on  delivery time, weight and other parameters.") }}
+      <a href="{{ this.getAdvancedShippingSettingsLink() }}" target="_blank">{{ t("Advanced shipping settings") }}</a>
+    </p>
+
+    <div class="placeholder">
+      <img class="bg" src="{{ asset('modules/XC/Onboarding/images/shipping-done-bg.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/shipping-done-bg@2x.png') }} 2x">
+      <img class="sm-box" src="{{ asset('modules/XC/Onboarding/images/shipping-done-sm-box.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/shipping-done-sm-box@2x.png') }} 2x">
+      <img class="lg-box" src="{{ asset('modules/XC/Onboarding/images/shipping-done-lg-box.png') }}"
+           srcset="{{ asset('modules/XC/Onboarding/images/shipping-done-lg-box@2x.png') }} 2x">
+    </div>
+
+    <div class="buttons">
+      <div class="next-step">
+        {{ widget('\\XLite\\View\\Button\\Regular', label='Save and go to the next step', style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+      </div>
+    </div>
+  </div>
+</div>

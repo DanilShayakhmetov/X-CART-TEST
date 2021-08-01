@@ -1,0 +1,9 @@
+{##
+ # Theme tweaker notifications editor header buttons template
+ #}
+
+<div class="buttons">
+  {% for widget in this.getButtonWidgets() %}
+    {{ widget.display() }}
+  {% endfor %}
+</div>

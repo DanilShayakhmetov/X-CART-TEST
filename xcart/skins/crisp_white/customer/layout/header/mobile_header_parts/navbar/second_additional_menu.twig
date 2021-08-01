@@ -1,0 +1,12 @@
+{##
+ # Second additional account menu
+ #
+ # @ListChild (list="slidebar.navbar.account.additional-menu", weight="2000")
+ #}
+{% if this.isSlidebar %}
+  <li class="additional-menu-wrapper">
+    <div class="Inset additional-menu">
+      {{ widget_list('slidebar.navbar.account.second-additional-menu') }}
+    </div>
+  </li>
+{% endif %}

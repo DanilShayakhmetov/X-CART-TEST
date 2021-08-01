@@ -1,0 +1,9 @@
+{##
+ # Paypal header icon widget
+ #}
+<div class="header_paypal-icon" title="{{ t('Now Accepting') }} {{ t('PayPal') }}">
+  {% if not this.isMobileDevice() %}
+    <span>{{ t('Now Accepting') }}</span>
+  {% endif %}
+  <img src="{{ this.getIconUrl() }}" alt="{{ t('PayPal') }}" />
+</div>

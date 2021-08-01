@@ -1,0 +1,27 @@
+{##
+ # Braintree credit cards 
+ #
+ #}
+
+{% if this.customerProfile.getBraintreeCreditCards() %}
+
+  {% form '\\XLite\\Module\\QSL\\BraintreeVZ\\View\\Form\\BraintreeCreditCards' %}
+
+    <input type="hidden" name="default_card_token" id="default-card-token" value="" />
+    <input type="hidden" name="remove_card_token" id="remove-card-token" value="" />
+
+    <div class="braintree-credit-cards">
+      {% for bcc in this.customerProfile.getBraintreeCreditCardsHash() %}
+        {% include 'modules/QSL/BraintreeVZ/account/card_container.twig' %}
+      {% endfor %}
+    </div>
+
+  {% endform %}
+
+{% else %}
+
+  <div class="alert alert-warning">
+    {{ t('No credit cards associated with this profile.') }}
+  </div>
+
+{% endif %}

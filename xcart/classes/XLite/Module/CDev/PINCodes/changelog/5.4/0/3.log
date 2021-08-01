@@ -1,0 +1,5 @@
+Version 5.4.0.3
+
+Fixes (2)
+2019-06-10 - [Bug] A vendor could see other vendors' orders in the Order list. Fixed. #BUG-7524 https://bt.x-cart.com/view.php?id=50647 (Fedya Lavrentyev) #Egoods #PINCodes #MultiVendor
+2019-05-23 - [Bug] Orders containing a PIN code product were duplicated without an order number in the Awaiting processing filter. Fixed. #BUG-7365 https://bt.x-cart.com/view.php?id=50647 (Fedya Lavrentyev) #Egoods #PINCodes

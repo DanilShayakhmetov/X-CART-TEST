@@ -1,0 +1,52 @@
+<h3>{{ t('Launch Google Shopping ads and get your products found online easily.') }}</h3>
+
+<div class="kk-wrapper">
+	<div class="kk-box">
+		<div class="kk-box-header">
+			<div class="kk-img-container">
+				<img src="https://msacdn.s3.amazonaws.com/images/logos/xcart/GoogleHeader-Logo.svg" alt="Google Logo" height="40" class="kk-google-img">
+				<img src="https://msacdn.s3.amazonaws.com/images/logos/xcart/PoweredByKliken.png" alt="Powered by Kliken" class="kk-poweredby-img">
+			</div>
+		</div>
+
+		<div class="kk-box-content">
+			<h1>{{ t('Your store is connected.') }}</h1>
+
+			<p class="subhdr">{{ t('Your X-Cart store is connected to your Kliken account.') }}</p>
+
+			<hr>
+
+			<div class="kk-link">
+				<a class="sub-heading" href="{{ this.getKlikenLink('smb/shopping/dashboard') }}">
+					{{ t('Campaign Dashboard') }}
+				</a>
+				<p class="sub-note">{{ t('Open your dashboard to review your campaign\'s performance') }}</p>
+			</div>
+
+			<div class="kk-link">
+				<a class="sub-heading" href="{{ this.getKlikenLink('smb/shopping/create') }}">
+					{{ t('Create a New Google Shopping Campaign') }}
+				</a>
+				<p class="sub-note">{{ t('Build a campaign in a few minutes, and sell to customers as they search for your products on Google.') }}</p>
+			</div>
+
+			<div class="kk-link">
+				<a class="sub-heading" href="{{ this.getKlikenLink('smb/shopping/manage') }}">
+					{{ t('Manage Campaigns') }}
+				</a>
+				<p class="sub-note">{{ t('Make changes to your active campaigns, purchase one you built, or reinstate your cancelled campaigns.') }}</p>
+			</div>
+
+			<hr>
+
+			<details class="primer">
+				<summary>{{ t('Advanced Options') }}</summary>
+
+                {{ widget('\\XLite\\View\\Model\\Settings') }}
+
+			</details>
+		</div>
+	</div>
+</div>
+
+

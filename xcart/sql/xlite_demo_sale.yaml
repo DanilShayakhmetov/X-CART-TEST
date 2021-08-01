@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Product:
+  - { sku: '10000000076', participateSale: true, discountType: 'sale_price', salePriceValue: '47.99' }
+  - { sku: '10000000081', participateSale: true, discountType: 'sale_price', salePriceValue: '14.99' }
+  - { sku: '10000000101', participateSale: true, discountType: 'sale_price', salePriceValue: '6.49' }
+  - { sku: '10000000109', participateSale: true, discountType: 'sale_price', salePriceValue: '19.99' }
+  - { sku: '10000000110', participateSale: true, discountType: 'sale_price', salePriceValue: '44.99' }
+  - { sku: '10000000114', participateSale: true, discountType: 'sale_price', salePriceValue: '39.99' }
+  - { sku: '10000000087', participateSale: true, discountType: 'sale_percent', salePriceValue: '15.00' }
+  - { sku: '10000000088', participateSale: true, discountType: 'sale_percent', salePriceValue: '25.00' }

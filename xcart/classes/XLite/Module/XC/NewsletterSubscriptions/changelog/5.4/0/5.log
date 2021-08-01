@@ -1,0 +1,6 @@
+Version 5.4.0.5
+
+Fixes (2)
+2019-07-31 - [Bug] Subscribers  without an email address could be added via the Admin area. Fixed. #BUG-6752 (Kirill Stadler) #NewsletterSubscriptions
+2019-07-26 - [Bug] Fatal error when subscribing customers to news: "Error (code: 0): A new entity was found through the relationship 'XLite\Module\XC\MailChimp\Model\MailChimpList#profiles' that was not configured to cascade persist operations for entity". Fixed. #BUG-7640 https://bt.x-cart.com/view.php?id=50797 (Kirill Stadler) #NewsletterSubscriptions
+

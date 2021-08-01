@@ -1,0 +1,9 @@
+{##
+ # Impression block
+ #
+ # @ListChild (list="product.details.quicklook.info", weight="20")
+ #}
+
+{% if this.shouldShowGAData() %}
+    <script data-ga-ec-action="{{ this.getGAData() }}"></script>
+{% endif %}

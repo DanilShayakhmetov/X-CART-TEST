@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2020-02-12 - [Bug] JS error when adding a product to the cart from a list if the "Allow buyers to attach files to this product" option was enabled for that product and the files were required. Fixed. #BUG-8269 #CustomerAttachments
+

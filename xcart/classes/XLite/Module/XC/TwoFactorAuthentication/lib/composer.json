@@ -1,0 +1,5 @@
+{
+    "require": {
+        "megastruktur/phone-country-codes": "~0.4"
+    }
+}

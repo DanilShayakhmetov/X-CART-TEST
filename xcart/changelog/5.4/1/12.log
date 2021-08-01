@@ -1,0 +1,25 @@
+Version 5.4.1.12
+
+Improvements (1)
+2020-08-10 - [Change] Removed the message about license expiration from the storefront. #BUG-8870 #Core
+
+Fixes (18)
+2020-08-20 - [Bug] Set a 45 sec timeout for guzzle client. #BUG-8944 #Core
+2020-08-17 - [Bug] Fatal error when trying to import a product with a global attribute value set to NULL. Fixed. #BUG-8904 https://bt.x-cart.com/view.php?id=52025 #Core
+2020-08-13 - [Bug] Fixed the wrong path in skins/common/bootstrap/css/variables.less. #BUG-8905 https://bt.x-cart.com/view.php?id=52030 #Core
+2020-08-11 - [Bug] Notices and warnings on the cart page after removing the default customer address or changing data. Fixed. #BUG-8884 https://bt.x-cart.com/view.php?id=52012 #Core #SimpleCMS
+2020-08-11 - [Bug] For an addon with type: common, templates were not applied if Main class was not declared. Fixed. #BUG-8799 https://bt.x-cart.com/view.php?id=51887 #Core
+2020-08-10 - [Bug] The attribute parameter displayMode was not changing in the database. Fixed. #BUG-8876 #Core
+2020-08-07 - [Bug] Volume Discounts vs Taxes. Tax was calculated incorrectly for orders with volume discounts applied. Fixed. #BUG-8898 https://bt.x-cart.com/view.php?id=52020 #Core
+2020-08-05 - [Bug] Paypal Checkout vs OPC. After selecting a different shipping method, the Total amount on the button did not change. Fixed. #BUG-8902 https://bt.x-cart.com/view.php?id=52031 #Core #Paypal
+2020-07-31 - [Bug] When using drag & drop to move a line in a table in the Admin area, the text in the table heading moved. Fixed. #BUG-8848 #Core
+2020-07-30 - [Bug] After removing some addons and installing them again, the records in xc_tasks were duplicated. Fixed. #BUG-8845 #Core
+2020-07-29 - [Bug] Incorrect admin addresses were created when placing an order as an administrator. Fixed. #BUG-8839 #Core #FastLaneCheckout
+2020-07-29 - [Bug] Admin/customer password was visible in logs. Fixed. #BUG-8831 #Core
+2020-07-28 - [Bug] In the "Operate as this user" mode, the shopping cart contents remained admin's. Fixed. #BUG-8814 #Core
+2020-07-27 - [Bug] Export. The displayMode column for a product attribute of the Y/N type was formed incorrectly. Fixed. #BUG-8819 https://bt.x-cart.com/view.php?id=52005 #Core
+2020-07-23 - [Bug] Transparency of the background was lost for an image after resizing the image with image magick disabled. Fixed. #BUG-8800 https://bt.x-cart.com/view.php?id=51889 #Core
+2020-07-17 - [Bug] Some of the page titles in the Admin area did not match the names of items in the main admin menu. #BUG-8788 #Core #XMLSitemap
+2020-07-16 - [Bug] FireFox. Switching the product list view (Grid - Table - List) on the storefront worked incorrectly. Fixed. #BUG-8835 https://bt.x-cart.com/view.php?id=52036 #Core
+2020-06-29 - [Bug] When using queues, images were not displayed in the notification email messages. Fixed. #BUG-8787 #Core
+

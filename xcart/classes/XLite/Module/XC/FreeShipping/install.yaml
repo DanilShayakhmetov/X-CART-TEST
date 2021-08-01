@@ -1,0 +1,123 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: freight_shipping_calc_mode
+    category: XC\FreeShipping
+    type: XLite\Module\XC\FreeShipping\View\FormField\FreightMode
+    value: F
+    orderby: 10
+    translations:
+      - code: en
+        option_name: Shipping cost for products with a defined shipping freight value should be calculated as
+      - code: ru
+        option_name: Стоимость доставки для товаров с заданным значением поля "Фиксированная стоимость доставки" должна быть равна
+
+XLite\Model\LanguageLabel:
+  - name: FREE
+    translations:
+      - code: en
+        label: Free
+      - code: ru
+        label: БЕСПЛАТНО
+  - name: 'Free shipping'
+    translations:
+      - code: en
+        label: 'Free shipping'
+      - code: ru
+        label: 'Бесплатная доставка'
+  - name: 'FREE SHIPPING'
+    translations:
+      - code: en
+        label: 'FREE SHIPPING'
+      - code: ru
+        label: 'БЕСПЛАТНАЯ ДОСТАВКА'
+  - name: 'Wrong freight fixed fee format'
+    translations:
+      - code: en
+        label: 'Wrong shipping freight value format'
+      - code: ru
+        label: 'Неправильный формат значения поля "freightFixedFee"'
+  - name: 'Free shipping tooltip text'
+    translations:
+      - code: en
+        label: 'Special shipping method. Shows during checkout only if <ul class="custom-disc"><li>all the products in the cart are marked "Free shipping";</li><li>there are no other shipping methods available.</li></ul><a href="https://kb.x-cart.com/en/shipping/free_shipping_on_orders_that_meet_certain_conditions.html" target="_blank">Learn how to set up free shipping on orders that meet certain conditions</a>'
+      - code: ru
+        label: 'Специальный способ доставки. Отображается при оформлении заказа только если <ul class="custom-disc"><li>для всех товаров в корзине включена настройка "Бесплатная доставка";</li><li>нет других доступных способов доставки.</li></ul><a href="https://kb.x-cart.com/en/shipping/free_shipping_on_orders_that_meet_certain_conditions.html" target="_blank">Узнайте, как настроить бесплатную доставку для заказов, соответствующих определенным условиям</a>'
+  - name: 'Shipping freight'
+    translations:
+      - code: en
+        label: 'Shipping freight'
+      - code: ru
+        label: 'Фиксированная стоимость доставки'
+  - name: 'This field can be used to set a fixed shipping fee for the product. Make sure the field value is a positive number (greater than zero).'
+    translations:
+      - code: en
+        label: 'This field can be used to set a fixed shipping fee for the product. Make sure the field value is a positive number (greater than zero).'
+      - code: ru
+        label: 'В данном поле можно задать фиксированную стоимость доставки для редактируемого товара. Убедитесь, что используемое значение является положительным числом (больше нуля).'
+  - name: 'Shipping freight only'
+    translations:
+      - code: en
+        label: 'Shipping freight only'
+      - code: ru
+        label: 'указанному значению фиксированной стоимости доставки'
+  - name: 'Shipping freight + regular shipping rate'
+    translations:
+      - code: en
+        label: 'Shipping freight + regular shipping rate'
+      - code: ru
+        label: 'сумме фиксированной стоимости доставки и стоимости доставки, рассчитанной стандартным способом'
+  - name: 'Shipping freight tooltip text'
+    translations:
+      - code: en
+        label: 'Special shipping method. Shows during checkout only if <ul class="custom-disc"><li>all the products in the cart have a shipping freight value defined;</li><li>there are no other shipping methods available.</li></ul>'
+      - code: ru
+        label: 'Специальный способ доставки. Отображается при оформлении заказа только если<ul class="custom-disc"><li>для всех товаров в корзине задана фиксированная стоимость доставки;</li><li>нет других доступных способов доставки.</li></ul>'
+  - name: Freight
+    translations:
+      - code: en
+        label: Freight
+      - code: ru
+        label: 'Фиксированная стоимость доставки'
+  - name: 'Exclude from shipping cost calculation'
+    translations:
+      - code: en
+        label: 'Exclude from shipping cost calculation'
+      - code: ru
+        label: 'Исключить из расчета стоимости доставки'
+  - name: 'Wrong exclude from shipping cost format'
+    translations:
+      - code: en
+        label: 'Wrong "exclude from shipping cost calculation" (freeShipping) format'
+      - code: ru
+        label: 'Неправильный формат значения поля  "Исключить из расчета стоимости доставки" (freeShipping)'
+  - name: 'Wrong free shipping format'
+    translations:
+      - code: en
+        label: 'Wrong free shipping (shipForFree) format'
+      - code: ru
+        label: 'Неправильный формат значения поля "Бесплатная доставка" (shipForFree)'
+  - name: 'Important info on the Free shipping addon update'
+    translations:
+      - code: en
+        label: 'Important info on the Free shipping add-on update'
+      - code: ru
+        label: 'Важная информация об обновлении модуля Free shipping'
+  - name: 'Free shipping update text'
+    translations:
+      - code: en
+        label: 'Your store now provides two free shipping options for individual products:<br>- Exclude from shipping calculation;<br> - Free shipping.<br>If a product is marked ''Exclude from shipping calculation'', this product is excluded from the shipping cost calculation for the order for any available shipping methods.<br>If a product is marked ''Free shipping'', it is treated as eligible for shipping using the method ''Free shipping''. This method becomes available at checkout if all the products in the shopping cart are either eligible for free shipping or excluded from shipping calculation.'
+      - code: ru
+        label: 'В вашем магазине сейчас доступно два варианта бесплатной доставки для отдельных товаров:<br>- Исключение из расчета стоимости доставки;<br>- Бесплатная доставка.<br>Если в свойствах какого-либо товара отмечена опция ''Исключить из расчета стоимости доставки'', данный товар исключается из расчета стоимости доставки заказа для любых доступных способов доставки.<br>Если же в свойствах товара отмечена опция ''Бесплатная доставка'', то это означает, что данный товар может быть отправлен способом доставки ''Бесплатная доставка''. Данный способ становится доступным при оформлении заказа, если все товары в корзине являются товарами с бесплатной доставкой, либо должны быть исключены из расчета стоимости доставки в соответствии с их настройками.'
+  - name: 'Free shipping update import text'
+    translations:
+      - code: en
+        label: 'Warning! Your store now supports two free shipping options for individual products:<br>- Exclude from shipping calculation;<br>- Free shipping.<br>Information on whether a product should be excluded from shipping cost calculation must be submitted via the column shipForFree.<br>Information on whether a product should be eligible for free shipping must be submitted via the column freeShipping.'
+      - code: ru
+        label: 'Предупреждение: В вашем магазине сейчас доступно два варианта бесплатной доставки для отдельных товаров:<br>- Исключение из расчета стоимости доставки;<br>- Бесплатная доставка.<br>Информация о том, должен ли товар исключаться из расчета стоимости доставки, должна передаваться в колонке shipForFree.<br>Информация о том, является ли товар товаром с бесплатной доставкой, должна передаваться в колонке freeShipping.'
+

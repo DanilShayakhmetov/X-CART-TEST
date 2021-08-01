@@ -1,0 +1,292 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Variables
+ *
+ * Copyright (c) 2001-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@rhythmic-unit: 24px;
+@rhythmic-lineheight: @rhythmic-unit;
+@rhythmic-fontsize: @font-size-base;
+
+@zindex-topmessage: 1300000;
+
+@body-bg: @color-background;
+@header-bg-color: @color-background;
+
+@font-family-sans-serif: 'Open Sans', Arial, sans-serif;
+@line-height-base: @rhythmic-unit;
+@line-height-small: 18px;
+@line-height-small-text: @line-height-small;
+@headings-line-height: @rhythmic-unit;
+@line-height-computed: @rhythmic-unit;
+
+@padding-base-vertical: (@input-height-base - (@rhythmic-unit + (@border-base * 2))) / 2;
+@padding-base-horizontal: 12px;
+
+@padding-large-vertical:    12px;
+@padding-large-horizontal:  24px;
+
+@padding-small-vertical:    4px;
+@padding-small-horizontal:  10px;
+
+@multiselect-margin: 4px;
+@multiselect-color: @color-text-dark;
+@multiselect-color-primary: @input-bg;
+@multiselect-bg: @color-light-blue;
+@multiselect-bg-primary: @color-link;
+@multiselect-dropdown-padding: 10px 10px;
+@multiselect-option-max-width: 300px;
+@multiselect-option-padding: (@rhythmic-unit / 8) (@rhythmic-unit + 14px) (@rhythmic-unit / 8) (@rhythmic-unit / 2);
+@multiselect-option-margin: (@rhythmic-unit / 12) (@rhythmic-unit / 8);
+@multiselect-dropdown-option-padding: 3px 30px 3px 10px;
+@multiselect-dropdown-margin: 5px;
+@multiselect-choice-margin-bottom: 6px;
+@multiselect-padding-left: 5px;
+
+@switcher-color: @color-background;
+@switcher-bg: @color-success;
+@radio-checkbox-height: 16px;
+
+@fieldset-vertical-margin: (@rhythmic-unit);
+@fieldset-separator-bg: #f3f3f4;
+@fieldset-separator-height: @rhythmic-unit;
+
+@form-column-horizontal-margin: @grid-gutter-width;
+@form-row-vertical-padding: ((@rhythmic-unit * 2 - @input-height-base) / 2);
+@form-row-vertical-margin: (@rhythmic-unit);
+@form-label-horizontal-align: right;
+@form-label-vertical-offset: (@rhythmic-unit / 2);
+@form-label-width: 250px;
+@form-value-numeric-align: left;
+@form-value-wrapper-min-height: 40px;
+@form-value-datepicker-width: 160px;
+@form-value-input-group-width: 130px;
+@form-value-input-width-small: 80px;
+@form-value-input-width-very-small: 50px;
+@form-value-input-width: 245px;
+@form-value-input-width-large: 400px;
+@form-value-textarea-width: 420px;
+@form-value-integer-width: 100px;
+@form-model-margin: 0;
+@help-block-margin-top: @form-row-vertical-padding;
+@help-block-max-width: 800px;
+@form-checkbox-margin: 0 (@rhythmic-unit / 2) 0 0;
+
+@table-border-color: @color-border-light;
+@table-cell-padding-vertical: (@rhythmic-unit / 4);
+@table-cell-padding-horizontal: (@rhythmic-unit / 2);
+@table-cell-padding: @table-cell-padding-vertical @table-cell-padding-horizontal;
+
+@items-list-border: @color-border-light;
+@items-list-head-bg: fade(@color-border, 20%);
+@items-list-color: @text-color;
+@items-list-head-subcolor: @color-tip;
+@items-list-head-padding: (@rhythmic-unit / 2) (@rhythmic-unit / 2);
+@items-list-head-height: (@rhythmic-unit * 2.5);
+@items-list-body-height: (@rhythmic-unit * 2.5);
+@items-list-body-padding: @table-cell-padding;
+@items-list-selector-padding: 2px;
+@items-list-pager-height: (@rhythmic-unit * 2.5);
+@items-list-pager-padding: 0 (@rhythmic-unit / 2);
+@items-list-pager-bg: fade(@color-border, 20%);
+@items-list-action-separator-height: 26px;
+@items-list-action-separator-margin: 0 (@rhythmic-unit / 2);
+@items-list-action-separator-width: 1px;
+
+@search-panel-bg: @color-light-blue;
+@search-panel-padding: (@rhythmic-unit / 2);
+@search-panel-items-margin: @rhythmic-unit;
+
+@screen-xxs-max: 480px;
+
+@form-label-color : @color-text-dark;
+
+@disabled-color: @color-light;
+@text-color: @color-text-dark;
+@headings-color: @color-text-dark;
+
+@headings-font-weight: normal;
+@small-headings-font-weight: bold;
+
+@link-color: @color-link;
+@link-hover-color: @color-link;
+
+@tab-margin-bottom: 2px;
+@tab-link-display: inline-block;
+@tab-content-vertical-margin: (@rhythmic-unit);
+@tab-color: @text-color;
+@tab-active-color: @text-color;
+@tab-hover-color: @color-link-2;
+
+@checkbox-color: @color-link;
+@radio-color: @color-link;
+
+@btn-height-base: @input-height-base;
+@btn-default-color: @color-border;
+@btn-default-focus: @brand-info;
+@btn-default-color: @color-link;
+@btn-default-hover-bg: @color-button-hover-bg;
+@btn-default-hover-border: @color-button-hover-border;
+@btn-primary-hover-bg: #ed9c29;
+
+// Grid and rhythm settings
+@grid-gutter-width: (@rhythmic-unit * 2);
+@grid-gutter-width-lg: (@rhythmic-unit * 4);
+@grid-gutter-width-md: (@rhythmic-unit * 4);
+
+@border-base: 1px;
+@border-table: 1px;
+@border-radius-base: 4px;
+@border-radius-large: 4px;
+@border-radius-small: 4px;
+
+@popup-overlay-bg: #111;
+@popup-overlay-opacity: .8;
+
+@popover-min-width: 250px;
+@popover-color: @color-text-dark;
+@popover-border-color: @color-border;
+
+@tooltip-bg: @input-bg;
+@tooltip-color: @text-color;
+@tooltip-padding: (@rhythmic-unit / 4) (@rhythmic-unit / 2);
+@tooltip-opacity: 1;
+
+@input-transition-property: color, background-color, border-color, box-shadow, height, width, padding, margin, opacity;
+
+@fast-transitions-duration: 0.2s;
+@transitions-duration: 0.4s;
+
+@header-shadow: 0 0 10px 0 rgba(74, 73, 74, 0.2);
+@dropdown-shadow: 0 2px 10px 0 rgba(74, 73, 74, 0.2);
+@drag-n-drop-shadow: 0 6px 6px 0 rgba(155, 154, 155, 0.5);
+@basic-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator: "\203A";
+@breadcrumb-bg: transperent;
+@breadcrumb-color: #456583;
+@breadcrumb-separator-color: #456583;
+@breadcrumb-padding-vertical: 0;
+@breadcrumb-padding-horizontal: 0;
+
+@left-side-menu-width: 200px;
+@left-side-menu-width-compressed: 64px;
+@left-menu-margin: 12px;
+@left-menu-icon-size: 24px;
+@left-menu-compress-time: .1s;
+
+@center-padding-left: @rhythmic-unit;
+@center-padding-right: @rhythmic-unit;
+
+@sec-tab-border-color: #cadce8;
+@sec-tab-bg-color: @color-button-hover-bg;
+
+@dropdown-padding: 0 0;
+@dropdown-button-padding: (@rhythmic-unit / 4) (@rhythmic-unit / 2);
+@dropdown-divider-bg: @color-border;
+@dropdown-link-color:            @text-color;
+@dropdown-link-hover-color:      @text-color;
+@dropdown-link-hover-bg:         @color-button-hover-bg;
+
+@font-thin: 300;
+@font-regular: 400;
+@font-bold: 600;
+
+@font-size: @font-size-base;
+@font-size-base: 14px;
+@font-size-large: 18px;
+@font-size-very-small: ceil((@font-size-base * 0.714));
+
+@font-size-h1: 30px;
+@font-size-h2: 24px;
+@font-size-h3: 20px;
+@font-size-h4: 18px;
+@font-size-h5: @font-size-base; // 14px
+@font-size-h6: 12px;
+
+@iconfont-size: 16px;
+
+@input-height-base: 40px;
+@input-color: @color-text-dark;
+@input-border: @color-border;
+@input-border-focus: #66afe9;
+@input-border-focus-size: 2px;
+@input-color-placeholder: @color-tip;
+
+@state-danger-text: @color-error;
+@state-danger-bg: @color-error-light;
+
+@popover-max-width: 350px;
+
+@top-message-padding: (@rhythmic-unit / 2) (@rhythmic-unit * 1.5) (@rhythmic-unit / 2) (@rhythmic-unit / 2);
+@top-message-width: 800px;
+@top-message-margin: (@rhythmic-unit / 2);
+@top-message-padding: (@rhythmic-unit / 2) (@rhythmic-unit * 3) (@rhythmic-unit / 2) @padding-base-horizontal;
+
+@alert-padding: (@rhythmic-unit / 2);
+@alert-link-font-weight: @font-bold;
+@alert-success-bg: @brand-success;
+@alert-info-bg: @brand-info;
+@alert-warning-bg: @brand-warning;
+@alert-danger-bg: @brand-danger;
+
+@alert-success-text: @text-color;
+@alert-info-text: @text-color;
+@alert-warning-text: @text-color;
+@alert-danger-text: @text-color;
+
+/* colors */
+@brand-primary: #efad4e;
+@brand-success: #b3e8cd;
+@brand-info: #cce5ff;
+@brand-warning: #fcebb0;
+@brand-danger: #ffc5c6;
+
+@color-border: #cccccc;
+@color-border-light: fade(@color-border, 30%);
+@color-error: #a94461;
+@color-error-light: @brand-danger;
+@color-filled: #66afe9;
+@color-success: #6bb670;
+@color-warning: #f7d457;
+
+@color-background: #fff;
+@color-text-highlight: #fffcad;
+@color-text-light: #9b9b9b;
+@color-tip: #808080;
+@color-text-default: #808080;
+@color-text-dark: #141414;
+@color-light-blue: #eff8fe;
+@color-mid-blue: #cce5ff;
+
+@color-file-uploader-warning: @brand-warning;
+@color-button-hover-bg: @color-light-blue;
+@color-button-hover-border: #c9dcea;
+@color-link: #0f8dd0;
+@color-link-2: #66afe9;
+@color-hover: #1cb5fc;
+
+@color-highlight: #25c5df;
+@color-light: #dcdcdc;
+
+@color-contrast: #000;
+@color-dark-border: #9b9b9b;
+@color-green: @color-success;
+
+@good-color: @color-success;
+@bad-color: @color-error;
+@link-color-1-hover: #66afe9;
+
+/* color aliases */
+@text-dark-color: @color-text-dark;
+@color-reloading-highlight: @color-highlight;
+@color-reloading-base: @color-text-dark;
+/* // color aliases  */
+
+@iconfont-width: @rhythmic-unit;
+
+@progress-bar-bg: #0f8dd0;

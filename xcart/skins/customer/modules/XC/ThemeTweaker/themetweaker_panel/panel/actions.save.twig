@@ -1,0 +1,20 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--actions", weight="200")
+ #}
+
+{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\Button\\ThemeTweakerButton',
+          label="Save",
+          style="themetweaker-action themetweaker-action_save",
+          attributes={
+            "@click": "onSaveClick",
+            "v-show": "mode",
+            'data-panel-save-button': 'data-panel-save-button',
+            ':class': 'saveButtonClasses',
+            ':disabled': 'isSaveDisabled',
+            'data-toggle': 'tooltip',
+            'data-placement': 'top',
+            'data-html': "true",
+            'title': t('themetweaker.shortcut.save'),
+          }) }}

@@ -1,0 +1,6 @@
+{##
+ # Buy with Apple Pay widget
+ #}
+{% if not this.isAllStockInCart() and this.isProductAvailableForSale() %}
+    {{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Button\\Product\\BuyWithApplePay', fingerprint=this.getFingerprint(), product=this.product) }}
+{% endif %}

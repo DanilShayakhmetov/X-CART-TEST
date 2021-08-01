@@ -1,0 +1,18 @@
+{##
+ # Attachments history
+ #}
+
+<span class="value">{{ this.getFilename(this.entity) }}</span>
+
+<div class="additional-history-info allow-hover">
+  <ul>
+    {% for name, info in this.entity.getAdditionalInfo() %}
+      <li>
+        <div class="info-element">
+          <span class="name">{{ name }}:</span>
+          <span class="info">{{ info }}</span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

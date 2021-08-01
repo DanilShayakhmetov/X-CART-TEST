@@ -1,0 +1,125 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: sale_enabled
+    category: 'CDev\Sale'
+    type: checkbox
+    orderby: 20
+    value: Y
+    translations:
+      - code: en
+        option_name: 'Display the "Products on sale" block in the storefront'
+  - name: sale_in_current_category
+    category: 'CDev\Sale'
+    type: checkbox
+    orderby: 30
+    value: Y
+    translations:
+      - code: en
+        option_name: 'Display only the products on sale which are in the category being viewed (or its subcategories)'
+  - name: sale_max_count_in_block
+    category: 'CDev\Sale'
+    type: text
+    orderby: 80
+    value: 4
+    translations:
+      - code: en
+        option_name: 'The maximum number of products to be displayed in the "Products on sale" block'
+        option_comment: 'The maximum number of products to be displayed in the "Products on sale" block. Set zero to display all products in the block. Drupal block settings can override this option (when the DrupalConnector module is enabled).'
+  - name: way_to_combine_discounts
+    category: 'CDev\Sale'
+    type: \XLite\Module\CDev\Sale\View\FormField\Select\CombineDiscounts
+    orderby: 100
+    value: 'apply_max'
+    translations:
+      - code: en
+        option_name: 'How to handle multiple sale discounts'
+  - name: show_links_in_category_menu
+    category: 'CDev\Sale'
+    type: \XLite\Module\CDev\Sale\View\FormField\Select\ShowLinksInCategoryMenu
+    orderby: 110
+    value: 'under_categories'
+    translations:
+      - code: en
+        option_name: 'How to display links to sale offers in the category menu'
+  - name: allow_vendors_edit_discounts
+    category: 'CDev\Sale'
+    type: checkbox
+    orderby: 120
+    value: Y
+    translations:
+      - code: en
+        option_name: 'Allow vendors to manage sale discounts for their own products'
+
+XLite\Model\Role\Permission:
+  - { code: manage sale discounts, section: Sale, translations: [{ code: en, name: Manage sale discounts }, { code: ru, name: Управление скидками }] }
+
+XLite\Model\Role:
+  - { translations: [{ code: en, name: Sale discounts management }, { code: ru, name: Управление скидками }], permissions: [{ code: manage sale discounts }] }
+
+
+XLite\Model\MoneyModificator:
+  - class: XLite\Module\CDev\Sale\Logic\SalePrice
+    validator: isApply
+    purpose: net
+    position: 5
+  - class: XLite\Module\CDev\Sale\Logic\PercentOff
+    validator: isApply
+    purpose: net
+    position: 500
+  - class: XLite\Module\CDev\Sale\Logic\SaleDiscount
+    validator: isApply
+    purpose: net
+    position: 600
+
+XLite\Model\LanguageLabel:
+  - { name: 'Billing address is not defined', translations: [{ code: en, label: 'Billing address is not defined' }] }
+  - { name: 'a side box', translations: [{ code: en, label: 'a side box' }] }
+  - { name: 'the main column', translations: [{ code: en, label: 'the main column' }] }
+  - { name: 'Put up for sale', translations: [{ code: en, label: 'Put up for sale' }] }
+  - { name: 'Cancel sale', translations: [{ code: en, label: 'Cancel sale' }] }
+  - { name: 'Sale price', translations: [{ code: en, label: 'Sale price' }] }
+  - { name: 'sale', translations: [{ code: en, label: 'sale' }] }
+  - { name: 'Product on sale', translations: [{ code: en, label: 'Product on sale' }] }
+  - { name: 'Percent off', translations: [{ code: en, label: 'Percent off' }] }
+  - { name: 'Set the sale price', translations: [{ code: en, label: 'Set the sale price' }] }
+  - { name: 'The changes will be applied to all selected products', translations: [{ code: en, label: 'The changes will be applied to all selected products' }] }
+  - { name: 'Apply price', translations: [{ code: en, label: 'Apply price' }] }
+  - { name: 'On sale', translations: [{ code: en, label: 'On sale' }] }
+  - { name: 'Put all for sale', translations: [{ code: en, label: 'Put all for sale' }] }
+  - { name: 'Cancel sale for all', translations: [{ code: en, label: 'Cancel sale for all' }] }
+  - { name: "Products (X)", translations: [{ code: en, label: "Products ({{count}})" }] }
+  - { name: "itemslist.admin.sale_discounts.blank", translations: [{ code: en, label: "There are currently no sale discounts" }] }
+  - { name: "Sale name", translations: [{ code: en, label: "Sale name" }] }
+  - { name: "X discount(s) has been created", translations: [{ code: en, label: "{{count}} discount(s) has been created" }] }
+  - { name: "X discount(s) has been removed", translations: [{ code: en, label: "{{count}} discount(s) has been removed" }] }
+  - { name: "New sale", translations: [{ code: en, label: "New sale" }] }
+  - { name: "List sale products in a separate section", translations: [{ code: en, label: "List sale products in a separate section" }] }
+  - { name: "Apply sale discount to wholesale prices", translations: [{ code: en, label: "Apply sale discount to wholesale prices" }] }
+  - { name: "Sale discounts", translations: [{ code: en, label: "Sale discounts" }] }
+  - { name: "Valid only for specific products", translations: [{ code: en, label: "Valid only for specific products" }] }
+  - { name: "If you want the sale discount to be applied only to products from specific categories, specify these categories here.", translations: [{ code: en, label: "If you want the sale discount to be applied only to products from specific categories, specify these categories here." }] }
+  - { name: "The sale discount will be limited to product classes specified here", translations: [{ code: en, label: "The sale discount will be limited to product classes specified here" }] }
+  - { name: "The sale discount will be limited to customers with membership levels specified here", translations: [{ code: en, label: "The sale discount will be limited to customers with membership levels specified here" }] }
+  - { name: "The sale discount will be limited to the delivery area specified here", translations: [{ code: en, label: "The sale discount will be limited to the delivery area specified here" }] }
+  - { name: "The sale discount has been updated", translations: [{ code: en, label: "The sale discount has been updated" }] }
+  - { name: "The sale discount has been added", translations: [{ code: en, label: "The sale discount has been added" }] }
+  - { name: "Apply maximum discount", translations: [{ code: en, label: "Apply maximum discount" }] }
+  - { name: "Apply minimum discount", translations: [{ code: en, label: "Apply minimum discount" }] }
+  - { name: "Combine discounts", translations: [{ code: en, label: "Combine discounts" }] }
+  - { name: "Do not display", translations: [{ code: en, label: "Do not display" }] }
+  - { name: "Display under categories list", translations: [{ code: en, label: "Display under categories list" }] }
+  - { name: "Display above categories list", translations: [{ code: en, label: "Display above categories list" }] }
+  - { name: "The following sale discounts apply to this product: X", translations: [{ code: en, label: "The following sale discounts apply to this product: {{sales}}" }] }
+  - { name: 'Sorry, no products have been added to this discount offer.', translations: [{ code: en, label: '<p>Sorry, no products have been added to this discount offer.</p><p><a href="{{homePageUrl}}">Go back to the Home page</a></p>' }]}
+  - { name: 'Sorry, no products of {{vendor}} have been added to this discount offer.', translations: [{ code: en, label: '<p>Sorry, no products of {{vendor}} have been added to this discount offer.</p><p><a href="{{homePageUrl}}">Go back to the Home page</a></p>' }]}
+  - { name: 'Re-calculate quick data', translations: [{ code: en, label: 'Re-calculate quick data' }]}
+  - { name: 'To ensure that products sorting and the addon Product Filter works correctly, after changing or adding sale offers, launch the re-calculation of quick data.', translations: [{ code: en, label: 'To ensure that products sorting and the addon Product Filter works correctly, after changing or adding sale offers, launch <a href="{{link}}" target="_blank">the re-calculation of quick data</a>.' }]}
+  - { name: 'The "{{saleDiscount}}" discount does not exist', translations: [{ code: en, label: 'The "{{saleDiscount}}" discount does not exist' }] }
+  - { name: 'Wholesale prices for this product are disabled because its sale price is set as an absolute value (X). To enable wholesale prices, use the relative value in % for the Sale field.', translations: [{ code: en, label: 'Wholesale prices for this product are disabled because its sale price is set as an absolute value ({{price}}). To enable wholesale prices, use the relative value in % for the Sale field.'}] }
+  - { name: 'Wholesale prices for this product variant are disabled because its sale price is set as an absolute value (X). To enable wholesale prices, use the relative value in % for the Sale field.', translations:[{ code: en, label: 'Wholesale prices for this product variant are disabled because its sale price is set as an absolute value ({{price}}). To enable wholesale prices, use the relative value in % for the Sale field.'}] }

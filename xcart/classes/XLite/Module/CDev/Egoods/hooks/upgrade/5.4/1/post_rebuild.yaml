@@ -1,0 +1,15 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: bucket_region
+    category: CDev\Egoods
+    type: 'XLite\View\FormField\Input\Text'
+    translations:
+      - code: en
+        option_name: 'S3 Bucket region'
+        option_comment: 'If not specified, the bucket region will be detected based on the URL. If the region cannot be detected, the default region us-east-1 will be used.'

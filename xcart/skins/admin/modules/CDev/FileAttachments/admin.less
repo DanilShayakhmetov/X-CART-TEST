@@ -1,0 +1,254 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Product attachments page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+@import "../../../css/initialize";
+
+.product-attachments.items-list .list-header .button-container {
+  margin: 0;
+}
+
+.product-attachments.items-list .list-header .button-container .add-file .dropdown-menu button {
+  .flex-display();
+  .align-items(center);
+}
+
+.product-attachments.items-list .button-container .select-file-url-button {
+  border: none;
+}
+
+.product-attachments.items-list .list-header .button-container .add-file .dropdown-menu span:first-letter,
+.product-attachments.items-list .reupload-file-selector + .dropdown-menu span:first-letter {
+  text-transform: uppercase;
+}
+
+.product-attachments.items-list .no-items {
+  margin-top: 15px;
+}
+
+.product-attachments.items-list-table table.list tbody.lines .cell.icon {
+  width: 30px;
+  padding: 0;
+}
+
+.product-attachments.items-list-table table.list tbody.lines .cell .inline-field .view {
+  border: none;
+}
+
+.product-attachments .cell.icon i.file-icon {
+  color: #9b9b9b;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.product-attachments.items-list .list thead th.private {
+  padding-left: 27px;
+}
+
+.product-attachments.items-list .list thead th.description {
+  padding-left: 24px;
+}
+
+.product-attachments.items-list .list .cell.description {
+  padding-left: 25px;
+}
+
+.product-attachments .cell.title .cell {
+  height: 48px;
+  position: relative;
+}
+
+.product-attachments .cell.title .cell .inline-text-file .field {
+  position: absolute;
+  left: 29px;
+  top: 0;
+}
+
+.product-attachments .cell.title .cell .inline-text-file .field .input-field-wrapper input {
+  height: 48px;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title {
+  display: flex;
+  align-items: center;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title .view {
+  padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  height: 48px;
+  display: inline-block;
+  width: 221px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title {
+  width: 100%;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title:before {
+  margin-right: 4px;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title .view .value {
+  max-width: 200px;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title .view .second-line {
+  position: absolute;
+  max-width: 200px;
+  top: 24px;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title .view .second-line .click-tip {
+  display: none;
+}
+
+.product-attachments .line:hover .cell.title .inline-field.attachment-title .view .second-line .click-tip {
+  display: inline;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title .view .second-line span {
+  font-size: 12px;
+  line-height: 18px;
+  color: @color-tip;
+}
+
+.product-attachments .cell.title .inline-field.attachment-title .field input {
+  max-width: 221px;
+}
+
+.product-attachments .cell.description .inline-field.attachment-description .view {
+  height: 48px;
+}
+
+.product-attachments .cell.description .inline-field.attachment-description .view .value {
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.product-attachments .cell.description .inline-field.attachment-description {
+  position: relative;
+}
+
+.product-attachments .cell.description .inline-field.attachment-description.editable .view.editable  {
+  display: flex;
+}
+
+.product-attachments .cell.description .inline-field.attachment-description .field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.product-attachments .cell.description .inline-field.attachment-description .field textarea {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+  margin-left: -12px;
+}
+
+.product-attachments .cell.private .cell {
+  padding-left: 10px;
+}
+
+.product-attachments .cell.file {
+  position: relative;
+  white-space: nowrap;
+  min-width: 115px;
+}
+
+.items-list-table.product-attachments table.list td.cell.description {
+  min-width: 250px;
+  width: 100%;
+}
+
+.product-attachments .cell.description .attachment-description .view .value .placeholder {
+  color: @color-tip;
+
+}
+
+.product-attachments .cell.file .file-column {
+  min-height: 38px;
+  display: table;
+  width: 100%;
+}
+
+.product-attachments .cell.file .fileinfo {
+  display: table-cell;
+}
+
+.product-attachments .cell.file .reupload-file {
+  float: right;
+}
+
+.product-attachments .cell.file .reupload-file button.download-file-button {
+  background-image: url(../../../images/download.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 9px;
+  width: 36px;
+}
+
+.product-attachments .cell.file .reupload-file .buttons {
+  margin: 0;
+}
+
+.product-attachments .cell.file .reupload-file button {
+  width: 36px;
+}
+
+.product-attachments .cell.file .reupload-file button.dropdown-file-selector {
+  margin-left: 5px;
+  padding: 6px 6px 6px 7px;
+}
+
+.product-attachments .cell.file .reupload-file button.dropdown-file-selector span {
+  font-weight: bold;
+  font-size: 18px;
+  vertical-align: top;
+  line-height: 12px;
+  letter-spacing: 1px;
+}
+
+.product-attachments .cell.file .reupload-file button.dropdown-file-selector span.caret {
+  display: none;
+}
+
+.product-attachments .cell.file .reupload-file .dropdown-menu button.action {
+  width: 100% !important;
+}
+
+.product-attachments .line.remove-mark .cell.file .reupload-file button {
+  pointer-events: none;
+}
+
+.product-attachments .cell.file .filesize {
+  font-size: 12px;
+  color: #8f8f8f;
+  line-height: 35px;
+}
+
+.product-attachments .cell.file .filename {
+  line-height: 35px;
+}
+
+.browse-server-instant-button > span + span,
+.select-file-url-button > span {
+  margin-left: 8px;
+}
+
+.product-attachments .action > button > span,
+.product-attachments .action > button.remove {
+  display: flex;
+  align-items: center;
+}
+
+.product-attachments .action button.reupload-file-selector + .dropdown-menu{
+  left: -73px;
+}

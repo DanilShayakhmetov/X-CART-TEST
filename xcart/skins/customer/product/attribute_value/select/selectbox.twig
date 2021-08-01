@@ -1,0 +1,18 @@
+{##
+ # Attribute value (Select) in selectbox mode
+ #}
+
+<label class="title">{{ this.attribute.name }}</label>
+<select
+    class="form-control"
+    name="{{ this.getName() }}"
+    data-attribute-id="{{ this.attribute.id }}"
+    {{ this.printTagAttributes(this.getSelectAttributes())|raw }}
+>
+  {% if this.showPlaceholderOption() %}
+    <option {{ this.printTagAttributes(this.getPlaceholderOptionAttributes())|raw }}disabled="disabled" hidden="hidden" selected="selected" value="">{{ this.getPlaceholderOptionLabel() }}</option>
+  {% endif %}
+  {% for v in this.getAttributeValue() %}
+    {% include this.getOptionTemplate() with {'option': v} %}
+  {% endfor %}
+</select>

@@ -1,0 +1,17 @@
+Version 5.4.1.0
+
+Improvements (2)
+2020-02-04 - [Change] The active menu item was not highlighted on some pages. Fixed. #BUG-7472 #Core #AustraliaPost #Coupons #Paypal #Sale #USPS #XMLSitemap #CanadaPost #FedEx #UPS #MailChimp #DHL #GoogleFeed
+2019-12-18 - [Change] When creating a coupon, it is now possible to set the address zone for which the coupon can be used, as well as specify the products to which it can be applied. #XCN-10174 #Coupons #MultiVendor
+
+Fixes (9)
+2020-03-19 - [Bug] JS errors when applying a coupon at checkout or removing a coupon. Fixed. #BUG-8437 #Coupons
+2020-03-18 - [Bug] The admin commission was calculated incorrectly if using a global coupon. Fixed. #BUG-8340 #Coupons #MultiVendor
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-03-02 - [Bug] It was possible to create a discount of 100.01% to 100.99% in Coupons, Volume discounts and Sale. Fixed. #BUG-8364 #Coupons #Sale #VolumeDiscounts
+2020-02-24 - [Bug] In FLC mode, the link "Have a discount coupon" remained available when the discount coupon could not be applied. Fixed. #BUG-8213 https://bt.x-cart.com/view.php?id=51368 #Coupons
+2020-02-21 - [Bug] Two incompatible coupons could be combined for the same shopping cart, which was not supposed to happen. Fixed. #BUG-8353 https://bt.x-cart.com/view.php?id=51488 #Coupons
+2020-02-07 - [Bug] A coupon that was supposed to be available only to users with specific memberships could be applied to a shopping cart without taking into account the membership limitation. Fixed. #BUG-8163 #Coupons
+2020-02-05 - [Bug] Fatal error in the shopping cart when attempting to apply a coupon as an anonymous user. Fixed. #BUG-8312 #Coupons
+2020-01-29 - [Bug] An incorrect message was shown if configuring a volume discount and trying to save it with a value of more than 100%. Fixed. #BUG-8105 #Coupons #Sale #VolumeDiscounts
+

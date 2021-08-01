@@ -1,0 +1,19 @@
+{##
+ # ____file_title____
+ #}
+
+<div class="froala-widget">
+    <div class="textarea">
+        {{ this.displayCommentedData(this.getFroalaConfiguration()) }}
+        <textarea {{ this.getAttributesCode()|raw }}>{{ this.getProcessedValue() }}</textarea>
+    </div>
+    <div class="additional-info">
+        {% if this.hasScripts() %}
+            <p class="script-warning">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                {{ t('Content has script tags (Froala)') }}
+            </p>
+        {% endif %}
+    </div>
+</div>
+

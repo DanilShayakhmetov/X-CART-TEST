@@ -1,0 +1,35 @@
+{##
+ # Company info
+ #}
+
+<div class="contact-us-company-info {{ this.getLocationMode() }}">
+  <div class="location address-subheader">{{ t('Our location') }}</div>
+  <div class="address address-subheader">{{ t('Address') }}</div>
+  {% if this.hasLocation() %}
+    <div class="location">
+      {% for name, value in this.getLocation() %}
+        <span class="location-{{ name }}">{{ value }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+  <div class="phone-email address-subheader">{{ t('Phone') }}{% if this.getEmail() %} & {{ t('Email') }}{% endif %}</div>
+  <div class="phone-email-block">
+    {% if this.getPhone() %}
+      <div class="phone">
+        <span class="name">{{ t('Phone') }}:</span>
+        <span class="value">{{ this.getPhone() }}</span>
+      </div>
+    {% endif %}
+    {% if this.getFax() %}
+      <div class="fax">
+        <span class="name">{{ t('Fax') }}:</span>
+        <span class="value">{{ this.getFax() }}</span>
+      </div>
+    {% endif %}
+    {% if this.getEmail() %}
+      <div class="email">
+        <a href="mailto:{{ this.getEmail() }}">{{ this.getEmail() }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>

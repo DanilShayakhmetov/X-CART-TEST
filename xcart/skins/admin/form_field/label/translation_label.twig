@@ -1,0 +1,14 @@
+{##
+ # Translation label
+ #}
+
+<span class="input-field-wrapper {{ this.getWrapperClass() }}">
+  <span{{ this.getAttributesCode()|raw }}>
+    {% if this.getLabelValue() is not empty %}<span>{{ this.getLabelValue()|raw }}</span>{% endif %}
+    {% if this.getValue() %}
+      <a class="edit-link" href="{{ this.getLabelEditURL() }}">
+        <i class="fa fa-edit icon"></i>
+      </a>
+    {% endif %}
+  </span>
+</span>

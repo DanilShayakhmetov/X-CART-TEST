@@ -1,0 +1,47 @@
+{##
+ # Company logo step
+ #}
+
+<div
+        class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+        v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+        :transition="stepTransition">
+  <xlite-wizard-step-company-logo inline-template default-logo="{{ this.getDefaultLogoUrl() }}">
+    <div class="step-contents">
+      <h2 class="heading">{{ t('Design your online store to fit your brand') }}</h2>
+      {% form 'XLite\\View\\Form\\SimpleForm' with {formTarget: 'onboarding_wizard', formAction: 'upload_company_logo', className: "logo-upload-form"} %}
+        {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormField\\InlineImageUploader',
+          helpMessage=t("Upload your logo"),
+          uploadedMessage=t("Upload a new logo"),
+          fieldOnly=true,
+          isViaUrlAllowed=false,
+          fieldName='company_logo',
+          maxHeight="218",
+          maxWidth="398"
+        ) }}
+      {% endform %}
+      <div class="logo-showcase">
+        <div class="logo-image-wrapper">
+          <img src="{{ asset('modules/XC/Onboarding/images/logo-showcase.png') }}" alt="" />
+          <div class="logo-desktop-placeholder" v-if="logoUrl">
+            <img :src="logoUrl" alt="" />
+          </div>
+          <div class="logo-mobile-placeholder" v-if="logoUrl">
+            <img :src="logoUrl" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="buttons bottom-sticky">
+        {{ widget('XLite\\View\\Button\\Regular',
+          id="company_logo-next_button",
+          label=t("Open storefront"),
+          style='regular-main-button',
+          jsCode=("window.open('" ~ this.getStorefrontUrl() ~ "')")
+        ) }}
+        <div class="additional-buttons muted-buttons">
+          {{ widget('XLite\\View\\Button\\SimpleLink', label=t("Complete wizard"), attributes={'@click': 'completeWizard'}, jsCode="null;") }}
+        </div>
+      </div>
+    </div>
+  </xlite-wizard-step-company-logo>
+</div>

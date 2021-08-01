@@ -1,0 +1,9 @@
+{##
+ # Product mailbox price
+ #
+ # @ListChild (list="product_mail_box", weight="300")
+ #}
+
+{% if this.isDisplayPrice() %}
+  <div class="price">{{ this.formatPrice(this.getProduct().getPrice()) }}</div>
+{% endif %}

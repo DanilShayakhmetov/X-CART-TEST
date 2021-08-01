@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-06-20 - [Bug] Minor adjustments of the admin area pages according to the styleguide. #BUG-7473 (Fedya Lavrentyev) #Core #Paypal #NewsletterSubscriptions #MultiVendor
+

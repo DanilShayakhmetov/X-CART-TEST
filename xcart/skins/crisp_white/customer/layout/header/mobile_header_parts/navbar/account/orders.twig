@@ -1,0 +1,13 @@
+{##
+ # Orders link
+ #
+ # @ListChild (list="slidebar.navbar.account", weight="10")
+ #}
+
+{% if this.isLogged() %}
+	<li>
+		<a class="icon-orders" href="{{ url('order_list', '') }}">
+			<span>{{ t('Orders') }}</span>
+		</a>
+	</li>
+{% endif %}

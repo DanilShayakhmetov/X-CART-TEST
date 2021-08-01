@@ -1,0 +1,39 @@
+{##
+ # product tour translation data
+ #}
+<script type="text/javascript">
+  var tourSteps = [
+    {
+      'element': '.logo-options-wrapper',
+      'title': '{{ t('Personalize Logos') }}',
+      'description': '{{ t('Upload your brand logos to include in the store header and browser tab.') }}',
+      'position': 'top tip-left',
+      'step': 1,
+    },
+    {
+      'element': '.list-container .category-description',
+      'title': '{{ t('Edit Text') }}',
+      'description': '{{ t('Use the Description Editor toolbar below to select and edit text on your store pages.') }}',
+      'position': 'bottom tip-center content-scroll',
+      'step': 2,
+    },
+    {
+      'element': '.themetweaker-panel--header',
+      'title': '{{ t('Store Configuration Mode') }}',
+      'description': '{{ t('Expand the toolbar below to personalize store layout and style. Click the icon below to exit Store Configuration Mode at any time.') }}',
+      'position': 'top arrow-left',
+      'step': 3,
+    },
+    {
+      'element': '.carousel-indicators',
+      'title': '{{ t('Style Your Banners') }}',
+      'description': '{{ t('Upload images and setup your banners to showcase top products or promote new sales.') }}',
+      'position': 'bottom tip-center arrow-center content-scroll',
+      'step': 4,
+    },
+  ];
+  var tourData = {
+    next: '{{ t('Next') }}',
+    done: '{{ t('Setup banners') }}',
+  }
+</script>

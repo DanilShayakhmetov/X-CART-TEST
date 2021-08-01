@@ -1,0 +1,159 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Messages list style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.conversations .messages td {
+    border: 0 none;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.conversations .messages .message:first-child td {
+    border-bottom: 0 none;
+}
+
+.conversations .messages .message:last-child td {
+    border-bottom: 1px solid #ececec;
+}
+
+.conversations .messages a {
+    padding: 11px 13px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.conversations .messages a:hover,
+.conversations .messages a:hover *
+{
+    opacity: .88;
+}
+
+.conversations .messages .conversation-link {
+    min-width: 60px;
+}
+
+.conversations .messages .body,
+.conversations .messages .date,
+.conversations .messages .date a
+{
+    color: #999;
+}
+
+.conversations .messages .body {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    width: 500px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.conversations .messages .text {
+    position: relative;
+    width: 100%;
+}
+
+.conversations .messages .date {
+    text-align: right;
+}
+
+.conversations .messages .date a {
+    padding-right: 15px;
+}
+
+.conversations .messages .conversation-label {
+    color: #5194c5;
+}
+
+.conversations .messages .unread .conversation-link,
+.conversations .messages .unread .conversation-label,
+.conversations .messages .unread .date
+{
+    font-weight: bold;
+}
+
+.conversations .messages .unread .date a {
+    color: #666;
+}
+
+.conversations .messages .read td {
+    background-color: #fafafa;
+}
+
+.conversations .messages .read:hover td {
+    background-color: #f4f6f8;
+}
+
+.conversations .messages .has-marks a.text-link {
+    width: 75%;
+}
+
+.conversations .messages .marks {
+    width: 25%;
+}
+
+.conversations .messages .dispute {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.conversations .messages .dispute {
+    color: red;
+}
+
+.conversations .messages .dispute svg {
+    margin-top: 3px;
+}
+
+.conversations .empty {
+    text-align: center;
+    padding-top: 72px;
+}
+
+.conversations .empty .img {
+
+}
+
+.conversations .empty svg {
+    display: inline-block;
+    width: 140px;
+    height: auto;
+}
+
+.conversations .empty svg path {
+    fill: #d1d1d1;
+}
+
+.conversations .empty strong {
+    color: #d1d1d1;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: normal;
+    margin-top: -2px;
+    display: block;
+}
+
+.xc-vendormessages-searchpanel-message-admin-main .messageSubstring-condition,
+.xc-vendormessages-searchpanel-message-admin-main .messageSubstring-condition span.input,
+.xc-vendormessages-searchpanel-message-admin-main .messageSubstring-condition div.table-value input[type="text"]
+{
+    width: 100%;
+}
+
+.xc-vendormessages-searchpanel-message-admin-main .messages-condition div.table-value select {
+    width: auto;
+}
+
+.conversations .pager-top {
+    display: none;
+}

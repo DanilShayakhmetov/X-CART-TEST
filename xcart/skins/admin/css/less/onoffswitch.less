@@ -1,0 +1,140 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Switcher style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onoffswitch {
+  padding: 8px 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  .user-select(none);
+
+  input[type=checkbox] {
+    display: none;
+
+    &:checked {
+      & + label {
+        .onoffswitch-inner {
+          margin-left: 0;
+        }
+        .onoffswitch-switch {
+          right: 0;
+        }
+      }
+    }
+
+    &:disabled {
+      & + label {
+        opacity: .5;
+      }
+    }
+  }
+
+  > label {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 400;
+    border: 2px solid @switcher-bg;
+    .rounded(@border-radius-base);
+  }
+
+  .onoffswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    text-transform: uppercase;
+
+    .transition(margin 0.3s ease-in 0s);
+
+    .on-caption,
+    .off-caption {
+
+      float: left;
+      width: 50%;
+      .flex-display();
+      .justify-content(center);
+
+      height: 20px;
+      line-height: 20px;
+      font-size: @font-size;
+
+      color: #ffffff;
+      &:before,
+      &:after {
+        content: "";
+        width: 6px;
+        height: 100%;
+        display: inline-block;
+      }
+    }
+    .on-caption {
+      text-align: center;
+      background-color: @switcher-bg;
+      color: @switcher-color;
+      margin-left: -10px;
+    }
+    .off-caption {
+      text-align: center;
+      background-color: @switcher-color;
+      color: @switcher-bg;
+      margin-left: 20px;
+      margin-right: -16px;
+    }
+  }
+
+  .onoffswitch-switch {
+    display: block;
+    width: 22px;
+    margin: -2px;
+    background: @switcher-color;
+    border: 2px solid @switcher-bg;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(~'100% - 18px'); // 14 - (width - double border)
+
+    .transition(right 0.3s ease-in 0s);
+  }
+}
+
+.first-last-switch {
+  .onoffswitch;
+  min-width: 68px;
+
+  .onoffswitch-inner {
+    .on-caption {
+      text-align: center;
+      background-color: @switcher-color;
+      color: @switcher-bg;
+      margin-left: -8px;
+    }
+    .off-caption {
+      text-align: center;
+      background-color: @switcher-color;
+      color: @switcher-bg;
+    }
+  }
+}
+
+td .onoffswitch {
+  .onoffswitch-inner {
+
+    .on-caption,
+    .off-caption {
+      &:before,
+      &:after {
+        content: "";
+        width: 16px;
+        height: 100%;
+        display: inline-block;
+      }
+    }
+  }
+}

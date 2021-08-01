@@ -1,0 +1,14 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: "Go on, make your first sale."
+    translations:
+      - code: en
+        label: "Time to check how it works for your customers. Open the storefront to place a test order."
+      - code: ru
+        label: "Пора проверить, как все работает для покупателя. Перейдите к витрине, чтобы оформить тестовый заказ."

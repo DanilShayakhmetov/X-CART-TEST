@@ -1,0 +1,169 @@
+{##
+ # Authorize.Net SIM configuration page
+ #}
+
+<style>
+  .settings-table td {
+    position: relative;
+  }
+
+  .settings-table td:nth-child(2) {
+    min-width: 250px;
+  }
+
+  .settings-table input + .tooltip-main {
+    position: absolute;
+    right: -30px;
+    top: 10px;
+  }
+
+  .settings-table input + .tooltip-main li {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  .settings-table .note {
+    font-size: 14px;
+    margin-bottom: 14px;
+    float: none;
+  }
+
+  .settings-table .note + .tooltip-main {
+    position: absolute;
+    right: -30px;
+    top: 2px;
+  }
+
+  .settings-table .webhook {
+    margin-bottom: 13px;
+  }
+
+  .settings-table .webhook .url {
+    font-size: 16px;
+    padding: 7px 18px 7px;
+    border-radius: 6px;
+    border: solid 1px #efefef;
+    background: #f8f8f8;
+    color: #8f8f8f;
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    float: none;
+  }
+
+  .settings-table .webhook .copy-link {
+    margin-left: 12px;
+  }
+
+  #webhook_url + .help-wrapper .popover-content {
+    min-width: 320px;
+  }
+
+</style>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td colspan="2">
+      <p class="note text-left">{{ t('Dont have an account? Sign Up Now', { link: 'https://go.evopayments.us/x-cart'})|raw }}</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+      <label for="webhook_url">{{ t('Relay Response URL') }}</label>
+    </td>
+    <td>
+      <input type="text" id="webhook_url" value="{{ this.paymentMethod.processor.getWebhookURL() }}" readonly="readonly" data-source/>
+
+      {% set tooltipText %}
+        <p>{{ t('Relay Response URL note') }}</p>
+        <p>{{ t('relay_response_help') }}</p>
+      {% endset %}
+      {{ widget('XLite\\View\\Button\\CopyLink', id="copy-button", attributes={'data-clipboard-target': '#webhook_url'}) }}
+      <div class="help-wrapper ">
+        {{ widget('XLite\\View\\Tooltip', id='relay_response_help', text=tooltipText, caption='', isImageTag='true', className='help-icon') }}
+      </div>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+      <label for="settings_login">{{ t('API Login ID') }}</label>
+    </td>
+    <td>
+      <input type="text" id="settings_login" name="settings[login]" value="{{ this.paymentMethod.getSetting('login') }}"
+             class="validate[required,maxSize[255]]"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+      <label for="settings_key">{{ t('Transaction key') }}</label>
+    </td>
+    <td>
+      <input type="text" id="settings_key" name="settings[key]" value="{{ this.paymentMethod.getSetting('key') }}"
+             class="setting-with-help validate[required,maxSize[255]]"/>
+      <div class="help-wrapper">
+        {{ widget('XLite\\View\\Tooltip', id='settings_key_help', text=t('authorize_key_help')|raw, caption='', isImageTag='true', className='help-icon') }}
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+      <label for="settings_signature">{{ t('Signature key') }}</label>
+    </td>
+    <td>
+      <input type="text" id="settings_signature" name="settings[signature]"
+             value="{{ this.paymentMethod.getSetting('signature') }}" class="setting-with-help validate[maxSize[255]]"/>
+      <div class="help-wrapper">
+        {{ widget('XLite\\View\\Tooltip', id='settings_signature_help', text=t('Required for SHA512 hash protection.')|raw, caption='', isImageTag='true', className='help-icon') }}
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+      <label for="settings_type">{{ t('Transaction type') }}</label>
+    </td>
+    <td>
+      <select id="settings_type" name="settings[type]">
+        <option value="sale" {% if this.paymentMethod.getSetting('type') == 'sale' %} selected="selected" {% endif %}>
+          Auth and Capture
+        </option>
+        <option value="auth" {% if this.paymentMethod.getSetting('type') == 'auth' %} selected="selected" {% endif %}>
+          Auth only
+        </option>
+      </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+      <label for="settings_test">{{ t('Test/Live mode') }}</label>
+    </td>
+    <td>
+      <select id="settings_test" name="settings[test]">
+        <option
+            value="1" {% if this.paymentMethod.getSetting('test') == '1' %} selected="selected" {% endif %}>{{ t('Test mode: Test') }}</option>
+        <option
+            value="0" {% if this.paymentMethod.getSetting('test') == '0' %} selected="selected" {% endif %}>{{ t('Test mode: Live') }}</option>
+      </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+      <label for="settings_prefix">{{ t('Invoice number prefix') }}</label>
+    </td>
+    <td>
+      <input type="text" id="settings_prefix" class="setting-with-help"
+             value="{{ this.paymentMethod.getSetting('prefix') }}" name="settings[prefix]"/>
+      <div class="help-wrapper">
+        {{ widget('XLite\\View\\Tooltip', id='settings_prefix_help', text=t('It\'s recommended to limit the length of invoice prefix to 9 characters'), caption='', isImageTag='true', className='help-icon') }}
+      </div>
+    </td>
+  </tr>
+
+</table>

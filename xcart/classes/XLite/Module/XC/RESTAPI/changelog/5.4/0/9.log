@@ -1,0 +1,5 @@
+Version 5.4.0.9
+
+Fixes (1)
+2021-01-04 - [Bug] REST API. The response to an order request via the complex scheme contained a hash of the customer's password. Removed password related information from the response. #XCB-54 #XC-RESTAPI
+

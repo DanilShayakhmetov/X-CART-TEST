@@ -1,0 +1,19 @@
+{##
+ # Resize progress section
+ #}
+<div class="event-task-progress-page bulk-edit-box bulk-edit-progress event-task-progress-page">
+
+  <div class="header clearfix">
+    <h2>{{ t('Bulk Edit processing in progress...') }}</h2>
+  </div>
+
+  <div class="content">
+    {% form 'XLite\\Module\\XC\\BulkEditing\\View\\Form\\Progress' %}
+    <div class="subcontent clearfix">
+      {{ widget('XLite\\View\\EventTaskProgress', event=this.getEventName(), message=this.getProgressMessage(), showCancel=false ) }}
+    </div>
+    {{ widget('XLite\\View\\StickyPanel\\EventProgress') }}
+    {% endform %}
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+Version 5.4.0.3
+
+Fixes (3)
+2019-10-31 - [Bug] Fixed the incorrect management of the availability of the button for opening the comparison table. #BUG-6884 https://bt.x-cart.com/view.php?id=50259 (Pavel Veselovsky) #ProductComparison
+2019-10-22 - [Bug] A product could not be added to the shopping cart from a comparison page if the option forcing the selection of attribute values before adding the product to cart was enabled. Fixed. #BUG-6927 (Nikita Erkhov) #ProductComparison
+2019-09-16 - [Bug] Hidden attributes are now excluded from the comparison table. #BUG-7660 (Nikita Erkhov) #ProductComparison
+

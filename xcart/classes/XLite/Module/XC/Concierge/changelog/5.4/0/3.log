@@ -1,0 +1,8 @@
+Version 5.4.0.3
+
+Improvements (2)
+2019-05-31 - [Change] Concierge addon improvement: Implemented addititonal events and properties. #BUG-7488 (Shevelov Alexander) #Concierge
+2019-05-31 - [Change] Concierge addon extended with Wootric service. #BUG-7500 (Shevelov Alexander) #Concierge
+
+Fixes (1)
+2019-05-28 - [Bug] The Concierge chat is now available only to the root administrator. #BUG-7414 (Shevelov Alexander) #Concierge

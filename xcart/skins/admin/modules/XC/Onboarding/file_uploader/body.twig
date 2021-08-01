@@ -1,0 +1,52 @@
+{##
+ # File upload template
+ #}
+
+<xlite-file-uploader inline-template {% if this.hasMultipleSelector() %}:multiple="true"{% endif %}
+                     help-message="{{ t(this.getHelp()) }}"
+                     uploading-target="{{ this.getUploadingTarget() }}"
+                     uploaded-message="{{ t(this.getUploadedMessage()) }}">
+  <div class="{{ this.getDivStyle() }}"
+       data-object-id="{{ this.getObjectId() }}"
+       data-max-width="{{ this.getMaxWidth() }}"
+       data-max-height="{{ this.getMaxHeight() }}"
+       data-name="{{ this.getName() }}"
+       v-data='{ "basePath": "{{ this.getVModel() }}",
+       "isRemovable": "{{ this.isRemovable() }}",
+       "isTemporary": "{{ this.isTemporary() }}",
+       "isImage": "{{ this.isImage() }}",
+       "hasFile": "{{ this.hasFile() }}",
+       "error": "{{ this.getMessage() ? '1' : '' }}",
+       "defaultErrorMessage": "{{ t(this.getErrorMessageDefault())|escape('js') }}",
+       "initialAlt":"{% if this.hasAlt() %}{{ this.getAlt() }}{% endif %}",
+       "realErrorMessage": "{{ t(this.getMessage())|escape('js') }}"}'>
+    {% if this.isRemovable() %}
+      <input type="checkbox" name="{{ this.getName() }}[delete]" v-model="delete" value="1"
+             class="input-delete"
+             v-if="isRemovable"
+             v-data='{ "delete": false }'/>
+    {% endif %}
+    {% if this.isMultiple() %}
+      <input type="hidden" name="{{ this.getName() }}[position]" v-model="position"
+             value="{{ this.getPosition() }}"
+             class="input-position"/>
+    {% endif %}
+    {% if this.isTemporary() %}
+      <input type="hidden" name="{{ this.getName() }}[temp_id]" v-model="temp_id"
+             value="{{ this.object.id }}"
+             v-if="isTemporary"
+             class="input-temp-id"/>
+    {% endif %}
+    <div class="error" v-if="errorMessage">
+      <i class="icon fa warning fa-exclamation-triangle"></i>
+      <div v-html="defaultErrorMessage"></div>
+    </div>
+    <a href="{{ this.getLink() }}" class="link" @click.prevent="uploadFromComputer">
+      <div class="preview" v-if="isDisplayPreview">
+        {{ this.getPreview()|raw }}
+      </div>
+      <div class="help" v-html="message"></div>
+    </a>
+    <input type="file" name="uploaded-file"{% if this.hasMultipleSelector() %} multiple="multiple"{% endif %} @change="doUploadFromFile" />
+  </div>
+</xlite-file-uploader>

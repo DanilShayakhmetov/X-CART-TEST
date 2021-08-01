@@ -1,0 +1,9 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel-extensions", weight="210")
+ #}
+
+<xlite-themetweaker-modal :show="isSaveConfirmVisible" namespace="saveConfirm">
+  <p slot="body" class="text-center">{{ t('Some edited templates were selected to be disabled. You can enable them on the Edited templates page in the Admin area.')|raw }}</p>
+</xlite-themetweaker-modal>

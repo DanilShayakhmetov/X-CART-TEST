@@ -1,0 +1,79 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attachment history list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.product-attachment-history {
+  max-width: 1000px;
+}
+
+.product-attachment-history .cell {
+  position: relative;
+  padding-left: 0;
+}
+
+.items-list.product-attachment-history table .lines td .cell .plain-value {
+  position: relative;
+  padding-left: 0;
+}
+
+.product-attachment-history .cell .additional-history-info {
+  display: block;
+  transition: all .35s;
+  opacity: 0;
+  pointer-events: none;
+
+  position: absolute;
+  background: #ffffff;
+  left: 0;
+  top: 30px;
+  z-index: 100;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.product-attachment-history .line:hover .cell .additional-history-info.allow-hover {
+  box-shadow: 0 0 12px 4px  rgba(0, 0, 0, .2);
+  opacity: 1;
+  transition: all .35s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow .75s;
+}
+
+.product-attachment-history .cell .additional-history-info:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid #ffffff;
+  border-right: 8px solid transparent;
+  position: absolute;
+  left: 12px;
+  top: -8px;
+}
+
+.product-attachment-history .cell .additional-history-info ul {
+  margin: 0;
+}
+
+.product-attachment-history .cell .additional-history-info ul li {
+}
+
+.product-attachment-history .cell .additional-history-info ul li div.info-element {
+  width: 600px;
+  max-width: 600px;
+}
+
+.product-attachment-history .cell .additional-history-info ul li .name {
+  font-weight: 600;
+}
+
+.product-attachment-history .cell .additional-history-info ul li .info {
+  white-space: normal;
+}
+
+.product-attachment-history .cell .additional-history-info ul li + li {
+  margin-top: 10px;
+}

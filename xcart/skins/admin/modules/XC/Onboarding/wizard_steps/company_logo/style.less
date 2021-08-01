@@ -1,0 +1,88 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-company_logo .buttons {
+  margin: 17px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.onboarding-wizard-step.step-company_logo {
+  .logo-upload-form {
+    margin-top: 40px;
+  }
+
+  .choose-image-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 320px;
+  }
+
+  .company-logo-value {
+    display: inline-block;
+  }
+
+  div.file-uploader {
+    .alt {
+      display: none;
+    }
+
+    a.link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .error {
+        max-width: 395px;
+        font-size: 14px;
+      }
+    }
+
+    .preview {
+      max-width: 398px;
+      max-height: 218px;
+    }
+
+    .help {
+      line-height: 25px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div.help ~ div.icon {
+      display: none;
+    }
+
+    i.icon {
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    i.icon.warning {
+      font-size: 25px;
+    }
+
+    .dropdown-menu {
+      left: 326px;
+      bottom: -65px;
+      top: inherit;
+    }
+  }
+
+  div.file-uploader,
+  div.file-uploader .preview,
+  div.file-uploader a.link {
+    width: 400px;
+    height: 220px;
+  }
+}

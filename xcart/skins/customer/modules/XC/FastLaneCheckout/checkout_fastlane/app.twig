@@ -1,0 +1,8 @@
+{##
+ # Fastlane checkout app container
+ #}
+
+<div class="checkout_fastlane_container reloading reloading-animated immediate">
+  <div id="checkout_session_id" class="hidden" v-data='{"uid": "{{ this.getCheckoutUID() }}"}'>{{ this.getCheckoutUID() }}</div>
+  {{ widget_list('checkout_fastlane') }}
+</div>

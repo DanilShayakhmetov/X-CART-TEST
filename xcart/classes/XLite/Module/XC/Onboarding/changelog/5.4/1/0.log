@@ -1,0 +1,14 @@
+Version 5.4.1.0
+
+Improvements (6)
+2020-03-17 - [Change] Minor improvements for the Onboarding Wizard. #XCN-10656 #Core #AmazonPay #Onboarding
+2020-02-26 - [Change] Changed the layout and arrangement of notifications (low stock / new messages / etc) on the dashboard in the Admin area. #XCN-10420 #Core #Paypal #ProductVariants #ProductReviews #CrispWhiteSkin #MultiVendor #FreeShipping #VendorMessages #TrustedVendors #ShopperApproved #Onboarding
+2020-02-25 - [Change] Added the ability to control the Alt attribute in the logo upload widget in the Admin area and in Layout editor. #XCN-9839 #Core #SimpleCMS #ThemeTweaker #Onboarding #AMP
+2020-02-12 - [Change] Changed the text of some text labels; replaced the name "Markeplace" with "App store". #BUG-7676 #Core #MigrationWizard #Onboarding
+2020-01-30 - [Change] Improvements for the Onboarding Wizard steps. #XCN-10415 #Core #Onboarding
+2020-01-24 - [Change] Improvements for the step of configuring payment methods in the Onboarding Wizard. #XCN-10453 #Core #Paypal #Onboarding #Yandex Checkout
+
+Fixes (2)
+2020-01-28 - [Bug] Minor layout fixes for the Onboarding Wizard. #BUG-8264 #Onboarding
+2019-12-12 - [Bug] Code optimization for the Onboarding Wizard so it can be opened faster for the store administrator. #BUG-7362 #Core #Onboarding
+

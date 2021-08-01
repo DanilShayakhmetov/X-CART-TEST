@@ -1,0 +1,48 @@
+{##
+ # Template
+ #}
+<script type="text/javascript">
+//<![CDATA[
+amazonConfig.orderShippable = {% if this.isOrderShippable() %}true{% else %}false{% endif %};
+amazonConfig.orderReference = '{{ this.getOrderReference() }}';
+amazonConfig.SCAFlow = {% if this.isSCAFlowNeed() %}true{% else %}false{% endif %};
+//]]>
+</script>
+
+<div class="amazon-checkout-wrapper{% if this.getOrderReference() %} amazon-retry{% endif %}">
+  <div class="amazon-widgets">
+    <div id="addressBookWidgetDiv"></div>
+    <div id="walletWidgetDiv"></div>
+  </div>
+  <div class="xcart-widgets">
+
+    <div class="checkout-container">
+      <div class="checkout-block">
+        <div class="steps clearfix">
+
+          {% if this.isOrderShippable() %}
+            <h3>{{ t('Delivery methods') }}</h3>
+            <div class="step shipping-step">
+              <div class="substep step-shipping-methods">
+                {{ widget('XLite\\Module\\Amazon\\PayWithAmazon\\View\\Checkout\\AmazonShippingMethodsList') }}
+              </div>
+            </div>
+            <div class="step-payment-methods" style="display: none;"></div>
+
+            <br />
+            <br />
+          {% endif %}
+
+          <h3>{{ t('Order review') }}</h3>
+          <div class="step review-step">
+            <div class="step-box clearfix">
+              {{ widget_list('checkout.review.selected') }}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

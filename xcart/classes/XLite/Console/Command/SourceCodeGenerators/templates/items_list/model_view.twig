@@ -1,0 +1,73 @@
+{##
+ # Items List View
+ #}
+{% extends "base/php-class.twig" %}
+
+{% block method___construct_body %}
+        $this->sortByModes += array(
+{% for option in method.sortOptions %}
+            '{{ option.code }}' => '{{ option.name }}',
+{% endfor %}
+        );
+
+        parent::__construct($params);
+{% endblock %}
+
+{% block method_defineColumns_body %}
+        return [
+  {% for column in columns %}
+            '{{ column.code }}' => [
+                static::COLUMN_NAME  => static::t('{{ column.name }}'),
+{% if column.viewClass %}
+                static::COLUMN_CLASS => '{{ column.viewClass }}',
+{% endif %}
+{% if column.link %}
+                static::COLUMN_LINK  => '{{ column.link }}',
+{% endif %}
+{% if column.sort %}
+                static::COLUMN_SORT  => '{{ column.sort }}',
+{% endif %}
+            ],
+  {% endfor %}
+        ];
+{% endblock %}
+
+{% block method_getSearchCaseProcessor_body %}
+        return new \XLite\View\ItemsList\SearchCaseProcessor(
+            static::getSearchParams(),
+            static::getSearchValuesStorage()
+        );
+{% endblock %}
+
+{% block method_getSearchParams_body %}
+        return array_merge(
+            parent::getSearchParams(),
+            [
+{% for searchField in method.searchFields %}
+                '{{ searchField.searchName }}'    => [
+                    'condition'         => new \XLite\Model\SearchCondition\Expression\TypeLike('{{ searchField.name }}'),
+                    'widget'            => [
+                        \XLite\View\SearchPanel\ASearchPanel::CONDITION_CLASS   => 'XLite\View\FormField\Input\Text',
+                        \XLite\View\FormField\Input\Text::PARAM_PLACEHOLDER     => static::t('{{ searchField.humanName }}'),
+                    ],
+                ],
+{% endfor %}
+            ]
+        );
+{% endblock %}
+
+{% block method_getAllowedTargets_body %}
+        $result   = parent::getAllowedTargets();
+        $result[] = '{{ method.target }}';
+
+        return $result;
+{% endblock %}
+
+{% block class_comment %}
+/**
+ * {{ class.name }}
+ *
+ * @ListChild (list="admin.center", zone="admin")
+ */
+{% endblock %}
+

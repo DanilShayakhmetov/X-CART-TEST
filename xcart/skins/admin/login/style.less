@@ -1,0 +1,76 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Authentication page
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) "../css/initialize";
+
+.login-box-wrapper {
+  min-height: ~"calc(100vh - 130px - 87px)";
+  .vertical-middle-box();
+
+  .login-box {
+    padding-top: 10px;
+
+    table {
+      width: 281px;
+      margin: auto;
+      margin-top: 9px;
+      margin-bottom: 28px;
+
+      tr td {
+        padding: 8px 0;
+        text-align: center;
+        font-weight: normal;
+      }
+
+      tbody.timer tr td {
+        text-align: center;
+        border-radius: 10px;
+        background: #fcf6b6;
+        padding: 24px;
+      }
+
+      tbody.timer tr td span,
+      tbody.timer tr td {
+        font-size: 30px;
+      }
+    }
+
+    input {
+      width: 281px;
+      height: 41px;
+      padding: 2px 13px 0px 13px;
+      vertical-align: middle;
+    }
+
+    &.locked button.submit,
+    &.locked tbody.fields,
+    h2.timer-header,
+    tbody.timer,
+    &.locked h2 {
+      display: none;
+    }
+
+    &.locked h2.timer-header {
+      display: block;
+    }
+
+    &.locked tbody.timer {
+      display: table-row-group;
+    }
+
+    .forgot-password {
+      margin-top: 15px;
+    }
+  }
+
+  .additional-note {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}

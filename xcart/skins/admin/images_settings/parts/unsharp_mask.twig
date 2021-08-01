@@ -1,0 +1,9 @@
+{##
+ # Unsharp mask filter on resize
+ #
+ # @ListChild (list="images_settings", weight="35")
+ #}
+
+{% if this.isShowUnsharpOption() %}
+  <li>{{ widget('\\XLite\\View\\FormField\\Input\\Checkbox\\OnOff', fieldName='unsharp_mask_filter_on_resize', value=this.getUnsharpMaskFilterOnResizeValue(), label='Apply unsharp mask filter on resize') }}</li>
+{% endif %}

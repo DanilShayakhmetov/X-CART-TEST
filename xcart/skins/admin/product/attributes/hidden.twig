@@ -1,0 +1,12 @@
+{##
+ # "Hidden Attributes" tab
+ #}
+
+{% spaceless %}
+  {% form 'XLite\\View\\Form\\Product\\Modify\\Attributes' with {className: 'attrs'} %}
+    <div class="dialog-block hidden-attributes">
+      {{ widget('XLite\\View\\Product\\Details\\Admin\\Attributes', hiddenOnly='true') }}
+    </div>
+    {{ widget('\\XLite\\View\\StickyPanel\\Product\\Attributes') }}
+  {% endform %}
+{% endspaceless %}

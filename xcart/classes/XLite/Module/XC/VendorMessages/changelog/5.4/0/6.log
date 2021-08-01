@@ -1,0 +1,7 @@
+Version 5.4.0.6
+
+Fixes (3)
+2019-11-20 - [Bug] Incorrect date format on the Messages page in the Customer area. Fixed. #BUG-7789 (Jamil Ainulov) #VendorMessages
+2019-09-23 - [Bug] Changed the addressee of the email notification about a new order message. Now the notification is addressed to the sales department or the vendor. #BUG-6690 https://bt.x-cart.com/view.php?id=49937 (Shevelov Alexander) #VendorMessages
+2019-09-17 - [Bug] With Labels editor enabled, HTML code was shown on some elements. Fixed. #BUG-6619 https://bt.x-cart.com/view.php?id=49812 (Maxim Kuznetsov) #Core #Coupons #ThemeTweaker #CanadaPost #ProductReviews #FastLaneCheckout #NewsletterSubscriptions #VendorMessages #AMP #AuthorizenetAcceptjs
+

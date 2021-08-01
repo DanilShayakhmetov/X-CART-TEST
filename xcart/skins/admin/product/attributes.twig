@@ -1,0 +1,10 @@
+{##
+ # "Attributes" tab
+ #}
+
+{% if this.isApplyingAttrValuesNotFinished() %}
+    <h2>{{ this.t('Applying changes to global attributes') }}</h2>
+    {{ widget('\\XLite\\View\\ApplyAttributeValues\\Progress') }}
+{% else %}
+    {{ widget('XLite\\View\\Tabs\\Attributes', product=this.getProduct()) }}
+{% endif %}

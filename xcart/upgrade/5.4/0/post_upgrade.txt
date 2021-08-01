@@ -1,0 +1,1 @@
+Please note, custom email notifications were developed for a specific X-Cart version and may not work correctly after updating. You can find the backup copies of the corresponding file on your server here: 'var/notifications_backup_pre_540.csv'. Please, contact the custom notifications developer for assistance with the adaptation.

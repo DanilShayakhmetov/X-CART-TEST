@@ -1,0 +1,88 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Add shipping styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import "../../css/initialize";
+
+ul.online-carriers {
+  width: 681px;
+  .flex-display();
+  .flex-wrap(wrap);
+}
+
+ul.online-carriers li {
+  width: 33%;
+  text-align: center;
+}
+
+ul.online-carriers li a {
+  width: 190px;
+  border: 1px solid transparent;
+  border-radius: @border-radius-base;
+  display: inline-block;
+  padding: 20px;
+}
+
+ul.online-carriers li a:hover {
+  border-color: #ccc;
+}
+
+ul.online-carriers li a .image,
+ul.online-carriers li a .image img {
+  width: 148px;
+  height: 73px;
+}
+
+.form-field-link.shippingzone-link {
+  margin-left: 15px;
+  vertical-align: baseline;
+}
+
+.offline-help,
+.online-help {
+  width: 695px;
+}
+
+.offline-help .help-header,
+.online-help .help-header {
+  margin-bottom: 15px;
+}
+
+.offline-help .help-header ul,
+.online-help .help-header ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.offline-help .help-content {
+  display: none;
+  margin-bottom: 15px;
+}
+
+.offline-help .help-link {
+  display: inline-block;
+  cursor: pointer;
+  color: @color-link;
+  border-bottom: 1px dotted @color-link;
+}
+
+.offline-help .help-link:hover {
+  color: #0f9dcc;
+  border-color: #0f9dcc;
+}
+
+.add-shipping .sticky-panel,
+.edit-shipping .sticky-panel {
+  margin-top: 0;
+}
+
+.add-shipping .sticky-panel .box,
+.edit-shipping .sticky-panel .box {
+  border-top: none;
+  padding-left: 0;
+}

@@ -1,0 +1,5 @@
+Version 5.4.1.11
+
+Fixes (1)
+2021-01-04 - [Bug] When test sending an email notification to the admin, the message was formed not in the current language but following the template for EN. Fixed. #XCB-46 #XC-ThemeTweaker
+

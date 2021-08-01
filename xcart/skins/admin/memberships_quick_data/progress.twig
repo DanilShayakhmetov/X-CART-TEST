@@ -1,0 +1,15 @@
+{##
+ # Calculate quick data progress section
+ #}
+<div class="memberships-quick-data-box memberships-quick-data-progress event-task-progress-page">
+
+  <div class="content">
+    {% form 'XLite\\View\\Form\\MembershipsQuickData' with {formAction: 'calculationCancel'} %}
+    <div class="subcontent clearfix">
+      {{ widget('XLite\\View\\EventTaskProgress', event=this.getEventName(), message=this.getProgressMessage(), showCancel=false ) }}
+    </div>
+    {{ widget('XLite\\View\\StickyPanel\\EventProgress') }}
+    {% endform %}
+  </div>
+
+</div>

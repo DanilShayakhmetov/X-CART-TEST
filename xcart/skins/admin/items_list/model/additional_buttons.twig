@@ -1,0 +1,15 @@
+{##
+ # Additional buttons list
+ #}
+
+<div class="additional-buttons">
+  {% if this.isDisplayORLabel() %}
+    <div class="or">{{ t('or') }}</div>
+  {% endif %}
+
+  <div class="btn-group">
+    {% for buttonName, button in this.getAdditionalButtons() %}
+      {{ button.display() }}
+    {% endfor %}
+  </div>
+</div>

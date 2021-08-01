@@ -1,0 +1,14 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: paypalLoginOptions
+    category: CDev\Paypal
+    translations:
+      - code: en
+        option_name: Connect with PayPal
+        option_comment: '<p>To enable Connect with PayPal, you need to create a PayPal application for your website. The recommended procedure is to go to the My Apps page and create an app for testing, then to go live with this app. For detailed instructions on creating the app, see PayPal documentation at <a href="https://developer.paypal.com/docs/integration/admin/manage-apps/">https://developer.paypal.com/docs/integration/admin/manage-apps/</a>. Be sure to specify your "App return URL" as the value of "Redirect URL" field below.</p><p>Once the app has been created, be sure to copy your Client Id and Client Secret from the app details and credentials and have them stored in the fields below.</p>'

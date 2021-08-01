@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2020-03-02 - [Bug] The help tooltip icons on the Authorize.Net SIM settings page were displayed incorrectly. Fixed. #BUG-8211 #Core #AuthorizeNet
+

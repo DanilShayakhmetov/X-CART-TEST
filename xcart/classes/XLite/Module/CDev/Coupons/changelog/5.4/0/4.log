@@ -1,0 +1,8 @@
+Version 5.4.0.4
+
+Fixes (4)
+2019-11-25 - [Bug] Fatal error when creating a coupon if too large a number was used in the fields Subtotal range or Fate range. Fixed. #BUG-6984 (Pavel Veselovsky) #Coupons
+2019-11-18 - [Bug] Fixed the usage of the message "The coupon has been applied to your order" for orders containing products of multiple vendors in the Separate shops multivendor mode. (The message was shown without the coupon discount actually having been applied.) For the Warehouse mode, fixed the recalculation of the order totals after applying a coupon to such an order. #BUG-8057 https://bt.x-cart.com/view.php?id=51156 (Fedya Lavrentyev) #Coupons #MultiVendor
+2019-11-05 - [Bug] The FREE SHIPPING label was not shown on the cart page on a product that had the Free shipping option enabled in its settings. Fixed. #BUG-7089 https://bt.x-cart.com/view.php?id=50468 (Pavel Veselovsky) #Coupons
+2019-09-17 - [Bug] With Labels editor enabled, HTML code was shown on some elements. Fixed. #BUG-6619 https://bt.x-cart.com/view.php?id=49812 (Maxim Kuznetsov) #Core #Coupons #ThemeTweaker #CanadaPost #ProductReviews #FastLaneCheckout #NewsletterSubscriptions #VendorMessages #AMP #AuthorizenetAcceptjs
+

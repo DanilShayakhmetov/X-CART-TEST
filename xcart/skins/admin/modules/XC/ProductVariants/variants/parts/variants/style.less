@@ -1,0 +1,105 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attributes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+div.variants .items-list-table table.list td.main {
+  min-width: 0;
+}
+
+div.variants .items-list-table table.list .cell.amount.attention input{
+  color: #a94461;
+}
+
+div.variants .items-list-table table.list .cell.amount input:target{
+  border-color: #ffc5c6;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-id {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: @color-tip;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+  position: relative;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-attribute-help-line .variant-attribute-name {
+  color: @color-tip;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-attribute-help-line .variant-attribute-value {
+  font-weight: 600;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .subfield .table-value {
+  display: block;
+  margin-bottom: @rhythmic-unit;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .subfield .table-value:last-child {
+  margin-bottom: 0;
+}
+
+div.variants .items-list-table table.list .cell.price input,
+div.variants .items-list-table table.list .cell.amount input,
+div.variants .items-list-table table.list .cell.weight input {
+  min-width: 80px;
+  width: 80px;
+  text-align: right;
+}
+
+div.variants .items-list-table table.list .create .cell {
+  vertical-align: top;
+}
+
+div.variants .items-list-table table.list .create .cell.image span.attribute-name {
+  display: block;
+  height: @input-height-base;
+  padding: @padding-base-vertical 0;
+  margin-bottom: @rhythmic-unit;
+}
+
+div.variants .items-list-table table.list .create .cell.image span.attribute-name:last-child {
+  margin-bottom: 0;
+}
+
+div.variants .items-list-table table.list .cell input::placeholder {
+  font-style: normal;
+}
+
+.variant-attribute-values {
+  text-align: left;
+  position: relative;
+}
+
+.variant-attribute-values .variant-attribute-value {
+  margin-right: 3px;
+}
+.tooltip-main.attribute-value-tooltip {
+  width: auto;
+}
+
+div.variants .items-list-table table.list tbody td.main.attributeValue div .tooltip-main {
+  margin-left: 0;
+}
+
+div.variants .items-list-table table.list {
+  thead th {
+    &.sale {
+      text-align: right;
+    }
+  }
+
+  tbody td {
+    &.sale {
+      text-align: right;
+    }
+  }
+}

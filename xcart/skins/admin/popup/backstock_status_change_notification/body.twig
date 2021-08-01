@@ -1,0 +1,13 @@
+{##
+ # BackstockStatusChangeNotification
+ #}
+
+<div class="backstock-status-change-notification">
+  {{ widget_list('backstock_status_change_notification.before') }}
+
+  <div class="message">
+    {{ t('The Backorder status will be reset for the items. The stock quantity of the backorder items will not change. Adjust it manually if necessary.')|raw }}
+  </div>
+
+  {{ widget_list('backstock_status_change_notification.after') }}
+</div>

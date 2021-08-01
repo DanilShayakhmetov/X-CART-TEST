@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-12-05 - [Bug] Fixed some layout issues related to the "Market price" box on the Bulk Editing -> Price and memberships page. #BUG-7266 (Damir Khamidullin) #MarketPrice
+

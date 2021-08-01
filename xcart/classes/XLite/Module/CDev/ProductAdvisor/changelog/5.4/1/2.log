@@ -1,0 +1,5 @@
+Version 5.4.1.2
+
+Fixes (1)
+2020-10-15 - [Bug] Product Advisor. Incorrect help tip message was used for the setting "Maximum number of products to display in "New arrivals" block". Fixed. #BUG-8954 https://bt.x-cart.com/view.php?id=52062 #ProductAdvisor
+

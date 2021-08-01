@@ -1,0 +1,162 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * CSS classes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.define-rhythmic-unit-if-not-defined() {@rhythmic-unit: 20px}
+.define-rhythmic-unit-if-not-defined();
+.define-color-text-dark-if-not-defined() {@color-text-dark: #4a4a4a}
+.define-color-text-dark-if-not-defined();
+.define-color-text-light-if-not-defined() {@color-text-light: #808080}
+.define-color-text-light-if-not-defined();
+
+.contact-us-block {
+  margin-top: @rhythmic-unit * 1.5;
+
+  color: @color-text-dark;
+
+  .form-wrapper {
+    .make-xs-column(12; 0);
+    .make-sm-column(5; 0);
+
+    padding-right: @rhythmic-unit;
+  }
+  .company-info {
+    .make-xs-column(12; 0);
+    .make-sm-column(7; 0);
+
+    @media (min-width: @screen-sm-min) {
+      padding-left: 4 * @rhythmic-unit;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      margin-top: @rhythmic-unit;
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .form-wrapper {
+      order: 2;
+    }
+
+    .company-info {
+      order: 1;
+      margin-bottom: @rhythmic-unit;
+    }
+  }
+}
+
+
+
+@media (max-width: @screen-xs-max) {
+  .target-contact-us .block-vendors {
+    margin-top: @rhythmic-unit;
+  }
+}
+
+// Form wrapper styles
+.form-wrapper {
+
+  .contact-us-form {
+    margin-top: @rhythmic-unit;
+    display: block;
+
+    .default-section {
+      width: 100%;
+    }
+
+    .input-field-wrapper {
+      width: 100%;
+    }
+    .textarea-simple {
+      width: 100%;
+    }
+    div.table-value.message-value {
+      width: 100%;
+    }
+    div.star {
+      min-width: 10px;
+    }
+
+    ul.default-table {
+      min-width: auto;
+
+      li.input-text-email,
+      li.input-text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        width: 100%;
+        .table-value {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .model-form-buttons {
+    width: 100%;
+    margin: 0;
+    padding-bottom: @rhythmic-unit;
+  }
+}
+
+// Company info styles
+.contact-us-company-info {
+
+  .location {
+    margin-bottom: @rhythmic-unit;
+  }
+
+  .location-address,
+  .location-country {
+    display: block;
+  }
+
+  .phone-email-block {
+    line-height: @rhythmic-unit + 5px;
+  }
+
+  .email a {
+    color: #4a90e2
+  }
+
+  .address-subheader {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: @rhythmic-unit;
+  }
+
+  &.separated {
+    .address-subheader.location {
+      display: none;
+    }
+    .address-subheader.phone-email,
+    .address-subheader.address {
+      display: block;
+    }
+  }
+
+  &.location {
+    .address-subheader.location {
+      display: block;
+    }
+    .address-subheader.phone-email,
+    .address-subheader.address {
+      display: none;
+    }
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

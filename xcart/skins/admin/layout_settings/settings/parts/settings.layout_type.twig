@@ -1,0 +1,8 @@
+{##
+ # Layout settings template
+ #
+ # @ListChild (list="layout_settings.settings", weight="30")
+ #}
+<div class="layout-type-selector">
+  {{ widget('XLite\\View\\LayoutSettings\\LayoutTypeSelector', availableTypes=this.getLayoutTypes()) }}
+</div>

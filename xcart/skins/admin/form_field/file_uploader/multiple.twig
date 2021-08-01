@@ -1,0 +1,12 @@
+{##
+ # File upload template
+ #}
+
+<xlite-multiple-file-uploader inline-template>
+  <div {{ this.getAttributesCode()|raw }} class="file-uploader-wrapper multiple-files">
+    {% for object in this.getFiles() %}
+      {{ widget(this.getFileUploaderWidget(), object=object, maxWidth=this.getMaxWidth(), maxHeight=this.getMaxHeight(), isImage=this.isImage(), fieldName=this.getName(), multiple='true', isViaUrlAllowed=this.isViaUrlAllowed()) }}
+    {% endfor %}
+    {{ widget(this.getFileUploaderWidget(), maxWidth=this.getMaxWidth(), maxHeight=this.getMaxHeight(), isImage=this.isImage(), fieldName=this.getName(), multiple='true', isViaUrlAllowed=this.isViaUrlAllowed(), helpMessage=this.helpMessage) }}
+  </div>
+</xlite-multiple-file-uploader>

@@ -1,0 +1,18 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Removal notice popup
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.removal-notice-popup {
+  margin-top: 20px;
+}
+
+.removal-notice-popup p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-width: 800px;
+}

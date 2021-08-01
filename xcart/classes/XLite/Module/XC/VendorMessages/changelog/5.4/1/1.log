@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-05-05 - [Bug] The URL generated using the %order_link% variable in customer email notifications was incorrect. Fixed. #BUG-8587 https://bt.x-cart.com/view.php?id=51738 #VendorMessages
+

@@ -1,0 +1,6 @@
+Version 5.4.0.2
+
+Fixes (2)
+2019-04-02 - [Bug] Layout adjustment for the currencies page. #BUG-7215 (Fedya Lavrentyev) #Core #MultiCurrency
+2019-03-22 - [Bug] The same country could be set in the settings of different currencies. Multicurrency mode. Fixed. #BUG-7199 (Maxim Kuznetsov) #MultiCurrency
+

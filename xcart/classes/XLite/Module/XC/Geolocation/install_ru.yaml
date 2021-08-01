@@ -1,0 +1,15 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Russian fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'My location', translations: [{ code: ru, label: 'Страна' }] }
+  - { name: 'Choose your location', translations: [{ code: ru, label: 'Укажите ваш адрес' }] }
+  - { name: 'Save location', translations: [{ code: ru, label: 'Сохранить адрес' }] }
+  - { name: 'Location was successfully set', translations: [{ code: ru, label: 'Адрес был сохранен' }] }
+  - { name: 'Return to default database', translations: [{ code: ru, label: 'Вернуться к базе данных по умолчанию' }] }
+  - { name: 'Geolocation header promo', translations: [{ code: ru, label: 'X-Cart использует бесплатную базу данных "GeoLite2 Country" от <a href="https://www.maxmind.com/en/geoip2-databases?%refID=xcart" target="_blank">MaxMind</a>. Вы можете загрузить более точную базу данных для определения страны, территориального подразделения, города и почтового кода. <a href="https://www.maxmind.com/en/geoip2-databases?%refID=xcart" target="_blank">Подробнее</a>' }] }
+  - { name: "Your store uses the addon Geolocation", translations: [{ code: ru, label: "Ваш магазин использует модуль Geolocation для определения местоположения покупателя. Нижеследующие данные будут перезаписаны с использованием адреса, предоставленного модулем Geolocation. При необходимости более высокой точности определения местоположения пользователя вы можете загрузить расширенную базу данных через <a href='{{geoip-settings-link}}'>страницу настроек модуля Geolocation</a> - так, чтобы ваш магазин мог осуществлять оценку местоположения пользователя до уровня страны, области, города и индекса." }] }

@@ -1,0 +1,6 @@
+Version 5.4.0.2
+
+Fixes (2)
+2019-03-28 - [Bug] Search was performed incorrectly in a non-root category within the Add Featured products popup. #BUG-7214 (Fedya Lavrentyev) #Core #FeaturedProducts
+2018-09-03 - [Bug] Removed the permission to edit the content of the home page for the role of Catalog manager. #BUG-6601 (Sergey Elmanov) #Core #FeaturedProducts
+

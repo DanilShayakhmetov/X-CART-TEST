@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="marketplace" stroke="#708692" stroke-width="1.4">
+            <path d="M4.5,11 L4.5,19 L1,19 L1,5 L2.74132166,5 L2.74132166,5 C4.66280567,5 6.4680546,5.9202793 7.59684693,7.47524832 L10,10.7857143 L12.4031531,7.47524832 L12.4031531,7.47524832 C13.5319454,5.9202793 15.3371943,5 17.2586783,5 L19,5 L19,19 L15.5,19 L15.5,11" id="Line-19"></path>
+            <path d="M8,19 L12,19" id="Line-29"></path>
+            <path d="M4.5,7.99997837 L4.5,6.5 L4.5,6.5 C4.5,3.46243388 6.96243388,1 10,1 L10,1 L10,1 C13.0375661,1 15.5,3.46243388 15.5,6.5 L15.5,8" id="Line-12"></path>
+        </g>
+    </g>
+</svg>

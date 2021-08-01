@@ -1,0 +1,15 @@
+{##
+ # Shipment id column
+ #}
+{{ this.entity.getShipmentId() }}
+<div class="print-date">
+  {{ this.formatTime(this.entity.getPrintDate()) }}
+</div>
+<div class="package-details">
+  {{ this.entity.getShippingMethodName() }}, {{ this.entity.getParcelType() }}<br/>
+  {{ this.formatWeight(this.entity.getWeight(this.getWeightUnits())) }};
+  {{ this.entity.getLength(this.getDimensionUnits()) }} &#215;
+  {{ this.entity.getWidth(this.getDimensionUnits()) }} &#215;
+  {{ this.entity.getHeight(this.getDimensionUnits()) }} {{ this.getDimensionSymbol() }}
+  {% if this.entity.getGirth() %}({{ t('Girth') }}: {{ this.entity.getGirth() }}){% endif %}
+</div>

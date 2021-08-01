@@ -1,0 +1,7 @@
+Version 5.4.0.4
+
+Fixes (4)
+2019-06-14 - [Bug] Incorrect shipment weight calculation for USPS via PITNET BOWES. Fixed. #BUG-7197 https://bt.x-cart.com/view.php?id=50573 (Shevelov Alexander) #USPS
+2019-04-22 - [Bug] Issues with disabling carrier services for USPS via PITNEY BOWES. Fixed. #BUG-7258 https://bt.x-cart.com/view.php?id=50597 (Shevelov Alexander) #USPS
+2019-03-22 - [Bug] Renamed Macedonia to North Macedonia. #BUG-7178 (Maxim Kuznetsov) #Core #USPS #DHL #Onboarding #FirstDataPayeezyGatewayHP
+2018-12-04 - [Bug] Incorrect tracking links issue. Fixed. #BUG-6838 (Fedya Lavrentyev) #Core #AustraliaPost #USPS #FedEx #UPS

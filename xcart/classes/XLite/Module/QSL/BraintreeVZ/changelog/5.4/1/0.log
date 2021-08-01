@@ -1,0 +1,4 @@
+Version 5.4.1.0
+
+- Added support for Apple Pay, Google Pay
+- A fatal error occurred while placing an order in some cases. Fixed

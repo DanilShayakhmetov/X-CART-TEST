@@ -1,0 +1,9 @@
+Version 5.4.1.3
+
+Improvements (2)
+2020-06-08 - [Change] The names of the menu items in the main admin menu in the sidebar and the titles of the pages to which they provide links now follow the same style guidelines. #XCN-10981 #Core #SocialLogin #ProductReviews #NewsletterSubscriptions #ProductTags #News #Facebook Commerce #GoogleFeed #Onboarding #ShopByBrand
+2020-05-26 - [Change] Redesigned the settings page for the addon Social Login. #XCN-10862 #SocialLogin
+
+Fixes (1)
+2020-05-06 - [Bug] Social login. Changed the wording and the type of the message (from error to warning) for the message shown when a customer is attempting to log in using the same email but a different method (Facebook instead of Google). #BUG-8579 https://bt.x-cart.com/view.php?id=51659 #Core #Paypal #SocialLogin #AmazonPay
+

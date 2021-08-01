@@ -1,0 +1,98 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: enable_form
+    category: 'CDev\ContactUs'
+    type: 'XLite\View\FormField\Input\Checkbox\YesNo'
+    orderby: 100
+    value: true
+    translations:
+      - code: en
+        option_name: 'Enable form'
+  - name: email
+    category: 'CDev\ContactUs'
+    type: 'XLite\View\FormField\Input\Text\Email'
+    orderby: 200
+    translations:
+      - code: en
+        option_name: 'E-mail address of the message recipient'
+        option_comment: 'If the field is blank, then administration email is used'
+  - name: showEmail
+    category: 'CDev\ContactUs'
+    type: 'XLite\View\FormField\Input\Checkbox\YesNo'
+    value: 1
+    orderby: 300
+    translations:
+      - code: en
+        option_name: 'Show email as text'
+  - name: contact_us_sep_1
+    category: 'CDev\ContactUs'
+    type: separator
+    orderby: 1000
+    translations:
+      - code: en
+        option_name: 'reCAPTCHA'
+  - name: recaptcha_version
+    category: 'CDev\ContactUs'
+    type: \XLite\Module\CDev\ContactUs\View\FormField\VersionSwitch
+    orderby: 1050
+    value: '2'
+    translations:
+      - code: en
+        option_name: 'Version'
+  - name: recaptcha_public_key
+    category: 'CDev\ContactUs'
+    type: text
+    orderby: 1100
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Site key'
+        option_comment: 'To use reCAPTCHA you should get Site and Secret keys from <a href="https://www.google.com/recaptcha/admin/create">https://www.google.com/recaptcha/admin/create</a>'
+  - name: recaptcha_private_key
+    category: 'CDev\ContactUs'
+    type: text
+    orderby: 1200
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Secret key'
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/CDev/ContactUs/message
+    position: 500
+    availableForAdmin: false
+    availableForCustomer: false
+    enabledForAdmin: true
+    enabledForCustomer: false
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Contact us form submitted (Contact us module)'
+        description: 'This notification is sent to the administrator when someone submits a request via the "Contact us" form.'
+        adminSubject: 'New message: %message_subject%'
+        adminText: '<p dir="ltr">%message_author% has sent you a message through the “Contact us” form and is waiting for your reply. Bust out the killer customer care and get in touch with him or her in a timely manner.</p><blockquote><p dir="ltr">%message%</p></blockquote>'
+
+XLite\Model\LanguageLabel:
+  - { name: "This field is required.", translations: [{ code: en, label: "This field is required." }] }
+  - { name: "Please enter the correct captcha", translations: [{ code: en, label: "Sorry, we can't verify you are not a robot" }] }
+  - { name: "Message has been sent", translations: [{ code: en, label: "The message has been sent" }] }
+  - { name: "Your Message", translations: [{ code: en, label: "Your Message" }] }
+  - { name: 'Email Address', translations: [{ code: en, label: 'Email Address' }]}
+  - { name: 'Full Name', translations: [{ code: en, label: 'Full Name' }]}
+  - { name: 'We are always glad to help you.', translations: [{ code: en, label: 'We are always glad to help you.' }]}
+  - { name: 'Send a message', translations: [{ code: en, label: 'Send a message' }]}
+
+  - { name: 'Our location', translations: [{ code: en, label: 'Our location' }]}
+  - { name: 'recaptcha_terms_of_service', translations: [{ code: en, label: 'This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.' }]}

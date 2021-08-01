@@ -1,0 +1,24 @@
+{##
+ # Common selector
+ #}
+
+<div class="input-field-wrapper {{ this.getWrapperClass() }}" v-data='{"options": {{ this.getOptions() | json_encode }} }'>
+  <div class="v-dropdown">
+    <a @click="toggleMenu($event)" class="v-dropdown-toggle">
+      <span class="selected-type" v-html="getLayoutTypeOptionMarkup(selected)"></span>
+      <span class="caret"></span>
+    </a>
+
+    <ul class="v-dropdown-menu" :class="{'hide' : !showMenu}">
+      <li v-for="(key, label) in options" v-if="key != selected">
+        <a class="option" @click="onSelect(key)" v-html="getLayoutTypeOptionMarkup(key)" :data-value="key"></a>
+      </li>
+    </ul>
+  </div>
+  <input type="hidden" v-model="selected" value="{{ this.getValue() }}">
+  <div class="option-image-container hidden">
+    {% for key, value in this.getOptions() %}
+      <div class="option-image {{ key }}" data-value="{{ key }}">{{ this.getImage(key)|raw }}<span class="option-name">{{ value }}</span></div>
+    {% endfor %}
+  </div>
+</div>

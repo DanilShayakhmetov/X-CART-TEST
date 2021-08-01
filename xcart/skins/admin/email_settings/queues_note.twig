@@ -1,0 +1,9 @@
+{##
+ # Banner promo block
+ #
+ # @ListChild (list="crud.settings.field", zone="admin", weight="100")
+ #}
+
+{% if this.field.name == 'smtp_section' and this.isQueuesNoteVisible() %}
+    <div class="alert alert-info">{{ t('To send email asynchronously and improve website performance we recommend to set up queues in on your server. [Learn how to do it].', {'url': 'https://kb.x-cart.com/en/general_setup/configuring_queues.html'})|raw }}</div>
+{% endif %}

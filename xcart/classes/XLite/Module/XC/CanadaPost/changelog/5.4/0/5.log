@@ -1,0 +1,7 @@
+Version 5.4.0.5
+
+Fixes (3)
+2019-11-26 - [Bug] Canada Post. If using the Separate box option on a product, the maximum weight setting in the shipping method configuration is now ignored, #BUG-6820 https://bt.x-cart.com/view.php?id=50123 (Fedya Lavrentyev) #Core #CanadaPost
+2019-10-02 - [Bug] Box dimensions were not converted to centimetres when using Canada Post. Fixed. #BUG-6808 z https://bt.x-cart.com/view.php?id=50112 (Fedya Lavrentyev) #CanadaPost
+2019-09-17 - [Bug] With Labels editor enabled, HTML code was shown on some elements. Fixed. #BUG-6619 https://bt.x-cart.com/view.php?id=49812 (Maxim Kuznetsov) #Core #Coupons #ThemeTweaker #CanadaPost #ProductReviews #FastLaneCheckout #NewsletterSubscriptions #VendorMessages #AMP #AuthorizenetAcceptjs
+

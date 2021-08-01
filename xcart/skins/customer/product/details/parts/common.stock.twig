@@ -1,0 +1,10 @@
+{##
+ # Product stock
+ #
+ # @ListChild (list="product.details.page.info.form.buttons.cart-buttons", weight="13")
+ # @ListChild (list="product.details.page.info.form.buttons-added.cart-buttons", weight="13")
+ # @ListChild (list="product.details.quicklook.info.form.buttons.cart-buttons", weight="13")
+ # @ListChild (list="product.details.quicklook.info.form.buttons-added.cart-buttons", weight="13")
+ #}
+
+{{ widget('\\XLite\\View\\Product\\Details\\Customer\\Stock', product=this.product) }}

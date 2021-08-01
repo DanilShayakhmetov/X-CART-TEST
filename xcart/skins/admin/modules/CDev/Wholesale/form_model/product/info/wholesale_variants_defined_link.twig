@@ -1,0 +1,12 @@
+{##
+ # Empty list
+ #}
+
+<span>
+  {{ t('X variants and wholesale prices are defined',
+      { 'variantsUrl': this.getVariantsPageUrl(),
+        'variants': this.getVariantsCount(),
+        'wholesaleUrl': this.getWholesalePricesUrl()
+      })|raw
+  }}
+</span>

@@ -1,0 +1,23 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * CSS classes for Saved credit cards page
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+table.xpayments-cards th.title-column,
+table.xpayments-cards td.title-column {
+  border-right: 0px;
+}
+
+table.xpayments-cards th.remove-column,
+table.xpayments-cards td.remove-column {
+  border-left: 0px;
+}
+
+table.saved-cards td.remove-column {
+  max-width: 150px;
+  color: #a9a9a9;
+}

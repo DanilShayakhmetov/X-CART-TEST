@@ -1,0 +1,12 @@
+{##
+ # Subscriptions list table template
+ #
+ # @author    Creative Development LLC <info@cdev.ru>
+ # @copyright Copyright (c) 2011-2016 Creative Development LLC <info@cdev.ru>. All rights reserved
+ # @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ # @link      http://www.litecommerce.com/
+ #}
+
+{% form 'XLite\\Module\\XPay\\XPaymentsCloud\\View\\Form\\ItemsList\\Subscription' %}
+  {{ widget('XLite\\Module\\XPay\\XPaymentsCloud\\View\\ItemsList\\Model\\ProfileSubscription') }}
+{% endform %}

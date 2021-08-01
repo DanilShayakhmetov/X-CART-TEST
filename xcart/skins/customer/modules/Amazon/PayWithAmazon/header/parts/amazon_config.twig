@@ -1,0 +1,34 @@
+{##
+ # Template
+ #
+ # @ListChild (list="head", weight="1310")
+ #}
+{% if this.isAmazonConfigured() %}
+  {% set amazonConfig = this.getAmazonConfig() %}
+  <script>
+    var amazonConfig = {
+      sid: '{{ amazonConfig.merchant_id }}',
+      mode: '{{ amazonConfig.mode }}',
+      clientId: '{{ amazonConfig.client_id }}'
+    };
+
+    window.onAmazonLoginReady = function() {
+      amazon.Login.setSandboxMode({{ this.isSandboxMode() }});
+      amazon.Login.setClientId(amazonConfig.clientId);
+      amazon.Login.setRegion('{{ amazonConfig.region }}');
+      amazon.Login.setUseCookie(true);
+
+      {% if not this.isLogged() or (this.getTarget() == 'cart' and this.isAmazonReturn()) %}
+      if (xliteConfig.target !== 'amazon_checkout') {
+        amazon.Login.logout();
+      }
+      {% endif %}
+    };
+
+    window.onAmazonPaymentsReady = function () {
+      define('Amazon/Config', function () {
+        return amazonConfig;
+      });
+    }
+  </script>
+{% endif %}

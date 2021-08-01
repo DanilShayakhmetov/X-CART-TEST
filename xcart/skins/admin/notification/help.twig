@@ -1,0 +1,14 @@
+{##
+ # Notification help
+ #}
+<div class="notification-help">
+  <span>{{ t('Variables for this notification') }}:</span>
+  <table>
+    {% for variablePlaceholder, variableValue in this.getVariables() %}
+      <tr>
+        <td class="variable-placeholder">{{ variablePlaceholder }}</td>
+        <td class="variable-value">{{ variableValue }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

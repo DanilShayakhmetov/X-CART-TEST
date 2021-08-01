@@ -1,0 +1,43 @@
+{##
+ # Export completed section : files
+ #
+ # @ListChild (list="export.completed.content", weight="100")
+ # @ListChild (list="export.popup.completed.content", weight="100")
+ #}
+
+<div class="files std">
+  <div class="title">{{ this.getBoxTitle() }}</div>
+
+  <div class="items-list-table">
+    <div class="table-wrapper">
+      <table class="list">
+        <tbody>
+          {% for path, file in this.getDownloadFiles() %}
+            <tr>
+              <td class="file main">
+                <div class="csv-icon">
+                </div>
+                <div class="csv-file">
+                  <a href="{{ url('export', 'download', {'path': path}) }}" {% if this.isPopupContext() %}data-autodownload="true"{% endif %}>
+                    {{ file.getFilename() }}
+                  </a>
+                  <div class="size">
+                    {{ this.formatSize(file.getSize()) }}
+                  </div>
+                </div>
+
+              </td>
+              <td class="date">
+                {{ this.getLastExportDate() }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {% if not this.isPopupContext() %}
+    {{ widget('XLite\\View\\StickyPanel\\ExportLast', isPopupContext=this.isPopupContext()) }}
+  {% endif %}
+</div>

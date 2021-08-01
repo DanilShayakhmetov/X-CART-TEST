@@ -1,0 +1,11 @@
+{##
+ # Display horizontal minicart item name
+ #
+ # @ListChild (list="minicart.horizontal.item", weight="5")
+ #}
+
+{% if this.item.hasImage() %}
+	<span class="item-image">
+	{{ widget('\\XLite\\View\\Image', lazyLoad=true, image=this.item.getImage(), maxWidth=this.item.getMiniCartImageWidth(), maxHeight=this.item.getMiniCartImageHeight(), centerImage='1', alt=this.item.getName()) }}
+	</span>
+{% endif %}

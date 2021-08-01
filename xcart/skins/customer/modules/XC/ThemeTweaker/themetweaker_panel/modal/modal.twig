@@ -1,0 +1,35 @@
+{##
+ # Layout editor panel
+ #}
+
+<script type="x/template" id="themetweaker-modal-template">
+  <div class="themetweaker-modal-mask" v-show="show" transition="modal" :data-namespace="namespace">
+    <div class="themetweaker-modal-wrapper">
+      <div class="themetweaker-modal-container">
+
+        <div class="themetweaker-modal-header">
+          <slot name="header">
+            <a class="themetweaker-modal-close"
+                    @click="sendEvent('cancel')">
+              {{ svg('images/close.svg', 'common')|raw }}
+            </a>
+          </slot>
+        </div>
+
+        <div class="themetweaker-modal-body">
+          <slot name="body">
+          </slot>
+        </div>
+
+        <div class="themetweaker-modal-footer">
+          <slot name="footer">
+            <button class="themetweaker-modal-button"
+                    @click="sendEvent('ok')">
+              <span>{{ t('OK') }}</span>
+            </button>
+          </slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>

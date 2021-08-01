@@ -1,0 +1,134 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Simple blocks styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.promo-block {
+  padding: 12px 12px;
+  border: 1px solid #b0d4e5;
+  border-radius: 3px;
+  display: table;
+  background:@color-light-blue;
+  z-index: 1;
+
+  .close {
+    opacity: 1;
+  }
+}
+
+.promo-block + .alert {
+  margin-right: 321px;
+}
+
+.promo-block div {
+  display: table-cell;
+  font-size: 13px;
+}
+
+.promo-content {
+  max-width: 270px;
+  padding-right: 20px;
+}
+
+.promo-block .close {
+  position: relative;
+  top: -7px;
+  right: 0px;
+}
+
+.promo-block .close svg {
+  width: 9px;
+  height: 9px;
+  fill: #31a3da;
+}
+
+.promo-block .promo-content a {
+  text-decoration: none;
+  color: #31a3da;
+}
+
+/**
+ * Specific blocks styles
+ */
+.promo-block.banner-system-1-promo {
+  position: absolute;
+  right: 10px;
+}
+
+
+.promo-block.multi-currency-1-promo {
+  position: absolute;
+  right: 10px;
+}
+
+.currency-model-form-dialog {
+  min-width: 1100px;
+}
+
+
+.promo-block.product-variants-1-promo {
+  position: relative;
+  z-index: 100;
+  float: right;
+
+  .promo-content {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
+
+
+#form_prices_and_inventory {
+  position: relative;
+}
+
+.promo-block.seo-promo-1-promo {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+.promo-block.pdf-invoice-1-promo {
+  position: absolute;
+  right: 10px;
+}
+
+.promo-block.inventory-wholesale.wholesale-prices-1-promo {
+  position: absolute;
+  left: 50%;
+  .promo-content {
+    max-width: 240px;
+  }
+}
+
+.promo-block.g2a-egoods-1-promo {
+   position: absolute;
+   right: 10px;
+ }
+
+.promo-block.advanced-contact-us-1-promo {
+  position: absolute;
+  right: 10px;
+}
+
+.form-horizontal .form-prices-and-inventory-promo {
+
+  &.form-group {
+    position: absolute;
+    right: 60px;
+    top: -50px;
+    margin: 0;
+  }
+
+  .input-widget {
+    width: auto;
+  }
+
+  .control-label {
+    display: none;
+  }
+}

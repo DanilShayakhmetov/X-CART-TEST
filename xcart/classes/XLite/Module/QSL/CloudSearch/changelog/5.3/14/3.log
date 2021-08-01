@@ -1,0 +1,3 @@
+Version 5.3.14.3
+
+Fixes a bug when assigning different sorting positions to the same products in different categories caused CloudFilters to incorrectly arrange products if "Recommended" sorting mode was used.

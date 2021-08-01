@@ -1,0 +1,51 @@
+{##
+ # Language selector
+ #}
+
+<script>
+  var currenciesByCountry = [];
+{% for countryCode, currencyCode in this.getCountriesByCurrency() %}
+  currenciesByCountry['{{ countryCode }}'] = '{{ currencyCode }}';
+{% endfor %}
+  var languagesByCountry = [];
+{% for countryCode, languageCode in this.getCountriesByLanguage() %}
+  languagesByCountry['{{ countryCode }}'] = '{{ languageCode }}';
+{% endfor %}
+</script>
+
+{% form '\\XLite\\Module\\XC\\MultiCurrency\\View\\Form\\Currency\\CustomerCurrency' %}
+    {% if this.hasAvailableCountries() or this.hasMultipleCurrencies() %}
+    <div class="group">
+      {% if this.getEnabledCountriesCount() > 1 and this.hasMultipleCurrencies() %}
+        <p class="heading">{{ t('Location & Currency') }}</p>
+      {% elseif this.getEnabledCountriesCount() > 1 %}
+        <p class="heading">{{ t('Location') }}</p>
+      {% else %}
+        <p class="heading">{{ t('Currency') }}</p>
+      {% endif %}
+        {% if this.getEnabledCountriesCount() > 1 %}
+        <div class="input-group">
+          {{ widget('XLite\\Module\\XC\\MultiCurrency\\View\\FormField\\Select\\Currency\\CustomerCountry', fieldName='country_code', style='country-code-selector', fieldId=this.getUniqueId('country_code')) }}
+        </div>
+        {% endif %}
+        {% if this.hasMultipleCurrencies() %}
+          <div class="input-group">
+            {{ widget('XLite\\Module\\XC\\MultiCurrency\\View\\FormField\\Select\\Currency\\CustomerCurrency', fieldName='currency_code', style='currency-code-selector', fieldId=this.getUniqueId('currency_code')) }}
+          </div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if this.hasMultipleLanguages() %}
+    <div class="group">
+      <p class="heading">{{ t('Language') }}</p>
+        <div class="input-group">
+          {{ widget('XLite\\Module\\XC\\MultiCurrency\\View\\FormField\\Select\\Currency\\CustomerLanguage', fieldName='language', style='language-selector', fieldId=this.getUniqueId('language')) }}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="group">
+      {{ widget('XLite\\View\\Button\\Submit', label=t('Save'), style='regular-main-button submit') }}
+    </div>
+{% endform %}

@@ -1,0 +1,9 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel-extensions", weight="200")
+ #}
+
+<xlite-themetweaker-modal :show="isResetLayoutConfirmVisible" namespace="resetLayoutConfirm">
+  <p slot="body" class="text-center">{{ t('Are you sure you want to reset current layout? Custom layout settings will be lost.')|raw }}</p>
+</xlite-themetweaker-modal>

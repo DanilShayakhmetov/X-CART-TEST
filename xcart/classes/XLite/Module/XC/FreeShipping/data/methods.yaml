@@ -1,0 +1,60 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Shipping\Method:
+  - processor: offline
+    code: FREESHIP
+    added: true
+    enabled: true
+    free: true
+    tableType: S
+    position: 30
+    translations:
+      - code: en
+        name: 'Free shipping'
+        deliveryTime: '5 - 7 days'
+      - code: ru
+        name: 'Бесплатная доставка'
+        deliveryTime: '5 - 7 дней'
+    shipping_markups:
+      - zone: { is_default: 1 }
+        min_weight: 0
+        max_weight: 999999999
+        min_total: 0
+        max_total: 999999999
+        min_items: 0
+        max_items: 999999999
+        markup_flat: 0
+        markup_percent: 0
+        markup_per_item: 0
+        markup_per_weight: 0
+  - processor: offline
+    code: FIXEDFEE
+    added: true
+    enabled: true
+    free: false
+    tableType: S
+    position: 40
+    translations:
+      - code: en
+        name: 'Fixed rate shipping'
+        deliveryTime: '5 - 7 days'
+      - code: ru
+        name: 'Фиксированная стоимость доставки'
+        deliveryTime: '5 - 7 дней'
+    shipping_markups:
+      - zone: { is_default: 1 }
+        min_weight: 0
+        max_weight: 999999999
+        min_total: 0
+        max_total: 999999999
+        min_items: 0
+        max_items: 999999999
+        markup_flat: 0
+        markup_percent: 0
+        markup_per_item: 0
+        markup_per_weight: 0

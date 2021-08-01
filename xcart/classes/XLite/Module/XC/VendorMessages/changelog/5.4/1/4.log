@@ -1,0 +1,5 @@
+Version 5.4.1.4
+
+Fixes (1)
+2020-09-16 - [Bug] In a store where the same user was acting both as a vendor and as a customer, in the store back end that user could see order messages that they themselves had posted as a customer, whereas in the Customer area, when they were logged in as a customer, they could see messages they themselves had posted as a vendor. Fixed. #BUG-8997 https://bt.x-cart.com/view.php?id=51657 #VendorMessages
+

@@ -1,0 +1,6 @@
+Version 5.4.2.4
+
+Fixes (2)
+2020-09-23 - [Bug] Product Variants. Add to cart button was unavailable under certain conditions. Fixed. #BUG-9007 https://bt.x-cart.com/view.php?id=52097 #ProductVariants
+2020-09-08 - [Bug] Spelling error in the variable $isControllerFirbidden #BUG-9004 https://bt.x-cart.com/view.php?id=52095 #Core #ProductVariants
+

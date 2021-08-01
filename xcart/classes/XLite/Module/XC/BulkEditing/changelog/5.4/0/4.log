@@ -1,0 +1,6 @@
+Version 5.4.0.4
+
+Fixes (2)
+2019-11-20 - [Bug] The Inventory Tracking options and QTY of a product with PIN codes could be updated via Bulk Editing. Fixed. #BUG-6912 (Maxim Kuznetsov) #PINCodes #BulkEditing
+2019-10-08 - [Bug] Implemented uniform system behavior for user-invoked cancellation of processes (like generation of feeds, data removal, XML Sitemap generation, data uploading to MailChimp, etc.) #BUG-7458 (Shevelov Alexander) #Core #AmazonS3Images #XMLSitemap #MailChimp #BulkEditing #Facebook Commerce #GoogleFeed #YandexMarket
+

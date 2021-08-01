@@ -1,0 +1,14 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - { name: page_404, category: CleanURL, type: XLite\View\FormField\CleanUrls\Page404, orderby: 14500, translations: [{ code: en, option_name: '404 page' }] }
+  - { name: regular_text_404, category: CleanURL, type: XLite\View\FormField\Label\TranslationLabelWithHtmlCode, orderby: 14501, value: 'default-404-text', translations: [{ code: en, option_name: 'Regular text for 404 page' }] }
+  - { name: show_email_404, category: CleanURL, type: XLite\View\FormField\Input\Checkbox\OnOff, orderby: 14502, value: 1, translations: [{ code: en, option_name: 'Show сustomer relations e-mails on 404 page' }] }
+
+XLite\Model\LanguageLabel:
+  - { name: 'Insight: Boost your sales with Google Ads addon', translations: [{ code: en, label: 'Insight: Boost your sales with Google Ads addon' }] }

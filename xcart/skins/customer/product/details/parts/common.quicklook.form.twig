@@ -1,0 +1,9 @@
+{##
+ # Product details main form (qty/buttons)
+ #
+ # @ListChild (list="product.details.quicklook.info", weight="100")
+ #}
+
+{% form '\\XLite\\View\\Form\\Product\\AddToCart' with {product: this.product, className: 'product-details box-product', validationEngine: '1'} %}
+  {{ widget_list('product.details.quicklook.info.form') }}
+{% endform %}

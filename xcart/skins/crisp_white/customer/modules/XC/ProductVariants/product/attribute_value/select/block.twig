@@ -1,0 +1,20 @@
+{##
+ # Attribute value (block)
+ #}
+
+<div class="block-value{{ isSelected ? ' selected' : '' }}{{ not option.isVariantAvailable() and isAffectingAttribute ? ' unavailable' : '' }}"
+     data-name="{{ this.getName() }}"
+     data-value="{{ option.id }}"
+     data-modifiers="{{ this.getModifierTitle(option)|raw }}"
+>
+  <span class="block-value-name">{{ this.getOptionTitle(option) }}</span>
+
+  {% if not option.isVariantAvailable() and isAffectingAttribute %}
+    <div class="unavailable-tooltip">
+      <div class="text">
+        {{ t('This combination is not available') }}
+      </div>
+    </div>
+  {% endif %}
+</div>
+

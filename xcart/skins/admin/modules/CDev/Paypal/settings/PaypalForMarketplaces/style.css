@@ -1,0 +1,16 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Setting page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.input-additionalaccount .table-value > div {
+  display: inline-block;
+}
+
+.input-additionalaccount .table-value > .form-field-comment {
+  width: auto;
+}

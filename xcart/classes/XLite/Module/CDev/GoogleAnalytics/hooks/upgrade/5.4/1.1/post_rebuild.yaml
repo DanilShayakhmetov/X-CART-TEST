@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: 'settings_page_heading'
+    category: CDev\GoogleAnalytics
+    type: hidden
+    orderby: 50
+    translations:
+      - code: en
+        option_name: 'Google Analytics Settings'
+  - name: ga_code_version
+    category: CDev\GoogleAnalytics
+    translations:
+      - code: en
+        option_name: 'Google Analytics version'
+        option_comment: '- Traditional (ga.js). This is a legacy library. If you are getting started with Google Analytics you should use the latest tracking library, analytics.js. For more information please see <a href="https://developers.google.com/analytics/devguides/collection/gajs" target="_blank">here</a> <br/>- Universal Analytics (analytics.js). This is the latest tracking library for Google Analytics. For more information please see <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs" target="_blank">here</a>'

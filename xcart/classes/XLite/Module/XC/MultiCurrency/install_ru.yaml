@@ -1,0 +1,63 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: 'rateProvider'
+    category: XC\MultiCurrency
+    translations:
+      - code: ru
+        option_name: 'Сервис обновления курсов валют онлайн'
+  - name: 'updateInterval'
+    category: XC\MultiCurrency
+    translations:
+      - code: ru
+        option_name: 'Интервал онлайн обновления курсов валют'
+
+XLite\Model\LanguageLabel:
+  - { name: 'Currencies', translations: [{ code: ru, label: 'Валюты' }] }
+  - { name: 'Name', translations: [{ code: ru, label: 'Название' }] }
+  - { name: 'Code', translations: [{ code: ru, label: 'Код' }] }
+  - { name: 'Default', translations: [{ code: ru, label: 'По умолчанию' }] }
+  - { name: 'Format', translations: [{ code: ru, label: 'Формат' }] }
+  - { name: 'Prefix', translations: [{ code: ru, label: 'Префикс' }] }
+  - { name: 'Suffix', translations: [{ code: ru, label: 'Суффикс' }] }
+  - { name: 'Rate', translations: [{ code: ru, label: 'Курс' }] }
+  - { name: 'Date', translations: [{ code: ru, label: 'Дата' }] }
+  - { name: 'Last update', translations: [{ code: ru, label: 'Последнее обновление' }] }
+  - { name: 'Add currency', translations: [{ code: ru, label: 'Добавить валюту' }] }
+  - { name: 'Google Finance Currency Converter', translations: [{ code: ru, label: 'Конвертер валют "Google Finance"' }] }
+  - { name: 'WebserviceX.NET', translations: [{ code: ru, label: 'WebserviceX.NET' }] }
+  - { name: 'The Free Currency Converter API', translations: [{ code: ru, label: 'The Free Currency Converter API' }] }
+  - { name: 'Online currency rates service', translations: [{ code: ru, label: 'Онлайн сервис курса валют' }] }
+  - { name: 'Update rates', translations: [{ code: ru, label: 'Обновить курс' }] }
+  - { name: 'err_change_default_currency', translations: [{ code: ru, label: 'Вы не можете поменять курс, выключить или удалить валюту, которая используется по умолчанию.' }] }
+  - { name: 'Note: All prices billed in {{currency}}. Current exchange rate is {{exchange_rate}}.', translations: [{ code: ru, label: 'Заметка: Все товары будут оплачены в {{currency}}. Текущий обменный курс равен {{exchange_rate}}.' }] }
+  - { name: 'Note: Order billed in {{currency}}. Exchange rate is {{exchange_rate}}.', translations: [{ code: ru, label: 'Заметка: Заказ был оплачен в {{currency}}. Обменный курс равен {{exchange_rate}}.' }] }
+  - { name: 'Total charge', translations: [{ code: ru, label: 'Всего к оплате' }] }
+  - { name: 'Default currency', translations: [{ code: ru, label: 'Основная валюта' }] }
+  - { name: 'Rates update', translations: [{ code: ru, label: 'Oбновление курсов валют' }] }
+  - { name: 'None', translations: [{ code: ru, label: 'Отсутствует' }] }
+  - { name: '1 minute', translations: [{ code: ru, label: '1 минута' }] }
+  - { name: '10 minutes', translations: [{ code: ru, label: '10 минут' }] }
+  - { name: '15 minutes', translations: [{ code: ru, label: '15 минут' }] }
+  - { name: '30 minutes', translations: [{ code: ru, label: '30 минут' }] }
+  - { name: '1 hour', translations: [{ code: ru, label: '1 час' }] }
+  - { name: '2 hours', translations: [{ code: ru, label: '2 часа' }] }
+  - { name: '4 hours', translations: [{ code: ru, label: '4 часа' }] }
+  - { name: '6 hours', translations: [{ code: ru, label: '6 часов' }] }
+  - { name: '12 hours', translations: [{ code: ru, label: '12 часов' }] }
+  - { name: '1 day', translations: [{ code: ru, label: '1 день' }] }
+  - { name: 'Available countries for', translations: [{ code: ru, label: 'Страны доступные для' }] }
+  - { name: 'Here you can set countries associated with particular currency.', translations: [{ code: ru, label: 'На этой странице вы можете задать список стран, ассоциированных с выбранной валютой.' }] }
+  - { name: 'Currency', translations: [{ code: ru, label: 'Валюта' }] }
+  - { name: 'Country', translations: [{ code: ru, label: 'Страна' }] }
+  - { name: 'Language', translations: [{ code: ru, label: 'Язык' }] }
+  - { name: 'Select regional settings', translations: [{ code: ru, label: 'Выберите региональные настройки' }] }
+  - { name: 'Update online rates every', translations: [{ code: ru, label: 'Обновлять курсы валют каждый(е)' }] }
+  - { name: 'Last update date', translations: [{ code: ru, label: 'Последний раз обновлено' }] }
+  - { name: 'Location & Currency', translations: [{ code: ru, label: 'Местонахождение и валюта' }]}
+  - { name: 'Geolocation promo block', translations: [{ code: ru, label: '<span><a href="{{url}}" target="_blank">Установите модуль GEO IP</a> для автоматического переключения языка и валюты магазина в зависимости от местоположения пользователя.</span>' }]}

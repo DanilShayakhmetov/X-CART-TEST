@@ -1,0 +1,22 @@
+{##
+ # Dashboard info block notification
+ #}
+
+{% for message in this.getMessages() %}
+  <div {{ this.printTagAttributes(this.getMessageTagAttributes(message))|raw }}>
+    <span class="notification-message">
+      {% if this.getMessageHeaderUrl(message) %}
+        <a href="{{ this.getMessageHeaderUrl(message) }}"{% if this.isExternal() %} target="_blank"{% endif %}>
+          {{ this.getMessageHeader(message) }}
+        </a>
+      {% else %}
+        {{ this.getMessageHeader(message) }}
+      {% endif %}
+      <span>{{ this.getMessageBody(message) }}</span>
+    </span>
+
+    <div class="notification-close">
+      {{ this.getSVGImage('images/icons/cross.svg')|raw }}
+    </div>
+  </div>
+{% endfor %}

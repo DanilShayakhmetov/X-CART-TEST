@@ -1,0 +1,12 @@
+{##
+ # Zone: country selector template
+ #
+ # @ListChild (list="zones.zone.details", weight="100")
+ #}
+
+{{ widget('\\XLite\\View\\FormField\\Select\\Select2\\Countries',
+    fieldName='zone_countries',
+    label='Countries',
+    fullNames=true,
+    value=this.zone.getZoneCountries()
+) }}

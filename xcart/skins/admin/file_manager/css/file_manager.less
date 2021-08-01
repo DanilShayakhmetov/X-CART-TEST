@@ -1,0 +1,151 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * File manager
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.file-manager {
+  width: 600px;
+  padding-bottom: @rhythmic-unit;
+
+  .line {
+    & > .info {
+      & > .name {
+        width: 250px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        flex: 1 0 auto;
+        margin-right: 7px;
+      }
+    }
+
+    &.dir {
+      & > .info {
+        cursor: pointer;
+        padding-left: 15px;
+        position: relative;
+
+        &:before {
+          content: '+';
+          position: absolute;
+          left: 0;
+          top: 4px;
+          display: block;
+          border: 1px solid #000;
+          width: 12px;
+          height: 12px;
+          line-height: 10px;
+          text-align: center;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .children {
+        display: none;
+        padding-left: 15px;
+        position: relative;
+
+        &:before {
+          content: '';
+          border-right: 1px solid #CCCCCC;
+          width: 0;
+          height: 100%;
+          left: 6px;
+          top: 0;
+          position: absolute;
+        }
+
+        & > div.line {
+          position: relative;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            border-top: 1px solid #CCCCCC;
+            left: -8px;
+            top: 10px;
+          }
+
+          &:nth-child(even) {
+            background: @items-list-head-bg;
+          }
+        }
+      }
+
+      &.expanded {
+        & >.children {
+          display: block;
+        }
+
+        & > .info:before {
+          content: '-';
+          line-height: 8px;
+        }
+      }
+
+      &.blocked {
+        & > .info {
+          cursor: default;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &.empty {
+        & > .info {
+          &:before {
+            content: '-';
+            line-height: 8px;
+          }
+
+          .children {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.file {
+      & > .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .properties {
+          width: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-right: 40px;
+          white-space: nowrap;
+
+          .size {
+            color: #848484;
+            margin-right: 10px;
+          }
+
+          .mtime {
+          }
+        }
+      }
+    }
+  }
+
+  .download-file .button-icon {
+    width: 16px;
+    height: 16px;
+    &:before {
+      font-size: 14px;
+    }
+  }
+}

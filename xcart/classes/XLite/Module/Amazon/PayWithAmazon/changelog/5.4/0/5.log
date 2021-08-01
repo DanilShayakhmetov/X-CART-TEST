@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-08-23 - [Change] Small fixes for Amazon Pay Strong Customer Authentication (PSD2) #XCN-10108 (Shevelov Alexander) #Core #AmazonPay
+

@@ -1,0 +1,6 @@
+Version 5.4.0.10
+
+Fixes (2)
+2020-08-03 - [Bug] When importing products, a product attachment was not formed correctly because the link was incorrect. Fixed. #BUG-8773 #Core #FileAttachments
+2020-07-23 - [Bug] It was not possible to re-upload a file that had been uploaded as a product attachment. Fixed. #BUG-8849 https://bt.x-cart.com/view.php?id=51986 #Core #FileAttachments
+

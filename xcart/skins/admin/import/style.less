@@ -1,0 +1,307 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Import / import styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/**
+ * Import
+ */
+
+div.import-box {
+  min-width: 900px;
+  max-width: 1200px;
+
+  .buttons {
+    padding: @rhythmic-unit 0;
+  }
+
+  &.import-progress {
+    min-width: auto;
+    display: block;
+    max-width: none;
+  }
+
+  &.import-begin {
+    .subcontent {
+      .options {
+        margin-top: @rhythmic-unit * 3 / 2;
+
+        .tooltip-main .popover {
+          max-width: 500px;
+          .popover-content {
+            width: 500px;
+          }
+        }
+
+        .csv-delimiter {
+          padding: 0 0 0 14px;
+        }
+      }
+    }
+
+    .sticky-panel {
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
+
+/**
+ * Import (progress)
+ */
+
+.ui-dialog div.import-box.import-progress .subcontent {
+  padding: 20px 20px;
+  padding-bottom: 12px;
+}
+
+/**
+ * Import (completed)
+ */
+.import-page div.import-box .header h3 {
+  margin-top: 0;
+}
+
+div.import-box .header h2.completed {
+  background: transparent url(../images/completed.png) no-repeat left 12px;
+  color: #339900;
+  border-right: 1px solid #cccccc;
+  height: 42px;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  margin-right: -8px;
+  padding: 8px 30px 10px 30px;
+}
+
+div.import-completed ul.messages li span {
+  color: @color-tip;
+}
+
+div.import-completed div.empty {
+  color: #999;
+  font-size: 22px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+div.import-completed .empty .message {
+  font-size: 19px;
+}
+
+div.import-completed .empty .message .comment {
+  font-size: 14px;
+  text-align: left;
+}
+
+div.import-completed .empty .message .comment li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/**
+ * Import failed
+ */
+
+.import-box .subcontent ul.errors span.count-w,
+.import-box .subcontent ul.errors span.count-e {
+  float: right;
+  border-radius: @border-radius-base;
+  background-color: @brand-warning;
+  padding: 0 (@rhythmic-unit / 2);
+  margin-left: (@rhythmic-unit / 2);
+}
+
+.import-box .subcontent ul.errors span.count-e {
+  background-color: @brand-danger;
+}
+
+.import-box .subcontent .errors-wrapper {
+  margin-top: @rhythmic-unit;
+  margin-bottom: (@rhythmic-unit / 4) + @rhythmic-unit;
+  border-bottom-left-radius: @border-radius-base;
+  border-bottom-right-radius: @border-radius-base;
+}
+
+.import-box .subcontent ul.errors {
+  margin-top: 5px;
+  border-top: 1px solid @color-border-light;
+  border-right: 1px solid @color-border-light;
+  border-left: 1px solid @color-border-light;
+  border-top-left-radius: @border-radius-base;
+  border-top-right-radius: @border-radius-base;
+}
+
+.import-box .subcontent ul.errors li div {
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.import-box .subcontent ul.errors li div.message {
+  width: 500px;
+  float: left;
+}
+
+.import-box .subcontent ul.errors li div.message hr {
+  margin-top: (@rhythmic-unit / 2) - 1;
+  margin-bottom: (@rhythmic-unit / 2) - 1;
+}
+
+.import-box .subcontent ul.errors li div.text {
+  width: 230px;
+  float: right;
+  text-align: right;
+  color: @brand-primary;
+}
+
+.import-box .subcontent ul.errors li.type-E div.text {
+  color: #a94442;
+}
+
+.import-box .subcontent ul.errors li {
+  padding: 0 (@rhythmic-unit / 2) ((@rhythmic-unit / 4) - 1) (@rhythmic-unit / 2);
+  margin-bottom: @rhythmic-unit / 4;
+  border-bottom: 1px solid @color-border-light;
+}
+
+.import-box .subcontent ul.errors li.title {
+  background: @items-list-head-bg;
+  padding: (@rhythmic-unit - 6) (@rhythmic-unit / 2) (@rhythmic-unit - 6) (@rhythmic-unit / 2);
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid @color-border-light;
+}
+
+.import-box .subcontent ul.errors li.title i {
+  font-size: 18px;
+  color: @color-tip;
+  margin-right: 3px;
+}
+
+.import-failed .subcontent p {
+  margin-top: 0;
+}
+
+.import-completed .subcontent .import-completed-warnings {
+  padding-left: 20px;
+  margin-top: 35px;
+}
+
+.import-completed .subcontent h3 {
+  margin-left: 0;
+  font-size: 16px;
+}
+
+#options-delimiter {
+  padding-top: 5px;
+}
+
+#options-delimiter li {
+  padding: 5px 0 0 0;
+  line-height: normal;
+}
+
+#options-delimiter input {
+  margin-right: 5px;
+}
+
+.files-option .tooltip-main {
+  padding-top: 0;
+}
+
+.files-option div.table-value select {
+  width: 150px;
+}
+
+.import-box .subcontent .errors-wrapper {
+  position: relative;
+}
+
+.import-box .subcontent .errors-wrapper.faded {
+  overflow: hidden;
+}
+
+.import-box .subcontent .errors-wrapper.faded.initial {
+  max-height: 270px;
+}
+
+.action-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: @items-list-head-bg;
+
+  padding: (@rhythmic-unit - 1) (@rhythmic-unit / 2) ((@rhythmic-unit / 2) - 1) (@rhythmic-unit / 2);
+  margin-top: -1px;
+  margin-bottom: -1px;
+  border: 1px solid @color-border-light;
+  border-bottom-left-radius: @border-radius-base;
+  border-bottom-right-radius: @border-radius-base;
+}
+
+.action-wrapper.bottom-fade {
+  background: @items-list-head-bg;
+  background: linear-gradient(0deg, @items-list-head-bg 0%, @body-bg 100%);
+}
+
+.import-box .subcontent .download-errors {
+  text-align: center;
+}
+
+.action-wrapper .bottom-fade-action,
+.import-box .subcontent .download-errors a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  margin-bottom: -1px;
+  color: @text-color;
+}
+
+.action-wrapper .bottom-fade-action:hover,
+.import-box .subcontent .download-errors a:hover {
+  border: none;
+  margin-bottom: 0;
+}
+
+.alert.alert-danger ul {
+  list-style-type: disc;
+}
+
+.alert.alert-danger ul li {
+  margin-left: 30px;
+}
+
+.alert.alert-danger ul li a.external:after {
+  content: "\f08e";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-left: 5px;
+  font-size: 11px;
+  display: none;
+}
+
+.alert.alert-danger ul li a.external:hover:after {
+  display: inline-block;
+}
+
+.import-begin .parts {
+  .inputfile + label.input-button {
+    margin: @form-row-vertical-padding 0;
+
+  }
+
+  .help-block {
+    margin: 0;
+  }
+}
+
+.import-guide {
+  margin-bottom: @rhythmic-unit;
+}

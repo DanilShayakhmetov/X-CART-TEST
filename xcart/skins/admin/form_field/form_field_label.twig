@@ -1,0 +1,8 @@
+<div class="{{ this.getLabelContainerClass() }}">
+  <label for="{{ this.getFieldId() }}" title="{{ this.getFormattedLabel()|raw }}">
+    {{ this.getFormattedLabel() }}{% if this.getParam('useColon') %}:{% endif %}
+    {% if this.hasLabelHelp() %}
+      {{ widget('\\XLite\\View\\Tooltip', text=t(this.getParam('labelHelp')), helpWidget=this.getParam('labelHelpWidget'), isImageTag='true', className='help-icon') }}
+    {% endif %}
+  </label>
+</div>

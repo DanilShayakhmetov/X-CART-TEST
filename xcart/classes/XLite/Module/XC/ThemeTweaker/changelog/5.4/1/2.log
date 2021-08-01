@@ -1,0 +1,6 @@
+Version 5.4.1.2
+
+Fixes (2)
+2020-04-15 - [Bug] No error message after uploading a wrong file for app-icon in Layout Editor. Fixed. #BUG-8523 #ThemeTweaker
+2019-04-23 - [Bug] After disabling on the page target=theme_tweaker_template of the modified notification template in Dynamic message editor it remained custom. Fixed. #BUG-8538 #ThemeTweaker
+

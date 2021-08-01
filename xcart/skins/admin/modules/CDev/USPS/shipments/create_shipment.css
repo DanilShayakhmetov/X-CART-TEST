@@ -1,0 +1,22 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Create shipment form style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+div.table-value.methodname-value span.input,
+div.table-value.parceltype-value span.input {
+  padding-top: 5px;
+}
+
+div.dimensions-value input[type="text"] {
+  width: 100px;
+}
+
+.dimension-field.dimension-length .table-value:after,
+.dimension-field.dimension-width .table-value:after {
+  margin-left: 12px
+}

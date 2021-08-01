@@ -1,0 +1,73 @@
+{##
+ # Connect widget
+ #
+ #}
+
+{{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Config\\HTTPSWarning') }}
+{{ widget('\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Config\\RegisterInfo') }}
+
+<div id="xpayments-iframe-container">
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var widget = new XPaymentsConnect();
+
+    widget.init({
+      container: '#xpayments-iframe-container',
+      topElement: '#main',
+      quickAccessKey: '{{ this.getXpaymentsPaymentMethod().getSetting('quickaccess_key') }}',
+      account: '{{ this.getXpaymentsPaymentMethod().getSetting('account') }}',
+      applePayOnly: '{{ this.isXpaymentsApplePay() }}',
+    }).on('alert', function(params) {
+      if ('error' === params.type) {
+        core.showError(params.message);
+      } else {
+        core.trigger('message', {type: 'info', message: params.message});
+      }
+    }).on('config', function(params) {
+      var data = {};
+      data['settings[account]'] = params.account;
+      data['settings[api_key]'] = params.apiKey;
+      data['settings[secret_key]'] = params.secretKey;
+      data['settings[widget_key]'] = params.widgetKey;
+      data['settings[quickaccess_key]'] = params.quickAccessKey;
+      {% if (this.getXpaymentsJustAdded()) %}
+        data['just_added'] = 1;
+      {% endif %}
+      data[xliteConfig.form_id_name] = xliteConfig.form_id;
+
+      core.post(
+        {
+            target: 'payment_method',
+            method_id: {{ this.getXpaymentsPaymentMethod().getMethodId() }},
+            action: 'update'
+        },
+        null,
+        data
+      );
+
+      jQuery('#cloud-register-info').hide()
+    });
+
+    widget.load();
+  });
+
+  core.bind('xpaymentsReloadPaymentStatus', function () {
+      core.get(
+          URLHandler.buildURL({target: 'payment_method', method_id: {{ this.paymentMethod.getMethodId() }}, widget: '\\XLite\\View\\Payment\\MethodStatus'}),
+          function(xhr, status, data) {
+              var paymentStatus = jQuery(data).find('.payment-status');
+              if (paymentStatus.length > 0) {
+                  jQuery('.payment-status').html(paymentStatus.html());
+                  var uuid = _.uniqueId();
+                  core.parseResources(jQuery.parseHTML(data), uuid);
+                  core.microhandlers.runAll();
+                  core.autoload(PaymentMethodSwitcher);
+              }
+          }
+      );
+  })
+
+</script>
+

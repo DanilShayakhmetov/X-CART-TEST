@@ -1,0 +1,5 @@
+Version 5.4.0.6
+
+Fixes (1)
+2020-09-14 - [Bug] Fixed the incorrect link  http://reseller.authorize.net/application/?resellerId=20961 #BUG-8962 #AuthorizeNet #AuthorizenetAcceptjs
+

@@ -1,0 +1,5 @@
+Version 5.4.1.11
+
+Fixes (1)
+2020-10-08 - [Bug] Onboarding Wizard. After completing all the required product details fields for a product and saving the changes the user was again redirected to the step of adding a product (with all the product details fields unset). Fixed. #BUG-9049 #Onboarding
+

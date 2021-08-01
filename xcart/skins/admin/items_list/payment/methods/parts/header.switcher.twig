@@ -1,0 +1,25 @@
+{##
+ # Payment methods list : line : header : switcher
+ #
+ # @ListChild (list="payment.methods.list.header", weight=300)
+ #}
+<div class="switcher">
+  {% if this.canSwitch(this.method) %}
+    {% if this.method.getWarningNote() %}
+      {{ widget('XLite\\View\\FormField\\Input\\Checkbox\\PaymentMethod', fieldOnly=true, value=this.method.isEnabled(), fieldName='payment_id_' ~ this.method.getMethodId(), methodId=this.method.getMethodId(), disabled=(not this.method.isEnabled()), disabled_title=this.method.getWarningNote()) }}
+
+    {% else %}
+      {{ widget('XLite\\View\\FormField\\Input\\Checkbox\\PaymentMethod', fieldOnly=true, value=this.method.isEnabled(), fieldName='payment_id_' ~ this.method.getMethodId(), methodId=this.method.getMethodId()) }}
+
+      {#{% if this.method.isEnabled() %}#}
+        {#{{ widget(template='items_list/payment/methods/parts/header.switcher.button.twig', style='enabled', title=t('Disable'), url=url('payment_settings', 'disable', {'id': this.method.getMethodId()})) }}#}
+      {#{% else %}#}
+        {#{{ widget(template='items_list/payment/methods/parts/header.switcher.button.twig', style='disabled', title=t('Enable'), url=url('payment_settings', 'enable', {'id': this.method.getMethodId()})) }}#}
+      {#{% endif %}#}
+
+    {% endif %}
+  {% else %}
+    {{ widget('XLite\\View\\FormField\\Input\\Checkbox\\PaymentMethod', fieldOnly=true, value=this.canEnable(this.method), fieldName='payment_id_' ~ this.method.getMethodId(), methodId=this.method.getMethodId(), disabled=true, disabled_title=(this.method.isEnabled() ? this.method.getForcedEnabledNote() : this.method.getWarningNote()) ) }}
+
+  {% endif %}
+</div>

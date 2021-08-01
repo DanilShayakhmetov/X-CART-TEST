@@ -1,0 +1,4 @@
+Version 5.3.14.19
+
+[Fix] Fixed prices including VAT in CloudFilters
+[Improvement] Compatibility with Backorder / Preorder module

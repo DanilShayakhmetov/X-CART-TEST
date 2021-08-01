@@ -1,0 +1,13 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--tabs", weight="20")
+ #}
+
+{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\Button\\ThemeTweakerTab',
+          svg='modules/XC/ThemeTweaker/themetweaker_panel/icons/labels.svg',
+          label="Labels editor",
+          style="themetweaker-tab themetweaker-tab_labels_editor " ~ this.getTabClass('labels_editor'),
+          disabled=(not this.isTabAvailable('labels_editor')),
+          disabledTooltip=this.getTabDisabledTooltip('labels_editor'),
+          attributes=this.getTabAttributes('labels_editor')) }}

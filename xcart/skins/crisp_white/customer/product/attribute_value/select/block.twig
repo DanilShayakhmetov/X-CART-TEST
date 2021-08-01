@@ -1,0 +1,11 @@
+{##
+ # Attribute value (block)
+ #}
+
+<div class="block-value{{ isSelected ? ' selected' : '' }}"
+     data-name="{{ this.getName() }}"
+     data-value="{{ option.id }}"
+     data-modifiers="{{ this.getModifierTitle(option)|raw }}"
+>
+  <span class="block-value-name">{{ this.getOptionTitle(option) }}</span>
+</div>

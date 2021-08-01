@@ -1,0 +1,11 @@
+<div class="{{ this.getLabelContainerClass() }}">
+  <label for="{{ this.getFieldId() }}">
+    {{ this.getFormattedLabel() }}
+    {% if this.hasLabelHelp() %}
+      {{ widget('\\XLite\\View\\Tooltip', text=t(this.getParam('labelHelp')), helpWidget=this.getParam('labelHelpWidget'), isImageTag='true', className='help-icon') }}
+    {% endif %}
+  </label>
+</div>
+<div class="star">
+  {% if this.getParam('required') %}*{% else %}&nbsp;{% endif %}
+</div>

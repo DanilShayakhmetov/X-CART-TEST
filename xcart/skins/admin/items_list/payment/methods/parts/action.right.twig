@@ -1,0 +1,35 @@
+{##
+ # Payment methods list : right action
+ #
+ # @ListChild (list="payment.methods.list.row", weight=300)
+ #}
+{% if this.hasRightActions(this.method) %}
+  <div class="action right-action">
+  
+    {% if this.canRemoveMethod(this.method) %}
+      <img src="{{ asset('images/spacer.gif') }}" class="separator" alt="" />
+      <div class="remove"><a href="{{ url('payment_settings', 'remove', {'id': this.method.getMethodId()}) }}" class="fa fa-trash-o" title="{{ t('Remove') }}"></a></div>
+    {% endif %}
+  
+    {% if this.method.getWarningNote() %}
+      <img src="{{ asset('images/spacer.gif') }}" class="separator" alt="" />
+      <div class="warning"><a href="{{ this.method.getConfigurationURL() }}" class="fa fa-exclamation-circle" title="{{ this.method.getWarningNote() }}"></a></div>
+    {% elseif not this.method.isCurrencyApplicable() %}
+      <img src="{{ asset('images/spacer.gif') }}" class="separator" alt="" />
+      <div class="warning"><a href="{{ url('currency') }}" class="fa fa-exclamation-circle" title="{{ t('This method does not support the current store currency and is not available for customers') }}"></a></div>
+    {% elseif this.method.isTestMode() %}
+      <img src="{{ asset('images/spacer.gif') }}" class="separator" alt="" />
+      <div class="test-mode"><a href="{{ this.method.getConfigurationURL() }}" title="{{ t('This method is in test mode') }}"><img src="{{ asset('images/spacer.gif') }}" alt="" /></a></div>
+    {% elseif this.method.isConfigurable() %}
+      {{ widget('XLite\\View\\Button\\Link', label=t('Configure'), location=this.method.getConfigurationURL(), style='configure') }}
+    {% else %}
+    {% endif %}
+  
+    {% if this.isSeparateConfigureButtonVisible(this.method) %}
+      {{ widget('XLite\\View\\Button\\Link', label=t('Configure'), location=this.method.getConfigurationURL(), style='configure') }}
+    {% endif %}
+  
+  </div>
+{% endif %}
+
+{{ widget_list(this.getAfterListName(this.method), type='nested') }}

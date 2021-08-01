@@ -1,0 +1,15 @@
+{##
+ # Theme tweaker notitication editor product_variant data widget
+ #}
+
+<div class="themeTweaker-product_variant themeTweaker-data-widget">
+  <div class="title">{{ t('Product variant id') }}</div>
+  <div class="themeTweaker-data-widget-input themeTweaker-product_variant-input">
+    {{ widget('\\XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Input\\Text\\AutoComplete',
+      fieldOnly=true,
+      fieldName='data[product_variant]',
+      value=this.getValue(),
+      placeholder=t('Enter product variant id'),
+      dictionary='theme_tweaker_product_variant') }}
+  </div>
+</div>

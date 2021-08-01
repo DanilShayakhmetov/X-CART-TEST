@@ -1,0 +1,4 @@
+Version 5.3.14.22
+
+[Fix] Mobile "Reset all filters" link when price filter is disabled
+[Fix] Backorder products with variants might not show up search

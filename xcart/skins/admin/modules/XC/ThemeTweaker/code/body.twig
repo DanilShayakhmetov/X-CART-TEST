@@ -1,0 +1,24 @@
+{##
+ # Code template
+ #}
+
+{% form '\\XLite\\Module\\XC\\ThemeTweaker\\View\\Form\\Code' with {className: 'custom-code-form'} %}
+
+  <div class="formfield-use single-form-field">
+    {{ widget('\\XLite\\View\\FormField\\Input\\Checkbox\\OnOff', label=t(this.getUseCustomText()), value=this.isUsed(), fieldId='use_custom', fieldName='use') }}
+  </div>
+
+  <div class="formfield-code">
+    {{ widget('\\XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Textarea\\CodeMirror', fieldName='code', cols='140', rows='20', fieldId='code', codeMode=this.getCodeMode(), value=this.getFileContent(), fieldOnly='true') }}
+  </div>
+
+  {% if this.hasDifferentContent() %}
+    <div id="code_backup_link">
+      {{ t('The database stores different version of the custom changes.') }}
+      <a href="#">{{ t('Review it.') }}</a>
+    </div>
+  {% endif %}
+
+  {{ widget('XLite\\View\\StickyPanel\\ItemForm') }}
+
+{% endform %}

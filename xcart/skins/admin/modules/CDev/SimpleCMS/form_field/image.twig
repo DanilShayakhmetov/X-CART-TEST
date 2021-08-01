@@ -1,0 +1,13 @@
+{##
+ # Image
+ #}
+<div class="file-uploader-wrapper" data-extended="{{ this.allowExtendedTypes() }}">
+{{ widget('XLite\\View\\FileUploader',
+  isImage=true,
+  object=this.getImage(),
+  fieldName=this.getImageName(),
+  isViaUrlAllowed=this.isViaUrlAllowed(),
+  removable=this.isRemovable(),
+  hasAlt=this.hasAlt())
+}}
+</div>

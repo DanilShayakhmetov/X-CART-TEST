@@ -1,0 +1,94 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Demo data for XC\Onboarding module
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Product:
+  - { product_id: 1, demo: true }
+  - { product_id: 2, demo: true }
+  - { product_id: 3, demo: true }
+  - { product_id: 4, demo: true }
+  - { product_id: 5, demo: true }
+  - { product_id: 6, demo: true }
+  - { product_id: 7, demo: true }
+  - { product_id: 8, demo: true }
+  - { product_id: 9, demo: true }
+  - { product_id: 10, demo: true }
+  - { product_id: 11, demo: true }
+  - { product_id: 12, demo: true }
+  - { product_id: 13, demo: true }
+  - { product_id: 14, demo: true }
+  - { product_id: 15, demo: true }
+  - { product_id: 16, demo: true }
+  - { product_id: 17, demo: true }
+  - { product_id: 18, demo: true }
+  - { product_id: 19, demo: true }
+  - { product_id: 20, demo: true }
+  - { product_id: 21, demo: true }
+  - { product_id: 22, demo: true }
+  - { product_id: 23, demo: true }
+  - { product_id: 24, demo: true }
+  - { product_id: 25, demo: true }
+  - { product_id: 26, demo: true }
+  - { product_id: 27, demo: true }
+  - { product_id: 28, demo: true }
+  - { product_id: 29, demo: true }
+  - { product_id: 30, demo: true }
+  - { product_id: 31, demo: true }
+  - { product_id: 32, demo: true }
+  - { product_id: 33, demo: true }
+  - { product_id: 34, demo: true }
+  - { product_id: 35, demo: true }
+  - { product_id: 36, demo: true }
+  - { product_id: 37, demo: true }
+  - { product_id: 38, demo: true }
+  - { product_id: 39, demo: true }
+  - { product_id: 40, demo: true }
+  - { product_id: 41, demo: true }
+  - { product_id: 42, demo: true }
+  - { product_id: 43, demo: true }
+  - { product_id: 44, demo: true }
+  - { product_id: 45, demo: true }
+  - { product_id: 46, demo: true }
+  - { product_id: 47, demo: true }
+  - { product_id: 48, demo: true }
+  - { product_id: 49, demo: true }
+  - { product_id: 50, demo: true }
+
+XLite\Model\Category:
+  - category_id: 2
+    demo: true
+  - category_id: 3
+    demo: true
+  - category_id: 4
+    demo: true
+  - category_id: 5
+    demo: true
+  - category_id: 6
+    demo: true
+  - category_id: 7
+    demo: true
+  - category_id: 8
+    demo: true
+  - category_id: 9
+    demo: true
+  - category_id: 10
+    demo: true
+  - category_id: 11
+    demo: true
+  - category_id: 12
+    demo: true
+
+XLite\Model\Order:
+  - order_id: 1
+    demo: true
+  - order_id: 2
+    demo: true
+  - order_id: 3
+    demo: true
+  - order_id: 4
+    demo: true
+  - order_id: 5
+    demo: true

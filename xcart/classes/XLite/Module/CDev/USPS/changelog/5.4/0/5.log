@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-11-12 - [Bug] Modifications in the USPS addon to accomodate the USPS Rates API changes. #BUG-8023 (Maxim Kuznetsov) #USPS
+

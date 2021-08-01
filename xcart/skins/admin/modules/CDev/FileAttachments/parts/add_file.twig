@@ -1,0 +1,7 @@
+{##
+ # Attachments add file button
+ #}
+
+<div class="add-file">
+  {{ widget('XLite\\View\\Button\\Dropdown\\DropdownFileSelector', useCaretButton=true, label='Add file', object='product', objectId=this.product.getProductId(), fileObject='attachments') }}
+</div>

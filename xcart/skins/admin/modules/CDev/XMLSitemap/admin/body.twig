@@ -1,0 +1,45 @@
+{##
+ # Sitemap page
+ #}
+
+{% if this.isSitemapGenerationNotFinished() %}
+  {{ widget('\\XLite\\Module\\CDev\\XMLSitemap\\View\\SitemapGeneration\\Progress') }}
+{% else %}
+  <div class="sitemap settings general-settings">
+    {{ widget('\\XLite\\View\\Button\\Regular', label='Generate XML-Sitemap', jsCode='self.location=\'' ~ url('sitemap', 'Generate') ~ '\'', style='action always-enabled generate-button') }}
+    <p class="url">{{ t('XML sitemap URL: X', {'url': this.getSitemapURL()})|raw }}</p>
+
+    <h2>{{ t('Sitemap settings') }}</h2>
+
+    {% form '\\XLite\\Module\\CDev\\XMLSitemap\\View\\Form\\Sitemap' %}
+
+    <ul class="table default-table">
+      <li class="input input-checkbox first">
+        <div class="table-label engines-label">
+          <label for="engines" title="">
+            {{ t('Mark, the search engines you want to inform of the structure of your site using the site map') }}
+          </label>
+        </div>
+        <div class="table-value engines-value">
+          <span class="input-field-wrapper input input-checkbox">
+            <ul class="engines multiple-selector">
+              {% for key, engine in this.getEngines() %}
+                <li>
+                  <label for="engine{{ key }}">
+                    <input type="checkbox" name="engines[]" value="{{ key }}" id="engine{{ key }}" />
+                    <span>{{ t(engine.title) }}</span>
+                  </label>
+                </li>
+              {% endfor %}
+            </ul>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+    {{ widget('\\XLite\\Module\\CDev\\XMLSitemap\\View\\Form\\Settings', category='CDev\\XMLSitemap') }}
+
+    {{ widget('XLite\\View\\StickyPanel\\ItemForm') }}
+    {% endform %}
+  </div>
+{% endif %}

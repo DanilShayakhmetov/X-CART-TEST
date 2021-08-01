@@ -1,0 +1,11 @@
+{##
+ # Update nitification
+ #}
+
+<div class="free-shipping-update-import-notification">
+  {{ widget('\\XLite\\Module\\XC\\FreeShipping\\View\\Promo\\FreeShippingUpdateImport') }}
+
+  {{ widget('XLite\\View\\Button\\Link', location=url(this.getImportTarget(), 'reset'), label=t('Reupload files'), style='main-button') }}
+
+  {{ widget('XLite\\View\\Button\\Link', location=url(this.getImportTarget(), 'proceed'), label=t('Proceed import'), style='main-button pull-right regular-main-button') }}
+</div>

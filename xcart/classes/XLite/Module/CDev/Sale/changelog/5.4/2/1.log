@@ -1,0 +1,5 @@
+Version 5.4.2.1
+
+Fixes (1)
+2020-08-24 - [Bug] "Put all for sale" on the target=category_products&id=<id> page was applied to all products. Fixed. #BUG-8943 https://bt.x-cart.com/view.php?id=52059 #Sale
+

@@ -1,0 +1,24 @@
+{##
+ # Payouts
+ #}
+<div class="pp4m-payouts">
+  {% for payout in this.getPayouts() %}
+    <div class="pp4m-unit">
+      <div class="vendor-info">
+        <div class="vendor-name">
+          {% set vendor = this.getVendor(payout) %}
+          {% if vendor %}
+            {{ vendor.getVendorCompanyName() }}
+          {% else %}
+            {{ t('Administrator') }}
+          {% endif %}
+        </div>
+        <div class="payee">{{ this.getPayee(payout) }}</div>
+      </div>
+
+      <div class="payout-button">
+        {{ widget(this.getButtonWidgetClass(), label=this.getPayoutUnitName(payout), jsCode='self.location=\'' ~ this.getPayoutURL(payout) ~ '\'', style=this.getCSSClass()) }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

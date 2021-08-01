@@ -1,0 +1,13 @@
+{##
+ # Profile link
+ #
+ # @ListChild (list="slidebar.navbar.account", weight="30")
+ #}
+
+{% if this.isLogged() %}
+	<li>
+		<a class="icon-my-account-profile" href="{{ url('profile', '') }}">
+			<span>{{ t('Profile details') }}</span>
+		</a>
+	</li>
+{% endif %}

@@ -1,0 +1,5 @@
+Version 5.4.2.2
+
+Fixes (1)
+2020-12-23 - [Bug] Mailchimp. Fatal error when placing an order. Fixed. #XCB-42 #XC-MailChimp
+

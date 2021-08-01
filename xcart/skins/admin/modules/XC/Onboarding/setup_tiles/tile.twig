@@ -1,0 +1,24 @@
+{##
+ # setup tile template
+ #}
+
+<div {{ this.printTagAttributes(this.getTagAttributes())|raw }}>
+    <div class="setup-tile-image">
+        {{ this.getImage()|raw }}
+    </div>
+
+    <div class="setup-tile-content">
+        {% if this.getHeader() %}
+            <h4>{{ this.getHeader() }}</h4>
+        {% endif %}
+        <p>{{ this.getContentText()|raw }}</p>
+    </div>
+
+    <div class="setup-tile-button">
+        {{ widget('\\XLite\\View\\Button\\Link', label=this.getButtonLabel(), location=this.getButtonURL(), attributes={'data-segment-click': this.getButtonConciergeLinkTitle()}) }}
+    </div>
+
+    <div class="setup-tile-close" data-segment-click="{{ this.getCloseConciergeLinkTitle() }}">
+        {{ this.getSVGImage('images/icons/cross.svg')|raw }}
+    </div>
+</div>

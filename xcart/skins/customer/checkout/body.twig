@@ -1,0 +1,12 @@
+{##
+ # Checkout widget body
+ #}
+
+<div class="checkout-block">
+  {% if this.isCheckoutAvailable() %}
+    <h1 class="title"><span class="secure-checkout-icon">{{ svg('images/secure_checkout.svg', 'customer')|raw }}</span> {{ this.getMainTitle() }}</h1>
+    {{ widget_list('checkout.main') }}
+  {% else %}
+    {{ widget('\\XLite\\View\\Signin') }}
+  {% endif %}
+</div>

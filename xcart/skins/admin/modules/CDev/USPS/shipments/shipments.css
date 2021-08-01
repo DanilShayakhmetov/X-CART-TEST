@@ -1,0 +1,38 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Registered shipments table style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list-table.cdev-usps-itemslist-model-shipment table.list td {
+  vertical-align: top;
+}
+
+/*.items-list-table table.list tbody td.main.shipmentId {*/
+  /*width: auto;*/
+/*}*/
+
+.items-list-table.cdev-usps-itemslist-model-shipment table.list tbody.lines tr.line td {
+  padding: 18px 12px 18px 18px;
+  width: 20%;
+}
+
+.items-list-table table.list tbody td.main.shipmentId div.print-date,
+.items-list-table table.list tbody td.main.shipmentId div.package-details {
+  color: #8f8f8f;
+}
+
+.shipmentId .print-date,
+.shipmentId .package-details,
+.price .price-details
+{
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+.action .tracking-action {
+  margin-bottom: 18px;
+}

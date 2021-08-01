@@ -1,0 +1,215 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: whoCanLeaveFeedback
+    category: 'XC\Reviews'
+    type: \XLite\Module\XC\Reviews\View\FormField\Select\WhoCanLeaveFeedback
+    orderby: 10
+    value: 'R'
+    translations:
+      - code: en
+        option_name: 'Who can leave feedback'
+  - name: disablePendingReviews
+    category: 'XC\Reviews'
+    type: checkbox
+    orderby: 20
+    value: true
+    translations:
+      - code: en
+        option_name: 'Admin moderates all reviews before showing them to customers'
+  - name: reviewsCountPerTab
+    category: 'XC\Reviews'
+    type: \XLite\View\FormField\Input\Text\Integer
+    widgetParameters: { min: 1 }
+    orderby: 30
+    value: 5
+    translations:
+      - code: en
+        option_name: 'The quantity of reviews for tabs product reviews'
+  - name: enableCustomersFollowup
+    category: 'XC\Reviews'
+    type: \XLite\View\FormField\Input\Checkbox\OnOff
+    orderby: 50
+    translations:
+      - code: en
+        option_name: 'Request customers to review the purchased products after successful orders'
+        option_comment: 'A successful order means an order that has been paid for and delivered.'
+      - code: ru
+        option_name: 'Отправлять покупателям приглашение оставить отзыв о купленных товарах после успешного заказа'
+        option_comment: 'Успешным заказом считается заказ, оплаченный и доставленный покупателю.'
+  - name: followupTimeout
+    category: 'XC\Reviews'
+    type: \XLite\View\FormField\Input\Text\Integer
+    widgetParameters: { min: 0 }
+    orderby: 60
+    value: 15
+    translations:
+      - code: en
+        option_name: 'How many days later to send a review request'
+      - code: ru
+        option_name: 'Через сколько дней отправлять приглашение оставить отзыв'
+
+XLite\Model\Product\GlobalTab:
+  - {service_name: 'Reviews', position: 60}
+
+XLite\Model\LanguageLabel:
+  - { name: 'X stars_5', translations: [{ code: en, label: '{{count}} stars' }] }
+  - { name: 'X stars_4', translations: [{ code: en, label: '{{count}} stars' }] }
+  - { name: 'X stars_3', translations: [{ code: en, label: '{{count}} stars' }] }
+  - { name: 'X stars_2', translations: [{ code: en, label: '{{count}} stars' }] }
+  - { name: 'X star_1', translations: [{ code: en, label: '{{count}} star' }] }
+  - { name: 'Any rating', translations: [{ code: 'en', label: 'Any rating' }] }
+  - { name: 'Reviews for product', translations: [{ code: 'en', label: '{{product}} reviews' }] }
+  - { name: 'Product', translations: [{ code: 'en', label: 'Product' }] }
+  - { name: 'Product reviews', translations: [{ code: 'en', label: 'Product reviews' }] }
+  - { name: 'Products reviews', translations: [{ code: 'en', label: 'Products reviews' }] }
+  - { name: 'Add review', translations: [{ code: 'en', label: 'Add review' }] }
+  - { name: 'Edit review', translations: [{ code: 'en', label: 'Edit review' }] }
+  - { name: 'Approve review', translations: [{ code: 'en', label: 'Approve review' }] }
+  - { name: 'Review has been created', translations: [{ code: 'en', label: 'The review has been created' }] }
+  - { name: 'Review has been deleted', translations: [{ code: 'en', label: 'The review has been deleted' }] }
+  - { name: 'Review has not been created since product is not found', translations: [{ code: 'en', label: 'The review has not been created since the product {{product}} has not been found' }] }
+  - { name: 'Review has not been updated since product is not found', translations: [{ code: 'en', label: 'The review has not been updated since the product {{product}} has not been found' }] }
+  - { name: 'Reviewer', translations: [{ code: 'en', label: 'Reviewer' }] }
+  - { name: 'Rating', translations: [{ code: 'en', label: 'Rating' }] }
+  - { name: 'Unknown', translations: [{ code: 'en', label: 'Unknown' }] }
+  - { name: 'Reviews imported', translations: [{ code: 'en', label: 'Reviews imported' }] }
+  - { name: 'Product, SKU or customer info', translations: [{ code: 'en', label: 'Product, SKU or customer info' }] }
+  - { name: 'Approve', translations: [{ code: 'en', label: 'Approve' }] }
+  - { name: 'Start typing product name or SKU', translations: [{ code: 'en', label: 'Start typing product name or SKU' }] }
+  - { name: 'Customer name', translations: [{ code: 'en', label: 'Customer name' }] }
+  - { name: 'Start typing customer email or name', translations: [{ code: 'en', label: 'Start typing customer email or name' }] }
+  - { name: 'Text of review', translations: [{ code: 'en', label: 'Text of review' }] }
+  - { name: 'Published', translations: [{ code: 'en', label: 'Published' }] }
+  - { name: 'Pending', translations: [{ code: 'en', label: 'Pending' }] }
+  - { name: 'Please sign in to add review', translations: [{ code: 'en', label: 'Please sign in to add review' }] }
+  - { name: 'You have already reviewed this product', translations: [{ code: 'en', label: 'You have already reviewed this product' }] }
+  - { name: 'Edit your review', translations: [{ code: 'en', label: 'Edit your review' }] }
+  - { name: 'Add your own review', translations: [{ code: 'en', label: 'Add your own review' }] }
+  - { name: 'Thank your for sharing your opinion with us!', translations: [{ code: 'en', label: 'Thank you for sharing your opinion with us!' }] }
+  - { name: 'Your product rating is saved. Thank you!', translations: [{ code: 'en', label: 'Your product rating is saved. Thank you!' }] }
+  - { name: 'Your review has been updated. Thank your for sharing your opinion with us!', translations: [{ code: 'en', label: 'Your review has been updated. Thank your for sharing your opinion with us!' }] }
+  - { name: 'Rating of votes', translations: [{ code: 'en', label: 'Rating of votes' }] }
+  - { name: 'Your email', translations: [{ code: 'en', label: 'Your email' }] }
+  - { name: 'customers', translations: [{ code: 'en', label: 'customers' }] }
+  - { name: 'Average rating', translations: [{ code: 'en', label: 'Average rating' }] }
+  - { name: 'out of', translations: [{ code: 'en', label: 'out of' }] }
+  - { name: 'Based on', translations: [{ code: 'en', label: 'Based on' }] }
+  - { name: 'votes', translations: [{ code: 'en', label: 'votes' }] }
+  - { name: 'Reviews', translations: [{ code: 'en', label: 'Reviews' }] }
+  - { name: 'Reviews: X', translations: [{ code: 'en', label: 'Reviews: {{count}}' }] }
+  - { name: 'We use this email in case we need additional information on your review. We do not use it for any kind of mailing lists or spam subscriptions', translations: [{ code: 'en', label: 'We may use this email if we need additional information on your review. We will not use it for any kind of mailing lists or spam subscriptions' }] }
+  - { name: 'How do you rate this item?', translations: [{ code: 'en', label: 'How do you rate this item?' }] }
+  - { name: 'Write your review', translations: [{ code: 'en', label: 'Write your review' }] }
+  - { name: 'Your review', translations: [{ code: 'en', label: 'Your review' }] }
+  - { name: 'Back to product details', translations: [{ code: 'en', label: 'Back to product details' }] }
+  - { name: 'Customer reviews', translations: [{ code: 'en', label: 'Customer reviews' }] }
+  - { name: 'On moderation', translations: [{ code: 'en', label: 'On moderation' }] }
+  - { name: 'Read all reviews about the product', translations: [{ code: 'en', label: 'Read all reviews for the product' }] }
+  - { name: 'Rate sort', translations: [{ code: en, label: 'Rates' }] }
+  - { name: 'Rate asc', translations: [{ code: en, label: 'By Rate - 0-9' }] }
+  - { name: 'Rate desc', translations: [{ code: en, label: 'By Rate - 9-0' }] }
+  - { name: 'Only customers who purchased this product can leave feedback on this product', translations: [{ code: 'en', label: 'Only registered customers who purchased this product can leave feedback' }] }
+  - { name: 'Registered users who purchased product', translations: [{ code: 'en', label: 'Registered users who purchased the product' }] }
+  - { name: 'Score: X. Votes: Y', translations: [{ code: 'en', label: 'Score: {{score}} (votes: {{votes}})' }] }
+  - { name: 'Votes: X', translations: [{ code: 'en', label: 'Votes: {{votes}}' }] }
+  - { name: 'No reviews.', translations: [{ code: 'en', label: 'No reviews.' }] }
+  - { name: 'Not rated yet', translations: [{ code: 'en', label: 'Not rated yet' }] }
+  - { name: 'Be the first and leave a feedback.', translations: [{ code: 'en', label: 'Be the first and leave feedback' }] }
+  - { name: 'All users', translations: [{ code: en, label: 'All users' }] }
+  - { name: 'Registered users only', translations: [{ code: en, label: 'Registered users only' }] }
+  - { name: 'Reviews and ratings', translations: [{ code: en, label: 'Reviews and ratings' }] }
+  - { name: 'Ratings only', translations: [{ code: en, label: 'Ratings only' }] }
+  - { name: 'Reviews only', translations: [{ code: en, label: 'Reviews only' }] }
+  - { name: Review, translations: [{ code: en, label: Review }] }
+  - { name: 'Selected reviews have been deleted', translations: [{ code: en, label: 'Selected reviews have been deleted' }] }
+  - { name: 'Please select the reviews first', translations: [{ code: en, label: 'Please select the reviews first' }] }
+  - { name: 'Selected reviews have been updated', translations: [{ code: en, label: 'Selected reviews have been updated' }] }
+  - { name: 'Reviews about product', translations: [{ code: en, label: 'Reviews about product' }] }
+  - { name: 'New product reviews', translations: [{ code: en, label: 'New product reviews' }] }
+  - { name: 'Ratings and Reviews of X', translations: [{ code: 'en', label: 'Ratings and Reviews of {{product}}' }] }
+  - { name: 'reviewMetaDescription', translations: [{ code: 'en', label: 'Rating: {{rating}} out of {{maxRating}}. Review by {{reviewerName}}: {{review}}' }] }
+  - { name: 'SEO', translations: [{ code: 'en', label: 'SEO' }] }
+  - { name: 'Select the review that should be included into the rich snippet shown for the page of this product when the page appears in search results by Google and other major search engines', translations: [{ code: 'en', label: 'Select the review that should be included into the rich snippet shown for the page of this product when the page appears in search results by Google and other major search engines. More info: <a href="https://support.google.com/webmasters/answer/146750" target="_blank">https://support.google.com/webmasters/answer/146750</a>' }] }
+  - { name: 'Anonymous reviewer', translations: [{ code: en, label: 'Anonymous reviewer' }] }
+  - { name: 'Reject', translations: [{ code: 'en', label: 'Reject' }] }
+  - { name: 'There are no comments yet. Be the first to leave a comment', translations: [{ code: 'en', label: 'There are no comments yet. Be the first to leave a comment' }] }
+  - { name: 'A new review has been submitted for the product "{{name}}".', translations: [{ code: 'en', label: 'A new review has been submitted for the product "{{name}}".' }] }
+  - { name: 'Go to see the review [in the Admin area]', translations: [{ code: 'en', label: 'Go to see the review <a href="{{link}}">in the Admin area</a>' }] }
+  - { name: 'itemslist.admin.review.blank', translations: [{ code: en, label: '<p>No one has rated your products yet. Once someone reviews your product (or you add a review manually), this is the place to track, moderate and remove reviews.</p>' },{ code: ru, label: '<p>Никто пока не оценил ваши товары. Как только появятся отзывы о ваших товарах, вы сможете управлять ими на этой странице.</p>' }] }
+  - { name: 'Please review purchased product {{product}}', translations: [{ code: en, label: 'Please review the product {{product}}' },{ code: ru, label: 'Пожалуйств, оставьте отзыв на товар {{product}}' }] }
+  - { name: 'Recently, you have made a purchase from our company:', translations: [{ code: en, label: "<p>Thank you for your recent purchase from {{company}} – Order #{{orderNumber}} ({{orderDate}}):</p>" },{ code: ru, label: "<p>Благодарим Вас за недавнюю покупку у {{company}} – Заказ #{{orderNumber}} ({{orderDate}}):</p>" }] }
+  - { name: 'Please review purchased products', translations: [{ code: en, label: "<p>Would you be willing to rate these products and write a review? Your opinion is important us.</p><p>To write a review:</p><p>1) Click on the product name to open the Customer reviews section for the product<br />2) Click Add review<br />3) Rate the product and write your feedback.</p><p>Thank you so much for taking the time to let us know what you think. It is truly appreciated.</p>" },{ code: ru, label: "<p>Готовы ли вы оценить эти товары и написать отзыв? Ваше мнение очень важно для нас!</p><p>Чтобы написать отзыв:</p><p>1) Нажмите на название товара, чтобы открыть раздел Отзывы для этого товара<br />2) Нажмите кнопку Добавить отзыв<br />3) Оцените товар и напишите свой отзыв.</p><p>Спасибо, что нашли время сообщить нам свое мнение. Мы очень ценим это.</p>" }] }
+  - { name: 'star_tooltip_1', translations: [{ code: 'en', label: 'Excellent' }, { code: 'ru', label: 'Отлично' }] }
+  - { name: 'star_tooltip_2', translations: [{ code: 'en', label: 'Good' }, { code: 'ru', label: 'Хорошо' }] }
+  - { name: 'star_tooltip_3', translations: [{ code: 'en', label: 'Average' }, { code: 'ru', label: 'Нормально' }] }
+  - { name: 'star_tooltip_4', translations: [{ code: 'en', label: 'Fair' }, { code: 'ru', label: 'Посредственно' }] }
+  - { name: 'star_tooltip_5', translations: [{ code: 'en', label: 'Poor' }, { code: 'ru', label: 'Плохо' }] }
+  - { name: 'Text of response', translations: [{ code: 'en', label: 'Text of response' }, { code: 'ru', label: 'Ответ' }] }
+  - { name: 'Response date is in wrong format', translations: [{ code: 'en', label: 'Response date is in wrong format' }, { code: 'ru', label: 'Неверный формат поля "responseDate"' }] }
+  - { name: 'Add response', translations: [{ code: 'en', label: 'Add response' }, { code: 'ru', label: 'Добавить ответ' }] }
+  - { name: 'SKU or Product name', translations: [{ code: 'en', label: 'SKU or Product name' }, { code: 'ru', label: 'Артикул или название товара' }] }
+  - { name: 'First name, Last name or E-mail', translations: [{ code: 'en', label: 'First name, Last name or E-mail' }, { code: 'ru', label: 'Имя, фамилия или e-mail' }] }
+  - { name: 'Enter a name to be published with the review', translations: [{ code: 'en', label: 'Enter a name to be published with the review' }, { code: 'ru', label: 'Введите имя для отображения в отзыве' }] }
+  - { name: 'Tab displaying product reviews. Added by the addon Product Reviews', translations: [{ code: 'en', label: 'Tab displaying product reviews. Added by the addon <a href="{{url}}">Product Reviews</a>' }, { code: 'ru', label: 'Вкладка для отображения отзывов о товаре. Добавляется модулем <a href="{{url}}">Product Reviews</a>' }] }
+
+  - { name: 'No email', translations: [{ code: en, label: 'No email' }]}
+  - { name: 'Reviewer name', translations: [{ code: en, label: 'Reviewer name' }]}
+  - { name: 'Shopper approved promo', translations: [{ code: en, label: 'Shopper approved promo' }]}
+
+XLite\Model\Task:
+  - owner: XLite\Module\XC\Reviews\Core\Task\SendReviewKeys
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/Reviews/new_review
+    position: 1000
+    availableForAdmin: true
+    availableForCustomer: false
+    enabledForAdmin: true
+    enabledForCustomer: false
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: false
+    customerGreetingEnabled: false
+    customerSignatureEnabled: false
+    editable: true
+    translations:
+      - code: en
+        name: 'New product review submitted (Product Reviews module)'
+        description: 'This message is used to notify the administrator when a customer submits a new product review.'
+        adminSubject: 'New review for ‘%product_name%’'
+        adminText: '<p dir="ltr">%author_name% has just rated your &quot;%product_name%&quot; and left a review for you.</p><p dir="ltr">%dynamic_message%</p><blockquote><p dir="ltr">%review%</p></blockquote><p dir="ltr">Follow <a href="%product_link%">this link</a> to approve or remove this review. And don&rsquo;t forget to reply to the customer. If there&rsquo;s a problem, now&rsquo;s your chance to make it right and be a customer-service hero. If you&rsquo;ve gotten a rave review, reach out, thank the reviewer, and ask if there&rsquo;s anything else you can help with. Both scenarios are great opportunities to build strong relationships and an excellent reputation.</p>'
+
+  - templatesDirectory: modules/XC/Reviews/review_key
+    position: 0
+    availableForAdmin: false
+    availableForCustomer: true
+    enabledForAdmin: false
+    enabledForCustomer: false
+    adminHeaderEnabled: false
+    adminGreetingEnabled: false
+    adminSignatureEnabled: false
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Request to review purchased products - (Product Reviews module)'
+        description: 'This message is used to invite customers to leave feedback on the products they have purchased.'
+        customerSubject: 'Order #%order_number%: Please, review'
+        customerText: '<p>Thank you for purchasing our products! We hope you love them.</p><p>%dynamic_message%</p><p>Please take a minute to review your order to let others know that you&rsquo;ve found a gem and want to share the goodness!</p>'
+      - code: ru
+        name: "Приглашение оставить отзыв на купленные товары - (модуль Product Reviews)"
+        description: "Данное сообщение используется для отправки покупателю приглашения оставить отзыв о купленных им товарах."
+        customerSubject: "Пожалуйста, оставьте отзыв о купленных товарах"
+        customerText: ""
+
+XLite\Model\Role\Permission:
+  - { code: manage reviews, section: Catalog, translations: [{ code: en, name: Manage reviews }, { code: ru, name: 'Управление отзывами' }] }

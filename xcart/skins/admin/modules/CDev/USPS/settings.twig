@@ -1,0 +1,37 @@
+{##
+ # USPS module settings main page template
+ #}
+<div class="usps-info">
+
+  {% set promoName = 'usps-via-pb-1' %}
+  {% if this.isPromoBlockVisible(promoName) %}
+    <div class="usps-pitney-bowes-promo promo-block" data-promo-id="{{ promoName }}">
+      <div class="pitney-bowes-logo" align="center">
+        <img src="{{ this.layout.getResourceWebPath('modules/CDev/USPS/images/pitney_bowes.jpg') }}" alt="{{ t('PitneyBowes') }}" class="logo" />
+      </div>
+      <div class="usps-pitney-bowes-promo-header">
+          {{ t('Savings - Up to 49% off retail USPS postage rates')|raw }}
+          <br/>
+          {{ t('Convenience - Verify addresses and buy & print compliant USPS labels directly from the X-Cart application')|raw }}
+          <br/>
+          {{ t('Easy payment options - Ship Now Pay Later with a Pitney Bowes Line of Credit or use a credit card.')|raw }}
+          <br/>
+          <br/>
+          {{ t('Get started Now! Click here to create your PITNEY BOWES Postage Account', {url: this.getRegistrationURL()})|raw }}
+      </div>
+      <div class="close promo-block-close" data-promo-selector=".usps-pitney-bowes-promo">
+        {{ this.displaySVGImage('images/icon-close-round.svg') }}
+      </div>
+    </div>
+  {% endif %}
+
+</div>
+
+<div class="usps-dependent-info{% if this.getDataProvider() != 'USPS' %} hidden{% endif %}">
+  <div class="shipping-description">
+    <p>{{ t('U.S.P.S. module allows you to use online shipping rates calculation via USPS Web Tools Ecommerce API.')|raw }}</p>
+    <p><strong>{{ t('Please note: the USPS Web tools APIs print labels without postage.') }}</strong></p>
+  </div>
+</div>
+
+{{ widget('XLite\\Module\\CDev\\USPS\\View\\Model\\Settings') }}

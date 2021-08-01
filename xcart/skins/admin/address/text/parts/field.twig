@@ -1,0 +1,27 @@
+{##
+ # Address
+ #
+ # @ListChild (list="address.text.main", weight="100")
+ #}
+
+<ul class="address-text">
+
+  {{ widget_list('before', type='nested', fieldName=this.fieldName, fieldData=this.fieldData) }}
+
+  <li class="address-text-label-{{ this.fieldName }}">
+    {{ this.fieldData.label }}:
+  </li>
+
+  {% set fieldValue = this.getFieldValue(this.fieldName, 1) %}
+
+  <li class="address-text-value">
+    {{ fieldValue }}
+  </li>
+
+  {% if fieldValue %}
+    <li class="address-text-comma-{{ this.fieldName }}">,</li>
+  {% endif %}
+
+  {{ widget_list('after', type='nested', fieldName=this.fieldName, fieldData=this.fieldData) }}
+
+</ul>

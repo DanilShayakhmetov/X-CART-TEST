@@ -1,0 +1,12 @@
+{##
+ # Subscription info block
+ #
+ #}
+
+<div class="subscription-info">
+  <ul>
+    {% for key, value in this.getDetails() %}
+      <li><div class="subscription-param">{{ t(key) }}</div><div class="subscription-value">{{ t(value) }}</div></li>
+    {% endfor %}
+  </ul>
+</div>

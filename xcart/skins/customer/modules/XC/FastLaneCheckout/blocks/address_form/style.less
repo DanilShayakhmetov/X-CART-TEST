@@ -1,0 +1,43 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * style.less
+ *
+ * Copyright (c) 2001-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+.checkout_fastlane_address_form {
+    clear: both;
+
+	.form-group > .table-value {
+	    float: right;
+	    width: 70%;
+
+	    & > .input-field-wrapper {
+	    	display: block;
+	    }
+	}
+
+    &.create-profile-warning .form-field-comment,
+    &.create-profile-note .form-field-comment,
+    .create-warning,
+    .create-note,
+    .create {
+      display: none;
+    }
+}
+
+.checkout_fastlane_address_form_wrapper .checkout_fastlane_block_heading {
+    float: left;
+}
+
+@media (max-width: @screen-xs-max) {
+  .checkout_fastlane_address_form_wrapper:first-of-type .checkout_fastlane_block_heading {
+    .h1;
+  }
+}
+
+.checkout_fastlane_block_address-book-button {
+    float: right;
+    padding-top: 30px;
+}

@@ -1,0 +1,62 @@
+{##
+ # Change card form
+ #
+ #}
+{% form 'XLite\\View\\Form' with {formTarget: 'xpayments_subscriptions', formAction: 'change_card'} %}
+  <input type="hidden" name="subscription_id" value="{{ this.xpaymentsSubscription.id }}" />
+
+  <span class="fee-label">{{ t('Card for payments') }}:</span>
+
+  <span class="current-card" id="current-card-{{ this.xpaymentsSubscription.id }}">
+
+    {% if this.xpaymentsSubscription.isFree() %}
+      {{ t('Not required') }}
+    {% else %}
+
+      <ul class="saved-cards">
+        <li>
+        {% set currentCard=this.xpaymentsSubscription.getCardId() %}
+          {% if currentCard %}
+            <span class="card-icon-container">
+            <span class="card {{ this.xpaymentsSubscription.getCardData(currentCard).cssType }}"></span>
+          </span>
+            <span class="number">{{ this.xpaymentsSubscription.getCardData(currentCard).cardNumber }} {% if this.xpaymentsSubscription.getCardData(currentCard).expire %}({{ this.xpaymentsSubscription.getCardData(currentCard).expire }}){% endif %}</span>
+        {% else %}
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> {{ t('Not available') }}
+          {% endif %}
+        </li>
+      </ul>
+
+      {% if this.profile.getXpaymentsCards() %}
+      <a class="card-change-btn" href="javascript: void(0);" data-subscription-id="{{ this.xpaymentsSubscription.id }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+    {% endif %}
+    {% endif %}
+
+  </span>
+
+  <div class="saved-cards-container" id="saved-cards-container-{{ this.xpaymentsSubscription.id }}">
+
+    <ul class="saved-cards">
+
+      {% for cc in this.profile.getXpaymentsCards() %}
+        <li>
+
+          <input type="radio" name="card_id" value="{{ cc.cardId }}" {% if currentCard and (cc.cardId == this.xpaymentsSubscription.getCardData(currentCard).cardId) %} checked="checked"{% endif %} id="saved-card-radio-{{ this.xpaymentsSubscription.id }}-{{ cc.cardId }}" />
+
+          <label for="saved-card-radio-{{ this.xpaymentsSubscription.id }}-{{ cc.card_id }}" id="saved-card-label-{{ this.xpaymentsSubscription.id }}-{{ cc.cardId }}">
+            <span class="card-icon-container">
+              <span class="card {{ cc.cssType }}"></span>
+            </span>
+            <span class="number">{{ cc.cardNumber }} {% if cc.expire %}({{ cc.expire }}){% endif %}</span>
+          </label>
+
+        </li>
+      {% endfor %}
+
+    </ul>
+
+    <button type="submit" class="btn regular-button xpayments-subscription-cards">{{ t('Use selected card') }}</button>
+
+  </div>
+
+{% endform %}

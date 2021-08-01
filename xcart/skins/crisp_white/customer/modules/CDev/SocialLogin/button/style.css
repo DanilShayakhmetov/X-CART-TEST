@@ -1,0 +1,58 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Social Login widget styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/* ICON */
+
+.social-net-icon .fa.fa-facebook {
+  background-color: #385aa1;
+}
+
+.social-net-icon .fa.fa-google-plus {
+  background-color: #db4437;
+}
+
+/* BUTTON */
+
+.social-net-button.social-net-Facebook a {
+  border-color: #3a5898;
+  color: #3a5898;
+}
+
+.social-net-button.social-net-Google a {
+  border-color: #4084f3;
+  color: #4084f3;
+}
+
+.social-net-button.social-net-Apple a {
+  border-color: #000000;
+  color: #000000;
+}
+
+.social-net-button .fa.fa-google-custom {
+  width: 24px;
+  height: 22px;
+  position: relative;
+}
+
+.social-net-button .fa.fa-google-custom:before {
+  content: ' ';
+  width: 24px;
+  height: 24px;
+  background: url("../images/g-icon.svg");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.signin-anonymous-wrapper .social-login .social-net-element .fa.fa-google-custom:before {
+  width: 20px;
+  height: 20px;
+  top: 2px;
+}

@@ -1,0 +1,5 @@
+Version 5.4.2.0
+
+Improvements (1)
+2020-04-29 - [Change] Implemented changes to the work of the addons Wholesale, Sale and Product variants when these addons are used at the same time. #XCN-10845 #Core #Sale #Wholesale #ProductVariants
+

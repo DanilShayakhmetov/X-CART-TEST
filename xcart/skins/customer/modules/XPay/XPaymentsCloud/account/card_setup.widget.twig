@@ -1,0 +1,112 @@
+{##
+ # Connect widget for saving card
+ #
+ #}
+<div id="xpayments-iframe-container"></div>
+<script>
+function createXPaymentsWidget()
+{
+  window.xpaymentsWidgetInstance = new XPaymentsWidget();
+
+  window.xpaymentsWidgetInstance.init({
+    account: '{{ this.getPaymentMethod().getSetting('account') }}',
+    widgetKey: '{{ this.getPaymentMethod().getSetting('widget_key') }}',
+    container: '#xpayments-iframe-container',
+    form: 'form.card-setup',
+    showSaveCard: false,
+    enableWallets: false,
+    order: {
+      tokenizeCard: true,
+      currency: '{{ this.getCurrency().getCode() }}'
+    },
+    language: '{{ this.getCurrentLanguage().getCode() }}',
+    company: {
+      name: '{{ this.config.Company.company_name }}',
+      countryCode: '{{ this.config.Company.location_country }}',
+    },
+  }).on('fail', function() {
+    enableSubmit();
+  }).on('alert', function(params) {
+    var closeDialog = false;
+    var messageText = params.message;
+
+    if ('popup' === params.type) {
+      core.trigger('message', {type: 'info', message: messageText});
+    } else {
+      closeDialog = ('error' === params.type || 'tokenizeCardError' === params.type);
+
+      if ('tokenizeCardError' === params.type) {
+        messageText = '{{ t('Sorry, card setup is not available currently.') }}';
+      }
+      core.showError(messageText);
+    }
+    if (closeDialog) {
+      getDialogElm().dialog('close');
+    }
+  }).on('success', function(params) {
+    var $form = jQuery('form.card-setup');
+    jQuery('<input type="hidden" name="xpaymentsToken">').val(params.token).appendTo($form);
+    $form.submit();
+  }).on('loaded', function(params) {
+    enableSubmit();
+    {# Center popup after widget is loaded #}
+    getDialogElm().dialog('option', 'position', {my: 'center', at: 'center', of: window});
+  });
+
+  return getXPaymentsWidget(false);
+}
+
+function getDialogElm()
+{
+  var btn = jQuery('.popup-button.add-new-card').get(0);
+  return jQuery(btn.linkedDialog)
+}
+
+function disableSubmit()
+{
+  assignWaitOverlay($('.widget-xpay-xpaymentscloud-cardsetup'));
+  jQuery('#save_card').attr('disabled', true);
+}
+
+function enableSubmit()
+{
+  unassignWaitOverlay($('.widget-xpay-xpaymentscloud-cardsetup'));
+  jQuery('#save_card').removeAttr('disabled');
+}
+
+function getXPaymentsWidget(onlyValid = true)
+{
+  if (
+    'undefined' !== typeof window.xpaymentsWidgetInstance
+    && (!onlyValid || window.xpaymentsWidgetInstance.isValid())
+  ) {
+    return window.xpaymentsWidgetInstance;
+  } else {
+    return false;
+  }
+}
+
+function loadXPaymentsWidget()
+{
+  jQuery(function() {
+    var widget = getXPaymentsWidget(false);
+    if (!widget) {
+      widget = createXPaymentsWidget();
+    }
+    widget.load();
+  });
+}
+
+core.bind('popup.postprocess', function() {
+  disableSubmit();
+  loadXPaymentsWidget();
+});
+
+jQuery('#save_card').click(function() {
+  disableSubmit();
+  getXPaymentsWidget().submit();
+  return false;
+})
+
+</script>
+

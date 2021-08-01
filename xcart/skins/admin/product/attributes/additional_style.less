@@ -1,0 +1,74 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attributes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.lines .line {
+  .adding-label,
+  .changed-label {
+    display: inline-block;
+    font-size: 12px;
+    line-height: @line-height-small;
+    min-width: 250px;
+    color: @color-text-default;
+  }
+
+  .changed-label {
+    display: none;
+  }
+
+  .attribute-name {
+    //height: 80px;
+
+    &.is-changed .changed-label {
+      display: inline-block;
+    }
+    .inline-field {
+      height: 45px;
+      padding-bottom: 0;
+    }
+    .changed-label,
+    .adding-label {
+      margin-left: @padding-base-horizontal;
+    }
+  }
+
+  &.create-line .attribute-name {
+    height: 75px;
+    .table-value {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.attribute-classes .adding-label.global-all {
+  display: none;
+}
+
+.fully-global-attributes .adding-label.global-class {
+  display: none;
+}
+
+.sticky-panel .panel-cell.saveMode {
+  margin-left: 20px;
+  .flex-display();
+  .align-items(center);
+
+  .table-label {
+    width: auto;
+    padding: 0;
+  }
+
+  .table-value {
+    .flex-order(-1);
+    width: 75px;
+
+    .input-field-wrapper {
+      vertical-align: middle;
+    }
+  }
+}

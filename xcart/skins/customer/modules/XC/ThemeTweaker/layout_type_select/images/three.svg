@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>three</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="three" transform="translate(13.000000, 13.000000) scale(-1, 1) rotate(-180.000000) translate(-13.000000, -13.000000) translate(1.000000, 1.000000)" fill-rule="nonzero" stroke="#4F5B6A">
+            <polygon id="Shape" points="0 12 0 0.0184261036 1.95918367 0.0184261036 3.91836735 0.0184261036 3.91836735 12 3.91836735 23.9815739 1.95918367 23.9815739 0 23.9815739"></polygon>
+            <polygon id="Shape" points="6.12 12 6.12 0.0184261036 12 0.0184261036 17.88 0.0184261036 17.88 12 17.88 23.9815739 12 23.9815739 6.12 23.9815739"></polygon>
+            <polygon id="Shape" points="20.0791837 12 20.0791837 0.0184261036 22.0383673 0.0184261036 23.997551 0.0184261036 23.997551 12 23.997551 23.9815739 22.0383673 23.9815739 20.0791837 23.9815739"></polygon>
+        </g>
+    </g>
+</svg>

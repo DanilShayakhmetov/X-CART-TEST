@@ -1,0 +1,56 @@
+{##
+ # File upload template
+ #}
+
+<xlite-file-uploader inline-template {% if this.hasMultipleSelector() %}:multiple="true"{% endif %}
+                     help-message="{{ t(this.getHelp()) }}">
+  <div class="{{ this.getDivStyle() }}"
+       data-object-id="{{ this.getObjectId() }}"
+       data-max-width="{{ this.getMaxWidth() }}"
+       data-max-height="{{ this.getMaxHeight() }}"
+       data-name="{{ this.getName() }}"
+       v-data='{ "basePath": "{{ this.getVModel() }}",
+       "isRemovable": "{{ this.isRemovable() }}",
+       "isTemporary": "{{ this.isTemporary() }}",
+       "isImage": "{{ this.isImage() }}",
+       "hasFile": "{{ this.hasFile() }}",
+       "error": "{{ this.getMessage() ? '1' : '' }}",
+       "defaultErrorMessage": "{{ t(this.getErrorMessageDefault())|escape('js') }}",
+       "initialAlt":"{% if this.hasAlt() %}{{ this.getAlt()|escape('js') }}{% endif %}",
+       "realErrorMessage": "{{ t(this.getMessage())|escape('js') }}"}'>
+    {% if this.isRemovable() %}
+      <input type="checkbox" name="{{ this.getName() }}[delete]" v-model="delete" value="1"
+             class="input-delete"
+             v-if="isRemovable"
+             v-data='{ "delete": false }'/>
+    {% endif %}
+    {% if this.isMultiple() %}
+      <input type="hidden" name="{{ this.getName() }}[position]" v-model="position"
+             value="{{ this.getPosition() }}"
+             class="input-position"/>
+    {% endif %}
+    {% if this.isTemporary() %}
+      <input type="hidden" name="{{ this.getName() }}[temp_id]" v-model="temp_id"
+             value="{{ this.object.id }}"
+             v-if="isTemporary"
+             class="input-temp-id"/>
+    {% endif %}
+    <a href="{{ this.getLink() }}" class="link" data-toggle="dropdown">
+      <i class="icon fa fa-camera" v-if="isDisplayCamera"></i>
+      <i class="icon fa warning fa-exclamation-triangle" v-if="errorMessage"></i>
+      <div class="preview" v-if="isDisplayPreview">
+        {{ this.getPreview()|raw }}
+      </div>
+      <div :class="error ? 'error' : 'help'" v-html="message" v-if="shouldShowMessage"></div>
+      <div class="icon">
+        <i class="{{ this.getIconStyle() }}"></i>
+      </div>
+    </a>
+    {% if this.hasAlt() %}
+      {% include 'file_uploader/parts/widget.alt.twig' %}
+    {% endif %}
+    <ul class="dropdown-menu" role="menu">
+      {{ widget_list('file-uploader.menu') }}
+    </ul>
+  </div>
+</xlite-file-uploader>

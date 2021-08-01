@@ -1,0 +1,7 @@
+{##
+ # Product details attributes block
+ #
+ # @ListChild (list="product.details.page.tab.description", weight="100")
+ #}
+
+<div class="description product-description" {{ this.printTagAttributes(this.product.getFieldMetadata('description'))|raw }} >{{ this.product.getProcessedDescription()|raw }}</div>

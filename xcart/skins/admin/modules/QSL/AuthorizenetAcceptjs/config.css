@@ -1,0 +1,24 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * FastSpring configuration [age styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+a.authnet-instruction {
+}
+
+div.authnet-instruction {
+  margin-top: 5px;
+}
+
+div.authnet-instruction ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+div.authnet-instruction li {
+  padding: 3px 0;
+}

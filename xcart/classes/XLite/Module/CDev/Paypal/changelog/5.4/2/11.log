@@ -1,0 +1,8 @@
+Version 5.4.2.11
+
+Improvements (1)
+2020-11-13 - [Story] Small fixes for PayPal Credit Messages integration. #XCC-915 #CDev-Paypal
+
+Fixes (1)
+2020-11-11 - [Bug] Error when paying with PayPal Partner hosted if the Discount amount was greater or equal to the Subtotal amount. Fixed. #XCB-102 #CDev-Paypal
+

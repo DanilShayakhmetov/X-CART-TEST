@@ -1,0 +1,5 @@
+Version 5.4.2.4
+
+Fixes (1)
+2020-07-30 - [Bug] Layout issues in the product block when viewing the product list in grid view with the addons VAT and Loyalty program enabled at the same time. Fixed. #BUG-8828 #CrispWhiteSkin
+

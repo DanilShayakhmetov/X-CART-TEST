@@ -1,0 +1,10 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-11-26 - [Change] An additional filter - "No group" - was added on the Google Shopping Group page in the Admin area. #BUG-7052 https://bt.x-cart.com/view.php?id=50432 (Pavel Veselovsky) #GoogleFeed
+
+Fixes (3)
+2019-11-07 - [Bug] The addons UPC/ISBN and Product Variants could not be enabled to be used both at the same time. Fixed. #BUG-8072 (Pavel Veselovsky) #GoogleFeed
+2019-10-08 - [Bug] Implemented uniform system behavior for user-invoked cancellation of processes (like generation of feeds, data removal, XML Sitemap generation, data uploading to MailChimp, etc.) #BUG-7458 (Shevelov Alexander) #Core #AmazonS3Images #XMLSitemap #MailChimp #BulkEditing #Facebook Commerce #GoogleFeed #YandexMarket
+2019-09-20 - [Bug] Google Product Feed. The tag <g:shipping> was not formed in the feed after adding variants for a product. Fixed. #BUG-7758 https://bt.x-cart.com/view.php?id=50915 (Fedya Lavrentyev) #GoogleFeed
+

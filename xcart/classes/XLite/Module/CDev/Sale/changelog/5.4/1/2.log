@@ -1,0 +1,5 @@
+Version 5.4.1.2
+
+Fixes (1)
+2020-05-27 - [Bug] Fatal error when generating product code for the buy button. Fixed. #BUG-8731 #Sale
+

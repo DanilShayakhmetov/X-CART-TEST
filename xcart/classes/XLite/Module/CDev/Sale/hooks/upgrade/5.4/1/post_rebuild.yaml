@@ -1,0 +1,44 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: way_to_combine_discounts
+    category: 'CDev\Sale'
+    type: \XLite\Module\CDev\Sale\View\FormField\Select\CombineDiscounts
+    orderby: 100
+    value: 'apply_max'
+    translations:
+      - code: en
+        option_name: 'How to handle multiple sale discounts'
+  - name: show_links_in_category_menu
+    category: 'CDev\Sale'
+    type: \XLite\Module\CDev\Sale\View\FormField\Select\ShowLinksInCategoryMenu
+    orderby: 110
+    value: 'under_categories'
+    translations:
+      - code: en
+        option_name: 'How to display links to sale offers in the category menu'
+  - name: allow_vendors_edit_discounts
+    category: 'CDev\Sale'
+    type: checkbox
+    orderby: 120
+    value: Y
+    translations:
+      - code: en
+        option_name: 'Allow vendors to manage sale discounts for their own products'
+
+XLite\Model\Role\Permission:
+  - { code: manage sale discounts, section: Sale, translations: [{ code: en, name: Manage sale discounts }, { code: ru, name: Управление скидками }] }
+
+XLite\Model\Role:
+  - { translations: [{ code: en, name: Sale discounts management }, { code: ru, name: Управление скидками }], permissions: [{ code: manage sale discounts }] }
+
+XLite\Model\MoneyModificator:
+  - class: XLite\Module\CDev\Sale\Logic\SaleDiscount
+    validator: isApply
+    purpose: net
+    position: 600

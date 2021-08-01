@@ -1,0 +1,5 @@
+Version 5.4.0.7
+
+Fixes (1)
+2019-12-26 - [Bug] An error in the text message in the Customer area on the page of a disabled product that has related products. Fixed. #BUG-7617 (Pavel Veselovsky) #RelatedProducts
+

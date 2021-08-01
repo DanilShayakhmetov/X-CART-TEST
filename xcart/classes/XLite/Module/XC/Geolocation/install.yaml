@@ -1,0 +1,59 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: default_provider
+    category: 'XC\Geolocation'
+    type: XLite\Module\XC\Geolocation\View\FormField\Select\DefaultProvider
+    orderby: 10
+    value: 0
+    translations:
+      - code: en
+        option_name: 'Default geolocation provider'
+      - code: ru
+        option_name: 'Приоритетный источник данных о местоположении'
+  - name: display_location_popup
+    category: 'XC\Geolocation'
+    type: XLite\View\FormField\Input\Checkbox\OnOffWithoutOffLabel
+    orderby: 20
+    value: 1
+    translations:
+      - code: en
+        option_name: 'Display location select widget'
+      - code: ru
+        option_name: 'Отображать виджет смены местоположения'
+  - name: extended_database
+    category: 'XC\Geolocation'
+    type: XLite\View\FormField\FileUploader\ChunkUpload
+    orderby: 30
+    widgetParameters: { successAction: 'geolocation', extensions: '.mmdb' }
+    translations:
+      - code: en
+        option_name: 'Upload extended database'
+        option_comment: 'You can upload an extended .mmdb database to get user location by IP more accurately'
+      - code: ru
+        option_name: 'Загрузить расширенную базу данных'
+        option_comment: 'Вы можете загрузить расширенную базу данных в формате .mmdb для более точного определения местоположения'
+  - name: current_database
+    category: 'XC\Geolocation'
+    type: XLite\Module\XC\Geolocation\View\FormField\Label\CurrentDatabase
+    orderby: 40
+    translations:
+      - code: en
+        option_name: 'Database file in use'
+      - code: ru
+        option_name: 'Текущая база данных'
+
+XLite\Model\LanguageLabel:
+  - { name: 'My location', translations: [{ code: en, label: 'My location' }] }
+  - { name: 'Choose your location', translations: [{ code: en, label: 'Specify your location' }] }
+  - { name: 'Save location', translations: [{ code: en, label: 'Save location' }] }
+  - { name: 'Location was successfully set', translations: [{ code: en, label: 'Location was successfully set' }] }
+  - { name: 'Revert to default database', translations: [{ code: en, label: 'Revert to default database' }] }
+  - { name: 'Geolocation header promo', translations: [{ code: en, label: 'X-Cart uses free "GeoLite2 Country" database by <a href="https://www.maxmind.com/en/geoip2-databases?%refID=xcart" target="_blank">MaxMind</a>. You can upload the more accurate database to determine the country, subdivisions, city, and postal code. <a href="https://www.maxmind.com/en/geoip2-databases?%refID=xcart%" target="_blank">Learn more</a>' }] }
+  - { name: 'Location is invalid', translations: [{ code: en, label: 'Location is invalid' }]}
+  - { name: "Your store uses the addon Geolocation", translations: [{ code: en, label: "Your store uses the addon Geolocation for customer location tracking. The address provided through Geolocation will overwrite the values below. If a higher level of geolocation accuracy is required, you can upload an extended database via the <a href='{{geoip-settings-link}}'>Geolocation addon settings page</a> so your store can estimate a user's location to a country, subdivision, city, and postal code." }] }

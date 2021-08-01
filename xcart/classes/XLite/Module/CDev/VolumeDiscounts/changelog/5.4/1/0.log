@@ -1,0 +1,8 @@
+Version 5.4.1.0
+
+Fixes (4)
+2020-03-18 - [Bug] "XLite [warning] Warning: Invalid argument supplied for foreach()" in logs when adding a volume discount. Fixed. #BUG-8442 #VolumeDiscounts
+2020-03-02 - [Bug] It was possible to create a discount of 100.01% to 100.99% in Coupons, Volume discounts and Sale. Fixed. #BUG-8364 #Coupons #Sale #VolumeDiscounts
+2020-01-29 - [Bug] An incorrect message was shown if configuring a volume discount and trying to save it with a value of more than 100%. Fixed. #BUG-8105 #Coupons #Sale #VolumeDiscounts
+2020-01-29 - [Bug] Volume discounts. The next level of discount was determined incorrectly. Fixed. #BUG-8102 #VolumeDiscounts
+

@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-04-06 - [Bug] Layout issues related to displaying product images in the Customer area in list view. Fixed. #BUG-8516 #CrispWhiteSkin
+

@@ -1,0 +1,284 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: failed_admin_login
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Failed admin login'
+        description: 'The notification is sent to the email address of the admin user for whose account failed login attempts have been detected several times in a row. A copy of the message is also sent to the store’s super admin user.'
+        adminSubject: 'Knock-knock. Forgot your password?'
+        adminText: '<h3 dir="ltr">Hey there,</h3><p dir="ltr">Someone is trying to break into your admin account.&nbsp;</p><p dir="ltr">Is that you? Ok, then. You can reset the forgotten password <a href="%reset_link%">here</a>.</p><p dir="ltr">If you didn&rsquo;t mean to reset your password, then you can safely ignore this message. Your password will not change. Just make sure it&rsquo;s secure enough. &nbsp;</p>'
+
+  - templatesDirectory: failed_transaction
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Payment declined'
+        description: 'This notification is sent to the administrator if payment transaction was failed'
+        adminSubject: 'Order #%order_number%: Payment was declined'
+        adminText: '<p dir="ltr">One of your customers was about to make a purchase, but your payment processor failed to charge his card for some reason.&nbsp;</p><p dir="ltr">%notification_body%</p><p dir="ltr">Wonder why it may have happened? It&rsquo;s likely that your customer entered a wrong card number, password or CVC, had no money on his card, closed his browser by mistake or just fleeted away.</p><p dir="ltr">It may be a good idea to contact him and offer your help.</p>'
+
+  - templatesDirectory: low_limit_warning
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Low limit warning'
+        description: 'This message is used to notify the administrator when the stock level of a product reaches the low stock limit as specified in the product details.'
+        adminSubject: 'You are running out of %product_name%'
+        adminText: '<h3 dir="ltr">Heads-up, </h3><p dir="ltr">I see that some of your products are about to run out of stock.&nbsp;</p><p dir="ltr">%notification_body%</p><p dir="ltr">According to our stats you&rsquo;ll sell the last item by %latest_sale_date%. So it&rsquo;s high time to replenish them. You are not going to sell fresh air, are you?</p>'
+
+  - templatesDirectory: order_changed
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: false
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order changed'
+        description: 'This notification is sent when the status of an order is updated - in the event that no other type of notification is sent.'
+        adminSubject: 'Order #%order_number% is changed'
+        adminText: '<p dir="ltr">I&rsquo;ve saved all your order changes just in case you might need them in future. Please, take a look and make sure that everything is ok.</p>'
+        customerSubject: 'Order #%order_number% is changed'
+        customerText: '<p dir="ltr">As previously agreed, we&rsquo;ve changed your order. Here is a new invoice for you, fresh and updated. Check it out to make sure that nothing is missing.</p>'
+
+  - templatesDirectory: order_canceled
+    adminHeaderEnabled: false
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: false
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order canceled'
+        description: 'This notification is sent when an order gets the status Canceled.'
+        adminSubject: 'Order #%order_number% is canceled'
+        adminText: '<p dir="ltr">I&rsquo;m sorry to see that you had to cancel the order. Hope your customer will change his mind and end up buying from you soon. I&rsquo;ll keep my fingers crossed.</p>'
+        customerSubject: 'Order #%order_number% is canceled'
+        customerText: '<h3 dir="ltr">Hi %recipient_name%,</h3><p dir="ltr">We had to cancel your order. If that was you who initiated the cancellation, please tell us where we failed and let us at least try to make up for our faults. For any questions and feedback, just hit &#39;Reply&#39;.</p>'
+
+  - templatesDirectory: order_created
+    adminHeaderEnabled: false
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: false
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order created'
+        description: 'This notification is sent when a new order is created.'
+        adminSubject: 'You’ve got a new order #%order_number% for %order_total%'
+        adminText: '<p dir="ltr">There’s a new order for you. Go ahead, show your customer you care and process the order ASAP.</p>'
+        customerSubject: 'Order #%order_number% is received'
+        customerText: '<p dir="ltr">Thank you for shopping with us!&nbsp;</p><p dir="ltr">This is just a quick note to let you know that we&rsquo;ve received your order and we will process it as soon as we can. We will keep you updated on the status of your order.&nbsp;</p>'
+
+  - templatesDirectory: order_failed
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order declined'
+        description: 'This notification is sent when an order gets the status Declined.'
+        adminSubject: 'Order #%order_number% is declined'
+        adminText: '<p dir="ltr">I see that your order was declined by %payment_method_name%. It may be a good idea to contact your customer and offer your help.</p>'
+        customerSubject: 'Order #%order_number% is declined'
+        customerText: '<h3 dir="ltr">Hi %recipient_name%,</h3><p dir="ltr">Something went wrong and %payment_method_name% failed to charge your credit card.&nbsp;</p><p dir="ltr">If everything seems alright on your side and you are eager to proceed with the purchase, please reply back. We&rsquo;ll try to find out what&rsquo;s up.</p>'
+
+  - templatesDirectory: order_processed
+    adminHeaderEnabled: false
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: false
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order processed'
+        description: 'This notification is sent when an order gets the status Paid.'
+        adminSubject: 'Order #%order_number% is paid'
+        adminText: '<p dir="ltr">Your order has been processed. Way to go!</p>'
+        customerSubject: 'Order #%order_number% is paid (yay!)'
+        customerText: '<h2 dir="ltr">Your order was paid successfully, %recipient_name%!</h2><h3 dir="ltr">And we are just as excited as you are</h3><p dir="ltr"><br>Take a look below for all the confirmation details you&rsquo;ll need. We will be back in a moment to let you know that your item is on its way, unless you decide to pick it up yourself.&nbsp;</p>'
+
+  - templatesDirectory: order_shipped
+    adminHeaderEnabled: false
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: false
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order shipped'
+        description: 'This notification is sent to the customer when an order gets the status Shipped.'
+        customerSubject: 'Order #%order_number% is shipped'
+        customerText: '<h2 dir="ltr">Bingo %recipient_name%!</h2><h3 dir="ltr">Your item is on its way to your doorstep</h3><p dir="ltr"><br>We&rsquo;ve packed your order and sent it off on a journey to your place. The delivery shouldn&rsquo;t take much time as we turbo-charged our van, so it gets to you extra fast.</p><p dir="ltr">%notification_body%</p><p dir="ltr">If you have any questions feel free to get in touch. We are always here and super happy to help you.</p>'
+
+  - templatesDirectory: order_tracking_information
+    adminHeaderEnabled: false
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order tracking information'
+        description: 'This notification is sent to the customer when an administrator clicks the "Send tracking information to customer" button.'
+        customerSubject: 'Order #%order_number% tracking information'
+        customerText: '<p dir="ltr">We&rsquo;ve sent your parcel off on a journey to your porch via %shipping_method_name%.&nbsp;</p><p dir="ltr">Below you&rsquo;ll find shipping details and a handy tracking link you can use to follow your order&rsquo;s trip to your door.</p><p dir="ltr">%notification_body%</p><p dir="ltr">Don&#39;t worry if the order tracking doesn&#39;t work right away. It may take some time to have this information available.</p>'
+
+  - templatesDirectory: order_waiting_for_approve
+    adminHeaderEnabled: false
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Order awaiting for approval'
+        description: 'This notification is sent to the customer when an order gets the status Waiting for approve.'
+        customerSubject: 'Order #%order_number% is waiting for approval'
+        customerText: '<h3 dir="ltr">Hi %recipient_name%,</h3><p dir="ltr">Thank you for shopping on %company_name%!&nbsp;</p><p dir="ltr">Our financial team needs some time to manually review your order.</p><p dir="ltr">Please wait for a couple of hours and take another look at your inbox. There should be one more email ready and waiting.</p>'
+
+  - templatesDirectory: profile_created
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'User profile created'
+        description: 'This notification is sent when a new customer profile is created.'
+        adminSubject: 'Great! You''ve got a new customer'
+        adminText: '<p>One more customer has just signed up: %customer_email%. Looks like your business is growing :)</p>'
+        customerSubject: 'Welcome to %company_name%!'
+        customerText: '<h3 dir="ltr">Welcome to %company_name%!</h3><p dir="ltr">The world of online shopping is now at your fingertips</p><p dir="ltr">We&rsquo;ve created an account for you. There you will find:</p><ul><li dir="ltr">all your previous (yes, we&rsquo;ve saved them all!) and future orders;</li><li dir="ltr">addresses in case you need to get things delivered to different places;</li><li dir="ltr">profile details, where you can edit your login and password.</li><li dir="ltr">messages you&rsquo;ve ever sent or received from us;</li></ul><p>Sign in to <a href="%sign_in_url%">your account</a> to start using all these features. And if you have any questions, just reply back.&nbsp;</p>'
+
+  - templatesDirectory: profile_deleted
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'User profile deleted'
+        description: 'This notification is sent to the administrator when a customer profile is deleted.'
+        adminSubject: 'Oops.. one customer less'
+        adminText: '<p dir="ltr">One of your customers has just silently deleted his profile: %deleted_profile%</p><p dir="ltr">Make sure you no longer keep his personal data anywhere in your database</p>'
+
+  - templatesDirectory: recover_password_request
+    adminHeaderEnabled: true
+    adminGreetingEnabled: true
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Password reset request'
+        description: 'This notification is sent to the user when a password reset is requested for their account.'
+        adminSubject: 'Password reset request'
+        adminText: '<p dir="ltr">I&rsquo;ve received a request to reset your forgotten password.</p><p dir="ltr">If you didn&rsquo;t make this request, good, there&rsquo;s nothing else you need to do. Just safely ignore this message.&nbsp;</p><p>Otherwise, please <a href="%recover_url%">click here to change your password</a> right away.</p>'
+        customerSubject: 'Password reset request'
+        customerText: '<p dir="ltr">We&rsquo;ve received a request to reset your forgotten password.</p><p dir="ltr">If you didn&rsquo;t ask for it, good, there&rsquo;s nothing else you need to do. Just safely ignore this message.&nbsp;</p><p>Otherwise, please <a href="%recover_url%">click here to change your password</a> right away.</p>'
+
+  - templatesDirectory: register_anonymous
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'User account created for guest buyer based on order info'
+        description: 'This notification is sent to the customer when a customer profile is created for them by the store administrator based on a previously created order.'
+        customerSubject: 'Welcome to %company_name%!'
+        customerText: '<h2 dir="ltr">Thank you for shopping with us, %recipient_name%!&nbsp;</h2><p dir="ltr"><br>We noticed that you&rsquo;ve made a purchase using our guest checkout. It looks like you are too pressed for time to create an account in our store. No problem. We did it for you:</p><p dir="ltr">Email: <strong>%customer_email%</strong><br>Password: <strong>%customer_password%</strong></p><p dir="ltr">There you will find all your previous (yes, we&rsquo;ve saved them all!) and future orders, addresses, messages, and profile details, where you can change your password at any time.</p><p dir="ltr">If you need any help, just reply back.&nbsp;</p>'
+
+XLite\Model\LanguageLabel:
+  - name: emailNotificationCustomerHeader
+    translations:
+      - code: en
+        label: '<div id="logo" style="max-width: 250px;">%logo%</div>'
+  - name: emailNotificationCustomerGreeting
+    translations:
+      - code: en
+        label: '<h3>Hey %recipient_name%</h3>'
+  - name: emailNotificationCustomerSignature
+    translations:
+      - code: en
+        label: 'Your friends at %company_link%.'
+  - name: emailNotificationAdminHeader
+    translations:
+      - code: en
+        label: '<div id="logo" style="max-width: 250px;">%logo%</div>'
+  - name: emailNotificationAdminGreeting
+    translations:
+      - code: en
+        label: '<h3>Hey</h3>'
+  - name: emailNotificationAdminSignature
+    translations:
+      - code: en
+        label: 'Your virtual assistant at %company_link%.'
+
+XLite\Model\Order\Status\Shipping:
+  - { code: NBA, translations: [{ code: en, name: New/Backorder, customerName: New }], position: 80 }
+
+XLite\Model\Order\Status\Property:
+  - { paymentStatus: { code: A }, shippingStatus: { code: NBA }, incStock: false}
+  - { paymentStatus: { code: PP }, shippingStatus: { code: NBA }, incStock: false}
+  - { paymentStatus: { code: P }, shippingStatus: { code: NBA }, incStock: false}
+  - { paymentStatus: { code: D }, shippingStatus: { code: NBA }, incStock: true}
+  - { paymentStatus: { code: C }, shippingStatus: { code: NBA }, incStock: true}
+  - { paymentStatus: { code: Q }, shippingStatus: { code: NBA }, incStock: false}
+  - { paymentStatus: { code: R }, shippingStatus: { code: NBA }, incStock: true}

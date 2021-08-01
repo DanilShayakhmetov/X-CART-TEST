@@ -1,0 +1,13 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--header", weight="200")
+ #}
+
+<div class="themetweaker-panel--actions-wrapper">
+    <xlite-panel-actions inline-template :mode="mode">
+        <div class="themetweaker-panel--actions" data-panel-actions>
+            {{ widget_list('themetweaker-panel--actions') }}
+        </div>
+    </xlite-panel-actions>
+</div>

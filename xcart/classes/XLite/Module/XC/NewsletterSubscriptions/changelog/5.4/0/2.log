@@ -1,0 +1,6 @@
+Version 5.4.0.2
+
+Improvements (2)
+2019-04-05 - [Change] Layout adjustment for various pages according to the style guide. #XCN-9763 (Maxim Kuznetsov) #Core #SimpleCMS #ThemeTweaker #ProductReviews #NewsletterSubscriptions #MultiVendor #ProductTags #SystemFields #MailChimp #News #Facebook Commerce
+2019-03-15 - [Change] Layout adjustment for the list pages of various entities for when there are no existing entities yet. #XCN-9440 (Fedya Lavrentyev) #Core #Coupons #SimpleCMS #VolumeDiscounts #ThemeTweaker #ProductReviews #NewsletterSubscriptions #ProductTags #VendorMessages #News #CustomProductTabs
+

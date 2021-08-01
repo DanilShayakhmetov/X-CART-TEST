@@ -1,0 +1,68 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: 'X products selected'
+    translations:
+      - code: en
+        label: '{{count}} products selected'
+      - code: ru
+        label: 'Выбрано {{count}} товар(ов)'
+  - name: 'Comparison table - X items'
+    translations:
+      - code: en
+        label: 'Comparison table - {{count}} items'
+      - code: ru
+        label: 'Таблица для сравнения — {{count}} товар(ов)'
+  - name: 'Add other products to compare'
+    translations:
+      - code: en
+        label: 'Add a different product to compare'
+      - code: ru
+        label: 'Добавьте для сравнения другие товары'
+  - name: 'Clear list'
+    translations:
+      - code: en
+        label: 'Clear list'
+      - code: ru
+        label: 'Очистить список'
+  - name: 'Differences only'
+    translations:
+      - code: en
+        label: 'Differences only'
+      - code: ru
+        label: 'Оставить только отличия'
+  - name: 'Add to compare'
+    translations:
+      - code: en
+        label: 'Add to compare'
+      - code: ru
+        label: Сравнить
+  - name: 'No products have been selected for comparison.'
+    translations:
+      - code: en
+        label: 'No products have been selected for comparison.'
+      - code: ru
+        label: 'Товары для сравнения не выбраны.'
+  - name: 'The product has been removed from comparison table'
+    translations:
+      - code: en
+        label: 'The product has been removed from the <a href="{{url}}">comparison table</a>'
+      - code: ru
+        label: 'Товар удален из <a href="{{url}}">таблицы сравнения</a>.'
+  - name: 'The product has been added to the comparison table'
+    translations:
+      - code: en
+        label: 'The product has been added to the <a href="{{url}}">comparison table</a>'
+      - code: ru
+        label: 'Товар добавлен в <a href="{{url}}">таблицу сравнения</a>'
+  - name: 'The comparison table has been cleared.'
+    translations:
+      - code: en
+        label: 'The comparison table has been cleared.'
+      - code: ru
+        label: 'Таблица сравнения очищена.'

@@ -1,0 +1,21 @@
+{##
+ # Company logo step
+ #}
+
+<div
+        class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+        v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+        :transition="stepTransition">
+  <xlite-wizard-step-company-logo inline-template>
+    <div class="step-contents">
+      <h2 class="heading">{{ t('Upload your company logo') }}</h2>
+      <p class="text">{{ t('Design your online store to fit your brand') }}</p>
+      {% form 'XLite\\View\\Form\\SimpleForm' with {formTarget: 'onboarding_wizard', formAction: 'upload_company_logo', className: "logo-upload-form"} %}
+        {{ widget('XLite\\View\\FormField\\FileUploader\\Image', helpMessage=t("Click here to upload your logo. Recommended 221x40px (PNG, JPG or SVG)"), fieldOnly=true, fieldName='company_logo', maxHeight="218", maxWidth="398") }}
+      {% endform %}
+      <div class="buttons">
+        {{ widget('XLite\\View\\Button\\Regular', id="company_logo-next_button", label=t("Skip this step"), style='regular-main-button', attributes={'@click': 'skipStep', 'data-dirty': t("Save and go to the next step"), 'data-pristine': t('Skip this step')}, jsCode="null;") }}
+      </div>
+    </div>
+  </xlite-wizard-step-company-logo>
+</div>

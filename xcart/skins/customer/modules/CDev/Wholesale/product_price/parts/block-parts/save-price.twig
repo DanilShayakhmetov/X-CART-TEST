@@ -1,0 +1,12 @@
+{##
+ # Wholesale prices table
+ #
+ # @ListChild (list="wholesale.price.widgetlist", weight="50")
+ #}
+
+{% if this.wholesalePrice.savePriceValue > 0 %}
+  <td>
+    <span class="save-price-label">{{ t('save') }}</span>
+    <span class="save-price-value">{{ this.wholesalePrice.savePriceValue }}%</span>
+  </td>
+{% endif %}

@@ -1,0 +1,6 @@
+{##
+ # Item SKU
+ #
+ # @ListChild (list="itemsList.product.table.customer.columns", weight="10")
+ #}
+<span class="product-sku">{% if this.getProductSku() %}{{ this.getProductSku() }}{% else %}&nbsp;{% endif %}</span>

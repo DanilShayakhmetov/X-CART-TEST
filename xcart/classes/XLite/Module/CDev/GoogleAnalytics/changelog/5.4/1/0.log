@@ -1,0 +1,5 @@
+Version 5.4.1.0
+
+Improvements (1)
+2019-12-23 - [Change] Improvement for the cookie consent popup. The permissions for All cookies and Default cookies are now separate. #XCN-10275 #GoogleAnalytics #Facebook Commerce #GDPR
+

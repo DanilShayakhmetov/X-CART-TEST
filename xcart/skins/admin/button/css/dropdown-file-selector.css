@@ -1,0 +1,36 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Dropdown file selector
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.btn-group.btn-dropdown button.btn.dropdown-file-selector:first-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.btn-group.btn-dropdown button.btn.dropdown-file-selector + .dropdown-menu .button-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-group.btn-dropdown button.btn.dropdown-file-selector + .dropdown-menu .button-icon:before {
+  font-size: 15px;
+}
+
+.btn-group.btn-dropdown button.btn.dropdown-file-selector + .dropdown-menu .button-icon.fa-server-2block {
+  background-image: url(../../images/server.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.btn-group.btn-dropdown button.btn.dropdown-file-selector + .dropdown-menu .button-icon.fa-chain-another {
+  background-image: url(../../images/link.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}

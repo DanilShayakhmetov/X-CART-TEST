@@ -1,0 +1,7 @@
+Version 5.4.0.6
+
+Fixes (3)
+2020-01-15 - [Bug] Fatal error after sequential deactivation and deletion of the addon "Free shipping". Fixed. #BUG-8001 https://bt.x-cart.com/view.php?id=51083 (Shevelov Alexander) #FreeShipping
+2020-01-05 - [Bug] Notice in the process of a product import. Fixed. #BUG-7753 (Shevelov Alexander) #FreeShipping
+2019-11-26 - [Bug] A free shipping coupon could not be applied to a product with set shipping freight. Fixed. #BUG-7067 https://bt.x-cart.com/view.php?id=50431 (Jamil Ainulov) #FreeShipping
+

@@ -1,0 +1,7 @@
+Version 5.4.2.13
+
+Fixes (3)
+2021-01-05 - [Bug] PayPal. Fatal error at checkout if the ClientId and/or ClientSecret values stored in PayPal Checkout settings were incorrect. Fixed. #XCB-88 #CDev-Paypal
+2020-12-09 - [Bug] PayPal Checkout. With the setting "Display the "Buy Now with PayPal" button" turned off, PayPal buttons were displayed all the same. Fixed. #XCB-36 #CDev-Paypal
+2020-12-09 - [Bug] PayPal Checkout vs. Product reviews. With Product reviews disabled, there was a JS error on the product list, and PayPal buttons were missing. Fixed. #XCB-35 #CDev-Paypal
+

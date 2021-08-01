@@ -1,0 +1,82 @@
+{##
+ # Shipping rates step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-shipping-rates inline-template :methods="{{ this.getMethodsData() | json_encode }}">
+    <div class="step-contents">
+      <h2 class="heading">{{ t("Set flat shipping rates for your store") }}</h2>
+
+      <p class="text">
+        {{ t("Here you can add a flat-rate shipping method") }}
+      </p>
+
+      {% if this.getMethods() %}
+        <div class="shipping-carriers">
+          {% for method in this.getMethods() %}
+            <div class="shipping-carrier image" v-if="isMethodAvailable('{{ method.processor }}')" :class="{{ 'methodClasses.' ~ method.processor }}" data-processor="{{ method.processor }}">
+              <a href="{{ this.getSettingsURL(method) }}" target="_blank"
+                 @click.prevent="addShippingMethod('{{ this.getSettingsURL(method) }}', $event)">
+                <img src="{{ method.getAdminIconURL() }}" alt="{{ method.name }}"/>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="separator">
+          {{ t("Here you can manually define your shipping rates and etc.") }}
+          <a href="{{ this.getArticleLink() }}" target="_blank" class="external" style="margin-left: 5px;">{{ t("How to define shipping rates") }}</a>
+        </div>
+      {% endif %}
+
+
+      <div class="my-shipping">
+        <div class="method-label">
+          <p class="input-display" v-text="name" v-show="!focusedName" tabindex="-1">{{ this.getDefaultMethodName() }}</p>
+          <div class="input-wrapper" v-show="focusedName">
+            {{ widget('\\XLite\\View\\FormField\\Input\\Text', fieldOnly=true, attributes={'v-model': 'name'}, value=this.getDefaultMethodName()) }}
+          </div>
+        </div>
+        <div class="zones">
+          {{ widget('\\XLite\\View\\FormField\\Select\\ShippingZone', fieldOnly=true) }}
+        </div>
+        <div class="flat-rate">
+          {{ widget('\\XLite\\View\\FormField\\Input\\Text\\Price', fieldOnly=true, placeholder="0.00") }}
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="more-button">
+          {{ widget('\\XLite\\View\\Button\\Link', label='More shipping methods', location=this.getMoreSettingsLocation(), blank=1) }}
+        </div>
+        <div class="next-step">
+          {{ widget('\\XLite\\View\\Button\\Regular', label='Create shipping rate', style='regular-main-button', attributes={'@click': 'createMethod'}, jsCode="null;") }}
+        </div>
+      </div>
+
+      <div class="popup-template">
+        <div class="method-added-popup">
+          <div class="image">
+            <img src="" alt=""/>
+          </div>
+
+          <div class="note">
+            {{ t("Bingo! You've added carrier as a shipping carrier") }}
+          </div>
+
+          <div class="settings-link">
+          </div>
+
+          <div class="buttons">
+            <a class="settings-link btn regular-button" href="" target="_blank">
+              <span>{{ t('Module settings (shipping_rates)') }}</span>
+            </a>
+            {{ widget('\\XLite\\View\\Button\\Regular', label='Proceed to the next step', style='regular-main-button', jsCode="null;") }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </xlite-wizard-step-shipping-rates>
+</div>

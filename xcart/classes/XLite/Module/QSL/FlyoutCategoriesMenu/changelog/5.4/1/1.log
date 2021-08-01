@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-08-17 - [Bug] Links in the side category menu were not taking into account the category_clean_urls_format setting. Fixed. #BUG-8903 https://bt.x-cart.com/view.php?id=52021 #FlyoutCategoriesMenu
+

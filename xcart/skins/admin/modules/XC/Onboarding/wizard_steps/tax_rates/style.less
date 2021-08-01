@@ -1,0 +1,88 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-tax_rates {
+  .placeholder {
+    width: 486px;
+    height: 240px;
+    margin: 60px auto;
+    position: relative;
+
+    .bg {
+      position: absolute;
+      width: 486px;
+      height: 240px;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .grid {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: 180px;
+      top: 50px;
+      z-index: 2;
+      box-shadow: 0 5px 60px 0 rgba(0,0,0,0.12);
+      border-radius: 50%;
+
+      animation-name: map-grid;
+      animation-fill-mode: both;
+      animation-duration: .5s;
+      animation-delay: .5s;
+    }
+
+    .pin {
+      position: absolute;
+      width: 40px;
+      height: 48px;
+      left: 235px;
+      top: 95px;
+      z-index: 3;
+
+      animation-name: map-pin;
+      animation-fill-mode: both;
+      animation-duration: .5s;
+      animation-delay: 1s;
+    }
+  }
+
+  .buttons {
+    margin: 17px auto 3px;
+  }
+}
+
+@keyframes map-grid {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes map-pin {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

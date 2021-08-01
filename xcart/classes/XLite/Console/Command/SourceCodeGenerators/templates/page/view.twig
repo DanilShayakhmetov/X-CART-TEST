@@ -1,0 +1,13 @@
+{##
+ # Items List View
+ #}
+{% extends "base/php-class.twig" %}
+
+{% block class_comment %}
+/**
+ * {{ class.name }}
+ *
+ * @ListChild (list="{{ listChild.list }}", zone="{{ listChild.zone }}")
+ */
+{% endblock %}
+

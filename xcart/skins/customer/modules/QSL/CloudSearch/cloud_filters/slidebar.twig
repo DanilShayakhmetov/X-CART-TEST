@@ -1,0 +1,13 @@
+{##
+ # CloudFilters mobile slidebar
+ #}
+
+<nav id="cf-slide-menu" class="hidden">
+    {% if this.shouldRender() %}
+        <div id="cloud-filters-mobile" class="cloud-filters" v-cloak>
+            <h4 class="title">{{ t('Filters') }}</h4>
+
+            {{ include('modules/QSL/CloudSearch/cloud_filters/sidebar_box/body.twig') }}
+        </div>
+    {% endif %}
+</nav>

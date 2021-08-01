@@ -1,0 +1,85 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order transaction details
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+@import "../../css/initialize";
+
+.transaction-details {
+  text-align: right;
+  margin: @form-row-vertical-padding 0 0;
+
+  .tooltip-main {
+    padding: 0;
+    width: auto;
+
+    .tooltip-content {
+      margin-top: 10px;
+      max-width: 550px;
+
+      .data-cell {
+        margin-top: 5px;
+
+        .data-cell-title {
+          font-weight: bold;
+        }
+
+        .data-cell-value {
+          word-wrap: break-word;
+
+          .cart-items-summary {
+            width: 100%;
+            margin-top: 10px;
+            table-layout: fixed;
+
+            tr td {
+              border: none;
+              padding: 5px 0;
+              line-height: 1.25em;
+              background: #fff;
+              vertical-align: top;
+              position: relative;
+
+              &.name-column {
+                padding-right: 10px;
+                width: 200px;
+                overflow: hidden;
+              }
+
+              &.attr-column {
+                padding-left: 10px;
+                width: 120px;
+                overflow: hidden;
+
+                ul.attributes {
+                  font-size: 12px;
+                }
+              }
+
+              &.price-column {
+                width: 100px;
+                text-align: right;
+              }
+            }
+
+            p.name {
+              font-size: 1em;
+              font-weight: 600;
+            }
+
+            p.sku {
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .popover {
+    max-width: 550px;
+  }
+}

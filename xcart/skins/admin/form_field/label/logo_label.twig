@@ -1,0 +1,12 @@
+{##
+ # Logo label
+ #}
+
+<div class="{{ this.getLabelContainerClass() }}">
+  <label for="{{ this.getFieldId() }}" title="{{ this.getFormattedLabel()|raw }}">
+    {{ this.getFormattedLabel() }}{% if this.getParam('useColon') %}:{% endif %}
+  </label>
+  <div class="manage-sizes">
+    <a href="{{ url('images') }}">{{ t('Manage logo dimensions') }}</a>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+Version 5.4.0.2
+
+Improvements (1)
+2019-04-11 - [Change] Froala can now be used to edit email notifications. #BUG-6675 (Vladimir Semyonov) #Froala
+

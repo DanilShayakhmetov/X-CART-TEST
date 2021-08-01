@@ -1,0 +1,18 @@
+{##
+ # Add product step
+ #}
+
+<div
+        class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+        v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+        :transition="stepTransition">
+  <xlite-wizard-step-add-product inline-template skip-step="company_logo_cloud">
+    <div class="step-contents">
+      <h2 class="heading">{{ t('onboarding.add_product.heading') }}</h2>
+      <p class="text">{{ t('onboarding.add_product.text') }}</p>
+      <div class="add-product-form">
+        {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormModel\\Product\\SimplifiedCloud') }}
+      </div>
+    </div>
+  </xlite-wizard-step-add-product>
+</div>

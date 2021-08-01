@@ -1,0 +1,5 @@
+Version 5.4.1.6
+
+Improvements (1)
+2020-06-29 - [Change] Added a new payment method - PayPal Checkout (PayPal Commerce Platform). #XCN-10807 #Core #Paypal
+

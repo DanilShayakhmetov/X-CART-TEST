@@ -1,0 +1,13 @@
+{##
+ # Remove button
+ #}
+<div class="remove-wrapper {{ this.getStyle() }}">
+  <button type="button" class="{{ this.getStyle() }}" title="{{ t(this.getButtonLabel()) }}" tabindex="-1">
+    {% if this.isCrossIcon() %}
+      {{ svg('images/close.svg', 'common')|raw }}
+    {% else %}
+      <i class="fa fa-trash-o icon"></i>
+    {% endif %}
+  </button>
+  <input type="checkbox" name="{{ this.getName() }}" value="1" tabindex="-1" />
+</div>

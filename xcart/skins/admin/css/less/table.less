@@ -1,0 +1,87 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Table styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.settings-table {
+  tr:not(:first-of-type) > td {
+    padding-top: @form-row-vertical-margin;
+  }
+
+  tr > td {
+    line-height: @rhythmic-lineheight;
+
+    &:first-of-type:not(.heading) {
+      width: @form-label-width;
+      text-align: right;
+      padding-right: (@grid-gutter-width / 2);
+      vertical-align: middle;
+
+      &.text-left {
+        text-align: left;
+      }
+
+      &.required label:after {
+        content: "*";
+        color: @color-error;
+        position: absolute;
+        right: -(@rhythmic-unit / 2);
+        transform: translateX(50%);
+        top: 0;
+        display: inline-block;
+      }
+    }
+
+    &:last-of-type {
+      input, select {
+        .form-control;
+        width: 250px;
+        display: inline-block;
+      }
+    }
+
+    .onoffswitch input[type=checkbox] {
+      display: none;
+    }
+
+    .form-field-comment:not(.not-padded) {
+      margin-bottom: -@line-height-small-text;
+    }
+
+    .tooltip-main {
+      margin-left: @rhythmic-unit / 2;
+    }
+
+    input {
+      float: left;
+    }
+
+    input + .help-wrapper, button + .help-wrapper {
+      margin-left: 0;
+      float: left;
+      line-height: @input-height-base;
+    }
+
+    .help-wrapper + button {
+      margin-left: @rhythmic-unit;
+      float: left;
+    }
+
+    input + button {
+      margin-left: @rhythmic-unit/2;
+      float: left;
+    }
+  }
+}
+
+.table-wrapper {
+  .table-wrapper();
+
+  &.empty {
+    display: none;
+  }
+}

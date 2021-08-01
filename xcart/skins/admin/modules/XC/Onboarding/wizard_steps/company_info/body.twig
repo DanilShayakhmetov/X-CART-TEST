@@ -1,0 +1,36 @@
+{##
+ # Company info step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-company-info inline-template>
+    <div class="step-contents">
+      <h2 class="heading">{{ t("Set your company info") }}</h2>
+      <p class="text">{{ t("We will use this info to create invoices, send emails and calculate shipping rates for your customers.") }}</p>
+
+      {% form 'XLite\\Module\\XC\\Onboarding\\View\\Form\\CompanyInfo' %}
+        <div class="fields">
+          {{ widget('XLite\\View\\FormField\\Input\\Text', label='Company name', fieldName='company_name', value=this.getCompanyName()) }}
+          {{ widget('XLite\\View\\FormField\\Input\\Text', label='Address', fieldName='address', value=this.getAddress()) }}
+          <div class="parent-block">
+            {{ widget('XLite\\View\\FormField\\Select\\State', fieldName='address_state_select', label='State', value=this.getState(), country=this.getCountry()) }}
+          </div>
+          <div class="parent-block">
+            {{ widget('XLite\\View\\FormField\\Input\\Text', fieldName='address_custom_state', value=this.getOtherState(), label='State') }}
+          </div>
+          {{ widget('XLite\\View\\FormField\\Input\\Text', label='Phone', fieldName='phone', value=this.getPhone()) }}
+          {{ widget('XLite\\View\\FormField\\Input\\Text', label='City', fieldName='city', value=this.getCity()) }}
+          {{ widget('XLite\\View\\FormField\\Input\\Text', label='Zip code', fieldName='zipcode', value=this.getZipCode()) }}
+        </div>
+
+        <div class="buttons bottom-sticky">
+          <div class="next-step">
+            {{ widget('XLite\\View\\Button\\Submit', label='Save and go to the next step', style='action regular-main-button') }}
+          </div>
+        </div>
+      {% endform %}
+    </div>
+  </xlite-wizard-step-company-info>
+</div>

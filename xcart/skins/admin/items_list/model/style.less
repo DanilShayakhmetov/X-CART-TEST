@@ -1,0 +1,47 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Model-based items list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list {
+  .remove-wrapper input {
+    display: none;
+  }
+
+  button.switcher,
+  button.remove,
+  button.reupload-file-selector,
+  button.download-file {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0;
+    height: auto;
+    margin: 0;
+    background: transparent none;
+
+    span {
+      display: flex;
+    }
+
+    &.switcher {
+      background: transparent url(../../images/switch.png) no-repeat left top;
+      height: 16px;
+      width: 16px;
+      vertical-align: middle;
+    }
+
+    &.switcher.off img {
+      background-position: left -16px;
+    }
+  }
+
+  input.position {
+    width: 30px;
+    text-align: right;
+  }
+}

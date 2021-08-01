@@ -1,0 +1,11 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--tabs", weight="0")
+ #}
+
+{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\Button\\ThemeTweakerTab',
+  svg='modules/XC/ThemeTweaker/themetweaker_panel/icons/back.svg',
+  label="Admin panel",
+  style="themetweaker-tab themetweaker-tab_admin " ~ this.getTabClass('admin'),
+  attributes={"@click": "goAdminPanel"}) }}

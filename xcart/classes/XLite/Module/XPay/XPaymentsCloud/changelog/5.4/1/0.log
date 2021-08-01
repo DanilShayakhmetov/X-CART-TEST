@@ -1,0 +1,6 @@
+Version 5.4.1.0
+
+Changes:
+- Added support of Apple Pay in X-Payments Cloud payment form
+- Added "Charge the difference" feature to order page in admin back-end. It allows to use customer's saved card to charge extra amounts after order is edited.
+- Fixed error in X-Cart logs when doing extra charge from X-Payments Admin panel

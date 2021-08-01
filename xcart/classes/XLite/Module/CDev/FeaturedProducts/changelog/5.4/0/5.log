@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-10-15 - [Change] Added the "Manage front page" permission allowing the user to access the Front page menu functionality. #BUG-7015 (Nikita Erkhov) #Core #FeaturedProducts
+

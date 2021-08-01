@@ -1,0 +1,11 @@
+{##
+ # Layout editor show hidden blocks button
+ #
+ # @ListChild (list="layout_editor", weight="100")
+ #}
+
+{% if this.isNotOptimalTarget() %}
+<div class='layout-editor-help-message'>
+	<i class="fa fa-info-circle"></i> {{ t('Open home or category pages for more opportunities to adjust the website structure')|raw }}
+</div>
+{% endif %}

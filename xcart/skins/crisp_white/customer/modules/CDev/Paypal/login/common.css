@@ -1,0 +1,48 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Social Login common widget styles.
+ * This file is contained in three modules: SocialLogin, Paypal, PayWithAmazon.
+ * When this file is changed in one of three modules, you need to replace this file in other modules.
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.ui-widget-content .social-net-button a{
+  width:100%;
+}
+
+.social-net-button a {
+  text-decoration: none;
+  display: block;
+  border-radius: 2px;
+  width: 185px;
+  height: 100%;
+  padding: 0;
+  border: 1px solid;
+  padding: 18px 0 19px 0;
+  text-align: center;
+}
+
+#content ul.social-login li.social-net-button {
+  background: none;
+  padding: 0;
+  display: block;
+  margin: 0 10px;
+  width: 100%;
+}
+
+.social-net-button .provider-name {
+  position: relative;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.social-net-button .fa {
+  font-size: 24px;
+  line-height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}

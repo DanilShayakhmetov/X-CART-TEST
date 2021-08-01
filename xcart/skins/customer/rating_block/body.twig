@@ -1,0 +1,29 @@
+{##
+ # Vote bar
+ #}
+
+<div class="rating-block">
+  <div class="rating-block__rating-bar">
+    {{ widget('\\XLite\\View\\VoteBar', {
+      rate: this.getRating(),
+      max:  this.getMax(),
+      editable: false
+    }) }}
+  </div>
+
+  {% if this.showRateValue() %}
+    <div class="rating-block__rating-value">
+      {{ this.getRating() }}
+    </div>
+  {% endif %}
+
+  {% if this.getCount() %}
+    <div class="rating-block__rating-base-count">
+      ({% if this.getCountName() %}{{ this.getCountName() }}: {% endif%}{{ this.getCount() }})
+    </div>
+  {% endif %}
+
+  {% if this.getComment() %}
+    <div class="rating-block__comment">{{ this.getComment() }}</div>
+  {% endif %}
+</div>

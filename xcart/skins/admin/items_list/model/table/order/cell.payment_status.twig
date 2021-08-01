@@ -1,0 +1,9 @@
+{##
+ # Payment status cell
+ #}
+
+<span class="status-{{ this.entity.paymentStatus.code }}">
+  <a href="{{ this.buildEntityURL(this.entity, this.column) }}">
+    {{ this.entity.paymentStatus.name }}
+  </a>
+</span>

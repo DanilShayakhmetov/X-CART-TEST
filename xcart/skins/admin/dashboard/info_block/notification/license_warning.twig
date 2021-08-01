@@ -1,0 +1,21 @@
+{##
+ # Dashboard info block notification
+ #}
+
+<div {{ this.printTagAttributes(this.getTagAttributes())|raw }}>
+  <span class="notification-message">
+    <a class="popup-button default-popup-button" href="#">
+      {{ this.displayCommentedData(this.getURLParams()) }}
+      <span>
+        {{ this.getHeader() }}
+        {% if this.getCounter() %}
+          ({{ this.getCounter() }})
+        {% endif %}
+      </span>
+    </a>
+  </span>
+
+  <div class="notification-close">
+    {{ this.getSVGImage('images/icons/cross.svg')|raw }}
+  </div>
+</div>

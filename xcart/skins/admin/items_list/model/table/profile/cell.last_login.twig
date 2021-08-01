@@ -1,0 +1,9 @@
+{##
+ # Last login date cell
+ #}
+{% if (this.entity.getLastLogin()) %}
+    <span class="date">{{ this.formatDate(this.entity.getLastLogin()) }}</span>
+    <span class="time">{{ this.formatDayTime(this.entity.getLastLogin()) }}</span>
+{% else %}
+    <span class="date">{{ t('Never') }}</span>
+{% endif %}

@@ -1,0 +1,131 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Default styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.top-main-menu {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    float: none;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.top-main-menu li ul {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 1px 8px 1px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 50px;
+    display: table;
+    width: max-content;
+    max-width: 250px;
+    left: -999em;
+    visibility: hidden;
+    opacity: 0.01;
+    transition: visibility .15s, opacity .15s;
+    z-index: 1000;
+}
+
+.top-main-menu > li.leaf > ul {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.top-main-menu li:hover > ul {
+    left: auto;
+    visibility: visible;
+    opacity: 0.99;
+    transition: visibility .3s, opacity .3s;
+    z-index: 10000;
+}
+.top-main-menu li ul.tap {
+	left: auto;
+	visibility: visible;
+	opacity: 0.99;
+}
+.top-main-menu li ul.tap ul,
+.top-main-menu li ul ul {
+    top: 0;
+    left: 99%;
+}
+.top-main-menu li li {
+    background: transparent none;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.top-main-menu li li span.primary-title,
+.top-main-menu li li a:active,
+.top-main-menu li li a:link,
+.top-main-menu li li a:visited,
+.top-main-menu li li a:hover {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    text-decoration: none;
+    white-space: normal;
+    word-break: break-word;
+    transition: color .15s;
+}
+
+@media(min-width: 992px) {
+    .top-main-menu > li.has-sub > a > span:after,
+    .top-main-menu > li.has-sub > span:after{
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'xcartskin' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 2em;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        content: '\e90f';
+        font-size: 7px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+}
+
+.top-main-menu li li:hover > a, .top-main-menu li li a:hover {
+    transition: color .3s;
+    background-color: #f4fbfe;
+    border-radius: 2px;
+    border: 0px solid transparent;
+}
+
+.top-main-menu li ul li{
+    margin:0;
+    height: auto;
+    width: auto;
+
+}
+
+.top-main-menu li:hover ul li ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.top-main-menu li:hover ul li ul.right {
+    left: auto;
+    right: 100%;
+}
+
+.scrollable {
+    overflow-y: scroll;
+}

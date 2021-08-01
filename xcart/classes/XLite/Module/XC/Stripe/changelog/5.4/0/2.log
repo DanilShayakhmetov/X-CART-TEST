@@ -1,0 +1,8 @@
+Version 5.4.0.2
+
+Improvements (1)
+2019-03-27 - [Change] Updated Stripe SDK to the latest version. Now the latest API version is used. #XCN-9483 (Shevelov Alexander) #Stripe
+
+Fixes (1)
+2019-01-30 - [Bug] Fatal error on some payment method pages: "Trying to call undefined method...". Fixed. #BUG-7009 (Vladimir Semyonov) #Core #AuthorizeNet #Stripe #SagePay #ProductReviews #DatatransUPP #YandexMoney #Beanstream #IdealPayments #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #CCBill #EPDQ #Worldpay #FirstDataPayeezyGatewayHP #Yandex Checkout #GlobalTransportSecure #PayFort #PoliPayment #DIBSFlexWin #SecureTrading
+

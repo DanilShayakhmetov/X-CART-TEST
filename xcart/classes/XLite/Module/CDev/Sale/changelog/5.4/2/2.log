@@ -1,0 +1,5 @@
+Version 5.4.2.2
+
+Fixes (1)
+2020-12-24 - [Bug] Sale. The setting "Display only the products on sale which are in the category being viewed" did not work if widget cache was enabled. Fixed. #XCB-224 #CDev-Sale
+

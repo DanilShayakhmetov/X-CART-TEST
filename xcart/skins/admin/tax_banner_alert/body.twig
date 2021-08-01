@@ -1,0 +1,23 @@
+{##
+ # Tax banner page template
+ #}
+
+<div class="promo-banner">
+  <div class="promo-banner-logo">
+    {% if this.getModuleLink() %}
+    <a href="{{ this.getModuleLink() }}" target="_blank">
+    {% endif %}
+      <img src="{{ this.getLogoUrl() }}" alt="{{ t('AvaTax') }}" class="logo"/>
+    {% if this.getModuleLink() %}
+    </a>
+    {% endif %}
+  </div>
+  <div class="promo-banner-content">
+      <div>{{ t('Avalara provides our mutual customers with everything you need to calculate, file and remit sales tax for your business effortlessly by providing an integrated, end-to-end solution for every step of the tax compliance process.')|raw }}</div>
+      <div>
+          {{ t('Avalara.60 Day Free Trial')|raw }}
+      </div>
+      <div>{{ t('New to Avalara?')|raw }}</div>
+      <div>{{ t('Existing Avalara Customer?', {'moduleSettings': this.getModuleLink()})|raw }}</div>
+  </div>
+</div>

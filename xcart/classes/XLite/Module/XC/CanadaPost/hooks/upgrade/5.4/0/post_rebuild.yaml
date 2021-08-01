@@ -1,0 +1,37 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/CanadaPost/return_approved
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Return request approved (Canada Post module)'
+        description: 'This notification is sent to the customer if their request to return a product via Canada Post is approved by the administrator.'
+        customerSubject: 'Order #%order_number%: Return request approved'
+        customerText: '<p dir="ltr">It&rsquo;s a pity to know that our products didn&rsquo;t sit well with you for some reason.&nbsp;</p><p dir="ltr">%dynamic_message%</p><p dir="ltr">Anyway, we are ready to take the items back for a full refund. Please, <a href="https://www.canadapost.ca/web/en/kb/details.page?article=how_do_i_return_a_re&cattype=kb&cat=atthepostoffice&subcat=services">ship the package back to our office</a> using the parcel service that best meets your needs.&nbsp;</p><p dir="ltr">Feel free to contact us if you have any questions.</p>'
+
+  - templatesDirectory: modules/XC/CanadaPost/return_rejected
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: false
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Return request rejected (Canada Post module)'
+        description: 'This notification is sent to the customer if their request to return a product via Canada Post is rejected by the administrator.'
+        customerSubject: 'Order #%order_number%: Return request rejected'
+        customerText: '<h3 dir="ltr">Hello %recipient_name%,</h3><p dir="ltr">We are awfully sorry, but we cannot take your products back and make a refund according to our money back policy.</p><p dir="ltr">%dynamic_message%</p><p dir="ltr">Please contact us if you have any questions.</p>'

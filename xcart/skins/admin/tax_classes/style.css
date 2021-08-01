@@ -1,0 +1,19 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Tax classes list styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list-table table.list tbody.lines td.cell.name div.view div {
+  max-width: 400px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.itemslist-model-taxclass + .sticky-panel {
+  width: 100%;
+  position: absolute;
+}

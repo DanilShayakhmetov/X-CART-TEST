@@ -1,0 +1,9 @@
+{##
+ # template.twig
+ #}
+<shipping-details inline-template>
+    <div class="shipping-detail shipping-details_selected-method">
+        <p class="detail-content" v-html="shipping_method">{{ this.getShippingMethod()|raw }}</p>
+    </div>
+    {{ widget('XLite\\Module\\XC\\FastLaneCheckout\\View\\Blocks\\Address\\Shipping', display="simple") }}
+</shipping-details>

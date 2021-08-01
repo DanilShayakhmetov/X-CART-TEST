@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-07-23 - [Bug] Some pages did not fit into a window width of 1280px without horizontal scrolling. Fixed. #BUG-7694 (Fedya Lavrentyev) #Core #SimpleCMS #ProductReviews
+

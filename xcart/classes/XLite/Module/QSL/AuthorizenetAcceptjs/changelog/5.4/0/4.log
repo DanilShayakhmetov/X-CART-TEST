@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2020-05-27 - [Bug] Added an identifier of the payment transaction from X-Cart to Refund and Capture requests to facilitate finding the respective transaction in Authorize.Net. #BUG-8589 https://bt.x-cart.com/view.php?id=51666 #AuthorizenetAcceptjs
+

@@ -1,0 +1,89 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-payment_done {
+  .subheader {
+    font-size: 16px;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .placeholder {
+    width: 292px;
+    height: 202px;
+    margin: 60px auto 60px;
+    position: relative;
+
+    .left-card {
+      position: absolute;
+      width: 262px;
+      height: 162px;
+      left: 1px;
+      top: 41px;
+      z-index: 2;
+
+      animation-name: payment-card-left;
+      animation-fill-mode: both;
+      animation-duration: 1s;
+      animation-delay: .3s;
+    }
+
+    .right-card {
+      position: absolute;
+      width: 262px;
+      height: 162px;
+      left: 31px;
+      top: 1px;
+      z-index: 1;
+
+      animation-name: payment-card-right;
+      animation-fill-mode: both;
+      animation-duration: 1s;
+      animation-delay: .4s;
+    }
+  }
+
+  .buttons {
+    margin: 17px auto 3px;
+  }
+}
+
+/* Animations */
+
+@keyframes payment-card-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  50% {
+    opacity: .25;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes payment-card-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  50% {
+    opacity: .25;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

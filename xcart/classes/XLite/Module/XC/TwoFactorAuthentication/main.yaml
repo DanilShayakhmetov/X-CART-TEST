@@ -1,0 +1,18 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.1.0
+type: common
+authorName: 'X-Cart team'
+moduleName: 'Two factor authentication'
+description: 'The module integrates your store with Authy.com to protect your accounts with Two-Factor Authentication system. You can enable it for each type of accounts: admin, supplier or customer.'
+minorRequiredCoreVersion: 1
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: true
+canDisable: true

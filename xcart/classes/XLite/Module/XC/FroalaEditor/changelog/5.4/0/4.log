@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-07-03 - [Bug] Upgrade hooks related issues. Fixed. #BUG-7652 (Kirill Stadler) #AuthorizeNet #MultiVendor #Froala
+

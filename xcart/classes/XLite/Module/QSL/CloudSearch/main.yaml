@@ -1,0 +1,11 @@
+version: 5.4.1.4
+type: common
+authorName: Qualiteam
+moduleName: 'CloudSearch & CloudFilters'
+description: 'CloudSearch is a powerful search & navigation engine for X-Cart 5. It enables smart & fast product search and efficient filtering experience. Power up your store with top-notch search & filtering for better conversion rates!'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: true
+canDisable: true

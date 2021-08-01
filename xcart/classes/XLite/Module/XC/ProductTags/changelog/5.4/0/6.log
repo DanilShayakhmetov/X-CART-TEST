@@ -1,0 +1,5 @@
+Version 5.4.0.6
+
+Fixes (1)
+2019-11-22 - [Bug] A new tag consisting of only digits could not be added for a product from the Edit product page. Fixed. #BUG-7100 (Pavel Veselovsky) #ProductTags
+

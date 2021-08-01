@@ -1,0 +1,13 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--tabs", weight="40")
+ #}
+
+{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\Button\\ThemeTweakerTab',
+    svg='modules/XC/ThemeTweaker/themetweaker_panel/icons/code.svg',
+    label="Custom CSS",
+    style="themetweaker-tab themetweaker-tab_custom_css " ~ this.getTabClass('custom_css'),
+    disabled=(not this.isTabAvailable('custom_css')),
+    disabledTooltip=this.getTabDisabledTooltip('custom_css'),
+    attributes=this.getTabAttributes('custom_css')) }}

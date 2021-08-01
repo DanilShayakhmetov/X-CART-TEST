@@ -1,0 +1,162 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Invoice styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.account-subscriptions .subscription {
+  background-color: #f7f7f7;
+  margin-bottom: 10px;
+  clear: left;
+}
+
+.account-subscriptions .subscription-info {
+  border: solid 1px #dfdfdf;
+  padding: 10px 20px;
+}
+
+.account-subscriptions .subscription-info > ul > li {
+  display: inline-block;
+}
+
+.account-subscriptions .subscription-info .subscription-switcher {
+  color: #acb6c0;
+}
+
+.account-subscriptions .subscription-info .id {
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.account-subscriptions .subscription-info .date {
+  padding-left: 14px;
+  font-size: 12px;
+  color: #8f8f8f;
+}
+.account-subscriptions .subscription-info .status {
+  float: right;
+}
+.account-subscriptions .subscription-info li.fee,
+.account-subscriptions .subscription-info li.card {
+  margin-top: 12px;
+}
+.account-subscriptions .subscription-info .current-card .saved-cards,
+.account-subscriptions .subscription-info .current-card .saved-cards li
+{
+  display: inline-block;
+  vertical-align: top;
+}
+.account-subscriptions .subscription-info .saved-cards-container {
+  display: none;
+  margin-top: 3px;
+}
+.account-subscriptions .subscription-info .saved-cards-container label {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.account-subscriptions .subscription-info .card-change-btn {
+  margin-left: 2px;
+}
+
+.account-subscriptions .subscription-info .status-A,
+.account-subscriptions .subscription-info .status-F
+{
+  color: #257d16;
+}
+.account-subscriptions .subscription-info .status-S {
+  color: #8f8f8f;
+}
+.account-subscriptions .subscription-info .status-D {
+  color: #8d3021;
+}
+
+.account-subscriptions .status .tooltip-main {
+  display: inline-block;
+  padding: 0;
+}
+
+.account-subscriptions .subscription-info .fee {
+  color: #333333;
+  display: block;
+}
+
+.account-subscriptions .subscription-info .fee-label {
+  color: #979797;
+}
+
+.account-subscriptions .subscription-info .next-date,
+.account-subscriptions .subscription-info .actual-date
+{
+  color: #333333;
+  font-size: 14px;
+  display: block;
+}
+
+.account-subscriptions .last-payment-failed .next-date,
+.account-subscriptions .last-payment-expired .next-date,
+.account-subscriptions .last-payment-expired .actual-date
+{
+  color: #e65e57;
+}
+
+.account-subscriptions .subscription-info .next-date-label,
+.account-subscriptions .subscription-info .actual-date-label
+{
+  color: #979797;
+}
+
+.account-subscriptions .subscription-orders {
+  border: solid 1px #dfdfdf;
+  border-top: none;
+}
+
+.account-subscriptions .order > ul {
+  margin-bottom: 5px;
+  padding: 10px 30px;
+}
+
+.account-subscriptions .order > ul > li {
+  display: inline-block;
+}
+
+.account-subscriptions .order .statuses > li {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.account-subscriptions .order .order-number {
+  font-size: 16px;
+}
+
+.account-subscriptions .order .order-date {
+  padding-left: 14px;
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+.account-subscriptions .order .order-status {
+  float: right;
+}
+
+.account-subscriptions .order-shipping-status .order-status-label {
+  margin-left: 15px;
+}
+
+.order-shipping-status .order-status-WND,
+.order-shipping-status .order-status-R,
+.order-payment-status .order-status-C,
+.order-payment-status .order-status-D
+{
+  color: #8d3021;
+}
+
+.order-statuses.payment-P.shipping-D .order-status-wrapper {
+  color: #8f8f8f;
+}
+
+.xpayments-subscription-cards {
+  margin-top: 20px;
+}

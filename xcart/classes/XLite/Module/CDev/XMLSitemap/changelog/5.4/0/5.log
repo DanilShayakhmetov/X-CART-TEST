@@ -1,0 +1,8 @@
+Version 5.4.0.5
+
+Fixes (4)
+2019-11-19 - [Bug] Incorrect value of the field "priority" in the generated sitemap.xml. Fixed. #BUG-7487 https://bt.x-cart.com/view.php?id=50933 (Jamil Ainulov) #XMLSitemap
+2019-11-07 - [Bug] In sitemap.xml, & special character was not escaped for all links  Fixed. #BUG-8043 (Jamil Ainulov) #SimpleCMS #XMLSitemap #News
+2019-10-08 - [Bug] Implemented uniform system behavior for user-invoked cancellation of processes (like generation of feeds, data removal, XML Sitemap generation, data uploading to MailChimp, etc.) #BUG-7458 (Shevelov Alexander) #Core #AmazonS3Images #XMLSitemap #MailChimp #BulkEditing #Facebook Commerce #GoogleFeed #YandexMarket
+2019-09-25 - [Bug] Long sitemap generation by cron could result in the loading of a 404 error page. Fixed. #BUG-6761 https://bt.x-cart.com/view.php?id=50052 (Fedya Lavrentyev) #XMLSitemap
+

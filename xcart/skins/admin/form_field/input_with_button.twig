@@ -1,0 +1,10 @@
+{##
+ # Input with button "change"
+ #}
+<div class="input-widget input-with-button">
+    <div class="input-wrapper hidden">
+        <input{{ this.getAttributesCode()|raw }} />
+    </div>
+    <div class="placeholder btn regular-button">{{ t('Click to specify') }}</div>
+    <div class="undo hidden">{{ t('Cancel') }}</div>
+</div>

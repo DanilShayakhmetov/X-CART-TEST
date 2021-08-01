@@ -1,0 +1,8 @@
+Version 5.4.0.3
+
+Improvements (1)
+2019-05-24 - [Change] Event tracking improvements for Google analytics enhanced ecommerce. #XCN-8882 https://bt.x-cart.com/view.php?id=50173 (Shevelov Alexander) #GoogleAnalytics #Add2CartPopup
+
+Fixes (1)
+2019-06-04 - [Bug] Layout and localization fixes. #BUG-7354 (Shevelov Alexander) #Core #Add2CartPopup #CrispWhiteSkin
+

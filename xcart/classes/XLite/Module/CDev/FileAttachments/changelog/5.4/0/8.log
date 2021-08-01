@@ -1,0 +1,7 @@
+Version 5.4.0.8
+
+Fixes (3)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-01-23 - [Bug] The same file cannot be assigned to one product more than once now. #BUG-7386 #Core #FileAttachments
+2019-11-21 - [Bug] Fixed the links to attached files for clone products. Now the links are formed correctly for both the files stored locally and remotely. #BUG-7381 #Core #FileAttachments
+

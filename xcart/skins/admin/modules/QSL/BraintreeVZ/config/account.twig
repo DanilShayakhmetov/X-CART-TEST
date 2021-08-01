@@ -1,0 +1,50 @@
+{##
+ # Braintree payments configuration page
+ #
+ #}
+
+<img src="https://s3-us-west-1.amazonaws.com/bt-partner-assets/paypal-braintree.png" alt="PayPal powered by Braintree" class="braintree-logo" />
+
+<p class="description">
+  {{ t('Easily accept credit and debit cards and PayPal on multiple devices with no setup or monthly fees. Click the button below to connect your account') }}
+</p>
+
+<img src="https://s3-us-west-1.amazonaws.com/bt-partner-assets/payment-methods.png" alt="Accept Visa, Mastercard, Discover, American Express, and PayPal payments" class="braintree-methods-logo" />
+
+<div class="clearfix"></div>
+
+{% if (not this.isConfigured()) %}
+
+  {% if this.getConnectError() %}
+    <div class="alert alert-danger" role="alert">
+      <span class="status-message">
+        {{ t(this.getConnectError()) }}
+      </span>
+    </div>
+    <div class="clearfix"></div>
+  {% endif %}
+
+  <div id="bt-oauth-connect-container"></div>
+
+  <script>
+    var connectUrl = '{{ this.getConnectUrl() }}';
+  </script>
+
+{% else %}
+
+  <p class="braintree-merchant-id">
+    {{ t('Connected Braintree merchant account ID is:') }}
+    <strong>{{ this.paymentMethod.getSetting('merchantId') }}</strong>
+  </p>
+
+  {% form '\\XLite\\Module\\QSL\\BraintreeVZ\\View\\Form\\RefreshToken' %}
+    <p>{{ t('The access token will expire 10 years from its creation date. If you ever need to exchange the access token (e.g. if the current token is expiring soon or you think it has been compromised in some way), click the button below to get a new one.') }}</p>
+    <input type="submit" class="btn" value="Refresh access token" />
+  {% endform %}
+
+  {% form '\\XLite\\Module\\QSL\\BraintreeVZ\\View\\Form\\UnlinkAccount' %}
+    <p>{{ t('Click the button below to disconnnect your Braintree account. This will also revoke the access token. Note: you will not be able to accept payments via Braintree until connect the Braintree account.') }}</p>
+    <input type="submit" class="btn" value="Unlink account" />
+  {% endform %}
+
+{% endif %}

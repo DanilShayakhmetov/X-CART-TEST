@@ -1,0 +1,29 @@
+{##
+ # ____file_title____
+ #}
+
+{% if this.getTopInlineJSCode() %}
+  <script>{{ this.getTopInlineJSCode()|raw }}</script>
+{% endif %}
+
+{% include this.getDir() ~ '/header.twig' %}
+
+  {% form this.getFormClass() with this.getFormWidgetParams() %}
+
+    <div class="{{ this.getContainerClass() }}">
+      {% include this.getDir() ~ '/form_content.twig' %}
+      {% if not this.useButtonPanel() %}
+        {% include this.getDir() ~ '/' ~ this.getFormTemplate('buttons') %}
+      {% endif %}
+      {% if this.useButtonPanel() %}
+        {{ widget(this.getButtonPanelClass()) }}
+      {% endif %}
+    </div>
+
+  {% endform %}
+
+{% include this.getDir() ~ '/footer.twig' %}
+
+{% if this.getBottomInlineJSCode() %}
+  <script>{{ this.getBottomInlineJSCode()|raw }}</script>
+{% endif %}

@@ -1,0 +1,11 @@
+{##
+ # Import begin section : settings : ignore files checking
+ #
+ # @ListChild (list="import.begin.options", weight="50")
+ #}
+
+<li class="checkbox-option">
+  {{ widget('\\XLite\\View\\FormField\\Input\\Checkbox', fieldId='ignoreFileChecking', fieldName='options[ignoreFileChecking]', isChecked=true, label=t('Do not verify images to increase speed of the process')) }}
+  {#<label for="ignoreFileChecking">{{ t('Do not verify images to increase speed of the process') }}</label>#}
+  {#<input type="checkbox" name="options[ignoreFileChecking]" value="1" id="ignoreFileChecking" checked />#}
+</li>

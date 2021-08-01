@@ -1,0 +1,71 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Top messages styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) '../css/initialize';
+
+.top-message-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: @top-message-margin auto;
+  z-index: @zindex-topmessage;
+  width: @top-message-width;
+
+  .close-message {
+    display: block;
+    position: absolute;
+    right: (@rhythmic-unit / 2);
+    top: (@rhythmic-unit * 0.75);
+    width: 12px;
+    height: 12px;
+    text-decoration: none;
+    background: transparent url(../images/icons/cross.svg) no-repeat left top;
+    background-size: contain;
+
+    &:hover, &:focus {
+      background: transparent url(../images/icons/cross-hover.svg) no-repeat left top;
+      background-size: contain;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      list-style: none;
+      background-image: none;
+      padding: @top-message-padding;
+      border-radius: @border-radius-base;
+      box-shadow: @basic-shadow;
+    }
+
+    li + li {
+      margin-top: @top-message-margin;
+    }
+  }
+
+  .info {
+    .alert-variant(@alert-info-bg, @alert-info-border, @alert-info-text);
+  }
+
+  .warning {
+    .alert-variant(@alert-warning-bg, @alert-warning-border, @alert-warning-text);
+  }
+
+  .error {
+    .alert-variant(@alert-danger-bg, @alert-danger-border, @alert-danger-text);
+  }
+
+  .success {
+    .alert-variant(@alert-success-bg, @alert-success-border, @alert-success-text);
+  }
+}

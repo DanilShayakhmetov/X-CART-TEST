@@ -1,0 +1,30 @@
+{##
+ # Messages list : line
+ #}
+
+<tr {{ this.printTagAttributes(this.getLineTagAttributes(conversation))|raw }}>
+  <td class="conversation-link"><a href="{{ this.getConversationLink(conversation) }}">{{ conversation.getName() }}</a>
+  </td>
+  <td class="text">
+    <a href="{{ this.getConversationLink(conversation) }}" class="text-link">
+      {% if this.getLabel(conversation) %}
+        <span class="conversation-label">{{ this.getLabel(conversation) }}</span>
+        <span class="dash">-</span>
+      {% endif %}
+      <span class="body">{{ this.prepareBody(conversation) }}</span>
+    </a>
+    {% if this.isMarksVisible(conversation) %}
+      <a class="marks" href="{{ this.getConversationLink(conversation) }}">
+        {% if this.isOpenedDispute(conversation) %}
+          <div class="dispute">{{ t('Dispute') }}</div>
+        {% endif %}
+      </a>
+    {% endif %}
+  </td>
+  <td class="date">
+      <a href="{{ this.getConversationLink(conversation) }}">
+          <span class="date">{{ this.formatDate(this.prepareTime(conversation)) }}</span>
+          <span class="time">{{ this.formatDayTime(this.prepareTime(conversation)) }}</span>
+      </a>
+  </td>
+</tr>

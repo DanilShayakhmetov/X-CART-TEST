@@ -1,0 +1,29 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data dump
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Facebook Ads & Instagram Ads", translations: [{ code: ru, label: "Facebook Ads & Instagram Ads" }] }
+  - { name: "Product feed generation has been completed successfully", translations: [{ code: ru, label: "Подготовка ленты товаров была успешно завершена." }] }
+  - { name: "Product feed generation has been stopped", translations: [{ code: ru, label: "Подготовка ленты товаров была остановлена." }] }
+  - { name: "Generate Product Feed", translations: [{ code: ru, label: "Создать ленту товаров" }] }
+  - { name: "Product feed", translations: [{ code: ru, label: "Лента товаров" }] }
+  - { name: "Facebook Pixel Id", translations: [{ code: ru, label: "Идентификатор пикселя" }] }
+  - { name: "Product Feed URL", translations: [{ code: ru, label: "URL Ленты товаров" }] }
+  - { name: "Frequency of Product Feed renewal", translations: [{ code: ru, label: "Частота обновления ленты товаров" }] }
+  - { name: "There is no products for facebook product feed generation", translations: [{ code: ru, label: "Для создания ленты товаров не выбрано ни одного товара" }] }
+  - { name: "Enable facebook product feed", translations: [{ code: ru, label: "Включить в ленту товаров" }] }
+  - { name: "Disable facebook product feed", translations: [{ code: ru, label: "Убрать из ленты товаров" }] }
+  - { name: "Facebook product feed enabled", translations: [{ code: ru, label: "Включить в ленту товаров Facebook" }] }
+  - { name: 'Wrong "facebook marketing enabled" format', translations: [{ code: ru, label: 'Неправильный формат значения поля "Facebook marketing enabled"' }] }
+  - { name: 'Include out of stock products into feed', translations: [{ code: ru, label: 'Включать в фид товары, отсутствующие на складе' }]}
+  - { name: 'Value for the "Add to cart" event is calculated as', translations: [{ code: ru, label: 'Значение для события "Добавление в козину" рассчитывается как: цена товара, умноженная на' }]}
+  - { name: 'Enable Advanced Matching', translations: [{ code: ru, label: 'Включить Advanced Matching' }]}
+  - { name: 'Specify the percentage of users who complete the transaction (Add to cart)', translations: [{ code: ru, label: 'Укажите процент пользователей, которые завершают покупку. Чтобы найти данное значение, перейдите в секцию Activity > Funnels и создайте Funnel с событиями Add to Cart и Purchases. Нужное вам значение отображается на серой стрелке.' }]}
+  - { name: 'Value for the "ViewContent" event on a product page is calculated as', translations: [{ code: ru, label: 'Значение для события "Просмотр контента" на странице товара рассчитывается как: цена товара, умноженная на' }]}
+  - { name: 'Value for the "InitiateCheckout" event is calculated as', translations: [{ code: ru, label: 'Значение для события "Начало оформления покупки" рассчитывается как: стоимость товаров в корзине, умноженная на' }]}
+  - { name: 'Specify the percentage of users who complete the transaction (View content)', translations: [{ code: ru, label: 'Укажите процент пользователей, которые завершают покупку. Чтобы найти данное значение, перейдите в секцию Activity > Funnels и создайте Funnel с событиями Content View и Purchases. Нужное вам значение отображается на серой стрелке.' }]}
+  - { name: 'Specify the percentage of users who complete the transaction (Initiate checkout)', translations: [{ code: ru, label: 'Укажите процент пользователей, которые завершают покупку. Чтобы найти данное значение, перейдите в секцию Activity > Funnels и создайте Funnel с событиями Initiated Checkout и Purchases. Нужное вам значение отображается на серой стрелке.' }]}

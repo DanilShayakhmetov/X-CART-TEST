@@ -1,0 +1,18 @@
+{##
+ # New export section
+ #}
+
+<div class="export-box export-begin">
+	<div class="content">
+		{% form 'XLite\\View\\Form\\Export' %}
+			<div class="subcontent clearfix">
+				{{ widget_list('export.begin.content') }}
+			</div>
+			{{ widget('XLite\\View\\StickyPanel\\ExportBegin') }}
+			{% if this.isExportLocked() %}
+				<p class="export-blocked">{{ t('Background export is in progress') }}</p>
+			{% endif %}
+		{% endform %}
+	</div>
+
+</div>

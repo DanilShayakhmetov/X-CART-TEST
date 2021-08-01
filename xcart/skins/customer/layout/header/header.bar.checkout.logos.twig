@@ -1,0 +1,11 @@
+{##
+ # Header bar account links
+ #
+ # @ListChild (list="layout.header", weight="190")
+ #}
+
+{% if this.isCheckoutLayout() %}
+  {#<div class="header-checkout_logos">#}
+    {#<img src="{{ asset('images/checkout_logos.png') }}" title="Safe & Secure checkout">#}
+  {#</div>#}
+{% endif %}

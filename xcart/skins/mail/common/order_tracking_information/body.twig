@@ -1,0 +1,20 @@
+{##
+ # Order tracking information email body (to customer)
+ #}
+
+<div class="order-tracking-info">
+  <h3>
+    <a href="{{ this.orderURL }}">
+      {{ t('Order X', {'id': this.order.getOrderNumber()}) }}
+    </a>
+  </h3>
+
+  <div class="data">
+    <p>
+      <strong>{{ t('Carrier') }}:</strong> {{ this.order.getShippingMethodName()|raw }}
+    </p>
+    <p>
+      {{ widget_list('tracking.info', order=this.order, trackingNumbers=this.trackingNumbers) }}
+    </p>
+  </div>
+</div>

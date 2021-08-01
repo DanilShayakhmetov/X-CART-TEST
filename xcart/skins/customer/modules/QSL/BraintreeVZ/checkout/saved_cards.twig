@@ -1,0 +1,22 @@
+{##
+ # Saved Braintree credit cards at checkout 
+ #
+ #}
+
+
+{% for bcc in this.profile.getBraintreeCreditCardsHash() %}
+
+  <div class="braintree-textfield-float-label{% if loop.first %} first{% endif %}{% if loop.last %} last{% endif %}">
+    <div class="radio">
+      <label for="saved-card-{{ bcc.token }}" class="card-container">
+
+        <input id="saved-card-{{ bcc.token }}" type="radio" name="saved_card_token" value="{{ bcc.token }}" />
+
+        <img src="{{ bcc.image }}" alt="{{ bcc.type }}" class="logo"/>
+        <span class="number">{% if bcc.email %}{{ bcc.email }}{% else %}{{ bcc.number }}{% endif %}</span>
+
+      </label>
+    </div>
+  </div>
+
+{% endfor %}

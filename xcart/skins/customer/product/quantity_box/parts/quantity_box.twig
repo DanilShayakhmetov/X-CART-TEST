@@ -1,0 +1,17 @@
+{##
+ # Main element (input)
+ #
+ # @ListChild (list="product.quantity-box", weight="20")
+ #}
+
+<input
+  type="number"
+  min="1"
+  inputmode="numeric"
+  value="{{ this.getBoxValue() }}"
+  class="{{ this.getClass() }}"
+  id="{{ this.getBoxId() }}"
+  name="{{ this.getBoxName() }}"
+  title="{{ t(this.getBoxTitle()) }}"
+  onclick="this.focus();"/>
+<span class="wheel-mark">&nbsp;</span>

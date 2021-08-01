@@ -1,0 +1,437 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Service (language labels)
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+Version: 5.4.1.24
+
+Language: { code: 'en', name: 'English' }
+
+LanguageLabel:
+  - { name: 'X-Cart online store builder', label: 'X-Cart online store builder' }
+  - { name: Language, label: Language }
+  - { name: app-footer, label: '© 2002 - {0} Powered by X-Cart. {1} {2}' }
+  - { name: 'Admin area', label: 'Admin area' }
+  - { name: 'Your store is', label: 'Your store is' }
+  - { name: Modules, label: Modules }
+  - { name: Search, label: Search }
+  - { name: 'My purchases', label: 'My purchases' }
+  - { name: 'Sort by:', label: 'Sort by:' }
+  - { name: 'Free & Paid', label: 'Free & Paid' }
+  - { name: Free, label: Free }
+  - { name: Paid, label: Paid }
+  - { name: Sale, label: Sale }
+  - { name: Newest, label: Newest }
+  - { name: 'Most Installed', label: 'Most Installed' }
+  - { name: 'Best Rated', label: 'Best Rated' }
+  - { name: 'Price: Low to High', label: 'Price: Low to High' }
+  - { name: 'Price: High to Low', label: 'Price: High to Low' }
+  - { name: 'Hot addons', label: 'Hot addons' }
+  - { name: 'Apply changes', label: 'Apply changes' }
+  - { name: or, label: or }
+  - { name: upgrade-page-heading, label: 'Updates & Upgrades' }
+  - { name: upgrade-entry-module-author, label: 'by {0}' }
+  - { name: upgrade_minor, label: 'Major upgrade' }
+  - { name: upgrade_build, label: 'Minor update' }
+  - { name: Marketplace, label: 'App Store' }
+  - { name: 'Terms of use', label: 'Terms of use' }
+  - { name: 'Knowledge base', label: 'Knowledge base' }
+  - { name: 'Developers docs', label: 'Developers docs' }
+  - { name: 'Report a bug', label: 'Report a bug' }
+  - { name: 'Manage subscriptions', label: 'Manage subscriptions' }
+  - { name: 'My profile', label: 'My profile' }
+  - { name: 'Sign out', label: 'Sign out' }
+  - { name: 'on', label: 'on' }
+  - { name: 'off', label: 'off' }
+  - { name: 'Upload addon description', label: 'Submit an addon package by clicking on the button below<br>The file should be a .tgz, .tar.gz or .tar archive.' }
+  - { name: update_available, label: 'Version {0} is available. {1}' }
+  - { name: update_module, label: 'Update module' }
+  - { name: core_restriction, label: 'The module version is incompatible with your core version and cannot be enabled. The minimum core version required for this module is {0}.' }
+  - { name: module_state_message.update_available, label: 'Version {0} is available. {1}' }
+  - { name: module_state_message.update_available.update_link, label: 'Update module' }
+  - { name: module_state_message.core_restriction.enable, label: 'The module version is incompatible with your core version and cannot be enabled. The minimum core version required for this module is {0}.' }
+  - { name: module_state_message.core_restriction.install, label: 'The module version is incompatible with your core version and cannot be installed. The minimum core version required for this module is {0}.' }
+  - { name: module_state_message.core_restriction.upgrade_request, label: 'The module is not released for your X-Cart version.' }
+  - { name: module_state_message.core_restriction.install.requested, label: 'The module version is incompatible with your core version and cannot be installed. The minimum core version required for this module is {0}. The upgrade is already requested.' }
+  - { name: module_state_message.core_restriction.upgrade_request.requested, label: 'The module is not released for your X-Cart version. The upgrade is already requested.' }
+  - { name: module_state_message.module_restriction.disable, label: 'The module may not be disabled due to the limitations of the module architecture.' }
+  - { name: module_state_message.module_restriction.requiredBy, label: 'Cannot be disabled. The module is required by: {0}' }
+  - { name: module_state_message.module_restriction.incompatibleWith, label: 'To enable this addon, the following addon(s) must be disabled: {0}' }
+  - { name: module_state_message.module_restriction.dependsOn, label: 'To enable this addon, the following addon(s) must be enabled: {0}' }
+  - { name: module_state_message.module_restriction.moduleName, label: '{0} (by {1})' }
+  - { name: module_state_message.license_expired, label: 'The key does not allow getting new features and upgrades. {0}' }
+  - { name: module_state_message.license_expired.renew_key_link, label: 'Renew your key now' }
+  - { name: module_state_message.license_pending, label: 'Your payment is being processed. The addon license key will be sent to your email address as soon as the processing has been completed. You will be able to use this key to install the addon at any time.' }
+  - { name: module_state_message.edition.unavailable, label: 'Upgrade to a higher plan to install this addon. {0}' }
+  - { name: module_state_message.edition.unavailable_in_all_standalone_editions, label: 'Not available for standalone X-Cart installations' }
+  - { name: module_state_message.edition.unavailable_in_all_cloud_editions, label: 'Not available for your X-Cart plan' }
+  - { name: activate_license_dialog.title.core, label: 'Activate your X-Cart installation first' }
+  - { name: activate_license_dialog.title.module, label: 'Enter license key' }
+  - { name: activate_license_dialog.disclaimer.core, label: 'Before installing a paid addon for this installation, you need to activate your X-Cart license.<br>Please enter your license key in the field below or contact our Solution Advisors to get one.'}
+  - { name: activate_license_dialog.disclaimer.module, label: 'To activate your X-Cart or commercial module license, enter your license key into the field below and click Activate.' }
+  - { name: activate_license_dialog.input.placeholder, label: 'Enter your license key' }
+  - { name: activate_license_dialog.button.activate, label: Activate }
+  - { name: activate_license_dialog.button.register, label: Register }
+  - { name: activate_license_dialog.button.purchase, label: 'Contact X-Cart' }
+  - { name: activate_license_dialog.link.contact_xcart, label: 'Contact X-Cart' }
+  - { name: activate_license_dialog.result.success.core, label: 'X-Cart license key has been successfully verified' }
+  - { name: activate_license_dialog.result.success.module, label: 'License key has been successfully verified and activated for "{0}" module by "{1}" author.' }
+  - { name: activate_license_dialog.result.invalid, label: 'License registration error: {2} ({1})' }
+  - { name: activate_license_dialog.result.empty_key, label: 'Please enter your license key' }
+  - { name: module_action.upgrade_request, label: 'Request for upgrade' }
+  - { name: module_action.pack_it, label: 'Pack it' }
+  - { name: module_action.settings, label: 'Settings' }
+  - { name: module_action.install, label: 'Install later' }
+  - { name: module_action.install_now, label: 'Install now' }
+  - { name: module_action.purchase, label: 'Purchase' }
+  - { name: module_action.remove, label: 'Remove' }
+  - { name: module_action.upgrade_addon.remove, label: 'Remove addon' }
+  - { name: module_action.upgrade_addon.build, label: 'Update addon' }
+  - { name: module_action.upgrade_addon.minor, label: 'Upgrade addon' }
+  - { name: module_action.manage_layout, label: 'Manage layout' }
+  - { name: module_action.activate_key, label: 'Activate key' }
+  - { name: module.author, label: Author }
+  - { name: module.rating, label: Rating }
+  - { name: module.downloads, label: Downloads }
+  - { name: module.description, label: Description }
+  - { name: module.price, label: Price }
+  - { name: module.price.free, label: Free }
+  - { name: module.version, label: Version }
+  - { name: module.view_details.marketplace, label: 'View more details in the App Store' }
+  - { name: module.state.enabled, label: Enabled }
+  - { name: module.state.disabled, label: Disabled }
+  - { name: module.state.installed, label: Installed }
+  - { name: module.state.not-installed, label: Not installed }
+  - { name: module.license.expiration, label: 'exp. {0}' }
+  - { name: module.license.expiration.unlimited, label: unlimited }
+  - { name: module.upgrade.author, label: 'by {0}' }
+  - { name: separator.or, label: or }
+  - { name: landing_section.show_all, label: 'Show all' }
+  - { name: controls.activate_license_key, label: 'Activate license key' }
+  - { name: controls.upload_addon, label: 'Upload addon' }
+  - { name: controls.upload_addon.phar-error, label: 'To upload addons, PHP''s Phar extension needs to be enabled on your server. Please contact your hosting provider' }
+  - { name: controls.renew_license_key, label: 'Renew your access to new features' }
+  - { name: controls.re-validate_license_key, label: 'Re-validate license keys' }
+  - { name: header.addons_search_title, label: 'Search results' }
+  - { name: header.addons_search_subtitle, label: 'Search for {0}' }
+  - { name: upgrade.install_updates, label: 'Install updates' }
+  - { name: restricted-modules.warning, label: 'Here''s a list of modules that are not available under free license. After the activation of a free license key all these modules will be removed from your installation.' }
+  - { name: 'Version: X', label: 'Version: {version}' }
+  - { name: 'Service version: X', label: 'Service version: {version}' }
+  - { name: 'Active template: X', label: 'Active template: {template}' }
+  - { name: 'Template URL: X', label: 'URL: <a href="{template}" target="_blank">{template}</a>' }
+  - { name: 'License: X', label: 'License: {license}' }
+  - { name: 'Installation date: X', label: 'Installation date: {date}' }
+  - { name: 'Private and custom modules:', label: 'Private and custom modules:' }
+  - { name: 'Public installed modules:', label: 'Public installed modules:' }
+  - { name: support_page.none, label: None }
+  - { name: support_page.table.developer, label: Developer }
+  - { name: support_page.table.module_name, label: 'Module name' }
+  - { name: support_page.table.version, label: Version }
+  - { name: support_page.table.installation_date, label: 'Installation date' }
+  - { name: support_page.table.description, label: 'Description' }
+  - { name: navigation.all_addons, label: 'App Store' }
+  - { name: navigation.templates, label: 'Theme Store' }
+  - { name: navigation.my_addons, label: 'My Apps' }
+  - { name: navigation.purchases, label: Purchases }
+  - { name: navigation.updates_and_upgrades, label: 'Updates' }
+  - { name: integrity_page.title, label: 'Integrity check' }
+  - { name: integrity_page.results.empty, label: 'Integrity has not yet been checked. Initiate an integrity check by clicking the button "Refresh integrity status".' }
+  - { name: integrity_page.type.modified, label: Modified }
+  - { name: integrity_page.type.removed, label: Removed }
+  - { name: integrity_page.type.added, label: Added }
+  - { name: integrity_page.type.unknown, label: Unknown }
+  - { name: integrity_page.refresh, label: 'Refresh integrity status' }
+  - { name: rebuild.download_packs.state, label: 'Loading packages {0} / {1}' }
+  - { name: rebuild.download_packs.state.finished, label: 'Packages loaded {0} / {1}' }
+  - { name: rebuild.unpack_packs.state, label: 'Extracting files {0} / {1}' }
+  - { name: rebuild.unpack_packs.state.finished, label: 'Files extracted {0} / {1}' }
+  - { name: rebuild.check_packs.state, label: 'Scanning files for external changes {0} / {1}' }
+  - { name: rebuild.check_packs.state.warnings, label: 'Scanning files for external changes {0} / {1} (warnings: {2})' }
+  - { name: rebuild.check_packs.state.finished, label: 'Files scanned for external changes {0} / {1}' }
+  - { name: rebuild.check_packs.state.finished.warnings, label: 'Files scanned for external changes {0} / {1} (warnings: {2})' }
+  - { name: rebuild.check_fs.state, label: 'Check filesystem permissions {0} / {1}' }
+  - { name: rebuild.check_fs.state.finished, label: 'Filesystem permissions checked {0} / {1}' }
+  - { name: rebuild.move_packs.state, label: 'Updating files & creating a codebase backup {0} / {1}' }
+  - { name: rebuild.move_packs.state.finished, label: 'Files updated, codebase backup created {0} / {1}' }
+  - { name: rebuild.hook.disable.state, label: 'Executing hooks ({2}) {0} / {1}' }
+  - { name: rebuild.hook.disable.state.finished, label: 'Hooks have been executing ({2}) {0} / {1}' }
+  - { name: rebuild.hook.remove.state, label: 'Executing hooks ({2}) {0} / {1}' }
+  - { name: rebuild.hook.remove.state.finished, label: 'Hooks have been executing ({2}) {0} / {1}' }
+  - { name: rebuild.hook.pre_upgrade.state, label: 'Applying pre-upgrade hooks {0} / {1}' }
+  - { name: rebuild.hook.pre_upgrade.state.finished, label: 'Pre-upgrade hooks applied {0} / {1}' }
+  - { name: rebuild.hook.post_upgrade.state, label: 'Applying post-upgrade hooks {0} / {1}' }
+  - { name: rebuild.hook.post_upgrade.state.finished, label: 'Post-upgrade hooks applied {0} / {1}' }
+  - { name: rebuild.hook.install.state, label: 'Executing hooks ({2}) {0} / {1}' }
+  - { name: rebuild.hook.install.state.finished, label: 'Hooks have been executing ({2}) {0} / {1}' }
+  - { name: rebuild.hook.enable.state, label: 'Executing hooks ({2}) {0} / {1}' }
+  - { name: rebuild.hook.enable.state.finished, label: 'Hooks have been executing ({2}) {0} / {1}' }
+  - { name: rebuild.hook.rebuild.state, label: 'Executing hooks ({2}) {0} / {1}' }
+  - { name: rebuild.hook.rebuild.state.finished, label: 'Hooks have been executing ({2}) {0} / {1}' }
+  - { name: rebuild.hook.post_rebuild.state, label: 'Applying post-rebuild hooks {0} / {1}' }
+  - { name: rebuild.hook.post_rebuild.state.finished, label: 'Post-rebuild hooks applied {0} / {1}' }
+  - { name: rebuild.hook.post_rollback.state, label: 'Applying post-rollback hooks {0} / {1}' }
+  - { name: rebuild.hook.post_rollback.state.finished, label: 'Post-rollback hooks applied {0} / {1}' }
+  - { name: rebuild.update_modules_list.state, label: 'Updating addon status' }
+  - { name: rebuild.update_modules_list.state.finished, label: 'Addon status updated' }
+  - { name: rebuild.update_script_state.state, label: 'Update script state' }
+  - { name: rebuild.update_script_state.state.finished, label: 'Update script state' }
+  - { name: rebuild.update_data_source.state, label: 'Updating addon metadata' }
+  - { name: rebuild.update_data_source.state.finished, label: 'Addon metadata updated' }
+  - { name: rebuild.xcart_step.step_first.state, label: 'Clearing codebase and PHP opcode caches' }
+  - { name: rebuild.xcart_step.step_first.state.finished, label: 'Codebase and PHP opcode caches cleared' }
+  - { name: rebuild.xcart_step.step_second.state, label: 'Clearing data cache & creating fresh codebase cache' }
+  - { name: rebuild.xcart_step.step_second.state.finished, label: 'Data cache cleared, fresh codebase cache created' }
+  - { name: rebuild.xcart_step.step_third.state, label: 'Clearing PHP opcode cache' }
+  - { name: rebuild.xcart_step.step_third.state.finished, label: 'PHP opcode cache cleared' }
+  - { name: rebuild.xcart_step.step_fourth.state, label: 'Creating the database migration script' }
+  - { name: rebuild.xcart_step.step_fourth.state.finished, label: 'Database migration script created' }
+  - { name: rebuild.xcart_step.step_fifth.state, label: 'Applying the database migration script' }
+  - { name: rebuild.xcart_step.step_fifth.state.finished, label: 'Database migration script applied' }
+  - { name: rebuild.xcart_step.step_six.state, label: 'Creating Doctrine proxy classes for lazy loading' }
+  - { name: rebuild.xcart_step.step_six.state.finished, label: 'Doctrine proxy classes created' }
+  - { name: rebuild.xcart_step.step_seven.state, label: 'Updating data fixtures' }
+  - { name: rebuild.xcart_step.step_seven.state.finished, label: 'Data fixtures updated' }
+  - { name: rebuild.xcart_step.step_eight.state, label: 'X-Cart step in progress ({0})' }
+  - { name: rebuild.xcart_step.step_eight.state.finished, label: 'X-Cart step finished ({0})' }
+  - { name: rebuild.xcart_step.step_nine.state, label: 'Generating quick data' }
+  - { name: rebuild.xcart_step.step_nine.state.finished, label: 'Quick data generated' }
+  - { name: rebuild.xcart_step.step_ten.state, label: 'Creating CSS rules and style sheets for storefront' }
+  - { name: rebuild.xcart_step.step_ten.state.finished, label: 'CSS rules and style sheets created for storefront' }
+  - { name: rebuild.xcart_step.step_eleven.state, label: 'Creating CSS rules and style sheets for admin area' }
+  - { name: rebuild.xcart_step.step_eleven.state.finished, label: 'CSS rules and style sheets created for admin area' }
+  - { name: rebuild.xcart_step.step_twelve.state, label: 'Compiling templates and clearing APCu & opcode caches' }
+  - { name: rebuild.xcart_step.step_twelve.state.finished, label: 'Templates compiled, APCu & opcode caches cleared' }
+  - { name: rebuild.xcart_step.step_thirteen.state, label: 'Unlocking storefront' }
+  - { name: rebuild.xcart_step.step_thirteen.state.finished, label: 'Storefront unlocked' }
+  - { name: rebuild.note.changelog.state, label: 'Get note ({2}) {0} / {1}' }
+  - { name: rebuild.note.changelog.state.finished, label: 'Get note ({2}) {0} / {1}' }
+  - { name: rebuild.note.post_upgrade.state, label: 'Get note ({2}) {0} / {1}' }
+  - { name: rebuild.note.post_upgrade.state.finished, label: 'Get note ({2}) {0} / {1}' }
+  - { name: rebuild.note.pre_upgrade.state, label: 'Get note ({2}) {0} / {1}' }
+  - { name: rebuild.note.pre_upgrade.state.finished, label: 'Get note ({2}) {0} / {1}' }
+  - { name: rebuild.remove_modules.state, label: 'Removing addons and creating a backup {0} / {1}' }
+  - { name: rebuild.remove_modules.state.finished, label: 'Addons removed, backup created {0} / {1}' }
+  - { name: rebuild.action.upgrade.state, label: 'Applying common upgrade actions {0} / {1}' }
+  - { name: rebuild.action.upgrade.state.finished, label: 'Common upgrade actions applied {0} / {1}' }
+  - { name: rebuild.action.remove_old_cache.state, label: 'Clearing file cache' }
+  - { name: rebuild.action.remove_old_cache.state.finished, label: 'File cache cleared' }
+  - { name: rollback.download_packs.state, label: 'Clearing loaded packages {0} / {1}' }
+  - { name: rollback.download_packs.state.finished, label: 'Loaded packages cleared {0} / {1}' }
+  - { name: rollback.restore_files.state, label: 'Restoring codebase from backup' }
+  - { name: rollback.restore_files.state.finished, label: 'Codebase restored from backup' }
+  - { name: rollback.unpack_packs.state, label: 'Clearing extracted files {0} / {1}' }
+  - { name: rollback.unpack_packs.state.finished, label: 'Extracted files cleared {0} / {1}' }
+  - { name: rollback.update_data_source.state, label: 'Updating addon metadata' }
+  - { name: rollback.update_data_source.state.finished, label: 'Addon metadata updated' }
+  - { name: rollback.update_modules_list.state, label: 'Updating addon status' }
+  - { name: rollback.update_modules_list.state.finished, label: 'Addon status updated' }
+  - { name: upgrade-preview.title.build, label: 'Minor Updates (one addon) | Minor Updates ({0} addons)' }
+  - { name: upgrade-preview.title.minor, label: 'Major Upgrades (one addon) | Major Upgrades ({0} addons)' }
+  - { name: upgrade-preview.title.with-core.build, label: 'Minor Updates (core) | Minor Updates (core and one addon) | Minor Updates (core and {0} addons)' }
+  - { name: upgrade-preview.title.with-core.minor, label: 'Major Upgrades (core) | Major Upgrades (core and one addon) | Major Upgrades (core and {0} addons)' }
+  - { name: upgrade-preview.changelog-message.build, label: 'Update the following addons to make your store more secure and stable. {0}.' }
+  - { name: upgrade-preview.changelog-message.minor, label: 'Upgrade your store to enjoy new awesome features that are sure to bring more sales in the long run. {0}.' }
+  - { name: upgrade-preview.changelog-link, label: 'Changelog' }
+  - { name: upgrade-preview.button-title.build , label: 'View & Update' }
+  - { name: upgrade-preview.button-title.minor , label: 'View & Upgrade' }
+  - { name: changelog-dialog.title.build, label: 'Changelog of update' }
+  - { name: changelog-dialog.title.minor, label: 'Changelog of upgrade' }
+  - { name: changelog-dialog.module.title, label: '{0} changelog' }
+  - { name: upgrade-details-title.build, label: 'Minor Updates (X-Cart {0})' }
+  - { name: upgrade-details-title.minor, label: 'Major Upgrades (X-Cart {0})' }
+  - { name: upgrade-details-title.major, label: 'Major Upgrades (X-Cart {0})' }
+  - { name: upgrade-details-page.advanced-mode.enabled, label: 'Click to select all addons' }
+  - { name: upgrade-details-page.advanced-mode.disabled, label: 'Click the lock to make changes' }
+  - { name: upgrade-details-page.backup-adv.title, label: 'Remember to create a backup!' }
+  - { name: upgrade-details-page.backup-adv.message, label: 'We are doing our best to make the upgrade process not only easy to carry out, but safe. Use our new nifty module to automatically backup your store and be able to restore it if anything crops up.' }
+  - { name: upgrade-details-page.backup-adv.cta.backup, label: 'Backup your store with Backup Master' }
+  - { name: upgrade-details-page.need-help-backup, label: 'Need help? Use Backup Master' }
+  - { name: upgrade-details-page.disabled-and-custom-modules-warning.title, label: 'Several addons require your attention:' }
+  - { name: upgrade-details-page.disabled-modules.message, label: 'These {0} will be removed after the upgrade. If you think you may need them in the future, you can enable them on the page above. Later on, you can disable them again.' }
+  - { name: upgrade-details-page.disabled-modules.message.link, label: 'disabled addons' }
+  - { name: upgrade-details-page.backup-confirm, label: 'I''ve made a full backup of my files and database.' }
+  - { name: upgrade-details-page.remove-confirm, label: 'I agree to remove all the {0}.' }
+  - { name: upgrade-details-page.remove-confirm.link, label: 'disabled modules' }
+  - { name: upgrade-details-page.continue, label: 'Continue' }
+  - { name: upgrade-details-page.licenses.updated, label: 'License information has been updated' }
+  - { name: upgrade.advanced_mode.message, label: 'In advanced mode you can choose to upgrade specific addons.' }
+  - { name: upgrade.advanced_mode.warning.message, label: 'Please note that this mode is for developers only. Updating your addons separately from one another carries the risk of disrupting the whole upgrade process. You need to be sure what you are doing and be prepared to fix the code in case of incompatibility issues.' }
+  - { name: upgrade.advanced_mode.select_all, label: 'Select all' }
+  - { name: empty-upgrade.info, label: 'Your store is up to date' }
+  - { name: upgrade-self.title, label: 'Install Updates for the App Store' }
+  - { name: upgrade-self.description, label: 'Please install updates for the App Store to make the process of  upgrading your store more secure and stable.' }
+  - { name: upgrade-self.install-update, label: 'Install update' }
+  - { name: module.changelog, label: 'Changelog' }
+  - { name: module.upgrade.remove, label: 'Will be removed' }
+  - { name: upgrade-details-page.wave-warning.title, label: '{0} wave!' }
+  - { name: upgrade-details-page.wave-warning.message, label: 'Your license key is set up to get upgrades in the {0} wave. Therefore, upgrading may require some technical assistance on your part. If you are not prepared to deal with upgrade issues that may arise when upgrading in the {1} wave, please, wait for the merchant wave. You can switch to the merchant wave {2}' }
+  - { name: upgrade-details-page.wave-warning.message.link, label: 'on this page' }
+  - { name: upgrade-details-page.missing-license.message, label: 'The following apps are available only for registered owners of X-Cart {0} version. Please, purchase and activate a license key to enjoy these features.' }
+  - { name: upgrade-details-page.expired-license.message, label: 'Renew your access to upgrades to get new and enhanced features coming with the latest release.' }
+  - { name: upgrade-details-page.expired-license.license, label: '{0} (expired on {1})' }
+  - { name: upgrade-details-page.custom-modules-warning, label: '{0} were developed for a specific version of X-Cart core. As a result, some adaptation of these addons may be required for the upcoming upgrade. Please contact your module developer to assist you with the adaptation.' }
+  - { name: upgrade-details-page.custom-modules-warning.custom-modules, label: 'Custom addons' }
+  - { name: upgrade-details-page.custom-modules-confirm, label: 'I understand that {0} may require an adaptation.' }
+  - { name: upgrade-details-page.custom-modules-confirm.custom-modules, label: 'custom addons' }
+  - { name: module_state_message.upgrade.remove-warning, label: 'Please {0} if you think you may need it in the future. Otherwise, it will be removed after upgrade.' }
+  - { name: module_state_message.upgrade.remove-warning.installed-addons-link, label: 'enable this addon' }
+  - { name: module_state_message.upgrade.license-warning, label: 'The license is expired' }
+  - { name: rebuild.init, label: 'Initiating the deployment process...' }
+  - { name: rebuild.init.rollback, label: 'Initiating rollback...' }
+  - { name: rebuild.note.pre-upgrade.action.rollback, label: 'Cancel' }
+  - { name: rebuild.note.pre-upgrade.action.release, label: 'Continue' }
+  - { name: rebuild.note.post-upgrade.action.release, label: 'OK, I did it' }
+  - { name: rebuild.title, label: 'Deploying your store' }
+  - { name: rebuild.title.rollback, label: 'Rolling back changes' }
+  - { name: rebuild.title.post-upgrade-note, label: 'One last thing before you go' }
+  - { name: rebuild-success.title, label: 'All done!' }
+  - { name: rebuild-success.message, label: 'Please do not close this page until you make sure your store works properly.' }
+  - { name: rebuild-success.storefront, label: 'Open storefront' }
+  - { name: rebuild-success.backend, label: 'Go to Admin Area' }
+  - { name: rebuild-success.upgrade, label: 'Go to Updates & Upgrades' }
+  - { name: rebuild-success.description, label: 'If you have any questions, get back to us via support@x-cart.com. We are available 24/7.' }
+  - { name: rebuild-success.description.with-rollback, label: 'If anything crops up, just {0} or contact our {1} - they know how to fix it right away.' }
+  - { name: rebuild-success.rollback, label: 'rollback' }
+  - { name: rebuild-success.support, label: 'support team' }
+  - { name: marketplace-lock.info.title, label: 'Whoops… Something’s gone wrong.' }
+  - { name: marketplace-lock.info.description, label: 'Our top software engineers have already been sent out your way to fix the case. It may be a good idea to brew yourself a cup of hot tea or coffee and then refresh the page.' }
+  - { name: marketplace-lock.info.contact, label: 'If this can’t wait, just drop us a line at {0} — there’s always someone to give you a hand.' }
+  - { name: marketplace-lock.reconnect, label: 'Reconnect' }
+  - { name: error.marketplace-lock, label: 'App Store connection error' }
+  - { name: request-for-upgrade.success, label: 'Your request has been sent successfully' }
+  - { name: request-for-upgrade.warning, label: 'An error occurred while sending the request' }
+  - { name: scenario-rule.exception.dependencies.core-version.core-upgrade-required, label: 'The addon "{0}" can''t be enabled because its dependency "{1}" required new core version' }
+  - { name: scenario-rule.exception.dependencies.core-version.module-upgrade-required, label: 'The addon "{0}" can''t be enabled because its dependency "{1}" was not released for your core version' }
+  - { name: scenario-rule.exception.dependencies.core-version.non-existent-module, label: 'The addon "{0}" cannot be enabled because the addon "{1}" on which it is supposed to depend does not exist' }
+  - { name: scenario-rule.exception.dependencies.force-disabled-when-incompatible, label: 'Can''t enable addon "{0}" because its incompatible with addon "{0}"' }
+  - { name: scenario-rule.exception.dependencies.force-enabled-when-required, label: 'Can''t disable addon "{0}" because its required by addon "{1}"' }
+  - { name: scenario-rule.exception.core-version.core-upgrade-required, label: 'The addon "{0}" can''t be enabled because it required new core version' }
+  - { name: scenario-rule.exception.core-version.module-upgrade-required, label: 'The addon "{0}" can''t be enabled because it was not released for your core version' }
+  - { name: scenario.section-heading.switch, label: 'Selected' }
+  - { name: scenario.section-heading.install, label: 'Addons to install' }
+  - { name: scenario.transition.type.enable, label: 'On' }
+  - { name: scenario.transition.type.disable, label: 'Off' }
+  - { name: scenario.transition.type.install_enabled, label: 'On' }
+  - { name: scenario.transition.type.install_disabled, label: 'On' }
+  - { name: scenario.transition.type.remove, label: '' }
+  - { name: purchases-page.empty, label: 'Uh-oh... You haven''t bought anything yet.' }
+  - { name: tags-selector.all-tags, label: 'All categories' }
+  - { name: dialog-upload-addon.heading, label: 'Upload addon' }
+  - { name: select-file, label: 'Select file' }
+  - { name: modules-page.per-page, label: 'Items per page' }
+  - { name: modules-page.switch-to-grid-view, label: 'Switch to Grid view' }
+  - { name: modules-page.switch-to-list-view, label: 'Switch to List view' }
+  - { name: modules-page.marketplace.empty.message, label: 'No addons have been found based on the specified conditions.' }
+  - { name: modules-page.marketplace.empty.serach-tips, label: 'Some search terms require an exact match. Try typing the entire term, or use a different word or phrase.' }
+  - { name: modules-page.marketplace.empty.serach-tips-2, label: 'Please let us know if you want to {0} or {1} for a free quote for custom development service.' }
+  - { name: modules-page.marketplace.empty.serach-tips-2.suggest-idea, label: 'suggest an idea' }
+  - { name: modules-page.marketplace.empty.serach-tips-2.contact-xcart, label: 'contact us' }
+  - { name: modules-page.marketplace.empty.back-link, label: 'Go to the App Store' }
+  - { name: exception.upload-addon.input-error, label: 'Failed to open input stream' }
+  - { name: exception.upload-addon.output-error, label: 'Failed to open output stream' }
+  - { name: exception.upload-addon.restriction-error, label: 'This file type ({0}) is not allowed' }
+  - { name: exception.addon-package.missing-file-error, label: 'No package file was uploaded' }
+  - { name: exception.addon-package.wrong-file-error, label: 'Wrong addon package format was uploaded' }
+  - { name: exception.addon-package.wrong-format-error, label: 'The module pack is incorrect. Make sure the module pack is created via X-Cart packing tool.' }
+  - { name: exception.addon-package.generic-error, label: 'An error encountered during the package loading: {0}' }
+  - { name: marketplace-page-heading, label: 'Available addons' }
+  - { name: ongoing-processes.message, label: 'Hold on a moment, please. {0}' }
+  - { name: ongoing-processes.redeploy-link, label: 'Redeploy in progress' }
+  - { name: ongoing-processes.redeploy-link, label: 'Redeploy is in progress' }
+  - { name: rebuild.modified-dialog.title, label: 'Some files have been modified' }
+  - { name: rebuild.modified-dialog.description, label: 'The system has detected some custom modifications have been implemented on your X-Cart installation by direct modification of the core/module files instead of by creating a module modifying the original functionality. How would you like to handle these modifications?' }
+  - { name: rebuild.modified-dialog.replace-all.label, label: '<b>Replace all the modified files</b> with the unmodified newer versions' }
+  - { name: rebuild.modified-dialog.replace-all.description, label: 'Recommended. Don''t worry, we have made a full backup of your store files.' }
+  - { name: rebuild.modified-dialog.keep-seleced.label, label: '<b>Keep the modified files</b> without replacing them with newer versions' }
+  - { name: rebuild.modified-dialog.keep-seleced.description, label: 'Specify the files you wish to keep.' }
+  - { name: demo.popup.title, label: 'This demo is limited' }
+  - { name: demo.popup.notice1, label: 'Changes you make do not affect demo storefront' }
+  - { name: demo.popup.notice2, label: 'Store settings cannot be adjusted' }
+  - { name: demo.popup.free-trial.notice, label: 'Start free trial to feel the full force of X-Cart.' }
+  - { name: demo.popup.free-trial.button, label: 'Start free trial' }
+  - { name: demo.popup.free-trial.decription, label: '30 days of any X-Cart edition for FREE. No risk, no credit card required.' }
+  - { name: demo.popup.continue.button, label: 'Continue with demo' }
+  - { name: rebuild.fs-errors-dialog.title, label: 'Permissions' }
+  - { name: rebuild.fs-errors-dialog.description, label: 'Not enough permissions to run the process. Make sure the following permissions are set (UNIX-like systems only).<br />Such permissions are required for a seamless automated installation or upgrade of X-Cart on your server. They do not take into account the specific configuration of your server or any security requirements. Once the process is completed, make sure you change the permissions to a more restrictive setting. <a target="_blank" href="https://kb.x-cart.com/en/setting_up_x-cart_5_environment/secure_configuration.html#why-x-cart-asks-for-666777-permissions">Read more</a>' }
+  - { name: rebuild.fs-errors-dialog.copy-label, label: 'Copy to clipboard' }
+  - { name: rebuild.fs-errors-dialog.copy-success, label: 'The text was copied to your clipboard' }
+  - { name: module_state_message.postponed_upgrade_available, label: 'Version {0} is available. {1}' }
+  - { name: module_state_message.postponed_upgrade_available.update_link, label: 'Update module' }
+  - { name: upgrade-details-title.postponed, label: 'Major Upgrades ({0})' }
+  - { name: upgrade-preview.changelog-message.postponed, label: 'Upgrade your store to enjoy new awesome features that are sure to bring more sales in the long run. {0}' }
+  - { name: changelog-dialog.title.postponed, label: 'Changelog of upgrade' }
+  - { name: rebuild.postponed-hooks-dialog.title, label: 'Pre-upgrade action required' }
+  - { name: rebuild.postponed-hooks-dialog.description, label: 'Some of the addons used by your store contain code that must be executed before the upgrade process begins. For the code to be executed successfully, the addons need to be enabled. However, some of the addons containing such code are now disabled. This will prevent the pre-upgrade code from execution and is highly likely to cause problems, like a fatal error.<br /><br />Listed below are the addons that contain such pre-upgrade code and are disabled. Here you can specify the addons for which you want the pre-upgrade code to be executed:' }
+  - { name: rebuild.postponed-hooks-dialog.note, label: 'Please note that we may not be held responsible for any upgrade problems caused by failure to execute the required pre-upgrade code.' }
+  - { name: rebuild.postponed-hooks-dialog.action.execute, label: 'Execute' }
+  - { name: rebuild.postponed-hooks-dialog.action.ignore, label: 'Do not execute' }
+  - { name: rebuild.check_postponed_hooks.state, label: 'Check postponed upgrade actions' }
+  - { name: rebuild.check_postponed_hooks.state.finished, label: 'Postponed upgrade actions checked' }
+  - { name: login-page.lock.title, label: 'Your account has been locked due to too many unsuccessful login attempts' }
+  - { name: login-page.lock.timer, label: 'Time left: {0}' }
+  - { name: login-page.header.x-cart, label: 'X-Cart shopping cart software' }
+  - { name: login-page.title, label: 'Admin area' }
+  - { name: login-page.input.auth-code.label, label: 'Please enter the store auth code' }
+  - { name: login-page.input.auth-code.placeholder, label: 'Auth code' }
+  - { name: login-page.button.login, label: 'Login' }
+  - { name: login-page.help, label: 'You can find your auth code on the server (xcart_folder/etc/config.php, auth_code). Also, you can {0}.' }
+  - { name: login-page.help.contact-us, label: 'Contact X-Cart support team' }
+  - { name: login-page.error.auth-code-invalid, label: 'Auth code invalid' }
+  - { name: login-page.error.auth-lock, label: 'Your account has been locked due to too many unsuccessful login attempts' }
+  - { name: login-page.error.unknown-error, label: 'Unknown error' }
+  - { name: modules-list-controls.installed.all, label: 'All modules' }
+  - { name: modules-list-controls.installed.enabled, label: 'Only enabled' }
+  - { name: modules-list-controls.installed.disabled, label: 'Only disabled' }
+  - { name: modules-list-controls.installed.recent, label: 'Recently enabled' }
+  - { name: rebuild-success.message.enabled-present, label: 'Now you can check {0}.' }
+  - { name: rebuild-success.message.enabled-present.link, label: 'the addons that have been installed' }
+  - { name: rebuild-success.message.settings-present, label: 'Now you can adjust the settings of the addons that have been installed.' }
+  - { name: installed-module-actions.download.phar-error, label: 'To download addons, PHP''s Phar extension needs to be enabled on your server. Please contact your hosting provider.'}
+
+  - { name: rollback_prompt_title, label: 'Cancel' }
+  - { name: release_prompt_title, label: 'Continue' }
+  - { name: retry_prompt_title, label: 'Retry' }
+
+  - { name: rebuild-dialog.action.rollback, label: 'Cancel' }
+  - { name: rebuild-dialog.action.release, label: 'Continue' }
+  - { name: rebuild-dialog.action.retry, label: 'Retry' }
+  - { name: rebuild-dialog.action.restore, label: 'Restore' }
+  - { name: rebuild-dialog.action.contact-us, label: 'Contact US' }
+  - { name: rebuild-success.installed-addons, label: 'Go to Installed Addons' }
+  - { name: rebuild-success.go-to-settings, label: 'Go to addon settings' }
+
+  - { name: rollback_prompt_title, label: 'Cancel' }
+  - { name: release_prompt_title, label: 'Continue' }
+  - { name: retry_prompt_title, label: 'Retry' }
+
+  - { name: rebuild-dialog.action.rollback, label: 'Cancel' }
+  - { name: rebuild-dialog.action.release, label: 'Continue' }
+  - { name: rebuild-dialog.action.retry, label: 'Retry' }
+  - { name: rebuild-dialog.action.restore, label: 'Restore' }
+  - { name: rebuild-dialog.action.contact-us, label: 'Contact US' }
+  - { name: rebuild-success.installed-addons, label: 'Go to Installed Addons' }
+  - { name: rebuild-success.go-to-settings, label: 'Go to addon settings' }
+  - { name: rebuild-success.install-now.top-message-with-settings, label: 'Now you can adjust the {0} of the "{1}" addon. If anything crops up, just {2} or contact our support team - they know how to fix it right away.' }
+  - { name: rebuild-success.install-now.top-message, label: 'If anything crops up, just {0} or contact our support team - they know how to fix it right away.' }
+  - { name: rebuild-success.install-now.top-message.rollback, label: 'rollback' }
+  - { name: rebuild-success.install-now.top-message.settings, label: 'settings' }
+  - { name: rebuild-success.message.rollback, label: 'Rollback has been completed! If anything crops up, just contact our support team - they know how to fix it right away.' }
+
+  - { name: module.license.title, label: 'Modules license agreements' }
+  - { name: module.license.module_title, label: '"{0}" license agreement' }
+  - { name: module.license.agree, label: 'Yes, I agree with license agreements' }
+  - { name: module.license.install, label: 'Install' }
+
+  - { name: subscription-page.contact_us, label: 'Contact Us' }
+  - { name: subscription-page.select_plan, label: 'Select Plan' }
+  - { name: subscription-page.cancel, label: 'Cancel' }
+  - { name: subscription-page.current_plan, label: 'Your current plan: <b>{0}</b>.' }
+  - { name: subscription-page.current_trial_plan, label: 'Your trial plan: <b>{0}</b>.' }
+  - { name: subscription-page.review_features, label: 'Review Features' }
+  - { name: subscription-page.update_subscription, label: 'Update Your Subscription' }
+  - { name: subscription-page.select_plan_for_your_business, label: 'Select a plan that works best for your business.' }
+  - { name: subscription-page.compare_plans, label: 'Compare Plans' }
+  - { name: subscription-page.confirm_cancellation, label: 'Are you sure? Press "OK" to cancel your current subscription' }

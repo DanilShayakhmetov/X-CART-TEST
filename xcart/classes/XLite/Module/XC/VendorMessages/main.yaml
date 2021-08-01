@@ -1,0 +1,18 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Metadata
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+version: 5.4.1.4
+type: common
+authorName: 'X-Cart team'
+moduleName: Messages
+description: 'The module adds an opportunity for customers, administrator and sellers to start messaging about an order right from the order details page. In multi-vendor edition, this addon also allows customers to reach a seller from the seller''s page before purchasing.'
+minorRequiredCoreVersion: 1
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: true
+canDisable: true

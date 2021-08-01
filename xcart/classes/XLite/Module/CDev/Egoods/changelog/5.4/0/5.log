@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-08-05 - [Bug] Changed the data type for the fields "path" and "additionalDetails" of the product_attachment_history_points table. #BUG-6973 (Kirill Stadler) #Egoods
+

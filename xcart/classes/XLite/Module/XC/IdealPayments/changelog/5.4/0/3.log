@@ -1,0 +1,5 @@
+Version 5.4.0.3
+
+Improvements (1)
+2019-05-24 - [Change] Updated the information on the availability of payment methods in different countries. #BUG-7013 (Fedya Lavrentyev) #AuthorizeNet #Skrill #Paypal #TwoCheckout #Stripe #Robokassa #Qiwi #DatatransUPP #G2APay #Pilibaba #Beanstream #IdealPayments #SofortBanking #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #BitPay #CCBill #Worldpay #FirstDataPayeezyGatewayHP #Yandex Checkout #GlobalTransportSecure #PayFort #DIBSFlexWin #SecureTrading #OgoneEcommerce #ChronoPay #InternetSecure
+

@@ -1,0 +1,173 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Panel tour styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.ttour-wrapper {
+    outline: 2px solid #3fbbe8;
+
+    .ttour-tip {
+        min-width: 400px;
+        padding: 20px;
+        border-radius: 5px;
+
+        &.arrow-center .ttour-arrow {
+            left: 50%;
+            margin-left: 10px;
+        }
+        &.arrow-left {
+            left: 10px;
+            .ttour-arrow {
+                left: 10px;
+            }
+        }
+        &.tip-center {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &.tip-left {
+            left: 40%;
+        }
+
+        &.top {
+            bottom: ~"calc(100% + 20px)";
+        }
+        &.right {
+            left: ~"calc(100% + 20px)";
+        }
+        &.bottom {
+            top: ~"calc(100% + 20px)";
+        }
+        &.left {
+            right: ~"calc(100% + 20px)";
+        }
+    }
+
+    .ttour-tip,
+    .ttour-arrow {
+        background-color: #3fbbe8;
+    }
+
+    .ttour-header {
+        padding-bottom: 0;
+        h1 {
+            font-size: 26px;
+        }
+    }
+
+    .ttour-header h1,
+    .ttour-tip {
+        color: white;
+    }
+
+    .ttour-bullets {
+        display: none;
+    }
+
+    .ttour-footer {
+        padding-bottom: 25px;
+        button {
+            float: none;
+            &.next {
+                background-color: transparent;
+                border: 2px solid #fff;
+                border-radius: 3px;
+                box-shadow: none;
+                padding: 8px 30px;
+                &:hover {
+                    background-color: #fff;
+                    color: #3fbbe8;
+                    box-shadow: none;
+                }
+            }
+            &.prev {
+                display: none;
+            }
+        }
+    }
+
+    .ttour-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        cursor: pointer;
+        &.themetweaker-close-icon {
+            &:before,
+            &:after {
+                background-color: #fff;
+            }
+            &:hover {
+                &:before,
+                &:after {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+div.ttour-shadow {
+    position: fixed;
+    z-index: 1000001;
+
+    @media(max-width: @screen-sm-max) {
+        display: none;
+    }
+}
+
+div.ttour-overlay {
+    -webkit-box-shadow: 0 0 0 99999px rgba(255,255,255,.5), inset 0 0 2px 0 #fff;
+    box-shadow: 0 0 0 99999px rgba(255,255,255,.5), inset 0 0 2px 0 #fff;
+    &.tt-overlay-1 {
+        margin-left: -12px;
+    }
+}
+
+.tourBanners {
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%);
+}
+
+#themetweaker-panel.ttour-active {
+    height: 30px!important;
+}
+
+.ttour-inline {
+    .themetweaker-tab_layout_editor {
+        &.active {
+            background-color: transparent;
+            span {
+                color: inherit;
+            }
+            svg g {
+                stroke: #3b4859;
+            }
+        }
+    }
+    .themetweaker-tab_inline_editor {
+        background-color: #4f5b6a;
+        span {
+            color: #fff;
+        }
+        svg {
+            g {
+                stroke: #fff;
+            }
+            path {
+                stroke: #fff;
+                fill: #fff;
+            }
+        }
+    }
+}

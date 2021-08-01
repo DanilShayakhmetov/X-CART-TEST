@@ -1,0 +1,62 @@
+{##
+ # Checkout With Apple Pay button
+ #}
+
+<{{ this.getContainerTag() }} class="apple-pay-button-container apple-pay-checkout-button-container">
+  <button type="button" class="{{ this.getButtonClass() }}">
+    <span class="text">{{ t(this.getButtonLabel()) }}</span>
+    <span class="logo"></span>
+  </button>
+
+  {% form '\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Form\\Checkout\\ApplePay' with {className: 'checkout-with-apple-pay-form'} %}
+  {% endform %}
+
+  {{ widget_list('xpayments.button.applepay') }}
+
+  <script>
+    function loadCheckoutWithApplePayWidget() {
+        if ('undefined' == typeof CheckoutWithApplePayWrapper) { return; }
+
+        if ('undefined' == typeof window.xpaymentsCheckoutWithApplePay) {
+            window.xpaymentsCheckoutWithApplePay = new CheckoutWithApplePayWrapper();
+            xpaymentsCheckoutWithApplePay.initialize({
+                account: '{{ this.getPaymentMethod().getSetting('account') }}',
+                widgetKey: '{{ this.getPaymentMethod().getSetting('widget_key') }}',
+                form: '.checkout-with-apple-pay-form',
+                applePay: {
+                    shippingMethods: {{ this.getShippingMethodsList()|raw }},
+                    requiredShippingFields: {{ this.getRequiredAddressFields('shipping')|raw }},
+                    requiredBillingFields: {{ this.getRequiredAddressFields('billing')|raw }},
+                },
+                order: {
+                    total: '{{ this.getCart().getTotal() }}',
+                    currency: '{{ this.getCart().getCurrency().getCode() }}'
+                },
+                language: '{{ this.getCurrentLanguage().getCode() }}',
+                company: {
+                    name: '{{ this.config.Company.company_name }}',
+                    countryCode: '{{ this.config.Company.location_country }}',
+                },
+            });
+            if (xpaymentsCheckoutWithApplePay.isSupported()) {
+                xpaymentsCheckoutWithApplePay.load();
+            }
+        }
+        if (xpaymentsCheckoutWithApplePay.isSupported()) {
+            jQuery('.apple-pay-checkout-button').off('click').click(function () {
+                xpaymentsCheckoutWithApplePay.begin();
+            });
+            jQuery('.apple-pay-checkout-button-container').show();
+        }
+    }
+
+    if ('undefined' === typeof jQuery || 'undefined' === typeof core) {
+        document.addEventListener('DOMContentLoaded', function() {
+            jQuery(loadCheckoutWithApplePayWidget);
+        });
+    } else {
+        jQuery(loadCheckoutWithApplePayWidget);
+        core.bind('resources.ready', loadCheckoutWithApplePayWidget);
+    }
+  </script>
+</{{ this.getContainerTag() }}>

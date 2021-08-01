@@ -1,0 +1,18 @@
+{##
+ # Paypal button (Paypal Commerce Platform)
+ #}
+
+<input type="hidden" name="pcp_on_approve_data" id="pcp_on_approve_data" value=""/>
+
+<div class="{{ this.getButtonClass() }}">
+  {{ this.displayCommentedData(this.getButtonParams()) }}
+</div>
+
+<div class="pcp-hosted-fields-container">
+  {{ this.displayCommentedData(this.getHostedFieldsParams()) }}
+  <div class="pcp-hosted-fields" style="display: none">
+    {{ widget('XLite\\Module\\CDev\\Paypal\\View\\Checkout\\HostedFields') }}
+    <div id="payments-sdk__contingency-lightbox"></div>
+    <button id="pcp-hosted-fields-submit" class="btn regular-button regular-main-button place-order">{{ this.getDefaultLabel() }}</button>
+  </div>
+</div>

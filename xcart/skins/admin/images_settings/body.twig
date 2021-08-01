@@ -1,0 +1,23 @@
+{##
+ # Images settings template
+ #}
+
+{% if this.isImageResizeNotFinished() %}
+
+  {{ widget('\\XLite\\View\\ImageResize\\Progress') }}
+
+{% else %}
+
+  {% form '\\XLite\\View\\Form\\ImagesSettings' %}
+
+    <ul class="table">
+      {% for item in this.getViewList('images_settings') %}
+        {{ item.display() }}
+      {% endfor %}
+    </ul>
+
+    {{ widget('\\XLite\\View\\StickyPanel\\ImagesSettings') }}
+
+  {% endform %}
+
+{% endif %}

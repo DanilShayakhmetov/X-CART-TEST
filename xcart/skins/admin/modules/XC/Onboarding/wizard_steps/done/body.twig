@@ -1,0 +1,43 @@
+{##
+ # Done step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <div class="step-contents">
+    <h2 class="heading">{{ t("Excellent! Storefront is ready to get orders!") }}</h2>
+    <p class="text">
+      {{ t("Go on, make your first sale.") }}<br>
+    </p>
+
+    <div class="action-buttons">
+      <div class="next-step">
+        {{ widget('\\XLite\\View\\Button\\Link', label='View dashboard', attributes={'@click': 'closeWizard'}, style='regular-button', jsCode="null;") }}
+        {{ widget('\\XLite\\View\\Button\\Link', { 'label' : t('Open storefront'), 'href' : this.getStorefrontUrl(), 'style' : 'regular-button', 'blank' : true }) }}
+      </div>
+    </div>
+
+    <div class="advertise">
+      <img src="{{ asset('modules/XC/Onboarding/images/addons-ad.png') }}">
+      <p class="text">{{ t('What about adding some marketing magic to your sales process?')|raw }}
+        {{ widget('XLite\\View\\Button\\SimpleLink', label=t("Browse Top Trending Tools"), attributes={'@click': 'browseTools'}, jsCode="null;") }}
+      </p>
+    </div>
+
+    <div class="contacts">
+      <div class="phone-email text">
+        <div class="phone">
+          {{ t('Sales & Customer Service: [phone]', {phone: this.getPhoneNumber()}) }}
+        </div>
+        <div class="separator">/</div>
+        <div class="email">
+          <a href="mailto:{{ this.getSalesEmail() }}">{{ this.getSalesEmail() }}</a>
+        </div>
+      </div>
+      <div class="knowledge-base-text text">
+        <a href="{{ this.getKBUrl() }}" target="_blank">{{ t('Knowledge base') }}</a>
+      </div>
+    </div>
+  </div>
+</div>

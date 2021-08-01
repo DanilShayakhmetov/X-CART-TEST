@@ -1,0 +1,10 @@
+Version 5.4.0.2
+
+Improvements (3)
+2019-04-05 - [Change] Layout adjustment for various pages according to the style guide. #XCN-9763 (Maxim Kuznetsov) #Core #SimpleCMS #ThemeTweaker #ProductReviews #NewsletterSubscriptions #MultiVendor #ProductTags #SystemFields #MailChimp #News #Facebook Commerce
+2019-03-15 - [Change] Layout adjustment for the list pages of various entities for when there are no existing entities yet. #XCN-9440 (Fedya Lavrentyev) #Core #Coupons #SimpleCMS #VolumeDiscounts #ThemeTweaker #ProductReviews #NewsletterSubscriptions #ProductTags #VendorMessages #News #CustomProductTabs
+2019-01-14 - [Change] Improvement of the product page look & feel in the Customer area. Add to cart form minimization. #XCN-9321 (morven) #Core #Paypal #ProductAdvisor #Wholesale #ProductComparison #ProductVariants #ProductReviews #CrispWhiteSkin #ProductTags #FreeShipping
+
+Fixes (1)
+2019-02-08 - [Bug] Tags were not shown in product category filter. Fixed. #BUG-7027 (Vladimir Semyonov) #ProductFilter #ProductTags
+

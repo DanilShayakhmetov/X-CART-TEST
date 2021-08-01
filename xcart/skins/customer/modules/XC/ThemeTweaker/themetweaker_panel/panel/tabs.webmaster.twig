@@ -1,0 +1,17 @@
+{##
+ # Layout editor panel
+ #
+ # @ListChild(list="themetweaker-panel--tabs", weight="50")
+ #}
+{% set webmasterTab = constant('XLite\\Module\\XC\\ThemeTweaker\\Core\\ThemeTweaker::MODE_WEBMASTER') %}
+{% if this.isTabAvailable(webmasterTab) %}
+
+{{ widget('XLite\\Module\\XC\\ThemeTweaker\\View\\Button\\ThemeTweakerTab',
+          svg='modules/XC/ThemeTweaker/themetweaker_panel/icons/webmaster.svg',
+          label="Template editor",
+          style="themetweaker-tab themetweaker-tab_webmaster " ~ this.getTabClass(webmasterTab),
+          disabled=(not this.isTabAvailable(webmasterTab)),
+          disabledTooltip=this.getTabDisabledTooltip(webmasterTab),
+          attributes=this.getTabAttributes(webmasterTab)) }}
+
+{% endif %}

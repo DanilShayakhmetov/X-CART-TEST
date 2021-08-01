@@ -1,0 +1,22 @@
+{% extends 'form_model/settings/notification/notification.twig' %}
+
+{% block _form_scheme_body_widget %}
+
+  {% if editable %}
+    {% if available %}
+      <div class="notification-editor">
+        {{ widget('XLite\\View\\Button\\Link', location=url, blank=true, label=t('Edit')) }}
+      </div>
+    {% elseif unavailabilityReason %}
+      <div class="notification-editor">
+        {{ widget('XLite\\View\\Button\\Tooltip', location=url, disabled=true, label=t('Edit'), buttonTooltip=unavailabilityReason) }}
+      </div>
+    {% else %}
+      <div class="notification-editor">
+        {{ widget('XLite\\View\\Button\\Link', location=url, disabled=true, label=t('Edit')) }}
+      </div>
+    {% endif %}
+  {% else %}
+    {{ parent () }}
+  {% endif %}
+{% endblock %}

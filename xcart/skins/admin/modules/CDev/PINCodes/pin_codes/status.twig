@@ -1,0 +1,23 @@
+{##
+ # Pin codes status box
+ #}
+
+{% if this.entity.isSold or this.entity.isBlocked %}
+  {% set order = this.getDisplayOrder(this.entity.orderItem.order) %}
+
+  {% if this.entity.isSold %}
+    <div class="pin-sold">{{ t('Sold') }}</div>
+  {% elseif this.entity.isBlocked %}
+    <div class="pin-blocked">{{ t('Blocked') }}</div>
+  {% endif %}
+
+  {% if this.entity.orderItem and this.auth.isPermissionAllowed('manage orders') %}
+      ( <a target="_blank" href="{{ url('order', '', {'order_number': order.getOrderNumber() }) }}">{{ order.getPrintableOrderNumber() }}</a> )
+  {% elseif this.entity.orderItem and not this.auth.isPermissionAllowed('manage orders') %}
+    ( {{ order.getPrintableOrderNumber() }} )
+  {% else %}
+    ( {{ t('Order deleted') }} )
+  {% endif %}
+
+{% endif %}
+

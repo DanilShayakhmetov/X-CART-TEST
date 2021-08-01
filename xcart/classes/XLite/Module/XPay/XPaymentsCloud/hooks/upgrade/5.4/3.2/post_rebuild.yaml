@@ -1,0 +1,311 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: Subscription plan, translations: [{ code: en, label: Subscription plan },{ code: ru, label: План подписки }] }
+  - { name: This is subscription product, translations: [{ code: en, label: This is subscription product },{ code: ru, label: 'Это подписка' }] }
+  - { name: Subscription ID, translations: [{ code: ru, label: ID подписки }] }
+  - { name: Setup fee, translations: [{ code: en, label: Setup fee },{ code: ru, label: Стоимость подключения }] }
+  - { name: Subscription fee, translations: [{ code: en, label: Subscription fee },{ code: ru, label: Абонентская плата }] }
+  - { name: Plan, translations: [{ code: en, label: Plan },{ code: ru, label: План }] }
+  - { name: Each, translations: [{ code: en, label: Each },{ code: ru, label: Каждый }] }
+  - { name: Every, translations: [{ code: en, label: Every },{ code: ru, label: Через каждые }] }
+  - { name: Count days from the end, translations: [{ code: en, label: Count days from the end },{ code: ru, label: Считать дни с конца периода }] }
+  - { name: Daily, translations: [{ code: en, label: Daily },{ code: ru, label: Ежедневно }] }
+  - { name: 'X subscriptions', translations: [{ code: en, label: '{{count}} subscription(s)' },{ code: ru, label: 'Подписок: {{count}}' }] }
+  - { name: 'No subscriptions', translations: [{ code: ru, label: 'Подписок нет' }] }
+  - { name: 'Started on', translations: [{ code: ru, label: 'Дата старта:' }] }
+  - { name: 'Next payment', translations: [{ code: ru, label: 'Следующий платёж' }] }
+  - { name: 'Missed payment', translations: [{ code: ru, label: 'Пропущенный платёж' }] }
+  - { name: 'next attempt on', translations: [{ code: ru, label: 'следующая попытка' }] }
+  - { name: 'Stopped', translations: [{ code: ru, label: 'Остановлена' }] }
+  - { name: 'Restarted', translations: [{ code: ru, label: 'Перезапущена' }] }
+  - { name: 'Finished', translations: [{ code: ru, label: 'Завершена' }] }
+  - { name: 'xps.number_suffix', translations: [{ code: en, label: '-{{to|st|nd|rd|th|number}} day of' },{ code: ru, label: '-{{to|ый|ой|ий|number}} день' }] }
+  - { name: 'xps.every__days', translations: [{ code: en, label: 'Every {{number}} day|Every {{number}} days' },{ code: ru, label: 'Каждый {{number}} день|Каждые {{number}} дня|Каждые {{number}} дней' }] }
+  - { name: Weekly, translations: [{ code: en, label: Weekly },{ code: ru, label: Еженедельно }] }
+  - { name: 'xps.every__weeks', translations: [{ code: en, label: 'Weekly|Every {{number}} weeks' },{ code: ru, label: 'Каждую {{number}} неделю|Каждые {{number}} недели|Каждые {{number}} недель' }] }
+  - { name: Monthly, translations: [{ code: en, label: Monthly },{ code: ru, label: Ежемесячно }] }
+  - { name: 'xps.every__months', translations: [{ code: en, label: 'Monthly|Every {{number}} months' },{ code: ru, label: 'Каждый {{number}} месяц|Каждые {{number}} месяца|Каждые {{number}} месяцев' }] }
+  - { name: Annually, translations: [{ code: en, label: Annually },{ code: ru, label: Ежегодно }] }
+  - { name: 'xps.every__years', translations: [{ code: en, label: 'Annually|Every {{number}} years' },{ code: ru, label: 'Каждый {{number}} год|Каждые {{number}} года|Каждые {{number}} лет' }] }
+  - name: xps.each_monday
+    translations: [{ code: en, label: Each Monday },{ code: ru, label: Каждый понедельник }]
+  - name: xps.each_tuesday
+    translations: [{ code: en, label: Each Tuesday },{ code: ru, label: Каждый вторник }]
+  - name: xps.each_wednesday
+    translations: [{ code: en, label: Each Wednesday },{ code: ru, label: Каждую среду }]
+  - name: xps.each_thursday
+    translations: [{ code: en, label: Each Thursday },{ code: ru, label: Каждый четверг }]
+  - name: xps.each_friday
+    translations: [{ code: en, label: Each Friday },{ code: ru, label: Каждую пятницу }]
+  - name: xps.each_saturday
+    translations: [{ code: en, label: Each Saturday },{ code: ru, label: Каждую субботу }]
+  - name: xps.each_sunday
+    translations: [{ code: en, label: Each Sunday },{ code: ru, label: Каждое воскресенье }]
+  - name: xps.each__monthDay
+    translations:
+      - { code: en, label: '{{number}}-{{to|st|nd|rd|th|number}} day of each month' }
+      - { code: ru, label: '{{number}}-{{to|ый|ой|ий|number}} день каждого месяца' }
+  - name: xps.each__monthDay_reverse
+    translations:
+      - { code: en, label: 'One day till the end of each month|{{number}} days till the end of each month' }
+      - { code: ru, label: 'За {{number}} день до конца каждого месяца|За {{number}} дня до конца каждого месяца|За {{number}} дней до конца каждого месяца' }
+  - name: xps.each__yearDay
+    translations:
+      - { code: en, label: '{{number}}-{{to|st|nd|rd|th|number}} day of each year' }
+      - { code: ru, label: '{{number}}-{{to|ый|ой|ий|number}} день каждого года' }
+  - name: xps.each__yearDay_reverse
+    translations:
+      - { code: en, label: 'One day till the end of each year|{{number}} days till the end of each year' }
+      - { code: ru, label: 'За {{number}} день до конца каждого года|За {{number}} дня до конца каждого года|За {{number}} дней до конца каждого года' }
+  - { name: xps.week, translations: [{ code: en, label: Week },{ code: ru, label: Недели }] }
+  - { name: xps.month, translations: [{ code: en, label: Month },{ code: ru, label: Месяца }] }
+  - { name: xps.year, translations: [{ code: en, label: Year },{ code: ru, label: Года }] }
+  - { name: xps.days, translations: [{ code: en, label: Days },{ code: ru, label: День }] }
+  - { name: xps.weeks, translations: [{ code: en, label: Weeks },{ code: ru, label: Неделя }] }
+  - { name: xps.months, translations: [{ code: en, label: Months },{ code: ru, label: Месяц }] }
+  - { name: xps.years, translations: [{ code: en, label: Years },{ code: ru, label: Год }] }
+  - name: xps.total_of__payments
+    translations:
+      - { code: en, label: 'Only one extra payment|Total of {{number}} payments' }
+      - { code: ru, label: 'Всего {{number}} платёж|Всего {{number}} платежа|Всего {{number}} платежей' }
+  - name: Order X created for next payment on subscription X
+    translations:
+      - { code: en, label: 'Order #{{order_number}} has been created for the next scheduled payment on subscription #{{subscription_id}}' }
+      - { code: ru, label: 'Создан заказ #{{order_number}} для осуществления очередного платежа по подписке #{{subscription_id}}' }
+  - name: It will be charged on X
+    translations:
+      - { code: en, label: 'It will be charged on {{actualDate}}' }
+      - { code: ru, label: 'Снятие средств по нему будет произведено {{actualDate}}' }
+  - name: Transaction for this order has failed. Next charge attempt will be at
+    translations:
+      - { code: en, label: 'Payment error. We will attempt to charge this payment again on {{actualDate}}.' }
+      - { code: ru, label: 'Платёж не прошел. Следующая попытка снятия средств будет осуществлена {{actualDate}}.' }
+  - name: Transaction for order has failed
+    translations:
+      - { code: en, label: 'Payment transaction on order #{{order_number}} has failed' }
+      - { code: ru, label: 'Платёж по заказу #{{order_number}} не прошел' }
+  - name: X payment total of X
+    translations:
+      - { code: en, label: '{{payment}}-{{to|st|nd|rd|th|payment}} payment out of {{payments}}' }
+      - { code: ru, label: '{{payment}}-{{to|ый|ой|ий|payment}} платёж из {{payments}}' }
+  - name: Subscription X has been failed
+    translations:
+      - { code: en, label: 'Subscription #{{subscription_id}} has been stopped due to failed payment attempts.' }
+      - { code: ru, label: 'Подписка #{{subscription_id}} остановлена из-за сбоя платежей.' }
+  - name: Please try to use another payment card or contact the store administrator
+    translations:
+      - { code: ru, label: 'Пожалуйста, попробуйте использовать другую карту для оплаты или свяжитесь с администратором магазина' }
+  - name: Planned date of the next payment
+    translations:
+      - { code: en, label: 'Date of next subscription payment' }
+      - { code: ru, label: 'Дата следующего платежа по подписке' }
+  - name: Your subscription has been activated
+    translations:
+      - { code: ru, label: 'Ваша подписка активирована' }
+  - name: Your subscription X has been activated
+    translations:
+      - { code: en, label: 'Your subscription "{{subscription_name}}" has been activated' }
+      - { code: ru, label: 'Ваша подписка "{{subscription_name}}" активирована' }
+  - name: Subscription X has been activated
+    translations:
+      - { code: en, label: 'Subscription #{{subscription_id}} has been activated' }
+      - { code: ru, label: 'Подписка #{{subscription_id}} активирована' }
+  - name: Your subscription has been stopped
+    translations:
+      - { code: ru, label: 'Ваша подписка остановлена' }
+  - name: Your subscription X has been stopped
+    translations:
+      - { code: en, label: 'Your subscription "{{subscription_name}}" has been stopped' }
+      - { code: ru, label: 'Ваша подписка "{{subscription_name}}" остановлена' }
+  - name: Subscription X has been stopped
+    translations:
+      - { code: en, label: 'Subscription #{{subscription_id}} has been stopped' }
+      - { code: ru, label: 'Подписка #{{subscription_id}} остановлена' }
+  - name: You can manage your subscriptions here
+    translations:
+      - { code: en, label: 'You can manage your subscriptions <a href="{{url}}">here</a>' }
+      - { code: ru, label: 'Вы можете настроить Ваши подписки <a href="{{url}}">здесь</a>' }
+  - name: Subscription X payment successfully charged
+    translations:
+      - { code: en, label: 'Payment for subscription #{{subscription_id}} has been succesfully charged' }
+      - { code: ru, label: 'Платёж по подписке #{{subscription_id}} прошёл успешно' }
+
+XLite\Model\MoneyModificator:
+  - class: XLite\Module\XPay\XPaymentsCloud\Logic\IncludedVAT
+    validator: isApply
+    purpose: xpaymentsNetFee
+    position: 2000
+  - class: XLite\Module\XPay\XPaymentsCloud\Logic\ExcludedVAT
+    validator: isApply
+    purpose: xpaymentsDisplayFee
+    position: 2000
+  - class: XLite\Module\XPay\XPaymentsCloud\Logic\SubscriptionFeeModifier
+    validator: isApply
+    purpose: xpaymentsNetFee
+    position: 50
+  - class: XLite\Module\XPay\XPaymentsCloud\Logic\SubscriptionFee
+    validator: isApply
+    purpose: net
+    position: 100000 # must be last modificator
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XPay/XPaymentsCloud/subscription_status_A
+    availableForAdmin: true
+    availableForCustomer: true
+    enabledForAdmin: true
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    position: 3000
+    editable: true
+    translations:
+      - code: en
+        name: Subscription activated (X-Payments Cloud module)
+        description: "This notification is sent after first order of subscription and also when it's status is changed from Stopped/Failed/Restarted to Active"
+        customerSubject: "Your subscription has been activated"
+        customerText: "<p>Your subscription %subscriptionName% has been activated.</p><p>Subscription ID: #%subscriptionId%<br>Setup fee: %setupFee%<br>Subscription fee: %subscriptionFee%<br>Plan: %planDescription%<br>Planned date of the next payment: %plannedDate%</p><p>You can manage your subscriptions here: %pageUrl%.</p>"
+        adminSubject: "Subscription #%subscriptionId% has been activated"
+        adminText: "<p>Subscription #%subscriptionId% has been activated.</p><p>Setup fee: %setupFee%<br>Subscription fee: %subscriptionFee%<br>Plan: %planDescription%<br>Planned date of the next payment: %plannedDate%</p>"
+      - code: ru
+        name: Подписка активирована (модуль X-Payments Cloud)
+        description: "Данное сообщение отправляется после покупки подписки, а также в случае смены её статуса на Active"
+  - templatesDirectory: modules/XPay/XPaymentsCloud/subscription_status_S
+    availableForAdmin: true
+    availableForCustomer: true
+    enabledForAdmin: true
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    position: 3100
+    editable: true
+    translations:
+      - code: en
+        name: Subscription stopped (X-Payments Cloud module)
+        description: "This notification is sent after first order of subscription and also when it's status is changed from Active/Restarted to Stopped"
+        customerSubject: "Your subscription #%subscriptionId% has been stopped"
+        customerText: "<p>Your subscription %subscriptionName% has been stopped.</p><p>Subscription ID: #%subscriptionId%</p><p>You can manage your subscriptions here: %pageUrl%.</p>"
+        adminSubject: "Subscription %subscriptionId% has been stopped"
+        adminText: "<p>Subscription #%subscriptionId% %subscriptionName% has been stopped.</p>"
+      - code: ru
+        name: Подписка остановлена (модуль X-Payments Cloud)
+        description: "Данное сообщение отправляется после смены её статуса на Stopped"
+  - templatesDirectory: modules/XPay/XPaymentsCloud/order_created
+    availableForAdmin: true
+    availableForCustomer: true
+    enabledForAdmin: true
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    position: 3200
+    editable: true
+    translations:
+      - code: en
+        name: Upcoming subscription payment (X-Payments Cloud module)
+        description: "This notification is sent few days before next scheduled payment on subscription"
+        customerSubject: "Upcoming subscription #%subscriptionId% payment notification"
+        customerText: "<p>Order #%orderNumber% created for next payment on subscription #%subscriptionId% %pendingPaymentNumber%</p><p>It will be charged on %actualDate%</p>"
+        adminSubject: "Order %orderNumber% created for next payment on subscription #%subscriptionId%"
+        adminText: "<p>Order #%orderNumber% created for next payment on subscription #%subscriptionId% %pendingPaymentNumber%</p><p>It will be charged on %actualDate%</p>"
+      - code: ru
+        name: Предстоящий платёж по подписке (модуль X-Payments Cloud)
+        description: "Данное сообщение отправляется за несколько дней до следующего платежа по подписке"
+  - templatesDirectory: modules/XPay/XPaymentsCloud/payment_successful
+    availableForAdmin: true
+    availableForCustomer: true
+    enabledForAdmin: true
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    position: 3300
+    editable: true
+    translations:
+      - code: en
+        name: Subscription payment successful (X-Payments Cloud module)
+        description: "This notification is sent when scheduled payment on subscriptions is succesfully charged"
+        customerSubject: "Subscription #%subscriptionId% payment successfully charged"
+        customerText: "<p>Subscription #%subscriptionId% payment successfully charged.</p><p>Planned date of the next payment: %plannedDate%</p><p>You can manage your subscriptions here: %pageUrl%.</p>"
+        adminSubject: "Subscription %subscriptionId% payment successfully charged"
+        adminText: "<p>Subscription #%subscriptionId% payment successfully charged.</p><p>Planned date of the next payment: %plannedDate%</p>"
+      - code: ru
+        name: Платёж по подписке прошёл успешно (модуль X-Payments Cloud)
+        description: "Данное сообщение отправляется если платеж по подписке прошёл успешно"
+  - templatesDirectory: modules/XPay/XPaymentsCloud/payment_failed
+    availableForAdmin: true
+    availableForCustomer: true
+    enabledForAdmin: true
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    position: 3400
+    editable: true
+    translations:
+      - code: en
+        name: Subscription payment failed (X-Payments Cloud module)
+        description: "This notification is sent when scheduled payment on subscription fails"
+        customerSubject: "Transaction for order #%orderNumber% has failed"
+        customerText: "<p>Transaction for this order has failed. Next charge attempt will be at %actualDate%</p><p>You can manage your subscriptions here: %pageUrl%.</p>"
+        adminSubject: "%companyName%: Transaction for order #%orderNumber% has failed"
+        adminText: "<p>Transaction for this order has failed. Next charge attempt will be at %actualDate%</p>"
+      - code: ru
+        name: Платёж по подписке не прошёл из-за ошибки (модуль X-Payments Cloud)
+        description: "Данное сообщение отправляется если платеж по подписке не прошёл из-за ошибки"
+  - templatesDirectory: modules/XPay/XPaymentsCloud/subscription_failed
+    availableForAdmin: true
+    availableForCustomer: true
+    enabledForAdmin: true
+    enabledForCustomer: true
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    position: 3500
+    editable: true
+    translations:
+      - code: en
+        name: Subscription stopped after failed payments (X-Payments Cloud module)
+        description: "This notification is sent when it's status is changed to Failed after multiple failed payment"
+        customerSubject: "Your subscription #%subscriptionId% has been failed"
+        customerText: "<p>Subscription #%subscriptionId% has been failed. Please try to use another payment card or contact the store administrator.</p><p>%reason%</p><p>You can manage your subscriptions here: %pageUrl%.</p>"
+        adminSubject: "Subscription %subscriptionId% has been failed"
+        adminText: "<p>Subscription %subscriptionId% has been failed</p><p>%reason%</p>"
+      - code: ru
+        name: Подписка остановлена из-за неуспешных платежей (модуль X-Payments Cloud)
+        description: "Данное сообщение отправляется после смены её статуса на Failed после нескольких неуспешных платежей"
+XLite\Model\Config:
+  - name: use_xp_cloud_for_subscriptions
+    category: XPay\XPaymentsCloud
+    type: XLite\View\FormField\Input\Checkbox\OnOffWithoutOffLabel
+    orderby: 50
+    value: 0
+    translations:
+      - code: en
+        option_name: Use X-Payments Cloud for creating new subscriptions
+        option_comment: Already existing subscriptions will still be processed by X-Payments Subscriptions module. New subscriptions will be created and processed by X-Payments Cloud module

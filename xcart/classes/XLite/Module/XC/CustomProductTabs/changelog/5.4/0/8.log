@@ -1,0 +1,6 @@
+Version 5.4.0.8
+
+Fixes (2)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-03-06 - [Bug] After selecting to go to page=2 in the product tabs pagination widget, the administrator was redirected to the page for the creation of a new product. Fixed. #BUG-8387 https://bt.x-cart.com/view.php?id=51520 #CustomProductTabs
+

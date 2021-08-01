@@ -1,0 +1,15 @@
+{##
+ # Subscription status controls
+ #
+ #}
+{% if this.xpaymentsSubscription.isRestarted() %}
+  {{ widget('\\XLite\\View\\Tooltip', text=t('We\'ve received your request to restart this subscription. It will become active again as soon as we charge your credit card associated with it.'), placement='bottom', isImageTag='true', className='help-icon') }}
+{% elseif this.xpaymentsSubscription.isActive() or this.xpaymentsSubscription.isRestartable() %}
+  <div class="status-control">
+    {% if this.xpaymentsSubscription.isActive() %}
+      <a href="{{ this.buildUrl('xpayments_subscriptions', 'stop_subscription', {'subscription_id': this.xpaymentsSubscription.id}) }}" class="btn regular-button">Stop</a>
+    {% elseif this.xpaymentsSubscription.isRestartable() %}
+      <a href="{{ this.buildUrl('xpayments_subscriptions', 'restart_subscription', {'subscription_id': this.xpaymentsSubscription.id}) }}" class="btn regular-button">Restart</a>
+    {% endif %}
+  </div>
+{% endif %}

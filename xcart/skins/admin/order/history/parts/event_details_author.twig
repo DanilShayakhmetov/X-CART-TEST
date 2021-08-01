@@ -1,0 +1,30 @@
+{##
+ # Order history event date
+ #
+ # @ListChild (list="order.history.base.events.details", weight="150")
+ #}
+<li class="author">
+  {% if this.event.showAuthor() %}
+    {% if this.event.getAuthor() %}
+      <a href="{{ url('profile', '', {'profile_id': this.event.getAuthor().getProfileId()}) }}"
+         data-toggle="popover"
+         data-placement="top"
+         data-trigger="hover"
+         data-content="IP: {{ this.event.getAuthorIp() }}">
+        {{ this.event.getAuthor().getLogin() }}
+      </a>
+    {% else %}
+      {% if this.event.getAuthorName() %}
+        <span class="removed-profile-name"
+              data-toggle="popover"
+              data-placement="top"
+              data-trigger="hover"
+              data-content="IP: {{ this.event.getAuthorIp() }}">
+          {{ this.event.getAuthorName() }}
+        </span>
+      {% else %}
+        <span class="no-author">{{ this.event.getAuthorIp() }}</span>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+</li>

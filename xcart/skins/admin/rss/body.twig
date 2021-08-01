@@ -1,0 +1,14 @@
+{##
+ # RSS
+ #}
+
+<div class="feeds">
+  <div>{{ t('Recommended reading') }}</div>
+  <ul>
+    {% for feed in this.getFeeds() %}
+      <li>
+        <a href="{{ feed.link }}" target="_blank">{{ feed.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

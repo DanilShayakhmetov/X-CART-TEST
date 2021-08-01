@@ -1,0 +1,7 @@
+Version 5.4.1.4
+
+Fixes (3)
+2020-07-24 - [Bug] @ListChild was incorrectly added to template when making changes via the Template editor. Fixed. #BUG-8866 https://bt.x-cart.com/view.php?id=51991 #ThemeTweaker
+2020-07-23 - [Bug] Incorrect title style on the page admin.php?target=theme_tweaker_template&id=<n>. Fixed. #BUG-8865 https://bt.x-cart.com/view.php?id=51991 #ThemeTweaker
+2020-07-08 - [Bug] The "review it" block was positioned incorrectly on the Custom css page. Fixed. #BUG-8738 #ThemeTweaker
+

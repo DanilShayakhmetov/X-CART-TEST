@@ -1,0 +1,6 @@
+Version 5.4.0.3
+
+Fixes (2)
+2019-07-18 - [Bug] An incorrect sale_price field value was exported to Facebook feed. Fixed. #BUG-7662 https://bt.x-cart.com/view.php?id=50816 (Fedya Lavrentyev) #VAT #Facebook Commerce
+2019-07-12 - [Bug] Products got duplicated in Facebook feed and Google feed, Fixed. #BUG-7685 https://bt.x-cart.com/view.php?id=50816 (Shevelov Alexander) #Facebook Commerce #GoogleFeed
+

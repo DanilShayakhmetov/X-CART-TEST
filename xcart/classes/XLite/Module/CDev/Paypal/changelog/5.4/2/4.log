@@ -1,0 +1,5 @@
+Version 5.4.2.4
+
+Improvements (1)
+2020-07-16 - [Change] If PayPal is enabled and configured, the number of products shown in the minicart is now reduced to two so as not to prevent PayPal buttons from being visible. #BUG-8774 #Core #Paypal
+

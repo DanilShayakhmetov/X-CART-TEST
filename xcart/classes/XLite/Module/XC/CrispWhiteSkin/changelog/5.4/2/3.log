@@ -1,0 +1,9 @@
+Version 5.4.2.3
+
+Improvements (1)
+2020-07-06 - [Change] On mobile, added the link "terms & conditions" onto the checkout page in FLC mode. #BUG-8732 #FastLaneCheckout #CrispWhiteSkin
+
+Fixes (2)
+2020-07-31 - [Bug] Layout issues related to the second level block in the Primary menu on the storefront. Fixed. #BUG-8791 #CrispWhiteSkin #SpaceVioletSkin
+2020-07-13 - [Bug] Layout issues related to the size of the category selector in the advanced search form on the storefront. Fixed. #BUG-8759 https://bt.x-cart.com/view.php?id=51843 #CrispWhiteSkin
+

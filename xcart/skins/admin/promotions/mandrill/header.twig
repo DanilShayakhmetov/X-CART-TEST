@@ -1,0 +1,22 @@
+{##
+ # Just a template for settings. We need it since we do not implement decorator for modules now
+ #}
+
+{% set mandrillSignupLink = 'https://mandrill.com/signup/?source=website&pid=xcart' %}
+
+<div class="admin-welcome root mailchimp-welcome">
+  <div class="mailchimp-logo" align="center">
+    <a href="{{ mandrillSignupLink }}" target="_blank">
+      <img src="skins/admin/{{ this.getDir() }}/images/logo.png" alt="{{ t('Mandrill') }}" class="logo" />
+    </a>
+  </div>
+  <div class="mailchimp-options-header">
+    <p>{{ this.getPromoText() }}</p>
+    <div>
+      {{ widget('\\XLite\\View\\Button\\SimpleLink', label=t('Sign Up'), blank=true, location=mandrillSignupLink, style='btn regular-main-button') }}
+      {% if this.getSecondButtonLink() %}
+        {{ widget('\\XLite\\View\\Button\\SimpleLink', label=this.getSecondButtonText(), location=this.getSecondButtonLink(), style='btn regular-button always-enabled link') }}
+      {% endif %}
+    </div>
+  </div>
+</div>

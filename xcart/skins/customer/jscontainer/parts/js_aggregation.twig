@@ -1,0 +1,13 @@
+{##
+ # Cached JS part
+ #
+ # @ListChild (list="jscontainer.js", weight="200")
+ #}
+{% if this.doJSAggregation() %}
+{% for file in this.getAggregateJSResources() %}
+  <script src="{{ this.getResourceURL(file.url, file) }}"
+          {% if file.async %} async{% endif %}
+          {% if file.defer %} defer{% endif %}
+          {% if file.code %} {{ file.code }}{% endif %}></script>
+{% endfor %}
+{% endif %}

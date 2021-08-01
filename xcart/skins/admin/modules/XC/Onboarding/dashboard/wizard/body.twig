@@ -1,0 +1,7 @@
+<div class="dialog-content">
+  <div class="onboarding-wizard-informer" id="dashboard-wizard">
+    <div class="progress-circle" data-value="{{ this.getCurrentProgress() / 100.0 }}"></div>
+    <div class="status-message"><span class="special">{{ this.getCurrentStatus() }}</span></div>
+    {{ widget('XLite\\View\\Button\\Link', label=t(this.getButtonLabel()), location=this.getWizardUrl(), style="action-button") }}
+  </div>
+</div>

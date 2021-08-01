@@ -1,0 +1,9 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-08-05 - [Change] Added lazy loading; removed the "smart image loading" feature. #XCN-10148 (Kirill Stadler) #Core #ProductAdvisor #FastLaneCheckout #CrispWhiteSkin
+
+Fixes (2)
+2019-07-25 - [Bug] On page refresh, the footer menu got reloaded. Fixed. #BUG-7750 (Shevelov Alexander) #CrispWhiteSkin
+2019-07-04 - [Bug] The Advanced search form elements on the search results page were not aligned properly. Fixed. #BUG-7638 https://bt.x-cart.com/view.php?id=50811 (Fedya Lavrentyev) #CrispWhiteSkin
+

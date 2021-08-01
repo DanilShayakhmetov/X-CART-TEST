@@ -1,0 +1,9 @@
+{##
+ # Payment template
+ #}
+
+<div class="stripe_apple-box" {{ this.printTagAttributes(this.getDataAttributes())|raw }}>
+  <input type="hidden" name="payment[token]" value="" class="token" />
+  <input type="hidden" name="payment[id]" value="" class="id" />
+  <input type="hidden" name="payment[error]" value="" class="error" />
+</div>

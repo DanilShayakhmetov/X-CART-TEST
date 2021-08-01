@@ -1,0 +1,11 @@
+{##
+ # Attribute value (Hidden)
+ #}
+
+<div class="{{ this.getStyle() }}">
+  <ul class="values">
+    <div class="value">
+      {{ widget(this.getWidgetClass(), fieldName=this.getName(), fieldOnly='true', value=this.getFieldValue(this.getAttrValue()), attribute=this.getAttribute(), attributes={'placeholder': t('Attribute option')}) }}
+    </div>
+  </ul>
+</div>

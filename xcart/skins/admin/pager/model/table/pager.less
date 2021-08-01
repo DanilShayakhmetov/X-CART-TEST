@@ -1,0 +1,95 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Table-based pager styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) "../../../css/initialize";
+
+.pager-visible:not(.list-blank) {
+  .table-wrapper {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+
+    & + .table-pager {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+.table-pager {
+  border-radius: @border-radius-base;
+  border: 1px solid @items-list-border;
+  border-top: none;
+  background-color: @items-list-pager-bg;
+  color: @text-color;
+
+  .box {
+    border-top: 1px solid @items-list-border;
+    min-height: @items-list-pager-height;
+    padding: @items-list-pager-padding;
+    .flex-display();
+    .align-items(center);
+
+    .pagination-wrapper {
+      .flex-display();
+    }
+  }
+
+  .left, .right {
+    .flex-display();
+    .align-items(center);
+
+    & > * + * {
+      margin-left: @rhythmic-unit;
+    }
+  }
+
+  .right {
+    .justify-content(flex-end);
+    margin-left: auto;
+  }
+
+  .items-per-page-wrapper {
+    .flex-display();
+    .align-items(center);
+
+    & > * + * {
+      flex-shrink: 0;
+      margin-left: @rhythmic-unit;
+    }
+
+    .search-total-items {
+      white-space: nowrap;
+    }
+
+    select {
+      max-width: 60px;
+    }
+  }
+
+  .search-total-wrapper li {
+    display: inline;
+    font-weight: @font-regular;
+
+    &.amount {
+      font-weight: @font-bold;
+    }
+
+    & + & {
+      margin-left: (@rhythmic-unit / 2);
+    }
+  }
+}
+
+table.list + .table-pager {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}

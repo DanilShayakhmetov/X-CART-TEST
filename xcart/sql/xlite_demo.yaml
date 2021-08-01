@@ -1,0 +1,1045 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Demo store
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Product:
+  - product_id: 1
+    sku: '10000000065'
+    price: 19.99
+    weight: 0.7
+    cleanURLs:
+      - { cleanURL: timberland-45th-anniversary }
+    amount: 1000
+    images:
+      - { fileName: shoes_2.jpg, mime: image/jpeg, size: 57153, path: shoes_2.jpg, width: 366, height: 440, hash: 4d895c21093a256f83ba47d639f0a5a2, orderby: 10 }
+      - { fileName: shoes_3.jpg, mime: image/jpeg, size: 49327, path: shoes_3.jpg, width: 366, height: 440, hash: 326589e7ccf2d6bd5e171b4519a70a0f, orderby: 11 }
+    translations:
+      - { code: en, metaDesc: '', description: '', briefDescription: '', name: 'Timberland 45th Anniversary' }
+  - product_id: 2
+    sku: '10000000068'
+    price: 49.99
+    weight: 3
+    cleanURLs:
+      - { cleanURL: high-top-trainers-in-red-black-and-white }
+    amount: 7
+    images:
+      - { fileName: shoes_6_2.jpg, mime: image/jpeg, size: 80257, path: shoes_6_2.jpg, width: 732, height: 880, hash: 72bedcc06b23823acb74845d09cfa054, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'This sneaker delivers heritage style with premium materials and responsive cushioning. The red, black and white uppers provide a bold and stylish take on the iconic silhouette. Featuring a high top style, a lace-up front fastening, a round toe and a well padded ankle collar and tongue, this shoe is an ideal companion for sports and day to day wear.', description: '<p><strong>Features:</strong></p><ul><li>Regular Fit</li><li>Leather upper with logo</li><li>Mesh lining</li><li>Foam padded tongue and collar</li><li>Ventilation holes</li><li>Abrasion-resistant rubber outsole</li><li>Leather upper, rubber outsole</li></ul>', briefDescription: '<p>This sneaker delivers heritage style with premium materials and responsive cushioning. The red, black and white uppers provide a bold and stylish take on the iconic silhouette. Featuring a high top style, a lace-up front fastening, a round toe and a well padded ankle collar and tongue, this shoe is an ideal companion for sports and day to day wear.<br><br><br></p>', name: 'High Top Trainers in Red, Black and White [Tags]' }
+  - product_id: 3
+    sku: '10000000069'
+    price: 19.99
+    weight: 2.6
+    cleanURLs:
+      - { cleanURL: beige-sneakers }
+    amount: 1000
+    images:
+      - { fileName: shoes_7.jpg, mime: image/jpeg, size: 94954, path: shoes_7.jpg, width: 732, height: 880, hash: d3c0481c7cc90a31f25b0bc1e37c902c, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Beige cotton hi-top sneakers featuring a lace-up front fastening, a round toe, a branded ankle patch and a flat rubber sole.', description: '<p>Lightweight and breathable canvas construction. Vulcanized rubber sole for improved traction. An unmistakable logo patch to complete your look. An ortholite insole cushions each step. Versatile, fashionable, and looking better every time you wear them. &nbsp;</p><p><strong>Features:</strong></p><ul><li>Hi top plimsolls&nbsp;</li><li>Lace-up front</li><li>Embroidered logo to side</li><li>Regular Fit</li><li>Outer: Cotton 100%</li><li>Sole: Rubber 100%</li><li>Lining: Cotton 100%</li></ul>', briefDescription: '<p>Beige cotton hi-top sneakers featuring a lace-up front fastening, a round toe, a branded ankle patch and a flat rubber sole.</p>', name: 'Beige Sneakers' }
+  - product_id: 4
+    sku: '10000000070'
+    price: 24.99
+    weight: 1.3
+    cleanURLs:
+      - { cleanURL: platform-brogue-trim-leather-oxfords-in-white }
+    amount: 75
+    images:
+      - { fileName: shoes_8.jpg, mime: image/jpeg, size: 133449, path: shoes_8.jpg, width: 732, height: 880, hash: ca24ff395d951c053a817d479ed6db19, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'A mixed-media oxford steals the scene with an espadrille-trimmed platform sole and dramatic brogue detailing on the burnished leather upper.', description: '<p>Take your style up a notch with these super fashionable platform oxfords. Wear with leggings and an oversized shirt or off-the-shoulder blouse for an on-trend look. Comfortable platform with a non-skid, much lighter than you imagine, manmade sole.</p><p><strong>Features:</strong></p><ul><li>Leather oxford with brogue detail</li><li>Espadrille-inspired platform</li><li>1.25 inch heel</li><li>Round Toe</li><li>Adjustable lace-up closure</li><li>Water resistant</li><li>Leather upper</li><li>Antiskid manmade sole</li></ul>', briefDescription: '<p>A mixed-media oxford steals the scene with an espadrille-trimmed platform sole and dramatic brogue detailing on the burnished leather upper.</p>', name: 'Platform Brogue-Trim Leather Oxfords in White' }
+  - product_id: 5
+    sku: '10000000074'
+    price: 19.99
+    weight: 1.8
+    cleanURLs:
+      - { cleanURL: grey-knitted-trainers }
+    amount: 6
+    images:
+      - { fileName: shoes_12.jpg, mime: image/jpeg, size: 106340, path: shoes_12.jpg, width: 732, height: 880, hash: b156f93a5c923dc2e6bfda4306ee3782, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Designed with your comfort in mind, a pair of knitted trainers is a go to for any day! &nbsp;', description: '<p>This shoe hits the sweet spot of effortless comfort and universal style. Knitted from a lightweight sports-mesh that hugs the foot for a snug fit, with an easy-entry collar shaped to perfection cushioned with the lightweight EVA midsole and finished with a flexible rubber outsole for excellent grip in any conditions, this shoe has delighted many a runner who just want a shoe that feels indulgent on their foot.&nbsp;</p><p><strong>Features:</strong></p><ul><li>Regular Fit</li><li>Knit textile upper</li><li>EVA midsole</li><li>Flexible rubber outsole</li></ul>', briefDescription: '<p>Designed with your comfort in mind, a pair of knitted trainers is a go to for any day! &nbsp;</p>', name: 'Grey Knitted Trainers' }
+  - product_id: 6
+    sku: '10000000076'
+    price: 79.99
+    weight: 2.9
+    cleanURLs:
+      - { cleanURL: lace-up-boots-in-light-brown }
+    amount: 1000
+    images:
+      - { fileName: shoes_1_1.jpg, mime: image/jpeg, size: 143611, path: shoes_1_1.jpg, width: 732, height: 880, hash: 59a81275c25138dc8f99afb30b5267e6, orderby: 10 }
+      - { fileName: shoes_2.jpg, mime: image/jpeg, size: 57153, path: shoes_2.jpg, width: 366, height: 440, hash: 4d895c21093a256f83ba47d639f0a5a2, orderby: 11 }
+      - { fileName: shoes_3.jpg, mime: image/jpeg, size: 49327, path: shoes_3.jpg, width: 366, height: 440, hash: 326589e7ccf2d6bd5e171b4519a70a0f, orderby: 12 }
+    translations:
+      - { code: en, metaDesc: 'Insulated waterproof boots for your next adventure.', description: '<p>Waterproof, rugged, built for comfort and traction, these boots can go all day and will only look better with age.&nbsp;</p><p><strong>Features:</strong></p><ul><li>Premium leather upper</li><li>Seam-sealed waterproof construction</li><li>400 gram synthetic insulation</li><li>Padded collar</li><li>Leather lining</li><li>Flexible forefoot construction</li><li>Anti-fatigue midsole and footbed</li><li>Rubber lug outsole</li></ul>', briefDescription: '<p>Insulated waterproof boots for your next adventure.</p>', name: 'Lace-Up Boots in Light Brown' }
+  - product_id: 7
+    sku: '10000000079'
+    price: 29.99
+    weight: 0.6
+    cleanURLs:
+      - { cleanURL: boyfriend-t-shirt-with-chest-logo }
+    amount: 100
+    images:
+      - { fileName: clo_1.jpg, mime: image/jpeg, size: 186966, path: clo_1.jpg, width: 732, height: 880, hash: 38da3aca8e486b7b1c35e91c733f8769, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'A wardrobe must-have, this crewneck tee features a comfortable cotton blend and a straight hem for easy, everyday wear. Think baggy and casual. Wear it again and again.', description: '<p>A wardrobe must-have, this crewneck tee features a comfortable cotton blend and a straight hem for easy, everyday wear. Think baggy and casual. Wear it again and again.</p>', briefDescription: '', name: 'Boyfriend T-Shirt with Chest Logo' }
+  - product_id: 8
+    sku: '10000000081'
+    price: 19.99
+    weight: 1.8
+    cleanURLs:
+      - { cleanURL: pink-sneakers-with-white-soles }
+    amount: 146
+    images:
+      - { fileName: shoes_16.jpg, mime: image/jpeg, size: 120497, path: shoes_16.jpg, width: 732, height: 880, hash: 0277483e750a1c9afee7623ee3a92048, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Timeless low top sneakers in pink. &nbsp;', description: '<p>Low-top silhouette with a durable canvas upper. &nbsp;Lace-up front with flat cotton laces. Round toe. Lightly padded tongue and collar. Vulcanized sole with high-wall foxings. Premium cushioned flexible sole. &nbsp;</p><p><strong>Features:</strong></p><ul><li>Regular Fit</li><li>Lace-up construction</li><li>Textile upper</li><li>Flexible rubber outsole</li></ul>', briefDescription: '<p>Timeless low top sneakers in pink. &nbsp;</p>', name: 'Pink Sneakers with White Soles' }
+  - product_id: 9
+    sku: '10000000082'
+    price: 19.99
+    weight: 2.8
+    cleanURLs:
+      - { cleanURL: white-lace-up-mesh-trainers }
+    amount: 218
+    images:
+      - { fileName: shoes_17.jpg, mime: image/jpeg, size: 38909, path: shoes_17.jpg, width: 732, height: 880, hash: 20264ed03a148092c598631ccbf5f36b, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Breathable soft knit mesh sneakers for sports and more.', description: '<p>This pair is perfect for a variety of workouts in and out of the gym. School, play, travel, jogging, running - you name it! A great gift for a sporty girl.</p><p><strong>Features:</strong></p><ul><li>Lightweight</li><li>Mesh textile upper</li><li>Flexible shock absorbing EVA midsole</li><li>Rugged and durable outsole for long lasting traction</li></ul>', briefDescription: '<p>Breathable soft knit mesh sneakers for sports and more.</p>', name: 'White Lace-Up Mesh Trainers' }
+  - product_id: 10
+    sku: '10000000083'
+    price: 34.99
+    weight: 1.1
+    cleanURLs:
+      - { cleanURL: caged-cutout-sandals-in-gold }
+    amount: 0
+    images:
+      - { fileName: shoes_10.jpg, mime: image/jpeg, size: 107727, path: shoes_10.jpg, width: 732, height: 880, hash: e36e1056b21d7c2057955dced353fdab, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'More feminine, more refined, more fun!', description: '<p>These sandals feature an exquisite cut-out design on the upper and high heels to showcase your unique sense of style. This time made with a gold finish to give this piece a sleek and refined look. &nbsp;</p><p><strong>Features:</strong></p><ul><li>Vegan-friendly leather with geometric cutout design</li><li>Adjustable buckle closure at ankle</li><li>Open toe</li><li>Stiletto heel</li><li>Heel height: 3 <sup>1</sup>&frasl;<sub>2</sub> in</li></ul>', briefDescription: '<p>More feminine, more refined, more fun!</p>', name: 'Caged Cutout Sandals in Gold' }
+  - product_id: 11
+    sku: '10000000084'
+    price: 14.99
+    weight: 0.9
+    cleanURLs:
+      - { cleanURL: green-flat-slingback-sandals }
+    amount: 200
+    images:
+      - { fileName: shoes_18.jpg, mime: image/jpeg, size: 43838, path: shoes_18.jpg, width: 732, height: 880, hash: f6fe575d12d0702df99847a0c543323e, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'With the rubber sole and wide elastic straps hugging your foot, these open toe sandals are made for walking.', description: '<p>Quality made with premium elastic fabric, these strappy open toe sandals are a HOT TREND! Designed for all day comfort, they keep you moving while looking effortlessly stylish.&nbsp;</p><p><strong>Features:</strong></p><ul><li>Open toe sandal</li><li>Medium Width</li><li>Lightweight&nbsp;</li><li>Textile and synthetic leather upper</li><li>Soft rubber sole</li></ul>', briefDescription: '<p>With the rubber sole and wide elastic straps hugging your foot, these open toe sandals are made for walking.</p>', name: 'Green Flat Slingback Sandals' }
+  - product_id: 12
+    sku: '10000000085'
+    price: 9.99
+    weight: 2.9
+    cleanURLs:
+      - { cleanURL: waist-tie-dress-in-blue-and-white-stripe }
+    amount: 1000
+    images:
+      - { fileName: clo_3.jpg, mime: image/jpeg, size: 152629, path: clo_3.jpg, width: 732, height: 880, hash: e781eaa9cb63cd714d1b11a7c6f21dd1, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Crafted in a lightweight blend of linen and cotton and finished with muted stripes, this dress is an everyday piece that is perfect for long, sunny days.', description: '<p>Crafted in a lightweight blend of linen and cotton and finished with muted stripes, this dress is an everyday piece that is perfect for long, sunny days.</p>', briefDescription: '', name: 'Waist Tie Dress in Blue and White Stripe' }
+  - product_id: 13
+    sku: '10000000086'
+    price: 39.99
+    weight: 2.8
+    cleanURLs:
+      - { cleanURL: ultimate-t-shirt-with-crew-neck-in-red }
+    amount: 6
+    images:
+      - { fileName: clo_4.jpg, mime: image/jpeg, size: 190460, path: clo_4.jpg, width: 732, height: 880, hash: 8af87c8410d6e9230d4df827c1a94361, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Another stylish addition your wardrobe. This crew-neck tee was designed specifically for a fashionable, comfortable, feminine look.', description: '<p><br></p><ul><li>Crew neck</li><li>Short sleeves</li><li>Regular fit</li><li>100% Cotton</li></ul>', briefDescription: '<p>Another stylish addition your wardrobe. This crew-neck tee was designed specifically for a fashionable, comfortable, feminine look.</p>', name: 'Ultimate T-Shirt with Crew Neck in Red' }
+  - product_id: 14
+    sku: '10000000087'
+    price: 29.99
+    weight: 0.7
+    cleanURLs:
+      - { cleanURL: multicolored-dress-with-balloon-sleeves }
+    amount: 22
+    images:
+      - { fileName: clo_5.jpg, mime: image/jpeg, size: 199790, path: clo_5.jpg, width: 732, height: 880, hash: 56758e6725d61df67360ea76c79353e7, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Cute, right? Bright floral print in relaxed fit. Throw on a black leather jacket and wrap a belt around the waist &nbsp;and you&#39;re ready for a night out.', description: '<ul><li>Round neck</li><li>Dropped shoulders</li><li>Balloon sleeves</li><li>Don&#39;t worry, you won&rsquo;t float away</li><li>Fitted cuffs&nbsp;</li><li>Relaxed fit</li><li>Loose but not oversized</li><li>100% Polyester</li></ul>', briefDescription: '<p>Cute, right? Bright floral print in relaxed fit. Throw on a black leather jacket and wrap a belt around the waist &nbsp;and you&#39;re ready for a night out.</p>', name: 'Multicolored Dress with Balloon Sleeves [Options & Attributes]' }
+  - product_id: 15
+    sku: '10000000088'
+    price: 19.99
+    weight: 1.8
+    cleanURLs:
+      - { cleanURL: tall-pleated-midi-skirt-in-check }
+    amount: 300
+    images:
+      - { fileName: clo_6.jpg, mime: image/jpeg, size: 155982, path: clo_6.jpg, width: 732, height: 880, hash: 6e877e727bfa8406d825067c1ba1d8b4, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Suitable for spring, summer and autumn. You can&#39;t miss such a charming skirt in your wardrobe. Besides, you can dress it up with heels, or dress it down with sandals and t-shirt for a more casual look.', description: '<ul><li>High rise</li><li>Just like your standards</li><li>Pleated design</li><li>Regular cut</li><li>Fits you just right</li><li>Lightweight knit. The kind that doesn&#39;t stretch</li><li>100% Polyester</li></ul>', briefDescription: '<p>Suitable for spring, summer and autumn. You can&#39;t miss such a charming skirt in your wardrobe.<br>Besides, you can dress it up with heels, or dress it down with sandals and t-shirt for a more casual look.</p><p><br></p><p><br></p>', name: 'Tall Pleated Midi Skirt in Check' }
+  - product_id: 16
+    sku: '10000000089'
+    price: 99
+    weight: 1
+    cleanURLs:
+      - { cleanURL: sleeved-mini-dress-in-color-block }
+    amount: 999
+    images:
+      - { fileName: clo_7_1.jpg, mime: image/jpeg, size: 111237, path: clo_7_1.jpg, width: 732, height: 880, hash: 0914437938e71b4d51e361a96d0a1d9f, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'An easy way to wear more color - 3-in-1 mini dress in modern color block design. Sleeves are non-detachable and can be completely unzipped to show that extra skin.&nbsp;', description: '<ul><li>Color-block design</li><li>55% Polyester, 45% Cotton</li><li>Round neck</li><li>Shift design</li><li>Regular cut</li><li>Fits you just right</li></ul>', briefDescription: '<p>An easy way to wear more color - 3-in-1 mini dress in modern color block design. Sleeves are non-detachable and can be completely unzipped to show that extra skin.&nbsp;</p>', name: 'Sleeved Mini Dress in Color Block' }
+  - product_id: 17
+    sku: '10000000091'
+    price: 49.99
+    weight: 2.1
+    cleanURLs:
+      - { cleanURL: tall-slim-fit-t-shirt-in-white }
+    amount: 1000
+    images:
+      - { fileName: clo_9.jpg, mime: image/jpeg, size: 99905, path: clo_9.jpg, width: 732, height: 880, hash: 4f463863a815b0afe56a06e22b112350, orderby: 10 }
+      - { fileName: clo_10.jpg, mime: image/jpeg, size: 76717, path: clo_10.jpg, width: 732, height: 880, hash: 4ca25adb0ee0186f670d3bf2c9d6356d, orderby: 11 }
+    translations:
+      - { code: en, metaDesc: 'This classic tee features all-cotton construction and a tag-free crew neckline for comfort. Affordable, high-quality, and long-lasting everyday clothing you can rely on.', description: '<ul><li>Throw on and go</li><li>Crew neck</li><li>Short sleeves</li><li>Plain design</li><li>Slim fit</li><li>100% Cotton.</li></ul>', briefDescription: '<p>This classic tee features all-cotton construction and a tag-free crew neckline for comfort. Affordable, high-quality, and long-lasting everyday clothing you can rely on.</p>', name: 'Tall Slim Fit T-Shirt in White' }
+  - product_id: 18
+    sku: '10000000093'
+    price: 19.99
+    weight: 0.5
+    cleanURLs:
+      - { cleanURL: skinny-western-denim-jacket-in-light-blue-wash }
+    amount: 1000
+    images:
+      - { fileName: clo_12.jpg, mime: image/jpeg, size: 195566, path: clo_12.jpg, width: 732, height: 880, hash: 8c7f212feb7187705f405034a3181f68, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'The original jean jacket since 1962, this denim trucker jacket is fit for anything. This classic trucker features a standard regular fit with a hem that hits below the waist and welt hand pockets.', description: '<p>The original jean jacket since 1962, this denim trucker jacket is fit for anything. This classic trucker features a standard regular fit with a hem that hits below the waist and welt hand pockets.</p>', briefDescription: '', name: 'Skinny Western Denim Jacket in Light Blue Wash' }
+  - product_id: 19
+    sku: '10000000094'
+    price: 9.99
+    weight: 3
+    cleanURLs:
+      - { cleanURL: oversized-hoodie-in-grey }
+    amount: 12
+    images:
+      - { fileName: clo_13.jpg, mime: image/jpeg, size: 89063, path: clo_13.jpg, width: 732, height: 880, hash: f5e52b087200218a567351585759fa9b, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'An oversized hoodie in grey for your chill days. &nbsp;More style for your money, with drawstring hood, fitted trims and dropped shoulders. Part of the Eco Edit.', description: '<p>An oversized hoodie in grey for your chill days. &nbsp;More style for your money, with drawstring hood, fitted trims and dropped shoulders. Part of the Eco Edit. </p>', briefDescription: '', name: 'Oversized Hoodie in Grey' }
+  - product_id: 20
+    sku: '10000000095'
+    price: 9.99
+    weight: 1.1
+    cleanURLs:
+      - { cleanURL: hooded-anorak-jacket-in-black }
+    amount: 1000
+    images:
+      - { fileName: clo_14.jpg, mime: image/jpeg, size: 159307, path: clo_14.jpg, width: 732, height: 880, hash: c96c1e673b54122d8502bf1e26216cf2, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'This wind- and water-resistant jacket is a versatile, all-season piece with an impeccable fit built to keep you protected in milder weather and layer under shells and jackets for bonus warmth in more severe conditions.', description: '<p>This wind- and water-resistant jacket is a versatile, all-season piece with an impeccable fit built to keep you protected in milder weather and layer under shells and jackets for bonus warmth in more severe conditions.</p>', briefDescription: '', name: 'Hooded Anorak Jacket in Black' }
+  - product_id: 21
+    sku: '10000000096'
+    price: 29.99
+    weight: 2.8
+    cleanURLs:
+      - { cleanURL: leather-mini-tote-bag-with-rose-and-girl-print-in-red }
+    amount: 200
+    images:
+      - { fileName: bag_1.jpg, mime: image/jpeg, size: 154680, path: bag_1.jpg, width: 732, height: 880, hash: 3dd31e4e2a731d50bace9356b552f456, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Grab handle Detachable straps Flap-top closure Avoid contact with liquids', description: '<p><br></p><ul><li>Grab handle</li><li>Detachable straps</li><li>Flap-top closure</li><li>Avoid contact with liquids</li></ul>', briefDescription: '', name: 'Leather Mini Tote Bag with Rose and Girl Print in Red' }
+  - product_id: 22
+    sku: '10000000097'
+    price: 19.99
+    weight: 1.6
+    cleanURLs:
+      - { cleanURL: mesh-strap-watch-in-gold }
+    amount: 1000
+    images:
+      - { fileName: bag_2.jpg, mime: image/jpeg, size: 83551, path: bag_2.jpg, width: 732, height: 880, hash: e66ac046657b4e79839254bcc5abbcde, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Elegant, flawlessly feminine and easy to read with a large polished goldtone dial. Let your wrist do the talking.', description: '<ul><li>Stainless-steel mesh strap</li><li>Gold-tone case</li><li>Three hand movement</li><li>Dash indices</li><li>Single crown to side</li><li>Presented in a branded gift-box</li></ul>', briefDescription: '<p>Elegant, flawlessly feminine and easy to read with a large polished goldtone dial. Let your wrist do the talking.</p>', name: 'Mesh Strap Watch in Gold' }
+  - product_id: 23
+    sku: '10000000098'
+    price: 29.99
+    weight: 1
+    cleanURLs:
+      - { cleanURL: square-glasses-in-black-with-clear-lens }
+    amount: 1000
+    images:
+      - { fileName: bag_3.jpg, mime: image/jpeg, size: 51531, path: bag_3.jpg, width: 732, height: 880, hash: 61a67ab6c7917d24bafd3a73429e34ee, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Whether you are looking for reading glasses for the office or home. These reading glasses will provide you with the best service and the premium protection you are looking for. Square frames. Moulded nose pads for added comfort. Clear lenses. Tapered arms with curved temple tips for a secure fit.&nbsp; Cloth sunglasses pouch can be used as a lens wipe.', description: '<p>Frame: 100% Plastic, Lens: 100% Plastic.</p>', briefDescription: '<p>Whether you are looking for reading glasses for the office or home. These reading glasses will provide you with the best service and the premium protection you are looking for.</p><p>Square frames. Moulded nose pads for added comfort. Clear lenses. Tapered arms with curved temple tips for a secure fit.&nbsp;</p><p>Cloth sunglasses pouch can be used as a lens wipe.</p><p><br></p>', name: 'Square Glasses in Black with Clear Lens' }
+  - product_id: 24
+    sku: '10000000099'
+    price: 14.99
+    weight: 2.3
+    cleanURLs:
+      - { cleanURL: chain-drop-earrings-in-gold-tone }
+    amount: 1000
+    images:
+      - { fileName: bag_4.jpg, mime: image/jpeg, size: 72468, path: bag_4.jpg, width: 732, height: 880, hash: 8b9e13f61b5e97631c1466cddadbebad, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'For all-day-everyday use. Just give them a wipe to clean.', description: '<p><br></p><ul><li>Drop design</li><li>Tiered hoops</li><li>Connecting chains</li><li>All earrings are non-returnable</li></ul>', briefDescription: '<p>For all-day-everyday use. Just give them a wipe to clean.</p>', name: 'Chain Drop Earrings in Gold Tone' }
+  - product_id: 25
+    sku: '10000000100'
+    price: 19.99
+    weight: 1.3
+    cleanURLs:
+      - { cleanURL: rooster-mug-in-white }
+    amount: 4
+    images:
+      - { fileName: bag_5.jpg, mime: image/jpeg, size: 75707, path: bag_5.jpg, width: 732, height: 880, hash: d3c7fe9a8bf498a2600021755e97d44a, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'For your AM coffee and PM tea break. Regular size. Silver-tone trims.', description: '<p>For your AM coffee and PM tea break. Regular size. Silver-tone trims.</p>', briefDescription: '', name: 'Rooster Mug in White [Related products]' }
+  - product_id: 26
+    sku: '10000000101'
+    price: 12.99
+    weight: 1.3
+    cleanURLs:
+      - { cleanURL: festival-braslet-pack-in-gold-tone }
+    amount: 20
+    images:
+      - { fileName: bag_6.jpg, mime: image/jpeg, size: 89008, path: bag_6.jpg, width: 732, height: 880, hash: 6d9a5450e06a8bc447b8e9589344e792, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'We know you like options. With the combination of woven design and polished shiny surface, this bracelet is just the thing to make any woman feel special. An elegant and generous visual enjoyment for you and the ones you love.', description: '<p>We know you like options. With the combination of woven design and polished shiny surface, this bracelet is just the thing to make any woman feel special. An elegant and generous visual enjoyment for you and the ones you love.</p>', briefDescription: '', name: 'Festival Braslet Pack in Gold Tone' }
+  - product_id: 27
+    sku: '10000000102'
+    price: 69.99
+    weight: 1.4
+    cleanURLs:
+      - { cleanURL: samsung-galaxy-s6-edge-plus-4g-lte-with-32gb-memory-cell-phone }
+    amount: 10
+    images:
+      - { fileName: elec_1.jpg, mime: image/jpeg, size: 71237, path: elec_1.jpg, width: 732, height: 880, hash: 1c2a542342240c15ae76a8038f768800, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Wireless Compatibility - Wireless A|Wireless G|Wireless N|Wireless AC|Wireless B Screen Size - 5.7 inches Android 5.1.1 Lollipop Internal Memory - 32 gigabytes', description: '<ul><li>Wireless Compatibility - Wireless A|Wireless G|Wireless N|Wireless AC|Wireless B</li><li>Screen Size - 5.7 inches</li><li>Android 5.1.1 Lollipop</li><li>Internal Memory - 32 gigabytes</li></ul>', briefDescription: '', name: 'Samsung - Galaxy S6 Edge Plus 4g LTE with 32gb Memory Cell Phone' }
+  - product_id: 28
+    sku: '10000000103'
+    price: 850
+    weight: 2.5
+    cleanURLs:
+      - { cleanURL: apple-iphone-8-plus-64gb }
+    amount: 50
+    images:
+      - { fileName: elec_2.jpg, mime: image/jpeg, size: 132698, path: elec_2.jpg, width: 732, height: 880, hash: 627da7514ffc664b11b5a4db98125a32, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Designed with most durable glass and a stronger aerospace-grade aluminum band. Charges wirelessly. Resists water and dust. 5.5-inch Retina HD display with True Tone. 12MP dual cameras offer improved Portrait mode and new Portrait Lighting. Powered by A11 Bionic, a most powerful smartphone chip.', description: '<div data-cel-widget="productDescription_feature_div" data-feature-name="productDescription"><div data-cel-widget="productDescription_feature_div" data-feature-name="productDescription" data-template-name="productDescription"><br></div></div><ul><li>5.5-inch (diagonal) widescreen LCD Multi-Touch display with IPS technology - 1920-by-1080-pixel resolution at 401 ppiA11 Bionic chip with 64-bit architecture, Neural engine, Embedded M11 motion coprocessor</li><li>12MP wide-angle and telephoto camera, 7MP FaceTime HD Camera</li><li>Splash, water, and dust resistant</li></ul>', briefDescription: '<p>Designed with most durable glass and a stronger aerospace-grade aluminum band. Charges wirelessly. Resists water and dust. 5.5-inch Retina HD display with True Tone. 12MP dual cameras offer improved Portrait mode and new Portrait Lighting. Powered by A11 Bionic, a most powerful smartphone chip.</p>', name: 'Apple iPhone 8 Plus, 64GB' }
+  - product_id: 29
+    sku: '10000000104'
+    price: 650
+    weight: 1
+    cleanURLs:
+      - { cleanURL: apple-iphone-x }
+    amount: 1000
+    images:
+      - { fileName: elec_4.jpg, mime: image/jpeg, size: 125842, path: elec_4.jpg, width: 732, height: 880, hash: d6e5e893843013fd41c45a251508c854, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'iPhone that is entirely screen. One so immersive the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. With iPhone X, that vision is now a reality. Say hello to the future.', description: '<ul><li>An all-new 5.8-inch Super Retina screen with all-screen OLED Multi-Touch display</li><li>12MP wide-angle and telephoto cameras with Dual optical image stabilization</li><li>Wireless Qi charging</li></ul>', briefDescription: '<div data-cel-widget="productDescription_feature_div" data-feature-name="productDescription"><div data-cel-widget="productDescription_feature_div" data-feature-name="productDescription" data-template-name="productDescription"><p>iPhone that is entirely screen. One so immersive the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. With iPhone X, that vision is now a reality. Say hello to the future.</p></div></div><div data-cel-widget="renewedProgramDescriptionBtf_feature_div" data-feature-name="renewedProgramDescriptionBtf"><br></div>', name: 'Apple iPhone X [Options & Attributes] [Custom tabs]' }
+  - product_id: 30
+    sku: '10000000105'
+    price: 399
+    weight: 1.1
+    cleanURLs:
+      - { cleanURL: apple-watch-series-3-gps-38mm }
+    amount: 999
+    images:
+      - { fileName: elec_5.jpg, mime: image/jpeg, size: 51859, path: elec_5.jpg, width: 732, height: 880, hash: 73bac33aaec377dea6b017731c89eb3a, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'GPS Optical heart sensor Digital Crown S3 with dual-core processor Accelerometer and gyroscope Swim proof watchOS 5 Aluminum case', description: '<table><tbody><tr><td style="width: 12.5352%;"><p>Connectivity</p></td><td style="width: 87.3944%;"><p>Wi-Fi (802.11b/g/n 2.4GHz), Bluetooth 4.2</p></td></tr><tr><td style="width: 12.5352%;"><p>Power</p></td><td style="width: 87.3944%;"><p>Up to 18 hours of battery life</p></td></tr><tr><td style="width: 12.5352%;"><p>Width</p></td><td style="width: 87.3944%;"><p>33.3mm</p></td></tr><tr><td style="width: 12.5352%;"><p>Depth</p></td><td style="width: 87.3944%;"><p>11.4mm</p></td></tr><tr><td style="width: 12.5352%;"><p>Case Weight</p></td><td style="width: 87.3944%;"><p>36.7g</p></td></tr></tbody></table><table><tbody><tr><td><p>Case Size</p></td><td><p>38mm, 42mm</p></td></tr><tr><td><p>Features</p></td><td><p>GLONASS, Galileo, and QZSS, Barometric altimeter, Optical heart sensor, Accelerometer and gyroscope, Ion-X strengthened glass, Composite back</p></td></tr><tr><td><p>Whats in the box</p></td><td><p>Case, Band (either S/M or M/L length), 1m Magnetic Charging Cable</p></td></tr></tbody></table><p><br></p><p><br></p><p><br></p>', briefDescription: '<ul><li>GPS</li><li>Optical heart sensor</li><li>Digital Crown</li><li>S3 with dual-core processor</li><li>Accelerometer and gyroscope</li><li>Swim proof</li><li>watchOS 5</li><li>Aluminum case</li></ul>', name: 'Apple Watch Series 3 (GPS, 38mm)' }
+  - product_id: 31
+    sku: '10000000106'
+    price: 299
+    weight: 1.3
+    cleanURLs:
+      - { cleanURL: google-home-mini }
+    amount: 1000
+    images:
+      - { fileName: elec_6.jpg, mime: image/jpeg, size: 50433, path: elec_6.jpg, width: 732, height: 880, hash: ded7443afb41dfb3202adc60df70a27c, orderby: 10 }
+      - { fileName: elec_8.jpg, mime: image/jpeg, size: 111724, path: elec_8.jpg, width: 732, height: 880, hash: 6dd2314204135954d106838005c1acfc, orderby: 11 }
+      - { fileName: elec_7.jpg, mime: image/jpeg, size: 123416, path: elec_7.jpg, width: 732, height: 880, hash: 9a917d178eb36bab0383b32645dc1a93, orderby: 12 }
+      - { fileName: elec_9.jpg, mime: image/jpeg, size: 97905, path: elec_9.jpg, width: 732, height: 880, hash: b23620947e364f001cc7bdf107b85b70, orderby: 13 }
+    translations:
+      - { code: en, metaDesc: 'A new Google smart speaker in mini format that shrinks down all the intelligence into a cheaper, smaller package.&nbsp; A wifi-connected smart speaker that looks like a small fabric-covered pin cushion. It comes in a grey, black or coral with a colour-matched plastic base and rubber foot to keep it from sliding about when you prod it.', description: '<p>A new Google smart speaker in mini format that shrinks down all the intelligence into a cheaper, smaller package.&nbsp;</p><p>A wifi-connected smart speaker that looks like a small fabric-covered pin cushion. It comes in a grey, black or coral with a colour-matched plastic base and rubber foot to keep it from sliding about when you prod it.</p>', briefDescription: '', name: 'Google Home Mini [Attributes & Options]' }
+  - product_id: 32
+    sku: '10000000107'
+    price: 79.99
+    weight: 1.2
+    cleanURLs:
+      - { cleanURL: fitness-tracker-smart-watch }
+    amount: 10
+    images:
+      - { fileName: elec_10.jpg, mime: image/jpeg, size: 55079, path: elec_10.jpg, width: 732, height: 880, hash: 183494a6df7857e32cdfa138802333dc, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'A modern waterproof a ctivity tracker with heart rate monitor and blood pressure, step and calorie counter. Pedometer watch for women and men.&nbsp;', description: '<ul><li>Multifunction Smart Watch: The fitness tracker smart watch has data and 12/24H time display, Accurate heart rate, Blood pressure monitor, Sleep monitor, Auto pedometer, brightness adjustment, Weather, Clock alarm, Stopwatch, Sedentary reminder, Remote camera control, Music control, Find phone, Incoming call and SMS reminder, Message reminder etc.</li><li>Heart Rate Monitor &amp; Blood Pressure Fitness Tracker: Enter the watch face and long pressing the control area. Wait a moment about 30 seconds, then you can read the real time heart rate/blood pressure/blood oxygen data in the watch face. You can set the automatic heart rate monitor in the app. The history heart rate, blood pressure and blood oxygen details data are Available in the app.</li><li>IP67 Waterproof and Sleep tracking: The smart fitness tracker meets the international IP67 waterproof and dust proof standard. But we don&rsquo;t recommend to wear the fitness tracker while swimming or taking a shower; Comprehensively analyze data such as sleep duration, sleep depth and wakefulness sleep, guide you to improve sleep quality</li><li>See Calls &amp; Messages on Your Wrist: Receive call, SMS and SNS (Facebook, WhatsApp, LinkedIn, Instagram, and Twitter) notifications on display; Support system iOS 9.0 or above, Android 4.4 or above.(not for PC, iPad or Tablet).</li><li>Special Powerful Functions and Warranty:Weather forecast function, Music Player, Remote Camera Function, Change the Screen Brightness function and more other functions are available. 3-Months Warranty is Provided by Teamyo fitness tracker. Please feel free to contact us if you have any problem about our product, and we will response to you as soon as possible with full enthusiasm.</li></ul><p><strong>Warm Notes:</strong></p><p><strong>1. Compatibility:</strong> This fitness watch can be used with both Android and IOS system,Compatible with Android 4.4 or above, IOS 9 or above.Compatible with with bluetooth 4.0 or above.<br><strong>2. Waterproof Grade:</strong> IP67 Life Waterproof Grade. IP67 Waterproof resistant for sweat, rain, splash proof. Not recommend wear the fitness tracker when swimming or Take a shower.<br><strong>3. Charging cable:</strong> The smart watch is packed in a beautiful box. Please kindly find the charging cable under the box. Charge the fitness watch about 2 hours before firstly use.</p>', briefDescription: '<h2><span style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: rgb(128, 128, 128);background-color: rgb(255, 255, 255);">A modern waterproof a</span><span style="color: rgb(204, 204, 204);"><span style="background-color: rgb(255, 255, 255);"><a href="https://www.amazon.com/Activity-Waterproof-Pressure-Pedometer-V11-gray/dp/B07PNMRBJY/ref=sr_1_5?keywords=smart+watch&qid=1560875842&s=gateway&sr=8-5"></a></span></span><span style="color: rgb(124, 112, 107);"><span style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">ctivity tracker with heart rate monitor and blood pressure, step and calorie counter. Pedometer watch for women and men.&nbsp;</span></span><span style="color: rgb(204, 204, 204);"><span style="background-color: rgb(255, 255, 255);"><a href="https://www.amazon.com/Activity-Waterproof-Pressure-Pedometer-V11-gray/dp/B07PNMRBJY/ref=sr_1_5?keywords=smart+watch&qid=1560875842&s=gateway&sr=8-5"></a></span></span></h2>', name: 'Fitness Tracker Smart Watch' }
+  - product_id: 33
+    sku: '10000000109'
+    price: 49.99
+    weight: 2.2
+    cleanURLs:
+      - { cleanURL: bluetooth-smartwatch-with-touch-screen-and-fitness-tracker }
+    amount: 999
+    images:
+      - { fileName: elec_12.jpg, mime: image/jpeg, size: 105637, path: elec_12.jpg, width: 732, height: 880, hash: 1b422844889512483104ced4a4f0feac, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'The perfect companion to keep you organized and productive all day long. Receive one-way notifications for emails, SMS messages, and incoming phone calls (prompting you to take action on your smartphone), as well as alerts for Facebook, Twitter, WhatsApp, LinkedIn, Snap and other mobile apps. It counts your steps, measures distance walked and estimate calories burned via a 3-axis accelerometer. Monitor sleep quality and record sleep status data. Rain and sweat water-resistant, can&#39;t be used for Hot Wat', description: '<p>The perfect companion to keep you organized and productive all day long. Receive one-way notifications for emails, SMS messages, and incoming phone calls (prompting you to take action on your smartphone), as well as alerts for Facebook, Twitter, WhatsApp, LinkedIn, Snap and other mobile apps.</p><p>It counts your steps, measures distance walked and estimate calories burned via a 3-axis accelerometer.<br>Monitor sleep quality and record sleep status data.</p><p>Rain and sweat water-resistant, can&#39;t be used for Hot Water washing and long time soak in water.</p><p>This wearable has an estimated 24-hour battery life. (Note: Battery life varies based on usage.)</p>', briefDescription: '', name: 'Bluetooth Smartwatch with Touch Screen and Fitness Tracker' }
+  - product_id: 34
+    sku: '10000000110'
+    price: 59.99
+    weight: 2.7
+    cleanURLs:
+      - { cleanURL: aster-i39-headphones-with-microphone }
+    amount: 1000
+    images:
+      - { fileName: elec_13.jpg, mime: image/jpeg, size: 37404, path: elec_13.jpg, width: 732, height: 880, hash: becdbe97f13c89a6ea3e56adfe9f76f2, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Aster i39 on ear headphones are designed for ultimate comfort when you are travel, hang out, or on a business. Take your headphones wherever you go. Just fold them up, twist up the cord, and be on your merry way', description: '<ul><li>Microphone, Foldabe, Stereo, Portable, Lightweight</li><li>Weight - 6.6 ounces</li><li>Dimentions - 8.3 x 7.1 x 3.5 in</li></ul>', briefDescription: '<p>Aster i39 on ear headphones are designed for ultimate comfort when you are travel, hang out, or on a business.</p><p>Take your headphones wherever you go. Just fold them up, twist up the cord, and be on your merry way</p>', name: 'Aster i39 Headphones with Microphone' }
+  - product_id: 35
+    sku: '10000000111'
+    price: 299.99
+    weight: 1.7
+    cleanURLs:
+      - { cleanURL: apple-airpods }
+    amount: 999
+    images:
+      - { fileName: elec_14.jpg, mime: image/jpeg, size: 16200, path: elec_14.jpg, width: 732, height: 880, hash: 9c616e7c60724a9baab787633994fdcf, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Unlike traditional, circular earbuds, the design of the EarPods is defined by the geometry of the ear which makes them more comfortable for more people than any other earbud-style headphones. &nbsp;The speakers inside the EarPods have been engineered to maximize sound output and minimize sound loss, which means you get high-quality audio. Works with all devices that have a Lightning connector and support iOS 10 or later, including iPod touch, iPad, and iPhone.', description: '<p>Unlike traditional, circular earbuds, the design of the EarPods is defined by the geometry of the ear which makes them more comfortable for more people than any other earbud-style headphones. &nbsp;The speakers inside the EarPods have been engineered to maximize sound output and minimize sound loss, which means you get high-quality audio.</p><p>Works with all devices that have a Lightning connector and support iOS 10 or later, including iPod touch, iPad, and iPhone.</p>', briefDescription: '', name: 'Apple AirPods' }
+  - product_id: 36
+    sku: '10000000112'
+    price: 11.99
+    weight: 2
+    cleanURLs:
+      - { cleanURL: cocooil-body-oil }
+    amount: 999
+    images:
+      - { fileName: beauty_1.jpg, mime: image/jpeg, size: 46495, path: beauty_1.jpg, width: 732, height: 880, hash: d4dbdee04da48c75c6e49baf76c195b5, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'This body oil will nourish and protect your skin.', description: '<p>Formulated with certified fair trade cold pressed organic coconut oil, produced sustainably in the Pacific Islands and supporting local communities. a Provides a luxurious feeling, perfect as your daily moisturiser all year long.</p><p>Ingredients: Helianthus Annuus (Sunflower) Seed Oil, Fair Trade Cold Pressed Organic Cocos Nucifera (Coconut) Oil, Vitas Vinifera (Grape) Seed Oil, Tocopherol.</p><p><strong>Features</strong>:</p><ul><li>Non-greasy body oil</li><li>Hydrating, nourishing and soothing &nbsp;<br><br></li></ul><p><br></p>', briefDescription: '<p>This body oil will nourish and protect your skin.</p>', name: 'Cocooil Body Oil' }
+  - product_id: 37
+    sku: '10000000113'
+    price: 139.99
+    weight: 1.7
+    cleanURLs:
+      - { cleanURL: maui-moisture }
+    amount: 1000
+    images:
+      - { fileName: beauty_2.jpg, mime: image/jpeg, size: 102218, path: beauty_2.jpg, width: 732, height: 880, hash: fdc89da643f75c705a7221bd7ccf7e6a, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'A lush, strengthening shampoo that helps your hair feel rejuvenated &amp; restored.', description: '<p>With castor oil &amp; neem oil, this formula helps soften treated, natural, or transitioning hair.</p><p>Ingredients: Aloe Barbadensis Leaf Juice, Water (Aqua), Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, PPG-2 Hydroxyethyl Coco/Isostearamide, Glycol Distearate, Cocos Nucifera (Coconut) Water, Bambusa Arundinacea Stem Extract, Ricinus Communis (Castor) Seed Oil, Melia Azadirachta Seed Oil, Chamomilla Recutita (Matricaria) Flower Extract, Polyquaternium-10, Cocamidopropyl Hydroxysultaine, Sodium Cocoyl Isethionate, PEG-120 Methyl Glucose Dioleate, Guar Hydroxypropyltrimonium Chloride, Methyl Gluceth-10, Tapioca Starch, Sodium Chloride, Propylene Glycol, Diazolidinyl Urea, Iodopropynyl Butylcarbamate, Fragrance (Parfum).&nbsp;</p><p><strong>Features</strong>:</p><ul><li>Fortifying</li><li>Encourages healthy-looking glow</li><li>Uses sulfate-free surfactants</li></ul>', briefDescription: '<p>A lush, strengthening shampoo that helps your hair feel rejuvenated &amp; restored.</p>', name: 'Maui Moisture' }
+  - product_id: 38
+    sku: '10000000114'
+    price: 49.99
+    weight: 1.6
+    cleanURLs:
+      - { cleanURL: barth-body-oil }
+    amount: 10
+    images:
+      - { fileName: beauty_3.jpg, mime: image/jpeg, size: 74344, path: beauty_3.jpg, width: 732, height: 880, hash: 9f948e63cba77a773abda02604bf12fc, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'With this amazing oil serum your skin will immediately feel very silky and hydrated.&nbsp;', description: '<p>Great for normal, sensitive and inflamed skin. Ideal for skin that needs to be calmed down and regenerated.&nbsp;</p><p><strong>Features</strong>:</p><ul><li>Penetrates the skin without leaving a greasy residue</li><li>Pleasant scent of exotic oils</li><li>Organic</li></ul>', briefDescription: '<p>With this amazing oil serum your skin will immediately feel very silky and hydrated.&nbsp;</p>', name: 'Barth Body Oil' }
+  - product_id: 39
+    sku: '10000000115'
+    price: 34.99
+    weight: 1
+    cleanURLs:
+      - { cleanURL: facial-spray }
+    amount: 1000
+    images:
+      - { fileName: beauty_4.jpg, mime: image/jpeg, size: 88194, path: beauty_4.jpg, width: 732, height: 880, hash: 157c4dc34f176835a72dd7ce2dfdb4c3, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'A refreshing, hydrating mist for all skin types.', description: '<p>Created with aloe, cucumber and green tee, this spray hydrates, cools and refreshes. Mist over the face before moisturising or throughout the day after makeup, for a quick antioxidant boost.&nbsp;</p><p>Ingredients: Aqua (Water, Eau), Propylene Glycol, Mentha Piperita (Peppermint) Leaf Water, Cucumis Sativus (Cucumber) Fruit Water, Aloe Barbadensis Leaf Juice, Camellia Sinensis Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Fucus Vesiculosus Extract, Propanediol, Polysorbate 20, Ethylhexylglycerin, Benzophenone-4, Parfum (Fragrance), Sodium Chloride, Citric Acid, Potassium Sorbate, Sodium Benzoate, CI 19140 (Yellow 5), CI 42090 (Blue 1), Hexyl Cinnamal, Limonene, Linalool.&nbsp;</p><p><strong>Features</strong>:</p><ul><li>Calms and soothes skin</li><li>Antioxidant</li><li>Organic</li></ul>', briefDescription: '<p>A refreshing, hydrating mist for all skin types.</p>', name: 'Facial Spray' }
+  - product_id: 40
+    sku: '10000000116'
+    price: 817.59
+    weight: 1.8
+    cleanURLs:
+      - { cleanURL: red-dior }
+    amount: 6
+    images:
+      - { fileName: beauty_5.jpg, mime: image/jpeg, size: 50207, path: beauty_5.jpg, width: 732, height: 880, hash: 6fa1870d58aedfb8872a227d2beb3938, orderby: 10 }
+      - { fileName: beauty_6.jpg, mime: image/jpeg, size: 137610, path: beauty_6.jpg, width: 732, height: 880, hash: dec5086f7dbabcca3fe8dad7f40716fe, orderby: 11 }
+    translations:
+      - { code: en, metaDesc: 'The new generation of lipstick: as easy to apply as it is to wear.', description: '<p>This limited edition stick delivers all the colour and shine of a lacquer, plus the comfort of a balm, with 6h* of wear and an exceptionally fine texture.&nbsp;</p><p><strong>Features</strong>:</p><ul><li>Liquified shine</li><li>Saturated lip color</li><li>Weightless wear</li></ul>', briefDescription: '<p>The new generation of lipstick: as easy to apply as it is to wear.</p>', name: 'Red Dior' }
+  - product_id: 41
+    sku: '10000000117'
+    price: 199.99
+    weight: 2.1
+    cleanURLs:
+      - { cleanURL: pink-unicorn-makeup-brushes }
+    amount: 1000
+    images:
+      - { fileName: beauty_7.jpg, mime: image/jpeg, size: 94563, path: beauty_7.jpg, width: 732, height: 880, hash: a950f0aee59a617bacad71d97bce43ab, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Add some pink unicorn glam to your beauty routine! An essential collection of face and eye brushes for a perfected complexion and enchanting eye looks. &nbsp; &nbsp;', description: '<p>Crafted with the highest quality materials, each brush features whisper-soft synthetic bristles bundled with a gold ferrule. The sleek embellished holder keeps the tools organized in style.</p><p><strong>Features</strong>:</p><ul><li><strong>&nbsp;</strong>Includes 3 makeup brushes and a holder</li><li>Made with synthetic hairs; cruelty free.</li></ul>', briefDescription: '<p>Add some pink unicorn glam to your beauty routine! An essential collection of face and eye brushes for a perfected complexion and enchanting eye looks. &nbsp; &nbsp;</p>', name: 'Pink Unicorn Makeup Brushes' }
+  - product_id: 42
+    sku: '10000000118'
+    price: 19.99
+    weight: 2.6
+    cleanURLs:
+      - { cleanURL: perfect-snacks }
+    amount: 1000
+    images:
+      - { fileName: food_1.jpg, mime: image/jpeg, size: 167086, path: food_1.jpg, width: 732, height: 880, hash: 50cb16268b9f45112b94fa701baf7aa6, orderby: 10 }
+      - { fileName: food_2.jpg, mime: image/jpeg, size: 97721, path: food_2.jpg, width: 732, height: 880, hash: fe3140eb8c5a5ac165ef812f7d775129, orderby: 11 }
+    translations:
+      - { code: en, metaDesc: 'Nutritious protein for active lifestyles.', description: '<p>Made with freshly ground nut butters and organic honey, this snack bar is a delicious blend of creamy and crunchy with a cookie-dough-like texture. Each bar contains up to 17g of whole food protein.</p><p><strong>Features</strong>:</p><ul><li>A convenient source of vitamins and minerals</li><li>Non-GMO</li><li>Soy Free</li><li>Gluten Free</li><li>Organic</li><li>Kosher</li><li>Made in the USA</li></ul><p><br></p>', briefDescription: '<p>Nutritious protein for active lifestyles.</p>', name: 'Perfect Snacks' }
+  - product_id: 43
+    sku: '10000000119'
+    price: 12
+    weight: 1.7
+    cleanURLs:
+      - { cleanURL: blue-and-green-matcha }
+    amount: 1000
+    images:
+      - { fileName: food_15.jpg, mime: image/jpeg, size: 214478, path: food_15.jpg, width: 732, height: 880, hash: cfb4d7e98c6aeaff1f69ad3b586818e9, orderby: 10 }
+      - { fileName: food_3.jpg, mime: image/jpeg, size: 112526, path: food_3.jpg, width: 732, height: 880, hash: 02889061c0e860a824b49772dd8327d2, orderby: 11 }
+      - { fileName: food_4.jpg, mime: image/jpeg, size: 135694, path: food_4.jpg, width: 732, height: 880, hash: f5624e665e8880236a3a5dc1c1c47610, orderby: 12 }
+    translations:
+      - { code: en, metaDesc: 'Give matcha a try and be amazed.', description: '<p>Pure organic matcha, blue and green. All natural weight loss, metabolism booster supplement. Delicious and nutricious. Enhances all day energy, mental clarity and focus. The best coffee substitute that does not give you jitters. Can be used in a variety of recipes for baking, lattes, smoothies, shakes, icecream and other foods.</p><p><strong>Features</strong>:</p><ul><li>Powerful antioxidant</li><li>Certified organic</li><li>Vegan</li><li>Non-GMO</li></ul>', briefDescription: '<h4><span style="font-size: 14px; color: rgb(128, 128, 128);">Give matcha a try and be amazed.</span></h4><p><br></p><p><br></p>', name: 'Blue & Green Matcha' }
+  - product_id: 44
+    sku: '10000000122'
+    price: 28
+    weight: 1.4
+    cleanURLs:
+      - { cleanURL: chia-seed }
+    amount: 1000
+    images:
+      - { fileName: food_9.jpg, mime: image/jpeg, size: 190550, path: food_9.jpg, width: 732, height: 880, hash: 8e4a6f3a8911853df2b32713feecb3a2, orderby: 10 }
+      - { fileName: food_10_2.jpg, mime: image/jpeg, size: 60111, path: food_10_2.jpg, width: 732, height: 880, hash: 1435ac61b22520636cdb6fdb57a86f2a, orderby: 11 }
+    translations:
+      - { code: en, metaDesc: 'Organic superfood.', description: '<p>A rich source of protein, fiber, antioxidants, essential omega-3 fatty acids and minerals (magnesium, calcium, potassium, phosphorous). An ideal addition to vegetarian, vegan, whole food, paleo, ketogenic, and gluten-free diets. Can be consumed and digested whole. Add a healthful gourmet flair to salads, snacks, soups, and baked goods, or soak them for a satisfying pudding or gel.</p><p><strong>Features</strong>:</p><ul><li>Certified organic&nbsp;</li><li>Non-GMO&nbsp;</li><li>BPA-free packaging</li></ul>', briefDescription: '<p>Organic superfood.</p>', name: 'Chia Seed' }
+  - product_id: 45
+    sku: '10000000123'
+    price: 83
+    weight: 1.8
+    cleanURLs:
+      - { cleanURL: probiotic-and-omega-3-6-9-supplement }
+    amount: 1000
+    images:
+      - { fileName: food_11.jpg, mime: image/jpeg, size: 84336, path: food_11.jpg, width: 732, height: 880, hash: bb58add0a6b52cf55ec1783057c8d67f, orderby: 10 }
+      - { fileName: food_12.jpg, mime: image/jpeg, size: 115617, path: food_12.jpg, width: 732, height: 880, hash: 7419ee1425b0bf9ec37a83a394e81303, orderby: 11 }
+      - { fileName: food_13.jpg, mime: image/jpeg, size: 108802, path: food_13.jpg, width: 732, height: 880, hash: fe5990dc0bc71d58463a47604652944e, orderby: 12 }
+    translations:
+      - { code: en, metaDesc: 'A proprietary probiotic blend to support your brain and gut health.', description: '<p>Boost your energy, immune system and cognitive function by providing friendly bacteria for the digestive system and the Omega fatty acids for your brain. Each day, either morning or evening, take one capsule with a glass of water. Consistency is key.</p><p><strong>Features</strong>:</p><ul><li>Non-GMO</li><li>Antioxidant</li></ul>', briefDescription: '<p>A proprietary probiotic blend to support your brain and gut health.</p>', name: 'Probiotic and Omega 3, 6, 9 Supplement' }
+  - product_id: 46
+    sku: '10000000124'
+    price: 25
+    weight: 1.3
+    cleanURLs:
+      - { cleanURL: tea-infused-sparkling-water }
+    amount: 1000
+    images:
+      - { fileName: food_14.jpg, mime: image/jpeg, size: 68878, path: food_14.jpg, width: 732, height: 880, hash: 7a1cab839e0c15f55e7f3a5c0efdfa07, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Tea and sparkling water: the perfect match!', description: '<p>Sparkling water combined with organic tea and single-source, certified organic extracts. No &quot;natural flavors&quot;. &nbsp;</p><p><strong>Features</strong>:</p><ul><li>Unsweetened</li><li>Certified organic</li><li>Certified non-GMO</li></ul>', briefDescription: '<p>Tea and sparkling water: the perfect match!</p>', name: 'Tea Infused Sparkling Water' }
+  - product_id: 47
+    sku: '10000000125'
+    price: 17
+    weight: 1.8
+    cleanURLs:
+      - { cleanURL: cinnamon-sticks }
+    amount: 1000
+    images:
+      - { fileName: food_16.jpg, mime: image/jpeg, size: 75917, path: food_16.jpg, width: 732, height: 880, hash: ac00bb8c6862b364f5a335e2c5e507ba, orderby: 10 }
+      - { fileName: food_19.jpg, mime: image/jpeg, size: 130386, path: food_19.jpg, width: 732, height: 880, hash: 183de1c5cb688c5da87d72254168b83e, orderby: 11 }
+      - { fileName: food_18.jpg, mime: image/jpeg, size: 132056, path: food_18.jpg, width: 732, height: 880, hash: 484b22d3bd13dbaada735179f3a8377c, orderby: 12 }
+      - { fileName: food_17.jpg, mime: image/jpeg, size: 123735, path: food_17.jpg, width: 732, height: 880, hash: f19e410ce8777f26da2eac0fa11d8566, orderby: 13 }
+    translations:
+      - { code: en, metaDesc: 'Add some spice to your life with these finest quality pure Ceylon cinnamon sticks.', description: '<h1><span style="font-size: 14px; color: rgb(128, 128, 128);">Imported 100% raw from Sri Lanka.&nbsp;</span><span style="color: rgb(128, 128, 128); font-size: 14px;">Perfect for baking, cooking and beverages. Hand rolled, soft and break or crumble easy.&nbsp;</span></h1><p><strong>Features</strong>:</p><ul><li>100+ sticks, packed and sealed for freshness&nbsp;</li><li>Non-GMO</li><li>Certfied organic</li><li>Kosher</li></ul>', briefDescription: '<p>Add some spice to your life with these finest quality pure Ceylon cinnamon sticks.</p>', name: 'Cinnamon Sticks' }
+  - product_id: 48
+    sku: '10000000126'
+    price: 21
+    weight: 2.8
+    cleanURLs:
+      - { cleanURL: peanut-butter }
+    amount: 1000
+    images:
+      - { fileName: food_21.jpg, mime: image/jpeg, size: 96778, path: food_21.jpg, width: 732, height: 880, hash: 2ba16018666cbf828a1e01f5cd99271d, orderby: 10 }
+      - { fileName: food_20.jpg, mime: image/jpeg, size: 118898, path: food_20.jpg, width: 732, height: 880, hash: 176afdc335b384f452bddab05a557c2a, orderby: 11 }
+    translations:
+      - { code: en, metaDesc: 'Delicious peanut butter, all natural and loaded with protein.', description: '<p>Made with just one ingredient: Dry-roasted organic peanuts.</p><ul><li>All natural&nbsp;</li><li>Non-GMO</li><li>Gluten free</li><li>Dairy free</li><li>Preservative free</li><li>Vegan</li><li>Kosher</li><li>No palm fruit oil</li><li>No added sugar</li><li>No added salt</li></ul>', briefDescription: '<p>Delicious peanut butter, all natural and loaded with protein.</p>', name: 'Peanut Butter' }
+  - product_id: 49
+    sku: '10000000127'
+    price: 16
+    weight: 1.4
+    cleanURLs:
+      - { cleanURL: sweet-hazelnut-and-chocolate-natural-flavouring }
+    amount: 12
+    images:
+      - { fileName: food_22.jpg, mime: image/jpeg, size: 157267, path: food_22.jpg, width: 732, height: 880, hash: 2e7fa17bbe4583c202bec4fc27f98679, orderby: 10 }
+    translations:
+      - { code: en, metaDesc: 'Add the delicious taste of hazelnut chocolate to your cakes and other desserts using this natural food flavouring.&nbsp;', description: '<p>This natural food flavouring provides a classic hazelnut chocolate flavour to your cooking and baking, and can be used with various food and drink. Works great in general cooking/baking, cakes, yogurt, cheesecake, sorbets, drinks (including beer/cider), and ice-cream.&nbsp;</p><p>Ingredients:<strong>&nbsp;</strong>Natural Flavouring, Propylene Glycol (E1518).</p><p><strong>Features</strong>:</p><ul><li>Gluten free</li><li>Dairy free</li><li>Egg free</li><li>Vegan</li><li>Kosher</li></ul>', briefDescription: '<p><span style="font-size: 14px;">Add the delicious taste of hazelnut chocolate to your cakes and other desserts using this natural food flavouring.&nbsp;</span></p>', name: 'Sweet Hazelnut and Chocolate Natural Flavouring' }
+  - product_id: 50
+    sku: '10000000128'
+    price: 22
+    weight: 1.7
+    cleanURLs:
+      - { cleanURL: dose-juice }
+    amount: 23
+    images:
+      - { fileName: food_24.jpg, mime: image/jpeg, size: 114214, path: food_24.jpg, width: 732, height: 880, hash: f63830487ca574357705e2430a915793, orderby: 10 }
+      - { fileName: food_23.jpg, mime: image/jpeg, size: 123810, path: food_23.jpg, width: 732, height: 880, hash: a7216535c69bcbb7e74c4db86c1d1cc7, orderby: 11 }
+      - { fileName: food_25.jpg, mime: image/jpeg, size: 84710, path: food_25.jpg, width: 732, height: 880, hash: 7c91b0e5665402bcb013e86b0d83e3bd, orderby: 12 }
+    translations:
+      - { code: en, metaDesc: 'An organic juice to sustain you throughout the day. Drink it in the morning or between meals for a boost of energy and vitamins.&nbsp;', description: '<p>A complete array of vitamins, minerals and enzymes &ndash; all with the great taste. 60% green vegetables vs 40% fruits.&nbsp;</p><p>Features:</p><ul><li>Cold pressed</li><li>Organic</li></ul>', briefDescription: '<p>An organic juice to sustain you throughout the day. Drink it in the morning or between meals for a boost of energy and vitamins.&nbsp;</p>', name: 'Dose Juice' }
+
+XLite\Model\Category:
+  - category_id: 1
+    root_category_look: icons
+    show_title: false
+    translations:
+      - code: en
+        name: 'Catalog'
+        description: '<h1>Welcome to X-Cart Demo Store!</h1><p>It illustrates operation and features of X-Cart - all-in-one eCommerce solution for swift and easy launch of a professional online store. Orders placed here cannot be fulfilled as all the sample products listed in this store are for demonstration and testing purposes only.</p>'
+    children:
+      - pos: 10
+        cleanURLs:
+          - cleanURL: fashion
+        image:
+          path: clo_7_1.jpg
+          mime: image/jpeg
+          width: 732
+          height: 880
+          size: 111237
+          date: 1559324094
+        banner:
+          path: fashion_6.jpeg
+          mime: image/jpeg
+          width: 2996
+          height: 520
+          size: 331715
+          date: 1560863809
+        translations:
+          - code: en
+            name: Fashion
+        children:
+          - pos: 10
+            cleanURLs:
+              - cleanURL: clothing
+            image:
+              path: clo_5.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 199790
+              date: 1559317753
+            translations:
+              - code: en
+                name: Clothing
+            categoryProducts:
+              - product:
+                  sku: '10000000079'
+                ordery: 0
+              - product:
+                  sku: '10000000085'
+                ordery: 0
+              - product:
+                  sku: '10000000086'
+                ordery: 0
+              - product:
+                  sku: '10000000087'
+                ordery: 0
+              - product:
+                  sku: '10000000088'
+                ordery: 0
+              - product:
+                  sku: '10000000089'
+                ordery: 0
+              - product:
+                  sku: '10000000091'
+                ordery: 0
+              - product:
+                  sku: '10000000093'
+                ordery: 0
+              - product:
+                  sku: '10000000094'
+                ordery: 0
+              - product:
+                  sku: '10000000095'
+                ordery: 0
+          - pos: 20
+            cleanURLs:
+              - cleanURL: shoes
+            image:
+              path: shoes_6_2.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 80257
+              date: 1559317794
+            translations:
+              - code: en
+                name: Shoes
+            categoryProducts:
+              - product:
+                  sku: '10000000068'
+                ordery: 0
+              - product:
+                  sku: '10000000069'
+                ordery: 0
+              - product:
+                  sku: '10000000070'
+                ordery: 0
+              - product:
+                  sku: '10000000074'
+                ordery: 0
+              - product:
+                  sku: '10000000076'
+                ordery: 0
+              - product:
+                  sku: '10000000081'
+                ordery: 0
+              - product:
+                  sku: '10000000082'
+                ordery: 0
+              - product:
+                  sku: '10000000083'
+                ordery: 0
+              - product:
+                  sku: '10000000084'
+                ordery: 0
+          - pos: 30
+            cleanURLs:
+              - cleanURL: accessories
+            image:
+              path: bag_1.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 154680
+              date: 1559320882
+            translations:
+              - code: en
+                name: Accessories
+            categoryProducts:
+              - product:
+                  sku: '10000000096'
+                ordery: 0
+              - product:
+                  sku: '10000000097'
+                ordery: 0
+              - product:
+                  sku: '10000000098'
+                ordery: 0
+              - product:
+                  sku: '10000000099'
+                ordery: 0
+              - product:
+                  sku: '10000000100'
+                ordery: 0
+              - product:
+                  sku: '10000000101'
+                ordery: 0
+      - pos: 20
+        cleanURLs:
+          - cleanURL: beauty-and-health
+        image:
+          path: beauty_1.jpg
+          mime: image/jpeg
+          width: 732
+          height: 880
+          size: 46495
+          date: 1559892754
+        banner:
+          path: beauty_banner5.jpg
+          mime: image/jpeg
+          width: 2996
+          height: 520
+          size: 340745
+          date: 1559911154
+        translations:
+          - code: en
+            name: 'Beauty & Health'
+        children:
+          - pos: 10
+            cleanURLs:
+              - cleanURL: cosmetics
+            image:
+              path: beauty_2.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 102218
+              date: 1559894538
+            translations:
+              - code: en
+                name: Cosmetics
+            categoryProducts:
+              - product:
+                  sku: '10000000112'
+                ordery: 0
+              - product:
+                  sku: '10000000113'
+                ordery: 0
+              - product:
+                  sku: '10000000114'
+                ordery: 0
+              - product:
+                  sku: '10000000115'
+                ordery: 0
+              - product:
+                  sku: '10000000116'
+                ordery: 0
+              - product:
+                  sku: '10000000117'
+                ordery: 0
+          - pos: 10
+            cleanURLs:
+              - cleanURL: healthy-food-and-snacks
+            image:
+              path: food_11.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 84336
+              date: 1559898037
+            translations:
+              - code: en
+                name: 'Healthy Food & Snacks'
+            categoryProducts:
+              - product:
+                  sku: '10000000128'
+                ordery: 10
+              - product:
+                  sku: '10000000125'
+                ordery: 20
+              - product:
+                  sku: '10000000119'
+                ordery: 30
+              - product:
+                  sku: '10000000127'
+                ordery: 40
+              - product:
+                  sku: '10000000126'
+                ordery: 50
+              - product:
+                  sku: '10000000118'
+                ordery: 60
+              - product:
+                  sku: '10000000123'
+                ordery: 90
+              - product:
+                  sku: '10000000122'
+                ordery: 100
+              - product:
+                  sku: '10000000124'
+                ordery: 110
+        categoryProducts:
+          - product:
+              sku: '10000000112'
+            ordery: 0
+          - product:
+              sku: '10000000113'
+            ordery: 0
+          - product:
+              sku: '10000000114'
+            ordery: 0
+          - product:
+              sku: '10000000115'
+            ordery: 0
+          - product:
+              sku: '10000000118'
+            ordery: 0
+          - product:
+              sku: '10000000122'
+            ordery: 0
+          - product:
+              sku: '10000000123'
+            ordery: 0
+          - product:
+              sku: '10000000124'
+            ordery: 0
+          - product:
+              sku: '10000000125'
+            ordery: 0
+          - product:
+              sku: '10000000126'
+            ordery: 0
+          - product:
+              sku: '10000000127'
+            ordery: 0
+          - product:
+              sku: '10000000128'
+            ordery: 0
+      - pos: 30
+        cleanURLs:
+          - cleanURL: electronics
+        image:
+          path: elec_2.jpg
+          mime: image/jpeg
+          width: 732
+          height: 880
+          size: 132698
+          date: 1559820383
+        banner:
+          path: 9_electronic.jpeg
+          mime: image/jpeg
+          width: 2996
+          height: 520
+          size: 334750
+          date: 1560943954
+        translations:
+          - code: en
+            name: Electronics
+        children:
+          - pos: 10
+            cleanURLs:
+              - cleanURL: smart-watches
+            image:
+              path: elec_5.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 51859
+              date: 1559822955
+            translations:
+              - code: en
+                name: 'Smart watches'
+            categoryProducts:
+              - product:
+                  sku: '10000000109'
+                ordery: 0
+              - product:
+                  sku: '10000000107'
+                ordery: 10
+              - product:
+                  sku: '10000000105'
+                ordery: 20
+          - pos: 20
+            cleanURLs:
+              - cleanURL: mobile-phones
+            image:
+              path: elec_4.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 125842
+              date: 1559821038
+            translations:
+              - code: en
+                name: 'Mobile phones'
+            categoryProducts:
+              - product:
+                  sku: '10000000102'
+                ordery: 0
+              - product:
+                  sku: '10000000103'
+                ordery: 0
+              - product:
+                  sku: '10000000104'
+                ordery: 0
+          - pos: 30
+            cleanURLs:
+              - cleanURL: other
+            image:
+              path: elec_14.jpg
+              mime: image/jpeg
+              width: 732
+              height: 880
+              size: 16200
+              date: 1559828507
+            translations:
+              - code: en
+                name: Other
+            categoryProducts:
+              - product:
+                  sku: '10000000106'
+                ordery: 0
+              - product:
+                  sku: '10000000110'
+                ordery: 0
+              - product:
+                  sku: '10000000111'
+                ordery: 0
+        categoryProducts:
+          - product:
+              sku: '10000000103'
+            ordery: 0
+          - product:
+              sku: '10000000105'
+            ordery: 0
+          - product:
+              sku: '10000000106'
+            ordery: 0
+          - product:
+              sku: '10000000109'
+            ordery: 0
+          - product:
+              sku: '10000000110'
+            ordery: 0
+          - product:
+              sku: '10000000111'
+            ordery: 0
+
+XLite\Model\Config:
+  - { name: shop_closed, category: Internal, translations: [{ code: en, option_name: 'Close the shop temporarily (not available in Demo store)' }] }
+  - { name: customer_security, category: Security, value: N }
+  - { name: location_address, category: Company, value: '*Your company address*' }
+  - { name: location_state, category: Company, value: 576 }
+  - { name: location_city, category: Company, value: 'New York' }
+  - { name: location_zipcode, category: Company, value: '10001' }
+  - { name: company_name, category: Company, value: '*Your company name*' }
+  - { name: company_phone, category: Company, value: '(555) 555-5555' }
+  - { name: company_fax, category: Company, value: '' }
+  - { name: anonymous_state, category: Shipping, value: 547 }
+  - { name: anonymous_zipcode, category: Shipping, value: '90001' }
+  - { name: anonymous_city, category: Shipping, value: 'Los Angeles' }
+  - { name: time_zone, category: General, value: Europe/Moscow }
+  - { name: order_number_counter, category: General, value: 6 }
+  - { name: checkout_type, category: General, value: 'fast-lane' }
+  - { name: layout_type_home, category: Layout, value: 'one' }
+  - { name: enabled, category: BannerRotation, value: true }
+  - { name: isCloudFiltersEnabled, category: QSL\CloudSearch, value: true }
+
+
+XLite\Model\BannerRotationSlide:
+  - enabled: false
+    link: 'cart.php?target=category&category_id=6'
+    position: 50
+    image: { path: 1_2cosmentic_big.jpg, mime: image/jpeg, width: 3840, height: 884, size: 328874, date: 1560755009 }
+  - enabled: true
+    link: 'cart.php?target=category&category_id=8'
+    position: 30
+    image: { path: 1_1food_big_1.jpg, mime: image/jpeg, width: 3840, height: 884, size: 122740, date: 1560757732 }
+  - enabled: true
+    link: 'cart.php?target=category&category_id=9'
+    position: 40
+    image: { path: 1_4smart_big.jpg, mime: image/jpeg, width: 3840, height: 884, size: 122740, date: 1560950874 }
+  - enabled: true
+    link: 'cart.php?target=category&category_id=2'
+    position: 20
+    image: { path: 1_5fashion_1.jpg, mime: image/jpeg`, width: 3840, height: 884, size: 324727, date: 1560865514 }
+
+XLite\Module\XC\CustomProductTabs\Model\Product\CustomGlobalTab:
+  - global_tab:
+        enabled: true
+        position: 60
+    translations:
+      - code: en
+        name: "Shipping info"
+        content: "To replace this text with your store's actual shipping info, go to \"Catalog -> Product tabs\" and edit the Shipping info page."
+        brief_info: "We deliver worldwide"
+      - code: ru
+        name: "Доставка"
+        content: "Для замены данного текста на настоящий текст информации о доставке товаров из вашего магазина, перейдите в секцию \"Каталог -> Вкладки страницы товара\" и редактируйте страницу \"Доставка\"."
+        brief_info: "Мы доставляем по всему миру"
+
+  - global_tab:
+        enabled: true
+        position: 70
+    translations:
+      - code: en
+        name: "Payment methods"
+        content: "<p>We accept the following payment methods:</p><p><img class=\"fr-draggable fr-dii\" src=\"skins/customer/images/demo/tabs/logos-payments-tab.svg\" alt=\"Accepted payment methods\" style=\"width:400px;\" /></p><p>To replace this text with your store's actual info on payment methods, go to \"Catalog -&gt; Product tabs\" and edit the Payment methods page.</p>"
+        brief_info: '<p><img class="fr-draggable fr-dii fr-fil" src="skins/customer/images/demo/tabs/logos-payments-tab.svg" alt="Accepted payment methods" style="width:300px;" /></p>'
+      - code: ru
+        name: "Способы оплаты"
+        content: "<p>Мы принимаем следующие способы оплаты:</p><p><img class=\"fr-draggable fr-dii\" src=\"skins/customer/images/demo/tabs/logos-payments-tab.svg\" alt=\"Методы оплаты\" style=\"width:400px;\" /></p><p>Для замены данного текста на настоящий текст информации о способах оплаты для вашего магазина, перейдите в секцию \"Каталог -> Вкладки страницы товара\" и редактируйте страницу \"Способы оплаты\".</p>"
+        brief_info: '<p><img class="fr-draggable fr-dii fr-fil" src="skins/customer/images/demo/tabs/logos-payments-tab.svg" alt="Методы оплаты" style="width:300px;" /></p>'
+
+  - global_tab:
+        enabled: true
+        position: 80
+    translations:
+      - code: en
+        name: "Return Policy"
+        content: "This page is intended for your policy regarding returns and refunds.<br/><br/> Here you can provide information as to what products can be returned, how many days your customers have to return their purchase, whether they will receive a refund in the original form of payment, a replacement or a store credit, who pays for the shipping of the previously purchased products to the store, and so on.<br/><br/> To replace this text with your store's actual return policy, go to \"Catalog -> Product tabs\" and edit the Return Policy page."
+        brief_info: "We accept returns"
+      - code: ru
+        name: "Правила обмена и возврата"
+        content: "Данная страница предназначена для размещения информации о правилах обмена и возврата товаров.<br/><br/> Здесь вы можете указать, возврат каких товаров может быть осуществлен, в пределах какого срока ваши покупатели могут вернуть приобретенный товар, будет ли осуществлен возврат средств на исходный метод оплаты, либо же будет осуществлена замена товара или возврат средств в форме товарного кредита, кто оплачивает доставку ранее купленного товара обратно в магазин, и так далее.<br/><br/> Для замены данного текста на настоящий текст правил обмена и возврата товаров для вашего магазина, перейдите в секцию \"Каталог -> Вкладки страницы товара\" и редактируйте страницу \"Правила обмена и возврата\"."
+        brief_info: "Мы принимаем возвраты"

@@ -1,0 +1,8 @@
+Version 5.4.0.2
+
+Improvements (4)
+2019-03-15 - [Change] Layout adjustment for the list pages of various entities for when there are no existing entities yet. #XCN-9440 (Fedya Lavrentyev) #Core #Coupons #SimpleCMS #VolumeDiscounts #ThemeTweaker #ProductReviews #NewsletterSubscriptions #ProductTags #VendorMessages #News #CustomProductTabs
+2019-03-05 - [Change] Layout adjustment for the pages Volume discounts, Coupons, User roles, News, Front page according to the style guide. #XCN-9443 (Kirill Stadler) #Core #Coupons #VolumeDiscounts
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+2017-12-07 - [Change] Added an option for removing Classes & Global Attributes on the Remove data page. #BUG-5669 (Sergey Elmanov) #Core #Coupons #SimpleCMS #VolumeDiscounts #MultiVendor #MigrationWizard
+

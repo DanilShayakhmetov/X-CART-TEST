@@ -1,0 +1,30 @@
+{##
+ # Import failed section : errors 
+ #
+ # @ListChild (list="import.failed.content", weight="100")
+ #}
+
+{{ widget_list('import.failed.content.errors') }}
+
+{% if this.hasErrors() %}
+  <div class="alert alert-danger">
+  {{ t('Critical errors have been detected in the files you are trying to import. Check the manual to correct the errors and try again.') }}
+  {% set manualLinks = this.getManualLinks() %}
+  {% if manualLinks is not empty %}
+    <div>{{ t('CSV format tables') }}:</div>
+    <ul>
+      {% for file in manualLinks %}
+        <li><a href="{{ file.manualURL }}" target="_blank" class="external">{{ file.file }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  </div>
+{% endif %}
+{% if this.isBroken() %}
+  <div class="alert alert-danger">{{ t('Import has been cancelled.') }}</div>
+{% endif %}
+{% if this.hasErrorsOrWarnings() %}
+  <div class="download-errors">
+      <a href="{{ url('import', 'getErrorsFile') }}">{{ t('Download error file') }}</a>
+  </div>
+{% endif %}

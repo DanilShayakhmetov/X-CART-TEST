@@ -1,0 +1,8 @@
+Version 5.4.1.0
+
+Improvements (1)
+2019-11-08 - [Change] Email notifications text improved according to client feedback. #BUG-8022 (Fedya Lavrentyev) #Core #ContactUs #ProductVariants #MultiVendor #BlueSnap
+
+Fixes (1)
+2019-09-26 - [Bug] Changed the error message text in the Contact us addon which was displayed after entering an incorrect captcha code. #BUG-6755 https://bt.x-cart.com/view.php?id=50065 (Fedya Lavrentyev) #Core #ContactUs
+

@@ -1,0 +1,8 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-09-12 - [Change] Onboarding Wizard is now expanded on the first admin login. #BUG-7922 (Maxim Kuznetsov) #Onboarding
+
+Fixes (1)
+2019-07-18 - [Bug] JS error on the product details page in the Admin area. Fixed. #BUG-7722 (Fedya Lavrentyev) #Core #MarketPrice #Sale #Wholesale #FreeShipping #BulkEditing #Onboarding
+

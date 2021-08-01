@@ -1,0 +1,92 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Float color palette styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@froala-color-block-size: 80px;
+
+.colorpicker {
+  z-index: 1000;
+}
+
+.color-palette {
+  ul.colors {
+    .flex-display();
+    .flex-wrap(wrap);
+
+    padding: 20px 0;
+
+    li {
+      .froala-color-block(@froala-color-block-size);
+
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .new-color {
+    .froala-add-color-block(@froala-color-block-size);
+
+    box-shadow: none;
+  }
+
+}
+
+.froala-color-block(@size) {
+  display:  block;
+  width:    @size;
+  height:   @size;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  .remove {
+    display: none;
+    .align-items(center);
+    .justify-content(center);
+
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    .remove-back {
+      background: rgba(255, 255, 255, 0.46);
+
+      width: 44px;
+      height: 44px;
+      border-radius: 100%;
+      line-height: 43px;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    .remove {
+      .flex-display();
+    }
+  }
+}
+
+.froala-add-color-block(@size) {
+  display:  block;
+  width:    @size;
+  height:   @size;
+
+  border-radius: 10px;
+  border: dashed 1px #74afcf;
+
+  i {
+    .flex-display();
+    .align-items(center);
+    .justify-content(center);
+
+    color: #74afcf;
+
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+  }
+}

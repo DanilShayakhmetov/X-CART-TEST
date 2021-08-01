@@ -1,0 +1,7 @@
+Version 5.4.0.2
+
+Improvements (3)
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+2018-06-07 - [Change] Multiple changes to the layout and text of email notifications. #XCN-8914 (Sergey Elmanov) #ThemeTweaker #PINCodes #ProductReviews #MultiVendor #VendorMessages #NotFinishedOrders
+2018-06-04 - [Change] All notifications can now be edited in Webmaster mode. #XCN-8862 (Sergey Elmanov) #Core #ContactUs #Egoods #ThemeTweaker #CanadaPost #PINCodes #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+

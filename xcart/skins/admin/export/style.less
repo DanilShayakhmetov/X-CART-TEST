@@ -1,0 +1,201 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Import / export styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/**
+ * Export
+ */
+div.export-box {
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  form .subcontent {
+    max-width: 900px;
+  }
+}
+
+.ui-dialog div.export-box {
+  margin-bottom: 0;
+}
+
+.export-box .buttons {
+  margin: 0;
+  padding: 24px 0;
+}
+
+.export-box .buttons .export-button-container .export-blocked {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/**
+ * Export (begin)
+ */
+.export-begin .subcontent .parts ul {
+  margin-bottom: @rhythmic-unit * 3 / 2;
+}
+
+
+.export-begin .subcontent .parts li {
+  min-width: 25%;
+  float: left;
+  margin-bottom: (@rhythmic-unit / 2);
+}
+
+.export-begin .subcontent .parts li input {
+  vertical-align: middle;
+}
+
+.export-begin .subcontent .parts li label.disabled {
+  color: #c3c3c3;
+}
+
+.export-begin .subcontent .options ul {
+  min-width: 540px;
+}
+
+.export-begin .subcontent .options .table-label {
+  width: 200px;
+}
+
+/**
+ * Export (progress)
+ */
+
+.ui-dialog div.export-box.export-progress .subcontent {
+  padding: 0;
+}
+
+/**
+ * Export (completed)
+ */
+
+div.export-box .files {
+  .title {
+    margin: @rhythmic-unit 0;
+  }
+  .items-list-table {
+    width: 580px;
+
+    table.list {
+      tr:last-child td {
+        border-bottom: none;
+      }
+      td.file {
+        padding: 9px @rhythmic-unit;
+        .csv-icon {
+          display: block;
+          float: left;
+          height: 42px;
+          width: 20px;
+          margin-right: @rhythmic-unit / 2;
+          background-image: url(../../common/images/files/csv.svg);
+          background-size: 20px;
+          background-repeat: no-repeat;
+          background-position: 50%;
+        }
+        .csv-file {
+          a {
+            display: block;
+          }
+          .size {
+            font-size: @font-size-small;
+            line-height: 18px;
+            color: @color-tip;
+          }
+        }
+      }
+      td.date {
+        padding-right: @rhythmic-unit;
+      }
+    }
+  }
+
+  .icon-zip {
+    display: inline-block;
+    background-size: 16px;
+    width: 16px;
+    height: 20px;
+    background-image: url(../../common/images/files/zip.svg);
+    vertical-align: middle;
+  }
+}
+
+div.export-box.export-completed-popup {
+  width: 470px;
+
+  .title {
+    margin-top: 0;
+  }
+
+  .files .items-list-table {
+    width: 100%;
+  }
+
+  .export-completed-message {
+    margin: 0 0 @rhythmic-unit 0;
+  }
+}
+
+/**
+ * Export failed
+ */
+
+.export-failed .subcontent .errors {
+  padding: 2px 20px;
+}
+
+.export-failed .subcontent li {
+  padding-bottom: 12px;
+}
+
+.export-failed .subcontent p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#options-delimiter {
+  padding-top: 5px;
+}
+
+#options-delimiter li {
+  padding: 5px 0 0 0;
+  line-height: normal;
+}
+
+#options-delimiter input {
+  margin-right: 5px;
+}
+
+.files-option .help-wrapper {
+  display: inline-block;
+}
+
+.files-option .tooltip-main {
+  padding-top: 0;
+}
+
+.widget-popupexport .export-not-started .header {
+  display: none;
+}
+
+.export-not-started .content .message {
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 500px;
+}
+
+.export-not-started .content .icon {
+  font-size: 48px;
+  color: #EFBF1B;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}

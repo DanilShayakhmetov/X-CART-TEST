@@ -1,0 +1,36 @@
+{##
+ # Tabber template
+ #}
+{% if this.getTabberPages() %}
+  <div class="tabber tabbed-content-wrapper">
+    <div class="tabs-container">
+  
+      {% if this.isTabsNavigationVisible() %}
+        <div class="page-tabs">
+    
+          <ul>
+            {% for tabPage in this.getTabberPages() %}
+              <li class="tab{% if tabPage.selected %}-current{% endif %}{% if tabPage.subTabs %} has-subtabs{% endif %} tabkey-{{  tabPage.key }}">{% if tabPage.linkTemplate %}{% include tabPage.linkTemplate %}{%  else %}<a href="{{ tabPage.url }}">{{ tabPage.title|raw }}</a>{% endif %}
+                {% if tabPage.subTabs %}
+                    <span class="fa fa-angle-down"></span>
+                    <ul class="subtabs">
+                        {% for subTabKey, subTab in tabPage.subTabs %}
+                            <li class="subtab tabkey-{{  subTabKey }}"><a href="{{ subTab.url }}">{{ subTab.title|raw }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+          {% if this.isViewListVisible('page.tabs.after') %}
+            <div class="list-after-tabs">{{ widget_list('page.tabs.after') }}</div>
+          {% endif %}
+    
+        </div>
+      {% endif %}
+  
+      <div class="tab-content">{% if this.getBodyTemplate() %}{% include this.getBodyTemplate() %}{% endif %}</div>
+  
+    </div>
+  </div>
+{% endif %}

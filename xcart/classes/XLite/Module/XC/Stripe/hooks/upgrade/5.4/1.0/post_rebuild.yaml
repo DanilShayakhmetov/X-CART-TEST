@@ -1,0 +1,59 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: StripeApplePay
+    class: Module\XC\Stripe\StripeApplePay\Model\Payment\StripeApplePay
+    type: C
+    orderby: -10299
+    countries: [AT, AU, BE, BR, CA, CH, DE, DK, EE, ES, FI, FR, GB, GR, HK, IE, IN, IT, JP, LT, LU, LV, MX, MY, NL, 'NO', NZ, PL, PT, SE, SG, SI, SK, US]
+    translations: [{ code: en, name: 'Stripe (Apple / Google / Microsoft Pay)' }]
+    settings: [{ name: prefix, value: xc_apple }]
+
+XLite\Model\LanguageLabel:
+  - { name: 'Payment method is not available', translations: [{ code: 'en', label: 'Payment method is not available' }, { code: 'ru', label: 'Извините, метод оплаты не доступен.' }] }
+  - { name: 'Firstly, you have to connect to Stripe <a href="{{admin_link}}" target="_blank">here</a>', translations: [{ code: 'en', label: 'Firstly, you have to connect to Stripe <a href="{{admin_link}}" target="_blank">here</a> and fill in the respective pair of keys for the current "Test/Live mode"' }, { code: 'ru', label: 'Сначала вы должны установить соединение со Stripe <a href="{{admin_link}}" target="_blank">здесь</a>' }] }
+  - name: 'StripeJSerror amount_too_small'
+    translations: [{ code: 'en', label: 'The specified amount is less than the minimum amount allowed. Use a higher amount and try again.' }, { code: 'ru', label: 'Сумма заказа меньше минимально возможной. Увеличьте сумму заказа и попробуйте опять.' }]
+  - name: 'StripeJSerror amount_too_large'
+    translations: [{ code: 'en', label: 'The specified amount is greater than the maximum amount allowed. Use a lower amount and try again.' }, { code: 'ru', label: 'Сумма заказа больше максимально возможной. Уменьшите сумму заказа и попробуйте опять.' }]
+  - name: 'StripeJSerror authentication_required'
+    translations: [{ code: 'en', label: 'The payment requires authentication to proceed.' }, { code: 'ru', label: 'Платеж требует дополгительной аутентификации.' }]
+  - name: 'StripeJSerror card_declined'
+    translations: [{ code: 'en', label: 'The card has been declined.' }, { code: 'ru', label: 'Платежная карта отклонена.' }]
+  - name: 'StripeJSerror email_invalid'
+    translations: [{ code: 'en', label: 'The email address is invalid.' }, { code: 'ru', label: 'Неверный электронный адрес.' }]
+  - name: 'StripeJSerror expired_card'
+    translations: [{ code: 'en', label: 'The card has expired. Check the expiration date or use a different card.' }, { code: 'ru', label: 'Срок действия платежной карты истек, проверьте срок действия или попробуйте другую карту' }]
+  - name: 'StripeJSerror incorrect_address'
+    translations: [{ code: 'en', label: 'The card address is incorrect. Check the card address or use a different card.' }, { code: 'ru', label: 'Неверный адрес платежной карты, проверьте адрес или попробуйте другую карту.' }]
+  - name: 'StripeJSerror incorrect_cvc'
+    translations: [{ code: 'en', label: 'The card security code is incorrect. Check the card security code or use a different card.  ' }, { code: 'ru', label: 'Неверный секретный код платежной карты, проверьте секретный код или попробуйте другую карту.' }]
+  - name: 'StripeJSerror incorrect_number'
+    translations: [{ code: 'en', label: 'The card number is incorrect. Check the card number or use a different card.  ' }, { code: 'ru', label: 'Неверный номер платежной карты, проверьте номер или попробуйте другую карту.' }]
+  - name: 'StripeJSerror incorrect_zip'
+    translations: [{ code: 'en', label: 'The card ZIP code is incorrect. Check the card ZIP code or use a different card.  ' }, { code: 'ru', label: 'Неверный почтовый индекс платежной карты, проверьте почтовый индекс или попробуйте другую карту.' }]
+  - name: 'StripeJSerror invalid_cvc'
+    translations: [{ code: 'en', label: 'The card security code is invalid. Check the card security code or use a different card.  ' }, { code: 'ru', label: 'Неверный секретный код платежной карты, проверьте секретный код или попробуйте другую карту.' }]
+  - name: 'StripeJSerror invalid_expiry_year'
+    translations: [{ code: 'en', label: 'The card expiration year is incorrect. Check the card expiration year or use a different card.  ' }, { code: 'ru', label: 'Неверный год срока действия платежной карты, проверьте год срока действия или попробуйте другую карту.' }]
+  - name: 'StripeJSerror invalid_expiry_month'
+    translations: [{ code: 'en', label: 'The card expiration month is incorrect. Check the card expiration month or use a different card.  ' }, { code: 'ru', label: 'Неверный месяц срока действия платежной карты, проверьте месяц срока действия или попробуйте другую карту.' }]
+  - name: 'StripeJSerror invalid_number'
+    translations: [{ code: 'en', label: 'The card number is invalid. Check the card number or use a different card.  ' }, { code: 'ru', label: 'Неверный номер платежной карты, проверьте номер или попробуйте другую карту.' }]
+  - name: 'StripeJSerror postal_code_invalid'
+    translations: [{ code: 'en', label: 'The card ZIP code is invalid. Check the card ZIP code or use a different card.  ' }, { code: 'ru', label: 'Неверный почтовый индекс платежной карты, проверьте почтовый индекс или попробуйте другую карту.' }]
+  - name: 'Payment method is not available'
+    translations: [{ code: 'en', label: 'Payment method is not available' }, { code: 'ru', label: 'Извините, метод оплаты не доступен.' }]
+  - name: 'Firstly, you have to connect to Stripe <a href="{{admin_link}}" target="_blank">here</a>'
+    translations: [{ code: 'en', label: 'Firstly, you have to connect to Stripe <a href="{{admin_link}}" target="_blank">here</a> and fill in the respective pair of keys for the current "Test/Live mode"' }, { code: 'ru', label: 'Сначала вы должны установить соединение со Stripe <a href="{{admin_link}}" target="_blank">здесь</a>' }]
+  - name: 'To complete the StripeApplePay configuration'
+    translations:
+    - code: 'en'
+      label: 'To setup the payment method in your online store, follow the steps below:<ol style="padding-left: 20px; list-style-type: decimal;"><li>Make sure you have filled the Secret key	/Publishable key fields	for the <a target="_blank" href="{{admin_link}}">Stripe</a> method.</li><li><a target="_blank" href="https://stripe.com/docs/stripe-js/elements/payment-request-button#verifying-your-domain-with-apple-pay">Verifying</a> your domain with Apple Pay.</li></ol>'
+    - code: 'ru'
+      label: 'Для настройки платежного метода:<ol style="padding-left: 20px; list-style-type: decimal;"><li>Убедитесь, что вы заполнили поля "Secret key /Publishable key" для <a target="_blank" href="{{admin_link}}">Stripe метода</a>.</li><li><a target="_blank" href="https://stripe.com/docs/stripe-js/elements/payment-request-button#verifying-your-domain-with-apple-pay">Верифицировали</a> ваш домен для Apple Pay.</li></ol>'

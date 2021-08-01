@@ -1,0 +1,13 @@
+Version 5.4.0.8
+
+Improvements (1)
+2020-01-21 - [Change] Updated the list of countries in which payment methods are available. #BUG-8228 #Skrill #Paypal #TwoCheckout #Stripe #SagePay #DatatransUPP #AmazonPay #G2APay #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #BitPay #CCBill #ESelectHPP #Worldpay #FirstDataPayeezyGatewayHP #DIBSFlexWin #SecureTrading #InternetSecure #SecurePay #EGateway
+
+Fixes (6)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-03-11 - [Bug] Stripe. The payer was not returned to checkout in the case of a provider exception. Fixed. #BUG-8275 #Stripe
+2020-02-19 - [Bug] When editing an order with the status "Authorized" in AOM, clicking "Void" reset the status to "Awaiting payment" instead of "Cancelled". Fixed. #BUG-8325 #Core #Stripe #MultiVendor #Heartland
+2020-02-11 - [Bug] The call for js assignShadeOverlay in some cases did not match the function signature. Fixed. #BUG-8222 https://bt.x-cart.com/view.php?id=51375 #Core #Stripe
+2020-01-22 - [Bug] Added the logging of data exchange with Stripe provider. #BUG-7976 #Stripe
+2019-11-19 - [Bug] If clicking "Void" while editing an order with the status "Authorized" in AOM, the order status was changed to "Awaiting payment" instead of "Cancelled". Fixed. #BUG-7895 #Core #Stripe #MultiVendor
+

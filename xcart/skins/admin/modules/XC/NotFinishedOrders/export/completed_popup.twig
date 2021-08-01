@@ -1,0 +1,11 @@
+{##
+ # Export completed section
+ #}
+
+{% if this.isExportHasNFO() %}
+    <p class="has-nfo-message">
+        {{ t('Not finished orders are skipped during the export process. Change the fulfillment status of these orders to make it exported.') }}
+    </p>
+{% endif %}
+
+{% include 'export/completed_popup.twig' %}

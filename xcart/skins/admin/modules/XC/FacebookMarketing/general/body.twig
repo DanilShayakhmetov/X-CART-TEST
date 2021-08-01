@@ -1,0 +1,73 @@
+{# #
+ # Facebook Marketing general page
+#}
+{% if this.isFacebookConnected() or this.isPixelSet() %}
+  {% if this.isProductFeedGenerationNotFinished() %}
+    {{ widget('XLite\\Module\\XC\\FacebookMarketing\\View\\ProductFeedGeneration\\Progress') }}
+  {% else %}
+    <div class="facebook-marketing general">
+      {% if not this.isFacebookConnected() %}
+        <div class="alert alert-warning">
+          <div>
+            {{ this.getFacebookConnectAlert()|raw }}
+          </div>
+        </div>
+      {% else %}
+        <div class="alert alert-success">
+          {{ this.getFacebookConnectedMessage()|raw }}
+        </div>
+      {% endif %}
+      {{ widget('\\XLite\\Module\\XC\\FacebookMarketing\\View\\GoogleFeedBanner') }}
+      {% form '\\XLite\\Module\\XC\\FacebookMarketing\\View\\Form\\Settings' %}
+
+        <ul class="table facebook-marketing-table">
+          <li>
+            {% if this.isFacebookConnected() %}
+              {{ widget('\\XLite\\View\\FormField\\Input\\Text', fieldName='pixel_id', label='Facebook Pixel Id', value=this.getPixelId(), attributes={'readonly': 'readonly'}) }}
+            {% else %}
+              {{ widget('\\XLite\\View\\FormField\\Input\\Text', fieldName='pixel_id', label='Facebook Pixel Id', value=this.getPixelId()) }}
+            {% endif %}
+          </li>
+          <li>
+            {{ widget('\\XLite\\View\\FormField\\Input\\Text\\Percent', fieldName='view_content_value', label='Value for the "ViewContent" event on a product page is calculated as', help='Specify the percentage of users who complete the transaction (View content)', value=this.getViewContentValue(), max=100) }}
+          </li>
+          <li>
+            {{ widget('\\XLite\\View\\FormField\\Input\\Text\\Percent', fieldName='add_to_cart_value', label='Value for the "Add to cart" event is calculated as', help='Specify the percentage of users who complete the transaction (Add to cart)', value=this.getAddToCartValue(), max=100) }}
+          </li>
+          <li>
+            {{ widget('\\XLite\\View\\FormField\\Input\\Text\\Percent', fieldName='init_checkout_value', label='Value for the "InitiateCheckout" event is calculated as', help='Specify the percentage of users who complete the transaction (Initiate checkout)', value=this.getInitCheckoutValue(), max=100) }}
+          </li>
+          {% if not this.isFacebookConnected() %}
+            <li>
+              {{ widget('\\XLite\\View\\FormField\\Input\\Checkbox\\YesNo', fieldName='advanced_matching', label='Enable Advanced Matching', value=this.isAdvancedMatchingEnabled()) }}
+            </li>
+          {% endif %}
+          <li>
+            {{ widget('\\XLite\\View\\FormField\\Input\\Checkbox\\YesNo', fieldName='include_out_of_stock',
+              label=t('Include out of stock products into feed'), value=this.isIncludeOutOfStock()) }}
+          </li>
+          <li>
+            {{ widget('\\XLite\\Module\\XC\\FacebookMarketing\\View\\FormField\\Select\\RenewalFrequency',
+              fieldName='renewal_frequency', label='Frequency of Product Feed renewal', value=this.getRenewalFrequency()) }}
+          </li>
+          <li>
+            {% if this.isProductFeedGenerated() %}
+              {{ widget('\\XLite\\Module\\XC\\FacebookMarketing\\View\\FormField\\Label\\Send', label='Product Feed URL', value=this.getProductFeedUrl()) }}
+            {% endif %}
+          </li>
+        </ul>
+
+        {{ widget('\\XLite\\Module\\XC\\FacebookMarketing\\View\\StickyPanel\\Settings') }}
+
+      {% endform %}
+
+    </div>
+  {% endif %}
+{% else %}
+  <div class="facebook-marketing general">
+    <p>
+      {{ t('This app ties your X-Cart store with your Facebook account to help you unlock all the marketing opportunities Facebook offers. Upload products to Facebook catalogue, run and track and campaigns, optimize audience, and even add partners to manage your accounts')|raw }}
+    </p>
+    {{ widget('XLite\\View\\Button\\Link', label=t("Continue with Facebook"), location=this.getFacebookBusinessLoginUrl(this.getProductFeedUrl())) }}
+  </div>
+{% endif %}

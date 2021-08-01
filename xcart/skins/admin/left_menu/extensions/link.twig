@@ -1,0 +1,10 @@
+{##
+ # Left side menu link
+ #}
+<div class="line{% if this.getLabel() %} with-label{% endif %}">
+  <a href="{{ this.getLink() }}" class="link"{% if this.getTooltip() %} title="{{ this.getTooltip() }}"{% endif %}{% if this.getBlankPage() %} target="_blank"{% endif %}><span class="icon">{{ this.getIcon()|raw }}</span>{% if this.getTitle() %}<span class="title">{{ this.getTitle()|raw }}</span>{% endif %}</a>
+
+  {% if this.getActionWidget() %}
+    <div class="action-widget">{{ this.getActionWidget().display() }}</div>
+  {% endif %}
+</div>

@@ -1,0 +1,6 @@
+Version 5.4.2.7
+
+Fixes (2)
+2020-09-04 - [Bug] PayPal. Error when trying to pay for an order if the order Discount was greater or equal to the order Subtotal. Fixed. #BUG-8980 https://bt.x-cart.com/view.php?id=52055 #Paypal
+2020-09-04 - [Bug] PayPal Chechout onboarding can no longer be used on local X-Cart installations. #BUG-8908 #Paypal
+

@@ -1,0 +1,8 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-12-18 - [Change] The spelling of the word "fulfilment" in the text labels was fixed. #BUG-7332 (Shevelov Alexander) #Core #Egoods #PINCodes #NotFinishedOrders #CustomOrderStatuses
+
+Fixes (1)
+2019-12-25 - [Bug] The contents of an NFO was not changed after changing the list of products in the shopping cart. Fixed. #BUG-7608 (Pavel Veselovsky) #NotFinishedOrders
+

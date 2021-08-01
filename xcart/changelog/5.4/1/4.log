@@ -1,0 +1,10 @@
+Version 5.4.1.4
+
+Fixes (6)
+2020-05-04 - [Bug] Options of the display type "blocks" could not be selected on the category page with the setting "Force customer to choose product options before adding a product to cart" enabled. Fixed. #BUG-8667 https://bt.x-cart.com/view.php?id=51739 #Core #CrispWhiteSkin
+2020-05-01 - [Bug] Import of product-attributes.csv could not be done if not all the types of product attributes were present in the store. Fixed. #BUG-8642 https://bt.x-cart.com/view.php?id=51723 #Core
+2020-04-30 - [Bug] "cURL error 2: easy handle already used in multi handle" on servers with CentOS and curl 7.69.1. Fixed. #BUG-8639 https://bt.x-cart.com/view.php?id=51717 #Core #Service
+2020-04-29 - [Bug] JS error on product page in the Admin area if the product image alt text contained quotes. Fixed. #BUG-8655 https://bt.x-cart.com/view.php?id=51729 #Core
+2020-04-28 - [Bug] Error in the GDPR addon with the Standard skin active. Fixed. #BUG-8631 https://bt.x-cart.com/view.php?id=51705 #Core #ColorSchemes
+2020-04-27 - [Bug] Fatal error when choosing to recalculate for existing orders after a 5.4.0 ->  5.4.1 upgrage. Fixed. #BUG-8637 https://bt.x-cart.com/view.php?id=51707 #Core
+

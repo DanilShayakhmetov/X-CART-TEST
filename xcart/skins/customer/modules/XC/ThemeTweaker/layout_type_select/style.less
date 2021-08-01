@@ -1,0 +1,123 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Layout type select styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.xlite-layout-type-widget {
+  .table-label {
+    padding: 0;
+    float: left;
+  }
+  .table-value {
+    float: left;
+  }
+  label {
+    color: #4a4a4a;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .selected-option {
+    color: #9b9b9b;
+    font-size: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 70px;
+  }
+}
+
+.v-dropdown {
+  position: relative;
+
+  .v-dropdown-toggle {
+    padding: 10px;
+
+    &:hover {
+      cursor: pointer;
+
+      .selected-type svg polygon {
+        stroke: #1cb5fc;
+      }
+
+      .selected-type {
+        border-color: #1cb5fc;
+      }
+    }
+
+    & > span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .selected-type {
+      border-radius: 2px;
+      background-color: #ffffff;
+      border: solid 1px #c3c3c3;
+      padding: 4px;
+      line-height: 0;
+    }
+
+    .option-name {
+      display: none;
+    }
+  }
+
+  .v-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 7px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+  }
+
+  .v-dropdown-menu > li > a {
+    padding: 7px 15px;
+    display: block;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4a4a4a !important;
+
+    .option-name {
+      margin-left: 10px;
+    }
+
+    & > * {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: #1cb5fc !important;;
+
+      svg polygon {
+        stroke: #1cb5fc;
+      }
+    }
+  }
+
+  .v-dropdown-menu > li {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0
+  }
+}
+

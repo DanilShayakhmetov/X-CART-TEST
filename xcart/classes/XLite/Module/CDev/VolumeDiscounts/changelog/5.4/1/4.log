@@ -1,0 +1,5 @@
+Version 5.4.1.4
+
+Fixes (1)
+2020-07-20 - [Bug] Discount amount was recalculated after editing the order in AOM. Fixed. #BUG-8794 https://bt.x-cart.com/view.php?id=51869 #VolumeDiscounts
+

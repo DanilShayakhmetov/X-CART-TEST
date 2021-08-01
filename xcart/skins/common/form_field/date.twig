@@ -1,0 +1,12 @@
+{##
+ # Datepicker template
+ #}
+
+<span class="input-field-wrapper {{ this.getWrapperClass() }}">
+  {{ this.displayCommentedData(this.getCommentedData()) }}
+  <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+    <input{{ this.getAttributesCode()|raw }} />
+    <input type="hidden" name="{{ this.getName() }}" value="{{ this.getValueAsString() }}" class="datepicker-value-input" />
+  </div>
+</span>

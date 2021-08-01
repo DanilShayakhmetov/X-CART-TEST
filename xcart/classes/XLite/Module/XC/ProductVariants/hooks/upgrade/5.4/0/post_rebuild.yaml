@@ -1,0 +1,22 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/ProductVariants/low_variant_limit_warning
+    adminHeaderEnabled: true
+    adminGreetingEnabled: false
+    adminSignatureEnabled: true
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    editable: true
+    translations:
+      - code: en
+        name: 'Variant low limit warning'
+        description: 'This message is used to notify the administrator when the stock level of a product variant reaches the low stock limit as specified in the product details.'
+        adminSubject: 'You are running out of %product_name%'
+        adminText: '<h3 dir="ltr">Heads up!</h3><p dir="ltr">I see that some of your product variants are about to run out of stock.</p><p dir="ltr">%dynamic_message%</p><p dir="ltr">It&rsquo;s high time to replenish your supplies. You are not going to sell fresh air, are you?</p>'

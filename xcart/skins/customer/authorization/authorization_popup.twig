@@ -1,0 +1,27 @@
+{##
+ # Login
+ #}
+
+{{ widget_list('customer.signin') }}
+
+{% form this.getFormClass() %}
+
+<table class="login-form{% if this.isLocked() %} locked-out{% endif %}" {% if this.isLocked() %}data-time-left="{{ this.getTimeLeftToUnlock() }}"{% endif %}>
+
+  {{ widget_list('customer.signin.popup.fields') }}
+
+  <tbody class="timer-table-body">
+  <tr class="timer-header">
+    <td>{{ t('Login is locked out') }}</td>
+  </tr>
+  <tr class="timer-body">
+    <td>
+      {{ t('Time left') }}: <span id="timer">{{ this.getTimeLeftFormatted() }}</span>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+{% endform %}
+
+{{ widget_list('customer.signin.after') }}

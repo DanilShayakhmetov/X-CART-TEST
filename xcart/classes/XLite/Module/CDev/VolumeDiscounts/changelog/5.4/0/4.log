@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-08-21 - [Bug] With a large number of vendors, there were errors when loading a product page or when selecting a vendor on a product page or on the Volume discounts page. #BUG-6608 (Shevelov Alexander) #Core #VolumeDiscounts #MultiVendor
+

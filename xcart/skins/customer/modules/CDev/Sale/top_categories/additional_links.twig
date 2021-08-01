@@ -1,0 +1,9 @@
+{##
+ # Top categories additional links
+ #}
+
+{% for discount in this.getSaleDiscounts() %}
+  <li>
+    <a href="{{ this.getSalePageLink(discount) }}" {% if this.getCurrentDiscountId() == discount.getId() %}class="active"{% endif %}>{{ discount.getName() }}</a>
+  </li>
+{% endfor %}

@@ -1,0 +1,12 @@
+{##
+ # Layout editor show hidden blocks button
+ #
+ # @ListChild (list="layout_editor", weight="10")
+ #}
+
+<div class='layout-editor-hidden-blocks'>
+	<span class='layout-editor-hidden-blocks_icon'><i class="icon">{{ svg('modules/XC/ThemeTweaker/themetweaker/layout_editor/icons/hide.svg')|raw }}</i></span>
+	<span class='layout-editor-hidden-blocks-counter' v-text="hiddenCount"></span>
+	<span class='layout-editor-hidden-blocks_label'>{{ t('disabled blocks') }}</span>
+	<span class='layout-editor-hidden-blocks_message' v-if="!hiddenCount">{{ t('You are now in layout editing mode')|raw }}</span>
+</div>

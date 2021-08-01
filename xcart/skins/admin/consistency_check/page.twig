@@ -1,0 +1,11 @@
+{##
+ # Modified files page
+ #}
+
+{% if this.hasResults() %}
+  {{ widget('\\XLite\\View\\ConsistencyCheck\\Result', groups=this.getGroups()) }}
+{% else %}
+  <p>{{ t('Consistency has not yet been checked. Initiate an consistency check by clicking the button "Refresh consistency status".') }}</p>
+{% endif %}
+
+{{ widget('XLite\\View\\StickyPanel\\ConsistencyCheck') }}

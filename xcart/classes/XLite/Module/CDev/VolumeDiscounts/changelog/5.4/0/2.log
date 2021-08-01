@@ -1,0 +1,7 @@
+Version 5.4.0.2
+
+Improvements (3)
+2019-03-15 - [Change] Layout adjustment for the list pages of various entities for when there are no existing entities yet. #XCN-9440 (Fedya Lavrentyev) #Core #Coupons #SimpleCMS #VolumeDiscounts #ThemeTweaker #ProductReviews #NewsletterSubscriptions #ProductTags #VendorMessages #News #CustomProductTabs
+2019-03-05 - [Change] Layout adjustment for the pages Volume discounts, Coupons, User roles, News, Front page according to the style guide. #XCN-9443 (Kirill Stadler) #Core #Coupons #VolumeDiscounts
+2017-12-07 - [Change] Added an option for removing Classes & Global Attributes on the Remove data page. #BUG-5669 (Sergey Elmanov) #Core #Coupons #SimpleCMS #VolumeDiscounts #MultiVendor #MigrationWizard
+

@@ -1,0 +1,12 @@
+Version 5.4.1.0
+
+Improvements (2)
+2020-02-25 - [Change] Added the ability to control the Alt attribute in the logo upload widget in the Admin area and in Layout editor. #XCN-9839 #Core #SimpleCMS #ThemeTweaker #Onboarding #AMP
+2020-01-31 - [Change] Removed the redirect to the "Edited templates" list from the Edit template page in the Admin area after saving. Also, after saving a template, ia check of that template is initiated similar to the one performed in the Template editor in the Customer area. #BUG-8261 #ThemeTweaker
+
+Fixes (4)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-03-11 - [Bug] Hidden block entries in Layout editor got duplicated. Fixed. #BUG-8382 https://bt.x-cart.com/view.php?id=51512 #ThemeTweaker
+2020-02-27 - [Bug] The trash icon was displayed incorrectly for the Delete menu item in the logo upload widget. Fixed. #BUG-8289 #Core #ThemeTweaker
+2020-02-25 - [Bug] A new template was not getting saved in the template editor tree after cache rebuilding. Fixed. #BUG-8367 https://bt.x-cart.com/view.php?id=51495 #ThemeTweaker
+

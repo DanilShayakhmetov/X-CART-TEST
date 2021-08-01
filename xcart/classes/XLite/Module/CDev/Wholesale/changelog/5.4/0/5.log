@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-07-18 - [Bug] JS error on the product details page in the Admin area. Fixed. #BUG-7722 (Fedya Lavrentyev) #Core #MarketPrice #Sale #Wholesale #FreeShipping #BulkEditing #Onboarding
+

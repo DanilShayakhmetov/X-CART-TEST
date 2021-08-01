@@ -1,0 +1,33 @@
+{##
+ # Messages list
+ #}
+
+{% if this.hasResults() %}
+  <div class="table-wrapper">
+    <table class="messages">
+      <thead>
+      <tr>
+        <th class="select-all">
+          <div>
+            <input type="checkbox" value="1" class="selectAll not-significant" autocomplete="off">
+          </div>
+        </th>
+        <th class="link">
+          {{ t('Order #') }}
+        </th>
+        <th class="message-body">
+          {{ t('Message') }}
+        </th>
+        <th class="date">
+          {{ t('Date') }}
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for conversation in this.getPageData() %}
+        {% include 'modules/XC/VendorMessages/items_list/conversations/line.twig' %}
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endif %}

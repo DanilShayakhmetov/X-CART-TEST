@@ -1,0 +1,8 @@
+Version 5.4.0.7
+
+Fixes (4)
+2020-01-22 - [Bug] Stripe callbacks were accepted incorrectly. Fixed. #BUG-8234 https://bt.x-cart.com/view.php?id=51377 (Fedya Lavrentyev) #Stripe
+2020-01-22 - [Bug] Wrong styles were used for the button "Connect with Stripe". Fixed. #BUG-8006 (Shevelov Alexander) #Stripe
+2019-12-18 - [Bug] Notices in logs when accessing the transactions page (target=payment_transactions). Fixed. #BUG-7977 (Jamil Ainulov) #Core #Stripe
+2019-12-16 - [Bug] The transaction_id was not sent to Stripe in the Description field. Fixed. #BUG-7975 https://bt.x-cart.com/view.php?id=51056 (Jamil Ainulov) #Stripe
+

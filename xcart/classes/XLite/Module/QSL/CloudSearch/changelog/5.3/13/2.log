@@ -1,0 +1,5 @@
+Version 5.3.13.2
+
+[Improvement] Each filter gets a unique CSS class name based on the filter name (e.g. cloud-filters-filter-size) for easier styling and customization
+[Improvement] Max folded filter values parameter (which controls how many filter values can be displayed without being hidden with a "more" link) can now be overridden (default is 10)
+[Fix] Integration with Previous and Next product module had a bug when setting empty sort order

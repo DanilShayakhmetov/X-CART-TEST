@@ -1,0 +1,9 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-05-24 - [Change] Updated the information on the availability of payment methods in different countries. #BUG-7013 (Fedya Lavrentyev) #AuthorizeNet #Skrill #Paypal #TwoCheckout #Stripe #Robokassa #Qiwi #DatatransUPP #G2APay #Pilibaba #Beanstream #IdealPayments #SofortBanking #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #BitPay #CCBill #Worldpay #FirstDataPayeezyGatewayHP #Yandex Checkout #GlobalTransportSecure #PayFort #DIBSFlexWin #SecureTrading #OgoneEcommerce #ChronoPay #InternetSecure
+
+Fixes (2)
+2019-06-20 - [Bug] Minor adjustments of the admin area pages according to the styleguide. #BUG-7473 (Fedya Lavrentyev) #Core #Paypal #NewsletterSubscriptions #MultiVendor
+2019-05-29 - [Bug] Additional phone number validation for PayPal for marketplaces payment method. Improvement. #BUG-7369 https://bt.x-cart.com/view.php?id=50654 (Shevelov Alexander) #Paypal #MultiVendor
+

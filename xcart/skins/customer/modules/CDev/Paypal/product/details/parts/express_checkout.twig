@@ -1,0 +1,10 @@
+{##
+ # Express checkout
+ #
+ # @ListChild (list="product.details.page.info.form.buttons-added.cart-buttons", zone="customer", weight="150")
+ # @ListChild (list="product.details.quicklook.info.form.buttons-added.cart-buttons", zone="customer", weight="150")
+ # @ListChild (list="product.details.page.info.form.buttons.cart-buttons", zone="customer", weight="150")
+ # @ListChild (list="product.details.quicklook.info.form.buttons.cart-buttons", zone="customer", weight="150")
+ #}
+{{ widget('\\XLite\\Module\\CDev\\Paypal\\View\\Product\\ExpressCheckoutButton', product=this.product) }}
+

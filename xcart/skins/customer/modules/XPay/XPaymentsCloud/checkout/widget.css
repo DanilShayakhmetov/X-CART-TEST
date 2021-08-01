@@ -1,0 +1,23 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * X-Payments Cloud widget Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+#xpayments-iframe-container {
+  margin-bottom: 15px;
+}
+
+@supports (-webkit-appearance: -apple-pay-button) {
+  .apple-pay-button-place-order {
+    -webkit-appearance: -apple-pay-button;
+    overflow: hidden;
+    color: transparent !important;
+  }
+  .apple-pay-button-place-order span {
+    visibility: hidden;
+  }
+}

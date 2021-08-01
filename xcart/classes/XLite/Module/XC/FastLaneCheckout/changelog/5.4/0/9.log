@@ -1,0 +1,6 @@
+Version 5.4.0.9
+
+Fixes (2)
+2020-04-22 - [Bug] MV. When no vendors had available shipping methods, the message "You can remove their products from cart to purchase the other products." was shown. Fixed. #BUG-8541 #FastLaneCheckout #MultiVendor
+2019-04-09 - [Bug] Changed text color for Coupon discount and Volune discount on the checkout page. #BUG-8490 #Coupons #FastLaneCheckout
+

@@ -1,0 +1,15 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: "120+ supported payment gateways, such as PayPal, Authorize.net and etc."
+    translations:
+      - code: en
+        label: "120+ supported payment gateways, such as PayPal, Authorize.net and Opayo, will let you accept payments from all over the world in multiple currencies and languages, offline & online."
+      - code: ru
+        label: "Выберите из более чем 120 интеграций с платежными системами, включая Yandex.Кассу, Web-money и PayPal. Мы моддерживаем множество валют и языков, поэтому ваш магазин может работать для клиентов со всего мира."
+

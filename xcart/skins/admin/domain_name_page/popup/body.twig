@@ -1,0 +1,22 @@
+{##
+ # Domain available popup
+ #}
+<div class="domain-is-on-sale">
+  <div class="available-text">
+    {{ t('The domain are you looking for is available for registration:') }}
+  </div>
+
+  <div class="registrars">
+    {% for key,value in this.getRegistrars() %}
+      <div>
+        <a href="{{ this.getLink(value) }}" target="_blank">{{ key }}</a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="buttons-row">
+    <div class="button-container">
+      {{ widget('XLite\\View\\Button\\Simple', label=t('Cancel'), style='cancel-button') }}
+    </div>
+  </div>
+</div>

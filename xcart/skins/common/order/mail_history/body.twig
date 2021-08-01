@@ -1,0 +1,114 @@
+{##
+ # Mail history
+ #}
+
+<div class="mail-history">
+  <div class="title">
+    <h2><a href="{{ this.getOrderURL() }}">{{ t('Order X', {id: this.getOrder().getOrderNumber()}) }}</a></h2>
+  </div>
+
+  <div class="details">
+    <ul>
+      {% for index, block in this.getOrderHistoryEventsBlock() %}
+        <li class="block">
+          <ul class="block-item">
+            <li class="head">{{ index }}</li>
+            {% for event in block %}
+              <li class="event">
+                <ul class="event-details">
+                  <li class="date">{{ this.getDate(event) }}</li>
+
+                  {% if this.isDisplayDetails(event) %}
+                    <li class="details">
+                      <div class="action">
+                        <i data-interval="0" data-toggle="collapse"
+                           id="event-{{ event.eventId }}-action"
+                           data-target=".event-{{ event.eventId }}" class="fa fa-plus-square-o"></i>
+                      </div>
+                    </li>
+                  {% endif %}
+
+                  <li class="description">{{ this.getDescription(event) }}</li>
+
+                  <li class="author">
+                    {% if event.showAuthor() %}
+                      {% if event.getAuthor() %}
+                        <a href="{{ url('profile', '', {'profile_id': event.getAuthor().getProfileId()}) }}"
+                           data-toggle="popover"
+                           data-placement="top"
+                           data-trigger="hover"
+                           data-content="IP: {{ event.getAuthorIp() }}">
+                          {{ event.getAuthor().getLogin() }}
+                        </a>
+                      {% else %}
+                        {% if event.getAuthorName() %}
+                          <span class="removed-profile-name"
+                                data-toggle="popover"
+                                data-placement="top"
+                                data-trigger="hover"
+                                data-content="IP: {{ event.getAuthorIp() }}">
+          {{ event.getAuthorName() }}
+        </span>
+                        {% else %}
+                          <span class="no-author">{{ event.getAuthorIp() }}</span>
+                        {% endif %}
+                      {% endif %}
+                    {% endif %}
+                  </li>
+                </ul>
+
+                {% if this.getComment(event) %}
+                  <div id="event-{{ event.eventId }}"
+                       class="order-event-details event-{{ event.eventId }}">
+                    <div class="details">{{ this.getComment(event)|raw }}</div>
+                  </div>
+                {% endif %}
+
+                {% if this.getDetails(event) %}
+                  <div id="event-{{ event.eventId }}"
+                       class="order-event-details event-{{ event.eventId }}">
+                    <div class="details">
+                      <ul>
+                        {% for columnId, columnData in this.getDetails(event) %}
+                          <li class="order-history-object-detail-column">
+                            <ul>
+                              {% for cell_id, cell in columnData %}
+                                <li>
+                                  <span class="event-details-label">{{ cell.getName() }}:</span>
+                                  <span class="value">{{ cell.getValue() }}</span>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="customer">
+    <div class="placed-date">{{ t('Placed on DATE', {'date': this.getOrderDate()})|raw }}</div>
+    <div class="placed-customer">
+      {% if this.getProfileName() %}
+        <div class="name">
+          {% if this.hasProfilePage() %}
+            {{ t('Placed by _NAME_', {'name': this.getProfileName(), 'url': this.getProfileURL()})|raw }}
+          {% else %}
+            {{ t('Placed by NAME', {'name': this.getProfileName()})|raw }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if this.getProfileEmail() %}
+        <div class="profile-login">{{ this.getProfileEmail() }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>

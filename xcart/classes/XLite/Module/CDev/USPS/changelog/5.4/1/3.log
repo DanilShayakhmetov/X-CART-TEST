@@ -1,0 +1,5 @@
+Version 5.4.1.3
+
+Fixes (1)
+2020-09-18 - [Bug] USPS via PitneyBowes. A shipment could not be created for some methods because the shipping address did not include phoneNumber information. Fixed. #BUG-8995 #Core #USPS #MultiVendor
+

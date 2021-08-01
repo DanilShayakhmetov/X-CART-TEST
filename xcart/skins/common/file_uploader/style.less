@@ -1,0 +1,460 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * File uploader
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) '../bootstrap/css/initialize';
+
+div.file-uploader .input-delete {
+  display: none;
+}
+
+div.multiple-files .ui-state-highlight,
+div.file-uploader a.link,
+div.file-loading,
+div.file-uploader .preview,
+div.file-uploader {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+div.multiple-files .ui-state-highlight,
+div.file-uploader {
+  width: 120px;
+  height: 120px;
+
+  svg:not(:root) {
+    vertical-align: middle;
+  }
+}
+
+div.file-uploader a.link:hover,
+div.file-uploader a.link:focus {
+  text-decoration: none;
+}
+
+div.file-uploader .preview {
+  text-align: center;
+  padding: 0;
+  max-width: 120px;
+  max-height: 120px;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.file-uploader .preview img {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.items-list-table div.multiple-files .ui-state-highlight,
+.items-list-table div.file-uploader a.link,
+.items-list-table div.file-loading,
+.items-list-table div.file-uploader {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+}
+
+.items-list-table div.file-uploader .preview {
+  width: auto;
+  height: auto;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.items-list-table div.file-uploader,
+.items-list-table div.file-loading {
+}
+
+div.multiple-files .ui-state-highlight,
+div.multiple-files div.file-loading,
+div.multiple-files div.file-uploader {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+div.file-uploader,
+div.file-uploader.remove-mark:hover {
+  border: 1px solid #c3c3c3;
+}
+
+div.file-uploader.solid,
+div.file-uploader.remove-mark.solid:hover {
+  border-style: solid;
+}
+
+.items-list-table table.list tbody td div.file-uploader div.icon,
+div.file-uploader div.icon {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  font-size: 14px;
+  background: #fff;
+  color: #0f8dd0;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 4px 0 3px 0;
+  padding-top: 1px;
+}
+
+div.file-uploader div.help,
+div.file-uploader div.error {
+  font-size: 14px;
+  color: #808080;
+  line-height: 24px;
+  width: 100%;
+}
+
+.items-list-table table.list tbody td div.file-uploader div.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px 0;
+
+  .fa {
+    width: auto;
+  }
+}
+
+div.file-uploader .icon .fa,
+div.file-uploader .button-icon {
+  font-size: 14px;
+  vertical-align: baseline;
+
+  &.fa-trash-o {
+    vertical-align: middle;
+  }
+}
+
+div.file-uploader .button-icon + span {
+  margin-left: 5px;
+}
+
+.items-list-table div.file-uploader .icon .fa {
+  font-size: 10px;
+  top: -4px;
+  position: relative;
+}
+
+div.file-uploader:hover, div.file-uploader.open {
+  border-color: #0f8dd0;
+}
+
+div.file-uploader.open a[data-toggle=dropdown] div.icon,
+.link:hover[data-toggle=dropdown] div.icon {
+  background-color: #0f8dd0;
+  color: #ffffff;
+}
+
+.items-list-table table.list tbody td div.file-uploader:hover div.icon {
+  background: #0f8dd0;
+  color: #fff;
+}
+
+div.file-uploader .dropdown-menu {
+  left: 96px;
+  top: 126px;
+}
+
+.items-list-table div.file-uploader .dropdown-menu {
+  left: 10px;
+  top: 58px;
+  max-width: 300px;
+}
+
+.items-list-table div.file-uploader .dropdown-menu > li {
+  text-align: left;
+
+  &.message {
+    white-space: normal;
+    min-width: 300px;
+  }
+}
+
+div.file-uploader .dropdown-menu li a.from-computer:hover .button-icon.fa-sign-out,
+div.file-uploader a.from-computer .button-icon.fa-sign-out {
+  position: relative;
+}
+
+div.file-uploader input[type=file] {
+  display: none !important;
+}
+
+div.file-uploader .dropdown-menu .message {
+  padding: 10px 15px;
+  color: #bb9014
+}
+
+div.file-uploader .dropdown-menu .message i.fa {
+  font-size: 14px;
+  margin-right: 6px;
+  color: #ffbb15;
+}
+
+.items-list-table table.list div.file-uploader a {
+  text-decoration: none;
+
+  &.delete {
+    position: relative;
+  }
+}
+
+.items-list-table table.list div.file-uploader a.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.file-uploader i.icon,
+div.file-uploader i.icon:hover {
+  color: #f4f4f4;
+  font-size: 55px;
+}
+
+div.file-uploader a.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.file-uploader a.link .error {
+  font-size: 12px;
+  color: #bb9014;
+  text-align: center;
+  font-weight: 500;
+  max-width: 115px;
+  word-wrap: break-word;
+}
+
+.items-list-table div.file-uploader i.icon {
+  font-size: 25px;
+  width: auto;
+}
+
+div.file-uploader i.icon.warning {
+  color: #ffbb15;
+  font-size: 20px;
+  padding: 0;
+}
+
+.items-list-table div.file-uploader i.icon.warning {
+  font-size: 20px;
+  padding: 10px;
+}
+
+div.file-uploader.remove-mark div.preview {
+  filter: alpha(opacity=10);
+  opacity: .1;
+}
+
+div.file-uploader .dropdown-menu li.undelete,
+div.file-uploader.remove-mark .dropdown-menu li {
+  display: none;
+}
+
+div.file-uploader.remove-mark .dropdown-menu li.undelete {
+  display: list-item;
+}
+
+div.file-uploader.remove-mark .dropdown-menu li.undelete .menuitem {
+  position: relative;
+}
+
+div.file-uploader.remove-mark .dropdown-menu li.undelete .diagonal {
+  position: absolute;
+  top: 19px;
+  left: 9px;
+  background: #018ed3;
+  width: 20px;
+  height: 1px;
+  transform: rotate(-45deg);
+}
+
+#themetweaker-panel-loader-point div.file-uploader.remove-mark .dropdown-menu li.undelete .diagonal{
+  left: 15px;
+}
+
+div.file-uploader .dropdown-menu li.alt-text {
+  padding: 5px;
+}
+
+div.file-uploader .dropdown-menu li.alt-text .input-group {
+  display: none;
+
+  .input-group-addon {
+    height: auto;
+  }
+}
+
+div.file-uploader .dropdown-menu li.alt-text .input-group input {
+  width: 100%;
+  height: auto;
+}
+
+div.file-uploader .dropdown-menu li.alt-text .value b {
+  color: #154bab;
+  margin-right: 5px;
+}
+
+div.file-uploader .dropdown-menu li.alt-text .value {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 8px 12px;
+  overflow: hidden;
+  width: 188px;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+div.file-uploader .dropdown-menu li.alt-text .value:hover .right-fade {
+  display: none;
+}
+
+div.file-uploader .dropdown-menu li.alt-text .value:hover {
+  cursor: pointer;
+  background-color: #fcebb0;
+  border: 1px solid #fcebb0;
+}
+
+div.file-uploader .dropdown-menu {
+  min-width: 200px;
+  text-align: left;
+}
+
+div.file-uploader .spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  font-size: 3px;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(26, 189, 196, 0.2);
+  border-right: 1.1em solid rgba(26, 189, 196, 0.2);
+  border-bottom: 1.1em solid rgba(26, 189, 196, 0.2);
+  border-left: 1.1em solid #1abdc4;
+  transform: translateZ(0);
+  animation: load8 1.1s infinite linear;
+}
+
+div.file-uploader .spinner,
+div.file-uploader .spinner:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div.file-uploader a {
+  outline: 0 none;
+}
+
+.items-list-table table.list tbody tr.line.remove-mark div.file-uploader .dropdown-menu {
+  visibility: hidden;
+}
+
+.items-list-table table.list .inline-file-uploader .field .subfield,
+.items-list-table table.list .inline-file-uploader .field .subfield .table-value {
+  display: block;
+}
+
+.items-list-table table.list tbody td div.file-uploader {
+  .dropdown-menu {
+    .alt-text,
+    .alt-divider {
+      display: list-item;
+    }
+  }
+
+  div.alt {
+    display: none;
+  }
+}
+
+div.file-uploader {
+  .dropdown-menu {
+    .alt-text,
+    .alt-divider {
+      display: none;
+    }
+  }
+
+  &.loading {
+    & > :not(.spinner) {
+      display: none;
+    }
+  }
+
+  &:not(.ready) {
+    .link {
+      & > i {
+        display: none;
+      }
+    }
+  }
+
+  div.alt {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #fff;
+    color: #808080;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    border-radius: 0 4px 0 3px;
+    cursor: pointer;
+
+    & > .dropdown-toggle {
+      padding-top: 1px;
+    }
+
+    &.open,
+    &:hover {
+      color: #ffffff;
+      background: #0f8dd0;
+    }
+
+    .dropdown-menu {
+      left: 0;
+      top: 31px;
+      padding: 0;
+    }
+
+    &:not(:hover):not(.open).filled {
+      color: #0f8dd0;
+    }
+  }
+}

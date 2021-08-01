@@ -1,0 +1,138 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - name: Tabs
+    translations:
+      - code: en
+        label: Tabs
+      - code: ru
+        label: Вкладки
+  - name: 'New tab'
+    translations:
+      - code: en
+        label: 'New tab'
+      - code: ru
+        label: 'Новая вкладка'
+  - name: 'New Tab'
+    translations:
+      - code: en
+        label: 'New Tab'
+      - code: ru
+        label: 'Новая вкладка'
+  - name: 'The product tab has been updated'
+    translations:
+      - code: en
+        label: 'The product tab has been updated'
+      - code: ru
+        label: 'Вкладка обновлена'
+  - name: 'The product tab has been added'
+    translations:
+      - code: en
+        label: 'The product tab has been added'
+      - code: ru
+        label: 'Вкладка добавлена'
+  - name: 'Product tabs'
+    translations:
+      - code: en
+        label: 'Product tabs'
+      - code: ru
+        label: 'Информационные вкладки на карточке товара'
+  - name: 'Tabs imported'
+    translations:
+      - code: en
+        label: 'Tabs imported'
+      - code: ru
+        label: 'Импорт вкладок завершен'
+  - name: 'Brief info'
+    translations:
+      - code: en
+        label: 'Brief info'
+      - code: ru
+        label: 'Краткая информация'
+  - name: 'Manage global tabs'
+    translations:
+      - code: en
+        label: 'Manage global tabs'
+      - code: ru
+        label: 'Управление глобальными вкладками'
+  - name: 'Edit Globally'
+    translations:
+      - code: en
+        label: 'Edit Globally'
+      - code: ru
+        label: 'Редактировать глобально'
+  - name: 'Global product tabs'
+    translations:
+      - code: en
+        label: 'Global product tabs'
+      - code: ru
+        label: 'Глобальные вкладки страницы товара'
+  - name: 'learn more'
+    translations:
+      - code: en
+        label: 'Learn more'
+      - code: ru
+        label: Подробнее...
+  - name: 'Apply sort and view settings for all products'
+    translations:
+      - code: en
+        label: 'Apply sort and view settings for all products'
+      - code: ru
+        label: 'Применить сортировку и настройки видимости ко всем товарам'
+  - name: 'Brief info help'
+    translations:
+      - code: en
+        label: 'The text entered here will be displayed on the product details page on the storefront and will be followed by a "learn more" link pointing to the respective product tab.'
+      - code: ru
+        label: 'Данный текст будет отображаться в карточке товара на стороне витрины магазина и сопровождаться ссылкой вида "Подробнее...", ведущей на соответствующую вкладку страницы товара.'
+  - name: 'Global tab not found'
+    translations:
+      - code: en
+        label: 'Global tab "{{value}}" not found'
+      - code: ru
+        label: 'Глобальная вкладка товара "{{value}}" не найдена'
+  - name: 'Duplicated link'
+    translations:
+      - code: en
+        label: 'Field "link" value "{{value}}" is already being used for the global tab "{{globalTab}}"'
+      - code: ru
+        label: 'Значение поля "link" - "{{value}}" - уже используется для глобальной вкладки "{{globalTab}}"'
+  - name: 'Global tab label'
+    translations:
+      - code: en
+        label: Global
+      - code: ru
+        label: Глобальная
+  - name: "Tab displaying the product's detailed description. Added by the X-Cart core"
+    translations:
+      - code: en
+        label: "Tab displaying the product's detailed description. Added by the X-Cart core"
+      - code: ru
+        label: "Вкладка для отображения детального описания товара. Добавляется ядром X-Cart"
+  - name: "Tab displaying the product's attributes and other details. Added by the X-Cart core"
+    translations:
+      - code: en
+        label: "Tab displaying the product's attributes and other details. Added by the X-Cart core"
+      - code: ru
+        label: "Вкладка для отображения атрибутов товара и другой информации о товаре. Добавляется ядром X-Cart"
+  - name: "Tab displaying comments about the product. Added by the addons VK/GoSocial/Disqus"
+    translations:
+      - code: en
+        label: "Tab displaying comments about the product. Added by the addons {{modules}}"
+      - code: ru
+        label: "Вкладка для отображения комментариев о товаре. Добавляется модулями {{modules}}"
+  - name: 'The product with SKU "{{value}}" does not exist. The tab "{{tab_name}}" will not be imported'
+    translations:
+      - code: en
+        label: 'The product with SKU "{{value}}" does not exist. The tab "{{tab_name}}" will not be imported'
+      - code: ru
+        label: 'Товар с артикулом "{{value}}" не найден. Вкладка "{{tab_name}}" не будет импортирована.'
+  - name: "Added by modules"
+    translations:
+      - code: en
+        label: "Added by {{modules}}"

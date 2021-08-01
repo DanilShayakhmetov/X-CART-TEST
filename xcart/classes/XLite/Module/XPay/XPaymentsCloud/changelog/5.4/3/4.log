@@ -1,0 +1,7 @@
+Version 5.4.3.4
+
+- Fatal error occurs when adding a subscription product to the cart in some cases. Fixed.
+- Fatal error could occur in some cases when previewing mail notifications. Fixed.
+- Product description in the invoice was displayed with an error. Fixed.
+- It was not possible to translate "Saved cards" page label. Fixed.
+- "Checkout With Apple Pay" feature now shows detailed order totals in popup window.

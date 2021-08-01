@@ -1,0 +1,13 @@
+{##
+ # Rating value in product info
+ #
+ # @ListChild (list="product.details.page.info", weight="17")
+ #}
+
+{% if this.isVisibleAverageRatingOnPage() %}
+
+{% form '\\XLite\\Module\\XC\\Reviews\\View\\Form\\AverageRating' with {product_id: this.product.product_id} %}
+  {{ widget('XLite\\Module\\XC\\Reviews\\View\\Customer\\ProductInfo\\Details\\AverageRating', product=this.product) }}
+{% endform %}
+
+{% endif %}

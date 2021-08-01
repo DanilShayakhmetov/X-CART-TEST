@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-10-22 - [Bug] XSS vulnerability in the widgets for category selection and product class selection. Fixed. #BUG-8017 (Maxim Kuznetsov) #Core #SimpleCMS
+

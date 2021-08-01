@@ -1,0 +1,7 @@
+{##
+ # Add to Cart popup page: added product box template
+ #
+ # @ListChild (list="add2cart_popup.item.thumbnail", weight="100")
+ #}
+
+{{ widget('\\XLite\\View\\Image', image=this.item.getImage(), maxWidth=this.getIconWidth(), maxHeight=this.getIconHeight(), alt=this.product.name, className='photo') }}

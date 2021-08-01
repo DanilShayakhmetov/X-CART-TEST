@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-08-08 - [Change] Implemented Stripe Strong Customer Authentication. #XCN-9834 (Fedya Lavrentyev) #Stripe #FastLaneCheckout
+

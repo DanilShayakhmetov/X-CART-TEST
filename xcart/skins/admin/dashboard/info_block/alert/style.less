@@ -1,0 +1,59 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Dashboard info block alerts styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.infoblock-alerts {
+  margin-top: @rhythmic-unit / 2;
+
+  .infoblock-alert {
+    margin-top: @rhythmic-unit / 2;
+    background-color: @color-tip;
+    border-radius: @border-radius-base;
+    height: @rhythmic-unit * 2;
+    padding-left: @rhythmic-unit / 2;
+    padding-right: @rhythmic-unit / 2;
+
+    a:hover {
+      color: @color-background;
+      text-decoration: none;
+
+      .alert-message {
+        text-decoration: underline;
+      }
+    }
+
+    svg {
+      max-width: 20px;
+      max-height: 20px;
+    }
+
+    svg path {
+      fill: @color-background;
+    }
+
+    .alert-header {
+      .flex-display();
+      .align-items(center);
+      height: @rhythmic-unit * 2;
+      color: @color-background;
+    }
+
+    .alert-message {
+      .flex-grow(1);
+      margin-left: @rhythmic-unit / 2;
+    }
+
+    .alert-counter {
+      font-size: @font-size-large;
+    }
+
+    &.low-stock-products {
+      background-color: @color-error;
+    }
+  }
+}

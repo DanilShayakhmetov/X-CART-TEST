@@ -1,0 +1,17 @@
+{##
+ # Add PIN codes dialog.
+ #}
+
+{% form '\\XLite\\Module\\CDev\\PINCodes\\View\\Form\\AddPinCodesDialog' %}
+
+  <div class="add-pin-codes-dialog">
+    <div class="alert alert-info">{{ t('Please, type in the new PIN codes one per line.') }}</div>
+    <ul class="table">
+      <li>{{ widget('\\XLite\\View\\FormField\\Textarea\\Simple', fieldName='codes', label=t('PIN codes'), cols='64') }}</li>
+    </ul>
+    <div class="model-form-buttons">
+      {{ widget('\\XLite\\View\\Button\\Submit', style='action regular-main-button submit', label=t('Save')) }}
+    </div>
+  </div>
+
+{% endform %}

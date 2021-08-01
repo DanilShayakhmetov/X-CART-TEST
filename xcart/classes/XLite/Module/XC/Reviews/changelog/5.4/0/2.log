@@ -1,0 +1,17 @@
+Version 5.4.0.2
+
+Improvements (10)
+2019-04-05 - [Change] Layout adjustment for various pages according to the style guide. #XCN-9763 (Maxim Kuznetsov) #Core #SimpleCMS #ThemeTweaker #ProductReviews #NewsletterSubscriptions #MultiVendor #ProductTags #SystemFields #MailChimp #News #Facebook Commerce
+2019-03-27 - [Change] Added the settings static_page_clean_urls_format, product_clean_urls_format, vendor_clean_urls_format, news_clean_urls_format in etc/config.php which set the clean url format for the respective entities. #XCN-9642 (Shevelov Alexander) #Core #SimpleCMS #ProductReviews #MultiVendor #News
+2019-03-18 - [Change] Layout adjustment for the Translations and Edit labels pages according to the style guide. #XCN-9657 (Fedya Lavrentyev) #Core #ProductReviews
+2019-03-15 - [Change] Layout adjustment for the list pages of various entities for when there are no existing entities yet. #XCN-9440 (Fedya Lavrentyev) #Core #Coupons #SimpleCMS #VolumeDiscounts #ThemeTweaker #ProductReviews #NewsletterSubscriptions #ProductTags #VendorMessages #News #CustomProductTabs
+2019-01-28 - [Change] Added demo data for the editing of some email notifications. #XCN-9236 (Vladimir Semyonov) #ThemeTweaker #CanadaPost #ProductReviews #VendorMessages
+2019-01-14 - [Change] Improvement of the product page look & feel in the Customer area. Add to cart form minimization. #XCN-9321 (morven) #Core #Paypal #ProductAdvisor #Wholesale #ProductComparison #ProductVariants #ProductReviews #CrispWhiteSkin #ProductTags #FreeShipping
+2018-12-03 - [Change] UI improvement for pages with product lists: Home page/Category/Search. #XCN-9183 (morven) #Core #ProductAdvisor #ProductComparison #ProductReviews #CrispWhiteSkin
+2018-07-13 - [Change] Changed the default value of the useCaretButton parameter in the ADropdown widget. #BUG-6235 https://bt.x-cart.com/view.php?id=49325 (Sergey Elmanov) #Core #FileAttachments #Sale #RelatedProducts #ProductReviews #VendorMessages #BulkEditing #Facebook Commerce #GoogleFeed
+2018-06-07 - [Change] Multiple changes to the layout and text of email notifications. #XCN-8914 (Sergey Elmanov) #ThemeTweaker #PINCodes #ProductReviews #MultiVendor #VendorMessages #NotFinishedOrders
+2018-06-04 - [Change] All notifications can now be edited in Webmaster mode. #XCN-8862 (Sergey Elmanov) #Core #ContactUs #Egoods #ThemeTweaker #CanadaPost #PINCodes #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+
+Fixes (1)
+2019-01-30 - [Bug] Fatal error on some payment method pages: "Trying to call undefined method...". Fixed. #BUG-7009 (Vladimir Semyonov) #Core #AuthorizeNet #Stripe #SagePay #ProductReviews #DatatransUPP #YandexMoney #Beanstream #IdealPayments #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #CCBill #EPDQ #Worldpay #FirstDataPayeezyGatewayHP #Yandex Checkout #GlobalTransportSecure #PayFort #PoliPayment #DIBSFlexWin #SecureTrading
+

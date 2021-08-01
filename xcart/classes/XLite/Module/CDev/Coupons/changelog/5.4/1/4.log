@@ -1,0 +1,5 @@
+Version 5.4.1.4
+
+Fixes (1)
+2020-06-26 - [Bug] Popup anywhere. Popup date range was not getting validated when creating or editing a popup. Fixed. #BUG-8702 #Coupons #VolumeDiscounts #PopupAnywhere
+

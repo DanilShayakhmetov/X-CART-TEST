@@ -1,0 +1,247 @@
+@cs-active-filter-value-color: #000;
+
+[v-cloak] {
+  display: none;
+}
+
+.cloud-filters-filter-checkbox-container.checkbox {
+  line-height: 18px;
+  margin: 7px 0;
+}
+
+.cloud-filters-filter-label {
+  font-size: 13px;
+
+  &--zero-count {
+    color: #888;
+  }
+
+  &--toggled {
+    .cloud-filters-filter-label__color {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    .cloud-filters-filter-label__value {
+      color: @cs-active-filter-value-color;
+    }
+  }
+
+  &__value {
+    transition: color 300ms;
+  }
+
+  &__count {
+    color: #888;
+  }
+
+  &__color {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    vertical-align: text-top;
+    opacity: .8;
+    margin-right: 4px;
+    transition: all 300ms;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3) inset;
+
+    &--bordered {
+      border: 1px solid #888;
+    }
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+}
+
+.cloud-filters-filter-label:hover .cloud-filters-filter-label__color {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2) inset;
+}
+
+.cloud-filters-filter-label:hover .cloud-filters-filter-label__value {
+  color: @cs-active-filter-value-color;
+}
+
+.cloud-filters-filter {
+  margin-top: 30px;
+
+  &__more {
+    margin-left: 20px;
+    margin-top: -6px;
+    display: block;
+    font-size: 13px;
+  }
+
+  &__title {
+    font-weight: normal;
+  }
+}
+
+.cloud-filters-filter-price {
+  .form-inline .cloud-filters-filter-price__input {
+    display: inline-block;
+    width: 40%;
+    max-width: 90px;
+  }
+}
+
+.cloud-filters {
+  &__ {
+    &reset {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
+
+#cloud-filters {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+#cloud-filters-mobile {
+  padding-top: 26px;
+  background: #fafafa;
+  .mm-navbar {
+    display: block;
+  }
+  h4.title {
+    display: none;
+  }
+}
+
+#cf-slide-menu {
+  color: unset;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
+.items-list-products.items-list {
+  .list-header {
+    position: relative;
+  }
+
+  .head-h2,
+  .list-pager {
+    text-align: left;
+  }
+
+  &.empty-result .list-header {
+    padding: 0;
+    border: 0;
+
+    & > div:not(#cloud-filters-mobile-link) {
+      display: none;
+    }
+  }
+}
+
+#cloud-filters-mobile-link {
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  top: -80px;
+
+  .empty-result & {
+    top: -38px;
+  }
+
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 5px;
+  }
+}
+
+.skin-crisp_white-customer {
+  .cloud-filters-filter__title {
+    font-size: 16px;
+  }
+
+  .cloud-filters-filter-label__color {
+    margin-top: 2px;
+  }
+
+  .cloud-filters-filter__more {
+    margin-left: 40px;
+    margin-top: 12px;
+  }
+
+  #cf-slide-menu {
+    .mm-navbar {
+      height: 0;
+
+      .mm-title {
+        position: absolute;
+        top: 10px;
+        font-size: 18px;
+        color: #4a4a4a;
+      }
+    }
+
+    .mm-panel {
+      padding-top: 40px;
+      padding-left: 40px;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  #cloud-filters-mobile {
+    padding-top: 80px;
+    background: white;
+  }
+
+  #cloud-filters-mobile-link {
+    right: 35px;
+    top: 46px;
+  }
+
+  .brand-products #cloud-filters-mobile-link,
+  .new-arrivals-products #cloud-filters-mobile-link,
+  .sale-products #cloud-filters-mobile-link,
+  .category-products #cloud-filters-mobile-link {
+    top: -36px;
+  }
+
+  .items-list-products .list-header {
+    position: unset;
+  }
+}
+
+.skin-space_violet-customer {
+  .cloud-filters-filter-label__value {
+    color: #ebd0fc;
+  }
+
+  .cloud-filters-filter-label:hover .cloud-filters-filter-label__value,
+  .cloud-filters-filter-label--toggled .cloud-filters-filter-label__value {
+    color: #f7f1a7;
+  }
+
+  #cloud-filters-mobile {
+    background: #382d47;
+  }
+
+  #cf-slide-menu {
+    .mm-navbar .mm-close:before,
+    .mm-navbar .mm-close:after {
+      background-color: #bec2a9;
+    }
+  }
+}
+
+body {
+  height: unset !important;
+}

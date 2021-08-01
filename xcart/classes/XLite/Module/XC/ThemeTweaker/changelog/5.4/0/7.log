@@ -1,0 +1,7 @@
+Version 5.4.0.7
+
+Fixes (3)
+2019-09-26 - [Bug] Fixed the names of news blocks in the Layout editor. #BUG-6714 (Maxim Kuznetsov) #ThemeTweaker
+2019-09-17 - [Bug] With Labels editor enabled, HTML code was shown on some elements. Fixed. #BUG-6619 https://bt.x-cart.com/view.php?id=49812 (Maxim Kuznetsov) #Core #Coupons #ThemeTweaker #CanadaPost #ProductReviews #FastLaneCheckout #NewsletterSubscriptions #VendorMessages #AMP #AuthorizenetAcceptjs
+2019-09-13 - [Bug] Custom icons for logo, favicon and app icon could not be removed. Fixed. #BUG-7900 (Shevelov Alexander) #ThemeTweaker
+

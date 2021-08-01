@@ -1,0 +1,8 @@
+Version 5.4.1.5
+
+Improvements (1)
+2020-05-12 - [Change] Added info panels onto the admin dashboard. #XCN-10954 #Core #Onboarding
+
+Fixes (1)
+2020-05-08 - [Bug] Updated guzzlehttp to version 6.5.3 (because of the error "Use of undefined constant INTL_IDNA_VARIANT_UTS46"). #BUG-8683 #Core #Service
+

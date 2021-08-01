@@ -1,0 +1,12 @@
+Version 5.4.1.0
+
+Improvements (3)
+2020-02-20 - [Change] Minor UI improvements for the wholesale pricing table. #XCN-8795 #Core #Wholesale
+2020-02-06 - [Change] Added a new setting option "Apply product-specific discount to wholesale prices" on the product page; it allows to apply the Sale price of the product set in % to wholesale prices. #XCN-10177 #Sale #Wholesale #ProductVariants #MultiVendor
+2020-01-20 - [Change] "Sale" addon improvements: It is now possible to add Group Sales. #XCN-10175 #Core #Sale #VAT #Wholesale #ProductFilter #ProductVariants #MultiVendor #FlyoutCategoriesMenu
+
+Fixes (3)
+2020-02-21 - [Bug] The product price was not getting updated when switching the values in the qty box. Fixed. #BUG-8352 #Core #Wholesale
+2020-02-13 - [Bug] Warning on the wholesale prices page if the product price was $0. Fixed. #BUG-8276 #Wholesale
+2020-02-05 - [Bug] A price modifier was shown incorrectly if combined with a wholesale pricing discount. Fixed. #BUG-8130 https://bt.x-cart.com/view.php?id=51260 #Wholesale
+

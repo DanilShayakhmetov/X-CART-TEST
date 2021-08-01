@@ -1,0 +1,135 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * editable label styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+
+.xlite-translation-label:not(.disabled) {
+    cursor: text;
+    position: relative;
+    color: #3a3a3a;
+
+    /* new stacking context */
+    transform: translate3D(0, 0, 0);
+    display: inline-block;
+}
+
+.xlite-translation-label:not(.disabled):before {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    content: '';
+    background: yellow;
+    z-index: -1;
+}
+
+.xlite-translation-buttons {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.xlite-translation-popover {
+    max-width: 400px;
+    width: 100%;
+    z-index: 9999999999;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.xlite-translation-popover .xlite-translation-help .xlite-translation-label {
+    font-size: 12px;
+}
+
+.xlite-translation-button {
+    font-size: 14px;
+    z-index: 2;
+    pointer-events: auto !important;
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+    padding: 6px 9px;
+    border-radius: 3px;
+    background: #fff;
+    color: #386eaf;
+    min-width: 100px;
+}
+
+.xlite-translation-button:hover,
+.xlite-translation-button:focus {
+    color: #1cb5fc;
+    background: #fff;
+    box-shadow: inset 0 1px 4px -1px rgba(51,51,51,.2);
+}
+
+.xlite-translation-button.themetweaker-main-button {
+    color: #fff;
+    background: #f0ad4e;
+    border-color: #eea236;
+}
+
+.xlite-translation-button.themetweaker-main-button:hover,
+.xlite-translation-button.themetweaker-main-button:focus {
+    color: #fff;
+    background: #ed9c28;
+}
+
+.xlite-translation-button span {
+    font-weight: normal;
+    text-transform: none;
+}
+
+.xlite-translation-button:active {
+    outline: 0;
+    background-image: none;
+    box-shadow: -1px 0 0px 0px #ececec, 1px 0 0px 0px #ececec, inset 0 1px 0px 0px #ececec;
+    background: #f8fdff;
+}
+
+.xlite-translation-button.disabled {
+    background: none;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+
+.xlite-translation-value {
+    pointer-events: auto;
+}
+
+.xlite-translation-button + .xlite-translation-button {
+    margin-left: 10px;
+}
+
+.xlite-translation-wrapper {
+    display: block;
+    width: 100%;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: #555 !important;
+    background: #fff none !important;;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 14px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-bottom: 10px !important;
+}
+
+.xlite-translation-heading {
+    margin-bottom: 0px;
+}
+
+.xlite-translation-sub-value {
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.xlite-translation-sub-key {
+    background: yellow;
+    padding: 2px 1px;
+}

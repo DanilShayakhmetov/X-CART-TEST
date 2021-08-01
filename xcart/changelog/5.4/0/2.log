@@ -1,0 +1,111 @@
+Version 5.4.0.2
+
+Improvements (45)
+2019-04-05 - [Change] Layout adjustment for various pages according to the style guide. #XCN-9763 (Maxim Kuznetsov) #Core #SimpleCMS #ThemeTweaker #ProductReviews #NewsletterSubscriptions #MultiVendor #ProductTags #SystemFields #MailChimp #News #Facebook Commerce
+2019-04-05 - [Change] Look & Feel page layout adjustment according to the style guide. #XCN-9747 (Maxim Kuznetsov) #Core #ThemeTweaker
+2019-04-01 - [Change] Speed up of the category selection widget on the following pages: edit product, product list, featured and related products. #XCN-9182 (Fedya Lavrentyev) #Core
+2019-04-01 - [Change] New upgrade system. Now the upgrade system does not depend on whether the X-Cart store is operating or down. #XCN-8332 (Maxim Kuznetsov) #Core
+2019-03-29 - [Change] Layout adjustment for the order details page in the Admin area according to the style guide. #XCN-9736 (Fedya Lavrentyev) #Core
+2019-03-28 - [Change] Layout adjustment for the payment methods page according to the style guide. #XCN-9735 (Fedya Lavrentyev) #Core
+2019-03-27 - [Change] Layout adjustment for the pages of address fields setup and vendor form setup according to the style guide. #XCN-9742 (Maxim Kuznetsov) #Core #MultiVendor
+2019-03-27 - [Change] Added the settings static_page_clean_urls_format, product_clean_urls_format, vendor_clean_urls_format, news_clean_urls_format in etc/config.php which set the clean url format for the respective entities. #XCN-9642 (Shevelov Alexander) #Core #SimpleCMS #ProductReviews #MultiVendor #News
+2019-03-22 - [Change] Layout adjustments for payment method settings pages. #XCN-9658 (Fedya Lavrentyev) #Core #AuthorizeNet #Paypal #TwoCheckout #VendorMessages #BitPay #Yandex Checkout
+2019-03-21 - [Change] Layout adjustment for the zone editing page and the sticky panel on all the pages according to the style guide. #XCN-9659 (Fedya Lavrentyev) #Core #SalesTax #ThemeTweaker
+2019-03-20 - [Change] Layout adjustment for the pages of the Vendor Partners addon ("Multiple profiles for vendors") according to the style guide. #XCN-9023 (Fedya Lavrentyev) #Core #VendorPartners
+2019-03-18 - [Change] Layout adjustment for the Translations and Edit labels pages according to the style guide. #XCN-9657 (Fedya Lavrentyev) #Core #ProductReviews
+2019-03-18 - [Change] The "Test email configuration" form was moved from the page "E-Mail transfer settings" to a separate tab section "Test email configuration". #XCN-9112 (Kirill Stadler) #Core
+2019-03-15 - [Change] Layout adjustment for the list pages of various entities for when there are no existing entities yet. #XCN-9440 (Fedya Lavrentyev) #Core #Coupons #SimpleCMS #VolumeDiscounts #ThemeTweaker #ProductReviews #NewsletterSubscriptions #ProductTags #VendorMessages #News #CustomProductTabs
+2019-03-14 - [Change] Improvements for the appearance of software error messages in the Customer area. #BUG-6906 https://bt.x-cart.com/view.php?id=50270 (Maxim Kuznetsov) #Core
+2019-03-14 - [Change] Weight, SKU, UPC/ISBN are now displayed on the Specification tab of the product page. #BUG-7147 (Maxim Kuznetsov) #Core
+2019-03-12 - [Change] Adjustments for the Classes & attributes page according to the style guide. #XCN-9442 (Kirill Stadler) #Core
+2019-03-12 - [Change] Removed the default code from Custom css to avoid confusion. Added a comment with a link to the document on using custom css. #BUG-4748 (Kirill Stadler) #Core
+2019-03-11 - [Change] Adjustments for the pages Wholesale prices and File attachments according to the style guide. #XCN-9441 (Fedya Lavrentyev) #Core #Egoods #FileAttachments #Wholesale
+2019-03-05 - [Change] Layout adjustment for the pages Volume discounts, Coupons, User roles, News, Front page according to the style guide. #XCN-9443 (Kirill Stadler) #Core #Coupons #VolumeDiscounts
+2019-03-04 - [Change] Adjustments for the Tax classes, Sales Tax and E-Mail transfer settings pages according to the style guide. #XCN-9445 (Kirill Stadler) #Core #SalesTax
+2019-03-04 - [Change] Adjustments for the Countries, Zones, States, Menus and Shipping Methods pages according to the style guide. #XCN-9444 (Kirill Stadler) #Core #SimpleCMS
+2019-02-17 - [Change] The style "image-rendering: -webkit-optimize-contrast;" is no longer used for images. #BUG-7096 (Kirill Stadler) #Core #CrispWhiteSkin
+2019-02-12 - [Change] JS libs updated. #XCN-9391 (Fedya Lavrentyev) #Core #ThemeTweaker #ProductFilter #ProductComparison #CrispWhiteSkin #Onboarding
+2019-02-11 - [Change] Improvement of the mobile menu look & feel. #XCN-9468 (Fedya Lavrentyev) #Core #CrispWhiteSkin
+2019-02-01 - [Change] Minimum PHP and MySQL requirements updated. Now the minimum required PHP version is 7.2.0, minimum required MySQL version is 5.7.7. #BUG-6900 (Kirill Stadler) #Core
+2019-01-28 - [Change] Added optional support for utf8mb4 encoding for MySQL. Added the setting charset to etc/config.php. #XCN-9260 https://bt.x-cart.com/view.php?id=49897 (Kirill Stadler) #Core
+2019-01-14 - [Change] Improvement of the product page look & feel in the Customer area. Add to cart form minimization. #XCN-9321 (morven) #Core #Paypal #ProductAdvisor #Wholesale #ProductComparison #ProductVariants #ProductReviews #CrispWhiteSkin #ProductTags #FreeShipping
+2019-01-11 - [Change] PHP libs update. #XCN-9387 (Kirill Stadler) #Core
+2018-12-21 - [Change] Optimized the number of queries at the opening of a category page. #BUG-6519 (Vladimir Semyonov) #Core
+2018-12-20 - [Change] Added a widget to the customer/vendor registration form showing how strong a password is. #BUG-4859 https://bt.x-cart.com/view.php?id=47944 (Fedya Lavrentyev) #Core #CrispWhiteSkin
+2018-12-03 - [Change] UI improvement for pages with product lists: Home page/Category/Search. #XCN-9183 (morven) #Core #ProductAdvisor #ProductComparison #ProductReviews #CrispWhiteSkin
+2018-09-11 - [Change] Code improvement for core.extend.js #BUG-5849 (Maxim Kuznetsov) #Core
+2018-09-07 - [Change] Improvement of the import of less files: A less file can inherit properties from the less file of the parent skin; the less files of the currently active skin now replace the same less files from the parent skin. #XCN-9033 (Sergey Elmanov) #Core
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+2018-07-24 - [Change] Next/previous order feature can now take into account order search results. #BUG-5567 https://bt.x-cart.com/view.php?id=48589 (Sergey Elmanov) #Core
+2018-07-20 - [Change] Code refactoring: There was not a good way to override the template skins/customer/signin/signin.twig. Fixed. #BUG-6361 https://bt.x-cart.com/view.php?id=49485 (Sergey Elmanov) #Core #CrispWhiteSkin
+2018-07-13 - [Change] Changed the default value of the useCaretButton parameter in the ADropdown widget. #BUG-6235 https://bt.x-cart.com/view.php?id=49325 (Sergey Elmanov) #Core #FileAttachments #Sale #RelatedProducts #ProductReviews #VendorMessages #BulkEditing #Facebook Commerce #GoogleFeed
+2018-07-06 - [Change] Improvements for Webmaster Kit settings. #BUG-6047 (Sergey Elmanov) #Core #WebmasterKit
+2018-06-08 - [Change] Improvement of product search in the Admin area: The user can now specify the search mode choosing among the options "Any word", "All words" and "Exact phrase". By default, "All words" is used. #BUG-6135 (Eugene Dementjev) #Core
+2018-06-04 - [Change] All notifications can now be edited in Webmaster mode. #XCN-8862 (Sergey Elmanov) #Core #ContactUs #Egoods #ThemeTweaker #CanadaPost #PINCodes #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+2018-03-28 - [Change] Removed the unused settings of the "Admin zone settings" section. #BUG-6146 (Sergey Elmanov) #Core
+2018-03-06 - [Change] Code refactoring: Now a single function is responsible for random hash generation. #BUG-5757 (Sergey Elmanov) #Core #Facebook Commerce #Zapier #GoogleFeed
+2017-12-07 - [Change] Added an option for removing Classes & Global Attributes on the Remove data page. #BUG-5669 (Sergey Elmanov) #Core #Coupons #SimpleCMS #VolumeDiscounts #MultiVendor #MigrationWizard
+2017-09-15 - [Change] Shipping options based on subtotal did not take into account coupon discounts. #BUG-5449 https://bt.x-cart.com/view.php?id=48442 (Fedya Lavrentyev) #Core
+
+Fixes (60)
+2019-04-05 - [Bug] A closed storefront showed as a white screen. #BUG-7243 (Shevelov Alexander) #Core
+2019-04-05 - [Bug] Fixed a layout issue related to the conflicting URLs error message. #BUG-7223 (Shevelov Alexander) #Core
+2019-04-05 - [Bug] Layout adjustment for the settings page of the Facebook & Instagram ads addon according to the style guide. #BUG-7219 (Fedya Lavrentyev) #Core #Facebook Commerce
+2019-04-05 - [Bug] The upgrade tool was not working if a port was specified in the URL. Fixed. #BUG-7261 (Maxim Kuznetsov) #Core
+2019-04-03 - [Bug] Layout adjustment for Customer area popups according to the style guide. #BUG-7194 (Maxim Kuznetsov) #Core #CrispWhiteSkin
+2019-04-02 - [Bug] Layout adjustment for the States page. #BUG-7220 (Fedya Lavrentyev) #Core
+2019-04-02 - [Bug] Layout adjustment for the currencies page. #BUG-7215 (Fedya Lavrentyev) #Core #MultiCurrency
+2019-04-02 - [Bug] Layout adjustment for the add payment methods page. #BUG-7038 (Shevelov Alexander) #Core
+2019-04-01 - [Bug] The installer now supports PHP 5.6. #BUG-7226 (Fedya Lavrentyev) #Core
+2019-04-01 - [Bug] It was not possible to add to select a non-existent product tag. Fixed. #BUG-7212 (Shevelov Alexander) #Core
+2019-04-01 - [Bug] The Clean URL field was displayed incorrectly on the news editing page and the static page editing page. Fixed. #BUG-7124 (Shevelov Alexander) #Core
+2019-04-01 - [Bug] URL parameters were reset after changing the layout/sorting. Fixed. #BUG-6758 (Fedya Lavrentyev) #Core
+2019-03-28 - [Bug] Search was performed incorrectly in a non-root category within the Add Featured products popup. #BUG-7214 (Fedya Lavrentyev) #Core #FeaturedProducts
+2019-03-27 - [Bug] Fatal error "Error (code: 0): Call to a member function getEnabledForCustomer() on null" after choosing to resend access link. Fixed. #BUG-7090 (Fedya Lavrentyev) #Core #ThemeTweaker
+2019-03-23 - [Bug] Top messages were not showing on the email notification editing page. Fixed. #BUG-7111 (Fedya Lavrentyev) #Core
+2019-03-22 - [Bug] Edit button display issues on the zones list. Fixed. #BUG-7196 (Maxim Kuznetsov) #Core
+2019-03-19 - [Bug] JS error "Uncaught TypeError: Cannot read property \'css\' of null;" when searching by tag in the Customer area. Fixed. #BUG-7170 (Maxim Kuznetsov) #Core
+2019-03-19 - [Bug] Related products were displayed incorrectly in Multivendor mode. #BUG-7163 (Maxim Kuznetsov) #Core #RelatedProducts #Yandex Checkout
+2019-03-18 - [Bug] Module information was not shown on the GDPR activities page. Fixed. #BUG-7183 (Maxim Kuznetsov) #Core #GDPR
+2019-03-15 - [Bug] Minor improvements for Standard skin and Color Schemes. #BUG-7115 (Maxim Kuznetsov) #Core #ProductComparison #ColorSchemes
+2019-03-15 - [Bug] In multiple file upload, the uploaded images used to be sorted according to which image had been uploaded faster. Now they are sorted according to the order in which we get them from the system file selection window. #BUG-7080 https://bt.x-cart.com/view.php?id=50448 (Maxim Kuznetsov) #Core
+2019-03-15 - [Bug] Layout adjustments for the Admin area dashboard according to the style guide. #BUG-5766 (Maxim Kuznetsov) #Core #Paypal #WebmasterKit #MultiVendor #Onboarding
+2019-03-06 - [Bug] Incorrect installation on Windows servers. Fixed. #BUG-7113 (Fedya Lavrentyev) #Core
+2019-02-19 - [Bug] Date and time at which a tracking number was added are now displayed on the order page in the Admin area. #BUG-7078 (Fedya Lavrentyev) #Core
+2019-02-15 - [Bug] Layout issues on the dashboard. Fixed. #BUG-7056 (Fedya Lavrentyev) #Core
+2019-02-13 - [Bug] When configuring a coupon, replacing invalid field values with valid ones did not result in the activation of the "Create" button. Fixed. #BUG-7085 (Fedya Lavrentyev) #Core
+2019-02-13 - [Bug] Incorrect highlighting of input fields in the Admin area. #BUG-7059 (Fedya Lavrentyev) #Core
+2019-02-12 - [Bug] Incorrect sorting by product_id as a result of searching by SKU. Fixed. #BUG-7026 (Kirill Stadler) #Core
+2019-02-11 - [Bug] Invalid field values in the credit card form were not highlighted as invalid after clicking "Place Order". Fixed. #BUG-6631 (Vladimir Semyonov) #Core
+2019-02-08 - [Bug] When creating a news message, completing the optional Date field was required. Fixed. #BUG-6968 (Vladimir Semyonov) #Core
+2019-02-06 - [Bug] Some required keys were missing for the xc_payment_methods table. Fixed. #BUG-6853 (Vladimir Semyonov) #Core
+2019-02-06 - [Bug] Fixed a potential fatal error on the invoice page for the case when an order profile had no address associated with it. #BUG-6512 (Vladimir Semyonov) #Core #MultiVendor
+2019-02-05 - [Bug] Updated the bernard/bernard lib. #BUG-7032 (Kirill Stadler) #Core
+2019-02-01 - [Bug] Added a cookie related setting SameSite = lax | strict to the section [other] in etc/config.php; the value by default is lax. #BUG-7019 https://bt.x-cart.com/view.php?id=50406 (Vladimir Semyonov) #Core #MailChimp #NextPreviousProduct
+2019-01-31 - [Bug] Minor improvement in Core/Task/Base/Periodic.php (added model merge). #BUG-6654 https://bt.x-cart.com/view.php?id=49872 (Vladimir Semyonov) #Core
+2019-01-30 - [Bug] Fatal error on some payment method pages: "Trying to call undefined method...". Fixed. #BUG-7009 (Vladimir Semyonov) #Core #AuthorizeNet #Stripe #SagePay #ProductReviews #DatatransUPP #YandexMoney #Beanstream #IdealPayments #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #CCBill #EPDQ #Worldpay #FirstDataPayeezyGatewayHP #Yandex Checkout #GlobalTransportSecure #PayFort #PoliPayment #DIBSFlexWin #SecureTrading
+2019-01-24 - [Bug] The language could not be switched on the email notification editing page. Fixed. #BUG-7006 (Shevelov Alexander) #Core
+2018-12-28 - [Bug] Fatal error if php-dom extension was not enabled on the server. Fixed. #BUG-6096 (Vladimir Semyonov) #Core #OneCIntegration
+2018-12-25 - [Bug] Database restoration (Restore database) failed. Fixed. #BUG-6933 (Fedya Lavrentyev) #Core
+2018-12-25 - [Bug] A new banner could not be created. Fixed. #BUG-6918 (Fedya Lavrentyev) #Core
+2018-12-25 - [Bug] Minor improvements for the email notifications page in the Admin area. #BUG-6716 (Vladimir Semyonov) #Core #ThemeTweaker
+2018-12-20 - [Bug] A subcategory could be specified as a parent category. Fixed. #BUG-6919 (Vladimir Semyonov) #Core
+2018-12-19 - [Bug] Adding to cart from the quick view popup did not work. Fixed. #BUG-6920 (Vladimir Semyonov) #Core #CrispWhiteSkin
+2018-12-17 - [Bug] Incorrect order subtotal calculation after applying a coupon and a discount to the shopping cart. Fixed. #BUG-6905 (Vladimir Semyonov) #Core
+2018-12-17 - [Bug] Order history function was working incorrectly. Fixed. #BUG-6904 (Vladimir Semyonov) #Core
+2018-12-17 - [Bug] Offline payment methods could not be added. Fixed. #BUG-6895 (Vladimir Semyonov) #Core
+2018-12-17 - [Bug] Offline payment methods could not be added. Fixed. #BUG-6887 (Vladimir Semyonov) #Core
+2018-11-29 - [Bug] When removing an order, the action confirmation was requested twice. Fixed. #BUG-6744 (Vladimir Semyonov) #Core
+2018-11-29 - [Bug] With the Order processed notification disabled, if an order was created with the Paid status, the enabled Order created notification was not sent. Fixed. #BUG-6606 https://bt.x-cart.com/view.php?id=49773 (Vladimir Semyonov) #Core
+2018-11-28 - [Bug] Removed the drag & drop feature for adding products to the shopping cart. #BUG-6683 https://bt.x-cart.com/view.php?id=49910 (morven) #Core
+2018-09-20 - [Bug] Code improvement to prevent deadlocks when a store is functioning under load. #BUG-6061 (Kirill Stadler) #Core #MultiVendor
+2018-09-03 - [Bug] Removed the permission to edit the content of the home page for the role of Catalog manager. #BUG-6601 (Sergey Elmanov) #Core #FeaturedProducts
+2018-07-13 - [Bug] The name of a shipping service for admin is now defined in the yaml file only. #BUG-6055 https://bt.x-cart.com/view.php?id=49148 (Sergey Elmanov) #Core #AustraliaPost #USPS #CanadaPost #FedEx #UPS #EMS #PitneyBowes #ShippingCalc #DHL
+2018-07-13 - [Bug] Added an option for core reset via hotkey. #BUG-6046 (Eugene Dementjev) #Core
+2018-07-06 - [Bug] Changed the default checkbox in Admin. #BUG-6198 (Eugene Dementjev) #Core
+2018-05-08 - [Bug] Incorrect count of recent orders. Fixed. #BUG-5807 (Sergey Elmanov) #Core
+2018-03-28 - [Bug] Minor optimization of SQL requests. #BUG-5545 https://bt.x-cart.com/view.php?id=48518 (Sergey Elmanov) #Core
+2018-02-01 - [Bug] The Save button on the sticky panel in the Admin area is blocked after the first click to prevent multiple form submission. #BUG-5606 (Eugene Dementjev) #Core
+2017-12-05 - [Bug] The skin now defines the maximum logo image size. #BUG-5329 (Michael Lipinski) #Core #SimpleCMS #CrispWhiteSkin
+2017-11-20 - [Bug] Attribute price modifier was not taken into account in the wholesale table. #BUG-5739 https://bt.x-cart.com/view.php?id=48719 (Sergey Elmanov) #Core #Wholesale
+

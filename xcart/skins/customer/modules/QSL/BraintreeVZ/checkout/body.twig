@@ -1,0 +1,12 @@
+{##
+ # PayPal powered by Braintree module (checkout)
+ #
+ #}
+
+{% if (this.getSessionNonce()) %}
+  {% include this.getBraintreeSkinDir() ~ 'nonce_payment.twig' %}
+{% else %}
+  {% include this.getBraintreeSkinDir() ~ 'payment.twig' %}
+{% endif %}
+
+<div class="clearfix"></div>

@@ -1,0 +1,27 @@
+{##
+ # Dashboard info block alert
+ #}
+
+<div {{ this.printTagAttributes(this.getTagAttributes())|raw }}>
+
+  {% if this.getHeaderURL() %}
+    <a href="{{ this.getHeaderURL() }}"{% if this.isExternal() %} target="_blank"{% endif %}>
+      <div class="alert-header">
+        {{ this.getIcon()|raw }}
+        <span class="alert-message">{{ this.getHeader() }}</span>
+        {% if this.getCounter() %}
+          <div class="alert-counter">{{ this.getCounter() }}</div>
+        {% endif %}
+      </div>
+    </a>
+  {% else %}
+    <div class="alert-header">
+      {{ this.getIcon()|raw }}
+      <span class="alert-message">{{ this.getHeader() }}</span>
+      {% if this.getCounter() %}
+        <div class="alert-counter">{{ this.getCounter() }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+</div>

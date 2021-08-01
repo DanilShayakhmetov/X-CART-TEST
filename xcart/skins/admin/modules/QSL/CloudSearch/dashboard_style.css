@@ -1,0 +1,39 @@
+/**
+ * CloudSearch admin dashboard interface styles
+ */
+
+.sticky-panel {
+  display: none !important;
+}
+
+.cloud-search-iframe-wrapper {
+  margin: 20px 0;
+  width: 940px;
+}
+
+.cloud-search-iframe {
+  width: 940px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.cloud-search-load-progress {
+  width: 940px;
+}
+
+.cloud-search-load-progress.active .progress-bar {
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 35%,transparent 35%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 85%,transparent 85%,transparent);
+  background-size: 16px 16px;
+}
+
+.model-form-buttons .button.submit {
+  display: none;
+}
+
+.blockUI h1 {
+  color: #c6c6c6;
+}
+
+.dialog-content--cloud-filters {
+  margin-top: -20px;
+}

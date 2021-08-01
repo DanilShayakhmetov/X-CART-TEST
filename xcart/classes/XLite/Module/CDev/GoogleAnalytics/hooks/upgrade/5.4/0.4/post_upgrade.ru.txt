@@ -1,0 +1,1 @@
+В новой версии модуля Google Analytics была переработана поддержка Enhanced Ecommerce. Более подробную информацию о работе модуля можно получить на странице https://kb.x-cart.com/seo_and_promotion/seo_and_analytics/google_analytics/ecommerce_tracking.html

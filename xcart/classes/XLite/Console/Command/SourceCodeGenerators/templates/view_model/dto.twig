@@ -1,0 +1,27 @@
+{##
+ # ViewModel
+ #}
+{% extends "base/php-class.twig" %}
+
+{% block method_init_body %}
+        $default = [];
+
+        if ($object) {
+            $default = [
+{% for field in fields %}
+                '{{ field.code }}' => $object->{{ field.getter }}(),
+{% endfor %}
+            ];
+        }
+
+        $this->default = new \XLite\Model\DTO\Base\CommonCell($default);
+{% endblock %}
+
+
+{% block method_populateTo_body %}
+        $default = $this->default;
+
+{% for field in fields %}
+        $object->{{ field.setter }}($default->{{ field.code }});
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,31 @@
+{##
+ # Braintree credit cards 
+ #
+ #}
+
+<p class="braintree-cards-description">
+  {{ t('These credit cards are associated with your account in the Braintree payments system. No actual credit card details are stored, only the special tokens.') }}
+</p>
+
+{% if this.profile.getBraintreeCreditCards() %}
+
+  <form action="cart.php?target=braintree_credit_cards&action=update" method="post" id="braintree-credit-cards-form">
+
+    <input type="hidden" name="default_card_token" id="default-card-token" value="" />
+    <input type="hidden" name="remove_card_token" id="remove-card-token" value="" />
+
+    <div class="braintree-credit-cards">
+      {% for bcc in this.profile.getBraintreeCreditCardsHash() %}
+        {% include 'modules/QSL/BraintreeVZ/account/card_container.twig' %}
+      {% endfor %}
+    </div>
+
+  </form>
+
+{% else %}
+
+  <div class="alert alert-warning">
+    {{ t('No credit cards associated with your account.') }}
+  </div>
+
+{% endif %}

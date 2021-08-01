@@ -1,0 +1,15 @@
+{##
+ # @ListChild (list="itemsList.product.grid.customer.header", weight="100")
+ # @ListChild (list="itemsList.product.list.customer.header", weight="100")
+ # @ListChild (list="itemsList.product.table.customer.header", weight="100")
+ #}
+
+{% if this.isCloudFiltersMobileLinkVisible() %}
+    <div id="cloud-filters-mobile-link" class="hidden">
+        <a href="#cf-slide-menu">
+            {{ t('Filter') }}
+            {% if this.cloudFiltersCount > 0 %} ({{ this.cloudFiltersCount }}){% endif %}
+            »
+        </a>
+    </div>
+{% endif %}

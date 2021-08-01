@@ -1,0 +1,5 @@
+Version 5.4.2.3
+
+Fixes (1)
+2020-07-24 - [Bug] Product Variants. QTY for a variant could not be set to "0". Fixed. #BUG-8810 #ProductVariants
+

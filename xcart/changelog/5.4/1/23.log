@@ -1,0 +1,17 @@
+Version 5.4.1.23
+
+Improvements (2)
+2021-01-18 - [Story] Increased the speed of export of selected orders from the Orders list page when there is a large number of orders in the store. #XCC-1534 #CDev-Core
+2021-01-20 - [Story] Multiple improvements for the Two factor authentication add-on. #XCC-973 #CDev-Core #XC-TwoFactorAuthentication #XC-CrispWhiteSkin
+
+Fixes (9)
+2021-01-25 - [Bug] Adjusted the vertical alignment of the help tip button at the left of the button 'Check for updates'. #XCB-212 #CDev-Core
+2021-01-26 - [Bug] Image upload widget buttons adjusted in accordance with the style guide. #XCB-184 #CDev-Core
+2021-01-21 - [Bug] Console error if accessing the search page using clean_urls_aliases. Search did not work. Fixed. #XCB-168 #CDev-Core
+2021-01-14 - [Bug] Optimized the number of requests that are used when opening a product details page. #XCB-162 #CDev-Core
+2021-01-13 - [Bug] Error when importing a hidden attribute. Fixed. #XCB-160 #CDev-Core
+2021-01-12 - [Bug] Changed the position of PayPal banners on the cart and checkout pages. #XCB-142 #CDev-Core #CDev-Paypal
+2021-01-11 - [Bug] The sign-in page was shown when a guest buyer entered an email of an existing customer in One Page Checkout and chose to sign in. Fixed. #XCB-134 #CDev-Core
+2021-01-12 - [Bug] It is no longer possible to create address fields with service names that are already reserved in the system.  #XCB-125 #CDev-Core
+2021-01-12 - [Bug] Fixed the issue of input content being marked "false" after clicking Esc on some input fields. #XCB-124 #CDev-Core
+

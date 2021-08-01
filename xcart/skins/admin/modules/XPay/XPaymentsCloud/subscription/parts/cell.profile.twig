@@ -1,0 +1,17 @@
+{##
+ # Profile cell
+ #
+ #}
+
+<div class="profile-box">
+  {% if this.isProfileRemoved(this.entity) %}
+    <span class="removed-profile-name">{{ this.getColumnValue(this.column, this.entity) }}</span>
+  {% else %}
+    <a href="{{ url('profile', '', {'profile_id': this.entity.origProfile.getProfileId()}) }}">{{ this.getColumnValue(this.column, this.entity) }}</a>
+  {% endif %}
+  <br />
+  <span class="profile-email"><a href="mailto:{{ this.entity.profile.getLogin() }}">{{ this.entity.profile.getLogin() }}</a></span>
+  {% if this.column.noWrap %}
+    <img src="{{ asset('images/spacer.gif') }}" class="right-fade" alt="" />
+  {% endif %}
+</div>

@@ -1,0 +1,13 @@
+{##
+ # Right sidebar
+ #
+ # @ListChild (list="layout.main.center", weight="300")
+ #}
+
+{% if this.layout.isSidebarSecondVisible() %}
+  <div id="sidebar-second" class="column sidebar">
+    <div class="section">
+      {{ widget('XLite\\View\\Layout\\Customer\\SidebarSecond', group='sidebar') }}
+    </div>
+  </div>
+{% endif %}

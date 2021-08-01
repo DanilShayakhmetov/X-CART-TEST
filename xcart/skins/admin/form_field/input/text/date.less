@@ -1,0 +1,142 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Date field styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) "../../../css/initialize";
+
+.input.input-text-date .input-group,
+.input.date .input-group {
+  max-width: @form-value-datepicker-width;
+}
+
+.input-group .form-control.hasDatepicker {
+  &:not(:first-child):not(:last-child) {
+    border-bottom-right-radius: @border-radius-base;
+    border-top-right-radius: @border-radius-base;
+  }
+}
+
+.ui-datepicker {
+  z-index: 100 !important;
+  box-shadow: @dropdown-shadow;
+  padding: @rhythmic-unit;
+  width: auto;
+
+  .ui-datepicker-header {
+    font-weight: @font-regular;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    padding: 0 0 (@rhythmic-unit + 4) 0;
+    border: none;
+    background: transparent;
+    cursor: default;
+
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      background: none;
+      border: none;
+      cursor: pointer;
+      top: 0;
+
+      .ui-icon {
+        width: 16px;
+        height: 21px;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        background: url("../../../images/icons/arrow-back.svg") no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    .ui-datepicker-prev {
+      left: 0;
+      .ui-icon {
+        transform: translate(-50%, -50%) rotate(-90deg);
+      }
+    }
+
+    .ui-datepicker-next {
+      right: 0;
+      .ui-icon {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+  }
+
+  .ui-datepicker-calendar {
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+
+    th {
+      font-weight: @font-regular;
+      padding: 0;
+    }
+
+    td {
+      margin: 0;
+      padding: 0;
+      border: 1px solid @color-border;
+      width: 40px;
+      height: 40px;
+
+
+      &.ui-datepicker-other-month {
+        border: none;
+      }
+
+      &.ui-state-highlight {
+        &,
+        &:hover {
+          background: @color-link;
+        }
+      }
+
+      &:hover {
+        background: @color-light-blue;
+      }
+
+      a.ui-state-default {
+        background: transparent;
+        text-align: center;
+        border: none;
+        color: @text-color;
+        border-radius: 0;
+        line-height: 22px;
+        padding: 0;
+
+        &.ui-state-active {
+          color: #fff;
+        }
+
+        &:not(.ui-state-active).ui-state-hover:hover {
+          text-decoration: none;
+        }
+      }
+
+      &.ui-state-disabled span {
+        color: @color-border;
+        background: none;
+        border: none;
+        text-align: center;
+
+        &.ui-icon {
+          background: url("../../../images/icons/arrow-back-disabled.svg") no-repeat;
+        }
+      }
+
+
+      &.ui-datepicker-current-day {
+        &,
+        a.ui-state-default.ui-state-active {
+          background: @color-link;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,247 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Form table styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+ 
+.model-form-buttons {
+  padding-top: @rhythmic-unit;
+  padding-bottom: @rhythmic-unit;
+
+  & > * + button,
+  & > * + a {
+    margin-left: (@rhythmic-unit / 2);
+  }
+}
+
+.single-form-field {
+  .flex-display();
+  padding: @form-row-vertical-padding 0;
+
+  & > .table-label {
+    z-index: 1;
+    padding-top: @form-label-vertical-offset;
+    padding-right: (@grid-gutter-width / 2);
+    color: @form-label-color;
+  }
+
+  .help-wrapper {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: (@rhythmic-unit);
+    font-weight: @font-regular;
+  }
+
+  .help-block {
+    margin-top: 0;
+    margin-bottom: -(@line-height-small-text);
+  }
+
+  & > .table-value {
+    flex: 1 0;
+    position: relative;
+
+    & > .input-field-wrapper {
+      .flex-display(inline-flex);
+      align-items: center;
+
+      > span {
+        margin-top: 8px;
+      }
+    }
+
+    .form-control-widths();
+
+    .form-field-comment:not(.not-padded) {
+      margin-bottom: -@line-height-small-text;
+    }
+  }
+}
+
+form {
+  .table:not(.vertical) {
+    & > li:not(.separator),
+    & > div:not(.separator) {
+      .flex-display();
+      min-height: @rhythmic-unit * 2;
+
+      &.hidden-state-field {
+        display: none;
+      }
+
+      & > .table-value {
+        .flex(1 0);
+        padding: @form-row-vertical-padding 0;
+
+        &:first-child {
+          margin-left: @form-label-width;
+        }
+      }
+
+      &.input .table-value .single-selector {
+        padding-top: (@rhythmic-unit / 2) - @form-row-vertical-padding;
+
+        li + li {
+          margin-top: @rhythmic-unit / 2;
+        }
+      }
+
+      .input-internal-wrapper {
+        .flex-display();
+        .align-items(flex-start);
+
+        .input-text-symbol .input-group-wrapper {
+          width: @form-value-input-width;
+        }
+      }
+
+      &.fileuploader-image > .table-value {
+        padding: 0;
+      }
+    }
+
+    .help-block {
+      margin-top: 0;
+      margin-bottom: -(@line-height-small-text);
+    }
+
+    .table-label {
+      padding-top: @form-label-vertical-offset;
+      text-align: @form-label-horizontal-align;
+
+      .tooltip-main {
+        margin-left: @rhythmic-unit / 2;
+      }
+    }
+
+    .input.fileuploader-image .table-label {
+      padding-top: 0;
+
+      label {
+        /* half of the fileuploader height */
+        margin-top: 60px;
+        transform: translateY(-50%);
+
+        .tooltip-main {
+          margin-left: @rhythmic-unit / 2;
+        }
+      }
+    }
+
+    * + .edit-link {
+      margin-left: 6px;
+    }
+
+
+
+    .help-wrapper {
+      .flex(0 auto);
+      .flex-display();
+      .align-items(center);
+      height: @form-value-wrapper-min-height;
+    }
+  }
+
+  .table > * + * {
+    margin-top: @form-row-vertical-margin;
+  }
+
+  .table-label {
+    z-index: 1;
+    padding-right: (@grid-gutter-width / 2);
+    width: @form-label-width;
+
+    &.table-label-required label {
+      .required-label();
+    }
+
+    & > label {
+      position: relative;
+      word-break: break-word;
+    }
+
+    & ~ .star {
+      display: none;
+    }
+  }
+
+  .table-value {
+    position: relative;
+
+    & > .input-internal-wrapper > .input-field-wrapper {
+      .flex-display(inline-flex);
+      .align-items(center);
+
+      &.input-label > span {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .form-control-widths();
+
+    .form-field-comment:not(.not-padded) {
+      margin-top: @help-block-margin-top;
+      margin-bottom: -(@line-height-base + @help-block-margin-top);
+    }
+  }
+
+  .separator {
+    .alert {
+      margin-bottom: 0;
+    }
+  }
+
+  .table.two-column {
+    display: block;
+    column-count: 2;
+  }
+
+  .inline-table.inline-table {
+    .flex-display();
+    .align-items(center);
+    position: relative;
+
+    & > * + * {
+      white-space: nowrap;
+      margin-left: @rhythmic-unit;
+    }
+
+    .input-field-wrapper {
+      width: 100%;
+    }
+
+    .table-value button.ui-multiselect {
+      width: 100% !important;
+    }
+
+    .table-value .form-control {
+      width: 100%;
+      min-width: 100px;
+    }
+
+    .table-label {
+      width: auto;
+    }
+  }
+}
+
+.form-horizontal {
+  .mail-textarea-advanced-row,
+  .textarea-row {
+    .input-widget {
+      .input-wrapper {
+        .flex-display();
+        .flex-grow(1);
+
+        textarea {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+In the new version of the addon Google Analytics, the support for Enhanced Ecommerce has been redesigned. More information on the use of the addon is available at https://kb.x-cart.com/seo_and_promotion/seo_and_analytics/google_analytics/ecommerce_tracking.html

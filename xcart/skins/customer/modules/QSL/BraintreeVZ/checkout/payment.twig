@@ -1,0 +1,48 @@
+{##
+ # PayPal powered by Braintree module (checkout)
+ #
+ #}
+
+<input type="hidden" name="braintree_payment_id" id="braintree-payment-id" value="{{ this.getPaymentId() }}" />
+<input type="hidden" name="payment_method_nonce" id="payment-method-nonce" value="" />
+
+{% if this.isPayPalAllowed() %}
+  <div class="braintree-paypal-button"></div>
+{% endif %}
+
+{% if this.isApplePayAllowed() %}
+  <div class="apple-pay-button-container">
+    <div id="apple-pay-button" lang="{{ this.getLang() }}" class="apple-pay-button" role="link" tabindex="0">
+    </div>
+  </div>
+{% endif %}
+
+{% if this.isGooglePayAllowed() %}
+  <div class="google-pay-button-container"></div>
+{% endif %}
+
+<div id="braintree-container">
+  {% if this.hasCreditCards() %}
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active">
+        <a id="braintree-new-card-buton" href="#braintree-new-card" aria-controls="braintree-new-card" role="tab" data-toggle="tab">{{ t('New card') }}</a>
+      </li>
+      <li role="presentation">
+        <a id="braintree-saved-cards-button" href="#braintree-saved-cards" aria-controls="braintree-saved-cards" role="tab" data-toggle="tab">{{ t('Saved cards') }}</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="braintree-new-card">
+        {% include this.getBraintreeSkinDir() ~ 'credit_card.twig' %}
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="braintree-saved-cards">
+        {% include this.getBraintreeSkinDir() ~ 'saved_cards.twig' %}
+      </div>
+    </div>
+
+  {% else %}
+    {% include this.getBraintreeSkinDir() ~ 'credit_card.twig' %}
+  {% endif %}
+</div>

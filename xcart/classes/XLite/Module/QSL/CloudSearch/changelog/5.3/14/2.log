@@ -1,0 +1,5 @@
+Version 5.3.14.2
+
+[Improvement] Optimized the performance of CloudFilters widget under certain conditions
+[Improvement] CloudFilters mobile widget look is improved
+[Fix] CloudFilters compatibility issue with IE11 are fixed

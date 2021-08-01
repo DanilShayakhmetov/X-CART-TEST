@@ -1,0 +1,30 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: key
+    category: XC\RESTAPI
+    type: text
+    orderby: 100
+    value: ''
+    translations:
+      - code: en
+        option_name: API key (read/write)
+  - name: key_read
+    category: XC\RESTAPI
+    type: text
+    orderby: 200
+    value: ''
+    translations:
+      - code: en
+        option_name: API key (only read)
+
+XLite\Model\LanguageLabel:
+  - { name: 'API key is a secret key that allows to access REST API functionality. If this key is not specified in a request will not be executed.', translations: [{ code: en, label: 'API key is a secret key that allows to access REST API functionality. If this key is not specified, the request will not be processed.' }] }
+  - { name: 'IMPORTANT:', translations: [{ code: en, label: 'IMPORTANT:' }] }
+  - { name: 'REST API allows to get or change any information in your store (including profiles, orders, payment transactions, inner store configuration, products, categories and so on), so your API key must be as complex as possible and kept private.', translations: [{ code: en, label: 'REST API allows to get or change any information in your store (including profiles, orders, payment transactions, inner store configuration, products, categories and so on), so your API key must be as complex as possible and kept private.' }] }
+

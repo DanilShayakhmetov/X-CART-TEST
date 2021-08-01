@@ -1,0 +1,5 @@
+Version 5.4.1.2
+
+[Improvement] Remove CloudSearch & CloudFilters from headings, replace with Search & Filter
+[Improvement] Refresh progress bar styling
+[Improvement] Add ability to rename category filter and create custom category filter

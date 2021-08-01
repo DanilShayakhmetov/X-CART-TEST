@@ -1,0 +1,542 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attributes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) "../../css/initialize";
+
+.attrs div.dialog-block {
+  border: none;
+  width: 100%;
+}
+
+div.tab-content .tab-content {
+  position: relative;
+  margin-top: 0;
+}
+
+.attrs div.dialog-block + div.dialog-block:before,
+.attrs div.dialog-block.attribute-classes:before {
+  content: "";
+  display: block;
+  height: 20px;
+  background: #f3f3f4;
+  margin-right: -25px;
+  margin-left: -25px;
+  box-shadow: inset 0 5px 5px -5px rgba(0,0,0,0.75);
+}
+
+.attrs div.dialog-block > div {
+  width: 1000px;
+}
+
+div.dialog-block div.attribute-group {
+  border-top: 1px dashed #a5aeb2;
+}
+
+div.dialog-block div.attributes .header .title,
+div.dialog-block div.attribute-group .header .title {
+  margin: 0;
+  line-height: 60px;
+  flex-grow: 1;
+}
+
+div.dialog-block div.attributes .header {
+  margin-bottom: 20px;
+}
+
+div.dialog-block div.attributes .header,
+div.dialog-block div.attribute-group .header {
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li.list-empty {
+  margin-left: 9px;
+  display: none;
+}
+
+.empty li.list-empty {
+  display: block;
+}
+
+div.attribute-group ul.data {
+  margin-top: 10px;
+}
+
+div.dialog-block ul.data {
+  box-shadow: none;
+  margin-left: -9px;
+}
+
+ul.data {
+  & > li .attribute-name .table-value {
+    margin-top: -5px;
+    padding: 5px 0;
+    display: block;
+  }
+
+  & > li.create-line .attribute-name .table-value {
+    padding: 7px 0;
+  }
+
+  & > li .attribute-value,
+  & > li .actions {
+    float: left;
+    display: inline-block;
+  }
+
+  & > li .attribute-name {
+    display: flex;
+    flex-flow: column;
+    float: left;
+  }
+
+  & > li .actions {
+    float: right;
+    margin: 4px 0 6px;
+    height: 40px;
+    padding: 0 10px 0 13px;
+    pointer-events: all;
+    .flex-display();
+    .align-items(center);
+
+    .makeblank-wrapper {
+      .flex-display();
+    }
+  }
+
+  & > li .attribute-name {
+    width: 245px;
+    min-height: 46px;
+    padding-top: 2px;
+
+    & > .display-mode {
+      @display-mode-link-margin-bottom: 3px;
+      padding: 0 @padding-base-horizontal;
+      display: none;
+
+      .title {
+        font-size: 12px;
+        line-height: @line-height-small;
+        color: @color-text-default;
+        position: absolute;
+
+        & > div {
+          display: inline;
+          position: relative;
+
+          a {
+            border-bottom: 1px dashed;
+
+            &:hover, &:focus {
+              text-decoration: none;
+            }
+          }
+
+          .value {
+            display: none;
+            border: solid @border-base @color-border;
+            border-radius: @border-radius-base;
+            position: absolute;
+            left: 0;
+            top: (@line-height-small + @display-mode-link-margin-bottom);
+            width: 110px;
+            background-color: #fff;
+            z-index: 1;
+
+            .display-mode-variant {
+              display: flex;
+              flex-flow: row-reverse;
+              align-items: center;
+              justify-content: flex-end;
+              height: (@rhythmic-unit * 3 / 2 - @border-base);
+              cursor: pointer;
+
+              &:hover {
+                background: @color-light-blue;
+              }
+
+              .table-label {
+                width: auto;
+                padding-right: @padding-base-horizontal;
+
+                label {
+                  cursor: pointer;
+                }
+              }
+
+              .table-value {
+                margin: 0;
+                padding: 0 0 0 @padding-base-horizontal;
+              }
+
+              .clear {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > li .attribute-name .inline-field.editable .view {
+    margin: 0;
+    padding: @padding-base-vertical @padding-base-horizontal;
+  }
+
+  & > li .attribute-name .inline-field.editable .view span {
+    font-size: 14px;
+  }
+
+  & > li .attribute-name .inline-field .view.not-editable {
+    margin-top: 5px;
+  }
+
+  & > li .attribute-name .inline-field .view.not-editable span {
+    font-size: 18px;
+  }
+
+  & > li .attribute-name input[type=text] {
+    font-size: 14px;
+  }
+
+  & > li .attribute-value {
+    padding: 0 18px 0;
+    width: 560px;
+  }
+
+  & > li .attribute-value input[type=text],
+  & > li .attribute-value textarea {
+    width: 400px;
+  }
+
+  & > li > .attribute-value .table-value {
+    padding: 4px 0 6px;
+  }
+
+  & > li .attribute-value.type-c .table-value input[type=text] {
+    border-color: #eee;
+  }
+
+  & > li .attribute-value.type-c .table-value select {
+    width: auto;
+  }
+
+  & > li .attribute-value.type-t .table-value {
+    padding-bottom: 2px;
+    float: left;
+  }
+
+  & > li .attribute-value.type-t {
+    padding-bottom: 0;
+  }
+
+  & > li i.fa {
+    font-size: 18px;
+  }
+}
+
+.remove-wrapper input {
+  display: none;
+}
+
+button.remove
+{
+  border: 0 none;
+  padding: 0;
+  height: auto;
+  margin: 0;
+  background: transparent none;
+  color: #526aa8;
+}
+
+ul.data li.remove-mark .attribute-name .inline-field.editable .view {
+  border-color: #fff;
+}
+
+li.line.value.remove-mark,
+li.line.attribute.remove-mark * {
+  filter: alpha(opacity=80);
+  opacity: .9;
+}
+
+li.line.value.remove-mark,
+li.line.attribute.remove-mark {
+  opacity: .6;
+  pointer-events: none;
+}
+
+li.line.edit-mark .inline-field.editable .view .right-fade {
+  display: block;
+}
+
+li.line.edit-mark .attribute-name:hover .inline-field.editable .view .right-fade {
+  display: block;
+  background: @brand-warning url(../../images/icon_pen.png) no-repeat center center;
+}
+
+ul.data li .attribute-value li .value {
+  float: left;
+}
+
+ul.data li .attribute-value li .actions {
+  background: none;
+  padding-left: 0;
+  position: absolute;
+  left: 407px;
+  display: none;
+}
+
+ul.data li .attribute-value li:hover .actions {
+  .flex-display();
+}
+
+ul.data li .attribute-value label.inline-checkbox {
+  float: right;
+  position: relative;
+  left: -16px;
+  top: 11px;
+  display: none;
+  z-index: 99;
+  max-width: 90px;
+  white-space: nowrap;
+}
+
+ul.data li .attribute-value.type-t label.inline-checkbox {
+  display: block;
+}
+
+ul.data li .attribute-value label.inline-checkbox * {
+  vertical-align: middle;
+}
+
+ul.data li .attribute-value label.inline-checkbox span {
+  font-size: 14px;
+}
+
+ul.data li .attribute-value ul.values > li,
+ul.data li .attribute-value.multiple .single-option,
+ul.data li .attribute-value .multiple-options {
+  display: none;
+}
+
+.modifiers {
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  font-size: 14px;
+  padding: 2px 10px;
+  display: none;
+
+  span.text {
+    color: @color-green;
+
+    span {
+      color: @color-green;
+    }
+
+    span.price-modifier {
+      background: transparent url(../../images/modifiers_icons.png) no-repeat left -1px;
+      padding-left: 22px;
+      margin-left: 3px;
+    }
+
+    span.weight-modifier {
+      background: transparent url(../../images/modifiers_icons.png) no-repeat left -20px;
+      padding-left: 22px;
+      margin-left: 3px;
+    }
+  }
+
+  &.open {
+    .popup {
+      display: block;
+    }
+  }
+
+  .popup {
+    display: none;
+
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid @color-border;
+    border-radius: @border-radius-base;
+    box-shadow: @basic-shadow;
+    bottom: 34px;
+    right: -85px;
+    width: 238px;
+
+    h4 {
+      padding: (@rhythmic-unit * 2 / 3) (@rhythmic-unit / 2) (@rhythmic-unit / 2) (@rhythmic-unit / 2);
+    }
+
+    .arrow {
+      border-bottom: 1px solid;
+      border-right: 1px solid;
+      border-color: @color-border;
+      background: #fff none;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      bottom: -9px;
+      left: 50%;
+      margin-left: -8px;
+      transform: rotate(45deg);
+      box-shadow: 2px 2px 4px 0 #bbc7d2;
+    }
+
+    .default {
+      border-top: 1px solid @color-border;
+      padding: (@rhythmic-unit * 2 / 3) (@rhythmic-unit / 2);
+    }
+
+    .table-label, .table-value {
+      max-width: 100px;
+
+      input, select {
+        width: 100px !important;
+      }
+    }
+  }
+}
+ul.data li .attribute-value.multiple li .modifiers,
+ul.data li .attribute-value.multiple li:hover .modifiers a,
+ul.data li .attribute-value.multiple li .modifiers.open a,
+ul.data li .attribute-value.multiple ul.values > li,
+ul.data li .attribute-value ul.values > li:first-child,
+ul.data li .attribute-value .single-option,
+ul.data li .attribute-value.multiple .multiple-options,
+ul.data li .attribute-value.multiple li:hover .combobox-select,
+ul.data li:hover .attribute-value label.inline-checkbox,
+ul.data li:hover .attribute-name .display-mode {
+  display: block;
+}
+
+ul.data li .attribute-value.multiple li:hover .modifiers span.text,
+ul.data li .attribute-value.multiple li .modifiers.open span.text,
+ul.data li .attribute-value li:first-child .actions,
+ul.data li.attribute.remove-mark .combobox-select,
+ul.data li .attribute-value.multiple.remove-mark li:hover .combobox-select,
+ul.data li.value.remove-mark .combobox-select,
+ul.data li.remove-mark .inline-field.editable .view .right-fade,
+ul.data li.remove-mark .attribute-value label.inline-checkbox,
+ul.data li .attribute-value li.new .actions,
+ul.data li .attribute-value li.new .modifiers,
+ul.data li.remove-mark .attribute-value li .actions,
+ul.data li .attribute-value.multiple li .modifiers a {
+  display: none;
+}
+
+ul.data li .attribute-value.type-c li,
+ul.data li .attribute-value.type-s li {
+  position: relative;
+}
+
+div.dialog-block .attributes .header .title {
+  margin: 0;
+  font-size: 24px;
+}
+
+div.dialog-block .attributes .header .tooltip-main {
+  margin-left: @rhythmic-unit / 2;
+}
+
+div.dialog-block.product-class {
+  width: 1000px;
+  border: none;
+}
+
+form.changed.view-changes li.create-line div.modifiers,
+form.changed.view-changes li.line.is-changed div.modifiers,
+form.changed.view-changes ul.data .attribute-value textarea.is-changed,
+form.changed.view-changes ul.data li.create-line .attribute-name .input-text input.is-changed,
+form.changed.view-changes ul.data li.create-line .attribute-value li.value .input-text input.is-changed,
+form.changed.view-changes ul.data li.create-line .attribute-value li.create-line .input-text input,
+form.changed.view-changes ul.data li.is-changed .attribute-value.type-c .input-text input,
+form.changed.view-changes .values li.create-line .input-text-attributeoption input,
+form.changed.view-changes li.create-line textarea.is-changed,
+form.changed.view-changes li.create-line select.is-changed,
+form.changed.view-changes li.create-line .attribute-value-checkbox input,
+form.changed.view-changes li.value.is-changed .input-text-attributeoption input {
+  border-color: #bba0c7;
+}
+
+form.changed.view-changes .single-option select.is-changed,
+form.changed.view-changes ul.data .attribute-value textarea.is-changed,
+form.changed.view-changes ul.data li.create-line .attribute-name .input-text input.is-changed,
+form.changed.view-changes ul.data li.create-line .attribute-value li.value .input-text input.is-changed,
+form.changed.view-changes ul.data li.create-line .attribute-value li.create-line .input-text input,
+form.changed.view-changes ul.data li.is-changed .attribute-value.type-c .input-text input,
+form.changed.view-changes .values li.create-line .input-text-attributeoption input,
+form.changed.view-changes li.create-line textarea.is-changed,
+form.changed.view-changes li.create-line select.is-changed,
+form.changed.view-changes li.create-line .attribute-value-checkbox input,
+form.changed.view-changes li.value.is-changed .input-text-attributeoption input {
+  background: #eec9ff;
+}
+
+div.save-mode-localy,
+div.save-mode-globaly {
+  font-size: 10px;
+  width: 250px;
+}
+
+div.save-mode-localy,
+div.save-mode-globaly,
+form.changed.view-changes div.save-mode-localy {
+  display: none;
+}
+
+form.changed div.save-mode-localy,
+form.changed.view-changes div.save-mode-globaly {
+  display: block
+}
+
+form .sticky-panel .box {
+  height: 75px;
+}
+
+form.changed.view-changes select#save-mode:focus {
+  box-shadow: 0 0 5px 1px rgba(174, 14, 214, 0.5);
+}
+
+.attributes {
+  .fa-angle-down {
+    font-size: 14px;
+    color: @color-tip;
+  }
+
+  .dropdown-toggle:hover {
+    .fa-angle-down {
+      color: @color-link;
+    }
+  }
+
+  ul.data>li i.fa.fa-angle-down {
+    font-size: 14px;
+  }
+
+  .open > .dropdown-toggle.btn-default {
+    &,
+    &:hover,
+    &:focus {
+      background-color: @color-background;
+    }
+  }
+}
+
+.attributes,
+.attribute-group {
+  & > ul.data.lines > li {
+    padding-bottom: @rhythmic-unit;
+  }
+}

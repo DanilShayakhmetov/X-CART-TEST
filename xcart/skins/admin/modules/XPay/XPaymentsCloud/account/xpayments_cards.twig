@@ -1,0 +1,16 @@
+{##
+ # Profile X-Payments saved cards
+ #}
+<div class="dialog-content saved-cards-container">
+
+  {% if this.getCards() %}
+
+    {% include 'modules/XPay/XPaymentsCloud/account/xpayments_cards.table.twig' %}
+
+  {% else %}
+
+    {% include 'modules/XPay/XPaymentsCloud/account/xpayments_cards.empty.twig' %}
+
+  {% endif %}
+
+</div>

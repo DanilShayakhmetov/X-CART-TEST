@@ -1,0 +1,9 @@
+Version 5.4.0.2
+
+Improvements (1)
+2019-02-12 - [Change] JS libs updated. #XCN-9391 (Fedya Lavrentyev) #Core #ThemeTweaker #ProductFilter #ProductComparison #CrispWhiteSkin #Onboarding
+
+Fixes (2)
+2019-03-15 - [Bug] Layout adjustments for the Admin area dashboard according to the style guide. #BUG-5766 (Maxim Kuznetsov) #Core #Paypal #WebmasterKit #MultiVendor #Onboarding
+2019-01-08 - [Bug] Localization settings could not be saved in the Onboarding Wizard. Fixed. #BUG-6951 (Vladimir Semyonov) #Onboarding
+

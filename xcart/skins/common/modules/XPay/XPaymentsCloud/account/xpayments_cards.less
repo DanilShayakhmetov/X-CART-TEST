@@ -1,0 +1,139 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles for Saved credit cards page
+ */
+
+.define-rhythmic-unit-if-not-defined() {@rhythmic-unit: 20px}
+.define-rhythmic-unit-if-not-defined();
+
+.saved-cards-container {
+  margin-bottom: (4 * @rhythmic-unit);
+}
+
+table.xpayments-cards {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: (2 * @rhythmic-unit);
+  font-size: 14px;
+  max-width: 780px;
+}
+
+table.xpayments-cards td {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+table.xpayments-cards .remove-column {
+  text-align: right;
+}
+
+table.xpayments-cards .title-column {
+  border-right: none;
+}
+
+table.xpayments-cards .remove-column {
+  border-left: none;
+}
+
+table.xpayments-cards .warning {
+  background: url(warning-small.svg) 0 0 no-repeat;
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 7px;
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+.xpayments-card div.card-icon-container {
+  height: 40px;
+  width: 70px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.xpayments-card.disabled {
+  opacity: 0.33;
+}
+
+.xpayments-card div {
+  display: inline-block;
+}
+
+.xpayments-card .card-number {
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.xpayments-card .card-placeholder {
+  letter-spacing: 1px;
+  margin: 0 1px;
+}
+
+.xpayments-card .card-expire {
+  line-height: 36px;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+
+.xpayments-cards-description {
+  margin-bottom: 20px;
+}
+
+.xpayments-cards-empty {
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: @rhythmic-unit;
+}
+
+.xpayments-cards-empty .card-icon {
+  display: inline-block;
+  width: 190px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: url(cc_type_sprites.png) 0 0 no-repeat;
+  opacity: 0.12;
+}
+
+.xpayments-cards-empty strong {
+  color: #d1d1d1;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: normal;
+  display: block;
+}
+
+.delete-card {
+  border: none !important;
+  vertical-align: middle;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url(../../../../../customer/images/icon_trash.png);
+  height: 24px;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.delete-card:before{
+  display: none;
+}
+
+.delete-card:hover,
+.delete-card:focus{
+  border: none !important;
+}
+
+.delete-card:active{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url(../../../../../customer/images/icon_trash.png);
+  box-shadow: none;
+}

@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-10-11 - [Bug] When conducting a payment with PayPal Advanced in the mobile interface, the iframe was not displayed. Fixed. #BUG-7982 https://bt.x-cart.com/view.php?id=51050 (Shevelov Alexander) #Core #Paypal
+

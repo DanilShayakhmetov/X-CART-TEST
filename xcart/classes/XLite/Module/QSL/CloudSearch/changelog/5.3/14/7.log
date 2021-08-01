@@ -1,0 +1,4 @@
+Version 5.3.14.7
+
+[Feature] Added real-time indexing (beta)
+[Improvement] CloudSearch popup language labels are now translatable in Webmaster mode

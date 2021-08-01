@@ -1,0 +1,6 @@
+Version 5.4.0.4
+
+Fixes (3)
+2019-03-19 - [Bug] Fatal error on the Add product action if Multi-vendor and Product Variants were enabled. Fixed. #BUG-7164 (Maxim Kuznetsov) #ProductVariants
+2018-12-18 - [Bug] The getVariantsCount function was optimized. #BUG-6903 https://bt.x-cart.com/view.php?id=50269 (Fedya Lavrentyev) #ProductVariants #Buy Button
+2018-12-04 - [Bug] Fatal erorr "Error (code: 0): Unrecognized field: attribute_option" when importing products with text field attributes. Fixed. #BUG-6645 https://bt.x-cart.com/view.php?id=49791 (Fedya Lavrentyev) #ProductVariants

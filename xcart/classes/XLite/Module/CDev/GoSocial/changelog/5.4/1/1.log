@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2021-01-05 - [Bug] Translations were saved with an incorrect language code. Fixed. #XCB-252 #CDev-Core #CDev-GoSocial
+

@@ -1,0 +1,36 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * PIN codes styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list.order-items {
+  &.backordered {
+    .cell.name {
+      &.backorder-confirmed {
+        .backordered-pin-codes {
+          display: block;
+        }
+      }
+
+      .backordered-pin-codes {
+        display: none;
+      }
+    }
+  }
+
+  .cell.name {
+    .backordered-info + .backordered-pin-codes {
+      margin-top: 10px;
+    }
+
+    .backordered-pin-codes {
+      > .table-value + .table-value {
+        margin-top: 10px;
+      }
+    }
+  }
+}

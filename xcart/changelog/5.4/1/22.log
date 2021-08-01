@@ -1,0 +1,22 @@
+Version 5.4.1.22
+
+Improvements (4)
+2020-12-22 - [Story] Allow basic auth for admin.php and service.php. Added new config settings basic_auth_user and basic_auth_pass in the [service] section. #XCC-1120 #CDev-Core #XC-Service
+2020-12-12 - [Story] Customers could not subscribe to notifications for Coming soon products with QTY = 0. Fixed. #XCC-1059 #CDev-Core
+2020-12-22 - [Story] Logics improvement for the setting of the default swatch. #XCC-985 #QSL-ColorSwatches #CDev-Core
+2020-12-23 - [Task] Fixed the post_rebuild hook logics for changing the low limit warning notification. #XCB-235 #CDev-Core
+
+Fixes (12)
+2021-01-05 - [Bug] Translations were saved with an incorrect language code. Fixed. #XCB-252 #CDev-Core #CDev-GoSocial
+2021-01-04 - [Bug] Typo in classes/XLite/View/Menu/Admin/LeftMenu.php. Fixed. #XCB-194 #CDev-Core
+2020-12-09 - [Bug] Layout issues in the Service Tool and X-Cart Admin area if using Safari. Fixed. #XCB-180 #CDev-Core
+2021-01-06 - [Bug] Issues related to switching to a different language. Fixed. #XCB-95 #CDev-Core
+2021-01-05 - [Bug] Order Save Filters. If using Enter instead of clicking the Save. button, the filter did not get saved. #XCB-93 #CDev-Core
+2021-01-06 - [Bug] Shipping cost was not calculated if the customer did not have a country specified in their address. Fixed. #XCB-89 #CDev-Core
+2021-01-05 - [Bug] Order Import. A warning when opening a page in AOM after importing an order with a missing or unavailable or non-enabled paymentTransactionMethod. Fixed. #XCB-65 #CDev-Core
+2020-12-23 - [Bug] Removed some debug code. #XCB-59 #CDev-Core #CDev-VAT
+2021-01-04 - [Bug] Tax Exempt. Fatal error when opening the checkout page after deactivating the add-on. The field Sales Tax Exemption Certificate was present in the address section and could not be removed. Fixed. #XCB-57 #CDev-Core #QSL-TaxExempt
+2021-01-05 - [Bug] FireFox. The recalculation in the shopping cart did not happen if changing the quantity using the up and down arrows in the QTY input box. Fixed. #XCB-39 #CDev-Core
+2020-12-11 - [Bug] Low stock notification was created only for one product in an order. Fixed. #XCB-37 #CDev-Core
+2020-12-10 - [Bug] OPC vs. Authorize.Net Accept.js. In OPC, the placeholder = "Cardholder name" in the cardholder input field was not visible. Now the field is pre-filled with the value "CUSTOMER". #XCB-34 #CDev-Core
+

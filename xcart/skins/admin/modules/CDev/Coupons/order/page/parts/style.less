@@ -1,0 +1,112 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order info styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import "../../../../../../css/initialize";
+
+.order-info .totals .coupon-row {
+}
+
+.order-info .totals .coupon-row .title {
+  display: block;
+  padding-right: 25px;
+}
+
+.order-info .totals .coupon-row .inline-hidden {
+  display: none;
+}
+
+.order-info .totals .coupon-row {
+  text-align: right;
+}
+
+.order-info .totals .coupon-row .code {
+  padding-right: (@rhythmic-unit / 2);
+}
+
+.order-info .totals .coupon-row .cost {
+  padding-right: @rhythmic-unit / 2;
+}
+
+.order-info .totals .coupon-row .recalc {
+  .flex-display();
+  .align-items(center);
+}
+
+.order-info .totals .coupon-row .recalc a {
+  font-size: 16px;
+  width: @iconfont-width;
+  .justify-content(center);
+  text-decoration: none;
+
+  &,
+  i {
+    .flex-display();
+  }
+}
+
+.order-info .totals .coupon-row.remove-mark {
+  opacity: .4;
+}
+
+.order-info .totals .coupon-row ul li span {
+  font-size: 14px;
+}
+
+.order-info .totals .coupon-row ul li .remove {
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 7px;
+}
+
+.order-info .totals .coupon-row ul li .remove i {
+  color: #526aa8;
+}
+
+.order-info .totals .coupon-row.add-new-row {
+  height: auto;
+  &.expanded {
+    height: 48px;
+  }
+}
+
+.order-info .totals .coupon-row .add-new {
+  position: absolute;
+  right: 0px;
+}
+
+.order-info .totals a.add {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+}
+
+.order-info .totals .coupon-row .add-new .box {
+  display: none;
+  padding: 4px 0;
+}
+
+.order-info .totals .coupon-row.add-new-row.expanded .add-new {
+  display: block;
+  position: absolute;
+  right: 0px;
+}
+
+.order-info .totals .coupon-row.add-new-row.expanded .add-new .box{
+  .flex-display();
+}
+
+.order-info .totals .coupon-row .add-new .box > * {
+  .flex-display();
+}
+
+.order-info .totals .coupon-row .add-new .box button {
+  margin-left: @rhythmic-unit / 2;
+}

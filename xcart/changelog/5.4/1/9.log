@@ -1,0 +1,5 @@
+Version 5.4.1.9
+
+Fixes (1)
+2020-07-28 - [Bug] Layout issues related to displaying images in the Standard skin. Fixed. #BUG-8875 #Core
+

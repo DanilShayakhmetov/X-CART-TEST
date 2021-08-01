@@ -1,0 +1,6 @@
+Version 5.4.1.1
+
+Fixes (2)
+2020-03-30 - [Bug] Canada Post. In AOM, it was not possible to change the Height value of a shipment. Fixed. #BUG-8498 https://bt.x-cart.com/view.php?id=51617 #CanadaPost
+2020-03-23 - [Bug] Canada Post. Notices on the checkout page if the store address was not in Canada. Fixed. #BUG-8032 #CanadaPost
+

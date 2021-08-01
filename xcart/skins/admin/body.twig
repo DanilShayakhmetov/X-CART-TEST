@@ -1,0 +1,13 @@
+{##
+ # ____file_title____
+ #}
+<!DOCTYPE html>
+<html lang="{{ this.currentLanguage.code }}" dir="{% if this.currentLanguage.r2l %}rtl{% else %}ltr{% endif %}"
+  {% for k, v in this.getHTMLAttributes() %} {{ k }}="{{ v }}"{% endfor %}>
+{{ widget('\\XLite\\View\\Header') }}
+<body class="{{ this.getBodyClass() }}">
+<!--email_off-->
+{{ widget_list('body') }}
+<!--/email_off-->
+</body>
+</html>

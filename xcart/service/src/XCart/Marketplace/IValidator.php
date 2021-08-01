@@ -1,0 +1,22 @@
+<?php
+// vim: set ts=4 sw=4 sts=4 et:
+
+/**
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+namespace XCart\Marketplace;
+
+use XCart\Marketplace\Validator\ValidatorException;
+
+interface IValidator
+{
+    /**
+     * @param mixed $data Data returned by parser
+     *
+     * @return bool
+     * @throws ValidatorException
+     */
+    public function isValid($data);
+}

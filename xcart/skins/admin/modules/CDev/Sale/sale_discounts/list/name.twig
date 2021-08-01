@@ -1,0 +1,9 @@
+{##
+ # Expired label
+ #
+ # @ListChild (list="itemsList.sale_discounts.cell.name")
+ #}
+
+{% if this.entity.isExpired() %}
+  <span class="expired-mark">{{ t('expired') }}</span>
+{% endif %}

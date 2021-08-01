@@ -1,0 +1,19 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Store info", translations: [{ code: en, label: "Store profile" }] }
+  - { name: "No tracking numbers are defined", translations: [{ code: en, label: "Tracking numbers are not added yet" }] }
+  - { name: "Countries, states and zones", translations: [{ code: en, label: "Countries, states & zones" }] }
+
+XLite\Model\Config:
+  - name: force_login_before_checkout
+    category: General
+    type: checkbox
+    translations:
+      - code: en
+        option_name: 'Ask anonymous users to sign in before checkout'

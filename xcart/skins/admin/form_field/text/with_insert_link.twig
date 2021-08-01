@@ -1,0 +1,14 @@
+{##
+ # Common input template with insert link
+ #}
+
+<span class="input-field-wrapper {{ this.getWrapperClass() }}">
+  {{ this.displayCommentedData(this.getCommentedData()) }}
+  <input{{ this.getAttributesCode()|raw }} />
+
+  {% if this.getInsertValue() %}
+    <span class="insert-link">
+      <a href="#">{{ this.getInsertLabel() }}</a>
+    </span>
+  {% endif %}
+</span>

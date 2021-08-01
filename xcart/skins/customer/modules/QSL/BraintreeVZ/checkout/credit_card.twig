@@ -1,0 +1,39 @@
+{##
+ # Credit card 
+ #
+ #}
+
+<div class="braintree-textfield-float-label first{% if not this.hasCreditCards() %} no-tabs{% endif %}">
+  <label class="braintree-hosted-field-label" for="braintree-card-number">
+    <span class="icon" id="cc-number"></span>
+    {{ t('Card number') }}
+  </label>
+  <div id="braintree-card-number" class="hosted-field"></div>
+</div>
+
+<div class="braintree-textfield-float-label">
+  <label class="braintree-hosted-field-label" for="braintree-expiration-date">
+    <span class="icon" id="cc-exp-date"></span>
+    {{ t('Expiration Date') }}
+  </label>
+  <div id="braintree-expiration-date" class="hosted-field"></div>
+</div>
+
+<div class="braintree-textfield-float-label{% if not this.isShowSaveCardBox() %} last{% endif %}">
+  <label class="braintree-hosted-field-label" for="braintree-cvv">
+    <span class="icon" id="cc-cvv"></span>
+    {{ t('CVV') }}
+  </label>
+  <div id="braintree-cvv" class="hosted-field"></div>
+</div>
+
+{% if this.isShowSaveCardBox() %}
+  <div class="braintree-textfield-float-label last">
+    <div class="checkbox">
+      <label for="braintree-save-card">
+        <input type="checkbox" name="save_card" value="Y" id="braintree-save-card"{% if this.isSaveCardBoxChecked() %} checked="checked" {% endif %}/>
+        {{ t('Save card for future orders in this shop') }}
+      </label>
+    </div>
+  </div>
+{% endif %}

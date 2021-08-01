@@ -1,0 +1,15 @@
+{##
+ # Checko payment template
+ #
+ # @author    Qualiteam software Ltd <info@x-cart.com>
+ # @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ # @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ # @link      http://www.x-cart.com/
+ #}
+
+<div class="anetjs-box" {{ this.printTagAttributes(this.getDataAttributes())|raw }}>
+  <input type="hidden" name="payment[dataDescriptor]" value="" class="data-descriptor" />
+  <input type="hidden" name="payment[dataValue]" value="" class="data-value" />
+
+  {{ widget('XLite\\Module\\QSL\\AuthorizenetAcceptjs\\View\\CreditCard') }}
+</div>

@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-07-03 - [Bug] Display issues on tables allowing for readjustment of sort positions of the elements contained in them. Fixed. #BUG-7628 (Fedya Lavrentyev) #Core #ProductTags
+

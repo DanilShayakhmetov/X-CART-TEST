@@ -1,0 +1,22 @@
+{##
+ # Payment method status
+ #
+ # @ListChild (list="payment_status.after.PaypalCommercePlatform", weight="100")
+ #}
+{% set signUpUrl = this.getSignUpUrl() %}
+{% if signUpUrl %}
+  {% if this.isLocalHost() %}
+    {{ t('Connecting to PayPal with X-Cart installed on the local server is supported in manual mode only.') }}
+  {% else %}
+    {% if not (this.paymentMethod.getSetting('client_id') and this.paymentMethod.getSetting('client_secret')) %}
+      {{ t('Have a PayPal account?') }}
+      <a href="{{ this.getSignUpUrl() }}" target="PPFrame" data-paypal-onboard-complete="PaypalCommercePlatformOnboardedCallback" data-paypal-button="true">{{ t('Connect with PayPal') }}</a>
+      <br/>
+      {{ t('Don\'t have account yet?') }}
+      <a href="{{ this.getSignUpUrl() }}" target="PPFrame" data-paypal-onboard-complete="PaypalCommercePlatformOnboardedCallback" data-paypal-button="true">{{ t('Sign Up Now') }}</a>
+    {% else %}
+      {{ t('Want to use another account?') }}
+      <a href="{{ this.getSignUpUrl() }}" target="PPFrame" data-paypal-onboard-complete="PaypalCommercePlatformOnboardedCallback" data-paypal-button="true">{{ t('Change') }}</a>
+    {% endif %}
+  {% endif %}
+{% endif %}

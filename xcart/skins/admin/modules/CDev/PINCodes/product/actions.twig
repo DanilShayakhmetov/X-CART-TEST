@@ -1,0 +1,12 @@
+{##
+ # Pin codes actions box
+ #
+ # @ListChild (list="product.pinCodes", weight="400")
+ #}
+
+{% if not this.product.getAutoPinCodes() and this.product.getPinCodesEnabled() %}
+  <li class="pin-codes-actions">
+    {{ widget('\\XLite\\Module\\CDev\\PINCodes\\View\\AddPinCodesButton') }}
+    {{ widget('\\XLite\\View\\Button\\FileSelector', label='Import from CSV file', object='import_pin_codes', objectId=this.product.getId(), fileObject='') }}
+  </li>
+{% endif %}

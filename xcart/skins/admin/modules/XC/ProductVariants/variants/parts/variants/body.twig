@@ -1,0 +1,16 @@
+{##
+ # Variants
+ #}
+
+{% if this.isLimitWarningVisible() %}
+  <div class="alert alert-warning variants-limit">{{ this.getVariantsNumberWarning() }}</div>
+{% endif %}
+
+{% form 'XLite\\Module\\XC\\ProductVariants\\View\\Form\\Product\\Modify\\Variants' with {className: 'form-variants'} %}
+<div class="{{ this.getBlockStyle() }}">
+  <div class="content">
+    {{ widget('XLite\\Module\\XC\\ProductVariants\\View\\ItemsList\\Model\\ProductVariant') }}
+  </div>
+</div>
+{{ widget('XLite\\Module\\XC\\ProductVariants\\View\\StickyPanel\\ItemsList\\ProductVariant') }}
+{% endform %}

@@ -1,0 +1,11 @@
+{##
+ # Order : line 3
+ #
+ # @ListChild (list="order.operations", weight="300")
+ #}
+
+{% if this.isOrderItemsVisible() %}
+  <div class="line-3">
+    {{ widget_list('order.items.wrapper') }}
+  </div>
+{% endif %}

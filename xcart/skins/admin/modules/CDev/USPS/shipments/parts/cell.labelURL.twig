@@ -1,0 +1,16 @@
+{##
+ # Label column
+ #}
+{% set labelURLs = this.getLabelContentURLs(this.entity) %}
+
+{% if this.entity.getLabelURL() %}
+<a href="{{ this.entity.getLabelURL() }}" target="_blank">{{ t('Print') }}</a>
+{% elseif labelURLs is not empty %}
+  {% if labelURLs|length > 1 %}
+    {% for index, url in labelURLs %}
+      <a href="{{ url }}" target="_blank">{{ t('Download') }} #{{ index + 1 }}</a><br/>
+    {% endfor %}
+  {% else %}
+    <a href="{{ labelURLs[0] }}" target="_blank">{{ t('Download') }}</a><br/>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,8 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-09-26 - [Change] The percentage format for Market price, Sale and vendor rating can now be set via the Localization settings.. #BUG-6656 https://bt.x-cart.com/view.php?id=49167 (Sergey Kshnyakin) #MarketPrice #Sale #MultiVendor
+
+Fixes (1)
+2019-11-05 - [Bug] Bulk Editing. Fixed the error resulting from entering too large a number in the "Quantity in stock" field. #BUG-7099 (Pavel Veselovsky) #Core #MarketPrice #Sale #FreeShipping
+

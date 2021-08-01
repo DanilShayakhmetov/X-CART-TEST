@@ -1,0 +1,9 @@
+{##
+ # Create variants 
+ #}
+
+<div class="create-variants-block">
+  {{ widget('\\XLite\\View\\Button\\Submit', style='main-button create-variants', label=t('Create all possible variants') ~ '<span class="variants-count">' ~ this.getPossibleVariantsCount() ~ '</span>') }}
+  <span class="variants-limit-warning" title=""><i class="fa fa-exclamation-triangle"></i></span>
+  <span class="variants-limit-error" title=""><i class="fa fa-exclamation-triangle"></i></span>
+</div>

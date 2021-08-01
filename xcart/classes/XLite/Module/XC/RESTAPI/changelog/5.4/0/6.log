@@ -1,0 +1,5 @@
+Version 5.4.0.6
+
+Fixes (1)
+2019-12-02 - [Bug] Messages on the RESTAPI addon settings page now use the standard style. #BUG-7150 (Pavel Veselovsky) #RESTAPI
+

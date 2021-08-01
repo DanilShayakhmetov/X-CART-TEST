@@ -1,0 +1,7 @@
+Version 5.4.0.6
+
+Fixes (3)
+2019-11-19 - [Bug] When editing an order with the status "Authorized" in AOM, clicking "Void" reset the status to "Awaiting payment" instead of "Cancelled". Fixed. #BUG-7895 (Nikita Erkhov) #Core #Stripe #MultiVendor
+2019-10-14 - [Bug] Stripe may not be disabled with the HTTPS protocol disabled. #BUG-6815 (Nikita Erkhov) #Stripe
+2019-10-10 - [Bug] Fixed the fatal error generated when attempting to access the settings page for a non-existent payment method. #BUG-7538 (Pavel Veselovsky) #Stripe
+

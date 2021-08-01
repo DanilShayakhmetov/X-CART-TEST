@@ -1,0 +1,13 @@
+{##
+ # ____file_title____
+ #
+ # @ListChild (list="file_select_dialog.file_selections", weight="700")
+ # @ListChild (list="file_select_dialog.file_selections_url", weight="700")
+ #}
+
+<li class="url-copy-to-local input-field">
+  <label for="url-copy-to-local">
+    {{ widget('\\XLite\\View\\FormField\\Input\\Checkbox', value='Y', isChecked='true', attributes={'disabled': 'disabled'}, fieldName='url_copy_to_local', fieldOnly='true') }}
+    <span>{{ t('Copy file to local server') }}</span>
+  </label>
+</li>

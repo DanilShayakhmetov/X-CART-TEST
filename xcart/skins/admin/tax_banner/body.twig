@@ -1,0 +1,15 @@
+{##
+ # Tax banner page template
+ #}
+
+<div class="taxes-help-section">
+  <div class="title h4">
+    {{ this.getSVGImage('images/icon_info.svg')|raw }}
+    {{ t('How to') }}
+  </div>
+  <ul class="howto-links">
+    {% for row in this.getHelpLinks() %}
+    <li><a href="{{ row.url }}" target="_blank">{{ row.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

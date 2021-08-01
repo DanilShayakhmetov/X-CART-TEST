@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-12-06 - [Bug] Slow scrolling on the product comparison page. Fixed. #BUG-7771 https://bt.x-cart.com/view.php?id=50918 (Jamil Ainulov) #ProductComparison
+

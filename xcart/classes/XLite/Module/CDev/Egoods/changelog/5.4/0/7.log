@@ -1,0 +1,9 @@
+Version 5.4.0.7
+
+Improvements (1)
+2019-12-18 - [Change] The spelling of the word "fulfilment" in the text labels was fixed. #BUG-7332 (Shevelov Alexander) #Core #Egoods #PINCodes #NotFinishedOrders #CustomOrderStatuses
+
+Fixes (2)
+2019-12-17 - [Bug] Layout issue on the E-goods addon settings page. Fixed. #BUG-7425 (Pavel Veselovsky) #Egoods
+2019-11-26 - [Bug] Ordered files and PIN codes pages were accessible to customers even if they had not bought egoods or products with PIN codes. Fixed. #BUG-7734 (Jamil Ainulov) #Egoods #PINCodes
+

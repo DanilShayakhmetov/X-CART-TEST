@@ -1,0 +1,10 @@
+Version 5.4.1.15
+
+Improvements (1)
+2020-09-08 - [Change] Timeout error while Apply attribute value changes was used on a large number of products. Fixed. #XCN-11201 https://bt.x-cart.com/view.php?id=51839 #Core
+
+Fixes (3)
+2020-09-09 - [Bug] Validation errors on the product details page (validator.w3.org). Fixed. #BUG-8918 https://bt.x-cart.com/view.php?id=52038 #Core #CrispWhiteSkin
+2020-09-08 - [Bug] xc_orders.payment_method_name was not filled on order placement. Fixed. #BUG-8921 https://bt.x-cart.com/view.php?id=51988 #Core
+2020-09-06 - [Bug] Choosing to Print invoice as a customer in a store with more than one language results in the Home page getting displayed with layout issues. Fixed. #BUG-8873 https://bt.x-cart.com/view.php?id=52001 #Core
+

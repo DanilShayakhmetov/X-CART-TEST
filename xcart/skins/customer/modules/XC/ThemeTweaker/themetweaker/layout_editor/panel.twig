@@ -1,0 +1,14 @@
+{##
+ # Layout editor panel
+ #}
+
+<xlite-layout-editor inline-template preset="{{ this.getCurrentLayoutPreset() }}">
+    <div id="layout-editor-panel" class="layout-editor--initial themetweaker-sections" :class="panelClasses">
+        <div class="layout-editor-sidebar">
+            {{ widget_list('layout_editor.sidebar') }}
+        </div>
+        <div class="layout-editor-main">
+            {{ widget_list('layout_editor') }}
+        </div>
+    </div>
+</xlite-layout-editor>

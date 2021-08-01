@@ -1,0 +1,18 @@
+{##
+ # Sign-in
+ #
+ # @ListChild (list="signin.main.wrapper", weight="100")
+ #}
+
+<div class="signin-login-wrapper">
+  {% include 'signin/parts/login/heading.twig' %}
+  {% if not this.isRegisterMode() %}
+    <div class="login-box">
+      {{ widget('XLite\\Module\\XC\\CrispWhiteSkin\\View\\CheckoutAuthorization') }}
+    </div>
+  {% else %}
+    <div class="register-box">
+      {{ widget('\\XLite\\View\\Model\\Profile\\Main', useBodyTemplate='1') }}
+    </div>
+  {% endif %}
+</div>

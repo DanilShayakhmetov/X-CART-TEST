@@ -1,0 +1,27 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: freight_shipping_calc_mode
+    category: XC\FreeShipping
+    translations:
+      - code: ru
+        option_name: Стоимость доставки для товаров с заданным значением поля "Фиксированная стоимость доставки" должна быть равна
+
+XLite\Model\LanguageLabel:
+  - { name: 'FREE', translations: [{ code: ru, label: 'БЕСПЛАТНО' }] }
+  - { name: 'Free shipping', translations: [{ code: ru, label: 'Бесплатная доставка' }] }
+  - { name: 'FREE SHIPPING', translations: [{ code: ru, label: 'БЕСПЛАТНАЯ ДОСТАВКА' }] }
+  - { name: 'Wrong free shipping format', translations: [{ code: ru, label: 'Неправильный формат значения поля "Бесплатная доставка"' }] }
+  - { name: 'Wrong freight fixed fee format', translations: [{ code: ru, label: 'Неправильный формат значения поля "freightFixedFee"' }] }
+  - { name: 'Free shipping tooltip text', translations: [{ code: ru, label: 'Специальный способ доставки. Отображается при оформлении заказа только если <ul><li>для всех товаров в корзине включена настройка "Бесплатная доставка";</li><li>нет других доступных способов доставки.</li></ul><a href="https://kb.x-cart.ru/shipping/free_shipping_on_orders_that_meet_certain_conditions.html" target="_blank">Узнайте, как настроить бесплатную доставку для заказов, соответствующих определенным условиям</a>' }] }
+  - { name: 'Shipping freight', translations: [{ code: ru, label: 'Фиксированная стоимость доставки' }] }
+  - { name: 'This field can be used to set a fixed shipping fee for the product. Make sure the field value is a positive number (greater than zero).', translations: [{ code: ru, label: 'В данном поле можно задать фиксированную стоимость доставки для редактируемого товара. Убедитесь, что используемое значение является положительным числом (больше нуля).' }] }
+  - { name: 'Shipping freight only', translations: [{ code: ru, label: 'указанному значению фиксированной стоимости доставки' }] }
+  - { name: 'Shipping freight + regular shipping rate', translations: [{ code: ru, label: 'сумме фиксированной стоимости доставки и стоимости доставки, рассчитанной стандартным способом' }] }
+  - { name: 'Shipping freight tooltip text', translations: [{ code: ru, label: 'Специальный способ доставки. Отображается при оформлении заказа только если<ul><li>для всех товаров в корзине задана фиксированная стоимость доставки;</li><li>нет других доступных способов доставки.</li></ul>' }] }
+  - { name: 'Freight', translations: [{ code: ru, label: 'Фиксированная стоимость доставки' }] }

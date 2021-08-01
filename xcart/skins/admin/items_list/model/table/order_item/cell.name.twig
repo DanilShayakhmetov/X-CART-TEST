@@ -1,0 +1,44 @@
+{##
+ # Item name cell
+ #}
+
+<div class="item-image-container">
+  <div class="item-image">
+    {% if this.entity.hasImage() %}
+      <img src="{{ this.entity.getImageURL() }}" alt="{{ this.getColumnValue(this.column, this.entity) }}">
+    {% endif %}
+  </div>
+</div>
+<div class="item-info">
+  <div class="item-name">
+    {% if this.entity.getURL() %}
+      <a href="{{ this.entity.getURL() }}" class="item-name" target="_blank">{{ this.getColumnValue(this.column, this.entity) }}</a>
+    {% endif %}
+    {% if not this.entity.getURL() %}
+      <span class="item-name">{{ this.getColumnValue(this.column, this.entity) }}</span>
+    {% endif %}
+    {% if not this.entity.product.isPersistent() %}
+      <span class="deleted-product-note">({{ t('deleted') }})</span>
+    {% endif %}
+  </div>
+
+  {% spaceless %}
+    <ul class="subitem additional simple-list">
+      {{ widget_list('invoice.item.name', item=this.entity, displayVariative='1') }}
+    </ul>
+  {% endspaceless %}
+
+  {% if not this.isStatic() %}
+    {{ widget('\\XLite\\View\\OrderItemAttributes', orderItem=this.entity) }}
+  {% endif %}
+
+  {% if this.entity.isBackordered() %}
+    <div class="backordered-info">
+      {% if this.entity.getBackorderedAmount() < this.entity.getAmount() %}
+        {{ t('Backordered (qty: {{qty}})', {'qty': this.entity.getBackorderedAmount()}) }}
+      {% else %}
+        {{ t('Backordered') }}
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

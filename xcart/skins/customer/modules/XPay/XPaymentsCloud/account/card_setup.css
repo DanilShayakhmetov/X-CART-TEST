@@ -1,0 +1,28 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles for Card Setup page
+ */
+
+.address-book-button
+{
+  text-align: center;
+  padding-top: 51px;
+  height: 120px;
+}
+
+.card-setup-address select,
+.card-setup-warning,
+#xpayments-iframe-container
+{
+  max-width: 376px;
+  width: 100%;
+}
+
+.card-setup-address select
+{
+  margin: 20px 0;
+}
+#save_card {
+  margin-top: 20px;
+}

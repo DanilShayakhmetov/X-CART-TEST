@@ -1,0 +1,23 @@
+{##
+ # Left side menu
+ #}
+
+<div {{ this.printTagAttributes(this.getContainerTagAttributes())|raw }}>
+  {% set items = this.getItems() %}
+  {% if items %}
+    <ul class="menu main-menu">
+      {% for item in items %}
+        {{ item.display() }}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% set bottomItems = this.getBottomItems() %}
+  {% if bottomItems %}
+    <ul class="menu bottom-menu">
+      {% for link in bottomItems %}
+        {{ link.display() }}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

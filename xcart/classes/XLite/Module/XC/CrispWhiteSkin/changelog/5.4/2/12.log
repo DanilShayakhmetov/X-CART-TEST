@@ -1,0 +1,9 @@
+Version 5.4.2.12
+
+Improvements (1)
+2021-01-20 - [Story] Multiple improvements for the Two factor authentication add-on. #XCC-973 #CDev-Core #XC-TwoFactorAuthentication #XC-CrispWhiteSkin
+
+Fixes (2)
+2021-01-20 - [Bug] Reduced the width of customer profile details fields in the Customer area for the case when the news block is not displayed. #XCB-154 #XC-CrispWhiteSkin
+2021-01-06 - [Bug] Increased the spacing between the fields Payment Status and Fulfillment Status. #XCB-116 #XC-CrispWhiteSkin
+

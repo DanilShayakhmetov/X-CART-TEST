@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-06-04 - [Bug] Export/import of products with attached files. The file URLs were not exported. Fixed. #BUG-7384 (Shevelov Alexander) #Core #Egoods #FileAttachments
+

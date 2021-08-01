@@ -1,0 +1,86 @@
+{##
+ # Layout template (https://litmus.com/conference/pm-workshop)
+ #}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light only">
+  <title>{{ this.getNotificationSubject() }}</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+  <style>
+    @media only screen and (max-width: 480px) {
+      body {
+        width: 100% !important;
+        min-width: 100% !important;
+        background-color: #ffffff !important;
+      }
+
+      #body_wrapper {
+        padding: 0 !important;
+      }
+
+      #content {
+        padding: 20px !important;
+      }
+    }
+
+    :root {
+        color-scheme: light only;
+    }
+  </style>
+</head>
+<body {% if this.getMailBodyClass() %}class="{{ this.getMailBodyClass() }}"{% endif %}>
+<div id="body_wrapper">
+  <div id="mail-body">
+    <div id="content">
+      {% if this.isNotificationHeaderEnabled() %}
+        <div class="header">
+          {{ this.getNotificationHeader()|raw }}
+        </div>
+      {% endif %}
+
+      <div class="main-content">
+        {% if this.isNotificationGreetingEnabled() %}
+          <div class="greeting">
+            {% include 'common/greeting.twig' %}
+          </div>
+        {% endif %}
+
+        {{ this.buildNotificationContent()|raw }}
+      </div>
+
+      {% if this.isNotificationSignatureEnabled() %}
+        <div class="signature">
+          {% include 'common/signature.twig' %}
+        </div>
+      {% endif %}
+
+      {% if this.isNotificationTipEnabled() %}
+        <div class="tip">
+            {% include 'common/tip.twig' %}
+        </div>
+      {% endif %}
+
+    </div>
+    {% if this.hasCompanyAddress() %}
+      <div id="company_address">
+        {% if this.getCompanyAddressFirstLine() %}
+          <div class="first-line">
+            {{ this.getCompanyAddressFirstLine() }}
+          </div>
+        {% endif %}
+        {% if this.getCompanyAddressSecondLine() %}
+          <div class="second-line">
+            {{ this.getCompanyAddressSecondLine() }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+</body>
+</html>

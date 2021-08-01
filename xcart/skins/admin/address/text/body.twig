@@ -1,0 +1,19 @@
+{##
+ # Address
+ #}
+<ul class="address-entry">
+{% for fieldName, fieldData in this.getSchemaFields() if this.getFieldValue(fieldName) %}
+
+  <li class="address-text-{{ fieldName }}">
+  
+    <div class="clear"></div>
+
+    {{ widget_list('main', type='inherited', fieldName=fieldName, fieldData=fieldData) }}
+
+    <div class="clear"></div>
+  
+  </li>
+
+{% endfor %}
+
+</ul>

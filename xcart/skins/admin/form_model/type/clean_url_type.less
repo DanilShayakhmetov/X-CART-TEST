@@ -1,0 +1,47 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Clean url type styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+ 
+@import (reference) "../../css/initialize";
+
+.clean-url-row {
+
+  .form-horizontal &.form-group {
+    margin: 0;
+  }
+
+  .clean-url-result {
+    .saved {
+      color: @text-color;
+    }
+  }
+
+  .clean-url-conflict {
+    color: @state-danger-text;
+
+    .tooltip-main {
+      .tooltip-caption {
+        font-size: inherit;
+        border-bottom: 1px dashed;
+      }
+    }
+  }
+
+  .form-marketing-clean-url-autogenerate {
+    padding: 0 !important;
+    margin-bottom: @rhythmic-unit;
+
+    > .input-widget > .checkbox {
+      .flex-display();
+
+      min-height: unset;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

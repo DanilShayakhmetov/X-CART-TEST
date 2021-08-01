@@ -1,0 +1,5 @@
+{##
+ # Order failed email body (to customer)
+ #}
+
+{{ widget('\\XLite\\View\\TransactionDetails', transaction=this.order.getPaymentTransactions().last()) }}

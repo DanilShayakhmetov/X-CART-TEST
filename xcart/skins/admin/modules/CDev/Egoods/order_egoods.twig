@@ -1,0 +1,102 @@
+{##
+ # Order's e-goods list
+ #}
+<ul class="egoods-items">
+  {% for item in this.getItems() %}
+    <li class="item {% if item.product.product_id %}live-product{% else %}deleted-product{% endif %}">
+      <div class="title">
+        {% if item.product.product_id %}
+          {{ loop.index }}. <a href="{{ url('product', '', {'id': item.product.product_id}) }}">{{ item.product.name }}</a>
+        {% else %}
+          {{ loop.index }}. <span>{{ item.name }}</span>
+        {% endif %}
+        <span class="qty">&times; {{ item.getAmount() }}</span>
+      </div>
+      {% if not item.product.product_id %}
+        <div class="product-removed">{{ t('Product and attachments had been removed') }}</div>
+      {% else %}
+        <ul class="attachments">
+          {% for attachment in item.getPrivateAttachments() %}
+            <li class="{{ this.getAttachmentClass(loop.index, attachment) }}">
+              <div class="main">
+                <div class="info">
+                  <div class="attachment-title icon-type-{{ attachment.getAttachmentIcon() }}">
+                    {% if attachment.attachment %}
+                      <a href="{{ url('product', '', {'id': item.product.product_id, 'page': 'attachments'}) }}">{{ attachment.attachment.getPublicTitle() }}</a>
+                    {% endif %}
+                  </div>
+                  {% if not attachment.getAttachment() %}
+                    <div class="blocked">{{ t('Attachment removed') }}</div>
+                  {% endif %}
+                  {% if not attachment.isOrderCompleted() %}
+                    <div class="unavailable">
+                      <div>{{ t('Unavailable') }}</div>
+                      <div>{{ t('Order is not processed') }}</div>
+                    </div>
+                  {% endif %}
+                  {% if item.product.product_id and attachment.getAttachment() and attachment.isOrderCompleted() %}
+                    {% if attachment.hasAttemptsLimit() %}
+                      <div class="attempts">
+                        {% if attachment.isAttemptsEnded() %}
+                          <span>{{ t('Expired by limit') }}</span>
+                        {% else %}
+                          <span>{{ t('Downloads left') }}:</span> {{ attachment.getAttemptsLeft() }} / {{ attachment.getAttemptLimit() }}
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                    {% if attachment.hasExpireLimit() %}
+                      <div>
+                        {% if attachment.isExpired() %}
+                          <span>{{ t('Expired by TTL') }}</span>
+                        {% else %}
+                          <span>{{ t('Expires in') }}:</span> {{ this.formatTTL(attachment.getExpiresLeft()) }}
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                </div>
+
+                {% if item.product.product_id and attachment.getAttachment() and attachment.isOrderCompleted() %}
+                  <div class="status {{ this.getStatusClass(attachment) }}">
+                    {% if attachment.isExpired() or attachment.isAttemptsEnded() %}
+                      {{ t('Blocked') }}
+                    {% endif %}
+                    {% if attachment.getBlocked() %}
+                      {{ t('Blocked by administrator') }}
+                    {% endif %}
+                    {% if attachment.isAvailable() %}
+                      {{ t('Available for download') }}
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+              </div>
+              <div class="egoods-buttons">
+                {% if item.product.product_id and attachment.getAttachment() and attachment.isOrderCompleted() %}
+                  {% form 'XLite\\Module\\CDev\\Egoods\\View\\Form\\OrderEgood' with {formParams: {'order_id': item.order.getOrderId(), 'attachment_id': attachment.getId()}} %}
+                  <div class="buttons">
+                    {% if attachment.isExpired() or attachment.isAttemptsEnded() %}
+                      {{ widget('XLite\\Module\\CDev\\Egoods\\View\\Button\\Renew', label='Renew') }}
+                    {% else %}
+                      {% if attachment.getBlocked() %}
+                        {{ widget('XLite\\Module\\CDev\\Egoods\\View\\Button\\Renew', label='Unblock and renew') }}
+                      {% else %}
+                        {{ widget('XLite\\Module\\CDev\\Egoods\\View\\Button\\Block', label='Block') }}
+                        {{ widget('XLite\\Module\\CDev\\Egoods\\View\\Button\\Renew', label='Renew') }}
+                      {% endif %}
+                    {% endif %}
+                  </div>
+                  {% endform %}
+                {% endif %}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      <div class="clear"></div>
+    </li>
+  {% endfor %}
+</ul>
+
+{{ widget('XLite\\Module\\CDev\\Egoods\\View\\StickyPanel\\Egoods') }}
+

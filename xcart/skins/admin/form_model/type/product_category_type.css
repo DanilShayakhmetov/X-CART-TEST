@@ -1,0 +1,34 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Product category type styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.form-default-category .tooltip .tooltip-inner {
+  text-align: left;
+}
+
+.form-default-category .tooltip .path .part .part {
+  margin-left: 15px;
+}
+
+@keyframes ellipsis {
+  from {
+    width: 2px;
+  }
+  to {
+    width: 10px;
+  }
+}
+
+.searching:after,
+.loading-more:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis 1s infinite;
+  content: "\2026";
+}

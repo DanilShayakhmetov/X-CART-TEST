@@ -1,0 +1,5 @@
+Version 5.4.2.3
+
+Fixes (1)
+2020-09-08 - [Bug] Facebook Ads and Instagram Ads. Сontent_ids that was passed on to Facebook Pixel was not the same as the product id in the feed. Fixed. #BUG-8967 https://bt.x-cart.com/view.php?id=52071 #Facebook Commerce
+

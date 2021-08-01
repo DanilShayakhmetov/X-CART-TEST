@@ -1,0 +1,8 @@
+{##
+ # Do not send notification checkbox
+ #}
+
+<label class="disabled">
+  <input type="checkbox" name="doNotSendNotification" class="disabled not-affect-recalculate" value="1" {% if this.checked %} checked="checked" {% endif %} />
+  <span>{{ t('Don’t notify customer') }}</span>
+</label>

@@ -1,0 +1,17 @@
+{##
+ # Theme tweaker template page template
+ #}
+
+{% if this.isEmptyTemplateContent() %}
+
+{% include 'modules/XC/ThemeTweaker/notification_editor/empty_template.twig' %}
+
+<div class="notification_content_hidden">
+{{ this.getNotificationContent() | raw }}
+</div>
+
+{% else %}
+
+{{ this.getNotificationContent() | raw }}
+
+{% endif %}

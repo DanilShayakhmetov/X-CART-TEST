@@ -1,0 +1,23 @@
+{##
+ # Instructions form field template
+ #}
+
+<h2>{{ t(this.getParam('label')) }}</h2>
+{% if this.isConnected(this.getParam('label')) %}
+  <div class="alert alert-success">
+    {{ this.getConnectedLabel(this.getParam('label'))|raw }}
+    {% if this.getKBLink() %}
+      <a class="site-link" href="{{ this.getKBLink() }}" target="_blank">{{ this.getKBLabel() }}</a><br>
+    {% endif %}
+  </div>
+{% else %}
+  <div class="alert alert-warning">
+    {{ this.getNotConnectedLabel(this.getParam('label'))|raw }}
+    {% if this.getKBLink() %}
+      <a class="site-link" href="{{ this.getKBLink() }}" target="_blank">{{ this.getKBLabel() }}</a><br>
+    {% endif %}
+  </div>
+{% endif %}
+<p>
+  {{ t(this.processUrls(this.getParam('help')))|raw }}
+</p>

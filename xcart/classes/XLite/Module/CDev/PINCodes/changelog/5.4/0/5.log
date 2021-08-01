@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Fixes (1)
+2019-11-20 - [Bug] The Inventory Tracking options and QTY of a product with PIN codes could be updated via Bulk Editing. Fixed. #BUG-6912 (Maxim Kuznetsov) #PINCodes #BulkEditing
+

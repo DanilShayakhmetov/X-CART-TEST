@@ -1,0 +1,134 @@
+{##
+ # Product added step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-product-added
+          inline-template
+          :demo-catalog="{{ this.isDemoCatalogAvailable() ? 'true' : 'false' }}"
+          product-url-base="{{ this.getStorefrontUrlBase() }}">
+
+    <div class="step-contents demo-catalog-no-product" v-if="!productId && demoCatalog && !isDeleted">
+      <h2 class="heading">{{ t('Ready to delete demo products?') }}</h2>
+      <div class="demo-products-showcase">
+        {{ svg('modules/XC/Onboarding/images/3_products.svg')|raw }}
+      </div>
+      <div class="buttons">
+        <div class="buttons-wrapper">
+          {{ widget('XLite\\View\\Button\\Regular', label=t("Proceed to the next step"), style='regular-main-button', attributes={'@click': 'skipStep'}, jsCode="null;") }}
+        </div>
+        <div class="additional-buttons muted-buttons">
+          {{ widget('XLite\\View\\Button\\SimpleLink',
+            label=t("Go to the Dashboard"),
+            attributes={'@click': 'hideWizard'},
+            jsCode="null;"
+          ) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="step-contents demo-catalog" v-if="productId && demoCatalog && !isDeleted">
+      <h2 class="heading">{{ t('You have added 1 product') }}</h2>
+      <p class="text">{{ t('The newly created product is already in your [storefront]. Have a look!', {'storefront': this.getStorefrontUrl()})|raw }}</p>
+      <div class="product">
+        <div class="product-photo product-added-photo">
+          {% if this.getLastProduct() %}
+            {% if this.getLastProduct().getImage() %}
+              <div class="image">
+                <a :href="productUrl" class="link">
+                  {{ widget('\\XLite\\Module\\XC\\Onboarding\\View\\ProductAddedImage', lazyLoad=true, image=this.getLastProduct().getImage(), maxWidth=this.getIconWidth(), maxHeight=this.getIconHeight(), className='photo') }}
+                </a>
+              </div>
+            {% else %}
+              <div class="no-image">
+                <a :href="productUrl" class="link">
+                  <i class="icon fa fa-camera"></i>
+                </a>
+              </div>
+            {% endif %}
+          {% else %}
+            <div class="image" v-if="productImageLine">
+              <a :href="productUrl" class="link">
+                {{ widget('\\XLite\\Module\\XC\\Onboarding\\View\\ProductAddedImage', lazyLoad=true, maxWidth=this.getIconWidth(), maxHeight=this.getIconHeight(), className='photo') }}
+              </a>
+            </div>
+            <div class="no-image" v-if="!productImageLine">
+              <a :href="productUrl" class="link">
+                <i class="icon fa fa-camera"></i>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+        <div class="product-name">
+          <a target="_blank"
+             :title="productNameLine"
+             class="product-name"
+             :href='productUrl'
+                  {% if this.getLastProduct() %}
+          >
+            {{ this.getLastProduct().getName() }}
+            {% else %}
+              v-html='productNameLine'>
+            {% endif %}
+          </a>
+        </div>
+      </div>
+      <div class="buttons bottom-sticky">
+        <div class="buttons-wrapper">
+          {{ widget('XLite\\View\\Button\\Regular', label=t("Proceed to the next step"), style='regular-main-button', attributes={'@click': 'skipStep'}, jsCode="null;") }}
+        </div>
+        <div class="additional-buttons muted-buttons">
+          {{ widget('XLite\\View\\Button\\SimpleLink',
+            label=t("Go to the Dashboard"),
+            attributes={'@click': 'hideWizard'},
+            jsCode="null;"
+          ) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="step-contents no-demo-catalog" v-if="productId && !demoCatalog">
+      <h2 class="heading">{{ t('You have added 1 product') }}</h2>
+      <p class="text">{{ t('You can view the newly created product in your [storefront] or add a few [more products] to your catalog.', {'storefront': this.getStorefrontUrl(), 'more': this.getProductListUrl()})|raw }}</p>
+      <div class="product-added-image">
+        {{ svg('modules/XC/Onboarding/images/add-product.svg')|raw }}
+      </div>
+      <div class="buttons">
+        <div class="buttons-wrapper">
+          {{ widget('XLite\\View\\Button\\Regular', label=t("Proceed to the next step"), style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+        </div>
+        <div class="additional-buttons muted-buttons">
+          {{ widget('XLite\\View\\Button\\SimpleLink',
+            label=t("Go to the Dashboard"),
+            attributes={'@click': 'hideWizard'},
+            jsCode="null;"
+          ) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="step-contents catalog-deleted" v-if="demoCatalog && isDeleted">
+      <div class="catalog-deleted-image">
+        {{ svg('modules/XC/Onboarding/images/catalog-deleted.svg')|raw }}
+      </div>
+      <h2 class="heading">{{ t('Done! We ve just deleted all your demo products') }}</h2>
+      <p class="text">{{ t('Add a few [more products] to your catalog or proceed to the next step - whatever makes you happy.', {'more': this.getProductListUrl()})|raw }}</p>
+
+      <div class="buttons bottom-sticky">
+        <div class="buttons-wrapper">
+          {{ widget('XLite\\View\\Button\\Regular', label=t("Proceed to the next step"), style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+        </div>
+        <div class="additional-buttons muted-buttons">
+          {{ widget('XLite\\View\\Button\\SimpleLink',
+            label=t("Go to the Dashboard"),
+            attributes={'@click': 'hideWizard'},
+            jsCode="null;"
+          ) }}
+        </div>
+      </div>
+    </div>
+
+  </xlite-wizard-step-product-added>
+</div>

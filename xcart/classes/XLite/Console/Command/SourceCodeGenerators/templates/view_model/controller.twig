@@ -1,0 +1,51 @@
+{##
+ # Controller View
+ #}
+{% extends "base/php-class.twig" %}
+
+{% block method_doActionUpdate_body %}
+        $dto = $this->getFormModelObject();
+        $formModel = new {{ method.formModelClass }}(['object' => $dto]);
+
+        $form = $formModel->getForm();
+        $data = \XLite\Core\Request::getInstance()->getData();
+        $rawData = \XLite\Core\Request::getInstance()->getNonFilteredData();
+
+        $form->submit($data[$this->formName]);
+
+        $model = $this->getModelObject();
+        if ($form->isValid()) {
+            $dto->populateTo($model, $rawData[$this->formName]);
+            \XLite\Core\Database::getEM()->persist($model);
+            \XLite\Core\Database::getEM()->flush();
+            \XLite\Core\Translation::getInstance()->reset();
+
+            \XLite\Core\TopMessage::addInfo('{{ method.successText }}');
+
+        } else {
+            $this->saveFormModelTmpData($rawData[$this->formName]);
+        }
+
+        $params = [];
+        if ($model && $model->getUniqueIdentifier()) {
+            $params['{{ idName }}'] = $model->getUniqueIdentifier();
+        }
+
+        $this->setReturnURL($this->buildURL('{{ method.returnUrl }}', '', $params));
+{% endblock %}
+
+{% block method_getModelObject_body %}
+        $id = \XLite\Core\Request::getInstance()->{{ idName }};
+
+        return \XLite\Core\Cache\ExecuteCached::executeCachedRuntime(
+            function () use ($id) {
+                return $id
+                    ? \XLite\Core\Database::getRepo('{{ modelClass }}')->find($id)
+                    : new \{{ modelClass }}();
+            },
+            [
+                get_class($this) . '_edit_controller_model',
+                $id
+            ]
+        );
+{% endblock %}

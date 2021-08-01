@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-12-23 - [Bug] Add to cart popup. After enabling the add-on in mobile mode, the popup panel with the message about a product having been added to the shopping cart stopped displaying. Fixed.  #XCB-90 #XC-Add2CartPopup
+

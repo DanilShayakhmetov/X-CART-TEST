@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Last_changes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shipping" stroke-width="2" stroke="#708692">
+            <g transform="translate(7.000000, 5.000000)" id="Line">
+                <polygon points="17.7281553 0 34.6601942 9.70873786 34.6601942 30.2912621 17.7281553 40 0.834951456 30.2912621 0.834951456 9.70873786"></polygon>
+                <polyline points="0.834951456 9.70873786 18 19.4174757 35.1650485 9.70873786"></polyline>
+                <path d="M25.5728155,4.27184466 L9.41747573,14.5631068"></path>
+                <path d="M18,19.4174757 L18,40"></path>
+            </g>
+        </g>
+    </g>
+</svg>

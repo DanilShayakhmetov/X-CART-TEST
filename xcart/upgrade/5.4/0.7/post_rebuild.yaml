@@ -1,0 +1,23 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: livechat_ad
+    category: 'Company'
+    type: XLite\View\FormField\LiveChatAd
+    orderby: 49300
+  - name: percent_format
+    category: Units
+    type: XLite\View\FormField\Select\PercentFormat
+    orderby: 62300
+    value: '%s%%'
+    translations: [{ code: en, option_name: 'Percent format' }]
+
+XLite\Model\LanguageLabel:
+  - { name: "Try to search worldwide or find the needed solution in marketplace", translations: [{ code: en, label: 'Please let us know if you want to <a target="_blank" href="{{URL}}">suggest an idea</a> or <a target="_blank" href="{{URL}}">contact us</a> for a free quote for custom development service.' }] }
+  - { name: "percent X off", translations: [{ code: en, label: "{{percent}} off" }] }
+  - { name: "The Clean URL entered is already in use.", translations: [{ code: en, label: 'The Clean URL entered is already <a href="{{entityURL}}" target="_blank">in use</a>. Check the "Resolve the conflict" tooltip.' }] }

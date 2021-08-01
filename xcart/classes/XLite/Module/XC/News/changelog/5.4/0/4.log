@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Fixes (1)
+2019-11-07 - [Bug] In sitemap.xml, & special character was not escaped for all links  Fixed. #BUG-8043 (Jamil Ainulov) #SimpleCMS #XMLSitemap #News
+

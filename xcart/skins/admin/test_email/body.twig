@@ -1,0 +1,53 @@
+{##
+ # Email testing feature
+ #}
+
+<fieldset id="test_email_wrapper">
+  <div class="fieldset-content">
+    <ol class="styled">
+      <li>{{ t('mail tester line 1')|raw }}</li>
+      <li>{{ t('mail tester line 2')|raw }}</li>
+      <li>{{ t('mail tester line 3')|raw }}</li>
+      <li>{{ t('mail tester line 4')|raw }}</li>
+    </ol>
+
+    <p class="spaced">
+      <a class="article-link" href="{{ this.getMailTesterArticleLink() }}"
+         target="_blank">{{ t('Check the article how to check your emails') }}</a>
+    </p>
+
+    {% form '\\XLite\\View\\Form\\TestEmail' %}
+
+      <ul class="table vertical test-email-config">
+        {% if this.hasTestEmailError() %}
+          <li>
+            <div class="alert alert-danger" role="alert">
+              {{ this.getTestEmailError()|raw }}
+            </div>
+          </li>
+        {% endif %}
+        <li>
+          {% if this.isContactMode() %}
+            {{ widget('\\XLite\\View\\FormField\\Select\\Regular', label='From email', options=this.getContactEmailsAsOptions(), fieldName='test_from_email_address') }}
+          {% endif %}
+
+          {% if this.isServerMode() %}
+            {{ widget('\\XLite\\View\\FormField\\Label', label='From email', value='sender identified by server') }}
+          {% endif %}
+
+          {% if this.isManualMode() %}
+            {{ widget('\\XLite\\View\\FormField\\Label', label='From email', value=this.getCompanyName() ~ ' ' ~ this.getManualMail()) }}
+          {% endif %}
+        </li>
+        <li>
+
+          {{ widget('\\XLite\\View\\FormField\\Input\\Text\\Email', label='To email', fieldName='test_to_email_address', required='true', placeholder=t('Specify email address')) }}
+        </li>
+        <li>
+          {{ widget('\\XLite\\View\\FormField\\Textarea\\Simple', label='Email body', value=t("body of the test email"), fieldName='test_email_body') }}
+        </li>
+      </ul>
+      {{ widget('\\XLite\\View\\StickyPanel\\TestEmail') }}
+    {% endform %}
+  </div>
+</fieldset>

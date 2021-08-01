@@ -1,0 +1,5 @@
+Version 5.4.2.2
+
+Changes:
+- Apple Pay method was not properly hidden on unsupported devices during checkout. Fixed.
+- X-Payments Cloud card entry form wasn't appearing in some cases. Fixed.

@@ -1,0 +1,19 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: recaptcha_version
+    category: 'CDev\ContactUs'
+    type: \XLite\Module\CDev\ContactUs\View\FormField\VersionSwitch
+    orderby: 1050
+    value: '2'
+    translations:
+      - code: en
+        option_name: 'Version'
+
+XLite\Model\LanguageLabel:
+  - { name: 'recaptcha_terms_of_service', translations: [{ code: en, label: 'This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.' }]}

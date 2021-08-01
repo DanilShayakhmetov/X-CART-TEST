@@ -1,0 +1,10 @@
+{##
+ # Edit link 
+ #}
+
+<div class="separator"></div>
+<div class="entity-edit-link" {{ this.getEditLinkAttributes(this.entity, this.column) }}>
+  <a href="{{ this.buildEntityURL(this.entity, this.column) }}">
+    <i class="fa fa-edit icon"></i>
+  </a>
+</div>

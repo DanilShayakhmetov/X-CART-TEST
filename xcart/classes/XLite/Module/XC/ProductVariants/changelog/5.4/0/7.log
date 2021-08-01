@@ -1,0 +1,7 @@
+Version 5.4.0.7
+
+Fixes (3)
+2020-01-05 - [Bug] With the addon Product Variants enabled, a warning was generated when importing a global attribute of the type "textarea" with the value "0" if the attribute being imported or its value had not been defined. Fixed. #BUG-7772 https://bt.x-cart.com/view.php?id=50921 (Shevelov Alexander) #ProductVariants
+2019-12-27 - [Bug] Layout issues related to the display attribute names on the page for editing product variants. Fixed. #BUG-7698 (Shevelov Alexander) #ProductVariants
+2019-12-12 - [Bug] Fatal error when removing a global attribute on which a product variant was based that had an image of its own. #BUG-8132 https://bt.x-cart.com/view.php?id=51261 (Damir Khamidullin) #ProductVariants
+

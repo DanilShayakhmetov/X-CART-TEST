@@ -1,0 +1,38 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Powered by widget style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.profile-form .table .input.two-fa-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile-form .table .input.two-fa-checkbox .table-label {
+  margin-left: 20px;
+}
+
+.profile-form .table li.input.two-fa-checkbox:not(.input-label):not(.checkbox-label) .form-control {
+  width: 20px;
+  min-height: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.input-field-wrapper.two-fa-checkbox {
+  display: flex;
+}
+
+.input-field-wrapper.two-fa-checkbox .input-itseft-wrapper {
+  margin-right: 20px;
+}
+
+.profile-form .table li.input-checkbox.two-fa-checkbox .table-value {
+  float: none;
+}

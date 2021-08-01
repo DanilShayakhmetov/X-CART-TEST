@@ -1,0 +1,6 @@
+Version 5.4.0.5
+
+Fixes (2)
+2019-11-22 - [Bug] Froala does not strip the onclick/onload/onchange/onscroll attributes now. #BUG-8062 https://bt.x-cart.com/view.php?id=51175 (Jamil Ainulov) #Froala
+2019-11-08 - [Bug] Fixed the error "XLite [error] Exception: File `~parent.less` not found." which could be generated on the pages for editing a category, a product or other entity with the WYSIWYG editor. #BUG-8041 https://bt.x-cart.com/view.php?id=51102 (Nikita Erkhov) #Froala
+

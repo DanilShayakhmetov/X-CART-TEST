@@ -1,0 +1,6 @@
+Version 5.3.14.12
+
+[Improvement] Admin search (beta).
+[Improvement] Multi-lingual search (beta).
+[Improvement] Improved security of CloudSearch account creation procedure.
+[Fix] Fixed visibility of partially hidden ("Show only in categories and search") products in filter in some sections.

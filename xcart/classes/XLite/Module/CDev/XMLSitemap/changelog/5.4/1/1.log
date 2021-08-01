@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-07-17 - [Bug] Some of the page titles in the Admin area did not match the names of items in the main admin menu. #BUG-8788 #Core #XMLSitemap
+

@@ -1,0 +1,20 @@
+{##
+ # Progress section
+ #}
+<div class="job-progress id-{{ this.getJobId() }}"
+     data-job-id="{{ this.getJobId() }}"
+     data-job-name="{{ this.getJobName() }}">
+  <h2>{{ this.getJobName() }}</h2>
+  <div class="progress progress-striped active">
+    <div class="progress-bar waiting"
+         role="progressbar"
+         aria-valuenow="{{ this.getInitialProgress() }}"
+         aria-valuemin="0"
+         aria-valuemax="100"
+         style="width: {{ this.getInitialProgress() }}">
+      <span class="sr-only">{{ this.getInitialProgress() }}% Complete</span>
+    </div>
+  </div>
+  <div class="estimated-time">Unknown</div>
+  <button class="cancel">Cancel</button>
+</div>

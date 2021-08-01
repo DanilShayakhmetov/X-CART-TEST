@@ -1,0 +1,21 @@
+{##
+ # 404 contact info
+ #
+ # @ListChild (list="404.default", weight="500")
+ # @ListChild (list="404.product", weight="500")
+ # @ListChild (list="404.category", weight="500")
+ #}
+
+<div class="page-404">
+  {% if this.getPhone() %}
+    <div class="phone">
+      <span class="name">{{ t('Phone') }}:</span>
+      <span class="value">{{ this.getPhone() }}</span>
+    </div>
+  {% endif %}
+  {% if this.isShowEmail() and this.getEmail() %}
+    <div class="email">
+      <a href="mailto:{{ this.getEmail() }}">{{ this.getEmail() }}</a>
+    </div>
+  {% endif %}
+</div>

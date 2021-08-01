@@ -1,0 +1,159 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/**
+ * MINICART widgets
+ */
+
+.lc-minicart
+{
+  position: relative;         /* Position nested popups inside these blocks */
+  cursor: pointer;
+}
+
+.lc-minicart.empty
+{
+  cursor: auto;
+}
+
+.lc-minicart .items-list {
+  min-width: 320px;
+  padding: (@rhythmic-unit * 2);
+  width: @minicart-width;
+  box-shadow: @header-shadow;
+  right: -1px;
+  left: auto;
+  top: (@rhythmic-unit * 2);
+  bottom: auto;
+  z-index: 900;
+  display: block;
+  cursor: auto;
+  border: none;
+
+  @media(max-width: @screen-xs-min) {
+    overflow: auto;
+    max-height: 90%;
+  }
+
+  .other-items {
+    text-align: right;
+    margin-bottom: (@rhythmic-unit / 2);
+  }
+
+  .subtotal {
+    color: @minicart-color;
+    margin-bottom: 0;
+    line-height: (@rhythmic-unit * 2 - 1);
+
+    text-align: right;
+
+    strong {
+      vertical-align: baseline;
+      font-weight: 600;
+      font-size: @font-size-base;
+    }
+
+    span {
+      vertical-align: baseline;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
+  .buttons-row {
+     .flex-display();
+    .justify-content(space-between);
+    .flex-wrap(wrap);
+
+    & > * {
+      margin-top: (@rhythmic-unit);
+      width: ((@minicart-width - @rhythmic-unit * 5) / 2);
+      text-align: center;
+    }
+
+    .reason-details {
+      width: 100%;
+      color: @color-text-default;
+    }
+
+    .buttons-separator {
+      width: 100%;
+      padding: 0;
+      line-height: 10px;
+    }
+  }
+}
+
+.lc-minicart .title
+{
+  color: @headings-color;
+  font-size: 18px;
+  line-height: @rhythmic-unit;
+  margin-bottom: (@rhythmic-unit * 2);
+  margin-top: 0px;
+}
+
+.lc-minicart .items-list ul,
+  .lc-minicart .items-list li
+{
+  list-style: none;
+  background: transparent none;
+}
+
+.lc-minicart .cart-item {
+  min-height: (@rhythmic-unit * 3);
+  margin-top: @rhythmic-unit;
+  margin-bottom: @rhythmic-unit;
+
+  .flex-display();
+
+  .item-image {
+    .align-self(center);
+    width: 60px;
+    height: 100%;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      padding: 0;
+      max-height: 100%;
+    }
+  }
+
+  .item-name {
+    padding-left: @rhythmic-unit;
+    width: (@rhythmic-unit * 9);
+
+    & > a {
+      line-height: @rhythmic-unit;
+    }
+
+    & > .item-attribute-values {
+      line-height: @rhythmic-unit;
+      font-size: 10px;
+      text-transform: capitalize;
+      color: @color-link-2;
+    }
+  }
+
+  .item-amount {
+    margin-left: auto;
+    color: @minicart-color;
+    text-align: right;
+    white-space: nowrap;
+    padding-left: 20px;
+  }
+
+  .item-price {
+    color: @minicart-color;
+    text-align: right;
+    min-width: (@rhythmic-unit * 4)
+  }
+}

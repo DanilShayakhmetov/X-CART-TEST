@@ -1,0 +1,5 @@
+Version 5.4.0.3
+
+Fixes (1)
+2020-01-13 - [Bug] Layout issues on the two factor authentication form in the Customer area. Fixed. #BUG-7814 (Maxim Kuznetsov) #TwoFactorAuthentication
+

@@ -1,0 +1,26 @@
+{##
+ # Layout editor panel
+ #}
+<div id="onboarding-wizard-loader-point">
+  <xlite-onboarding-wizard
+    inline-template
+    step="{{ this.getWizardStep() }}"
+    :steps="{{ this.getWizardSteps() | json_encode }}"
+    state="{{ this.getWizardState() }}"
+    last-product="{{ this.getLastAddedProductId() }}">
+    <div class="onboarding-wizard-wrapper onboarding-wizard--initial" :class="classes">
+      <div id="onboarding-wizard" class="onboarding-wizard">
+        <div class="onboarding-wizard--inner" :class="bodyClasses">
+          <div class="reloading-element"></div>
+          <div class="onboarding-wizard--header">
+            {{ widget_list('onboarding-wizard.header') }}
+          </div>
+          <div class="onboarding-wizard--body">
+            {{ widget_list('onboarding-wizard.body') }}
+          </div>
+        </div>
+      </div>
+      {{ widget_list('onboarding-wizard.after') }}
+    </div>
+  </xlite-onboarding-wizard>
+</div>

@@ -1,0 +1,15 @@
+{##
+ # Theme tweaker notitication editor product data widget
+ #}
+
+<div class="themeTweaker-product themeTweaker-data-widget">
+  <div class="title">{{ t('Product Sku') }}</div>
+  <div class="themeTweaker-data-widget-input themeTweaker-product-change-input">
+    {{ widget('\\XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Input\\Text\\AutoComplete',
+      fieldOnly=true,
+      fieldName='data[product]',
+      value=this.getValue(),
+      placeholder=t('Enter product SKU'),
+      dictionary='theme_tweaker_product') }}
+  </div>
+</div>

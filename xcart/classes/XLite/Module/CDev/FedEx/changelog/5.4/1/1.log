@@ -1,0 +1,5 @@
+Version 5.4.1.1
+
+Fixes (1)
+2020-08-06 - [Bug] Fedex. Fedex shipping method was not available for selection at checkout if the order needed to be shipped from Australia and the store had states configured. Fixed. #BUG-8739 https://bt.x-cart.com/view.php?id=51824 #FedEx
+

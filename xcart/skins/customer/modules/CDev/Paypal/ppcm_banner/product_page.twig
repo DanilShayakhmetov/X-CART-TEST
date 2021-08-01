@@ -1,0 +1,9 @@
+{##
+ # PayPal credit messaging banner
+ #
+ # @ListChild (list="product.details.page.info", weight="45")
+ #}
+
+{% if this.product.isAvailable() %}
+    {{ widget('XLite\\Module\\CDev\\Paypal\\View\\PPCMBanner', page='product') }}
+{% endif %}

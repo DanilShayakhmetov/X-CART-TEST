@@ -1,0 +1,16 @@
+{##
+ # Review block
+ #
+ # @ListChild (list="reviews.review.response", weight="100")
+ #}
+<div class="title">
+  <div class="info">
+    <div class="reviewer-name">
+        <span>{{ this.review.getRespondentName() }}</span>
+    </div>
+    <div class="date">
+      {{ this.formatTime(this.review.getResponseDate()) }}
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>

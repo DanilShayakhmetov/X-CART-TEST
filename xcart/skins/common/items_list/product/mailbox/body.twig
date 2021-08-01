@@ -1,0 +1,13 @@
+{##
+ # Product mail widget
+ #}
+
+<div class="products-mail-box">
+  {% for product in this.getProducts() %}
+    {% if this.getUrlProcessor() %}
+      {{ widget(this.getProductWidget(), product=product, productUrlProcessor=this.getUrlProcessor()) }}
+    {% else %}
+      {{ widget(this.getProductWidget(), product=product) }}
+    {% endif %}
+  {% endfor %}
+</div>

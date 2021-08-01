@@ -1,0 +1,20 @@
+{##
+ # Top selling products block template
+ #}
+
+{% if not this.isEmptyStats() %}
+  <div class="top-sellers">
+    <h3>{{ t('Bestsellers') }}</h3>
+    <div id="period-{{ this.getSelectedPeriod()|raw }}" class="block-container">
+      {{ widget('XLite\\View\\ItemsList\\Model\\Product\\Admin\\TopSellers', period=this.getSelectedPeriod(), products_limit='5', availability=this.getSelectedAvailability()) }}
+    </div>
+
+    <div class="selectors">
+      {{ widget('XLite\\View\\FormField\\Select\\Regular', label='For the period', options=this.getOptions(), fieldName='period', value=this.getSelectedPeriod()) }}
+
+      {{ widget('XLite\\View\\FormField\\Select\\Regular', label='Products', options=this.getAvailabilityOptions(), fieldName='availability', value=this.getSelectedAvailability()) }}
+    </div>
+  </div>
+{% else %}
+  <div class="empty-list">{{ t('No products sold yet') }}</div>
+{% endif %}

@@ -1,0 +1,12 @@
+{##
+ # Zone: states selector template
+ #
+ # @ListChild (list="zones.zone.details", weight="200")
+ #}
+
+{{ widget('\\XLite\\View\\FormField\\Select\\Select2\\States',
+    labelHelp=t('The countries to which the selected states belong will be added to the zone automatically.'),
+    fieldName='zone_states',
+    label='States',
+    value=this.zone.getZoneStates(),
+    wrapperClass='zone-states') }}

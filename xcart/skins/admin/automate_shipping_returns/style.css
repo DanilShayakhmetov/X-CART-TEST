@@ -1,0 +1,17 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * automate_shipping_returns styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.seventy-one-pounds-promo {
+  max-width: 900px;
+}
+
+.seventy-one-pounds-promo .promo-module {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}

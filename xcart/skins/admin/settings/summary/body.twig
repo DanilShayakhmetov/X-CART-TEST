@@ -1,0 +1,133 @@
+{##
+ # ____file_title____
+ #}
+
+<fieldset>
+  <div>
+    {{ widget_list('environment.before') }}
+
+    <table cellspacing="1" cellpadding="5" class="settings-table">
+
+      <tr>
+        <td class="setting-name">{{ t('Core version') }}:</td>
+        <td>{{ this.core_version|raw }}{% if this.answeredVersion %}&nbsp;&nbsp;({{ t('verified version') }}: {% if this.answeredVersionError %}
+            <span class="star">{{ t('unknown') }}</span>{% else %}{{ this.answeredVersion }}{% endif %}){% endif %}</td>
+      </tr>
+
+      {% if this.answeredVersionError %}
+        <tr>
+          <td class="setting-name">{{ t('Loopback test') }}:</td>
+          <td><textarea name="answered_version" class="form-control" cols="80" rows="5" style="FONT-SIZE: 10px;"
+                        readonly>{{ this.answeredVersion }}</textarea></td>
+        </tr>
+      {% endif %}
+
+      <tr>
+        <td class="setting-name">{{ t('Installation directory') }}:</td>
+        <td>
+          <div>{{ this.root_folder|raw }}</div>
+          <div class="form-field-comment">
+            <a href="{{ this.getInstallationDirectoryHelpLink() }}" target="blank_"
+               class="navigation-path">{{ t('How do I move X-Cart?') }}<i class="icon fa fa-external-link"></i></a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">PHP:</td>
+        <td>
+          <div>{{ this.phpversion|raw }}</div>
+          <div class="form-field-comment">
+            <a href="{{ url('settings', 'phpinfo', {'page': 'Environment'}) }}" target="blank_"
+               class="navigation-path">{{ t('details') }}</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('MySQL server') }}:</td>
+        <td>
+          <span>{{ this.mysql_server|raw }}&nbsp;</span>
+          {% if this.innodb_support %}
+            <span>({{ t('InnoDB engine support enabled') }})</span>
+          {% endif %}
+          {% if not this.innodb_support %}
+            <span
+                class="error-message">{{ t('Warning! InnoDB engine is not supported. It is required for software operation') }}</span>
+          {% endif %}
+        </td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('Web server') }}:</td>
+        <td>{{ this.web_server|raw }}</td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('Operating system') }}:</td>
+        <td>{{ this.os_type|raw }}</td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('Date and time on the server') }}:</td>
+        <td>{{ this.getServerDateTime() }} {{ this.getServerTimeZone() }}</td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('Date and time in the shop') }}:</td>
+        <td>{{ this.getShopDateTime() }} {{ this.getShopTimezone() }}</td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('XML parser') }}:</td>
+        <td>{{ this.xml_parser|raw }}</td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">GDLib:</td>
+        <td>{% if this.gdlib %}{{ this.gdlib }}{% else %}<span class="error-message">{{ t('Not detected') }}</span><br/>
+            <b>{{ t('Warning!') }}</b> {{ t('PHP \'gd\' extension is not installed.') }}{% endif %}</td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('Translation driver') }}:</td>
+        <td>{{ this.getTranslationDriver() }}</td>
+      </tr>
+
+      <tr>
+        <td class="setting-name">{{ t('Curl version') }}:</td>
+        <td>{% if this.libcurl %}{{ this.libcurl|raw }}{% else %}<span class="star">{{ t('unknown') }}</span>{% endif %}
+        </td>
+      </tr>
+    </table>
+  </div>
+</fieldset>
+
+{% if this.libcurl or this.license_keys %}
+  {% include 'settings/base.twig' %}
+{% endif %}
+
+<fieldset>
+  <legend class="separated">
+    <h2>{{ t('Installation requirements') }}</h2>
+  </legend>
+  <div class="two-column">
+    <div class="left-column">
+      <h3>{{ t('Critical') }}</h3>
+      <ul class="settings-table critical-requirements-table">
+        {% for name, requirement in this.getCriticalRequirements() %}
+          {{ widget('XLite\\View\\Requirement', requirement=requirement, name=name, odd=loop.index is odd) }}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="right-column">
+      <h3>{{ t('Non-critical') }}</h3>
+      <ul class="settings-table non-critical-requirements-table">
+        {% for name, requirement in this.getNonCriticalRequirements() %}
+          {{ widget('XLite\\View\\Requirement', requirement=requirement, name=name, odd=loop.index is odd) }}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</fieldset>

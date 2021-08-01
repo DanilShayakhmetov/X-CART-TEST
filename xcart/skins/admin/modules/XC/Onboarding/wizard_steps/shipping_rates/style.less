@@ -1,0 +1,210 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-step.step-shipping_rates {
+  .subheader {
+    margin: 30px auto;
+    font-size: 16px;
+    max-width: 750px;
+  }
+
+  .my-shipping {
+    padding: (@rhythmic-unit / 6) 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    & > .method-label {
+      margin-right: @rhythmic-unit / 2;
+      text-align: right;
+      width: 150px;
+
+      input {
+        width: 150px;
+        text-align: right;
+      }
+
+      .input-display {
+        margin: 0;
+        background-color: rgba(252, 235, 176, 0.3);
+        border-radius: @border-radius-base;
+        padding: (@rhythmic-unit / 3 - 1) (@rhythmic-unit / 2 - 1);
+        border: 1px solid transparent;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #fcebb0;
+          overflow: hidden;
+        }
+      }
+    }
+
+    & > .flat-rate {
+      margin-left: (@rhythmic-unit / 2);
+      width: 122px;
+
+      input[type=text] {
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+  }
+
+  .separator {
+    height: 40px;
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 80px;
+      border-top: 1px solid #ccd0d2;
+      margin: 0 10px;
+    }
+  }
+
+  .shipping-carriers {
+    height: 80px;
+    margin: 40px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .shipping-carrier {
+      position: relative;
+      max-height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      transition: box-shadow 0.3s ease;
+      border-radius: 4px;
+      border: solid 1px #ccd0d2;
+
+      margin-left: 10px;
+      margin-right: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: inline-block;
+      }
+
+      &:not(.added):hover, &:not(.added):focus {
+        box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+        border-color: #4a90e2;
+      }
+
+      &.added {
+        border-color: #97c564;
+      }
+
+      img {
+        max-height: 100%;
+        max-width: 100px;
+      }
+    }
+
+    .shipping-carrier img {
+      max-height: 100%;
+      max-width: 100px;
+    }
+
+    .shipping-carrier.added a {
+      cursor: default;
+    }
+
+    .shipping-carrier.added:after {
+      content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxMiA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MiAoMzY3ODEpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPmNoZWNrLW1hcmstZ3JlZW48L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iY2hlY2stbWFyay1ncmVlbiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIC0yLjAwMDAwMCkiPgogICAgICAgICAgICA8cGF0aCBkPSJNNC41NTkyODQ2NCwxMC4wODYyNzY5IEM0Ljk1ODY4Mjc2LDEwLjIzOTg3ODcgNS40MjYwNTQ2NCwxMC4xNTQyMDM5IDUuNzQ3NDgxNzcsOS44MzI3NzY3IEwxMS42NzMwNzM5LDMuOTA3MTg0NjQgQzEyLjExMDAzMzUsMy40NzAyMjUwNCAxMi4xMDgyNTQ0LDIuNzY0Nzg2NDQgMTEuNjcyMDU1OCwyLjMyODU4NzgzIEMxMS4yMzI4MTYxLDEuODg5MzQ4MTIgMTAuNTI5MDk1MywxLjg5MTkzMzQgMTAuMDkzNDU5LDIuMzI3NTY5NzMgTDQuODQ4ODQwMjMsNy41NzIxODg1IEwxLjkwNzk5NzE5LDQuNjMxMzQ1NDEgQzEuNDcxMTk2NTksNC4xOTQ1NDQ4MSAwLjc2NjUzMiw0LjE5MTAxNTcxIDAuMzI3MjkyMjkxLDQuNjMwMjU1NDIgQy0wLjEwODkwNjMxOCw1LjA2NjQ1NDAzIC0wLjEwOTY1MTgzOCw1Ljc3MjkyNjIgMC4zMjgzODIyODEsNi4yMTA5NjAzIEwzLjg4MDMzNTg1LDkuNzYyOTEzOSBDNC4wNzA1Mzg4Miw5Ljk1MzExNjkgNC4zMTE1MzIzLDEwLjA2MTE2NTkgNC41NTkyODQ2NCwxMC4wODYyNzY5IFoiIGlkPSJTaGFwZSIgZmlsbD0iIzk3QzU2NCIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtcGF0aCIgeD0iMCIgeT0iMCIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIj48L3JlY3Q+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=');
+      position: absolute;
+      color: #97c564;
+      background-color: white;
+      padding: 3px 8px;
+      width: 20px;
+      top: 0;
+      right: 0;
+      transform: translate(1px, -8px);
+    }
+
+    .shipping-carrier:nth-child(n+7) {
+      display: none;
+    }
+  }
+
+  .buttons {
+    margin: 17px auto 3px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popup-template {
+    display: none;
+  }
+}
+
+.method-added-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 600px;
+
+  .image {
+    margin-bottom: 30px;
+
+    img {
+      max-width: 250px;
+      max-height: 100px;
+    }
+  }
+
+  .note {
+    font-size: 24px;
+    color: #000000;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .buttons {
+    margin: 60px auto 0;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    a.regular-button {
+      color: #2c5fa6;
+    }
+
+    button, a.regular-button {
+      min-width: 150px;
+      font-size: 14px;
+
+      span {
+        vertical-align: middle;
+      }
+    }
+  }
+}

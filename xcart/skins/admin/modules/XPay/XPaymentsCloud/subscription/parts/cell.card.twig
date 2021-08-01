@@ -1,0 +1,23 @@
+{##
+ # Saved cards
+ #
+ #}
+
+<div class="subscription-card">
+
+  {% if this.entity.isFree() %}
+    {{ t('Not required') }}
+  {% else %}
+    {% if this.entity.getXpaymentsCards() %}
+      <select name="data[{{ this.entity.getId() }}][card]" class="form-control">
+        {% for card in this.entity.getXpaymentsCards() %}
+          <option
+              value="{{ card.cardId }}"{% if (this.entity.getCardId() and this.entity.getCardId() == card.cardId) %} selected="selected"{% endif %}>
+            {{ this.getCardName(card) }}
+          </option>
+        {% endfor %}
+      </select>
+    {% endif %}
+  {% endif %}
+
+</div>

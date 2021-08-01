@@ -1,0 +1,7 @@
+{##
+ # Popup button
+ #}
+<button type="button" class="{{ this.getClass() }}" title="{{ t(this.getButtonLabel()) }}">
+  {{ this.displayCommentedData(this.getURLParams()) }}
+  <i class="edit-icon">{{ svg('images/icons/edit.svg', 'admin')|raw }}</i>
+</button>

@@ -1,0 +1,157 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * User files styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.define-color-border-if-not-defined() {@color-border: #e2e2e2}
+.define-color-border-if-not-defined();
+.define-rhythmic-unit-if-not-defined() {@rhythmic-unit: 20px}
+.define-rhythmic-unit-if-not-defined();
+.define-color-link-if-not-defined() {@color-link: #386eaf}
+.define-color-link-if-not-defined();
+.define-color-hover-if-not-defined() {@color-hover: #1cb5fc}
+.define-color-hover-if-not-defined();
+.define-color-text-light-if-not-defined() {@color-text-light: #9b9b9b}
+.define-color-text-light-if-not-defined();
+.define-color-text-dark-if-not-defined() {@color-text-dark: #4a4a4a}
+.define-color-text-dark-if-not-defined();
+.define-color-green-if-not-defined() {@color-green: #6abd0a}
+.define-color-green-if-not-defined();
+.define-color-red-if-not-defined() {@color-red: #ec554e}
+.define-color-red-if-not-defined();
+
+.orders-files {
+  .order {
+    display: table;
+    max-width: 600px;
+    width: 100%;
+
+    .info {
+      position: relative;
+
+      .order-link {
+        font-size: 24px;
+        color: @color-text-dark;
+      }
+
+      .order-unavailable-mark {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: @color-red;
+        font-size: 14px;
+      }
+
+      .order-unavailable-mark.green {
+        color: @color-green;
+      }
+
+      .date {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: @color-text-light;
+        margin-left: 10px;
+      }
+
+      * {
+        vertical-align: baseline;
+      }
+    }
+
+    .files {
+      border: solid 1px @color-border;
+      border-radius: @border-radius-base;
+      padding: 0;
+      margin-top: @rhythmic-unit;
+
+      .file {
+        padding: @rhythmic-unit;
+        position: relative;
+
+        &.unavailable .row .icon,
+        &.unavailable .row .name,
+        &.unavailable .row .size,
+        &.unavailable .description {
+          opacity: 0.5;
+        }
+
+        .row {
+          display: flex;
+          margin: 0;
+        }
+
+        .name {
+          font-size: @font-size-h5;
+          display: block;
+          white-space: normal;
+          word-break: break-all;
+        }
+
+        a.name {
+          color: @color-link;
+        }
+
+        .size {
+          display: block;
+          color: @color-text-light;
+        }
+
+        .description {
+          margin-top: @rhythmic-unit;
+          white-space: normal;
+          word-break: break-all;
+        }
+
+        .unavailable-mark {
+          font-size: 14px;
+          display: block;
+          color: @color-red;
+        }
+
+        .icon {
+          width: 30px;
+          height: @rhythmic-unit * 2;
+          margin-right: @rhythmic-unit;
+
+          &:before {
+            content: '';
+            width: 30px;
+            height: 40px;
+            display: block;
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center left;
+          }
+        }
+      }
+
+      .file + .file {
+        &:before {
+          content: '';
+          width: ~"calc(100% - 40px)";
+          height: 1px;
+          background: @color-border;
+          display: block;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .order + .order {
+    margin-top: 30px;
+  }
+}
+
+
+.icon-type-s3:before {
+  background-image: url(files/s3.svg) !important;
+}

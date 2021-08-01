@@ -1,0 +1,8 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-06-14 - [Change] Layout adjustments of the Order details page in the Admin area according to the styleguide. #XCN-9918 (Fedya Lavrentyev) #Core #Coupons #Egoods #SalesTax #CanadaPost #MultiVendor #MultiCurrency
+
+Fixes (1)
+2019-06-13 - [Bug] Fatal error on the email notification page when there were no orders in the store. Fixed. #BUG-7490 (Shevelov Alexander) #ThemeTweaker #CanadaPost #VendorMessages
+

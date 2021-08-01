@@ -1,0 +1,1 @@
+Please note, if there were custom email notifications developed for the current X-Cart version they may not work correctly after updating. During the update process, we will create backup copies of the corresponding files in 'var/notifications_backup_pre_540.csv' file on your server. Please, contact the custom notifications developer for assistance with the adaptation.

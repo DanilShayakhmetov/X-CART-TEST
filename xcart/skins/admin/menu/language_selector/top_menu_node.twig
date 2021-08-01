@@ -1,0 +1,10 @@
+{##
+ # Language selector top menu node
+ #}
+<div class="language-selector-menu menu">
+  <div class="title">
+    {{ this.getCurrentLanguage().getCode() }}
+    <i class="fa fa-angle-right"></i>
+  </div>
+  <div class="box">{{ widget('XLite\\View\\Menu\\Admin\\LanguageSelector\\Menu') }}</div>
+</div>

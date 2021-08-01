@@ -1,0 +1,16 @@
+
+{##
+ # Email footer
+ #
+ # @ListChild (list="crud.modulesettings.formHeader", zone="admin", weight="50")
+ #}
+
+{% if this.getModule() %}
+
+  {% set moduleName = this.getModule() %}
+
+  {% if moduleName == 'XC\\Reviews' %}
+    {{ widget('XLite\\Module\\XC\\Reviews\\View\\Promo\\ShopperApproved') }}
+  {% endif %}
+
+{% endif %}

@@ -1,0 +1,5 @@
+Version 5.4.1.0
+
+Improvements (1)
+2020-08-18 - [Change] Added support for Apple Pay, Google Pay, Microsoft pay for Stripe. #BUG-8930 #Stripe
+

@@ -1,0 +1,14 @@
+Version 5.4.2.11
+
+Improvements (2)
+2020-12-19 - [Story] Added a new setting: "Always show coupon code box". #XCC-1162 #CDev-Coupons #XC-CrispWhiteSkin
+2020-12-20 - [Story] Updated the skins / color schemes icons on the Look & Feel -> Layout page. #XCC-882 #XC-CrispWhiteSkin #XC-DarkSparkleSkin #XC-DelicatePinkSkin #XC-DewyGreenSkin #XC-ForestGreenSkin #XC-MarbleGreySkin #XC-SoftBlueSkin #XC-SpaceVioletSkin
+
+Fixes (6)
+2021-01-06 - [Bug] Increased the spacing between the fields Payment Status and Fulfillment Status. #XCB-116 #XC-CrispWhiteSkin
+2021-01-10 - [Bug] Increased the spacing over the product name in the mobile version.  #XCB-114 #XC-CrispWhiteSkin
+ - [Bug] Crisp White vs VAT. Layout issues in Table View. Fixed. #XCB-80 #XC-CrispWhiteSkin
+2020-12-24 - [Bug] Reduced the size of the semi-transparent animation that is shown when changing a product attribute on a product page on the storefront. #XCB-70 #XC-CrispWhiteSkin
+2020-12-23 - [Bug] Removed the arrows from the sorting dropdown "Sort by: Price Low - High / Price High - Low" on product listings on the storefront. #XCB-51 #XC-CrispWhiteSkin
+2021-01-05 - [Bug] Optimization based on Google PageSpeed Insight report. #XCB-44 #XC-CrispWhiteSkin
+

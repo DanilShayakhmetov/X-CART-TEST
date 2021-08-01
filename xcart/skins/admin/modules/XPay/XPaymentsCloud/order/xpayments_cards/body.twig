@@ -1,0 +1,48 @@
+{##
+ # X-Payments cards
+ #}
+
+{% form '\\XLite\\Module\\XPay\\XPaymentsCloud\\View\\Form\\PopupXpaymentsCards' %}
+
+  <br>
+  <h5>{{ t('Select a card to charge') }} <strong>{{ this.getAmount() }}</strong>:</h5>
+  <br>
+
+  <table class="xpayments-cards">
+    {% for cc in this.getCards() %}
+      <tr>
+        <td class="xpayments-selector-column">
+          <input id="{{ cc.cardId }}" type="radio" name="xpid"
+                 value="{{ cc.xpid }}"{% if cc.isDefault %} checked{% endif %}>
+        </td>
+        <td class="title-column">
+          <label for="{{ cc.cardId }}">
+
+            <div class="xpayments-card">
+              <div class="card-icon-container">
+                <span class="xpayments-card-type {{ cc.cssType }}" title="{{ cc.type }}"></span>
+              </div>
+
+              <div class="card-number-container">
+                <div class="card-number">
+                  {{ cc.first6 }}<span class="card-placeholder">{{ cc.placeholder }}</span>{{ cc.last4 }}
+                </div>
+                <div class="card-expire">
+                  {{ cc.expire }}
+                </div>
+              </div>
+
+            </div>
+          </label>
+        </td>
+
+      </tr>
+    {% endfor %}
+  </table>
+
+
+  <br><br>
+
+  {{ widget('\\XLite\\View\\Button\\Submit', id='init-action-button', style='main', label=t('Charge')) }}
+
+{% endform %}

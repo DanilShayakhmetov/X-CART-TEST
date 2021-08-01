@@ -1,0 +1,110 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * ____file_title____
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.model-selector ul.items-list,
+.model-selector .no-items-found,
+.model-selector .enter-more-characters
+{
+  display: block;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 4px 0px 0px 0px;
+  box-shadow: 0 2px 10px 0 rgba(74,73,74,0.2);
+  padding: 10px 10px;
+  color: @color-text-dark;
+  z-index: 1080;
+  background: #fff;
+}
+
+.model-selector ul.items-list:empty {
+  display: none;
+}
+
+.model-selector ul.items-list li,
+.model-selector .no-items-found,
+.model-selector .enter-more-characters
+{
+  overflow: hidden;
+  position: relative;
+  padding: 2px 8px;
+  background-color: #ffffff;
+}
+
+.model-selector ul.items-list li {
+  border-radius: 4px;
+  box-shadow: none;
+  background: #fff;
+  padding: 3px 30px 3px 10px;
+}
+
+.model-selector ul.items-list li:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.model-selector ul.items-list li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.model-selector ul.items-list li.active,
+.model-selector ul.items-list li.active .right-fade
+{
+  background: #eff8fe;
+}
+
+.model-selector ul.items-list li:hover {
+  cursor: pointer;
+}
+
+.model-selector .no-items-found,
+.model-selector .enter-more-characters
+{
+  position: absolute;
+  margin-top: 3px;
+  padding: 10px 10px;
+  min-width: 245px;
+}
+
+.ui-dialog .ui-dialog-content {
+  overflow: visible !important;
+}
+
+.model-definition {
+  display: block;
+  color: #8f8f8f;
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.model-definition.model-not-defined {
+  display: none;
+  height: 16px;
+}
+
+.spinner {
+  position: absolute;
+  margin-top: -26px;
+  right: -15px;
+}
+
+.spinner .box {
+  width: 20px;
+  height: 20px;
+}
+
+.model-selector input.model-input-selector {
+  padding-right: 40px !important;
+}
+
+.model-selector .items-list {
+  z-index: 10;
+}

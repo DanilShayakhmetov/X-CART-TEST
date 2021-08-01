@@ -1,0 +1,9 @@
+{##
+ # Inline editor panel
+ #}
+
+<xlite-inline-editor inline-template show-tinymce-warning="{{ this.isTinymceWarningVisible() ? 'true' : 'false' }}">
+    <div id="inline-editor-panel" class="inline-editor--initial themetweaker-sections">
+        {{ widget_list('inline_editor') }}
+    </div>
+</xlite-inline-editor>

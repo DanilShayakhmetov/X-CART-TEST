@@ -1,0 +1,17 @@
+{##
+ # Stats management page main template
+ #
+ # @ListChild (list="itemsList.state.header.before", weight="10")
+ #}
+
+<ul class="states-list">
+  {% for countryCode, countryName in this.getDisplayedCountries() %}
+    <li>
+      {% if countryCode != this.getCountryCode() %}
+        <a href="{{ url('states', '', {'country_code': countryCode}) }}">{{ countryName }}</a>
+      {% else %}
+        <span>{{ countryName }}</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

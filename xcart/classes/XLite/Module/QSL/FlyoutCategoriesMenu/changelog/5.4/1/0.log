@@ -1,0 +1,9 @@
+Version 5.4.1.0
+
+Improvements (2)
+2020-03-19 - [Change] Reduced the number of sizes to which product images are resized to enhance the image resizing performance. Minor UI improvements. #XCN-10682 #Core #ProductAdvisor #CrispWhiteSkin #MultiVendor #FlyoutCategoriesMenu #VendorPartners
+2020-01-20 - [Change] "Sale" addon improvements: It is now possible to add Group Sales. #XCN-10175 #Core #Sale #VAT #Wholesale #ProductFilter #ProductVariants #MultiVendor #FlyoutCategoriesMenu
+
+Fixes (1)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+

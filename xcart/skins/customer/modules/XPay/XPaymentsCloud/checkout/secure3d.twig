@@ -1,0 +1,42 @@
+{##
+ # 3-D Secure iframe
+ #}
+<script>
+  function onCardinalSetup() {
+    unshadePage();
+  }
+  function onCardinalValidated() {
+    shadePage('{{ t('Transaction is in progress')}}');
+  }
+  function shadePage(message)
+  {
+    message = message || '';
+    var shadeTarget = $('body');
+    var msgBox = document.createElement('div');
+    $(msgBox).html(message).addClass('reloading-message');
+    shadeTarget.children().remove('.reloading-message').remove('.reloading-element');
+    shadeTarget.addClass('reloading reloading-animated').append('<div class="reloading-element"></div>').append(msgBox);
+  }
+
+  function unshadePage()
+  {
+    var shadeTarget = $('body');
+    shadeTarget.children().remove('.reloading-message').remove('.reloading-element');
+    shadeTarget.removeClass('reloading reloading-animated');
+  }
+
+  function load3DSecureWidget()
+  {
+    shadePage("{{ t('You will be redirected now to your bank\'s site to complete the payment...') }}");
+    jQuery.get('{{ this.get3DSecureURL()|raw }}', function(data) {
+      var content = data.match(/<!-- REDIRECT FORM -->([\s\S]*)<!-- \/REDIRECT FORM -->/);
+      if (content) {
+          jQuery('#xpayments3DSecure').append(content[1]);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', load3DSecureWidget);
+</script>
+
+<div id="xpayments3DSecure"></div>

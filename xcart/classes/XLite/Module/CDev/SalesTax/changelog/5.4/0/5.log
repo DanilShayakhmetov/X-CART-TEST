@@ -1,0 +1,6 @@
+Version 5.4.0.5
+
+Fixes (2)
+2020-01-09 - [Bug] In some cases the settings values set on the page target=sales_tax were saved incorrectly. Fixed. #BUG-8210 (Pavel Veselovsky) #Core #SalesTax
+2020-01-09 - [Bug] On the Taxes page, the settings "Tax enabled" and "Use the same tax rates for all user membership levels" now use Yes/No switches instead of checkboxes. #BUG-7775 (Pavel Veselovsky) #Core #SalesTax
+

@@ -1,0 +1,5 @@
+Version 5.4.1.7
+
+Fixes (1)
+2020-07-20 - [Bug] Onboarding Wizard. Skipping a step in the wizard resulted in getting to an incorrect step. Fixed. #BUG-8672 #Onboarding
+

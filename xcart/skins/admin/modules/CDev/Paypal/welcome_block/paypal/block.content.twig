@@ -1,0 +1,30 @@
+{##
+ # Block content : items
+ #
+ # @ListChild (list="welcome-block.paypal.content", weight="10")
+ #}
+<div class="content">
+  <div class="info">
+
+    {% if not this.isConfigured() %}
+      {{ t('paypal_commerce_platform_welcome_text') | raw }}
+      <div class="action">
+        {% if this.isLocalHost() %}
+          {{ widget('\\XLite\\View\\Button\\Link', location=this.buildUrl('paypal_commerce_platform_settings'), label=t('Launch PayPal')) }}
+        {% else %}
+          {{ widget('\\XLite\\Module\\CDev\\Paypal\\View\\Button\\PaypalCommercePlatformSignUp', label=t('Launch PayPal')) }}
+        {% endif %}
+      </div>
+    {% else %}
+      {{ t('paypal_commerce_platform_welcome_text_configured') | raw }}
+      <div class="action">
+        {{ widget('\\XLite\\View\\Button\\Link', location=this.buildUrl('paypal_commerce_platform_settings'), label=t('PayPal Settings')) }}
+      </div>
+    {% endif %}
+
+  </div>
+
+  <div class="close-button"><i class="fa fa-times"></i></div>
+  <input type="checkbox" name="hide_welcome_block_paypal" id="hide_welcome_block_paypal" checked="checked"
+         class="hide-welcome-block" style="display: none"/>
+</div>

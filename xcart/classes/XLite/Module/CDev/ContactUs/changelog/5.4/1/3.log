@@ -1,0 +1,5 @@
+Version 5.4.1.3
+
+Fixes (1)
+2020-12-11 - [Bug] Contact Us. Captcha v3. Now the token is generated on form submission instead of page loading. #XCB-31 #CDev-ContactUs
+

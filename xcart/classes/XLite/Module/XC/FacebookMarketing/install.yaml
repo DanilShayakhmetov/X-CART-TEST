@@ -1,0 +1,76 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data dump
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Facebook Ads & Instagram Ads", translations: [{ code: en, label: "Facebook & Instagram Ads" }] }
+  - { name: "Product feed generation has been completed successfully", translations: [{ code: en, label: "Product feed generation has been completed successfully." }] }
+  - { name: "Product feed generation has been stopped", translations: [{ code: en, label: "Product feed generation has been stopped." }] }
+  - { name: "Generate Product Feed", translations: [{ code: en, label: "Generate Product Feed" }] }
+  - { name: "Product feed", translations: [{ code: en, label: "Product feed" }] }
+  - { name: "Facebook Pixel Id", translations: [{ code: en, label: "Facebook Pixel ID" }] }
+  - { name: "Product Feed URL", translations: [{ code: en, label: "Product Feed URL" }] }
+  - { name: "Frequency of Product Feed renewal", translations: [{ code: en, label: "Frequency of Product Feed renewal" }] }
+  - { name: "There is no products for facebook product feed generation", translations: [{ code: en, label: "No products have been selected for feed generation" }] }
+  - { name: "Enable facebook product feed", translations: [{ code: en, label: "Add to product feed" }] }
+  - { name: "Disable facebook product feed", translations: [{ code: en, label: "Remove from product feed" }] }
+  - { name: "Facebook product feed enabled", translations: [{ code: en, label: "Add to Facebook product feed" }] }
+  - { name: 'Wrong "facebook marketing enabled" format', translations: [{ code: en, label: 'Wrong "Facebook marketing enabled" format' }] }
+  - { name: 'Generate product feed', translations: [{ code: en, label: 'Generate product feed' }]}
+  - { name: 'Include out of stock products into feed', translations: [{ code: en, label: 'Include out of stock products into feed' }]}
+  - { name: 'Value for the "Add to cart" event is calculated as', translations: [{ code: en, label: 'Value for the "Add to cart" event is calculated as: product price multiplied by' }]}
+  - { name: 'Enable Advanced Matching', translations: [{ code: en, label: 'Enable Advanced Matching' }]}
+  - { name: 'Specify the percentage of users who complete the transaction (Add to cart)', translations: [{ code: en, label: 'Specify the percentage of users who complete the transaction. To find this value, go to Activity > Funnels and create a Funnel with the events Add to Cart and Purchases. The value you require will be shown on a Grey arrow.' }]}
+  - { name: 'Value for the "ViewContent" event on a product page is calculated as', translations: [{ code: en, label: 'Value for the "ViewContent" event on a product page is calculated as: product price multiplied by' }]}
+  - { name: 'Value for the "InitiateCheckout" event is calculated as', translations: [{ code: en, label: 'Value for the "InitiateCheckout" event is calculated as: cart subtotal multiplied by' }]}
+  - { name: 'Specify the percentage of users who complete the transaction (View content)', translations: [{ code: en, label: 'Specify the percentage of users who complete the transaction. To find this value, go to Activity > Funnels and create a Funnel with the events Content View and Purchases. The value you require will be shown on a Grey arrow.' }]}
+  - { name: 'Specify the percentage of users who complete the transaction (Initiate checkout)', translations: [{ code: en, label: 'Specify the percentage of users who complete the transaction. To find this value, go to Activity > Funnels and create a Funnel with the events Initiated Checkout and Purchases. The value you require will be shown on a Grey arrow.' }]}
+  - { name: 'This app ties your X-Cart store with your Facebook account to help you unlock all the marketing opportunities Facebook offers.', translations: [{ code: en, label: 'This app ties your X-Cart store with your Facebook account to help you unlock all the marketing opportunities Facebook offers. Upload products to Facebook catalogue, run and track and campaigns, optimize audience, and even add partners to manage your accounts'}]}
+  - { name: 'Continue with Facebook', translations: [{ code: en, label: 'Continue with Facebook'}]}
+  - { name: '1. Use the addon Google Product Feed for advanced flexibility generating a data feed for Facebook based on the product attributes and variants from your store catalog 2. Generate Product Feed', translations: [{ code: en, label: '1. Use the addon <a href="{{href}}">Google Product</a> Feed for advanced flexibility generating a data feed for Facebook based on the product attributes and variants from your store catalog<br/>2. Generate Product Feed'}]}
+  - { name: 'Facebook account is not connected. Connect with Facebook', translations: [{ code: en, label: 'Facebook account is not connected. <a href="{{href}}">Connect with Facebook</a>'}]}
+  - { name: '"Name Surname" Facebook account is connected. Change or Unlink account', translations: [{ code: en, label: '“<a href="https://business.facebook.com/home/accounts" target="blank">{{name}}</a>“ Facebook account is connected.<br/><a href="{{change_href}}">Change</a> or <a href="{{unlink_href}}">Unlink account</a>'}]}
+  - { name: 'Your product feed will be automatically sent to Facebook every 24 hours at the same time your Facebook account was connected to your X-Cart store.', translations: [{ code: en, label: 'Your product feed will be automatically sent to Facebook every 24 hours at the same time your Facebook account was connected to your X-Cart store.'}]}
+
+XLite\Model\Config:
+  - name: pixel_id
+    category: XC\FacebookMarketing
+    type: hidden
+    value: ''
+  - name: include_out_of_stock
+    category: XC\FacebookMarketing
+    type: hidden
+    value: Y
+  - name: renewal_frequency
+    category: XC\FacebookMarketing
+    type: hidden
+    value: 86400
+  - name: add_to_cart_value
+    category: XC\FacebookMarketing
+    type: hidden
+    value: 30
+  - name: view_content_value
+    category: XC\FacebookMarketing
+    type: hidden
+    value: 10
+  - name: init_checkout_value
+    category: XC\FacebookMarketing
+    type: hidden
+    value: 40
+  - name: advanced_matching
+    category: XC\FacebookMarketing
+    type: hidden
+    value: true
+  - name: connected
+    category: XC\FacebookMarketing
+    type: hidden
+    value: false
+  - name: token
+    category: XC\FacebookMarketing
+    type: hidden
+    value: ''
+XLite\Model\Task:
+  - owner: XLite\Module\XC\FacebookMarketing\Core\Task\GenerateProductFeed

@@ -1,0 +1,5 @@
+Version 5.4.0.2
+
+Improvements (1)
+2019-03-22 - [Change] Layout adjustments for payment method settings pages. #XCN-9658 (Fedya Lavrentyev) #Core #AuthorizeNet #Paypal #TwoCheckout #VendorMessages #BitPay #Yandex Checkout
+

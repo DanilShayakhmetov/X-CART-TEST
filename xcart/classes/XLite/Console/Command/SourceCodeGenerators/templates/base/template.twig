@@ -1,0 +1,24 @@
+{##
+ # PHP Class Core template
+ #}
+{% autoescape false %}
+{% block comment %}
+{% verbatim %}
+{##
+ # {% endverbatim %}{{ template.name }}
+{% if template.listChild %}
+ #
+{% for listChild in template.listChildren %}
+ # @ListChild (list="{{listChild.list}}", zone="{{listChild.zone}}", weight="{{listChild.weight}}")
+{%- endfor -%}
+{%- endif -%}
+{%- verbatim -%}
+ #}
+{% endverbatim %}
+{% endblock %}
+
+{% block template_body %}
+{{ template.bodyContentPlaceholder }}
+{% endblock %}
+{% endautoescape %}
+

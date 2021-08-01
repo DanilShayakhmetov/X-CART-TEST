@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'X-Cart trial will expire in X day', translations: [{ code: en, label: 'X-Cart trial will expire in {{count}} day' }] }
+  - { name: 'X-Cart trial will expire in X days', translations: [{ code: en, label: 'X-Cart trial will expire in {{count}} days' }] }
+  - { name: 'X-Cart trial will expire in X days (5)', translations: [{ code: en, label: 'X-Cart trial will expire in {{count}} days' }] }
+  - { name: 'You must register your X-Cart installation before using it for real sales. Activate your existing license key or contact our Solution Advisors to get one.', translations: [{ code: en, label: 'You must register your X-Cart installation before using it for real sales.<br>Activate your existing license key or contact our Solution Advisors to get one.' }] }
+  - { name: 'You must register your X-Cart installation before using it for real sales. Please enter your license key in the field below or contact our Solution Advisors to get one.', translations: [{ code: en, label: 'You must register your X-Cart installation before using it for real sales.<br>Please enter your license key in the field below or contact our Solution Advisors to get one.' }] }
+  - { name: 'Enter your license key', translations: [{ code: en, label: 'Enter your license key' }] }
+  - { name: 'Contact X-Cart', translations: [{ code: en, label: 'Contact X-Cart' }] }
+  - { name: 'Your X-Cart trial expires in X day', translations: [{ code: en, label: 'Your X-Cart trial expires in {{count}} day' }] }
+  - { name: 'Your X-Cart trial expires in X days', translations: [{ code: en, label: 'Your X-Cart trial expires in {{count}} days' }] }
+  - { name: 'Your X-Cart trial expires in X days (5)', translations: [{ code: en, label: 'Your X-Cart trial expires in {{count}} days' }] }
+  - { name: 'Please enter your license key in the field below or contact our Solution Advisors to get one.', translations: [{ code: en, label: 'Please enter your license key in the field below or contact our Solution Advisors to get one.' }] }
+  - { name: 'Your X-Cart trial has expired!', translations: [{ code: en, label: 'Your X-Cart trial has expired!' }] }
+  - { name: 'Contact X-Cart if you have any questions', translations: [{ code: en, label: '<a href="{{url}}" target="_blank">Contact X-Cart</a> if you have any questions' }] }

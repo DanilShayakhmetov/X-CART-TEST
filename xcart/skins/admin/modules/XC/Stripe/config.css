@@ -1,0 +1,183 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.stripe .status {
+  margin-bottom: 21px;
+}
+
+.stripe .status,
+.stripe .status span
+{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.stripe.configured .status span {
+  color: #6acc1f;
+  font-weight: bold;
+}
+
+.stripe .note {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.stripe .webhook {
+  margin-bottom: 13px;
+}
+
+.stripe .webhook .url {
+  font-size: 14px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 6px;
+  border: solid 1px #efefef;
+  background: #f8f8f8;
+  color: #8f8f8f;
+  width: auto;
+  display: table-cell;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stripe .webhook .url .copy-link {
+  margin-right: 6px;
+}
+
+.stripe .webhook .tooltip-main {
+  margin-top: 14px;
+  display: table-cell;
+  vertical-align: baseline;
+}
+
+.stripe .instruction {
+  margin-bottom: 19px;
+}
+
+.stripe .instruction .switcher {
+  text-decoration: none;
+  border-bottom: 1px dashed #006eae;
+  font-size: 14px;
+}
+
+.stripe .instruction .switcher-show,
+.stripe .instruction.non-visible .switcher-hide,
+.stripe .instruction.non-visible ul
+{
+  display: none;
+}
+
+.stripe .instruction.non-visible .switcher-show,
+.stripe .instruction .switcher-hide {
+  display: inline;
+}
+
+.stripe .instruction ul {
+  margin-top: 31px;
+  vertical-align: top;
+}
+
+.stripe .instruction li {
+  margin-top:10px;
+}
+
+.stripe .instruction li .number {
+  background-color: #f7caac;
+  color: #fff;
+  float: left;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 19px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.stripe .instruction li p {
+  margin-left: 15px;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.stripe .instruction li.more p {
+  margin-left: 0;
+}
+
+.stripe .buttons button {
+  float: none;
+}
+
+.stripe .buttons button * {
+  float: none;
+}
+
+.stripe a.disconnect {
+  font-size: 14px;
+  float: none;
+  vertical-align: baseline;
+}
+
+.stripe img.logo {
+  width: 146px;
+  height: 59px;
+  margin-top: 14px;
+  margin-bottom: 36px;
+}
+
+.stripe.non-configured p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.stripe.non-configured .stripe-connect {
+  margin-top: 10px;
+}
+.stripe-webhook-tip .formErrorContent {
+  background-color: #fff3cb;
+  border: 0px none;
+  box-shadow: none;
+  border-radius: 3px;
+  color: #222;
+  font-size: 11px;
+  min-width: 50px;
+  padding: 6px 8px;
+}
+
+.help-link i {
+  font-size: 14px;
+  color: #154e9c;
+}
+
+.help-text i {
+  font-size: 10px;
+  color: #154e9c;
+}
+
+span.external {
+  font-size: 14px;
+}
+
+.external i {
+  display: none;
+}
+
+.external:hover i {
+  display: inline;
+}
+
+.help-text .tooltip-main {
+  display: inline;
+  padding: 0;
+}
+
+.help-text .tooltip-caption {
+  font-size: 12px;
+}

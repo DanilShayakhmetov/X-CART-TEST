@@ -1,0 +1,14 @@
+{##
+ # Merchant status warning
+ #}
+<div class="merchant-status-warning">
+  <span>{{ t('Your PayPal account is not fully configured, please check that:') }}</span>
+  <div>
+    {% if not this.getParam('payments_receivable') %}
+    <div><span class="bull">&bull;</span>{{ t('you have permission to receive payments') }}</div>
+    {% endif %}
+    {% if not this.getParam('primary_email_confirmed') %}
+    <div><span class="bull">&bull;</span>{{ t('email is confirmed') }}</div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,11 @@
+Version 5.4.1.17
+
+Fixes (7)
+2020-10-06 - [Bug] Error when exporting product attribute values. Fixed. #BUG-9059 https://bt.x-cart.com/view.php?id=52144 #Core
+2020-10-02 - [Bug] Layout issues related to the "Apply attribute value changes for all the products" switch on the global attributes page of a product. Fixed. #BUG-9010 #Core
+2020-10-02 - [Bug] Warning when creating a global attribute. Fixed. #BUG-9009 #Core
+2020-09-30 - [Bug] Under certain conditions, a change of QTY of the main product was not reflected in the order history. Fixed. #BUG-9000 https://bt.x-cart.com/view.php?id=51823 #Core #ProductVariants #BackorderPreorder
+2020-09-29 - [Bug] After the arrival date of a product in a customer's shopping cart was reset for the future by the seller, the customer could still check out with this product. Fixed. #BUG-8990 https://bt.x-cart.com/view.php?id=52088 #Core #BackorderPreorder
+2020-09-18 - [Bug] USPS via PitneyBowes. A shipment could not be created for some methods because the shipping address did not include phoneNumber information. Fixed. #BUG-8995 #Core #USPS #MultiVendor
+2020-08-07 - [Bug] Volume Discounts vs Taxes. Tax was calculated incorrectly for orders with volume discounts applied. Fixed. #BUG-8898 https://bt.x-cart.com/view.php?id=52020 #Core
+

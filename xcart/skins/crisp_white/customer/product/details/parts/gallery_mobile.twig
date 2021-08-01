@@ -1,0 +1,40 @@
+{##
+ # Gallery widget
+ #}
+
+<div class="product-image-gallery{{ this.getCSSClasses() }}"{% if this.isVisibleAsHidden() %} style="display:none;"{% endif %}>
+  <div class="product-image-gallery-navigation product-image-gallery-prev-mobile" id='product-image-gallery-prev-mobile-{{ this.getProductId() }}' style="display: none"></div>
+  <div class="slides">
+
+    <ul
+            class="cycle-cloak cycle-slideshow"
+            data-cycle-fx=carousel
+            data-cycle-timeout=0
+            data-cycle-manual-speed="300"
+            data-cycle-carousel-vertical=false
+            data-cycle-carousel-visible={{ this.getMinCountForSlider() }}
+            data-cycle-next="#product-image-gallery-next-mobile-{{ this.getProductId() }}"
+            data-cycle-prev="#product-image-gallery-prev-mobile-{{ this.getProductId() }}"
+            data-cycle-slides="> li"
+            data-cycle-log=false
+            data-cycle-allow-wrap=false
+            data-cycle-auto-height=false
+            data-cycle-auto-init=false
+    >
+      {% for i, image in this.product.getPublicImages() %}
+        <li {{ this.printTagAttributes(this.getListItemClassAttribute(i, image))|raw }}>
+          <a href="{{ image.getFrontURL() }}" rel="lightbox"
+             rev="width: {{ image.getWidth() }}, height: {{ image.getHeight() }}"
+             title="{{ image.getAlt() }}">{{ widget('\\XLite\\View\\Image', image=image, alt=this.getAlt(image, i), imageSizeType='MSThumbnail') }}</a>
+          {{ widget('\\XLite\\View\\Image', className='middle', style='display: none;', image=image, maxWidth=this.getWidgetMaxWidth(), maxHeight=this.getWidgetMaxHeight(), alt=this.getAlt(image, i)) }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="product-image-gallery-navigation product-image-gallery-next-mobile" id='product-image-gallery-next-mobile-{{ this.getProductId() }}' style="display: none"></div>
+</div>
+
+<script>
+  var lightBoxImagesDir = '{{ this.getLightBoxImagesDir() }}';
+</script>

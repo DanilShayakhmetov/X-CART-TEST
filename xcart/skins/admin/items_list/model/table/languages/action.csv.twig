@@ -1,0 +1,5 @@
+{##
+ # Download file button
+ #}
+
+{{ widget('XLite\\View\\Button\\Link', {location: url('languages', 'getCSV', {'code': this.entity.getCode()}), style: 'download-file', label: '', 'icon-style': 'fa fa-download'}) }}

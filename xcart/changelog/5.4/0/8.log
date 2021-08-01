@@ -1,0 +1,5 @@
+Version 5.4.0.8
+
+Fixes (1)
+2019-12-16 - [Bug] GET requests to target=callback (or any other) without a xid cookie resulted in a 302 code redirect. Fixed. #BUG-8152 (Maxim Kuznetsov) #Core
+

@@ -1,0 +1,16 @@
+{##
+ # Shipping order status selector
+ #
+ # @ListChild (list="order.actions.statuses", weight="100")
+ #}
+
+{% spaceless %}
+  <div class="status shipping-status">
+    {{ widget('\\XLite\\View\\FormField\\Select\\OrderStatus\\Shipping', label='Shipping status', fieldName='shippingStatus', order=this.order, attributes=this.getOrderStatusAttributes('shipping')) }}
+    {% if this.isDisplayBackorderWarning() %}
+      <div class="info-status-warning">
+        {{ widget('XLite\\View\\Tooltip', text=this.getBackorderWarningText(), isImageTag='true', className='warning-icon', imageClass='fa fa-exclamation-triangle') }}
+      </div>
+    {% endif %}
+  </div>
+{% endspaceless %}

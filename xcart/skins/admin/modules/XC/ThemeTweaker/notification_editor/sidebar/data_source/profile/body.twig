@@ -1,0 +1,15 @@
+{##
+ # Theme tweaker notitication editor profile data widget
+ #}
+
+<div class="themeTweaker-profile themeTweaker-data-widget">
+  <div class="title">{{ t('Profile login') }}</div>
+  <div class="themeTweaker-data-widget-input themeTweaker-profile-change-input">
+    {{ widget('\\XLite\\Module\\XC\\ThemeTweaker\\View\\FormField\\Input\\Text\\AutoComplete',
+      fieldOnly=true,
+      fieldName='data[profile]',
+      value=this.getValue(),
+      placeholder=t('Enter user login'),
+      dictionary='theme_tweaker_profile') }}
+  </div>
+</div>

@@ -1,0 +1,5 @@
+Version 5.4.0.5
+
+Improvements (1)
+2019-10-06 - [Change] Added an info message on the page "Default customer address" if the module "Geolocation" is enabled. #BUG-6783 (Fedya Lavrentyev) #Core #Geolocation
+

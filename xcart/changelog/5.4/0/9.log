@@ -1,0 +1,109 @@
+Version 5.4.0.9
+
+Improvements (7)
+2020-01-06 - [Change] On the page admin.php?target=settings&page=Company, changed the text about Live Chat. #BUG-8203 (Shevelov Alexander) #Core
+2019-12-20 - [Change] Added the fields shopCountryCode and affiliateId to Marketplace requests. #BUG-8165 (Fedya Lavrentyev) #Core
+2019-12-20 - [Change] Added APСU support as provider cache. #BUG-7539 (Fedya Lavrentyev) #Core
+2019-12-19 - [Change] The word 'module' is replaced with 'addon' on the Olark addon settings page. Added a message "Customers want to talk to you. Make it easy. Try live chat for free or login" with the respective links. #BUG-8166 (Shevelov Alexander) #Core #Olark
+2019-12-18 - [Change] Added a new method setupAdditionalDefinitions in XLite/Core/DependencyInjection/ContainerFactory.php so it can be used for DI Container extension. #BUG-7454 https://bt.x-cart.com/view.php?id=50740 (Shevelov Alexander) #Core
+2019-12-18 - [Change] The spelling of the word "fulfilment" in the text labels was fixed. #BUG-7332 (Shevelov Alexander) #Core #Egoods #PINCodes #NotFinishedOrders #CustomOrderStatuses
+2019-11-21 - [Change] Now the "+" button in the "Marketing" menu section is not displayed if all the addons pertaining to this section have already been installed. #BUG-6888 (Fedya Lavrentyev) #Core
+
+Fixes (96)
+2020-01-28 - [Bug] Restored the check for PHP version in error_handler.php. #BUG-8272 (Fedya Lavrentyev) #Core
+2020-01-22 - [Bug] Layout issues on the date range entry widget. Fixed. #BUG-8251 (Fedya Lavrentyev) #Core
+2020-01-16 - [Bug] Layout issues on the product page in the Admin area. Fixed. #BUG-8227 (Damir Khamidullin) #Core
+2020-01-16 - [Bug] Installation Wizard. Error in Step 5 due to MySQL password conversion. Fixed. #BUG-8223 https://bt.x-cart.com/view.php?id=51379 (Shevelov Alexander) #Core
+2020-01-16 - [Bug] Exception when accessing the Customer area via the 'Customize storefront' button. Fixed. #BUG-8219 (Shevelov Alexander) #Core
+2020-01-15 - [Bug] Installation Wizard. Fixed the issue related to checking whether the database specified to be used for X-Cart installation already contains X-Cart tables. #BUG-7945 (Pavel Veselovsky) #Core
+2020-01-14 - [Bug] The translation of text labels with variables {{}} was displayed incorrectly. Fixed. #BUG-8190 https://bt.x-cart.com/view.php?id=51344 https://bt.x-cart.com/view.php?id=51373 (Pavel Veselovsky) #Core
+2020-01-14 - [Bug] Fixed the sorting of product attributes. Now the initial sort order of product attributes is the order in which the attributes were created. #BUG-8186 https://bt.x-cart.com/view.php?id=51335 (Pavel Veselovsky) #Core
+2020-01-14 - [Bug] A new template created with the template editor was not visible on the storefront but could still be seen in the Admin area at target=theme_tweaker_templates. Fixed. #BUG-8095 https://bt.x-cart.com/view.php?id=51213 (Fedya Lavrentyev) #Core #ThemeTweaker
+2020-01-13 - [Bug] On the Service Screen, if a text label value for the currently selected language was missing, the text label name was displayed. Fixed. Now the value of the text label for the default language is displayed instead. #BUG-7935 (Maxim Kuznetsov) #Core
+2020-01-13 - [Bug] Layout issues on the Skrill All Card Types page. Fixed. #BUG-7839 (Pavel Veselovsky) #Core #Skrill
+2020-01-10 - [Bug] After enabling the option "Do not show customers contact information to vendors", customer's email was shown in vendor АОМ. Fixed. #BUG-7878 (Shevelov Alexander) #Core #MultiVendor
+2020-01-10 - [Bug] Layout issues related to the display of product image in the onboarding wizard. Fixed. #BUG-7838 (Pavel Veselovsky) #Core #Onboarding
+2020-01-10 - [Bug] Fixed some layout issues related to the display of help tips on the image settings page (target=images). #BUG-7819 (Pavel Veselovsky) #Core
+2020-01-10 - [Bug] Layout issue related to the display of the list of addons on the Service Screen. Fixed. #BUG-7872 (Pavel Veselovsky) #Core
+2020-01-10 - [Bug] Textarea related layout adjusted according to the style guide. #BUG-7809 (Maxim Kuznetsov) #Core
+2020-01-10 - [Bug] Minor layout issues on the Import-Export page. Fixed. #BUG-7442 (Maxim Kuznetsov) #Core
+2020-01-09 - [Bug] In some cases the settings values set on the page target=sales_tax were saved incorrectly. Fixed. #BUG-8210 (Pavel Veselovsky) #Core #SalesTax
+2020-01-09 - [Bug] Payment methods were removed after service.php?/clear-cache. Fixed. #BUG-8193 https://bt.x-cart.com/view.php?id=51322 (Pavel Veselovsky) #Core
+2020-01-09 - [Bug] Fixed some typos in RuTranslation/install.yaml. Restored the correct translation for a few text labels. #BUG-7795 (Shevelov Alexander) #Core
+2020-01-09 - [Bug] On the Taxes page, the settings "Tax enabled" and "Use the same tax rates for all user membership levels" now use Yes/No switches instead of checkboxes. #BUG-7775 (Pavel Veselovsky) #Core #SalesTax
+2020-01-09 - [Bug] Fixed some layout issues on the popup for the creation/editing of attributes. #BUG-7766 (Shevelov Alexander) #Core
+2020-01-09 - [Bug] Parsing error if using background-image:url(link) in the code if the link was not surrounded by quotes or apostrophes. Fixed. #BUG-7700 (Pavel Veselovsky) #Core
+2020-01-08 - [Bug] Layout issues on the product page in the Admin area. Fixed. #BUG-8201 (Pavel Veselovsky) #Core
+2020-01-08 - [Bug] Impoved the check for MariaDB version. #BUG-8189 (Shevelov Alexander) #Core
+2020-01-08 - [Bug] When adding a product in AOM, which was supposed to make the order eligible for a Wholesale discount, the discount was not applied. Fixed. #BUG-8183 https://bt.x-cart.com/view.php?id=51331 (Damir Khamidullin) #Core
+2020-01-06 - [Bug] The message "This field is required" was missing if an attempt was made to create a product with an empty product name. Fixed. #BUG-7774 (Pavel Veselovsky) #Core #Froala
+2020-01-06 - [Bug] Layout issues in the Upload via URL popup for image upload. Fixed. #BUG-7725 (Maxim Kuznetsov) #Core
+2020-01-05 - [Bug] Added some missing English text labels for order history. #BUG-7756 https://bt.x-cart.com/view.php?id=50912 (Shevelov Alexander) #Core
+2020-01-05 - [Bug] Layout issue in the "Cash on delivery" section of the UPS shipping settings page. Fixed. #BUG-7735 (Pavel Veselovsky) #Core
+2019-12-30 - [Bug] Improved the function for determining a client's ip address taking proxy into account. #BUG-8180 (Maxim Kuznetsov) #Core
+2019-12-27 - [Bug] Fatal error during a rollback caused by running the disable hooks of translation addons. Fixed. #BUG-8181 (Maxim Kuznetsov) #Core
+2019-12-27 - [Bug] Fixed the order search date range which was applied by default causing errors in UNIT tests. #BUG-8176 (Damir Khamidullin) #Core
+2019-12-27 - [Bug] Layout issues on the order page in AOM if the page is accessed by a user logged in as a vendor. Fixed. #BUG-7607 (Shevelov Alexander) #Core #MultiVendor
+2019-12-26 - [Bug] Page jerking in the Admin area when scrolling down the page with the side menu collapsed on pages where the content height was smaller than the height of the side menu. Fixed. #BUG-8175 (Damir Khamidullin) #Core
+2019-12-25 - [Bug] Now if the "Access level" setting on the user profile page in the Admin area is adjusted to "Admin", the field "Roles" is now preset to "Administrator". #BUG-7721 (Jamil Ainulov) #Core
+2019-12-24 - [Bug] Error in logs if the addon Product Variants was disabled while the addon Back in Stock Notifications was active in the store. Fixed. #BUG-7614 https://bt.x-cart.com/view.php?id=50800 (Pavel Veselovsky) #Core
+2019-12-23 - [Bug] Some elements were jerking on the AOM page. Fixed. #BUG-7570 (Pavel Veselovsky) #Core
+2019-12-23 - [Bug] Layout issue related to the discount type selection field on the Discounts page. Fixed. #BUG-7485 (Shevelov Alexander) #Core
+2019-12-23 - [Bug] Made border width smaller for tables on some pages. #BUG-7479 (Pavel Veselovsky) #Core
+2019-12-23 - [Bug] Added a redirect from the password reset page to target=main if the user is logged in. #BUG-7403 (Pavel Veselovsky) #Core
+2019-12-20 - [Bug] Fatal error when accessing the Customer area if the banner had been assigned a link to a non-existent category. Fixed. #BUG-8168 https://bt.x-cart.com/view.php?id=51307 (Fedya Lavrentyev) #Core
+2019-12-20 - [Bug] The maximum length of address field names was limited to 30. #BUG-7398 (Pavel Veselovsky) #Core
+2019-12-19 - [Bug] Layout issue on the admin.php?target=images page when imagemagic was used instead of gdlib. Fixed. #BUG-7564 (Shevelov Alexander) #Core #ThemeTweaker
+2019-12-19 - [Bug] Removed unnecessary console.log() calls from code. #BUG-7557 (Pavel Veselovsky) #Core
+2019-12-19 - [Bug] Info messages could not be viewed after creating or editing addresses in the Admin or Customer areas. Fixed. #BUG-7429 (Maxim Kuznetsov) #Core
+2019-12-18 - [Bug] Notices in logs when accessing the transactions page (target=payment_transactions). Fixed. #BUG-7977 (Jamil Ainulov) #Core #Stripe
+2019-12-18 - [Bug] The Carrier services tab contained duplicate entries for the service DHL EXPRESS WORLDWIDE. Fixed. #BUG-7974 https://bt.x-cart.com/view.php?id=51053 (Damir Khamidullin) #Core #DHL
+2019-12-18 - [Bug] Layout issue related to the display of the tooltip for the inactive button "Preview full email" when there were no orders. Fixed. #BUG-7540 (Pavel Veselovsky) #Core
+2019-12-18 - [Bug] Non-required and empty address fields are no longer displayed in the address blocks of AOM page. #BUG-7514 (Shevelov Alexander) #Core
+2019-12-18 - [Bug] JS error on the AOM page with AVATAX enabled and the tax AVATAX.MN_SPECIAL_TAX_TRANSIT_IMPROVEMENT_(HENNEPIN_CO) applied. Fixed. #BUG-7510 (Shevelov Alexander) #Core
+2019-12-18 - [Bug] Layout issues on the Social Login addon settings page with the French language active. Fixed. #BUG-7489 https://bt.x-cart.com/view.php?id=50750 (Pavel Veselovsky) #Core
+2019-12-18 - [Bug] Error if running console.php with an invalid target. Fixed. #BUG-7447 (Maxim Kuznetsov) #Core
+2019-12-17 - [Bug] Layout issue related to the setting "Redirect customer to the cart page after a product is added to cart" with the addon "Add to cart popup" enabled. Fixed. #BUG-7567 (Nikita Erkhov) #Core #Add2CartPopup
+2019-12-17 - [Bug] The text "We will be back in a moment to let you know that your item is on its way, unless you decide to pick it up yourself. " was removed from the email notification template about a paid order. #BUG-7388 (Maxim Kuznetsov) #Core
+2019-12-17 - [Bug] Adjustment of the order search form according to the style guide. #BUG-7373 (Shevelov Alexander) #Core
+2019-12-17 - [Bug] Bestsellers were not recalculated after editing an order. Fixed. #BUG-7340 (Nikita Erkhov) #Core
+2019-12-16 - [Bug] Shipping cost was not included into order totals on the checkout page after a shipping method had been selected. Fixed. #BUG-7411 https://bt.x-cart.com/view.php?id=50679 (Pavel Veselovsky) #Core #GoogleAnalytics
+2019-12-16 - [Bug] Various layout issues on the product edit page and the list of orders. Fixed. #BUG-7370 (Pavel Veselovsky) #Core
+2019-12-13 - [Bug] }} were stripped from JS code in the product description after saving. Fixed. #BUG-8147 https://bt.x-cart.com/view.php?id=51277 (Maxim Kuznetsov) #Core
+2019-12-13 - [Bug] Internal server error while importing custom product tabs if the format of the csv file was incorrect. Fixed. #BUG-7966 https://bt.x-cart.com/view.php?id=51046 (Damir Khamidullin) #Core #CustomProductTabs
+2019-12-12 - [Bug] Changed the names of id attributes beginning with a number in address forms in the Admin and Customer areas. Now the names are in compliance with the W3C recommendations. #BUG-7400 (Pavel Veselovsky) #Core
+2019-12-11 - [Bug] After removing one or more offline payment methods, the list of offline payment methods was displayed incorrectly. Fixed. #BUG-8141 https://bt.x-cart.com/view.php?id=51268 (Jamil Ainulov) #Core
+2019-12-10 - [Bug] Dates were set incorrectly if entered with the localization setting dd.mm.yyyy enabled. Fixed. #BUG-8125 https://bt.x-cart.com/view.php?id=51255 https://bt.x-cart.com/view.php?id=51414 (Damir Khamidullin) #Core
+2019-12-10 - [Bug] Errors in logs when uploading an image for a category with Onboarding disabled. Fixed. #BUG-8080 https://bt.x-cart.com/view.php?id=51195 (Damir Khamidullin) #Core #MultiVendor
+2019-12-10 - [Bug] Layout issues on the related / featured products selection popup. Fixed. #BUG-7344 (Shevelov Alexander) #Core
+2019-12-09 - [Bug] Fixed the error related to the functioning of the date range entry widget in a language other than the default one. #BUG-8111 https://bt.x-cart.com/view.php?id=51253 (Damir Khamidullin) #Core
+2019-12-09 - [Bug] Popups could have a white border in the Standard skin. Fixed. #BUG-7285 (Pavel Veselovsky) #Core
+2019-12-09 - [Bug] Layout issue related to the shipping method status switch ("The shipping method is On/Off") on the settings page. Fixed. #BUG-7272 (Pavel Veselovsky) #Core
+2019-12-06 - [Bug] The button "Start import" remained available after selecting a file with a size larger than the post_max_size setting value. Fixed. #BUG-7708 (Jamil Ainulov) #Core
+2019-12-06 - [Bug] Incorrect URLs for Amazon S3 images in the CSV file generated by export. Fixed. #BUG-7186 (Maxim Kuznetsov) #Core
+2019-12-06 - [Bug] The cards of anonymous customers who had transactions in the status STATUS_INPROGRESS could be removed. Fixed. #BUG-7181 (Fedya Lavrentyev) #Core
+2019-12-05 - [Bug] It is no longer possible to create user accounts of the same name using regular user registration on the site with the classic method and registration with Social Login. The password for a user account created via Social Login may no longer be reset using the standard password reset option. Also, it is not possible to sign in to the store with the standard classic sign-in method using credentials created via Social Login. #BUG-8054 (Maxim Kuznetsov) #Core #SocialLogin
+2019-12-05 - [Bug] Layout issues on the search page in the Customer area in Multivendor if using a screen width of 992px. Fixed. #BUG-7260 https://bt.x-cart.com/view.php?id=50600 (Pavel Veselovsky) #Core
+2019-12-05 - [Bug] Multivendor. Layout error related to the display of the error message "Wrong number format" on the vendor address page. Fixed. #BUG-7253 (Pavel Veselovsky) #Core
+2019-12-05 - [Bug] Made changes to the default nginx config. #BUG-7224 (Pavel Veselovsky) #Core
+2019-12-04 - [Bug] Product attribute values were not getting imported because of hash collisions in the Doctrine ORM library. Fixed. #BUG-8094 https://bt.x-cart.com/view.php?id=51211 (Pavel Veselovsky) #Core
+2019-12-04 - [Bug] The text "Back to top" could not be translated. Fixed. #BUG-7527 https://bt.x-cart.com/view.php?id=50770 (Jamil Ainulov) #Core
+2019-12-04 - [Bug] Amazon S3. Incorrect image URLs in cloned products. Fixed. #BUG-7184 (Maxim Kuznetsov) #Core #AmazonS3Images
+2019-12-03 - [Bug] Progress bar was not working during a migration of images to/from Amazon S3. Fixed. #BUG-7405 (Maxim Kuznetsov) #Core
+2019-12-02 - [Bug] The "Place order" button was not available when the cart total was zero and the user was using the store in the "Operating as customer" mode. Fixed. #BUG-7152 (Maxim Kuznetsov) #Core
+2019-12-02 - [Bug] Errors related to the display of attribute names and values translated into a language other than the default one. Fixed. #BUG-7117 https://bt.x-cart.com/view.php?id=50496 (Pavel Veselovsky) #Core
+2019-11-28 - [Bug] In the  "Default customer address" form, the State field became required after setting the Country field to "United Kingdom". Fixed. #BUG-8085 https://bt.x-cart.com/view.php?id=51199 (Jamil Ainulov) #Core
+2019-11-27 - [Bug] The selected date was not saved in the date selection widget if using a store language other than English (EN). Fixed. #BUG-8110 (Fedya Lavrentyev) #Core
+2019-11-27 - [Bug] Optimized the number of database queries that are run while creating/updating an option in \XLite\Core\Config. #BUG-8106 (Pavel Veselovsky) #Core
+2019-11-25 - [Bug] Fixed the error related to the logo image dimensions being reset to "0" (zero) after installing a skin. #BUG-8108 (Nikita Erkhov) #Core
+2019-11-25 - [Bug] Removed a false warning about a product missing which could be shown after a successful import of attributes for that product. #BUG-7095 (Pavel Veselovsky) #Core
+2019-11-22 - [Bug] Four-digit numbers were not fully visible in the pagination widget. Fixed. #BUG-7749 (Nikita Erkhov) #Core
+2019-11-22 - [Bug] The site footer was overlapping with the link to the last log file on the System logs page in the Admin area. Fixed. #BUG-7642 https://bt.x-cart.com/view.php?id=50813 (Nikita Erkhov) #Core
+2019-11-22 - [Bug] The field Tax title from the Canadian taxes addon settings page was not used anywhere. Removed. #BUG-7156 (Pavel Veselovsky) #Core #CanadianTaxes
+2019-11-21 - [Bug] Now disabled address fields are not shown on the page target=shipping_settings. #BUG-7135 https://bt.x-cart.com/view.php?id=50507 (Pavel Veselovsky) #Core
+2019-11-20 - [Bug] Removed custom address field titles from the packing slip. #BUG-7134 https://bt.x-cart.com/view.php?id=50508 (Pavel Veselovsky) #Core
+2019-11-20 - [Bug] Changed the design of the element for password entry on the user profile page in the Admin area. Now before you can change the password you need to click the button "Click to specify". #BUG-6866 (Nikita Erkhov) #Core
+2019-06-04 - [Bug] Date format setting is now applied in the date range selection widget on the orders list and payment transactions pages. #BUG-7717 (Pavel Veselovsky) #Core
+1970-01-01 - [Bug] On a product page, the tooltips of the Royal mail addon settings fields were moved to help tips. The width of other tooltips below input boxes is now limited to 800 px. #BUG-7582 (Pavel Veselovsky) #Core #RoyalMailClick&Drop
+1970-01-01 - [Bug] Customer address types are now taken into account during the export and import of customer user accounts. #BUG-7406 (Nikita Erkhov) #Core
+

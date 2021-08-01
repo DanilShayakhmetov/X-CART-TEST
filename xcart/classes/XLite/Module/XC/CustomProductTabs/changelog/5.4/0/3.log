@@ -1,0 +1,6 @@
+Version 5.4.0.3
+
+Improvements (2)
+2019-05-03 - [Change] Adjusted the font color of some elements for more contrast. #XCN-9856 (Fedya Lavrentyev) #Core #Egoods #FeaturedProducts #FileAttachments #SimpleCMS #VolumeDiscounts #Wholesale #CanadaPost #ColorSchemes #ProductVariants #RelatedProducts #MultiVendor #VendorMessages #CustomProductTabs #UpdateInventory
+2019-04-22 - [Change] Layout adjustment for the pages Import / Export / Update Inventory according to the style guide. #XCN-9740 (Fedya Lavrentyev) #Core #ProductReviews #NewsletterSubscriptions #MultiVendor #CustomProductTabs
+

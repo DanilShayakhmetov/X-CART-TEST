@@ -1,0 +1,14 @@
+Version 5.4.1.0
+
+Improvements (3)
+2020-03-17 - [Change] Minor improvements for the Onboarding Wizard. #XCN-10656 #Core #AmazonPay #Onboarding
+2020-02-18 - [Change] Layout improvements for the Sign in page with the social login buttons as can be seen before checkout for an anonymous users. #XCN-9308 #CrispWhiteSkin #AmazonPay
+2020-01-21 - [Change] Updated the list of countries in which payment methods are available. #BUG-8228 #Skrill #Paypal #TwoCheckout #Stripe #SagePay #DatatransUPP #AmazonPay #G2APay #NetbanxHostedPayment #BlueSnap #EWAYStoredShared #BitPay #CCBill #ESelectHPP #Worldpay #FirstDataPayeezyGatewayHP #DIBSFlexWin #SecureTrading #InternetSecure #SecurePay #EGateway
+
+Fixes (5)
+2020-03-12 - [Bug] Removed, where possible, browser prefixes in css and less files. #BUG-8230 #Core #ContactUs #Coupons #FileAttachments #GoSocial #Paypal #SimpleCMS #USPS #ThemeTweaker #ProductFilter #ProductComparison #ColorSchemes #Stripe #ProductReviews #WebmasterKit #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #AmazonPay #VendorMessages #FlyoutCategoriesMenu #Froala #CustomProductTabs #MigrationWizard #Buy Button #Zapier #BlueSnap #Geolocation #GlobalTransportSecure #AMP
+2020-02-25 - [Bug] The Login with PayPal and Login with Amazon buttons were displayed incorrectly in the Sign in popup. Fixed. #BUG-8196 #Core #CrispWhiteSkin #AmazonPay
+2020-02-10 - [Bug] An error saying "We have noticed that you've been inactive for a while. For safety reasons, we have signed you out." was generated in Amazon Checkout caused by incorrect loading of js widgets. Fixed. #BUG-8314 #AmazonPay
+2020-02-10 - [Bug] Using Amazon Pay it was possible to place an order requesting delivery to a disabled country. Fixed. #BUG-8313 #Core #AmazonPay
+2020-01-16 - [Bug] Online calculated shipping methods were not displayed if the payment method was Amazon. Fixed. #BUG-7884 https://bt.x-cart.com/view.php?id=50989 #AmazonPay
+

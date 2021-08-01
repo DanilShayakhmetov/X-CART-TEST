@@ -1,0 +1,165 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  -
+    service_name: Stripe
+    class: Module\XC\Stripe\Model\Payment\Stripe
+    type: C
+    orderby: -10300
+    countries: [AT, AU, BE, BG, BR, CA, CH, CY, CZ, DE, DK, EE, ES, FI, FR, GB, GR, HK, IE, IN, IT, JP, LT, LU, LV, MT, MX, MY, NL, 'NO', NZ, PL, PT, RO, SE, SG, SI, SK, US]
+    translations: [{ code: en, name: Stripe }]
+    settings: [{ name: publishKey }, { name: accessToken }, { name: publishKeyTest }, { name: accessTokenTest }, { name: mode, value: live }, { name: type, value: sale }, { name: prefix, value: xcart }, { name: userId }, { name: refreshToken }]
+  -
+    service_name: StripeApplePay
+    class: Module\XC\Stripe\StripeApplePay\Model\Payment\StripeApplePay
+    type: C
+    orderby: -10299
+    countries: [AT, AU, BE, BR, CA, CH, DE, DK, EE, ES, FI, FR, GB, GR, HK, IE, IN, IT, JP, LT, LU, LV, MX, MY, NL, 'NO', NZ, PL, PT, SE, SG, SI, SK, US]
+    translations: [{ code: en, name: 'Stripe (Apple / Google / Microsoft Pay)' }]
+    settings: [{ name: prefix, value: xc_apple }]
+XLite\Model\LanguageLabel:
+  -
+    directives: { allowedModel: XLite\Model\LanguageLabelTranslation }
+  -
+    name: 'The "Stripe" feature is not configured and cannot be used.'
+    translations: [{ code: en, label: 'The "Stripe" feature is not configured and cannot be used.' }]
+  -
+    name: 'The "Stripe" feature requires https to be properly set up for your store.'
+    translations: [{ code: en, label: 'The "Stripe" feature requires https to be <a href="{{url}}">properly set up</a> for your store.' }]
+  -
+    name: 'X items ($)'
+    translations: [{ code: en, label: '{{count}} items ({{total}})' }, { code: ru, label: '{{count}} товаров ({{total}})' }]
+  -
+    name: 'CVC verification: X'
+    translations: [{ code: en, label: 'CVC verification: {{state}}' }, { code: ru, label: 'Проверка подлинности кредитной карты (CVC): {{state}}' }]
+  -
+    name: 'Address line verification: X'
+    translations: [{ code: en, label: 'Address line verification: {{state}}' }, { code: ru, label: 'Проверка адреса: {{state}}' }]
+  -
+    name: 'Address zipcode verification: X'
+    translations: [{ code: en, label: 'Address zipcode verification: {{state}}' }, { code: ru, label: 'Проверка почтового индекса: {{state}}' }]
+  -
+    name: 'Requested transaction type: X; real transaction type: Y'
+    translations: [{ code: en, label: 'Requested transaction type: {{actual}}; real transaction type: {{real}}' }, { code: ru, label: 'Запрашивалася транзакция типа {{actual}}, а реально была выполнена типа {{real}}' }]
+  -
+    name: 'Requested amount: X; real amount: Y'
+    translations: [{ code: en, label: 'Requested amount: {{actual}}; real amount: {{real}}' }, { code: ru, label: 'Запрашивалось к оплате {{actual}}, а реально было оплачено {{real}}' }]
+  -
+    name: 'Requested currency: X; real currency: Y'
+    translations: [{ code: en, label: 'Requested currency: {{actual}}; real currency: {{real}}' }, { code: ru, label: 'Запрашивалось к оплате сумма в валюте {{actual}}, а реально было оплачено в валюте {{real}}' }]
+  -
+    name: 'Copy Webhook URL and go to Account settings'
+    translations: [{ code: en, label: 'Copy "Webhook URL" and go to <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">Account settings</a>' }, { code: ru, label: 'Скопируйте "Webhook URL" и перейдите в <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">Account settings</a>' }]
+  -
+    name: 'Open the page "Webhooks" in the "Developers" section of dashboard.stripe.com: https://dashboard.stripe.com/account/webhooks'
+    translations: [{ code: en, label: 'Open the page <strong>"Webhooks"</strong> in the <strong>"Developers"</strong> section of dashboard.stripe.com: <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">https://dashboard.stripe.com/account/webhooks</a>' }, { code: ru, label: 'Откройте страницу <strong>"Webhooks"</strong> раздела </strong>"Developers"<strong> на dashboard.stripe.com: <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">https://dashboard.stripe.com/account/webhooks</a>' }]
+  -
+    name: 'In the section "Endpoints receiving events from your account", click "+ Add endpoint".'
+    translations: [{ code: en, label: 'In the section <strong>"Endpoints receiving events from your account"</strong>, click <strong>"+ Add endpoint"</strong>.' }, { code: ru, label: 'В разделе <strong>"Endpoints receiving events from your account"</strong> выберите <strong>"+ Add endpoint"</strong>.' }]
+  -
+    name: 'In the form that opens, paste the "Webhook URL" value into the field "URL to be called" and click "Add endpoint".'
+    translations: [{ code: en, label: 'In the form that opens, paste the <strong>"Webhook URL"</strong> value into the field <strong>"URL to be called"</strong> and click <strong>"Add endpoint"</strong>.' }, { code: ru, label: 'В открывшейся форме вставьте значение <strong>"Webhook URL"</strong> в поле <strong>"URL to be called"</strong> и выберите <strong>"Add endpoint"</strong>' }]
+  -
+    name: 'More information on the setup of webhooks is available here: https://stripe.com/docs/webhooks#configuring-your-webhook-settings'
+    translations: [{ code: en, label: 'More information on the setup of webhooks is available here: <a href="https://stripe.com/docs/webhooks#configuring-your-webhook-settings" target="_blank">https://stripe.com/docs/webhooks#configuring-your-webhook-settings</a>' }, { code: ru, label: 'Больше информации по настройке вебхуков доступно здесь: <a href="https://stripe.com/docs/webhooks#configuring-your-webhook-settings" target="_blank">https://stripe.com/docs/webhooks#configuring-your-webhook-settings</a>' }]
+  -
+    name: Disconnect
+    translations: [{ code: en, label: Disconnect }, { code: ru, label: Разъеденить }]
+  -
+    name: 'Status: Connected'
+    translations: [{ code: en, label: 'Status: <span>Connected</span> ({{mode}})' }, { code: ru, label: 'Статус: <span>Соединено</span> ({{mode}})' }]
+  -
+    name: 'Click Connect with Stripe to be redirected to Stripe.com'
+    translations: [{ code: en, label: 'Click "Connect with Stripe" to be redirected to Stripe.com' }, { code: ru, label: 'Нажмите "Connect with Stripe" чтобы перейти на Stripe.com' }]
+  -
+    name: 'Fill out the form with your Company info to setup your account and start processing payments immedately'
+    translations: [{ code: en, label: '<strong>Complete the form</strong> with your Company info to setup your account and start processing payments immedately.' }, { code: ru, label: '<strong>Заполняйте форму</strong>, имея на руках данные о Вашей компании. После регистрации Вы сможете сразу начать принимать платежи.' }]
+  -
+    name: 'Refresh token'
+    translations: [{ code: en, label: 'Refresh token' }, { code: ru, label: 'Обновить токен' }]
+  -
+    name: 'Your Stripe account is no longer accessible. Please connect with Stripe once again.'
+    translations: [{ code: en, label: 'Your Stripe account is no longer accessible. Please connect with Stripe once again.' }, { code: ru, label: 'Ваш Stripe аккаунт более недоступен. Пожалуста, пройдите соединение со Stripe еще раз.' }]
+  -
+    name: 'Webhook URL is your store''s URL through which Stripe informs your store about any changes in the order'
+    translations: [{ code: en, label: 'Webhook URL is your store''s URL through which Stripe informs your store about any changes in the order. For example, if you refund a payment transaction for a certain amount via Stripe backend, Stripe will send information about this refund to the store using a special request to the Webhook URL, and the store will update the order status to refunded. If Webhook URL is not specified, the store will not know that the order was updated in Stripe backend and the order status in the store will not be updated automatically.' }, { code: ru, label: 'Webhook URL это URL Вашего магазина, через который Stripe оповещает магазин о изменениях в заказе. Например, если вы черезе Stripe backend сделаете refund плоатежной транзакции на некую сумму, то Stripe сообщит об этом магазину при помощи специального запроса к Webhook URL и магазин изменит состояние заказа на refunded. Иначе, если Webhook URL не указан, магазин об этом не узнает и закза не изменит свое состояние автоматически.' }]
+  -
+    name: 'URL is copied'
+    translations: [{ code: en, label: 'URL is copied' }, { code: ru, label: 'URL скопирован' }]
+  -
+    name: 'Show "How to use" instruction'
+    translations: [{ code: en, label: 'Show "How to use" instruction' }, { code: ru, label: 'Показать инструкцию' }]
+  -
+    name: 'Hide "How to use" instruction'
+    translations: [{ code: en, label: 'Hide "How to use" instruction' }, { code: ru, label: 'Спрятать инструкцию' }]
+  -
+    name: 'Don''t have an account?'
+    translations: [{ code: en, label: 'Don''t have an account?' }]
+  -
+    name: 'Publishable key'
+    translations: [{ code: en, label: 'Publishable key' }]
+  -
+    name: 'Publishable key (test mode)'
+    translations: [{ code: en, label: 'Publishable key (test mode)' }]
+  -
+    name: 'Secret key (test mode)'
+    translations: [{ code: en, label: 'Secret key (test mode)' }]
+  -
+    name: 'StripeJSerror amount_too_small'
+    translations: [{ code: en, label: 'The specified amount is less than the minimum amount allowed. Use a higher amount and try again.' }, { code: ru, label: 'Сумма заказа меньше минимально возможной. Увеличьте сумму заказа и попробуйте опять.' }]
+  -
+    name: 'StripeJSerror amount_too_large'
+    translations: [{ code: en, label: 'The specified amount is greater than the maximum amount allowed. Use a lower amount and try again.' }, { code: ru, label: 'Сумма заказа больше максимально возможной. Уменьшите сумму заказа и попробуйте опять.' }]
+  -
+    name: 'StripeJSerror authentication_required'
+    translations: [{ code: en, label: 'The payment requires authentication to proceed.' }, { code: ru, label: 'Платеж требует дополгительной аутентификации.' }]
+  -
+    name: 'StripeJSerror card_declined'
+    translations: [{ code: en, label: 'The card has been declined.' }, { code: ru, label: 'Платежная карта отклонена.' }]
+  -
+    name: 'StripeJSerror email_invalid'
+    translations: [{ code: en, label: 'The email address is invalid.' }, { code: ru, label: 'Неверный электронный адрес.' }]
+  -
+    name: 'StripeJSerror expired_card'
+    translations: [{ code: en, label: 'The card has expired. Check the expiration date or use a different card.' }, { code: ru, label: 'Срок действия платежной карты истек, проверьте срок действия или попробуйте другую карту' }]
+  -
+    name: 'StripeJSerror incorrect_address'
+    translations: [{ code: en, label: 'The card address is incorrect. Check the card address or use a different card.' }, { code: ru, label: 'Неверный адрес платежной карты, проверьте адрес или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror incorrect_cvc'
+    translations: [{ code: en, label: 'The card security code is incorrect. Check the card security code or use a different card.  ' }, { code: ru, label: 'Неверный секретный код платежной карты, проверьте секретный код или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror incorrect_number'
+    translations: [{ code: en, label: 'The card number is incorrect. Check the card number or use a different card.  ' }, { code: ru, label: 'Неверный номер платежной карты, проверьте номер или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror incorrect_zip'
+    translations: [{ code: en, label: 'The card ZIP code is incorrect. Check the card ZIP code or use a different card.  ' }, { code: ru, label: 'Неверный почтовый индекс платежной карты, проверьте почтовый индекс или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror invalid_cvc'
+    translations: [{ code: en, label: 'The card security code is invalid. Check the card security code or use a different card.  ' }, { code: ru, label: 'Неверный секретный код платежной карты, проверьте секретный код или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror invalid_expiry_year'
+    translations: [{ code: en, label: 'The card expiration year is incorrect. Check the card expiration year or use a different card.  ' }, { code: ru, label: 'Неверный год срока действия платежной карты, проверьте год срока действия или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror invalid_expiry_month'
+    translations: [{ code: en, label: 'The card expiration month is incorrect. Check the card expiration month or use a different card.  ' }, { code: ru, label: 'Неверный месяц срока действия платежной карты, проверьте месяц срока действия или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror invalid_number'
+    translations: [{ code: en, label: 'The card number is invalid. Check the card number or use a different card.  ' }, { code: ru, label: 'Неверный номер платежной карты, проверьте номер или попробуйте другую карту.' }]
+  -
+    name: 'StripeJSerror postal_code_invalid'
+    translations: [{ code: en, label: 'The card ZIP code is invalid. Check the card ZIP code or use a different card.  ' }, { code: ru, label: 'Неверный почтовый индекс платежной карты, проверьте почтовый индекс или попробуйте другую карту.' }]
+  -
+    name: 'Payment method is not available'
+    translations: [{ code: en, label: 'Payment method is not available' }, { code: ru, label: 'Извините, метод оплаты не доступен.' }]
+  -
+    name: 'Firstly, you have to connect to Stripe <a href="{{admin_link}}" target="_blank">here</a>'
+    translations: [{ code: en, label: 'Firstly, you have to connect to Stripe <a href="{{admin_link}}" target="_blank">here</a> and fill in the respective pair of keys for the current "Test/Live mode"' }, { code: ru, label: 'Сначала вы должны установить соединение со Stripe <a href="{{admin_link}}" target="_blank">здесь</a>' }]
+  -
+    name: 'To complete the StripeApplePay configuration'
+    translations: [{ code: en, label: "To setup the payment method in your online store, follow the steps below:<ol style=\"padding-left: 20px; list-style-type: decimal;\"><li>Make sure you have filled the Secret key\t/Publishable key fields\tfor the <a target=\"_blank\" href=\"{{admin_link}}\">Stripe</a> method.</li><li><a target=\"_blank\" href=\"https://stripe.com/docs/stripe-js/elements/payment-request-button#verifying-your-domain-with-apple-pay\">Verifying</a> your domain with Apple Pay.</li></ol>" }, { code: ru, label: 'Для настройки платежного метода:<ol style="padding-left: 20px; list-style-type: decimal;"><li>Убедитесь, что вы заполнили поля "Secret key /Publishable key" для <a target="_blank" href="{{admin_link}}">Stripe метода</a>.</li><li><a target="_blank" href="https://stripe.com/docs/stripe-js/elements/payment-request-button#verifying-your-domain-with-apple-pay">Верифицировали</a> ваш домен для Apple Pay.</li></ol>' }]

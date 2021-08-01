@@ -1,0 +1,49 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Common admin styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+@import "../../../css/initialize";
+
+.page-tabs .tabkey-messages {
+  white-space: nowrap;
+}
+
+.page-tabs .unread-messages-count {
+  display: inline-block;
+  background-color: @color-success;
+  border-radius: 2px;
+  color: #fff;
+  padding: 0 3px;
+  min-width: 16px;
+  margin-left: -2px;
+  line-height: 16px;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+.order-messages .items-list .new-message {
+  .btn {
+    margin-top: @form-row-vertical-padding;
+    margin-bottom: @form-row-vertical-padding;
+  }
+
+  .submit.btn + .button-container {
+    display: inline-block;
+  }
+}
+
+.ui-dialog .widget-xc-vendormessages-popup-dispute form .table > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+.ui-dialog .widget-xc-vendormessages-popup-dispute form .table > li > .table-value:first-child {
+  margin: 0;
+}

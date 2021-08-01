@@ -1,0 +1,9 @@
+{##
+ # Category link
+ #}
+<a href="{{ url('category', '', {'category_id': this._category.id}) }}" {{ this.displayLinkClass(idx, loop.length, this._category)|raw }} title="{{ this._category.name }}">
+  <span class="category-label">{{ this._category.name }}{% if this.isShowProductNum() %} ({{ this._category.productsCount }}){% endif %}</span>
+  {% if this.isShowTriangle %}
+    <span class="icon-triangle"></span>
+  {% endif %}
+</a>

@@ -1,0 +1,38 @@
+{##
+ # Business info step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-business-info inline-template>
+    <div class="step-contents">
+      <h2 class="heading">{{ t("Tell us about your business") }}</h2>
+      {% form 'XLite\\Module\\XC\\Onboarding\\View\\Form\\BusinessInfo' %}
+        <div class="fields">
+          {{ widget('XLite\\View\\FormField\\Input\\Text', label='Company name', fieldName='company_name', value=this.getCompanyName()) }}
+          <div class="parent-block">
+            {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormField\\Select\\Experience', fieldName='experience', label='Sell experience', value=this.getSellExperience()) }}
+          </div>
+          <div id="revenue-selector" class="parent-block hidden">
+            {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormField\\Select\\Revenue', fieldName='revenue', label='Annual Revenue', value=this.getBusinessRevenue()) }}
+          </div>
+          <div class="parent-block">
+            {{ widget('XLite\\Module\\XC\\Onboarding\\View\\FormField\\Select\\BusinessCategory', fieldName='category', label='Your business industry', value=this.getBusinessCategory()) }}
+          </div>
+          {{ widget('XLite\\View\\FormField\\Input\\Text', label='Phone', fieldName='phone', value=this.getPhone()) }}
+        </div>
+
+        <div class="buttons bottom-sticky">
+          <div class="next-step">
+            {{ widget('XLite\\View\\Button\\Submit', label=t('Proceed to the next step'), style='action regular-main-button') }}
+          </div>
+          <div class="additional-buttons muted-buttons">
+            {{ widget('XLite\\View\\Button\\SimpleLink', label=t("Go to the Dashboard"), attributes={'@click': 'hideWizard'}, jsCode="null;") }}
+          </div>
+        </div>
+      {% endform %}
+
+    </div>
+  </xlite-wizard-step-business-info>
+</div>

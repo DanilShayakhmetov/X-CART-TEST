@@ -1,0 +1,33 @@
+{##
+ # Modified files list body template 
+ #}
+
+<div class="consistency-wrapper">
+  {% for groupName, group in this.getGroups() %}
+    {% if group %}
+      <div class="consistency-group consistency-group-{{ groupName|replace({'\\': ''}) }}">
+        <h2>{{ group.name }}</h2>
+        <div class="consistency-list">
+          {% for inconsistencyServiceName, inconsistency in group.list %}
+            {% if inconsistency %}
+              <div class="consistency-list-type type-{{ inconsistencyServiceName }}">
+                <div class="type-heading">
+                  <span>{{ inconsistency.name }}</span>
+                </div>
+                {% if inconsistency.list %}
+                  <ul class="files-list">
+                    {% for itemName, item in inconsistency.list %}
+                      <li class="files-list-item">{{ item|raw }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% else %}
+    <p>{{ t('There are no inconsistencies found') }}</p>
+  {% endfor %}
+</div>

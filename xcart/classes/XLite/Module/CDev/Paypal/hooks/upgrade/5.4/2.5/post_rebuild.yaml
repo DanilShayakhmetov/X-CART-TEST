@@ -1,0 +1,14 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: PaypalForMarketplaces
+    class: Module\CDev\Paypal\Model\Payment\Processor\PaypalForMarketplaces
+    type: C
+    orderby: -11100
+    countries: [AT, AU, BE, CA, CH, CZ, DE, DK, ES, FI, FR, GB, GB, GR, HU, IE, IL, IN, IT, NL, 'NO', PL, PT, RU, SE, SK, US]
+    translations: [{ code: en, name: 'PayPal for Marketplaces', title: PayPal, altAdminDescription: 'PayPal for Marketplaces is a comprehensive payments solution for marketplaces, crowdfunding platforms, and other environments where people buy and sell goods and services or raise money. The solution is ideal if you run a multi-party commerce platform and want a flexible, end-to-end solution for processing payments.' }, { code: ru, name: 'PayPal for Marketplaces', title: PayPal, altAdminDescription: 'PayPal for Marketplaces - это комплексное решение по приёму платежей для торговых площадок, платформ для сбора средств под проект ("краудфандинг") и других сфер, где осуществляется продажа и покупка товаров и услуг, либо сбор средств. Данное решение идеально подойдет для платформ, осуществляющих коммерческую деятельность от лица нескольких участников, и представляет собой комплексное и гибкое решение для обработки платежей на всех этапах этой деятельности.' }]

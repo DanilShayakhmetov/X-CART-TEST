@@ -1,0 +1,5 @@
+Version 5.4.0.4
+
+Improvements (1)
+2019-09-11 - [Change] Updated the list of currencies supported by 2Checkout on the settings page of 2Checkout integration addon. #BUG-6639 https://bt.x-cart.com/view.php?id=49849 (Nikita Erkhov) #TwoCheckout
+

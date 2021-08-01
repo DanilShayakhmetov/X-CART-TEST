@@ -1,0 +1,13 @@
+{##
+ # Product mailbox image
+ #
+ # @ListChild (list="product_mail_box", weight="100")
+ #}
+
+<div class="image">
+  <a
+          href="{{ this.getProductURL() }}"
+          class="product-thumbnail">
+    {{ widget('\\XLite\\View\\Image', image=this.getProduct().getImage(), maxWidth=this.getIconWidth(), maxHeight=this.getIconHeight(), alt=this.getIconAlt(), className='photo') }}
+  </a>
+</div>

@@ -1,0 +1,24 @@
+{##
+ # Order : placed box
+ #
+ # @ListChild (list="order.operations", weight="30")
+ #}
+
+<div class="title">
+  <div class="placed-date head-h4">{{ t('Placed on DATE', {'date': this.getOrderDate()})|raw }}</div>
+  <div class="placed-customer">
+  {% if this.hasProfilePage() %}
+    {{ t('Placed by _NAME_', {'name': this.getProfileName(), 'url': this.getProfileURL()})|raw }}
+  {% else %}
+    {{ t('Placed by NAME', {'name': this.getProfileName()})|raw }}
+  {% endif %}
+
+  {% if this.isShowProfileLogin() %}
+    <div class="profile-login">{{ this.orderForm.displayComplexField('login') }}</div>
+  {% endif %}
+
+  {% if this.getMembership() %}
+    <span class="membership">({{ this.membership.getName() }})</span>
+  {% endif %}
+  </div>
+</div>

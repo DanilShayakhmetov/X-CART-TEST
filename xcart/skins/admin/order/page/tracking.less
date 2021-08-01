@@ -1,0 +1,142 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order tracking styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import "../../css/initialize";
+
+.items-list-table.tracking-number {
+  padding-top: @rhythmic-unit / 2;
+  .flex-display();
+  .justify-content(flex-end);
+  .flex-wrap(wrap);
+  width: 400px;
+}
+
+.items-list-table.tracking-number table.list {
+  max-width: inherit;
+  min-width: inherit;
+  border: 0 none;
+  float: left;
+  width: 438px;
+}
+
+.items-list-table.tracking-number .empty-table-description {
+  text-align: right;
+  order: 2;
+}
+
+.items-list-table.tracking-number table.list tbody.create tr.line td,
+  .items-list-table.tracking-number table.list tbody.lines tr.line td
+{
+  background: #fff;
+  width: auto;
+  border: 0 none;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: @rhythmic-unit/12;
+}
+
+.items-list-table.tracking-number table.list tbody.create tr.line td.main,
+.items-list-table.tracking-number table.list tbody.lines tr.line td.main {
+  text-align: right;
+  width: 300px;
+
+  .ordertrackingnumber-value {
+    width: ~"calc(100% + " @rhythmic-unit ~")";
+
+    .field {
+      margin: 0;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.items-list-table.tracking-number table.list tbody.lines tr.line td.track,
+.items-list-table.tracking-number table.list tbody.create tr.line td.track {
+  padding: 0 0 0 (@rhythmic-unit / 2);
+  width: 18px;
+
+  .cell {
+    .flex-display();
+    .align-items(center);
+
+    a {
+      .flex-display();
+    }
+  }
+}
+
+.items-list-table.tracking-number table.list tbody.create tr.line td.actions.right,
+.items-list-table.tracking-number table.list tbody.lines tr.line td.actions.right
+{
+  text-align: right;
+  padding: 0;
+  width: 36px;
+
+  .separator {
+    display: none;
+  }
+}
+
+.tracking-number.items-list-table table.list .inline-field .view {
+  width: 300px;
+  margin: 0 0 - @rhythmic-unit - (@rhythmic-unit/12);
+}
+
+.tracking-number.items-list-table table.list .inline-field input[type="text"] {
+  width: 100%;
+}
+
+.items-list.tracking-number .list-header {
+  text-align: right;
+  float: right;
+  max-width: 380px;
+}
+
+.items-list.tracking-number .button-container {
+  display: inline-block;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.items-list.tracking-number .button-container:first-child {
+  padding-left: 0;
+}
+
+.items-list-table.tracking-number table.list tbody.no-items td {
+  font-size: 11px;
+  text-align: right;
+  color: #8f8f8f;
+  padding-top: 0;
+}
+
+
+.items-list-table.tracking-number .table-wrapper {
+  width: 100%;
+  border: none;
+}
+
+.items-list-table.tracking-number table.list tbody.lines tr.line td.creationDate {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100px;
+  min-width: 100px;
+}
+
+.items-list-table.tracking-number table.list tr.line {
+  .actions .remove {
+    display: none;
+  }
+  &.edit-mark .actions .remove {
+    display: block;
+  }
+}

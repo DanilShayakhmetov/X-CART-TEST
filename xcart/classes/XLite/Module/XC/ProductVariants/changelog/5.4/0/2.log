@@ -1,0 +1,12 @@
+Version 5.4.0.2
+
+Improvements (3)
+2019-01-14 - [Change] Improvement of the product page look & feel in the Customer area. Add to cart form minimization. #XCN-9321 (morven) #Core #Paypal #ProductAdvisor #Wholesale #ProductComparison #ProductVariants #ProductReviews #CrispWhiteSkin #ProductTags #FreeShipping
+2018-08-14 - [Change] An order including an out-of-stock product is now marked as New/BackOrder. #XCN-8711 https://bt.x-cart.com/view.php?id=48299 (Sergey Elmanov) #Core #AustraliaPost #ContactUs #Coupons #Egoods #ProductAdvisor #Sale #USPS #Wholesale #ThemeTweaker #CanadaPost #ColorSchemes #FedEx #UPS #PINCodes #ProductVariants #EMS #PitneyBowes #CrispWhiteSkin #MultiVendor #BulkEditing #NotFinishedOrders #NextPreviousProduct #Orders Import #DHL #MigrationWizard #BlueSnap #GoogleFeed
+2018-06-04 - [Change] All notifications can now be edited in Webmaster mode. #XCN-8862 (Sergey Elmanov) #Core #ContactUs #Egoods #ThemeTweaker #CanadaPost #PINCodes #ProductVariants #ProductReviews #MultiVendor #VendorMessages #TrustedVendors #BlueSnap
+
+Fixes (3)
+2019-04-01 - [Bug] Product import failed with ProductVariants enabled. Fixed. #BUG-7188 (Shevelov Alexander) #ProductVariants
+2019-03-19 - [Bug] The images were not switched in the Customer area when switching from one variant of a product to another. Fixed. #BUG-7187 (Maxim Kuznetsov) #ProductVariants
+2019-01-18 - [Bug] Optimization for the function hasVariants. Cache added. #BUG-6978 (Kirill Stadler) #ProductVariants
+

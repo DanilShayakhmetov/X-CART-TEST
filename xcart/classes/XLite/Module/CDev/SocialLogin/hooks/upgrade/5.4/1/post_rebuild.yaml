@@ -1,0 +1,25 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: apple_title
+    category: CDev\SocialLogin
+    type: XLite\Module\CDev\SocialLogin\View\FormField\Instructions
+    orderby: 50
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Apple'
+        option_comment: 'To configure web authentication, you must create a Services ID and associate your website to an existing primary iOS, macOS, tvOS, or watchOS App ID enabled for Sign In with Apple. Please, follow the instructions here: <a href="https://help.apple.com/developer-account/#/dev1c0e25352">https://help.apple.com/developer-account/#/dev1c0e25352</a>. Use the following link for "Return URLs" parameter to configure your Services ID: {{WEB_LC_ROOT}}?target=social_login&action=login&auth_provider=apple'
+  - name: apple_identifier
+    category: CDev\SocialLogin
+    type: text
+    orderby: 60
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Identifier'

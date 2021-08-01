@@ -1,0 +1,5 @@
+Version 5.4.1.3
+
+Fixes (1)
+2020-11-20 - [Bug] It was not possible to click on a product name in Recently Viewed. Fixed. #XCB-28 #CDev-ProductAdvisor
+

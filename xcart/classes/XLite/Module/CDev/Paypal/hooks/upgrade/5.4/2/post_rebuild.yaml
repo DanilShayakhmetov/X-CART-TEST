@@ -1,0 +1,26 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: PaypalCommercePlatform
+    class: Module\CDev\Paypal\Model\Payment\Processor\PaypalCommercePlatform
+    added: true
+    type: C
+    orderby: -103000
+    adminOrderby: -106000
+    countries: [AT, AU, BE, CA, CH, CZ, DE, DK, ES, FI, FR, GB, GB, GR, HU, IE, IL, IN, IT, NL, 'NO', PL, PT, RU, SE, SK, US]
+    translations: [{ code: en, name: 'PayPal Checkout', title: PayPal, altAdminDescription: 'PayPal Checkout can be set up quickly and offers a convenient way for customers to complete online purchases. Configure PayPal on your product pages and cart to increase conversion.' }]
+    settings: [{ name: authCode }, { name: merchant_id }, { name: sellerNonce }, { name: client_id }, { name: client_secret }, { name: transaction_type, value: S }, { name: 3d_secure, value: false }, { name: 3d_secure_soft_exception, value: false }, { name: mode, value: test }, { name: buyNowEnabled, value: 1 }, { name: headIconEnabled, value: 1 }]
+  - service_name: ExpressCheckout
+    translations: [{ code: en, name: 'PayPal Express Checkout (legacy)', title: PayPal, altAdminDescription: 'Create a seamless checkout experience and increase your conversion rate by opening the door to over 100 million active PayPal customers who look for and use this fast, easy, and secure way to pay.' }]
+    settings: [{ name: headIconEnabled, value: 0 }]
+  - service_name: PayflowLink
+    settings: [{ name: headIconEnabled, value: 0 }]
+  - service_name: PaypalAdvanced
+    settings: [{ name: headIconEnabled, value: 0 }]
+  - service_name: PaypalAdaptive
+    settings: [{ name: headIconEnabled, value: 0 }]

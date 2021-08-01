@@ -1,0 +1,11 @@
+{##
+ # Notification description
+ #
+ # @ListChild (list="form_model.settings.notification.notification.before", zone="admin", weight="100")
+ #}
+
+{% if this.getDescription() %}
+  <div class="alert alert-info" role="alert">
+    {{ this.getDescription() }}
+  </div>
+{% endif %}

@@ -1,0 +1,12 @@
+{##
+ # Product market price
+ #
+ #
+ # @ListChild (list="product.plain_price.tail", weight="30")
+ #}
+
+{% if this.isShowXpaymentsSubscriptionInfo() %}
+  <div class="product-details-subscription-info">
+    {{ widget_list('xpayments_subscription_info.text', type='nested') }}
+  </div>
+{% endif %}

@@ -1,0 +1,748 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Useful less mixins
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+@import (reference) "rhythm";
+
+// disable bootstrap focus
+.tab-focus() {
+  outline: none;
+}
+
+.required-label() {
+  min-height: @line-height-base;
+
+  &:after {
+    display: inline-block;
+    content: "*";
+    color: @color-error;
+    position: absolute;
+    right: -(@rhythmic-unit / 2);
+    top: 0;
+    transform: translateX(50%);
+  }
+}
+
+.heading(@size: @font-size-h1, @margin-bottom: 0, @margin-top: 0) {
+  font-size: @size;
+  line-height: ceil((@size + 1) / @rhythmic-unit) * @rhythmic-unit;
+  margin-bottom: ceil((@margin-bottom) / @rhythmic-unit) * @rhythmic-unit;
+  margin-top: @margin-top;
+
+  p, ul, pre, code, li {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+.nav-divider(@color: @color-border) {
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  background-color: @color;
+}
+
+.well() {
+  padding: @alert-padding;
+  margin-bottom: @line-height-computed;
+  border: 1px solid transparent;
+  border-radius: @alert-border-radius;
+  .alert-variant(@items-list-head-bg; @items-list-border; @text-color);
+}
+
+.section-divider() {
+  &:before {
+    content: "";
+    display: block;
+    height: @fieldset-separator-height;
+    background: @fieldset-separator-bg;
+    margin-right: -@center-padding-right;
+    margin-left: -@center-padding-left;
+    .box-shadow(inset 0px 5px 5px -5px rgba(0, 0, 0, 0.75));
+  }
+}
+
+.form-control-widths() {
+  input[type=text].form-control,
+  input[type=password].form-control,
+  input[type=date].form-control,
+  input[type=color].form-control,
+  input[type=email].form-control,
+  input[type=file].form-control,
+  input[type=range].form-control,
+  input[type=search].form-control,
+  input[type=tel].form-control,
+  input[type=url].form-control,
+  select.form-control {
+    width: @form-value-input-width;
+  }
+
+  textarea.form-control {
+    width: @form-value-textarea-width;
+  }
+
+  .input-group .form-control.form-control.form-control {
+    width: 100%;
+  }
+
+  .input-text-integer,
+  .input-text-floatinput,
+  .input-text-price,
+  .input-text-symbol,
+  .input-text-integer,
+  .input-text-integerwithinfinity,
+  .input-text-floatwithinfinity,
+  .input-text-pricewithinfinity {
+    .form-control.form-control {
+      text-align: @form-value-numeric-align;
+      width: @form-value-integer-width;
+    }
+  }
+}
+
+.form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
+  .form-control {
+    .form-control-focus(@background-color);
+  }
+}
+
+.form-control-focus(@color: @input-border-focus) {
+  &:focus {
+    .form-control-fake-focus(@color);
+  }
+}
+
+.form-control-fake-focus(@color: @input-border-focus) {
+  .element-focus(@color);
+  outline: 0;
+}
+
+.element-focus(@color: @brand-info) {
+  border-color: @color !important;
+  box-shadow: 0 0 10px 0 rgba(102, 175, 233, 0.5) !important;
+}
+
+.help-text(@color: @color-tip) {
+  color: @color;
+  font-size: @font-size-small;
+  line-height: @line-height-small-text;
+}
+
+.separator() {
+    position: relative;
+    top: 0;
+    width: 2px;
+    height: @items-list-action-separator-height;
+    margin: @items-list-action-separator-margin;
+    background-image: url(../../images/line-separator.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.table-wrapper() {
+  border-radius: @border-radius-base;
+  border: @border-base solid @table-border-color;
+  clear: both;
+  width: 100%;
+
+  & > table {
+    & > tbody > tr,
+    & > thead > tr {
+      & > td, & > th {
+        padding: @table-cell-padding;
+        border-top: @border-base solid @table-border-color;
+        border-bottom: @border-base solid @table-border-color;
+
+        p:last-child {
+          margin-bottom: 0;
+        }
+
+        &:first-child {
+          padding-left: (@rhythmic-unit / 2);
+        }
+
+        &:last-child {
+          padding-right: (@rhythmic-unit / 2);
+        }
+
+        &.image {
+          padding-top: (@rhythmic-unit / 4);
+          padding-bottom: (@rhythmic-unit / 4);
+        }
+      }
+
+      &:first-child > td,
+      &:first-child > th {
+        border-top: none;
+      }
+    }
+
+    > tbody.lines > tr {
+      &:last-child > td {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+// Placeholder text
+.placeholder(@color: @input-color-placeholder) {
+  &::placeholder {
+    font-style: normal;
+    color: @color;
+  }
+}
+
+.word-break() {
+  white-space: normal;
+
+  /* proper word breaking */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.gradient(@color: #f5f5f5, @start: #eee, @stop: #fff) {
+  background: @color;
+  background: linear-gradient(
+    to top,
+    @start 0%,
+    @stop 100%
+  );
+}
+
+.bw-gradient(@color: #f5f5f5, @start: 0, @stop: 255) {
+  background: @color;
+  background: linear-gradient(
+    to top,
+    rgb(@start, @start, @start) 0%,
+    rgb(@stop, @stop, @stop) 100%
+  );
+}
+
+.bordered(@top-color: #eee, @right-color: #eee, @bottom-color: #eee, @left-color: #eee) {
+  border-top: solid 1px @top-color;
+  border-left: solid 1px @left-color;
+  border-right: solid 1px @right-color;
+  border-bottom: solid 1px @bottom-color;
+}
+
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+
+.rounded(@radius: 2px) {
+  border-radius: @radius;
+  .background-clip(padding-box);
+}
+
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
+  .background-clip(padding-box);
+}
+
+.opacity(@opacity: 0.5) {
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  filter: ~"alpha(opacity=@{opperc})";
+}
+
+.transition-multi(@property, @duration: @fast-transitions-duration, @easing: ease-in-out) {
+  .transition-property(@property);
+  .transition-duration(@duration);
+  transition-timing-function: @easing;
+}
+
+.transition-duration(@duration: 0.2s) {
+  transition-duration: @duration;
+}
+
+.transform(...) {
+  transform: @arguments;
+}
+
+.rotation(@deg:5deg) {
+  .transform(rotate(@deg));
+}
+
+.scale(@ratio:1.5) {
+  .transform(scale(@ratio));
+}
+
+.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}
+
+.box-shadow(@arguments) {
+  box-shadow: @arguments;
+}
+
+.box-sizing(@sizing: border-box) {
+  box-sizing: @sizing;
+}
+
+.user-select(@argument: none) {
+  -webkit-user-select: @argument;
+  -moz-user-select: @argument;
+  -ms-user-select: @argument;
+  user-select: @argument;
+}
+
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #eee, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  column-width: @colwidth;
+  column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
+
+.translate(@x:0, @y:0) {
+  .transform(translate(@x, @y));
+}
+
+.background-clip(@argument: padding-box) {
+  background-clip: @argument;
+}
+
+// --------------------------------------------------
+// Flexbox LESS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+// flex or inline-flex
+.flex-display(@display: flex) {
+  display: @display;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+.flex(@columns: initial) {
+  flex: @columns;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+.flex-direction(@direction: row) {
+  -moz-flex-direction: @direction;
+  flex-direction: @direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+.flex-wrap(@wrap: nowrap) {
+  flex-wrap: @wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+.flex-flow(@flow) {
+  flex-flow: @flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+.flex-order(@order: 0) {
+  order: @order;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+.flex-grow(@grow: 0) {
+  flex-grow: @grow;
+}
+
+// Flex shr
+// - applies to: flex itemsink factor
+// <number>
+.flex-shrink(@shrink: 1) {
+  flex-shrink: @shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width>
+.flex-basis(@width: auto) {
+  flex-basis: @width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+.justify-content(@justify: flex-start) {
+  justify-content: @justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+.align-content(@align: stretch) {
+  align-content: @align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+.align-items(@align: stretch) {
+  align-items: @align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch
+.align-self(@align: auto) {
+  align-self: @align;
+}
+
+.toggler(@color-on: @good-color, @color-off: @neutral-color, @height: 30px, @width: 54px, @padding: 4px, @font-size: 14px) {
+
+  div {
+    .rounded(@height * 2);
+    background-color: @color-off;
+    padding: @padding;
+    display: inline-block;
+    width: @width;
+    height: @height;
+    transition: background 0.4s;
+    position: relative;
+
+    span {
+      bottom: @padding;
+      width: @height - (@padding * 2);
+      height: @height - (@padding * 2);
+      .rounded(@height);
+      transition: margin 0.4s, background 0.4s, color 0.4s;
+      background-color: #fff;
+      padding: @padding;
+      font-size: @font-size;
+      color: @color-off;
+      margin-left: 0;
+      margin-right: @width - (@padding * 2) - (@height - (@padding * 2));
+      vertical-align: top;
+      line-height: @font-size;
+
+      &.svg {
+        display: inline-block;
+        padding: 0;
+        text-align: center;
+
+        svg {
+          width: 7px;
+          height: @height - (@padding * 2);
+
+          path {
+            fill: @color-off;
+            transition: color 0.4s;
+          }
+        }
+      }
+    }
+  }
+
+  &.on {
+    div {
+      background-color: @color-on;
+
+      span {
+        color: @color-on;
+        margin-left: @width - (@padding * 2) - (@height - (@padding * 2));
+        margin-right: 0;
+
+        &.svg svg path {
+          fill: @color-on;
+        }
+      }
+    }
+  }
+
+}
+
+.tabs() {
+  .clearfix;
+  border-bottom: 1px solid #d6d9dc;
+  position: relative;
+
+  > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: @center-padding-left;
+    white-space: nowrap;
+
+    > li + li {
+      margin-left: @rhythmic-unit;
+    }
+
+    li {
+      display: inline-block;
+      position: relative;
+      margin-bottom: -1px;
+
+      &:last-child {
+        margin-right: 0;
+
+        ul.subtabs {
+          right: 0;
+          left: auto;
+        }
+      }
+
+      a {
+        display: @tab-link-display;
+        text-decoration: none;
+        color: @tab-color;
+        border-color: transparent;
+        margin-bottom: @tab-margin-bottom;
+        text-transform: capitalize;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: -1px;
+        content: "";
+        height: 3px;
+        width: 100%;
+        border: 1px solid @tab-hover-color;
+        background-color: @tab-hover-color;
+        border-radius: @border-radius-base;
+        display: none;
+      }
+
+      span.fa {
+        color: #808f98;
+        vertical-align: baseline;
+      }
+
+      a:hover,
+      a:focus {
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      &:hover {
+        &::after {
+          display: block;
+        }
+
+        a {
+          color: @tab-hover-color;
+        }
+
+        ul.subtabs {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      &.tab-current,
+      &.tab.active {
+
+        &::after {
+          display: block;
+          border-color: @tab-active-color;
+          background-color: @tab-active-color;
+        }
+
+        a {
+          color: @tab-active-color;
+          font-weight: @font-bold;
+          border-color: transparent;
+        }
+
+        ul.subtabs {
+          display: none;
+        }
+
+        span.fa {
+          display: none;
+        }
+      }
+
+      ul.subtabs {
+        background-color: #fff;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+        padding: 6px 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        z-index: 9999;
+        left: 0;
+        margin-top: 2px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out 0s, visibility 0s linear 0.25s;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+
+        li.subtab {
+          display: block;
+          line-height: 16px;
+          padding: 0;
+          width: 100%;
+
+          &::after {
+            display: none;
+          }
+
+          a {
+            font-weight: normal;
+            margin: 0;
+            color: #808f98;
+            padding: 9px 12px;
+            width: 100%;
+            border: none;
+
+            &:hover {
+              background-color: #ebfafd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.secondary-tabs() {
+  .clearfix;
+
+  ul {
+    height: 38px;
+    padding: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-collapse: collapse;
+    border-color: @sec-tab-border-color;
+
+    li {
+      display: inline-block;
+      white-space: nowrap;
+
+      a {
+        display: block;
+        padding: 9px 18px 5px;
+        vertical-align: baseline;
+        border: @sec-tab-border-color 1px solid;
+        text-decoration: none;
+        font-size: 16px;
+        background-color: @sec-tab-bg-color;
+        .border-radius(12px, 0, 0, 12px);
+        color: #333;
+      }
+
+      &.tab-current {
+        a {
+          background-color: #fff;
+          cursor: default;
+          border-bottom-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.center-full-width() {
+  margin-left: -1 * @center-padding-left;
+  width: ~"calc(100% + " @center-padding-left ~" + " @center-padding-right ~")";
+}
+
+.vertical-middle-box() {
+  .flex-display();
+  .flex-direction(column);
+  .justify-content(center);
+}
+
+.ui-menu-item .ui-menu-item-wrapper {
+  padding: (@rhythmic-unit / 4) (@rhythmic-unit / 2);
+
+  &.ui-state-active {
+    margin: 0;
+    border: none;
+    color: @color-text-dark;
+    background-color: @color-light-blue;
+  }
+}
+
+div.separator {
+  position: relative;
+  top: 0;
+  width: 0;
+  height: @items-list-action-separator-height;
+  margin: @items-list-action-separator-margin;
+  border-left: @color-tip @items-list-action-separator-width dashed;
+  display: inline-block;
+}
+
+.transaction-details .tooltip-main .tooltip-caption,
+.items-list.payment-transactions table.list .details .tooltip-caption {
+  font-size: 12px;
+  font-weight: @font-regular;
+  line-height: calc(12px * 5 / 3);
+  background-color: @color-link;
+  color: #fff;
+  padding: 5px 10px 5px 9px;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  height: auto;
+}
+
+ul.custom-disc {
+  list-style-type: none;
+
+
+  li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: @text-color;
+    position: absolute;
+    left: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    top: 9px;
+
+  }
+
+  li {
+    display: inline-block;
+    padding-left: 36px;
+    position: relative;
+    margin-bottom: (@rhythmic-unit / 2);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.help-wrapper {
+  margin-left: @rhythmic-unit / 2;
+}

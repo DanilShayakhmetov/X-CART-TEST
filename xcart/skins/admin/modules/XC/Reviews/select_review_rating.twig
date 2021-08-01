@@ -1,0 +1,11 @@
+{##
+ # Review rating selection template
+ #}
+<select name="rating">
+  {% if this.getParam('allOption') %}
+    <option value="%" {% if this.getParam('value') == '%' %} selected="selected" {% endif %}>{{ t('Any rating') }}</option>
+  {% endif %}
+  {% for key, title in this.getRatingsList() %}
+  <option value="{{ key }}"{% if key == this.getParam('value') %} selected="selected"{% endif %}>{{ title }}</option>
+  {% endfor %}
+</select>

@@ -1,0 +1,9 @@
+{##
+ # transaction declined email body
+ #}
+
+<p>
+  {{ widget('\\XLite\\View\\TransactionDetails', transaction=this.transaction) }}
+</p>
+
+{{ widget_list('failed_transaction.after', transaction=this.transaction, transactionSearchURL=this.transactionSearchURL) }}

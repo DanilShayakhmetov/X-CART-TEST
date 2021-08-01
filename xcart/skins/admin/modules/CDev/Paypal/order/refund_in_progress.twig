@@ -1,0 +1,12 @@
+{##
+ # Payment transactions summary
+ #
+ # @ListChild (list="order.actions.paymentActionsRow", weight="100")
+ #}
+
+{% if this.isRefundInProgress() %}
+  <div class="ppa-refund-status">
+    <span>{{ t('Refund status:') }}</span>
+    <span class="status-name">{{ t('[BT] In progress') }}</span>
+  </div>
+{% endif %}

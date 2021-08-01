@@ -1,0 +1,36 @@
+{##
+ # Onboarding wizard online payment method block
+ #}
+
+<xlite-onboarding-amazon-pay inline-template>
+  <div class="online online-amazon" :class="classes">
+
+    <div class="image">
+      <img src="{{ asset('modules/Amazon/PayWithAmazon/onboarding/logo.png') }}" alt="{{ t('Pay with Amazon') }}"
+           title="{{ t('Pay with Amazon') }}"/>
+    </div>
+
+    <div class="note">
+      {{ t('Make Amazon’s customers your customers with Amazon Pay.') }}
+    </div>
+
+    {% if this.isAmazonConfigured() %}
+      <div class="switcher{% if this.isAmazonMethodEnabled() %} enabled{% endif %}">
+        <span class="inactive">{{ t('checkbox.onoff.off') }}</span>
+        <a href="#" @click.prevent="switchAmazonMethod({{ this.getMethodId() }}, $event)">
+          <div>
+            <span class="fa fa-check"></span>
+          </div>
+        </a>
+        <span class="active">{{ t('checkbox.onoff.on') }}</span>
+      </div>
+    {% else %}
+      <div class="button">
+        <button @click.prevent="addMethod({{ this.getMethodId() }},'{{ this.getMethodSettingsUrl() }}')"
+                class="btn  regular-button">
+          {{ t('Launch')|raw }}
+        </button>
+      </div>
+    {% endif %}
+  </div>
+</xlite-onboarding-amazon-pay>

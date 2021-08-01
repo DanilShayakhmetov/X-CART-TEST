@@ -1,0 +1,5 @@
+Version 5.4.0.12
+
+Fixes (1)
+2020-07-29 - [Bug] Incorrect admin addresses were created when placing an order as an administrator. Fixed. #BUG-8839 #Core #FastLaneCheckout
+

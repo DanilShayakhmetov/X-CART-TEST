@@ -1,0 +1,5 @@
+Version 5.4.0.8
+
+Improvements (1)
+2020-06-23 - [Change] Implemented Identity Verification for Intercom integration. #BUG-8778 #Concierge
+

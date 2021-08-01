@@ -1,0 +1,26 @@
+Version 5.4.0.3
+
+Improvements (8)
+2019-05-07 - [Change] Added a new page Packaging Supplies in the Admin area. #BUG-7202 (Fedya Lavrentyev) #Core #MultiVendor
+2019-05-03 - [Change] Adjusted the font color of some elements for more contrast. #XCN-9856 (Fedya Lavrentyev) #Core #Egoods #FeaturedProducts #FileAttachments #SimpleCMS #VolumeDiscounts #Wholesale #CanadaPost #ColorSchemes #ProductVariants #RelatedProducts #MultiVendor #VendorMessages #CustomProductTabs #UpdateInventory
+2019-04-23 - [Change] Layout adjustment for tax configuration pages according to the style guide. #XCN-9748 (Fedya Lavrentyev) #Core #SalesTax #VAT #CanadianTaxes
+2019-04-22 - [Change] Layout adjustment for the pages Import / Export / Update Inventory according to the style guide. #XCN-9740 (Fedya Lavrentyev) #Core #ProductReviews #NewsletterSubscriptions #MultiVendor #CustomProductTabs
+2019-04-20 - [Change] Layout adjustment for the payment methods page in the Admin area according to the style guide. #XCN-9827 (Fedya Lavrentyev) #Core
+2019-04-19 - [Change] Layout adjustment for the pages Order statistics and Bestselers in the Admin area  according to the style guide. #XCN-9744 (Fedya Lavrentyev) #Core #GoogleAnalytics #MultiVendor
+2019-04-18 - [Change] Layout adjustment for the Logo & Favicon page in the Admin area according to the style guide. #XCN-9826 (Fedya Lavrentyev) #Core #SimpleCMS #VendorMessages
+1970-01-01 - [Change] Fixed the Maria DB version verification in the installer; the minimum allowed version is 10.2.4. #BUG-7000 (Fedya Lavrentyev) #Core
+
+Fixes (12)
+2019-04-25 - [Bug] Display issues related to the position of the default image in the upload image widget. Fixed. #BUG-7325 (Fedya Lavrentyev) #Core
+2019-04-25 - [Bug] Layout issues on the attribute sorting page as a result of repositioning the attribute values. #BUG-7323 (Fedya Lavrentyev) #Core
+2019-04-25 - [Bug] Trash icons display issues. Fixed. #BUG-7322 (Fedya Lavrentyev) #Core
+2019-04-25 - [Bug] Advertisement block appearance issues. Adjusted according to the style guide. #BUG-7320 (Fedya Lavrentyev) #Core #ShopperApproved
+2019-04-25 - [Bug] Layout issue related to the display of Clean URL field help information. Fixed. #BUG-7318 (Fedya Lavrentyev) #Core
+2019-04-24 - [Bug] Layout issues on the user list page. Fixed. #BUG-7316 (Fedya Lavrentyev) #Core
+2019-04-24 - [Bug] Layout issues related to the product class editing block. Fixed. #BUG-7315 (Fedya Lavrentyev) #Core
+2019-04-24 - [Bug] Current date highlighted incorrectly in the single date picker. Fixed. #BUG-7314 (Fedya Lavrentyev) #Core
+2019-04-24 - [Bug] Layout issues on the Reviews page. Fixed. #BUG-7312 (Fedya Lavrentyev) #Core
+2019-04-24 - [Bug] Hyperlink display issue on the Cloned products page. Fixed. #BUG-7311 (Fedya Lavrentyev) #Core
+2019-04-24 - [Bug] Layout issues on the page for adding new attributes for a product class. Fixed. #BUG-7307 (Fedya Lavrentyev) #Core #ProductFilter
+2019-04-24 - [Bug] Minor layout adjustments for the attachments page in the Admin area. #BUG-7302 (Fedya Lavrentyev) #Core #FileAttachments
+

@@ -1,0 +1,17 @@
+{##
+ # Product attributes 
+ #}
+<ul class="attribute-values" data-include-non-editable="{{ this.getIncludeNonEditable() }}">
+  {% for attribute in this.getAttributes() %}
+    {% if this.isEditableAttribute(attribute) %}
+      <li class="{{ this.getAttributeCSSClass(attribute) }}">
+        {{ widget(attribute.getWidgetClass(attribute.getType()), attribute=attribute, product=this.product) }}
+      </li>
+    {% else %}
+      <li class="{{ this.getAttributeCSSClass(attribute) }} non-editable">
+        <strong>{{ attribute.getName() }}: </strong>
+        <span>{{ this.getAttrStringValue(attribute)|nl2br }}</span>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -1,0 +1,95 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: ttl
+    category: CDev\Egoods
+    translations:
+      - code: en
+        option_name: 'Download link TTL (days)'
+        option_comment: 'Set zero for unlimited access. If you are using Cloud storage Signed URLs, TTL is limited to 7 days.'
+      - code: ru
+        option_name: 'Время действия ссылки на скачку (в днях)'
+        option_comment: 'При значении 0 - неограниченный доступ. Для ссылок хранилища, подписанных ключом, время ограничено 7 днями.'
+  - name: attempts_limit
+    category: CDev\Egoods
+    type: XLite\View\FormField\Input\Text\Integer
+    translations:
+      - code: en
+        option_name: 'Downloads limit (per 1 ordered item)'
+        option_comment: 'Set zero for unlimited access. If you are using Cloud storage Signed URLs, this settings controls the limit of link renewal, because it is impossible to control downloads on the Signed URL.'
+      - code: ru
+        option_name: 'Лимит скачек (на 1 позицию заказа)'
+        option_comment: 'При значении 0 - безлимитный доступ. Для ссылок хранилища, подписанных ключом, эта настройка контролирует количество доступов к ссылке, так как невозможно ограничить количество скачек по такой ссылке.'
+  - name: enable_history
+    category: CDev\Egoods
+    translations:
+      - code: en
+        option_name: 'Keep a history of downloads'
+        option_comment: 'Cloud storage Signed URLs are counted per link access (not download), because X-Cart can not track downloads on the Cloud Storage.'
+      - code: ru
+        option_name: 'Сохранять историю загрузок'
+        option_comment: 'Для ссылок хранилища, подписанных ключом, учитывается количество доступов, а не скачек, так как X-Cart не имеет доступа к истории скачек облачного хранилища.'
+
+  - name: amazon_separator
+    category: CDev\Egoods
+    translations:
+      - code: en
+        option_name: Cloud storage Signed URLs
+  - name: enable_signed_urls
+    category: CDev\Egoods
+    translations:
+      - code: en
+        option_name: 'Enable usage of Presigned URLs for Cloud storage links'
+        option_comment: 'Use Cloud storage to host your digital files on Amazon S3 or Digital Ocean space and control access to your e-goods by presigned URLs. Learn more at <a href="https://kb.x-cart.com/en/modules/egoods/" target="_blank">E-goods module</a> article at X-Cart Knowledge Base.'
+      - code: ru
+        option_name: 'Включить ссылки, подписанные ключом, для файлов на хранилище'
+        option_comment: 'С помощью хранилища можно экономить серверное дисковое пространство и контролировать доступ к скачиваемым товарам. Подробнее о конфигурации можно узнать на странице <a href="https://kb.x-cart.ru/modules/egoods/" target="_blank">Цифровые товары</a> в базе знаний X-Cart.'
+
+  - name: storage_type
+    category: CDev\Egoods
+    type: 'XLite\Module\CDev\Egoods\View\FormField\StorageType'
+    orderby: 1200
+    value: 'as3'
+    translations:
+      - code: en
+        option_name: Storage
+  - name: amazon_access
+    category: CDev\Egoods
+    orderby: 1300
+    translations:
+      - code: en
+        option_name: Access Key
+  - name: amazon_secret
+    category: CDev\Egoods
+    orderby: 1400
+    translations:
+      - code: en
+        option_name: Secret Key
+  - name: bucket
+    category: CDev\Egoods
+    orderby: 1500
+    translations:
+      - code: en
+        option_name: Bucket name
+      - code: ru
+        option_name: Bucket
+  - name: bucket_region
+    category: CDev\Egoods
+    orderby: 1600
+    translations:
+      - code: en
+        option_name: 'Bucket region'
+        option_comment: 'If not specified, the bucket region will be detected based on the URL. If the region cannot be detected, the default region us-east-1 will be used.'
+  - name: do_endpoint
+    category: CDev\Egoods
+    type: 'XLite\View\FormField\Input\Text'
+    orderby: 1700
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Digital Ocean Endpoint'

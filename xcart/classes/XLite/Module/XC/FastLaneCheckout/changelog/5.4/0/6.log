@@ -1,0 +1,6 @@
+Version 5.4.0.6
+
+Fixes (2)
+2019-10-18 - [Bug] Incorrect management of the availability of the buttons <Proceed to payment> and <Place order> when no fitting shipping methods were available. Fixed. #BUG-7983 https://bt.x-cart.com/view.php?id=51066 (Pavel Veselovsky) #Core #FastLaneCheckout
+2019-09-17 - [Bug] With Labels editor enabled, HTML code was shown on some elements. Fixed. #BUG-6619 https://bt.x-cart.com/view.php?id=49812 (Maxim Kuznetsov) #Core #Coupons #ThemeTweaker #CanadaPost #ProductReviews #FastLaneCheckout #NewsletterSubscriptions #VendorMessages #AMP #AuthorizenetAcceptjs
+

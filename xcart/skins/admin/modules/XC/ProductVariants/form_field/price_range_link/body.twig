@@ -1,0 +1,11 @@
+{##
+ # ____file_title____
+ #}
+
+<a{{ this.getAttributesCode()|raw }}>
+  {% if this.getMinPrice() != this.getMaxPrice() %}
+    <span class="price-range-min">{{ this.formatPrice(this.getMinPrice(), this.getCurrency()) }}</span>
+    <span class="price-range-separator">&nbsp;-&nbsp;</span>
+  {% endif %}
+  <span class="price-range-max">{{ this.formatPrice(this.getMaxPrice(), this.getCurrency()) }}</span>
+</a>

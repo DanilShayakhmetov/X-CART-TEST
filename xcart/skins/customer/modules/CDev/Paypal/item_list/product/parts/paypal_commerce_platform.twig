@@ -1,0 +1,10 @@
+{##
+ # Express checkout
+ #
+ # @ListChild (list="itemsList.product.list.customer.info", zone="customer", weight="1300")
+ #}
+{% if this.isDisplayAdd2CartButton() %}
+  {% if not this.product.isAllStockInCart() %}
+    {{ widget('XLite\\Module\\CDev\\Paypal\\View\\Button\\ProductList\\PaypalCommercePlatform', productId=this.product.product_id) }}
+  {% endif %}
+{% endif %}
