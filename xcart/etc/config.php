@@ -227,8 +227,8 @@ image_magick_path =
 ; Installation authcode is created authomatically and stored in this section.
 ;
 [installer_details]
-auth_code = "CH3VJZGCIIQ8R45RDQLMMEBJRHFYPMNM"
-shared_secret_key = "6107cc3450ebb8.27993139"
+auth_code = "HE8RRB7RRQ2HTZ1QW96OYHA1XHNVOL1F"
+shared_secret_key = "6108469230f0b6.25467640"
 
 ;
 ; Some options to optimize the store

@@ -1,0 +1,1 @@
+.tpl-debug-canvas{position:absolute;display:block;z-index:999999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}body.area-c .tpl-debug-canvas{pointer-events:none}.tpl-debug-tpl-canvas,.tpl-debug-list-canvas{border:1px dashed #d6ab89}.tpl-debug-current{opacity:.2;background-color:#ee6800}

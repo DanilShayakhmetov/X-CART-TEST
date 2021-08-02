@@ -1,9 +1,9 @@
-1627905004
+1627936379
 s:6375:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:1272:"
 <div class="simple-search-product-form">
 
    
-<form action="?" method="post" accept-charset="utf-8" onsubmit="javascript: return true;" class="form6107cddbf13398.75367425">
+<form action="?" method="post" accept-charset="utf-8" onsubmit="javascript: return true;" class="form6108486b269635.65676712">
 <div class="form-params" style="display: none;">
       <input type="hidden" name="target" value="search" />
       <input type="hidden" name="action" value="search" />

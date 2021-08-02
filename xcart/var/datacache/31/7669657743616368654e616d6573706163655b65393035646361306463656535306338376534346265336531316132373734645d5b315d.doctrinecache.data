@@ -1,7 +1,7 @@
-1627905006
+1627936385
 s:1784:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:1674:"
   
-<form action="?" method="post" accept-charset="utf-8" onsubmit="javascript: return true;" class="form6107cdde33ed47.53420723">
+<form action="?" method="post" accept-charset="utf-8" onsubmit="javascript: return true;" class="form610848716f9957.90401617">
 <div class="form-params" style="display: none;">
       <input type="hidden" name="target" value="product" />
       <input type="hidden" name="action" value="rate" />

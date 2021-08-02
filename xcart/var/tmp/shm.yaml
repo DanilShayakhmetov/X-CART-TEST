@@ -1,4 +1,0 @@
-XLite\Model\Shipping\Method:
-    3: { processor: cdek, carrier: '', code: '', moduleName: QSL_CDEK, translations: [{ code: en, name: CDEK }, { code: ru, name: CDEK }], fromMarketplace: 1, iconURL: //my.x-cart.com/sites/default/files/addons/QSL/CDEK/method_icon.jpg }
-    5: { processor: dhl, carrier: '', code: '', moduleName: XC_DHL, translations: [{ code: en, name: DHL }, { code: ru, name: DHL }], fromMarketplace: 1, iconURL: //my.x-cart.com/sites/default/files/addons/XC/DHL/method_icon.jpg }
-    6: { processor: Pilibaba, carrier: '', code: '', moduleName: XC_Pilibaba, translations: [{ code: en, name: 'Pilibaba Chinese Checkout' }], fromMarketplace: 1, iconURL: //my.x-cart.com/sites/default/files/addons/XC/Pilibaba/method_icon_Pilibaba.png }

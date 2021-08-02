@@ -1,9 +1,0 @@
-1628506339
-s:357:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:248:"<a href="#" class=" sales-channels" title="Add sales channel">
-  <script type="text/x-cart-data">
-{"url_params":{"target":"addons_list_sales_channels","widget":"XLite\\View\\SalesChannels"}}
-</script>
-
-  <i class="fa fa-plus-circle-o"></i>
-</a>
-";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

@@ -1,0 +1,87 @@
+1627937828
+s:2290:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:2180:"
+<div id="secondary-menu" class="clearfix">
+ <ul class="footer-menu">
+                        
+      
+      <li  class="leaf first">
+                <span class="footer-title">Offers</span>
+                  
+                  <ul>
+      
+      
+      <li  class="leaf">
+                <a href="sale-products/" >Sale</a>
+                  
+                        
+      
+      <li  class="leaf">
+                <a href="coming-soon/" >Coming soon</a>
+                  
+                        
+      
+      <li  class="leaf">
+                <a href="newarrivals/" >New!</a>
+                  
+                        
+      </ul></li>
+      <li  class="leaf">
+                <span class="footer-title">Info links</span>
+                  
+                  <ul>
+      
+      
+      <li  class="leaf">
+                <a href="shipping" >Shipping</a>
+                  
+                        
+      
+      <li  class="leaf">
+                <a href="?target=map" >Sitemap</a>
+                  
+                        
+      
+      <li  class="leaf">
+                <a href="terms-and-conditions" >Terms &amp; Conditions</a>
+                  
+                        
+      </ul></li>
+      <li  class="leaf">
+                <span class="footer-title">Services</span>
+                  
+                  <ul>
+      
+      
+      <li  class="leaf">
+                <a href="shipping" >Shipping info</a>
+                  
+                        
+      
+      <li  class="leaf">
+                <a href="contact-us/" >Contact us</a>
+                  
+                        
+      </ul></li>
+      <li  class="leaf">
+                <span class="footer-title">My X-Cart</span>
+                  
+                  <ul>
+      
+      
+      <li  class="leaf">
+                <a href="?target=address_book" >Address book</a>
+                  
+                        
+      
+      <li  class="leaf">
+                <a href="?target=order_list" >Order list</a>
+                  
+                        
+      
+      <li  class="leaf last">
+                <a href="?target=profile" >Account details</a>
+                  
+          </li>
+    </ul></li>
+ </ul>
+</div>";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

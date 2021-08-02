@@ -1,0 +1,11 @@
+version: 5.4.0.0
+type: common
+authorName: 'creator'
+moduleName: 'wishlist'
+description: 'Test task for xcart'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: false
+canDisable: true
