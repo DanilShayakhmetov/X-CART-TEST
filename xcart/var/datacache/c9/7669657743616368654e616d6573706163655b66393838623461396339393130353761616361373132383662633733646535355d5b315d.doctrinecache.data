@@ -1,0 +1,37 @@
+1628506204
+s:1748:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:1638:"
+<div class="block block-block block-subcategories">
+    <div class="content">
+  <ul class="subcategory-view-icons subcategory-list grid-list clearfix">
+              <li>
+        <a href="cart.php?target=category&amp;category_id=2">
+          <span class="subcategory-icon">
+            <img width="100" height="120" src="//192.168.220.1:8000/var/images/category/120.120/clo_7_1.jpg" alt="Fashion" data-max-width="120" data-max-height="120" srcset="http://192.168.220.1:8000/var/images/category/240.240/clo_7_1.jpg 2x" />
+
+          </span>
+          <span class="subcategory-name">Fashion</span>
+        </a>
+      </li>
+                  <li>
+        <a href="cart.php?target=category&amp;category_id=6">
+          <span class="subcategory-icon">
+            <img width="100" height="120" src="//192.168.220.1:8000/var/images/category/120.120/beauty_1.jpg" alt="Beauty &amp; Health" data-max-width="120" data-max-height="120" srcset="http://192.168.220.1:8000/var/images/category/240.240/beauty_1.jpg 2x" />
+
+          </span>
+          <span class="subcategory-name">Beauty &amp; Health</span>
+        </a>
+      </li>
+                  <li>
+        <a href="cart.php?target=category&amp;category_id=9">
+          <span class="subcategory-icon">
+            <img width="100" height="120" src="//192.168.220.1:8000/var/images/category/120.120/elec_2.jpg" alt="Electronics" data-max-width="120" data-max-height="120" srcset="http://192.168.220.1:8000/var/images/category/240.240/elec_2.jpg 2x" />
+
+          </span>
+          <span class="subcategory-name">Electronics</span>
+        </a>
+      </li>
+              </ul>
+
+</div>
+</div>
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

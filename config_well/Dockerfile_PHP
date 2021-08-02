@@ -1,0 +1,25 @@
+FROM php:7.3-fpm
+
+COPY ./ /var/www/html/
+
+RUN apt-get update \
+    && echo 'deb http://packages.dotdeb.org jessie all' >> /etc/apt/sources.list \
+    && echo 'deb-src http://packages.dotdeb.org jessie all' >> /etc/apt/sources.list \
+    && apt-get install -y wget gnupg \
+    && wget https://www.dotdeb.org/dotdeb.gpg \
+    && apt-key add dotdeb.gpg \
+    && apt-get update \
+    && apt-get install -y libpq-dev && docker-php-ext-install pdo pdo_pgsql \
+    && docker-php-ext-install pdo_mysql \
+    && apt-get update \
+    && apt install -y libmagickwand-dev --no-install-recommends  \
+    && pecl install imagick && docker-php-ext-enable imagick  \
+    && apt-get update && apt-get install -y wget git unzip \
+    && pecl install xdebug-2.7.1 \
+    && docker-php-ext-enable xdebug\
+    && rm -rf /var/lib/apt/lists/*
+
+ADD ./php.ini /usr/local/etc/php/php.ini
+
+RUN wget https://getcomposer.org/installer -O - -q \
+    | php -- --install-dir=/bin --filename=composer --quiet

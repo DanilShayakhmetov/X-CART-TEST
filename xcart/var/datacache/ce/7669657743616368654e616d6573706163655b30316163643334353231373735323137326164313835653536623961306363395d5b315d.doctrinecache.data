@@ -1,0 +1,48 @@
+1628506339
+s:3581:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:3471:"
+<li class="menu-item promotions icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjM6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4Njp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNjoiZ2V0SXRlbXNMZWZ0TWVudUZvckRlY2lkZXIiO319czo0OiJuYW1lIjtzOjEwOiJwcm9tb3Rpb25zIjt9Ijt9 text-capitalize">
+  
+<div class="line">
+      <span class="link" title="Discounts"><span class="icon"><i class="fa fa-gift"></i></span><span class="title">Discounts</span></span>
+      </div>
+
+      <div class="box">
+      <ul>
+        <li class="menu-item title">
+          
+<div class="line">
+      <span class="link" title="Discounts"><span class="icon"><i class="fa fa-gift"></i></span><span class="title">Discounts</span></span>
+      </div>
+        </li>
+                  
+<li class="menu-item volume-discounts no-icon __dynamic_widget_placeholder__480_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjk6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4Njp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNjoiZ2V0SXRlbXNMZWZ0TWVudUZvckRlY2lkZXIiO319czo0OiJuYW1lIjtzOjE2OiJ2b2x1bWVfZGlzY291bnRzIjt9Ijt9 empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=promotions&amp;page=volume_discounts" class="link" title="Volume discounts"><span class="icon"></span><span class="title">Volume discounts</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item sale-discounts no-icon __dynamic_widget_placeholder__480_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjc6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4Njp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNjoiZ2V0SXRlbXNMZWZ0TWVudUZvckRlY2lkZXIiO319czo0OiJuYW1lIjtzOjE0OiJzYWxlX2Rpc2NvdW50cyI7fSI7fQ== empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=promotions&amp;page=sale_discounts" class="link" title="Sale"><span class="icon"></span><span class="title">Sale</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item coupons no-icon __dynamic_widget_placeholder__468_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNTk6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4Njp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNjoiZ2V0SXRlbXNMZWZ0TWVudUZvckRlY2lkZXIiO319czo0OiJuYW1lIjtzOjc6ImNvdXBvbnMiO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=promotions&amp;page=coupons" class="link" title="Coupons"><span class="icon"></span><span class="title">Coupons</span></a>
+      </div>
+
+  </li>
+
+                
+      </ul>
+    </div>
+  </li>
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

@@ -1,0 +1,2 @@
+0
+a:1:{i:0;O:47:"XCart\SilexAnnotations\Annotations\Router\Route":9:{s:7:"request";a:1:{i:0;O:49:"XCart\SilexAnnotations\Annotations\Router\Request":2:{s:6:"method";s:3:"GET";s:3:"uri";s:14:"/afterPurchase";}}s:7:"convert";N;s:6:"assert";N;s:11:"requireHttp";N;s:12:"requireHttps";N;s:5:"value";N;s:4:"host";N;s:6:"before";a:1:{i:0;O:48:"XCart\SilexAnnotations\Annotations\Router\Before":1:{s:8:"callback";s:37:"XCart\Bus\Controller\Auth:authChecker";}}s:5:"after";N;}}

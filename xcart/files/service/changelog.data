@@ -1,0 +1,254 @@
+a:31:{s:32:"32f7f4e6c330b1316fcd2149d3f2b427";a:7:{s:8:"5.4.1.30";s:573:"Version 5.4.1.30
+
+Improvements (1)
+2021-07-07 - [Story] Added a new setting "Enable EU import subtotal thresholds" for the add-on 'VAT' and the ability to set a Min/Max subtotal.  #ECOM-359 #CDev-Core #CDev-VAT
+
+Fixes (3)
+2021-07-12 - [Bug] On mobile, menu links to categories did not work. Fixed.  #XCB-618 #CDev-Core
+2021-07-07 - [Bug] It was not possible to place an order with shipping based on discounted subtotal. Fixed. #XCB-564 #CDev-Core
+2021-07-08 - [Bug] Review request notification messages were always formed in the default language. Fixed. #XCB-562 #CDev-Core";s:8:"5.4.1.29";s:1045:"Version 5.4.1.29
+
+Fixes (6)
+2021-05-21 - [Bug] On mobile, the keyboard was opened when clicking on the line with an attribute name on the product details page. Fixed. #XCB-510 #CDev-Core #XC-ProductVariants #XC-CrispWhiteSkin
+2021-05-24 - [Bug] Disabled coupon add-on issue: distributeDiscount method error when saving the order. Fixed. #XCB-498 #CDev-Core
+2021-05-26 - [Bug] A copy of the vendor profile was created when opening the shipping methods page. Fixed. #XCB-487 #CDev-Core
+2021-05-21 - [Bug] The "category doesn't exist" warning message could be displayed on a second import for categories successfully created during a first import. Fixed.  #XCB-484 #CDev-Core
+2021-05-21 - [Bug] Performance improvement for loading a home page with a large number of categories and Clean URLs enabled. #XCB-463 #CDev-Core #CDev-Sale #QSL-FlyoutCategoriesMenu #XC-ProductVariants
+2021-05-31 - [Bug] The payment methods list in the "All payment methods" popup was displayed incorrectly if choosing to show 10/15/20 per page. Fixed. #XCB-391 #CDev-Core";s:8:"5.4.1.28";s:533:"Version 5.4.1.28
+
+Fixes (4)
+2021-04-21 - [Bug] Abandoned carts were not removed from xc_orders. Fixed.  #XCB-446 #CDev-Core
+2021-04-21 - [Bug] After saving the parameters of a global attribute, the attribute popup was closed. Fixed. Now the popup remains shown. #XCB-439 #CDev-Core
+2021-04-05 - [Bug] Added the ability to search for users by Firstname and Lastname on the Users List page. #XCB-330 #CDev-Core
+2021-04-21 - [Bug] Error when attempting to issue a refund on an imported order. Fixed. #XCB-198 #CDev-Core #XC-OrdersImport";s:8:"5.4.1.27";s:297:"Version 5.4.1.27
+
+Fixes (2)
+2021-03-19 - [Bug] Changed the text of the message shown if an image could not be downloaded during an import. #XCB-346 #CDev-Core
+2021-03-26 - [Bug] With a non-empty web_dir, when creating an order, local images are now pulled via the file system.  #XCB-284 #CDev-Core";s:8:"5.4.1.26";s:977:"Version 5.4.1.26
+
+Fixes (6)
+2021-03-12 - [Bug] Fatal error if updating a user profile via the store Admin area with the cookie language = en_US set for admin. Fixed. #XCB-344 #CDev-Core
+2021-03-16 - [Bug] When trying to access a missing add-on via a URL, for example, admin.php?target=module&moduleId=something, the user is redirected to the store's "Page not found" page at /admin.php?target=page_not_found. #XCB-290 #CDev-Core
+2021-03-05 - [Bug] When sending an email linking to external image sources, curl descriptors were not removed. Fixed. #XCB-285 #CDev-Core
+2021-03-04 - [Bug] Empty translations were saved to database when editing shipping methods if the translations for the current language were missing. Fixed. #XCB-281 #CDev-Core
+2021-02-27 - [Bug] FLC. Class attributes on checkout page elements were duplicated. Fixed. #XCB-274 #CDev-Core
+2021-02-25 - [Bug] Removed the ability to create more than one order list filters with the same name.  #XCB-245 #CDev-Core";s:8:"5.4.1.25";s:1581:"Version 5.4.1.25
+
+Improvements (1)
+2021-02-11 - [Story] Added a new setting: Terms and conditions agreement type = Clickwrap | Browsewrap. #XCC-1545 #CDev-Core #XC-FastLaneCheckout
+
+Fixes (9)
+2021-02-19 - [Bug] The availability of the Place order button did not depend on the "I accept the Terms & Conditions" checkbox option for Clickwrap mode. Fixed. Now with any settings the "Terms & Conditions" open in a popup. #XCB-340 #CDev-Core #CDev-Paypal #XC-FastLaneCheckout
+2021-02-26 - [Bug] Optimized the number of requests when opening a product details page with cold cache. #XCB-306 #CDev-Core
+2021-02-15 - [Bug] If the Roles field was left blank when creating an admin user profile, after saving the profile details the Roles field remained blank. Fixed.  #XCB-275 #CDev-Core
+2021-02-12 - [Bug] After clicking on "Click to specify", the focus now switches to the respective field at once. #XCB-270 #CDev-Core
+2021-02-22 - [Bug] Fixed the incorrect spelling of the name 'XLite\View\ToolTip' in some twig files. The correct spelling is "\XLite\View\Tooltip". #XCB-260 #CDev-Core
+2021-02-11 - [Bug] Added a bottom margin to the Cash On Delivery section in the add-ons UPS and USPS. #XCB-256 #CDev-Core
+2021-02-20 - [Bug] Removed the outdated JS code jQuery.browser.msie #XCB-255 #CDev-Core
+2021-02-09 - [Bug] Fatal error when trying to access admin.php?target=notification. Fixed. Now "Page not found" is displayed. #XCB-253 #CDev-Core #XC-ThemeTweaker
+2021-02-16 - [Bug] The space between the sticky panel and the CSV delimiter field is now two rhythms (48px). #XCB-234 #CDev-Core";s:8:"5.4.1.24";s:561:"Version 5.4.1.24
+
+Improvements (1)
+2021-02-01 - [Story] Improved tooltip behavior for folded admin menu. #XCC-949 #CDev-Core #XC-Service #XC-Cloud
+
+Fixes (3)
+2021-01-29 - [Bug] Reduced the default size of category images.  #XCB-297 #CDev-Core
+2021-01-27 - [Bug] Adjusted the sorting of users by the Access level on the Users List page. #XCB-222 #CDev-Core #XC-MultiVendor
+2021-02-08 - [Bug] In a store using Russian localization, a customer address was not getting removed from the address book after clicking the button to remove it. Fixed. #XCB-176 #CDev-Core";}s:32:"ec971ea6788aeab1d01a7b5c2c528436";a:3:{s:7:"5.4.3.8";s:44:"Version 5.4.3.8
+
+ - Corrected upgrade hooks.";s:7:"5.4.3.7";s:127:"Version 5.4.3.7
+
+ -  One Page Checkout: after switching payment method from X-Payments to any other checkout may freeze. Fixed.";s:7:"5.4.3.6";s:878:"Version 5.4.3.6
+
+ - Added ability to hide first six digits and expiration date from card numbers, that are displayed in the user interface.
+ - Added ability to connect store in manual mode, in case it's not possible to connect it automatically. Now the store could be connected via the Connection Key.
+ - Refactored usage of SDK JS scripts.
+ - Refactored Totals update uring Checkout with Apple Pay.
+ - Now it's possible to buy a subscription product for an anonymous user.
+ - Added restriction to restart stopped legacy subscriptions.
+ - Added setting that displays subscription plan tab on a product page.
+ - Added info indicating that the card used in subscriptions.
+ - Fixed PHP fatal error when Not Finished order status is changed.
+ - Fixed usage of undefined class constant from SDK.
+ - Fixed PHP fatal error "Access level to doActionSaveSubscriptionPlan must be public".";}s:32:"7ef524d0f06732fcf8b44a25b193898d";a:2:{s:7:"5.4.3.2";s:184:"Version 5.4.3.2
+
+Fixes (1)
+2021-07-10 - [Bug] JavaScript error on category pages and the home page on the storefront after connecting to Facebook. Fixed. #XCB-529 #XC-FacebookMarketing";s:7:"5.4.3.1";s:249:"Version 5.4.3.1
+
+Fixes (1)
+2021-02-22 - [Bug] Facebook & Instagram Ads. The sending of ev=Purchase took place on each reloading of the page cart.php?target=checkoutSuccess&order_number= <n> instead of only once. Fixed. #XCB-261 #XC-FacebookMarketing";}s:32:"b0905108d5047b45ad5605f31963b40d";a:4:{s:8:"5.4.2.18";s:150:"Version 5.4.2.18
+
+Fixes (1)
+2021-05-18 - [Bug] The store's overlay was layered on top of PayPal Checkout 3D secure popup. Fixed. #XCB-461 #CDev-Paypal";s:8:"5.4.2.17";s:129:"Version 5.4.2.17
+
+Fixes (1)
+2021-03-18 - [Bug] Handlers for CAPTURE and AUTHORIZE requests have been fixed. #XCB-400 #CDev-Paypal";s:8:"5.4.2.16";s:439:"Version 5.4.2.16
+
+Fixes (2)
+2021-02-19 - [Bug] The availability of the Place order button did not depend on the "I accept the Terms & Conditions" checkbox option for Clickwrap mode. Fixed. Now with any settings the "Terms & Conditions" open in a popup. #XCB-340 #CDev-Core #CDev-Paypal #XC-FastLaneCheckout
+2021-02-19 - [Bug] Payment with PayPal Checkout did not work with serialize_precision != -1 in php.ini. Fixed. #XCB-152 #CDev-Paypal";s:8:"5.4.2.15";s:158:"Version 5.4.2.15
+
+Fixes (1)
+2021-02-26 - [Bug] Fatal error on placing an order if PayPal checkout and One Page Checkout are used. Fixed. #XCB-377 #CDev-Paypal";}s:32:"477c553c410ea347facf903cfa468207";a:3:{s:8:"5.4.2.15";s:617:"Version 5.4.2.15
+
+Fixes (4)
+2021-05-21 - [Bug] On mobile, the keyboard was opened when clicking on the line with an attribute name on the product details page. Fixed. #XCB-510 #CDev-Core #XC-ProductVariants #XC-CrispWhiteSkin
+2021-05-21 - [Bug] Segment. Add to cart was not working. Console errors on the Home page. Fixed. #XCB-387 #QSL-Segment #XC-CrispWhiteSkin
+2021-05-31 - [Bug] Adjusted the position of the label "Including VAT" in grid view. #XCB-359 #XC-CrispWhiteSkin
+2021-05-04 - [Bug] Avatax vs OPC. Layout issues related to displaying the Check address button. Fixed, #XCB-314 #XC-AvaTax #XC-CrispWhiteSkin";s:8:"5.4.2.14";s:181:"Version 5.4.2.14
+
+Fixes (1)
+2021-03-28 - [Bug] Layout issues on category and subcategory pages in List mode. Fixed. #XCB-301 #XC-DelicatePinkSkin #XC-CrispWhiteSkin #XC-SoftBlueSkin";s:8:"5.4.2.13";s:525:"Version 5.4.2.13
+
+Fixes (3)
+2021-03-10 - [Bug] On iOS text input fields were displayed with a shadow, which was not needed. #XCB-299 #XC-CrispWhiteSkin
+2021-03-04 - [Bug] 2nd level nested menu was not getting displayed + Some layout issues related to displaying the elements of the menu. Fixed. #XCB-266 #QSL-MultilevelMenu #XC-CrispWhiteSkin
+2021-03-04 - [Bug] Mailchimp. Layout issues related to displaying the checkboxes on the cart.php?target=mailchimp_subscriptions page. Fixed. #XCB-250 #XC-MailChimp #XC-CrispWhiteSkin";}s:32:"3d9da148804a8f183137549733d739b0";a:2:{s:7:"5.4.2.8";s:426:"Version 5.4.2.8
+
+Fixes (2)
+2021-05-21 - [Bug] On mobile, the keyboard was opened when clicking on the line with an attribute name on the product details page. Fixed. #XCB-510 #CDev-Core #XC-ProductVariants #XC-CrispWhiteSkin
+2021-05-21 - [Bug] Performance improvement for loading a home page with a large number of categories and Clean URLs enabled. #XCB-463 #CDev-Core #CDev-Sale #QSL-FlyoutCategoriesMenu #XC-ProductVariants";s:7:"5.4.2.7";s:206:"Version 5.4.2.7
+
+Fixes (1)
+2021-03-19 - [Bug] Changed the text of the message shown if an image could not be downloaded during an import. #XCB-346 #CDev-Core #QSL-ColorSwatches #XC-ProductVariants #QSL-EBay";}s:32:"1662f608f401828adc0f6ecd7442aa66";a:3:{s:7:"5.4.2.6";s:127:"Version 5.4.2.6
+
+Improvements (1)
+2021-05-18 - [Escalation] Orders were not created in Mailchimp. Fixed. #XCB-438 #XC-MailChimp";s:7:"5.4.2.5";s:139:"Version 5.4.2.5
+
+Fixes (1)
+2021-04-02 - [Bug] Error on order placement with Mailchimp enabled and configured. Fixed. #XCB-434 #XC-MailChimp";s:7:"5.4.2.4";s:382:"Version 5.4.2.4
+
+Fixes (2)
+2021-03-04 - [Bug] Verified user vs Mailchimp. Subscription confirmation email was not sent if Moderated registration = ON. Fixed. #XCB-279 #QSL-VerifiedUsers #XC-MailChimp
+2021-03-04 - [Bug] Mailchimp. Layout issues related to displaying the checkboxes on the cart.php?target=mailchimp_subscriptions page. Fixed. #XCB-250 #XC-MailChimp #XC-CrispWhiteSkin";}s:32:"be595b773608019b37591e12fff75fd5";a:3:{s:7:"5.4.2.4";s:154:"Version 5.4.2.4
+
+Fixes (1)
+2021-07-08 - [Bug] Review request notification messages were always formed in the default language. Fixed. #XCB-562 #XC-Reviews";s:7:"5.4.2.3";s:205:"Version 5.4.2.3
+
+Fixes (1)
+2021-03-23 - [Bug] Product review vs Loyalty points. Points for writing a review were not given if moderation of reviews by an admin was not enabled.  Fixed. #XCB-339 #XC-Reviews";s:7:"5.4.2.2";s:151:"Version 5.4.2.2
+
+Fixes (1)
+2021-03-04 - [Bug] The "Request to review purchased products" notification was not getting sent. Fixed. #XCB-352 #XC-Reviews";}s:32:"5a7557a0f9f1bde326cfc74b9360d2d5";a:2:{s:7:"5.4.2.4";s:228:"Version 5.4.2.4
+
+Fixes (1)
+2021-05-21 - [Bug] Performance improvement for loading a home page with a large number of categories and Clean URLs enabled. #XCB-463 #CDev-Core #CDev-Sale #QSL-FlyoutCategoriesMenu #XC-ProductVariants";s:7:"5.4.2.3";s:181:"Version 5.4.2.3
+
+Fixes (1)
+2021-03-23 - [Bug] Wholesale. On the product details page, the fractional part of the Save value was truncated. Fixed. #XCB-332 #CDev-Sale #CDev-Wholesale";}s:32:"30cbb00ad6e4940db20ee1ff68a1c272";a:2:{s:7:"5.4.2.2";s:121:"Version 5.4.2.2
+
+Fixes (1)
+2021-04-28 - [Bug] Wholesale. The price was shown incorrectly. Fixed. #XCB-417 #CDev-Wholesale";s:7:"5.4.2.1";s:181:"Version 5.4.2.1
+
+Fixes (1)
+2021-03-23 - [Bug] Wholesale. On the product details page, the fractional part of the Save value was truncated. Fixed. #XCB-332 #CDev-Sale #CDev-Wholesale";}s:32:"9241dd8cf69db3c86b29b962e5251816";a:3:{s:8:"5.4.1.14";s:191:"Version 5.4.1.14
+
+Fixes (1)
+2021-06-03 - [Bug] Fixed some errors and page freezing when switching to the different variants of a product with Template Editor opened. #XCB-384 #XC-ThemeTweaker";s:8:"5.4.1.13";s:214:"Version 5.4.1.13
+
+Fixes (1)
+2021-03-04 - [Bug] Data cache is now force flushed  and rebuilt after making changes to templates via the Admin area -> Look & Feel -> Edited templates section. #XCB-308 #XC-ThemeTweaker";s:8:"5.4.1.12";s:296:"Version 5.4.1.12
+
+Fixes (2)
+2021-02-11 - [Bug] Blank page if choosing to edit an email notification. Fixed. #XCB-326 #XC-ThemeTweaker
+2021-02-09 - [Bug] Fatal error when trying to access admin.php?target=notification. Fixed. Now "Page not found" is displayed. #XCB-253 #CDev-Core #XC-ThemeTweaker";}s:32:"057f5320c05ebd5a8c9a80e6e39b76eb";a:2:{s:7:"5.4.1.6";s:121:"Version 5.4.1.6
+
+Fixes (1)
+2021-03-23 - [Bug] Messages did not show up in vendor area. Fixed. #XCB-337 #XC-VendorMessages";s:7:"5.4.1.5";s:208:"Version 5.4.1.5
+
+Fixes (1)
+2021-03-16 - [Bug] Added the ability to send messages multiple times.  If sending a blank message, the submit button and message box do not get disabled. #XCB-251 #XC-VendorMessages";}s:32:"5e81de57f440b925f3168ba10fa40d3f";a:1:{s:7:"5.4.1.5";s:157:"Version 5.4.1.5
+
+Fixes (1)
+2021-02-18 - [Bug] Google Product Feed error if there was a CTRL+Z char in the product description. Fixed. #XCB-343 #XC-GoogleFeed";}s:32:"e5329af83682235df54b4ccb6bb44d2f";a:1:{s:7:"5.4.1.5";s:97:"Version 5.4.1.5
+
+[Fix] Paginated page has reloaded products list without CloudFilter query params";}s:32:"83839f5f1ef46474263e77ebd112e95e";a:2:{s:7:"5.4.1.5";s:163:"Version 5.4.1.5
+
+Fixes (1)
+2021-07-11 - [Bug] After switching the language from English to Russian the menu did not get translated. Fixed. #XCB-601 #CDev-SimpleCMS";s:7:"5.4.1.4";s:143:"Version 5.4.1.4
+
+Fixes (1)
+2021-05-24 - [Bug] Too many database requests with a large number of menu items. Optimized. #XCB-512 #CDev-SimpleCMS";}s:32:"76f0e7009838af540036d8de025652d6";a:2:{s:7:"5.4.1.5";s:159:"Version 5.4.1.5
+
+Fixes (1)
+2021-05-26 - [Bug] Canada Post vs Product Variants. Default Weight info was not pulled into shipment. Fixed. #XCB-493 #XC-CanadaPost";s:7:"5.4.1.4";s:194:"Version 5.4.1.4
+
+Fixes (1)
+2021-03-30 - [Bug] Variant weight value can now be pulled as the actual weight of an ordered item for use on the Shipment tab of order details. #XCB-430 #XC-CanadaPost";}s:32:"9ca2b1a6ad0e75e1918227c0734f8f14";a:1:{s:7:"5.4.1.4";s:288:"Version 5.4.1.4
+
+Fixes (2)
+2021-03-15 - [Bug] JS error in the console at checkout with CDev-SocialLogin configured. Fixed. #XCB-360 #CDev-SocialLogin
+2021-03-16 - [Bug] Fatal error if logging in via Facebook (with the add-on CDev-SocialLogin configured). Fixed. #XCB-358 #CDev-SocialLogin";}s:32:"6cc4c6fb125194200e57d857a49019e4";a:1:{s:7:"5.4.1.3";s:158:"Version 5.4.1.3
+
+Fixes (1)
+2021-03-23 - [Bug] UPS. Errors if the password entered in the method settings contained special characters. Fixed. #XCB-331 #XC-UPS";}s:32:"00d2e2cb719a14cbfcea940a5779ef8b";a:2:{s:7:"5.4.1.3";s:207:"Version 5.4.1.3
+
+Fixes (1)
+2021-05-06 - [Bug] Add-ons extending the Vue component in FLC were removing the changes made by other add-ons. Fixed. #XCB-488 #CDev-GoogleAnalytics #XC-SofortBanking #XC-MailChimp";s:7:"5.4.1.2";s:151:"Version 5.4.1.2
+
+Fixes (1)
+2021-04-21 - [Bug] Fatal error if saving changes in AOM with Google Analytics enabled. Fixed. #XCB-473 #CDev-GoogleAnalytics";}s:32:"4089d576a64c8524fb55ffee108d914b";a:1:{s:7:"5.4.1.2";s:62:"Version 5.4.1.2
+
+Changes for compatibility with X-Cart 5.4.2.x";}s:32:"4be6cb356d087603a320c39f7de6f1ac";a:1:{s:7:"5.4.1.2";s:212:"Version 5.4.1.2
+
+Fixes (1)
+2021-03-23 - [Bug] The message "Coupon discount: $0.00" was displayed on the order invoice after editing the order even when no coupon had been applied. Fixed. #XCB-354 #XC-FreeShipping";}s:32:"de71ba1a71901c99fb316de45657b1ed";a:1:{s:7:"5.4.1.2";s:228:"Version 5.4.1.2
+
+Fixes (1)
+2021-05-21 - [Bug] Performance improvement for loading a home page with a large number of categories and Clean URLs enabled. #XCB-463 #CDev-Core #CDev-Sale #QSL-FlyoutCategoriesMenu #XC-ProductVariants";}s:32:"d0eff5c79c329eab8b361fdc088b246a";a:1:{s:7:"5.4.1.2";s:133:"Version 5.4.1.2
+
+Improvements (1)
+2021-02-12 - [Task] Changed the icon for the add-on "Add To Cart Popup". #XCB-240 #XC-Add2CartPopup";}s:32:"b7b5339397ac3ee6b952bdad5bce58fe";a:1:{s:7:"5.4.1.2";s:225:"Version 5.4.1.2
+
+Fixes (1)
+2021-02-22 - [Bug] Canadian taxes & Sales taxes vs Coupons. A free shipping coupon applied to an order was not taken into account in tax calculation. Fixed. #XCB-249 #CDev-SalesTax #XC-CanadianTaxes";}s:32:"64d587666c6b2fd257fba30456f6f772";a:1:{s:8:"5.4.0.18";s:159:"Version 5.4.0.18
+
+Fixes (1)
+2021-03-24 - [Bug] Buy button. Excluded the fullstory.com script when generating the code of a product page. #XCB-381 #XC-Concierge";}s:32:"15ca470ab8104866f5bcd552543c9f83";a:1:{s:8:"5.4.0.16";s:470:"Version 5.4.0.16
+
+Improvements (1)
+2021-02-11 - [Story] Added a new setting: Terms and conditions agreement type = Clickwrap | Browsewrap. #XCC-1545 #CDev-Core #XC-FastLaneCheckout
+
+Fixes (1)
+2021-02-19 - [Bug] The availability of the Place order button did not depend on the "I accept the Terms & Conditions" checkbox option for Clickwrap mode. Fixed. Now with any settings the "Terms & Conditions" open in a popup. #XCB-340 #CDev-Core #CDev-Paypal #XC-FastLaneCheckout";}s:32:"5b134316212b01e772f0ad9946ba0b43";a:1:{s:7:"5.4.0.7";s:323:"Version 5.4.0.7
+
+Fixes (2)
+2021-03-19 - [Bug] Authorize.Net Accept.js. After a partial refund attempt and getting code 3, Void operation was carried out. Fixed. #XCB-405 #QSL-AuthorizenetAcceptjs
+2021-03-24 - [Bug] Authorize.Net Accept.js. The product name value was sent as empty. Fixed. #XCB-394 #QSL-AuthorizenetAcceptjs";}s:32:"d3cb81dd13fb394e4c3b3484e7327316";a:1:{s:7:"5.4.0.6";s:126:"Version 5.4.0.6
+
+Improvements (1)
+2021-02-08 - [Task] Changed the icon for the add-on 'Bulk Editing'. #XCB-232 #XC-BulkEditing";}s:32:"2bf3e311bab4e983fb780be58369e77c";a:5:{s:7:"5.4.5.0";s:477:"Version 5.4.5.0
+
+- Added Google Pay support, including Checkout with Google Pay and single-item purchases
+- When all wallet methods are hidden during checkout, next payment method is not being loaded properly in some cases. Fixed.
+- "Used Cards" block in invoice moved to "Payment method" section
+- Subscription management is now disabled by default for new installations
+- Added ability for searching "Is subscription" products
+- Security improvements
+- Other minor UI changes";s:7:"5.4.4.0";s:281:"Version 5.4.4.0
+
+- This version adds Delayed Payment feature which allows your site to use checkout mode in which buyers can pre-order products or services from your site without having the order total amount collected from them before you finalize this amount
+- Other minor fixes.";s:7:"5.4.3.8";s:44:"Version 5.4.3.8
+
+ - Corrected upgrade hooks.";s:7:"5.4.3.7";s:127:"Version 5.4.3.7
+
+ -  One Page Checkout: after switching payment method from X-Payments to any other checkout may freeze. Fixed.";s:7:"5.4.3.6";s:878:"Version 5.4.3.6
+
+ - Added ability to hide first six digits and expiration date from card numbers, that are displayed in the user interface.
+ - Added ability to connect store in manual mode, in case it's not possible to connect it automatically. Now the store could be connected via the Connection Key.
+ - Refactored usage of SDK JS scripts.
+ - Refactored Totals update uring Checkout with Apple Pay.
+ - Now it's possible to buy a subscription product for an anonymous user.
+ - Added restriction to restart stopped legacy subscriptions.
+ - Added setting that displays subscription plan tab on a product page.
+ - Added info indicating that the card used in subscriptions.
+ - Fixed PHP fatal error when Not Finished order status is changed.
+ - Fixed usage of undefined class constant from SDK.
+ - Fixed PHP fatal error "Access level to doActionSaveSubscriptionPlan must be public".";}s:32:"c8c1b9ffa71f389bafe0963e971e8361";a:2:{s:7:"5.4.2.1";s:128:"Version 5.4.2.1
+
+Fixes (1)
+2021-04-01 - [Bug] Fatal error when updating version 5.4.0.10 to 5.4.1.26. Fixed. #XCB-435 #XC-Stripe";s:7:"5.4.2.0";s:212:"Version 5.4.2.0
+
+Improvements (2)
+2021-02-28 - [Story] Added a new payment method - Stripe Connect. #XCC-1767 #XC-Stripe
+2021-02-28 - [Story] Migrate Stripe from legacy version to the new one. #ECOM-53 #XC-Stripe";}s:32:"9870a0e12b75cae30b81593dad1df052";a:5:{s:8:"5.4.1.29";s:16:"Version 5.4.1.29";s:8:"5.4.1.28";s:16:"Version 5.4.1.28";s:8:"5.4.1.27";s:16:"Version 5.4.1.27";s:8:"5.4.1.26";s:16:"Version 5.4.1.26";s:8:"5.4.1.25";s:16:"Version 5.4.1.25";}}

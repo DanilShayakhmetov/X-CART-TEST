@@ -1,0 +1,2 @@
+0
+a:3:{i:0;O:50:"XCart\SilexAnnotations\Annotations\Service\Service":2:{s:4:"name";N;s:9:"arguments";a:0:{}}i:1;O:38:"XCart\Bus\Core\Annotations\RebuildStep":2:{s:6:"script";s:8:"rollback";s:6:"weight";s:5:"11000";}i:2;O:38:"XCart\Bus\Core\Annotations\RebuildStep":2:{s:6:"script";s:13:"self-rollback";s:6:"weight";s:4:"3000";}}

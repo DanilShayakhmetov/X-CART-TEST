@@ -1,0 +1,93 @@
+1628506339
+s:7635:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:7525:"
+<li class="menu-item system-settings icon __dynamic_widget_placeholder__476_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjY6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxNToic3lzdGVtX3NldHRpbmdzIjt9Ijt9 text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=db_backup" class="link" title="System tools"><span class="icon"><i class="fa fa-cog"></i></span><span class="title">System tools</span></a>
+      </div>
+
+      <div class="box">
+      <ul>
+        <li class="menu-item title">
+          
+<div class="line">
+      <a href="admin.php?target=db_backup" class="link" title="System tools"><span class="icon"><i class="fa fa-cog"></i></span><span class="title">System tools</span></a>
+      </div>
+        </li>
+                  
+<li class="menu-item environment no-icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjI6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMToiZW52aXJvbm1lbnQiO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=settings&amp;page=Environment" class="link" title="Environment"><span class="icon"></span><span class="title">Environment</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item rebuild-cache no-icon __dynamic_widget_placeholder__476_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjQ6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMzoicmVidWlsZF9jYWNoZSI7fSI7fQ== empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=cache_management" class="link" title="Cache management"><span class="icon"></span><span class="title">Cache management</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item db-backup no-icon __dynamic_widget_placeholder__468_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNTk6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czo5OiJkYl9iYWNrdXAiO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=db_backup" class="link" title="Database"><span class="icon"></span><span class="title">Database</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item integrity-check no-icon __dynamic_widget_placeholder__476_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjY6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxNToiaW50ZWdyaXR5X2NoZWNrIjt9Ijt9 empty text-capitalize">
+  
+<div class="line">
+      <a href="http://192.168.220.1:8000/service.php?locale=en#/integrity-check?" class="link" title="Integrity check"><span class="icon"></span><span class="title">Integrity check</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item consistency-check no-icon __dynamic_widget_placeholder__480_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjg6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxNzoiY29uc2lzdGVuY3lfY2hlY2siO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=consistency_check" class="link" title="Consistency check"><span class="icon"></span><span class="title">Consistency check</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item view-log-file no-icon __dynamic_widget_placeholder__476_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjQ6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMzoidmlld19sb2dfZmlsZSI7fSI7fQ== empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=logs" class="link" title="System logs"><span class="icon"></span><span class="title">System logs</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item remove-data no-icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjI6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMToicmVtb3ZlX2RhdGEiO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=remove_data" class="link" title="Remove data"><span class="icon"></span><span class="title">Remove data</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item security-settings no-icon __dynamic_widget_placeholder__480_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjg6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxNzoic2VjdXJpdHlfc2V0dGluZ3MiO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=https_settings" class="link" title="HTTPS settings"><span class="icon"></span><span class="title">HTTPS settings</span></a>
+      </div>
+
+  </li>
+
+                
+      </ul>
+    </div>
+  </li>
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

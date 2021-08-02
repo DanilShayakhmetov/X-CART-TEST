@@ -1,0 +1,2 @@
+0
+a:2:{i:0;O:43:"XCart\Bus\Core\Annotations\DataSourceFilter":1:{s:4:"name";s:11:"purchaseUrl";}i:1;O:50:"XCart\SilexAnnotations\Annotations\Service\Service":2:{s:4:"name";N;s:9:"arguments";a:0:{}}}

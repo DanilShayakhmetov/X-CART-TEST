@@ -1,0 +1,9 @@
+1628506339
+s:357:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:248:"<a type="button" class="extensions" data-without-close="" title="Add addons">
+  <script type="text/x-cart-data">
+{"url_params":{"target":"hot_addons_list","widget":"XLite\\View\\HotAddons"}}
+</script>
+
+  <i class="fa fa-plus-circle-o"></i>
+</a>
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

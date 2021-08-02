@@ -1,0 +1,2 @@
+0
+a:1:{i:0;O:50:"XCart\SilexAnnotations\Annotations\Service\Service":2:{s:4:"name";N;s:9:"arguments";a:2:{s:6:"logger";s:29:"XCart\Bus\Core\Logger\Rebuild";s:5:"token";s:21:"x_cart.bus.user_token";}}}

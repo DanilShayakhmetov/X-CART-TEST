@@ -1,0 +1,111 @@
+1628506339
+s:9202:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:9092:"
+<li class="menu-item store-setup icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjI6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMToic3RvcmVfc2V0dXAiO30iO30= text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=settings&amp;page=Company" class="link" title="Store setup"><span class="icon"><i class="fa fa-info-circle"></i></span><span class="title">Store setup</span></a>
+      </div>
+
+      <div class="box">
+      <ul>
+        <li class="menu-item title">
+          
+<div class="line">
+      <a href="admin.php?target=settings&amp;page=Company" class="link" title="Store setup"><span class="icon"><i class="fa fa-info-circle"></i></span><span class="title">Store setup</span></a>
+      </div>
+        </li>
+                  
+<li class="menu-item store-info no-icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjE6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMDoic3RvcmVfaW5mbyI7fSI7fQ== empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=settings&amp;page=Company" class="link" title="Store profile"><span class="icon"></span><span class="title">Store profile</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item general no-icon __dynamic_widget_placeholder__464_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNTc6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czo3OiJnZW5lcmFsIjt9Ijt9 empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=general_settings" class="link" title="Cart &amp; checkout"><span class="icon"></span><span class="title">Cart & checkout</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item payment-settings no-icon __dynamic_widget_placeholder__480_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjc6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxNjoicGF5bWVudF9zZXR0aW5ncyI7fSI7fQ== empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=payment_settings" class="link" title="Payment methods"><span class="icon"></span><span class="title">Payment methods</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item countries no-icon __dynamic_widget_placeholder__468_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNTk6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czo5OiJjb3VudHJpZXMiO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=countries" class="link" title="Countries, states &amp; zones"><span class="icon"></span><span class="title">Countries, states & zones</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item shipping-methods no-icon __dynamic_widget_placeholder__480_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjc6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxNjoic2hpcHBpbmdfbWV0aG9kcyI7fSI7fQ== empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=shipping_methods" class="link" title="Shipping"><span class="icon"></span><span class="title">Shipping</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item tax-classes no-icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjI6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMToidGF4X2NsYXNzZXMiO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=sales_tax" class="link" title="Taxes"><span class="icon"></span><span class="title">Taxes</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item localization no-icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjM6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMjoibG9jYWxpemF0aW9uIjt9Ijt9 empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=units_formats" class="link" title="Localization"><span class="icon"></span><span class="title">Localization</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item translations no-icon __dynamic_widget_placeholder__472_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjM6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMjoidHJhbnNsYXRpb25zIjt9Ijt9 empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=languages" class="link" title="Translations"><span class="icon"></span><span class="title">Translations</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item notifications no-icon __dynamic_widget_placeholder__476_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNjQ6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czoxMzoibm90aWZpY2F0aW9ucyI7fSI7fQ== empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=notifications" class="link" title="Email notifications"><span class="icon"></span><span class="title">Email notifications</span></a>
+      </div>
+
+  </li>
+
+                  
+<li class="menu-item seo no-icon __dynamic_widget_placeholder__460_YToyOntzOjU6ImNsYXNzIjtzOjQzOiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cRXhwYW5kZWRNZW51Tm9kZUNsYXNzIjtzOjY6InBhcmFtcyI7czoyNTM6ImE6Njp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czo3OiJkZWNpZGVyIjtDOjM3OiJYTGl0ZVxWaWV3XE1lbnVcQWRtaW5cU2VsZWN0ZWREZWNpZGVyIjo4NDp7YToyOntpOjA7czozMDoiWExpdGVcVmlld1xNZW51XEFkbWluXExlZnRNZW51IjtpOjE7czoyNDoiZ2V0Qm90dG9tSXRlbXNGb3JEZWNpZGVyIjt9fXM6NDoibmFtZSI7czozOiJzZW8iO30iO30= empty text-capitalize">
+  
+<div class="line">
+      <a href="admin.php?target=settings&amp;page=CleanURL" class="link" title="SEO settings"><span class="icon"></span><span class="title">SEO settings</span></a>
+      </div>
+
+  </li>
+
+                
+      </ul>
+    </div>
+  </li>
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

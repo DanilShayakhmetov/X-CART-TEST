@@ -1,0 +1,70 @@
+1627905005
+s:9405:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:2394:"
+
+
+<div class="product productid-14 __dynamic_widget_placeholder__268_YToyOntzOjU6ImNsYXNzIjtzOjQ2OiJYTGl0ZVxWaWV3XFByb2R1Y3RcUHJvZHVjdEFkZGVkVG9DYXJ0Q2VsbENsYXNzIjtzOjY6InBhcmFtcyI7czoxMDc6ImE6NTp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO047czo4OiJtZXRhZGF0YSI7YTowOnt9czo1OiJtb2RlcyI7YTowOnt9czoxMDoicHJvZHVjdF9pZCI7aToxNDt9Ijt9">
+  <div class="product-photo">
+  <a
+  href="cart.php?target=product&amp;product_id=14"
+  class="product-thumbnail">
+  <img class="photo" width="240" height="240" src="//192.168.220.1:8000/var/images/product/240.240/clo_5.jpg" alt="Multicolored Dress with Balloon Sleeves [Options &amp; Attributes]" data-max-width="240" data-max-height="240" srcset="http://192.168.220.1:8000/var/images/product/480.480/clo_5.jpg 2x" />
+
+</a>
+
+</div>
+<h5 class="product-name"><a class="fn url" href="cart.php?target=product&amp;product_id=14">Multicolored Dress with Balloon Sleeves [Options &amp; Attributes]</a></h5>
+  <div class="infoBlock">
+      
+
+__dynamic_widget_placeholder__436_YToyOntzOjU6ImNsYXNzIjtzOjczOiJYTGl0ZVxNb2R1bGVcWENcUmV2aWV3c1xWaWV3XEN1c3RvbWVyXFByb2R1Y3RJbmZvXEl0ZW1zTGlzdFxBdmVyYWdlUmF0aW5nIjtzOjY6InBhcmFtcyI7czoyMDU6ImE6Nzp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO3M6NDk6Im1vZHVsZXMvWEMvUmV2aWV3cy9wcm9kdWN0L2l0ZW1zX2xpc3QvcmF0aW5nLnR3aWciO3M6ODoibWV0YWRhdGEiO2E6MDp7fXM6NToibW9kZXMiO2E6MDp7fXM6NzoicHJvZHVjdCI7TjtzOjEwOiJ3aWRnZXRNb2RlIjtzOjQ6ImdyaWQiO3M6OToicHJvZHVjdElkIjtpOjE0O30iO30=
+
+    
+<div class="product-price widget-fingerprint-product-price">
+  <ul class="product-price">
+    
+<li class="product-price-base"><span class="price product-price">$25.49</span></li>
+
+  </ul>
+</div>
+ 
+
+
+<ul class="labels">
+      <li class="label-green sale-price">
+      
+<div class="label-main-box ">
+  <div class="content">15% off</div>
+</div>
+
+    </li>
+  </ul>
+
+<div class="product-marks">
+  <div title="Added to cart" class="added-to-cart"><i class="icon-ok-mark"></i></div>
+
+</div>
+ <div class="buttons-container">
+    
+  <div class="add-to-cart-button">
+    
+    
+<button type="button" class="btn  regular-button add-to-cart product-add2cart productid-14">
+  
+    <span>Add to cart</span>
+</button>
+
+
+
+
+  </div>
+<div class="add-to-compare products compare-checkbox">
+    <input id="product141094199614" type="checkbox" data-id="14" />
+    <label for="product141094199614" title="Add to compare"></label>
+</div>
+
+ </div>
+  </div>
+</div>
+
+
+";s:6:"assets";a:16:{i:0;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:6:{i:0;a:2:{s:4:"file";s:14:"vue/vue.min.js";s:9:"no_minify";b:1;}i:1;a:2:{s:4:"file";s:15:"vue/vuex.min.js";s:9:"no_minify";b:1;}i:2;s:19:"vue/vue.loadable.js";i:3;s:28:"vue/vue.registerComponent.js";i:4;s:13:"js/vue/vue.js";i:5;s:19:"js/vue/component.js";}s:3:"css";a:0:{}}s:5:"index";i:100;s:9:"interface";s:6:"common";s:5:"group";s:14:"getCommonFiles";}i:1;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:2:{i:0;s:31:"modules/QSL/CloudSearch/init.js";i:1;s:33:"modules/QSL/CloudSearch/loader.js";}s:3:"css";a:6:{i:0;a:2:{s:4:"file";s:34:"modules/QSL/CloudSearch/style.less";s:5:"media";s:6:"screen";}i:1;s:29:"modules/CDev/Sale/css/lc.less";i:2;s:29:"modules/CDev/Paypal/style.css";i:3;a:3:{s:4:"file";s:30:"modules/CDev/Paypal/style.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:4;s:34:"modules/CDev/MarketPrice/style.css";i:5;s:29:"modules/CDev/Sale/css/lc.less";}}s:5:"index";i:200;s:9:"interface";N;s:5:"group";s:12:"getResources";}i:2;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:3:"css";a:3:{i:0;s:48:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.css";i:1;a:3:{s:4:"file";s:46:"modules/QSL/FlyoutCategoriesMenu/css/grid.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:37:"modules/CDev/SimpleCMS/page/style.css";}s:2:"js";a:1:{i:0;s:47:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.js";}}s:5:"index";i:300;s:9:"interface";N;s:5:"group";s:13:"getThemeFiles";}i:3;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:0:{}s:5:"index";i:1000;s:9:"interface";s:6:"custom";s:5:"group";s:26:"getThemeTweakerCustomFiles";}i:4;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:6:{i:0;a:2:{s:4:"file";s:14:"vue/vue.min.js";s:9:"no_minify";b:1;}i:1;a:2:{s:4:"file";s:15:"vue/vuex.min.js";s:9:"no_minify";b:1;}i:2;s:19:"vue/vue.loadable.js";i:3;s:28:"vue/vue.registerComponent.js";i:4;s:13:"js/vue/vue.js";i:5;s:19:"js/vue/component.js";}s:3:"css";a:0:{}}s:5:"index";i:100;s:9:"interface";s:6:"common";s:5:"group";s:14:"getCommonFiles";}i:5;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:2:{i:0;s:31:"modules/QSL/CloudSearch/init.js";i:1;s:33:"modules/QSL/CloudSearch/loader.js";}s:3:"css";a:5:{i:0;a:2:{s:4:"file";s:34:"modules/QSL/CloudSearch/style.less";s:5:"media";s:6:"screen";}i:1;s:29:"modules/CDev/Sale/css/lc.less";i:2;s:29:"modules/CDev/Paypal/style.css";i:3;a:3:{s:4:"file";s:30:"modules/CDev/Paypal/style.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:4;s:16:"labels/style.css";}}s:5:"index";i:200;s:9:"interface";N;s:5:"group";s:12:"getResources";}i:6;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:3:"css";a:3:{i:0;s:48:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.css";i:1;a:3:{s:4:"file";s:46:"modules/QSL/FlyoutCategoriesMenu/css/grid.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:37:"modules/CDev/SimpleCMS/page/style.css";}s:2:"js";a:1:{i:0;s:47:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.js";}}s:5:"index";i:300;s:9:"interface";N;s:5:"group";s:13:"getThemeFiles";}i:7;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:0:{}s:5:"index";i:1000;s:9:"interface";s:6:"custom";s:5:"group";s:26:"getThemeTweakerCustomFiles";}i:8;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:6:{i:0;a:2:{s:4:"file";s:14:"vue/vue.min.js";s:9:"no_minify";b:1;}i:1;a:2:{s:4:"file";s:15:"vue/vuex.min.js";s:9:"no_minify";b:1;}i:2;s:19:"vue/vue.loadable.js";i:3;s:28:"vue/vue.registerComponent.js";i:4;s:13:"js/vue/vue.js";i:5;s:19:"js/vue/component.js";}s:3:"css";a:0:{}}s:5:"index";i:100;s:9:"interface";s:6:"common";s:5:"group";s:14:"getCommonFiles";}i:9;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:3:{i:0;s:31:"modules/QSL/CloudSearch/init.js";i:1;s:33:"modules/QSL/CloudSearch/loader.js";i:2;s:19:"button/js/button.js";}s:3:"css";a:6:{i:0;a:2:{s:4:"file";s:34:"modules/QSL/CloudSearch/style.less";s:5:"media";s:6:"screen";}i:1;s:29:"modules/CDev/Sale/css/lc.less";i:2;s:29:"modules/CDev/Paypal/style.css";i:3;a:3:{s:4:"file";s:30:"modules/CDev/Paypal/style.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:4;s:21:"button/css/button.css";i:5;s:17:"button/style.less";}}s:5:"index";i:200;s:9:"interface";N;s:5:"group";s:12:"getResources";}i:10;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:3:"css";a:3:{i:0;s:48:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.css";i:1;a:3:{s:4:"file";s:46:"modules/QSL/FlyoutCategoriesMenu/css/grid.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:37:"modules/CDev/SimpleCMS/page/style.css";}s:2:"js";a:1:{i:0;s:47:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.js";}}s:5:"index";i:300;s:9:"interface";N;s:5:"group";s:13:"getThemeFiles";}i:11;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:0:{}s:5:"index";i:1000;s:9:"interface";s:6:"custom";s:5:"group";s:26:"getThemeTweakerCustomFiles";}i:12;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:6:{i:0;a:2:{s:4:"file";s:14:"vue/vue.min.js";s:9:"no_minify";b:1;}i:1;a:2:{s:4:"file";s:15:"vue/vuex.min.js";s:9:"no_minify";b:1;}i:2;s:19:"vue/vue.loadable.js";i:3;s:28:"vue/vue.registerComponent.js";i:4;s:13:"js/vue/vue.js";i:5;s:19:"js/vue/component.js";}s:3:"css";a:0:{}}s:5:"index";i:100;s:9:"interface";s:6:"common";s:5:"group";s:14:"getCommonFiles";}i:13;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:2:"js";a:4:{i:0;s:31:"modules/QSL/CloudSearch/init.js";i:1;s:33:"modules/QSL/CloudSearch/loader.js";i:2;s:55:"modules/XC/ProductComparison/compare/products/script.js";i:3;s:46:"modules/XC/ProductComparison/compare/script.js";}s:3:"css";a:6:{i:0;a:2:{s:4:"file";s:34:"modules/QSL/CloudSearch/style.less";s:5:"media";s:6:"screen";}i:1;s:29:"modules/CDev/Sale/css/lc.less";i:2;s:29:"modules/CDev/Paypal/style.css";i:3;a:3:{s:4:"file";s:30:"modules/CDev/Paypal/style.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:4;s:55:"modules/XC/ProductComparison/compare/products/style.css";i:5;s:46:"modules/XC/ProductComparison/compare/style.css";}}s:5:"index";i:200;s:9:"interface";N;s:5:"group";s:12:"getResources";}i:14;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:2:{s:3:"css";a:3:{i:0;s:48:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.css";i:1;a:3:{s:4:"file";s:46:"modules/QSL/FlyoutCategoriesMenu/css/grid.less";s:5:"media";s:6:"screen";s:5:"merge";s:28:"bootstrap/css/bootstrap.less";}i:2;s:37:"modules/CDev/SimpleCMS/page/style.css";}s:2:"js";a:1:{i:0;s:47:"modules/QSL/FlyoutCategoriesMenu/flyout-menu.js";}}s:5:"index";i:300;s:9:"interface";N;s:5:"group";s:13:"getThemeFiles";}i:15;O:26:"XLite\Core\View\DTO\Assets":4:{s:6:"assets";a:0:{}s:5:"index";i:1000;s:9:"interface";s:6:"custom";s:5:"group";s:26:"getThemeTweakerCustomFiles";}}s:8:"metaTags";a:0:{}}";

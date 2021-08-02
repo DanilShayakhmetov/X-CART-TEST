@@ -1,0 +1,40 @@
+1627905005
+s:1785:"O:34:"XLite\Core\View\DTO\RenderedWidget":3:{s:7:"content";s:1675:"
+  
+<form action="?" method="post" accept-charset="utf-8" onsubmit="javascript: return true;" class="form6107cddd9eade4.21669862">
+<div class="form-params" style="display: none;">
+      <input type="hidden" name="target" value="product" />
+      <input type="hidden" name="action" value="rate" />
+      <input type="hidden" name="return_target" value="main" />
+      <input type="hidden" name="product_id" value="42" />
+      <input type="hidden" name="target_widget" value="\\XLite\\Module\\XC\\Reviews\\View\\Customer\\ProductInfo\\ItemsList\\AverageRating" />
+      <input type="hidden" name="returnURL" value="/check/for/clean/urls.html" />
+  </div>
+
+ 
+  <div class="product-average-rating">
+    <input type="hidden" name="target_widget"
+           value="\XLite\Module\XC\Reviews\View\Customer\ProductInfo\Details\AverageRating"/>
+    <input type="hidden" name="widgetMode" value="grid"/>
+    
+  <div class="rating">
+                   __dynamic_widget_placeholder__456_YToyOntzOjU6ImNsYXNzIjtzOjM2OiJYTGl0ZVxNb2R1bGVcWENcUmV2aWV3c1xWaWV3XFZvdGVCYXIiO3M6NjoicGFyYW1zIjtzOjI1NjoiYToxMDp7czoxMDoiaXNFeHBvcnRlZCI7YjowO3M6ODoidGVtcGxhdGUiO3M6MjI6InZvdGVfYmFyL3ZvdGVfYmFyLnR3aWciO3M6ODoibWV0YWRhdGEiO2E6MDp7fXM6NToibW9kZXMiO2E6MDp7fXM6NDoicmF0ZSI7czo0OiI0LjkzIjtzOjM6Im1heCI7czoxOiI1IjtzOjExOiJpc19lZGl0YWJsZSI7YjowO3M6MTI6InJhdGluZ19sYWJlbCI7TjtzOjEwOiJmaWVsZF9uYW1lIjtzOjY6InJhdGluZyI7czoxMzoicmF0aW5nX2xhYmVscyI7YTowOnt9fSI7fQ==
+     
+              <div class="rating-tooltip">
+              <div class="text">
+      <div>Score: 4.93 (votes: 15)</div>
+          <div>No reviews.</div>
+      </div>
+
+         </div>
+     
+ </div>
+
+
+    
+        
+          </div>
+
+
+</form>
+";s:6:"assets";a:0:{}s:8:"metaTags";a:0:{}}";

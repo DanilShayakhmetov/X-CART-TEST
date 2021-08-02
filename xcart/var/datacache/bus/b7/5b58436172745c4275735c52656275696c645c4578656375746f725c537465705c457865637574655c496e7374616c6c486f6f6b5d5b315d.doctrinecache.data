@@ -1,0 +1,2 @@
+0
+a:3:{i:0;O:50:"XCart\SilexAnnotations\Annotations\Service\Service":2:{s:4:"name";N;s:9:"arguments";a:1:{s:6:"logger";s:29:"XCart\Bus\Core\Logger\Rebuild";}}i:1;O:38:"XCart\Bus\Core\Annotations\RebuildStep":2:{s:6:"script";s:8:"redeploy";s:6:"weight";s:5:"15000";}i:2;O:38:"XCart\Bus\Core\Annotations\RebuildStep":2:{s:6:"script";s:7:"install";s:6:"weight";s:4:"3000";}}
