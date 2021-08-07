@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* items_list/product/parts/common.button-add2cart.twig */
+/* /mff/xcart/skins/customer/items_list/product/parts/common.button-add2cart.twig */
 class __TwigTemplate_8b2f5d9f65f094d7b5f18ebf80f0a501f41581a42f126ea4e7363cb19f8446de extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -45,7 +45,7 @@ class __TwigTemplate_8b2f5d9f65f094d7b5f18ebf80f0a501f41581a42f126ea4e7363cb19f8
 
     public function getTemplateName()
     {
-        return "items_list/product/parts/common.button-add2cart.twig";
+        return "/mff/xcart/skins/customer/items_list/product/parts/common.button-add2cart.twig";
     }
 
     public function isTraitable()
@@ -68,6 +68,6 @@ class __TwigTemplate_8b2f5d9f65f094d7b5f18ebf80f0a501f41581a42f126ea4e7363cb19f8
 
     public function getSourceContext()
     {
-        return new Source("", "items_list/product/parts/common.button-add2cart.twig", "/mff/xcart/skins/customer/items_list/product/parts/common.button-add2cart.twig");
+        return new Source("", "/mff/xcart/skins/customer/items_list/product/parts/common.button-add2cart.twig", "");
     }
 }

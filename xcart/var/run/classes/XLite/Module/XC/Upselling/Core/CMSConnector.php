@@ -11,7 +11,7 @@ namespace XLite\Module\XC\Upselling\Core;
 /**
  * CMSConnector
  */
-abstract class CMSConnector extends \XLite\Core\CMSConnectorAbstract implements \XLite\Base\IDecorator
+abstract class CMSConnector extends \XLite\Module\creator\wishlist\Core\CMSConnector implements \XLite\Base\IDecorator
 {
     /**
      * Constructor

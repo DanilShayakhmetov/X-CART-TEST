@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/CDev/Paypal/banner/cartPage/nearCheckoutButton.twig */
+/* /mff/xcart/skins/customer/modules/CDev/Paypal/banner/cartPage/nearCheckoutButton.twig */
 class __TwigTemplate_c516219a4212cead9501557d80de5389fc3a43c1440d8281fbe1349850e361e1 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -35,7 +35,7 @@ class __TwigTemplate_c516219a4212cead9501557d80de5389fc3a43c1440d8281fbe1349850e
 
     public function getTemplateName()
     {
-        return "modules/CDev/Paypal/banner/cartPage/nearCheckoutButton.twig";
+        return "/mff/xcart/skins/customer/modules/CDev/Paypal/banner/cartPage/nearCheckoutButton.twig";
     }
 
     public function isTraitable()
@@ -58,6 +58,6 @@ class __TwigTemplate_c516219a4212cead9501557d80de5389fc3a43c1440d8281fbe1349850e
 
     public function getSourceContext()
     {
-        return new Source("", "modules/CDev/Paypal/banner/cartPage/nearCheckoutButton.twig", "/mff/xcart/skins/customer/modules/CDev/Paypal/banner/cartPage/nearCheckoutButton.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/CDev/Paypal/banner/cartPage/nearCheckoutButton.twig", "");
     }
 }

@@ -11,7 +11,7 @@ namespace XLite\Module\XC\VendorMessages\Core;
 /**
  * Layout
  */
- class Layout extends \XLite\Core\LayoutAbstract implements \XLite\Base\IDecorator
+ class Layout extends \XLite\Module\creator\wishlist\Core\Layout implements \XLite\Base\IDecorator
 {
     /**
      * Define the pages where first sidebar will be hidden.

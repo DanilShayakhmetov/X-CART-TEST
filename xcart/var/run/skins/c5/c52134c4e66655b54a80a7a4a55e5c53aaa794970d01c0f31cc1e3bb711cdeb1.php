@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* items_list/product/parts/grid.button-add2cart-wrapper.twig */
+/* /mff/xcart/skins/customer/items_list/product/parts/grid.button-add2cart-wrapper.twig */
 class __TwigTemplate_3053c3952f20a507b0f9b7f8ef7b41df4372b4032ccf8b0fac96a41b32174957 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -44,7 +44,7 @@ class __TwigTemplate_3053c3952f20a507b0f9b7f8ef7b41df4372b4032ccf8b0fac96a41b321
 
     public function getTemplateName()
     {
-        return "items_list/product/parts/grid.button-add2cart-wrapper.twig";
+        return "/mff/xcart/skins/customer/items_list/product/parts/grid.button-add2cart-wrapper.twig";
     }
 
     public function isTraitable()
@@ -67,6 +67,6 @@ class __TwigTemplate_3053c3952f20a507b0f9b7f8ef7b41df4372b4032ccf8b0fac96a41b321
 
     public function getSourceContext()
     {
-        return new Source("", "items_list/product/parts/grid.button-add2cart-wrapper.twig", "/mff/xcart/skins/customer/items_list/product/parts/grid.button-add2cart-wrapper.twig");
+        return new Source("", "/mff/xcart/skins/customer/items_list/product/parts/grid.button-add2cart-wrapper.twig", "");
     }
 }

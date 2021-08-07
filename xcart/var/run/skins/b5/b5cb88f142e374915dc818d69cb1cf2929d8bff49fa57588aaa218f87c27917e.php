@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* layout/header/mobile_header_parts/navbar/account/profile.twig */
+/* /mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/profile.twig */
 class __TwigTemplate_98f2b11c7ab8d87434f59b630ffdc678bd1be6046a815199e8763a13c52a7b77 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -49,7 +49,7 @@ class __TwigTemplate_98f2b11c7ab8d87434f59b630ffdc678bd1be6046a815199e8763a13c52
 
     public function getTemplateName()
     {
-        return "layout/header/mobile_header_parts/navbar/account/profile.twig";
+        return "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/profile.twig";
     }
 
     public function isTraitable()
@@ -72,6 +72,6 @@ class __TwigTemplate_98f2b11c7ab8d87434f59b630ffdc678bd1be6046a815199e8763a13c52
 
     public function getSourceContext()
     {
-        return new Source("", "layout/header/mobile_header_parts/navbar/account/profile.twig", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/profile.twig");
+        return new Source("", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/profile.twig", "");
     }
 }

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* layout/header/mobile_header_parts/navbar/account/address_book.twig */
+/* /mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/address_book.twig */
 class __TwigTemplate_2a3b335f41b3c9f50e485635c3274e61111b90e787381e638318023758d9aaa8 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -49,7 +49,7 @@ class __TwigTemplate_2a3b335f41b3c9f50e485635c3274e61111b90e787381e638318023758d
 
     public function getTemplateName()
     {
-        return "layout/header/mobile_header_parts/navbar/account/address_book.twig";
+        return "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/address_book.twig";
     }
 
     public function isTraitable()
@@ -72,6 +72,6 @@ class __TwigTemplate_2a3b335f41b3c9f50e485635c3274e61111b90e787381e638318023758d
 
     public function getSourceContext()
     {
-        return new Source("", "layout/header/mobile_header_parts/navbar/account/address_book.twig", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/address_book.twig");
+        return new Source("", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/account/address_book.twig", "");
     }
 }

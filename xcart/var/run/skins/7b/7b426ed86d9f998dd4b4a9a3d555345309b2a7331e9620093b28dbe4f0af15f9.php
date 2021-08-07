@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/XC/NewsletterSubscriptions/form/parts/form.twig */
+/* /mff/xcart/skins/customer/modules/XC/NewsletterSubscriptions/form/parts/form.twig */
 class __TwigTemplate_cc098b2802d12bb1c7c65fb2c35ce1107aa852a0ed7dcb6b6decd35388b312c2 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -54,7 +54,7 @@ class __TwigTemplate_cc098b2802d12bb1c7c65fb2c35ce1107aa852a0ed7dcb6b6decd35388b
 
     public function getTemplateName()
     {
-        return "modules/XC/NewsletterSubscriptions/form/parts/form.twig";
+        return "/mff/xcart/skins/customer/modules/XC/NewsletterSubscriptions/form/parts/form.twig";
     }
 
     public function isTraitable()
@@ -77,6 +77,6 @@ class __TwigTemplate_cc098b2802d12bb1c7c65fb2c35ce1107aa852a0ed7dcb6b6decd35388b
 
     public function getSourceContext()
     {
-        return new Source("", "modules/XC/NewsletterSubscriptions/form/parts/form.twig", "/mff/xcart/skins/customer/modules/XC/NewsletterSubscriptions/form/parts/form.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/XC/NewsletterSubscriptions/form/parts/form.twig", "");
     }
 }

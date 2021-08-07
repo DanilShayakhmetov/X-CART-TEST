@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/CDev/GoogleAnalytics/impression-block.twig */
+/* /mff/xcart/skins/customer/modules/CDev/GoogleAnalytics/impression-block.twig */
 class __TwigTemplate_924ccad7e00a5283239979eb32e2868f2c6fda17506485213f436e7fe29ecd35 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -41,7 +41,7 @@ class __TwigTemplate_924ccad7e00a5283239979eb32e2868f2c6fda17506485213f436e7fe29
 
     public function getTemplateName()
     {
-        return "modules/CDev/GoogleAnalytics/impression-block.twig";
+        return "/mff/xcart/skins/customer/modules/CDev/GoogleAnalytics/impression-block.twig";
     }
 
     public function isTraitable()
@@ -64,6 +64,6 @@ class __TwigTemplate_924ccad7e00a5283239979eb32e2868f2c6fda17506485213f436e7fe29
 
     public function getSourceContext()
     {
-        return new Source("", "modules/CDev/GoogleAnalytics/impression-block.twig", "/mff/xcart/skins/customer/modules/CDev/GoogleAnalytics/impression-block.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/CDev/GoogleAnalytics/impression-block.twig", "");
     }
 }

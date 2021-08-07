@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/CDev/Coupons/coupons_minilist.twig */
+/* /mff/xcart/skins/crisp_white/customer/modules/CDev/Coupons/coupons_minilist.twig */
 class __TwigTemplate_54c1020a258fe3089ca82c10fa72d90ae9a68c05daf009b95dd3c702da40f41c extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -68,7 +68,7 @@ class __TwigTemplate_54c1020a258fe3089ca82c10fa72d90ae9a68c05daf009b95dd3c702da4
 
     public function getTemplateName()
     {
-        return "modules/CDev/Coupons/coupons_minilist.twig";
+        return "/mff/xcart/skins/crisp_white/customer/modules/CDev/Coupons/coupons_minilist.twig";
     }
 
     public function isTraitable()
@@ -91,6 +91,6 @@ class __TwigTemplate_54c1020a258fe3089ca82c10fa72d90ae9a68c05daf009b95dd3c702da4
 
     public function getSourceContext()
     {
-        return new Source("", "modules/CDev/Coupons/coupons_minilist.twig", "/mff/xcart/skins/crisp_white/customer/modules/CDev/Coupons/coupons_minilist.twig");
+        return new Source("", "/mff/xcart/skins/crisp_white/customer/modules/CDev/Coupons/coupons_minilist.twig", "");
     }
 }

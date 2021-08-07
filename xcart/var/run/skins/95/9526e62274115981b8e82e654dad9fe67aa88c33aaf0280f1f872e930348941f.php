@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/XC/ThemeTweaker/layout/content/main.center.hidden.twig */
+/* /mff/xcart/skins/customer/modules/XC/ThemeTweaker/layout/content/main.center.hidden.twig */
 class __TwigTemplate_613c88de8a4aa797321c5ba65b7f3e5b630a38946054ea9635c0a32f2a7a6189 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -39,7 +39,7 @@ class __TwigTemplate_613c88de8a4aa797321c5ba65b7f3e5b630a38946054ea9635c0a32f2a7
 
     public function getTemplateName()
     {
-        return "modules/XC/ThemeTweaker/layout/content/main.center.hidden.twig";
+        return "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/layout/content/main.center.hidden.twig";
     }
 
     public function isTraitable()
@@ -62,6 +62,6 @@ class __TwigTemplate_613c88de8a4aa797321c5ba65b7f3e5b630a38946054ea9635c0a32f2a7
 
     public function getSourceContext()
     {
-        return new Source("", "modules/XC/ThemeTweaker/layout/content/main.center.hidden.twig", "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/layout/content/main.center.hidden.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/layout/content/main.center.hidden.twig", "");
     }
 }

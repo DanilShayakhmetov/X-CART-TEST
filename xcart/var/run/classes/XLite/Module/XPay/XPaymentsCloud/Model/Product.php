@@ -13,7 +13,7 @@ use XLite\Module\XPay\XPaymentsCloud\Model\Subscription\Plan;
 /**
  * Product
  */
- class Product extends \XLite\Model\ProductAbstract implements \XLite\Base\IDecorator
+ class Product extends \XLite\Module\creator\wishlist\Model\Product implements \XLite\Base\IDecorator
 {
     /**
      * Subscription plan

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* center.twig */
+/* /mff/xcart/skins/admin/center.twig */
 class __TwigTemplate_0cf77390acbde96788f9c3755f5ee2b3a16acb9953c19b38db1c4dd1f9542aa7 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -32,7 +32,7 @@ echo $templateWrapperStart;
 }
 
         // line 6
-        $this->loadTemplate("noscript.twig", "center.twig", 6)->display($context);
+        $this->loadTemplate("noscript.twig", "/mff/xcart/skins/admin/center.twig", 6)->display($context);
         if ($templateWrapperText) {
             echo $this->getThis()->endMarker($fullPath, $templateWrapperText);
         }
@@ -74,7 +74,7 @@ echo $templateWrapperStart;
 echo $templateWrapperStart;
 }
 
-            $this->loadTemplate("access_denied.twig", "center.twig", 21)->display($context);
+            $this->loadTemplate("access_denied.twig", "/mff/xcart/skins/admin/center.twig", 21)->display($context);
             if ($templateWrapperText) {
                 echo $this->getThis()->endMarker($fullPath, $templateWrapperText);
             }
@@ -91,7 +91,7 @@ echo $templateWrapperStart;
 echo $templateWrapperStart;
 }
 
-            $this->loadTemplate("license_message.twig", "center.twig", 25)->display($context);
+            $this->loadTemplate("license_message.twig", "/mff/xcart/skins/admin/center.twig", 25)->display($context);
             if ($templateWrapperText) {
                 echo $this->getThis()->endMarker($fullPath, $templateWrapperText);
             }
@@ -114,7 +114,7 @@ echo $templateWrapperStart;
 
     public function getTemplateName()
     {
-        return "center.twig";
+        return "/mff/xcart/skins/admin/center.twig";
     }
 
     public function isTraitable()
@@ -137,6 +137,6 @@ echo $templateWrapperStart;
 
     public function getSourceContext()
     {
-        return new Source("", "center.twig", "/mff/xcart/skins/admin/center.twig");
+        return new Source("", "/mff/xcart/skins/admin/center.twig", "");
     }
 }

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* header/parts/preloaded_labels.twig */
+/* /mff/xcart/skins/admin/header/parts/preloaded_labels.twig */
 class __TwigTemplate_e6cd3cb03e0e6762f1df90870d06d342f75deb0e8b3ee08e2a58a56626da0dfe extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -39,7 +39,7 @@ class __TwigTemplate_e6cd3cb03e0e6762f1df90870d06d342f75deb0e8b3ee08e2a58a56626d
 
     public function getTemplateName()
     {
-        return "header/parts/preloaded_labels.twig";
+        return "/mff/xcart/skins/admin/header/parts/preloaded_labels.twig";
     }
 
     public function isTraitable()
@@ -62,6 +62,6 @@ class __TwigTemplate_e6cd3cb03e0e6762f1df90870d06d342f75deb0e8b3ee08e2a58a56626d
 
     public function getSourceContext()
     {
-        return new Source("", "header/parts/preloaded_labels.twig", "/mff/xcart/skins/admin/header/parts/preloaded_labels.twig");
+        return new Source("", "/mff/xcart/skins/admin/header/parts/preloaded_labels.twig", "");
     }
 }

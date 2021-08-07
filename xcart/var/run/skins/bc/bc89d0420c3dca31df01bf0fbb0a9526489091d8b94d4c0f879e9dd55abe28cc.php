@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/CDev/Paypal/ppcm_banner/ppcm_amount_parts/cart-total.twig */
+/* /mff/xcart/skins/customer/modules/CDev/Paypal/ppcm_banner/ppcm_amount_parts/cart-total.twig */
 class __TwigTemplate_4180a7586308135827ef92c38db7ad374427d98deec75129ec3f5f0275631075 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -37,7 +37,7 @@ class __TwigTemplate_4180a7586308135827ef92c38db7ad374427d98deec75129ec3f5f02756
 
     public function getTemplateName()
     {
-        return "modules/CDev/Paypal/ppcm_banner/ppcm_amount_parts/cart-total.twig";
+        return "/mff/xcart/skins/customer/modules/CDev/Paypal/ppcm_banner/ppcm_amount_parts/cart-total.twig";
     }
 
     public function isTraitable()
@@ -60,6 +60,6 @@ class __TwigTemplate_4180a7586308135827ef92c38db7ad374427d98deec75129ec3f5f02756
 
     public function getSourceContext()
     {
-        return new Source("", "modules/CDev/Paypal/ppcm_banner/ppcm_amount_parts/cart-total.twig", "/mff/xcart/skins/customer/modules/CDev/Paypal/ppcm_banner/ppcm_amount_parts/cart-total.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/CDev/Paypal/ppcm_banner/ppcm_amount_parts/cart-total.twig", "");
     }
 }

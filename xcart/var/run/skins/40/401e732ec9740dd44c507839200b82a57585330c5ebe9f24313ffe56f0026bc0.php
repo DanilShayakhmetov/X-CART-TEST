@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/Amazon/PayWithAmazon/login/signin/signin.twig */
+/* /mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/login/signin/signin.twig */
 class __TwigTemplate_74f0a9d7be2948e883a778d2e803030f77051995af011988e0355e03a058b7e0 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -32,7 +32,7 @@ class __TwigTemplate_74f0a9d7be2948e883a778d2e803030f77051995af011988e0355e03a05
 
     public function getTemplateName()
     {
-        return "modules/Amazon/PayWithAmazon/login/signin/signin.twig";
+        return "/mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/login/signin/signin.twig";
     }
 
     public function isTraitable()
@@ -55,6 +55,6 @@ class __TwigTemplate_74f0a9d7be2948e883a778d2e803030f77051995af011988e0355e03a05
 
     public function getSourceContext()
     {
-        return new Source("", "modules/Amazon/PayWithAmazon/login/signin/signin.twig", "/mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/login/signin/signin.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/login/signin/signin.twig", "");
     }
 }

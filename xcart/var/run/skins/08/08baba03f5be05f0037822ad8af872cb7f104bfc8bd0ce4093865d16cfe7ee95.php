@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/XC/ThemeTweaker/themetweaker/inline_editable/tinymce_warning_modal.twig */
+/* /mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker/inline_editable/tinymce_warning_modal.twig */
 class __TwigTemplate_03a7001f30e05710d75a2fd44271fddd6af742559d9cc51c4afd91b917aa14b5 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -44,7 +44,7 @@ class __TwigTemplate_03a7001f30e05710d75a2fd44271fddd6af742559d9cc51c4afd91b917a
 
     public function getTemplateName()
     {
-        return "modules/XC/ThemeTweaker/themetweaker/inline_editable/tinymce_warning_modal.twig";
+        return "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker/inline_editable/tinymce_warning_modal.twig";
     }
 
     public function isTraitable()
@@ -67,6 +67,6 @@ class __TwigTemplate_03a7001f30e05710d75a2fd44271fddd6af742559d9cc51c4afd91b917a
 
     public function getSourceContext()
     {
-        return new Source("", "modules/XC/ThemeTweaker/themetweaker/inline_editable/tinymce_warning_modal.twig", "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker/inline_editable/tinymce_warning_modal.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker/inline_editable/tinymce_warning_modal.twig", "");
     }
 }

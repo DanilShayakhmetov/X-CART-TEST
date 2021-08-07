@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* layout/header/mobile_header_parts/navbar/first_additional_menu.twig */
+/* /mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/first_additional_menu.twig */
 class __TwigTemplate_6c8948bed53d8b743c303ccc31bafc816d6a144f312a163d0e2fba733f674743 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -60,7 +60,7 @@ class __TwigTemplate_6c8948bed53d8b743c303ccc31bafc816d6a144f312a163d0e2fba733f6
 
     public function getTemplateName()
     {
-        return "layout/header/mobile_header_parts/navbar/first_additional_menu.twig";
+        return "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/first_additional_menu.twig";
     }
 
     public function isTraitable()
@@ -83,6 +83,6 @@ class __TwigTemplate_6c8948bed53d8b743c303ccc31bafc816d6a144f312a163d0e2fba733f6
 
     public function getSourceContext()
     {
-        return new Source("", "layout/header/mobile_header_parts/navbar/first_additional_menu.twig", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/first_additional_menu.twig");
+        return new Source("", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/navbar/first_additional_menu.twig", "");
     }
 }

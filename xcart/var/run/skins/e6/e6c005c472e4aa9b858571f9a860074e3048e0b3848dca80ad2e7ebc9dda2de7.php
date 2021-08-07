@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/CDev/Paypal/welcome_block/paypal/block.twig */
+/* /mff/xcart/skins/admin/modules/CDev/Paypal/welcome_block/paypal/block.twig */
 class __TwigTemplate_6dd9b1ce54c235476c85e449e0822df6fcc6d42e111325072607778bb615cdb0 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -39,7 +39,7 @@ class __TwigTemplate_6dd9b1ce54c235476c85e449e0822df6fcc6d42e111325072607778bb61
 
     public function getTemplateName()
     {
-        return "modules/CDev/Paypal/welcome_block/paypal/block.twig";
+        return "/mff/xcart/skins/admin/modules/CDev/Paypal/welcome_block/paypal/block.twig";
     }
 
     public function isTraitable()
@@ -62,6 +62,6 @@ class __TwigTemplate_6dd9b1ce54c235476c85e449e0822df6fcc6d42e111325072607778bb61
 
     public function getSourceContext()
     {
-        return new Source("", "modules/CDev/Paypal/welcome_block/paypal/block.twig", "/mff/xcart/skins/admin/modules/CDev/Paypal/welcome_block/paypal/block.twig");
+        return new Source("", "/mff/xcart/skins/admin/modules/CDev/Paypal/welcome_block/paypal/block.twig", "");
     }
 }

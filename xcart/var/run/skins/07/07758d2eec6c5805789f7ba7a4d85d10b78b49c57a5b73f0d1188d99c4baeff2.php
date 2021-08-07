@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* layout/header/mobile_header_parts/logo.twig */
+/* /mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/logo.twig */
 class __TwigTemplate_d7b9170ed8ed26923293dbb34049093d6ff85bcdd58ef4e7c1e8eaaafae2e998 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -36,7 +36,7 @@ echo $templateWrapperStart;
 }
 
         // line 8
-        $this->loadTemplate("layout/header/header.logo.twig", "layout/header/mobile_header_parts/logo.twig", 8)->display($context);
+        $this->loadTemplate("layout/header/header.logo.twig", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/logo.twig", 8)->display($context);
         if ($templateWrapperText) {
             echo $this->getThis()->endMarker($fullPath, $templateWrapperText);
         }
@@ -46,7 +46,7 @@ echo $templateWrapperStart;
 
     public function getTemplateName()
     {
-        return "layout/header/mobile_header_parts/logo.twig";
+        return "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/logo.twig";
     }
 
     public function isTraitable()
@@ -69,6 +69,6 @@ echo $templateWrapperStart;
 
     public function getSourceContext()
     {
-        return new Source("", "layout/header/mobile_header_parts/logo.twig", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/logo.twig");
+        return new Source("", "/mff/xcart/skins/crisp_white/customer/layout/header/mobile_header_parts/logo.twig", "");
     }
 }

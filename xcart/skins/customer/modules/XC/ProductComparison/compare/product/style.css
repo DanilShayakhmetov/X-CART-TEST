@@ -42,7 +42,7 @@ div.add-to-compare.product span.compare-products-selected {
 }
 
 div.add-to-compare.product div.compare-button {
-  display: none;
+  /*display: none;*/
   background-color: #fff;
   color: #2c5fa6;
   font-size: 14px;

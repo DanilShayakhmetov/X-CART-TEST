@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/Amazon/PayWithAmazon/checkout_button/mini_cart.twig */
+/* /mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/checkout_button/mini_cart.twig */
 class __TwigTemplate_1a8a083e10ea86b150c7e566ba2fa5f7092dafb1e55177d775a2793321d75432 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -37,7 +37,7 @@ class __TwigTemplate_1a8a083e10ea86b150c7e566ba2fa5f7092dafb1e55177d775a2793321d
 
     public function getTemplateName()
     {
-        return "modules/Amazon/PayWithAmazon/checkout_button/mini_cart.twig";
+        return "/mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/checkout_button/mini_cart.twig";
     }
 
     public function isTraitable()
@@ -60,6 +60,6 @@ class __TwigTemplate_1a8a083e10ea86b150c7e566ba2fa5f7092dafb1e55177d775a2793321d
 
     public function getSourceContext()
     {
-        return new Source("", "modules/Amazon/PayWithAmazon/checkout_button/mini_cart.twig", "/mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/checkout_button/mini_cart.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/Amazon/PayWithAmazon/checkout_button/mini_cart.twig", "");
     }
 }

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* main_center/page_container_parts/header_parts/menu_control.twig */
+/* /mff/xcart/skins/admin/main_center/page_container_parts/header_parts/menu_control.twig */
 class __TwigTemplate_8c918c1cd9eee50a388a16c862a0e85cdbd83e2d6701dcbfcc2d3a95df6b36af extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -38,7 +38,7 @@ class __TwigTemplate_8c918c1cd9eee50a388a16c862a0e85cdbd83e2d6701dcbfcc2d3a95df6
 
     public function getTemplateName()
     {
-        return "main_center/page_container_parts/header_parts/menu_control.twig";
+        return "/mff/xcart/skins/admin/main_center/page_container_parts/header_parts/menu_control.twig";
     }
 
     public function isTraitable()
@@ -61,6 +61,6 @@ class __TwigTemplate_8c918c1cd9eee50a388a16c862a0e85cdbd83e2d6701dcbfcc2d3a95df6
 
     public function getSourceContext()
     {
-        return new Source("", "main_center/page_container_parts/header_parts/menu_control.twig", "/mff/xcart/skins/admin/main_center/page_container_parts/header_parts/menu_control.twig");
+        return new Source("", "/mff/xcart/skins/admin/main_center/page_container_parts/header_parts/menu_control.twig", "");
     }
 }

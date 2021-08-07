@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* items_list/product/parts/out-of-stock.label.twig */
+/* /mff/xcart/skins/crisp_white/customer/items_list/product/parts/out-of-stock.label.twig */
 class __TwigTemplate_456507f621574c36a15fa8c047a1f4724fd310ea4fa956ad0157efb3165196d4 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -41,7 +41,7 @@ class __TwigTemplate_456507f621574c36a15fa8c047a1f4724fd310ea4fa956ad0157efb3165
 
     public function getTemplateName()
     {
-        return "items_list/product/parts/out-of-stock.label.twig";
+        return "/mff/xcart/skins/crisp_white/customer/items_list/product/parts/out-of-stock.label.twig";
     }
 
     public function isTraitable()
@@ -64,6 +64,6 @@ class __TwigTemplate_456507f621574c36a15fa8c047a1f4724fd310ea4fa956ad0157efb3165
 
     public function getSourceContext()
     {
-        return new Source("", "items_list/product/parts/out-of-stock.label.twig", "/mff/xcart/skins/crisp_white/customer/items_list/product/parts/out-of-stock.label.twig");
+        return new Source("", "/mff/xcart/skins/crisp_white/customer/items_list/product/parts/out-of-stock.label.twig", "");
     }
 }

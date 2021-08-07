@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/CDev/Paypal/banner/homePage/aboveProducts.twig */
+/* /mff/xcart/skins/customer/modules/CDev/Paypal/banner/homePage/aboveProducts.twig */
 class __TwigTemplate_fa545b5317151a5e2a1bfa5a6e8037b73c31c46d51a35738e3746c8c9cabf6c9 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -35,7 +35,7 @@ class __TwigTemplate_fa545b5317151a5e2a1bfa5a6e8037b73c31c46d51a35738e3746c8c9ca
 
     public function getTemplateName()
     {
-        return "modules/CDev/Paypal/banner/homePage/aboveProducts.twig";
+        return "/mff/xcart/skins/customer/modules/CDev/Paypal/banner/homePage/aboveProducts.twig";
     }
 
     public function isTraitable()
@@ -58,6 +58,6 @@ class __TwigTemplate_fa545b5317151a5e2a1bfa5a6e8037b73c31c46d51a35738e3746c8c9ca
 
     public function getSourceContext()
     {
-        return new Source("", "modules/CDev/Paypal/banner/homePage/aboveProducts.twig", "/mff/xcart/skins/customer/modules/CDev/Paypal/banner/homePage/aboveProducts.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/CDev/Paypal/banner/homePage/aboveProducts.twig", "");
     }
 }

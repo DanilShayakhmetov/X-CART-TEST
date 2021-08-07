@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/XC/ThemeTweaker/themetweaker_panel/panel_extensions/confirm_exit_modal.twig */
+/* /mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker_panel/panel_extensions/confirm_exit_modal.twig */
 class __TwigTemplate_d2638adb04762c100ef75cc4b2180e2897d0a7550fa907fe7bc6282fbc146817 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -54,7 +54,7 @@ class __TwigTemplate_d2638adb04762c100ef75cc4b2180e2897d0a7550fa907fe7bc6282fbc1
 
     public function getTemplateName()
     {
-        return "modules/XC/ThemeTweaker/themetweaker_panel/panel_extensions/confirm_exit_modal.twig";
+        return "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker_panel/panel_extensions/confirm_exit_modal.twig";
     }
 
     public function isTraitable()
@@ -77,6 +77,6 @@ class __TwigTemplate_d2638adb04762c100ef75cc4b2180e2897d0a7550fa907fe7bc6282fbc1
 
     public function getSourceContext()
     {
-        return new Source("", "modules/XC/ThemeTweaker/themetweaker_panel/panel_extensions/confirm_exit_modal.twig", "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker_panel/panel_extensions/confirm_exit_modal.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/XC/ThemeTweaker/themetweaker_panel/panel_extensions/confirm_exit_modal.twig", "");
     }
 }

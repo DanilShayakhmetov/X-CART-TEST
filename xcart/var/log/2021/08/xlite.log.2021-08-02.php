@@ -17,3 +17,9 @@ Server API: fpm-fcgi; IP: 192.168.220.1;
 Request method: POST;
 URI: /admin.php?target=theme_tweaker&action=switch_mode;
 
+Aug 02 20:41:51 XLite [warning] Warning: touch(): Utime failed: Permission denied in /mff/xcart/Includes/Decorator/ClassBuilder/ClassBuilder.php on line 270
+Runtime id: d4396512530ac75f94b0395b94d9cf9f;
+Server API: fpm-fcgi; IP: 192.168.220.1;
+Request method: GET;
+URI: /;
+

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* header/parts/ie.twig */
+/* /mff/xcart/skins/admin/header/parts/ie.twig */
 class __TwigTemplate_6800c5c7e0c7117536d589e40407dc8bd6ad57dce5894b52d07d140470ad95bb extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -34,7 +34,7 @@ class __TwigTemplate_6800c5c7e0c7117536d589e40407dc8bd6ad57dce5894b52d07d140470a
 
     public function getTemplateName()
     {
-        return "header/parts/ie.twig";
+        return "/mff/xcart/skins/admin/header/parts/ie.twig";
     }
 
     public function getDebugInfo()
@@ -52,6 +52,6 @@ class __TwigTemplate_6800c5c7e0c7117536d589e40407dc8bd6ad57dce5894b52d07d140470a
 
     public function getSourceContext()
     {
-        return new Source("", "header/parts/ie.twig", "/mff/xcart/skins/admin/header/parts/ie.twig");
+        return new Source("", "/mff/xcart/skins/admin/header/parts/ie.twig", "");
     }
 }

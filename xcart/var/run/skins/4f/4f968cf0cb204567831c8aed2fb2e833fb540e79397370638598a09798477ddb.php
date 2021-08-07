@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* header/parts/alternate_lang.twig */
+/* /mff/xcart/skins/customer/header/parts/alternate_lang.twig */
 class __TwigTemplate_fb7db676545d964f9a17053d1af9334744ce368d9907cb4c1d3f50dfe0f26162 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -52,7 +52,7 @@ class __TwigTemplate_fb7db676545d964f9a17053d1af9334744ce368d9907cb4c1d3f50dfe0f
 
     public function getTemplateName()
     {
-        return "header/parts/alternate_lang.twig";
+        return "/mff/xcart/skins/customer/header/parts/alternate_lang.twig";
     }
 
     public function isTraitable()
@@ -75,6 +75,6 @@ class __TwigTemplate_fb7db676545d964f9a17053d1af9334744ce368d9907cb4c1d3f50dfe0f
 
     public function getSourceContext()
     {
-        return new Source("", "header/parts/alternate_lang.twig", "/mff/xcart/skins/customer/header/parts/alternate_lang.twig");
+        return new Source("", "/mff/xcart/skins/customer/header/parts/alternate_lang.twig", "");
     }
 }

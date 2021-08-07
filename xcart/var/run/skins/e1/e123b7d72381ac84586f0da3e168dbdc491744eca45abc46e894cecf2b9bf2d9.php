@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* header/parts/meta_upgrade_insecure.twig */
+/* /mff/xcart/skins/customer/header/parts/meta_upgrade_insecure.twig */
 class __TwigTemplate_ae4cfb917172d3286d88a0525fc15ef7ede72b48058b9dbc66eb8b1e61312273 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -39,7 +39,7 @@ class __TwigTemplate_ae4cfb917172d3286d88a0525fc15ef7ede72b48058b9dbc66eb8b1e613
 
     public function getTemplateName()
     {
-        return "header/parts/meta_upgrade_insecure.twig";
+        return "/mff/xcart/skins/customer/header/parts/meta_upgrade_insecure.twig";
     }
 
     public function isTraitable()
@@ -62,6 +62,6 @@ class __TwigTemplate_ae4cfb917172d3286d88a0525fc15ef7ede72b48058b9dbc66eb8b1e613
 
     public function getSourceContext()
     {
-        return new Source("", "header/parts/meta_upgrade_insecure.twig", "/mff/xcart/skins/customer/header/parts/meta_upgrade_insecure.twig");
+        return new Source("", "/mff/xcart/skins/customer/header/parts/meta_upgrade_insecure.twig", "");
     }
 }

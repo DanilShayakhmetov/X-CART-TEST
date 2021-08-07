@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/XC/ProductComparison/mobile_header_parts/navbar/account/additional/compare.twig */
+/* /mff/xcart/skins/crisp_white/customer/modules/XC/ProductComparison/mobile_header_parts/navbar/account/additional/compare.twig */
 class __TwigTemplate_ecf41c1e22e169309f2ad0dcfb99a6d9cfe17b7e5e56c37f7992d5191582360d extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -37,7 +37,7 @@ class __TwigTemplate_ecf41c1e22e169309f2ad0dcfb99a6d9cfe17b7e5e56c37f7992d519158
 
     public function getTemplateName()
     {
-        return "modules/XC/ProductComparison/mobile_header_parts/navbar/account/additional/compare.twig";
+        return "/mff/xcart/skins/crisp_white/customer/modules/XC/ProductComparison/mobile_header_parts/navbar/account/additional/compare.twig";
     }
 
     public function isTraitable()
@@ -60,6 +60,6 @@ class __TwigTemplate_ecf41c1e22e169309f2ad0dcfb99a6d9cfe17b7e5e56c37f7992d519158
 
     public function getSourceContext()
     {
-        return new Source("", "modules/XC/ProductComparison/mobile_header_parts/navbar/account/additional/compare.twig", "/mff/xcart/skins/crisp_white/customer/modules/XC/ProductComparison/mobile_header_parts/navbar/account/additional/compare.twig");
+        return new Source("", "/mff/xcart/skins/crisp_white/customer/modules/XC/ProductComparison/mobile_header_parts/navbar/account/additional/compare.twig", "");
     }
 }

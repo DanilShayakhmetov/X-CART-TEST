@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* settings/module.twig */
+/* /mff/xcart/skins/admin/settings/module.twig */
 class __TwigTemplate_5014bc6f0b14d2d834cba53b0047aa9144c69d0af97a3fec5038a3df9c2b8d29 extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -35,7 +35,7 @@ class __TwigTemplate_5014bc6f0b14d2d834cba53b0047aa9144c69d0af97a3fec5038a3df9c2
 echo $templateWrapperStart;
 }
 
-            $this->loadTemplate("settings/base.twig", "settings/module.twig", 7)->display($context);
+            $this->loadTemplate("settings/base.twig", "/mff/xcart/skins/admin/settings/module.twig", 7)->display($context);
             if ($templateWrapperText) {
                 echo $this->getThis()->endMarker($fullPath, $templateWrapperText);
             }
@@ -44,7 +44,7 @@ echo $templateWrapperStart;
 
     public function getTemplateName()
     {
-        return "settings/module.twig";
+        return "/mff/xcart/skins/admin/settings/module.twig";
     }
 
     public function isTraitable()
@@ -67,6 +67,6 @@ echo $templateWrapperStart;
 
     public function getSourceContext()
     {
-        return new Source("", "settings/module.twig", "/mff/xcart/skins/admin/settings/module.twig");
+        return new Source("", "/mff/xcart/skins/admin/settings/module.twig", "");
     }
 }

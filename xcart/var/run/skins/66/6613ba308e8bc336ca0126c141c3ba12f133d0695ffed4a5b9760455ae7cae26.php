@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/XPay/XPaymentsCloud/shopping_cart/parts/item.info.subscription.twig */
+/* /mff/xcart/skins/customer/modules/XPay/XPaymentsCloud/shopping_cart/parts/item.info.subscription.twig */
 class __TwigTemplate_dfd47bb44986079f186e1fa7ee443796d993baa8517dfc658af6cd4cf04f6dfb extends \XLite\Core\Templating\Twig\Template
 {
     public function __construct(Environment $env)
@@ -41,7 +41,7 @@ class __TwigTemplate_dfd47bb44986079f186e1fa7ee443796d993baa8517dfc658af6cd4cf04
 
     public function getTemplateName()
     {
-        return "modules/XPay/XPaymentsCloud/shopping_cart/parts/item.info.subscription.twig";
+        return "/mff/xcart/skins/customer/modules/XPay/XPaymentsCloud/shopping_cart/parts/item.info.subscription.twig";
     }
 
     public function isTraitable()
@@ -64,6 +64,6 @@ class __TwigTemplate_dfd47bb44986079f186e1fa7ee443796d993baa8517dfc658af6cd4cf04
 
     public function getSourceContext()
     {
-        return new Source("", "modules/XPay/XPaymentsCloud/shopping_cart/parts/item.info.subscription.twig", "/mff/xcart/skins/customer/modules/XPay/XPaymentsCloud/shopping_cart/parts/item.info.subscription.twig");
+        return new Source("", "/mff/xcart/skins/customer/modules/XPay/XPaymentsCloud/shopping_cart/parts/item.info.subscription.twig", "");
     }
 }
